@@ -1,0 +1,82 @@
+/*
+  TuSDK.strings
+  TuSDKDemo
+
+  Created by Clear Hu on 14/10/28.
+  Copyright (c) 2014年 Lasque. All rights reserved.
+*/
+// nav
+"lsq_nav_cancel" = "取消";
+"lsq_nav_back" = "返回";
+
+// button
+"lsq_button_done" = "我知道了";
+"lsq_button_close" = "关闭";
+"lsq_button_switch_camera" = "切换镜头";
+"lsq_button_flash" = "闪光灯:";
+"lsq_button_flash_model_off" = "禁用";
+"lsq_button_flash_model_auto" = "自动";
+"lsq_button_flash_model_open" = "开启";
+
+// avatar
+"lsq_avatar_actionsheet_title" = "设置头像";
+"lsq_avatar_actionsheet_cancel" = "取消";
+"lsq_avatar_actionsheet_camera" = "拍照";
+"lsq_avatar_actionsheet_album" = "从相册选择";
+
+// camera
+"lsq_carema_no_device" = "您的设备没有相机功能！";
+"lsq_carema_access_error%@" = "无法访问系统相机.请在'设置->隐私->相机'设置 %@ 为打开状态.";
+
+// album
+"lsq_album_title" = "相簿";
+"lsq_album_total_format%ld" = "%ld 张照片";
+"lsq_album_ALAssetsLibraryAccessDefaultError%@" = "相册访问失败(%@)";
+"lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相册访问失败.请在'设置->隐私->照片'设置 %@ 为打开状态.";
+"lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "无法访问相册.请在'设置->隐私->定位服务'设置 %@ 为打开状态.";
+
+// save
+"lsq_save_saveToTemp" = "正在处理...";
+"lsq_save_saveToTemp_completed" = "处理完成";
+"lsq_save_saveToTemp_failed" = "处理失败";
+"lsq_save_saveToAlbum" = "正在保存到相册...";
+"lsq_save_saveToAlbum_succeed" = "保存成功";
+"lsq_save_saveToAlbum_failed" = "保存到相册失败";
+
+// edit
+"lsq_edit_button_complete" = "完成";
+"lsq_edit_filter_processing" = "正在处理...";
+"lsq_edit_processing" = "正在处理...";
+"lsq_edit_processed" = "处理完成";
+
+// format
+"las_date_format" = "yyyy年M月d日";
+
+// Week
+"las_week_Sun" = "周日";
+"las_week_Mon" = "周一";
+"las_week_Tue" = "周二";
+"las_week_Wed" = "周三";
+"las_week_Thu" = "周四";
+"las_week_Fri" = "周五";
+"las_week_Sat" = "周六";
+
+// Filters
+"lsq_filter_Normal" = "默认";
+"lsq_filter_Artistic" = "艺术";
+"lsq_filter_Brilliant" = "灿烂";
+"lsq_filter_Cheerful" = "愉悦";
+"lsq_filter_Clear" = "清澈";
+"lsq_filter_Fade" = "褪色";
+"lsq_filter_Forest" = "森林";
+"lsq_filter_Gloss" = "光泽";
+"lsq_filter_Harmony" = "和谐";
+"lsq_filter_Instant" = "鲜艳";
+"lsq_filter_Lightup" = "明亮";
+"lsq_filter_Morning" = "清晨";
+"lsq_filter_Newborn" = "新生";
+"lsq_filter_Noir" = "黑白";
+"lsq_filter_Relaxed" = "轻松";
+"lsq_filter_Rough" = "粗犷";
+"lsq_filter_Thick" = "浓郁";
+"lsq_filter_Vintage" = "复古";

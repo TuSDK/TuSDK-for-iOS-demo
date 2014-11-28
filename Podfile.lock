@@ -1,0 +1,13 @@
+PODS:
+  - GPUImage (0.1.6)
+  - TuSDK (1.0.1):
+    - GPUImage (~> 0.1.6)
+
+DEPENDENCIES:
+  - TuSDK
+
+SPEC CHECKSUMS:
+  GPUImage: cecb0830bb9428f50192042e3c7b53810f51388e
+  TuSDK: c7f8859f3fa67fca359383f545bd74ffad8b7d12
+
+COCOAPODS: 0.35.0
