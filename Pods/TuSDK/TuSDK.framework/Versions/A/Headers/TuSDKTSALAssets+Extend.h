@@ -45,6 +45,13 @@ typedef void (^ALAssetsLibraryGroupsBlock)(NSArray *groups, NSError *error);
 + (void)showAlertWithLoadFailure:(NSError *)error;
 
 /**
+ *  获取相册访问失败信息
+ *
+ *  @return 相册访问失败信息
+ */
++ (NSString *)accessFailedInfo;
+
+/**
  *  是否用户已授权访问系统相册
  *
  *  @return 是否用户已授权访问系统相册

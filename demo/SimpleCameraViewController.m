@@ -386,7 +386,7 @@
     _filterWindow.backgroundColor = RGBA(0, 0, 0, 0.5);
     [self.view addSubview:_filterWindow];
 
-    _filterNames = [TuSDK filterNames];
+    _filterNames = [TuSDK internalFilterNames];
 
     CGFloat left = 0;
     int index = 0;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKICTableViewCell.h"
 #import "TuSDKICTableView.h"
+#import "TuSDKFilterManager.h"
 
 #pragma mark - TuSDKPFCameraFilterCell
 /**
@@ -23,6 +24,11 @@
     // 滤镜名称
     UILabel *_nameLabel;
 }
+/**
+ *  滤镜任务
+ */
+@property (nonatomic, assign) TuSDKTKFiltersTaskBase *filterTask;
+
 /**
  *  设置滤镜名称
  *
@@ -96,6 +102,16 @@
 @property (nonatomic) BOOL disableSelected;
 
 /**
+ *  滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
+ */
+@property (nonatomic, retain) UIImage *inputSampleImage;
+
+/**
+ *  滤镜任务
+ */
+@property (nonatomic, retain) TuSDKTKFiltersTaskBase *filterTask;
+
+/**
  *  重置为默认状态
  */
 -(void)resetDefault;
@@ -113,4 +129,9 @@
  *  @param isShow 是否隐藏
  */
 - (void)setShowState:(BOOL)isHidden;
+
+/**
+ *  加载滤镜
+ */
+- (void)loadFilters;
 @end

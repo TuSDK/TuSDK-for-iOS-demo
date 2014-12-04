@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKTKFiltersTempTask.h"
+#import "TuSDKTKFiltersTaskBase.h"
 
 
 @class TuSDKTKFiltersSampleTask;
@@ -31,8 +31,6 @@
  */
 @interface TuSDKTKFiltersSampleTask : TuSDKTKFiltersTaskBase{
     @protected
-    // 滤镜临时预览效果列表任务
-    TuSDKTKFiltersTempTask *_tempTask;
 }
 
 /**
@@ -56,11 +54,6 @@
 @property (nonatomic, assign) id<TuSDKTKFiltersSampleTaskDelegate> delegate;
 
 /**
- *  滤镜临时预览效果列表任务
- */
-@property (nonatomic, readonly) TuSDKTKFiltersTempTask *tempTask;
-
-/**
  *  滤镜预览效果列表任务
  *
  *  @param version 滤镜版本
@@ -68,11 +61,4 @@
  *  @return 滤镜预览效果列表任务
  */
 + (instancetype)taskWithVersion:(CGFloat)version;
-
-/**
- *  尝试创建滤镜临时预览效果列表任务
- *
- *  @param image 输入的图片
- */
-- (void)tryBuildTempTaskWithInputImage:(UIImage *)image;
 @end

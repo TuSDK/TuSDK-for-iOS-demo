@@ -95,11 +95,18 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
 + (void)setLogLevel:(lsqLogLevel)level;
 
 /**
- *  滤镜名称列表
+ *  内部滤镜名称列表
  *
- *  @return 滤镜名称列表
+ *  @return 内部滤镜名称列表
  */
-+ (NSArray *)filterNames;
++ (NSArray *)internalFilterNames;
+
+/**
+ *  自定义滤镜名称列表
+ *
+ *  @return 内部滤镜名称列表
+ */
++ (NSArray *)customFilterNames;
 
 /**
  *  滤镜管理器
@@ -109,6 +116,15 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
 + (TuSDKFilterManager *)filterManager;
 
 /**
+ *  获取滤镜任务
+ *
+ *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
+ *
+ *  @return 滤镜任务
+ */
++ (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image;
+
+/**
  *  材质资源库文件路径
  *
  *  @param name 文件名
@@ -116,6 +132,20 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
  *  @return 材质资源库文件路径
  */
 + (NSString *)uiBundlePathWithName:(NSString *)name;
+
+/**
+ *  相机对象
+ *
+ *  @param sessionPreset  相机分辨率类型 
+ *  @see AVCaptureSessionPresetPhoto
+ *  @param cameraPosition 相机设备标识 （前置或后置）
+ *  @param cameraView     相机显示容器视图
+ *
+ *  @return 相机对象
+ */
++ (TuSDKStillCamera *)cameraWithSessionPreset:(NSString *)sessionPreset
+                               cameraPosition:(AVCaptureDevicePosition)cameraPosition
+                                   cameraView:(UIView *)view;
 
 /**
  *  获取头像设置组件

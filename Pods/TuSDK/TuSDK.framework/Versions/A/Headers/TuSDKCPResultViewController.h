@@ -29,6 +29,11 @@
 @property (nonatomic, copy) NSString *saveToAlbumName;
 
 /**
+ *  是否有访问系统相册权限
+ */
+@property (nonatomic, readonly) BOOL hasAlbumAccess;
+
+/**
  *  通知处理结果
  *
  *  @param result SDK处理结果

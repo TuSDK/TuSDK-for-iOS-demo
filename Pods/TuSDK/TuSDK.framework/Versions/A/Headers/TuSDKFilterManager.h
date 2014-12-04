@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKFilterWrap.h"
+#import "TuSDKTKFiltersTempTask.h"
 #import "TuSDKTKFiltersSampleTask.h"
 
 /**
@@ -31,6 +32,23 @@
  *  滤镜预览效果列表任务
  */
 @property (nonatomic, readonly) TuSDKTKFiltersSampleTask *samplesTask;
+
+/**
+ *  获取滤镜任务
+ *
+ *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
+ *
+ *  @return 滤镜任务
+ */
+- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image;
+
+/**
+ * 创建滤镜临时预览效果列表任务
+ *
+ * @param image
+ *            输入的图片
+ */
+- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image;
 
 /**
  *  获取滤镜包装对象
