@@ -148,6 +148,26 @@
     TuSDKPFCameraFilterView *_filterView;
 }
 /**
+ *  默认相机控制栏视图类 (默认:TuSDKPFCameraConfigView, 需要继承 TuSDKPFCameraConfigView)
+ */
+@property (nonatomic, strong) Class configBarViewClazz;
+
+/**
+ *  默认相机底部栏视图类 (默认:TuSDKPFCameraBottomView, 需要继承 TuSDKPFCameraBottomView)
+ */
+@property (nonatomic, strong) Class bottomBarViewClazz;
+
+/**
+ *  闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
+ */
+@property (nonatomic, strong) Class flashViewClazz;
+
+/**
+ *  滤镜视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ */
+@property (nonatomic, strong) Class filterViewClazz;
+
+/**
  *  显示图像视图
  */
 @property (nonatomic, readonly) UIView *displayView;
@@ -176,6 +196,11 @@
  *  滤镜视图
  */
 @property (nonatomic, assign) id<TuSDKPFCameraViewDelegate> delegate;
+
+/**
+ *  视频视图显示比例 (默认:0.75f, 0 < cameraViewRatio <= 1)
+ */
+@property (nonatomic) CGFloat cameraViewRatio;
 
 /**
  *  通知系统旋转

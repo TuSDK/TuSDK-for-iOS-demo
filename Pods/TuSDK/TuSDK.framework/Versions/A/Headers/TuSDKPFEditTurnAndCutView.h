@@ -136,6 +136,21 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 @property (nonatomic, readonly) UIButton *backButton;
 
 /**
+ *  旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
+ */
+@property (nonatomic, strong) Class bottomBarViewClazz;
+
+/**
+ *  旋转和裁剪 裁剪区域视图类 (默认:TuSDKPFEditTurnAndCutRegion, 需要继承 TuSDKPFEditTurnAndCutRegion)
+ */
+@property (nonatomic, strong) Class cutRegionViewClazz;
+
+/**
+ *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ */
+@property (nonatomic, strong) Class filterViewClazz;
+
+/**
  *  旋转和裁剪视图控制栏
  */
 @property (nonatomic, readonly) TuSDKPFEditTurnAndCutBottomView *bottomBar;

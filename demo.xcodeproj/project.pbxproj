@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBCC545807A3B0CA100644B /* libPods.a */; };
+		DC3EFA171A3B1F99008673B4 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */; };
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0881A17668F006B6417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC98F0871A17668F006B6417 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		228CA7148CD6AE112449EEB6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBCC545807A3B0CA100644B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		DC98F0771A17668F006B6417 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC98F07B1A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC98F07C1A17668F006B6417 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DC98F0A11A1779C8006B6417 /* DemoRootViewController.m */,
 				DC98F0A21A1779C8006B6417 /* SimpleCameraViewController.h */,
 				DC98F0A31A1779C8006B6417 /* SimpleCameraViewController.m */,
+				DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */,
 				DC98F0871A17668F006B6417 /* Images.xcassets */,
 				DC98F07A1A17668F006B6417 /* Supporting Files */,
 			);
@@ -224,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3EFA171A3B1F99008673B4 /* sample_photo.jpg in Resources */,
 				DC98F0881A17668F006B6417 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

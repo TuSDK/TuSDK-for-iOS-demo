@@ -38,7 +38,7 @@
     UIScrollView *_filterWindow;
     // 滤镜列表名称
     NSArray *_filterNames;
-
+    
     // 照片预览视图
     UIButton *_preview;
 }
@@ -70,12 +70,12 @@
 -(void)viewWillAppear:(BOOL)animated;
 {
     [super viewWillAppear:animated];
-
+    
     // 如果从编辑图片回来，需要隐藏状态栏和导航栏  隐藏状态栏 for IOS6
     [self.navigationController setNavigationBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
-
-
+    
+    
     [self startCamera];
 }
 
@@ -83,21 +83,24 @@
 -(void)startCamera;
 {
     [self destoryCamera];
-
+    
     _camera = [TuSDKStillCamera initWithSessionPreset:AVCaptureSessionPresetHigh
                                        cameraPosition:[AVCaptureDevice firstBackCameraPosition] // AVCaptureDevicePositionBack
                                            cameraView:_cameraView];
     // 设置拍摄委托
     _camera.captureDelegate = self;
-
+    
     // 配置闪光灯视图
     [self configFlashView];
-
+    
     // 可选: 绑定手动聚焦视图, 自动设置视图大小为显示大小
     TuSDKICFocusTouchView *focusView = [TuSDKICFocusTouchView initWithFrame:CGRectZero];
-    focusView.camera = _camera;
     [_camera bindFocusTouchView:focusView];
-
+    // 开启持续自动对焦 (默认: NO)
+    _camera.enableContinueFoucs = YES;
+    // 是否开启长按拍摄 (默认: NO)
+    _camera.enableLongTouchCapture = YES;
+    
     // 启动相机
     [_camera tryStartCameraCapture];
 }
@@ -106,7 +109,7 @@
 - (void)configFlashView;
 {
     if (!_camera) return;
-
+    
     if (_camera.hasFlash) {
         _flashBar.hidden = NO;
         // 设置闪光灯模式
@@ -124,7 +127,7 @@
 - (void)viewDidDisappear:(BOOL)animated;
 {
     [super viewDidDisappear:animated];
-
+    
     [self destoryCamera];
 }
 
@@ -136,7 +139,7 @@
 - (void)onFilterSelected:(UIButton *)sender;
 {
     if (!_camera) return;
-
+    
     [_camera switchFilterWithName:_filterNames[sender.tag]];
 }
 
@@ -148,9 +151,9 @@
 - (void)onSwitchCamera:(UIButton *)sender;
 {
     if (!_camera) return;
-
+    
     [_camera rotateCamera];
-
+    
     // 配置闪光灯视图
     [self configFlashView];
 }
@@ -163,9 +166,9 @@
 - (void)onSwitchFlash:(UIButton *)sender;
 {
     if (!_camera) return;
-
+    
     [_camera flashWithMode: (AVCaptureFlashMode)sender.tag];
-
+    
     for (UIButton * btn in _flashButtons) {
         if ([btn isEqual:sender]) {
             [btn setStateNormalTitleColor:RGB(255, 85, 52)];
@@ -183,8 +186,8 @@
 - (void)onCapturePhoto:(UIButton *)sender;
 {
     if (!_camera) return;
-
-    // 点击拍摄后，访问 - (void)onTuSDKStillCameraCaputorWithResult:(TuSDKCaputorResult *)result error:(NSError *)error;
+    
+    // 点击拍摄后，访问 - (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
     // 方法获取拍摄结果
     [_camera captureImage];
 }
@@ -201,44 +204,49 @@
 }
 #pragma mark - TuSDKStillCameraDelegate
 /**
- *  相机已启动
+ *  相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
+ *
+ *  @param camera 相机对象
+ *  @param state  相机运行状态
  */
-- (void)onTuSDKStillCameraStarted;
+- (void)onCamera:(TuSDKStillCamera *)camera stateChanged:(lsqCameraState)state;
 {
-
+    
 }
 
 /**
- *  获取拍摄图片 （当执行正确时，为异步线程）
+ *  获取拍摄图片 (如需操作UI线程， 请检查当前线程是否为主线程)
  *
- *  @param result 相机拍摄结果
+ *  @param camera 相机对象
+ *  @param result 获取的结果
  *  @param error  错误信息
  */
-- (void)onTuSDKStillCameraCaputorWithResult:(TuSDKResult *)result error:(NSError *)error;
+- (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
 {
     if (error) return;
-
+    
     lsqLDebug(@"Result(%ld): %@",result.image.imageOrientation, NSStringFromCGSize(result.image.size));
     // [_camera resumeCameraCapture];
-
+    
     [self performSelectorOnMainThread:@selector(onPreviewShow:) withObject:result waitUntilDone:YES];
 }
+
 
 // 显示预览视图
 - (void)onPreviewShow:(TuSDKResult *)result;
 {
     [_preview removeAllSubviews];
-
+    
     UIImageView *imgView = [UIImageView initWithFrame:_preview.bounds];
     imgView.backgroundColor = RGB(60, 60, 60);
     imgView.contentMode = UIViewContentModeScaleAspectFit;
-
+    
     UIImage *image = [result.image imageCorpWithRatio:0.75];
     lsqLDebug(@"image: %@", NSStringFromCGSize(image.size));
-
+    
     imgView.image = image;
     [_preview addSubview:imgView];
-
+    
     _preview.alpha = 0;
     _preview.hidden = NO;
     [UIView animateWithDuration:0.32 animations:^{
@@ -254,7 +262,7 @@
     } completion:^(BOOL finished) {
         [_preview removeAllSubviews];
         _preview.hidden = YES;
-
+        
         [_camera resumeCameraCapture];
     }];
 }
@@ -265,27 +273,27 @@
 -(void)viewDidLoad;
 {
     [super viewDidLoad];
-
+    
     self.view = [UIView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
     self.view.backgroundColor = RGB(122, 122, 122);
-
+    
     // 相机视图
     _cameraView = [UIView initWithFrame:self.view.bounds];
     [self.view addSubview:_cameraView];
-
+    
     // 相机配置栏目
     _configBar = [UIView initWithFrame:CGRectMake(0, 0, self.view.getSizeWidth, 44)];
     _configBar.backgroundColor = RGBA(0, 0, 0, 0.5);
     [self.view addSubview:_configBar];
-
+    
     // 下边栏
     _bottomBar = [UIView initWithFrame:CGRectMake(0, self.view.getSizeHeight - 80, self.view.getSizeWidth, 80)];
     _bottomBar.backgroundColor = _configBar.backgroundColor;
     [self.view addSubview:_bottomBar];
-
+    
     // 相机视图高度
     CGFloat cameraHeight = floorf(self.view.getSizeWidth / 0.75);
-
+    
     // 计算屏幕视图布局
     CGFloat reduceHeight = self.view.getSizeHeight - cameraHeight - _configBar.getSizeHeight;
     // 是否超出屏幕总高
@@ -294,33 +302,33 @@
         [_bottomBar setOriginY:self.view.getSizeHeight - reduceHeight];
         _cameraView.frame = CGRectMake(0, _configBar.getBottomY, self.view.getSizeWidth, cameraHeight);
     }
-
+    
     // 取消按钮
     _cancelButton = [UIButton buttonWithFrame:CGRectMake(0, 0, 60, _configBar.getSizeHeight)
                                         title:LSQString(@"lsq_button_close", @"Close") font:FONT(12) color:[UIColor whiteColor]];
-
+    
     [_cancelButton addTouchUpInsideTarget:self action:@selector(onWindowExit:)];
     [_configBar addSubview:_cancelButton];
-
+    
     // 前后摄像头切换按钮
     _switchCameraButton = [UIButton buttonWithFrame:CGRectMake(_configBar.getSizeWidth - 60, 0, 60, _configBar.getSizeHeight)
                                               title:LSQString(@"lsq_button_switch_camera", @"Switch") font:FONT(12) color:[UIColor whiteColor]];
-
+    
     [_switchCameraButton addTouchUpInsideTarget:self action:@selector(onSwitchCamera:)];
     [_configBar addSubview:_switchCameraButton];
-
+    
     // 如果仅有一个摄像头
     _switchCameraButton.hidden = ([AVCaptureDevice cameraCounts] == 0);
-
+    
     // 闪光灯设置视图
     _flashBar = [UIView initWithFrame:CGRectMake(_cancelButton.getRightX, 0, _switchCameraButton.getOriginX - _cancelButton.getRightX, _configBar.getSizeHeight)];
     [_configBar addSubview:_flashBar];
-
+    
     // 闪光灯标题
     UIButton *_flashTitle = [UIButton buttonWithFrame:CGRectMake(0, 0, 40, _configBar.getSizeHeight)
-                                               title:LSQString(@"lsq_button_flash", @"Flash") font:FONT(12) color:[UIColor whiteColor]];
+                                                title:LSQString(@"lsq_button_flash", @"Flash") font:FONT(12) color:[UIColor whiteColor]];
     [_flashBar addSubview:_flashTitle];
-
+    
     // 闪光灯按钮集合
     _flashButtons = [NSMutableArray arrayWithCapacity:3];
     // 闪光灯模式
@@ -331,17 +339,17 @@
         UIButton *btn = [UIButton buttonWithFrame:CGRectMake(left, 0, btnWidth, _configBar.getSizeHeight)
                                             title:@"" font:FONT(12) color:[UIColor whiteColor]];
         left = btn.getRightX;
-
+        
         switch (i) {
-                case 0:
+            case 0:
                 [btn setStateNormalTitle:LSQString(@"lsq_button_flash_model_off", @"off")];
                 btn.tag = AVCaptureFlashModeOff;
                 break;
-                case 1:
+            case 1:
                 [btn setStateNormalTitle:LSQString(@"lsq_button_flash_model_open", @"open")];
                 btn.tag = AVCaptureFlashModeOn;
                 break;
-                case 2:
+            case 2:
                 [btn setStateNormalTitle:LSQString(@"lsq_button_flash_model_auto", @"auto")];
                 btn.tag = AVCaptureFlashModeAuto;
                 break;
@@ -349,15 +357,15 @@
                 break;
         }
         [btn addTouchUpInsideTarget:self action:@selector(onSwitchFlash:)];
-
+        
         if (btn.tag == _flashMode) {
             [btn setStateNormalTitleColor:RGB(255, 85, 52)];
         }
-
+        
         [_flashButtons addObject:btn];
         [_flashBar addSubview:btn];
     }
-
+    
     // 拍摄按钮
     CGFloat capBtnSize = _bottomBar.getSizeHeight - 20;
     _captureButton = [UIButton initWithFrame:CGRectMake([_bottomBar getCenterX:capBtnSize], [_bottomBar getCenterY:capBtnSize], capBtnSize, capBtnSize)];
@@ -366,9 +374,9 @@
     _captureButton.layer.masksToBounds = YES;
     [_captureButton addTouchUpInsideTarget:self action:@selector(onCapturePhoto:)];
     [_bottomBar addSubview:_captureButton];
-
+    
     [self buildFilterWindow];
-
+    
     // 照片预览视图
     _preview = [UIButton initWithFrame:self.view.bounds];
     _preview.hidden = YES;
@@ -385,12 +393,12 @@
     _filterWindow = [UIScrollView initWithFrame:CGRectMake(0, _bottomBar.getOriginY - 44, self.view.getSizeWidth, 44)];
     _filterWindow.backgroundColor = RGBA(0, 0, 0, 0.5);
     [self.view addSubview:_filterWindow];
-
+    
     _filterNames = [TuSDK internalFilterNames];
-
+    
     CGFloat left = 0;
     int index = 0;
-
+    
     for (NSString *title in _filterNames) {
         UIButton *btn = [UIButton buttonWithFrame:CGRectMake(left, 0, 60, _filterWindow.getSizeHeight)
                                             title:title font:FONT(12) color:[UIColor whiteColor]];

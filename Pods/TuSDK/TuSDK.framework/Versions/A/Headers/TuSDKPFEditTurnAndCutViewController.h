@@ -16,7 +16,7 @@
 /**
  *  旋转和裁剪视图控制器委托
  */
-@protocol TuSDKPFEditTurnAndCutDelegate <NSObject>
+@protocol TuSDKPFEditTurnAndCutDelegate <TuSDKCPComponentErrorDelegate>
 /**
  *  图片编辑完成
  *
@@ -52,6 +52,26 @@
  *  旋转和裁剪视图控制器委托
  */
 @property (nonatomic, assign) id<TuSDKPFEditTurnAndCutDelegate> delegate;
+
+/**
+ *  视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)
+ */
+@property (nonatomic, strong) Class viewClazz;
+
+/**
+ *  旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
+ */
+@property (nonatomic, strong) Class bottomBarViewClazz;
+
+/**
+ *  旋转和裁剪 裁剪区域视图类 (默认:TuSDKPFEditTurnAndCutRegion, 需要继承 TuSDKPFEditTurnAndCutRegion)
+ */
+@property (nonatomic, strong) Class cutRegionViewClazz;
+
+/**
+ *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ */
+@property (nonatomic, strong) Class filterViewClazz;
 
 /**
  *  输入的临时文件目录 (处理优先级: inputImage > inputTempFilePath > inputAsset)
@@ -97,11 +117,4 @@
  *  编辑图片完成按钮动作
  */
 - (void)onImageCompleteAtion;
-
-/**
- *  图片编辑处理完成
- *
- *  @param image 返回处理过的图片
- */
-- (void)onEditCompleted:(UIImage *)image;
 @end

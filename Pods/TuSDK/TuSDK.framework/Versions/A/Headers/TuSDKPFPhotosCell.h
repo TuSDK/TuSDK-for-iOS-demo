@@ -64,6 +64,11 @@
  */
 @interface TuSDKPFPhotosCell : TuSDKICTableViewCell
 /**
+ *  表格单元格视图类 (默认:TuSDKPFPhotosGrid, 需要继承 TuSDKPFPhotosGrid)
+ */
+@property (nonatomic, strong) Class gridViewClazz;
+
+/**
  *  网格视图算法
  */
 @property (nonatomic, retain) TuSDKAOCellGridViewAlgorithmic *algorithmic;

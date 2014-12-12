@@ -30,6 +30,7 @@
 
 // album
 "lsq_album_title" = "相簿";
+"lsq_album_empty" = "还没有照片";
 "lsq_album_total_format%ld" = "%ld 张照片";
 "lsq_album_ALAssetsLibraryAccessDefaultError%@" = "相册访问失败(%@)";
 "lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相册访问失败.请在'设置->隐私->照片'设置 %@ 为打开状态.";

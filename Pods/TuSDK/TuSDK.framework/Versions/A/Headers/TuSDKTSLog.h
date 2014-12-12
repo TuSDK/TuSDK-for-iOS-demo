@@ -35,6 +35,16 @@
  *  @param userInfo 详细信息
  */
 - (void)throwWithReason:(NSString *)reason userInfo:(NSDictionary *)userInfo;
+
+/**
+ *  执行主线程方法
+ *
+ *  @param aSelector 方法签名
+ *  @param arg1      参数1
+ *  @param arg2      参数2
+ *  @param wait      是否等待执行完毕
+ */
+- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg1  withObject:(id)arg2 waitUntilDone:(BOOL)wait;
 @end
 
 #pragma mark - TuSDKTSLog

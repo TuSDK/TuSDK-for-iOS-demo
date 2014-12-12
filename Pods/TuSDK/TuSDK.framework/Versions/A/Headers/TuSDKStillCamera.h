@@ -26,25 +26,46 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
      *  内部集成
      */
     lsqCameraStateStarted = 2,
+    /**
+     * 正在拍摄
+     */
+    lsqCameraStateCapturing = 3,
+    /**
+     * 拍摄完成
+     */
+    lsqCameraStateCaptured = 4
 };
+
+/**
+ *  相机聚焦触摸视图
+ */
+@class TuSDKICFocusTouchView;
+
+/**
+ *  相机对象
+ */
+@class TuSDKStillCamera;
 
 /**
  *  相机事件委托
  */
 @protocol TuSDKStillCameraDelegate <NSObject>
 /**
- *  获取拍摄图片 （当执行正确时，为异步线程）
+ *  相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
  *
- *  @param result 相机拍摄结果
+ *  @param camera 相机对象
+ *  @param state  相机运行状态
+ */
+- (void)onCamera:(TuSDKStillCamera *)camera stateChanged:(lsqCameraState)state;
+
+/**
+ *  获取拍摄图片 (如需操作UI线程， 请检查当前线程是否为主线程)
+ *
+ *  @param camera 相机对象
+ *  @param result 获取的结果
  *  @param error  错误信息
  */
-- (void)onTuSDKStillCameraCaputorWithResult:(TuSDKResult *)result error:(NSError *)error;
-
-@optional
-/**
- *  相机已启动
- */
-- (void)onTuSDKStillCameraStarted;
+- (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
 @end
 
 /**
@@ -63,9 +84,34 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic, readonly) lsqCameraState state;
 
 /**
+ *  是否已注册聚焦事件
+ */
+@property (nonatomic) BOOL isResgisterFocusEvent;
+
+/**
  *  是否正在切换滤镜
  */
 @property (nonatomic, readonly) BOOL isFilterChanging;
+
+/**
+ *  是否开启长按拍摄 (默认: NO)
+ */
+@property (nonatomic) BOOL enableLongTouchCapture;
+
+/**
+ *  开启持续自动对焦 (默认: NO)
+ */
+@property (nonatomic) BOOL enableContinueFoucs;
+
+/**
+ *  自动聚焦延时 (默认: 5秒)
+ */
+@property (nonatomic) NSTimeInterval autoFoucsDelay;
+
+/**
+ *  长按延时 (默认: 1.2秒)
+ */
+@property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
  *  初始化相机
@@ -112,7 +158,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *
  *  @param view 聚焦触摸视图
  */
-- (void)bindFocusTouchView:(UIView *)view;
+- (void)bindFocusTouchView:(TuSDKICFocusTouchView *)view;
 
 /**
  *  设置聚焦模式
@@ -174,6 +220,13 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  开始获取照片
  */
 -(void)captureImage;
+
+/**
+ *  当前聚焦状态
+ *
+ *  @param isFocusing 是否正在聚焦
+ */
+- (void)onAdjustingFocus:(BOOL)isFocusing;
 
 /**
  *  销毁

@@ -27,11 +27,52 @@
 @property (nonatomic, retain) UIView<TuSDKICFocusRangeViewProtocol> *rangeView;
 
 /**
+ *  聚焦模式
+ */
+@property (nonatomic) AVCaptureFocusMode focusMode;
+
+/**
+ *  是否开启长按拍摄 (默认: NO)
+ */
+@property (nonatomic) BOOL enableLongTouchCapture;
+
+/**
+ *  开启持续自动对焦 (默认: NO)
+ */
+@property (nonatomic) BOOL enableContinueFoucs;
+
+/**
+ *  自动聚焦延时 (默认: 5秒)
+ */
+@property (nonatomic) NSTimeInterval autoFoucsDelay;
+
+/**
+ *  长按延时 (默认: 1.2秒)
+ */
+@property (nonatomic) NSTimeInterval longTouchDelay;
+
+/**
+ *  相机状态改变
+ *
+ *  @param state 改变
+ */
+- (void)cameraStateChanged:(lsqCameraState)state;
+
+/**
+ *  当前聚焦状态
+ *
+ *  @param isFocusing 是否正在聚焦
+ */
+- (void)onAdjustingFocus:(BOOL)isFocusing;
+
+/**
  *  聚焦点
  *
  *  @param point 聚焦点
+ *
+ *  @return 是否允许聚焦
  */
-- (void)onFocusWithPoint:(CGPoint)point;
+- (BOOL)onFocusWithPoint:(CGPoint)point;
 
 /**
  *  重置聚焦到中心

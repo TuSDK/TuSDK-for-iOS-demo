@@ -17,8 +17,12 @@
 //    _cameraOptions.enableFilters = YES;
 //    // 摄像头前后方向 (默认为前置)
 //    _cameraOptions.cameraPostion = [AVCaptureDevice firstFrontCameraPosition];
-//    // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKCaputorResult.tmpFile)
+//    // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
 //    _cameraOptions.saveToTemp = YES;
+//    // 是否开启长按拍摄 (默认: NO)
+//    _cameraOptions.enableLongTouchCapture = YES;
+//    // 开启持续自动对焦 (默认: NO)
+//    _cameraOptions.enableContinueFoucs = YES;
 //
 //    // 旋转和裁剪视图控制器配置选项
 //    _editTurnAndCutOptions = [TuSDKPFEditTurnAndCutOptions build];

@@ -7,7 +7,7 @@
 //
 
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "TuSDKICViewController.h"
+#import "TuSDKCPViewController.h"
 #import "TuSDKPFPhotosView.h"
 
 @class TuSDKPFPhotosViewController;
@@ -15,7 +15,7 @@
 /**
  *  相册照片列表控制器委托
  */
-@protocol TuSDKPFPhotosDelegate <NSObject>
+@protocol TuSDKPFPhotosDelegate <TuSDKCPComponentErrorDelegate>
 
 /**
  *  选中相片
@@ -29,7 +29,7 @@
 /**
  *  相册照片列表控制器
  */
-@interface TuSDKPFPhotosViewController : TuSDKICViewController<TuSDKPFPhotosCellProtocol>{
+@interface TuSDKPFPhotosViewController : TuSDKCPViewController<TuSDKPFPhotosCellProtocol>{
 @protected
     /**
      *  默认样式视图
@@ -40,6 +40,31 @@
  *  相册照片列表控制器委托
  */
 @property (nonatomic, assign) id<TuSDKPFPhotosDelegate> delegate;
+
+/**
+ *  视图类 (默认:TuSDKPFPhotosView, 需要继承 TuSDKPFPhotosView)
+ */
+@property (nonatomic, strong) Class viewClazz;
+
+/**
+ *  表格行视图类 (默认:TuSDKPFPhotosCell, 需要继承 TuSDKPFPhotosCell)
+ */
+@property (nonatomic, strong) Class cellViewClazz;
+
+/**
+ *  表格单元格视图类 (默认:TuSDKPFPhotosGrid, 需要继承 TuSDKPFPhotosGrid)
+ */
+@property (nonatomic, strong) Class gridViewClazz;
+
+/**
+ *  表格行头部视图类 (默认:TuSDKPFPhotosCellSectionHeader, 需要继承 TuSDKPFPhotosCellSectionHeader)
+ */
+@property (nonatomic, strong) Class cellHeaderViewClazz;
+
+/**
+ *  空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
+ */
+@property (nonatomic, strong) Class emptyViewClazz;
 
 /**
  *  系统相册组

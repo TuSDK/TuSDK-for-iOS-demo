@@ -7,7 +7,7 @@
 //
 
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "TuSDKICViewController.h"
+#import "TuSDKCPViewController.h"
 #import "TuSDKPFAlbumView.h"
 
 @class TuSDKPFAlbumViewController;
@@ -15,7 +15,7 @@
 /**
  *  系统相册委托
  */
-@protocol TuSDKPFAlbumDelegate <NSObject>
+@protocol TuSDKPFAlbumDelegate <TuSDKCPComponentErrorDelegate>
 /**
  *  选中相册组
  *
@@ -28,7 +28,7 @@
 /**
  *  系统相册控制器
  */
-@interface TuSDKPFAlbumViewController : TuSDKICViewController<TuSDKPFAlbumViewProtocol>{
+@interface TuSDKPFAlbumViewController : TuSDKCPViewController<TuSDKPFAlbumViewProtocol>{
     @protected
     /**
      *  默认样式视图
@@ -39,6 +39,21 @@
  *  系统相册委托
  */
 @property (nonatomic, assign) id<TuSDKPFAlbumDelegate> delegate;
+
+/**
+ *  视图类 (默认:TuSDKPFAlbumView, 需要继承 TuSDKPFAlbumView)
+ */
+@property (nonatomic, strong) Class viewClazz;
+
+/**
+ *  表格行视图类 (默认:TuSDKPFAlbumCell, 需要继承 TuSDKPFAlbumCell)
+ */
+@property (nonatomic, strong) Class cellViewClazz;
+
+/**
+ *  空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
+ */
+@property (nonatomic, strong) Class emptyViewClazz;
 
 /**
  *  系统相册列表

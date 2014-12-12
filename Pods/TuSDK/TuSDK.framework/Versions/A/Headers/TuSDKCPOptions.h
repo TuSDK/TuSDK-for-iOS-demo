@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 /**
  *  组件选项
  */
 @interface TuSDKCPOptions : NSObject
+
+/**
+ *  控制器类
+ */
+@property (nonatomic, strong) Class componentClazz;
+
 /**
  *  组件选项
  *
@@ -22,4 +30,18 @@
  *  初始化选项
  */
 - (void)initOptions;
+
+/**
+ *  默认控制器类 (需要实现具体返回类对象)
+ *
+ *  @return 默认控制器类
+ */
+-(Class)defaultComponentClazz;
+
+/**
+ *  组件实例
+ *
+ *  @return 组件实例
+ */
+- (id)componentInstance;
 @end

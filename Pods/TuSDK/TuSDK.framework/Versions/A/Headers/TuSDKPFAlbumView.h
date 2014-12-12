@@ -27,6 +27,16 @@
 @interface TuSDKPFAlbumView : TuSDKICTableView <UITableViewDataSource, UITableViewDelegate>
 
 /**
+ *  表格行视图类 (默认:TuSDKPFAlbumCell, 需要继承 TuSDKPFAlbumCell)
+ */
+@property (nonatomic, strong) Class cellViewClazz;
+
+/**
+ *  空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
+ */
+@property (nonatomic, strong) Class emptyViewClazz;
+
+/**
  *  系统相册列表
  */
 @property (nonatomic, retain) NSArray *groups;
