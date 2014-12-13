@@ -4,7 +4,10 @@
 //
 //  Copyright 2011-2014 Sam Vermette. All rights reserved.
 //
-//  https://github.com/samvermette/TuSDKProgressHUD
+//  https://github.com/samvermette/SVProgressHUD
+//
+//  修改：SVProgressHUD 修改为 TuSDKProgressHUD
+//       SVProgressHUD.bundle 修改为 TuSDKUI.bundle/style_default_hud_*
 //
 
 #import <UIKit/UIKit.h>
