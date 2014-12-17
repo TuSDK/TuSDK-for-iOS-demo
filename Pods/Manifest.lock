@@ -1,6 +1,6 @@
 PODS:
   - GPUImage (0.1.6)
-  - TuSDK (1.1.1):
+  - TuSDK (1.2.0):
     - GPUImage (~> 0.1.6)
 
 DEPENDENCIES:
@@ -8,6 +8,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   GPUImage: cecb0830bb9428f50192042e3c7b53810f51388e
-  TuSDK: f4c6ca3d49e96241f353e795001afb0534d2fa3e
+  TuSDK: 2c7cb69e7989901cca5dcb602aae3424ae7ef90b
 
 COCOAPODS: 0.35.0

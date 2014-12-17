@@ -19,9 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // 设置日志输出级别 (默认不输出)
+    // 可选: 设置日志输出级别 (默认不输出)
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
-    // 初始化滤镜预览图列表 (默认使用 [TuSDK.filterManager configSampleTaskWithSDK])
+    
+    // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
+    [TuSDK initSdkWithAppKey:@"e922e6526eadf559-00"];
+    
+    // 可选: 初始化滤镜预览图列表 (默认使用 [TuSDK.filterManager configSampleTaskWithSDK])
     [TuSDK.filterManager configSampleTaskWithVersion:lasFilterVersion
                                          filterNames:@[@"Normal", @"Artistic", @"Brilliant", @"Cheerful", @"Clear", @"Fade", @"Forest", @"Gloss", @"Harmony", @"Instant", @"Lightup", @"Morning", @"Newborn", @"Noir", @"Relaxed", @"Rough", @"Thick", @"Vintage"]
                                           originPath:[TuSDK uiBundlePathWithName:lasFilterSampleDefaultOriginImage]];
@@ -35,7 +39,6 @@
     [self.window makeKeyAndVisible];
     
     return YES;
-
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

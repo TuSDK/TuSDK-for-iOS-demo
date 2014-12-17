@@ -19,6 +19,7 @@
 #import "TuSDKTSMath.h"
 #import "TuSDKTSMotion.h"
 #import "TuSDKTSScreen+Extend.h"
+#import "TuSDKTSString+Extend.h"
 
 #import "TuSDKICView+Extend.h"
 #import "TuSDKICNavigationController.h"
@@ -87,6 +88,13 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
  */
 
 @interface TuSDK : NSObject
+/**
+ *  初始化SDK
+ *
+ *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+ */
++ (void)initSdkWithAppKey:(NSString *)appkey;
+
 /**
  *  设置日志输出级别
  *

@@ -111,6 +111,13 @@ extern NSString * const kDeviceiPad4G;
 + (NSString *)appBuild;
 
 /**
+ *  应用 Bundle Identifier
+ *
+ *  @return 应用 Bundle Identifier
+ */
++ (NSString *)appIdentifier;
+
+/**
  *  获取WIFI IP地址
  *
  *  @return WIFI IP地址
