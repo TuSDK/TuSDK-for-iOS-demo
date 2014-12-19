@@ -292,6 +292,15 @@
 /**
  *  将输入长宽按最大比例换为实际位置长宽
  *
+ *  @param ratio 长宽比例
+ *
+ *  @return 实际位置长宽  (contents scaled to fit with fixed aspect. remainder is transparent)
+ */
+- (CGRect)convertScaleAspectFitWithRatio:(float)ratio;
+
+/**
+ *  将输入长宽按最大比例换为实际位置长宽
+ *
  *  @param size 长宽
  *
  *  @return 实际位置长宽 (contents scaled to fit with fixed aspect. remainder is transparent)

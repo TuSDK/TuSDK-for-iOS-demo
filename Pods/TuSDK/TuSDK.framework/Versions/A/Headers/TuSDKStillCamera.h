@@ -114,6 +114,21 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
+ *  视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
+ */
+@property (nonatomic) CGFloat cameraViewRatio;
+
+/**
+ *  视频覆盖区域颜色 (默认：[UIColor blackColor])
+ */
+@property (nonatomic, retain) UIColor *regionViewColor;
+
+/**
+ *  照片输出分辨率
+ */
+@property (nonatomic) CGSize outputSize;
+
+/**
  *  初始化相机
  *
  *  @param sessionPreset  相机分辨率类型
@@ -159,6 +174,13 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @param view 聚焦触摸视图
  */
 - (void)bindFocusTouchView:(TuSDKICFocusTouchView *)view;
+
+/**
+ *  改变视频视图显示比例 (使用动画)
+ *
+ *  @param regionRatio 范围比例
+ */
+- (void)changeCameraViewRatio:(CGFloat)cameraViewRatio;
 
 /**
  *  设置聚焦模式

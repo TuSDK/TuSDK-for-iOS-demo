@@ -247,6 +247,15 @@
  */
 @interface UIImage(ImageCorp)
 /**
+ *  输出指定长宽图片，多余将进行裁剪
+ *
+ *  @param size 输出图片长宽
+ *
+ *  @return 指定长宽图片
+ */
+- (UIImage *) imageCorpResizeWithSize:(CGSize)size;
+
+/**
  *  裁剪图片
  *
  *  @param rect 百分比裁剪区域

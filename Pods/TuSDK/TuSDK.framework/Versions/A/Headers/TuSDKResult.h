@@ -56,6 +56,11 @@
 @property (nonatomic) CGSize cutSize;
 
 /**
+ *  图片比例
+ */
+@property (nonatomic) float imageRatio;
+
+/**
  *  SDK处理结果
  *
  *  @return SDK处理结果

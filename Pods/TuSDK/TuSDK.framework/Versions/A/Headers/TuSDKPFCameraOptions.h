@@ -66,7 +66,7 @@
 @property (nonatomic) BOOL enableFilters;
 
 /**
- *  视频视图显示比例 (默认:0.75f, 0 < cameraViewRatio <= 1)
+ *  视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
  */
 @property (nonatomic) CGFloat cameraViewRatio;
 
@@ -89,6 +89,21 @@
  *  长按延时 (默认: 1.2秒)
  */
 @property (nonatomic) NSTimeInterval longTouchDelay;
+
+/**
+ *  视频覆盖区域颜色 (默认：[UIColor blackColor])
+ */
+@property (nonatomic, retain) UIColor *regionViewColor;
+
+/**
+ *  照片输出分辨率
+ */
+@property (nonatomic) CGSize outputSize;
+
+/**
+ *  开启用户手动设置屏幕比例
+ */
+@property (nonatomic) BOOL enableManualRatio;
 
 /**
  *  创建系统相机控制器对象

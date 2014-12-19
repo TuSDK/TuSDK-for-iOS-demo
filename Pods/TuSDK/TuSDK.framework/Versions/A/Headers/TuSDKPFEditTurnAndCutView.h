@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKPFCameraFilterView.h"
+#import "TuSDKICCutRegionView.h"
 
 /**
  *  图片方向改变
@@ -35,40 +36,6 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
      */
     lsqImageChangeMirrorVertical        = 1 << 3
 };
-
-#pragma mark - TuSDKPFEditTurnAndCutRegion
-/**
- *  旋转和裁剪 裁剪区域视图
- */
-@interface TuSDKPFEditTurnAndCutRegion: UIView{
-    // 选区信息
-    CGRect _regionRect;
-}
-/**
- *  区域长宽
- */
-@property (nonatomic) CGSize regionSize;
-
-/**
- *  选区信息
- */
-@property (nonatomic, readonly) CGRect regionRect;
-
-/**
- *  边缘覆盖区域颜色 (默认:RGBA(0, 0, 0, 0.5))
- */
-@property (nonatomic, retain) UIColor *edgeMaskColor;
-
-/**
- *  边缘线颜色 (默认:RGBA(255, 255, 255, 0.5))
- */
-@property (nonatomic, retain) UIColor *edgeSideColor;
-
-/**
- *  边缘线宽度 (默认:2)
- */
-@property (nonatomic) CGFloat edgeSideWidth;
-@end
 
 #pragma mark - TuSDKPFEditTurnAndCutBottomView
 /**
@@ -117,7 +84,7 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
     // 旋转和裁剪视图控制栏
     TuSDKPFEditTurnAndCutBottomView *_bottomBar;
     // 旋转和裁剪 裁剪区域视图
-    TuSDKPFEditTurnAndCutRegion *_cutRegionView;
+    TuSDKICCutRegionView *_cutRegionView;
     // 滤镜视图
     TuSDKPFCameraFilterView *_filterView;
     // 包装视图
@@ -158,7 +125,7 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 /**
  *  旋转和裁剪 裁剪区域视图
  */
-@property (nonatomic, readonly) TuSDKPFEditTurnAndCutRegion *cutRegionView;
+@property (nonatomic, readonly) TuSDKICCutRegionView *cutRegionView;
 
 /**
  *  滤镜列表视图

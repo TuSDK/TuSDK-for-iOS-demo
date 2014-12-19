@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TuSDKStillCamera.h"
 #import "TuSDKICFocusRangeView.h"
+#import "TuSDKICCutRegionView.h"
 
 /**
  *  相机聚焦触摸视图
@@ -25,6 +26,11 @@
  *  聚焦视图 (如果不设定，将使用 TuSDKICFocusRangeView)
  */
 @property (nonatomic, retain) UIView<TuSDKICFocusRangeViewProtocol> *rangeView;
+
+/**
+ *  裁剪区域视图 (如果不设定，将使用 TuSDKICCutRegionView)
+ */
+@property (nonatomic, retain) TuSDKICCutRegionView *cutRegionView;
 
 /**
  *  聚焦模式
@@ -52,11 +58,28 @@
 @property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
+ *  区域长宽比例
+ */
+@property (nonatomic) CGFloat regionRatio;
+
+/**
+ *  视频覆盖区域颜色 (默认：[UIColor blackColor])
+ */
+@property (nonatomic, retain) UIColor *regionViewColor;
+
+/**
  *  相机状态改变
  *
  *  @param state 改变
  */
 - (void)cameraStateChanged:(lsqCameraState)state;
+
+/**
+ *  改变范围比例 (使用动画)
+ *
+ *  @param regionRatio 范围比例
+ */
+- (void)changeRegionRatio:(CGFloat)regionRatio;
 
 /**
  *  当前聚焦状态

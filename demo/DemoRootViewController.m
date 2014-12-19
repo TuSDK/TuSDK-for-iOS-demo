@@ -318,7 +318,7 @@
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
     
-    // 视频视图显示比例 (默认:0.75f, 0 < cameraViewRatio <= 1)
+    // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
     
     // 是否开启长按拍摄 (默认: NO)
@@ -344,6 +344,15 @@
     
     // 照片输出压缩率 0-1 如果设置为0 将保存为PNG格式 (默认: 0.95)
     // opt.outputCompress = 0.95f;
+    
+    // 视频覆盖区域颜色 (默认：[UIColor clearColor])
+    opt.regionViewColor = RGB(51, 51, 51);
+    
+    // 照片输出分辨率
+    // opt.outputSize = CGSizeMake(1440, 1920);
+    
+    // 开启用户手动设置屏幕比例
+    opt.enableManualRatio = YES;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托

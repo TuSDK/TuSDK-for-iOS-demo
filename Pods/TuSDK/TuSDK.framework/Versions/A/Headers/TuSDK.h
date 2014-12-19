@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "TuSDKTSALAssets+Extend.h"
+#import "TuSDKTSAnimation.h"
 #import "TuSDKTSAVAudioPlayer+Extend.h"
 #import "TuSDKTSAVCaptureDevice+Extend.h"
 #import "TuSDKTSDate+Extend.h"

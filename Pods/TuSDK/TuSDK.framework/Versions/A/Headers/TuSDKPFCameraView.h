@@ -68,6 +68,8 @@
     UIButton *_flashButton;
     // 前后摄像头切换按钮
     UIButton *_switchButton;
+    // 屏幕比例按钮
+    UIButton *_ratioButton;
 }
 /**
  *  关闭按钮
@@ -85,9 +87,21 @@
 @property (nonatomic, readonly) UIButton *switchButton;
 
 /**
+ *  屏幕比例按钮
+ */
+@property (nonatomic, readonly) UIButton *ratioButton;
+
+/**
  *  闪光灯模式
  */
 @property (nonatomic) AVCaptureFlashMode flashMode;
+
+/**
+ *  改变相机比例
+ *
+ *  @return 需要改变的比例
+ */
+- (float)changeRatio;
 @end
 
 #pragma mark - TuSDKPFCameraConfigView

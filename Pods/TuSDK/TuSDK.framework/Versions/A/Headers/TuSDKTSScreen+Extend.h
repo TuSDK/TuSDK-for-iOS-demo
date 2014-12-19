@@ -59,6 +59,13 @@ extern CGFloat const lsq_TAB_BAR_HEIGHT;
 + (CGFloat)height;
 
 /**
+ *  最小边与最大边屏幕比例
+ *
+ *  @return 最小边与最大边屏幕比例
+ */
++ (CGFloat)minScreenRatio;
+
+/**
  *  最小视图高度
  *
  *  @return 最小视图高度 (去除状态栏，导航栏，Tab栏高度)

@@ -283,25 +283,11 @@
     
     // 相机配置栏目
     _configBar = [UIView initWithFrame:CGRectMake(0, 0, self.view.getSizeWidth, 44)];
-    _configBar.backgroundColor = RGBA(0, 0, 0, 0.5);
     [self.view addSubview:_configBar];
     
     // 下边栏
     _bottomBar = [UIView initWithFrame:CGRectMake(0, self.view.getSizeHeight - 80, self.view.getSizeWidth, 80)];
-    _bottomBar.backgroundColor = _configBar.backgroundColor;
     [self.view addSubview:_bottomBar];
-    
-    // 相机视图高度
-    CGFloat cameraHeight = floorf(self.view.getSizeWidth / 0.75);
-    
-    // 计算屏幕视图布局
-    CGFloat reduceHeight = self.view.getSizeHeight - cameraHeight - _configBar.getSizeHeight;
-    // 是否超出屏幕总高
-    if (reduceHeight >= _bottomBar.getSizeHeight) {
-        [_bottomBar setSizeHeight:reduceHeight];
-        [_bottomBar setOriginY:self.view.getSizeHeight - reduceHeight];
-        _cameraView.frame = CGRectMake(0, _configBar.getBottomY, self.view.getSizeWidth, cameraHeight);
-    }
     
     // 取消按钮
     _cancelButton = [UIButton buttonWithFrame:CGRectMake(0, 0, 60, _configBar.getSizeHeight)
