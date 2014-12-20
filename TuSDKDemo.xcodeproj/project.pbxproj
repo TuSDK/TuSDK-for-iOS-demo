@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBCC545807A3B0CA100644B /* libPods.a */; };
-		DC3EFA171A3B1F99008673B4 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */; };
+		DC8851B11A45221000839674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8851AF1A45221000839674 /* Images.xcassets */; };
+		DC8851B21A45221000839674 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC8851B01A45221000839674 /* sample_photo.jpg */; };
+		DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8851B51A45221700839674 /* DemoRootViewController.m */; };
+		DC8851B91A45221700839674 /* SimpleCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8851B71A45221700839674 /* SimpleCameraViewController.m */; };
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
-		DC98F0881A17668F006B6417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC98F0871A17668F006B6417 /* Images.xcassets */; };
-		DC98F0971A17668F006B6417 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* demoTests.m */; };
-		DC98F0A41A1779C8006B6417 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0A11A1779C8006B6417 /* DemoRootViewController.m */; };
-		DC98F0A51A1779C8006B6417 /* SimpleCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0A31A1779C8006B6417 /* SimpleCameraViewController.m */; };
+		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,27 +23,27 @@
 			containerPortal = DC98F06F1A17668F006B6417 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC98F0761A17668F006B6417;
-			remoteInfo = demo;
+			remoteInfo = TuSDKDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		228CA7148CD6AE112449EEB6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBCC545807A3B0CA100644B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
-		DC98F0771A17668F006B6417 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8851AF1A45221000839674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC8851B01A45221000839674 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
+		DC8851B41A45221700839674 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
+		DC8851B51A45221700839674 /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
+		DC8851B61A45221700839674 /* SimpleCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCameraViewController.h; sourceTree = "<group>"; };
+		DC8851B71A45221700839674 /* SimpleCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCameraViewController.m; sourceTree = "<group>"; };
+		DC98F0771A17668F006B6417 /* TuSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC98F07B1A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC98F07C1A17668F006B6417 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC98F07E1A17668F006B6417 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC98F07F1A17668F006B6417 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC98F0871A17668F006B6417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DC98F0901A17668F006B6417 /* demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC98F0901A17668F006B6417 /* TuSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC98F0951A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC98F0961A17668F006B6417 /* demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoTests.m; sourceTree = "<group>"; };
-		DC98F0A01A1779C8006B6417 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
-		DC98F0A11A1779C8006B6417 /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
-		DC98F0A21A1779C8006B6417 /* SimpleCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCameraViewController.h; sourceTree = "<group>"; };
-		DC98F0A31A1779C8006B6417 /* SimpleCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCameraViewController.m; sourceTree = "<group>"; };
+		DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuSDKDemoTests.m; sourceTree = "<group>"; };
 		E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,11 +75,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC8851AE1A45221000839674 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC8851AF1A45221000839674 /* Images.xcassets */,
+				DC8851B01A45221000839674 /* sample_photo.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC8851B31A45221700839674 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DC8851B41A45221700839674 /* DemoRootViewController.h */,
+				DC8851B51A45221700839674 /* DemoRootViewController.m */,
+				DC8851B61A45221700839674 /* SimpleCameraViewController.h */,
+				DC8851B71A45221700839674 /* SimpleCameraViewController.m */,
+			);
+			name = Source;
+			path = TuSDKDemo/Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		DC98F06E1A17668F006B6417 = {
 			isa = PBXGroup;
 			children = (
-				DC98F0791A17668F006B6417 /* demo */,
-				DC98F0931A17668F006B6417 /* demoTests */,
+				DC98F0791A17668F006B6417 /* TuSDKDemo */,
+				DC98F0931A17668F006B6417 /* TuSDKDemoTests */,
 				DC98F0781A17668F006B6417 /* Products */,
 				B66A6416D1004F1E615D97F3 /* Pods */,
 				DD26EFB9BE3EABB13D356AAE /* Frameworks */,
@@ -89,26 +110,22 @@
 		DC98F0781A17668F006B6417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC98F0771A17668F006B6417 /* demo.app */,
-				DC98F0901A17668F006B6417 /* demoTests.xctest */,
+				DC98F0771A17668F006B6417 /* TuSDKDemo.app */,
+				DC98F0901A17668F006B6417 /* TuSDKDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC98F0791A17668F006B6417 /* demo */ = {
+		DC98F0791A17668F006B6417 /* TuSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
 				DC98F07E1A17668F006B6417 /* AppDelegate.h */,
 				DC98F07F1A17668F006B6417 /* AppDelegate.m */,
-				DC98F0A01A1779C8006B6417 /* DemoRootViewController.h */,
-				DC98F0A11A1779C8006B6417 /* DemoRootViewController.m */,
-				DC98F0A21A1779C8006B6417 /* SimpleCameraViewController.h */,
-				DC98F0A31A1779C8006B6417 /* SimpleCameraViewController.m */,
-				DC3EFA161A3B1F99008673B4 /* sample_photo.jpg */,
-				DC98F0871A17668F006B6417 /* Images.xcassets */,
+				DC8851B31A45221700839674 /* Source */,
+				DC8851AE1A45221000839674 /* Resources */,
 				DC98F07A1A17668F006B6417 /* Supporting Files */,
 			);
-			path = demo;
+			path = TuSDKDemo;
 			sourceTree = "<group>";
 		};
 		DC98F07A1A17668F006B6417 /* Supporting Files */ = {
@@ -120,13 +137,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DC98F0931A17668F006B6417 /* demoTests */ = {
+		DC98F0931A17668F006B6417 /* TuSDKDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC98F0961A17668F006B6417 /* demoTests.m */,
+				DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */,
 				DC98F0941A17668F006B6417 /* Supporting Files */,
 			);
-			path = demoTests;
+			path = TuSDKDemoTests;
 			sourceTree = "<group>";
 		};
 		DC98F0941A17668F006B6417 /* Supporting Files */ = {
@@ -148,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC98F0761A17668F006B6417 /* demo */ = {
+		DC98F0761A17668F006B6417 /* TuSDKDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC98F09A1A17668F006B6417 /* Build configuration list for PBXNativeTarget "demo" */;
+			buildConfigurationList = DC98F09A1A17668F006B6417 /* Build configuration list for PBXNativeTarget "TuSDKDemo" */;
 			buildPhases = (
 				1A68D01286EF175494A09D66 /* Check Pods Manifest.lock */,
 				DC98F0731A17668F006B6417 /* Sources */,
@@ -162,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = demo;
-			productName = demo;
-			productReference = DC98F0771A17668F006B6417 /* demo.app */;
+			name = TuSDKDemo;
+			productName = TuSDKDemo;
+			productReference = DC98F0771A17668F006B6417 /* TuSDKDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC98F08F1A17668F006B6417 /* demoTests */ = {
+		DC98F08F1A17668F006B6417 /* TuSDKDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC98F09D1A17668F006B6417 /* Build configuration list for PBXNativeTarget "demoTests" */;
+			buildConfigurationList = DC98F09D1A17668F006B6417 /* Build configuration list for PBXNativeTarget "TuSDKDemoTests" */;
 			buildPhases = (
 				DC98F08C1A17668F006B6417 /* Sources */,
 				DC98F08D1A17668F006B6417 /* Frameworks */,
@@ -180,9 +197,9 @@
 			dependencies = (
 				DC98F0921A17668F006B6417 /* PBXTargetDependency */,
 			);
-			name = demoTests;
-			productName = demoTests;
-			productReference = DC98F0901A17668F006B6417 /* demoTests.xctest */;
+			name = TuSDKDemoTests;
+			productName = TuSDKDemoTests;
+			productReference = DC98F0901A17668F006B6417 /* TuSDKDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = idealhack;
+				ORGANIZATIONNAME = Lasque;
 				TargetAttributes = {
 					DC98F0761A17668F006B6417 = {
 						CreatedOnToolsVersion = 6.1;
@@ -203,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC98F0721A17668F006B6417 /* Build configuration list for PBXProject "demo" */;
+			buildConfigurationList = DC98F0721A17668F006B6417 /* Build configuration list for PBXProject "TuSDKDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC98F0761A17668F006B6417 /* demo */,
-				DC98F08F1A17668F006B6417 /* demoTests */,
+				DC98F0761A17668F006B6417 /* TuSDKDemo */,
+				DC98F08F1A17668F006B6417 /* TuSDKDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,8 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3EFA171A3B1F99008673B4 /* sample_photo.jpg in Resources */,
-				DC98F0881A17668F006B6417 /* Images.xcassets in Resources */,
+				DC8851B11A45221000839674 /* Images.xcassets in Resources */,
+				DC8851B21A45221000839674 /* sample_photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */,
-				DC98F0A51A1779C8006B6417 /* SimpleCameraViewController.m in Sources */,
+				DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */,
+				DC8851B91A45221700839674 /* SimpleCameraViewController.m in Sources */,
 				DC98F07D1A17668F006B6417 /* main.m in Sources */,
-				DC98F0A41A1779C8006B6417 /* DemoRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC98F0971A17668F006B6417 /* demoTests.m in Sources */,
+				DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +316,7 @@
 /* Begin PBXTargetDependency section */
 		DC98F0921A17668F006B6417 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC98F0761A17668F006B6417 /* demo */;
+			target = DC98F0761A17668F006B6417 /* TuSDKDemo */;
 			targetProxy = DC98F0911A17668F006B6417 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -339,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -386,9 +403,11 @@
 			baseConfigurationReference = 228CA7148CD6AE112449EEB6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = demo/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TuSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TuSDKDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -397,9 +416,11 @@
 			baseConfigurationReference = E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = demo/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TuSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TuSDKDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -415,10 +436,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = demoTests/Info.plist;
+				INFOPLIST_FILE = TuSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
+				PRODUCT_NAME = TuSDKDemoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuSDKDemo.app/TuSDKDemo";
 			};
 			name = Debug;
 		};
@@ -430,17 +451,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = demoTests/Info.plist;
+				INFOPLIST_FILE = TuSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
+				PRODUCT_NAME = TuSDKDemoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuSDKDemo.app/TuSDKDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC98F0721A17668F006B6417 /* Build configuration list for PBXProject "demo" */ = {
+		DC98F0721A17668F006B6417 /* Build configuration list for PBXProject "TuSDKDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC98F0981A17668F006B6417 /* Debug */,
@@ -449,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC98F09A1A17668F006B6417 /* Build configuration list for PBXNativeTarget "demo" */ = {
+		DC98F09A1A17668F006B6417 /* Build configuration list for PBXNativeTarget "TuSDKDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC98F09B1A17668F006B6417 /* Debug */,
@@ -458,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC98F09D1A17668F006B6417 /* Build configuration list for PBXNativeTarget "demoTests" */ = {
+		DC98F09D1A17668F006B6417 /* Build configuration list for PBXNativeTarget "TuSDKDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC98F09E1A17668F006B6417 /* Debug */,

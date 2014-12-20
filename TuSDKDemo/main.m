@@ -1,9 +1,9 @@
 //
 //  main.m
-//  demo
+//  TuSDKDemo
 //
-//  Created by idealhack on 14/11/15.
-//  Copyright (c) 2014年 idealhack. All rights reserved.
+//  Created by Clear Hu on 14/10/27.
+//  Copyright (c) 2014年 Lasque. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

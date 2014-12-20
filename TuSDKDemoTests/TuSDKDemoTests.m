@@ -1,6 +1,6 @@
 //
-//  demoTests.m
-//  demoTests
+//  TuSDKDemoTests.m
+//  TuSDKDemoTests
 //
 //  Created by idealhack on 14/11/15.
 //  Copyright (c) 2014年 idealhack. All rights reserved.
