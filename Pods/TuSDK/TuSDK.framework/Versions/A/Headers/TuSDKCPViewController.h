@@ -49,4 +49,9 @@
  *  @param result 处理结果
  */
 - (void)notifyErrorType:(lsqCPErrorType)errorType result:(TuSDKResult *)result;
+
+/**
+ *  创建默认样式视图 (如需创建自定义视图，请覆盖该方法，并创建自己的视图类)
+ */
+- (void)buildDefaultStyleView;
 @end

@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "TuSDKTSNSMutableDictionary+ImageMetadata.h"
+#import "TuSDKRatioType.h"
+#import "TuSDKFilterWrap.h"
 
 /**
  *  SDK处理结果
@@ -21,29 +23,24 @@
 @property (nonatomic, retain) NSMutableDictionary *metadata;
 
 /**
- *  临时文件路径
- */
-@property (nonatomic, copy) NSString *tempFilePath;
-
-/**
  *  图片方向
  */
 @property (nonatomic) UIImageOrientation imageOrientation;
 
 /**
- *  滤镜名称
+ *  获取的图片对象 (为保证内存使用空间, 当保存图片到系统相册或临时文件时，image对象会被清理)
  */
-@property (nonatomic, copy) NSString *filterName;
+@property (nonatomic, retain) UIImage *image;
+
+/**
+ *  临时文件路径
+ */
+@property (nonatomic, copy) NSString *imagePath;
 
 /**
  *  相册图片对象
  */
-@property (nonatomic, retain) ALAsset *asset;
-
-/**
- *  获取的图片对象 (为保证内存使用空间, 当保存图片到系统相册或临时文件时，image对象会被清理)
- */
-@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, retain) ALAsset *imageAsset;
 
 /**
  *  裁剪区域
@@ -56,9 +53,34 @@
 @property (nonatomic) CGSize cutSize;
 
 /**
+ *  裁切时缩放
+ */
+@property (nonatomic) CGFloat cutScale;
+
+/**
+ *  裁剪比例类型
+ */
+@property (nonatomic) lsqRatioType cutRatioType;
+
+/**
  *  图片比例
  */
-@property (nonatomic) float imageRatio;
+@property (nonatomic) CGFloat imageRatio;
+
+/**
+ *  滤镜名称
+ */
+@property (nonatomic, copy) NSString *filterName;
+
+/**
+ *  当前所使用的滤镜
+ */
+@property (nonatomic, retain) TuSDKFilterWrap *filterWrap;
+
+/**
+ *  贴纸列表
+ */
+@property (nonatomic, retain) NSArray *stickers;
 
 /**
  *  SDK处理结果

@@ -7,6 +7,7 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
+#import "TuSDKRatioType.h"
 #import "TuSDKCPResultOptions.h"
 #import "TuSDKPFCameraViewController.h"
 
@@ -66,9 +67,29 @@
 @property (nonatomic) BOOL enableFilters;
 
 /**
+ *  默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
+ */
+@property (nonatomic) BOOL showFilterDefault;
+
+/**
+ *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ */
+@property (nonatomic, retain) NSArray *filterGroup;
+
+/**
+ *  开启滤镜配置选项
+ */
+@property (nonatomic) BOOL enableFilterConfig;
+
+/**
  *  视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
  */
 @property (nonatomic) CGFloat cameraViewRatio;
+
+/**
+ *  视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+ */
+@property (nonatomic) lsqRatioType ratioType;
 
 /**
  *  是否开启长按拍摄 (默认: NO)
@@ -99,11 +120,6 @@
  *  照片输出分辨率
  */
 @property (nonatomic) CGSize outputSize;
-
-/**
- *  开启用户手动设置屏幕比例
- */
-@property (nonatomic) BOOL enableManualRatio;
 
 /**
  *  创建系统相机控制器对象

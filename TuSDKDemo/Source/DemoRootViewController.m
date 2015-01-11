@@ -59,7 +59,7 @@
     _demos = @[@"1-1 快速自定义相机",
                @"2-1 相册组件", @"2-2 相机组件",
                @"2-3 图片编辑组件", @"2-4 图片编辑组件 (裁剪)",
-               @"3-1 头像设置组件"];
+               @"3-1 头像设置组件", @"4-1 高级图片编辑组件"];
     
     // 表格视图
     _tableView = [TuSDKICTableView table];
@@ -106,10 +106,14 @@
 
 #pragma mark - DemoRootViewController
 
-@interface DemoRootViewController ()<DemoChooseDelegate, TuSDKPFAlbumDelegate, TuSDKPFPhotosDelegate, TuSDKPFCameraDelegate, TuSDKPFEditTurnAndCutDelegate>
+@interface DemoRootViewController ()<DemoChooseDelegate, TuSDKPFCameraDelegate, TuSDKPFEditTurnAndCutDelegate>
 {
+    // 自定义系统相册组件
+    TuSDKCPAlbumComponent *_albumComponent;
     // 头像设置组件
     TuSDKCPAvatarComponent *_avatarComponent;
+    // 图片编辑组件
+    TuSDKCPPhotoEditComponent *_photoEditComponent;
 }
 /**
  *  覆盖控制器视图
@@ -128,6 +132,19 @@
     self.view.delegate = self;
 }
 
+/**
+ *  清楚所有控件
+ */
+- (void)clearComponents;
+{
+    // 自定义系统相册组件
+    _albumComponent = nil;
+    // 头像设置组件
+    _avatarComponent = nil;
+    // 图片编辑组件
+    _photoEditComponent = nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -142,6 +159,7 @@
  */
 - (void)onDemoChoosedWithIndex:(NSInteger)index;
 {
+    [self clearComponents];
     switch (index) {
         case 0:
             // 1-1 快速自定义相机
@@ -167,7 +185,10 @@
             // 3-1 头像设置组件
             [self avatarComponentHandler];
             break;
-            
+        case 6:
+            // 4-1 高级图片编辑组件
+            [self editAdvancedComponentHandler];
+            break;
         default:
             break;
     }
@@ -188,25 +209,7 @@
  */
 - (void) albumComponentHandler;
 {
-    // 需要检测是否拥有相册读取权限
-    [[ALAssetsLibrary defaultLibrary] getGroupsWithBlock:^(NSArray *groups, NSError *error) {
-        if (error) {
-            [ALAssetsLibrary showAlertWithLoadFailure:error];
-            return;
-        }
-        lsqLDebug(@"albumComponentHandler: %ld", (long)groups.count);
-        [self showAlbumWithGroups:groups];
-    }];
-}
-
-/**
- *  显示系统相册列表
- *
- *  @param groups 系统相册组列表
- */
-- (void)showAlbumWithGroups:(NSArray *)groups;
-{
-    TuSDKPFAlbumOptions *opt = [TuSDKPFAlbumOptions build];
+    // TuSDKPFAlbumOptions *opt = _component.options.albumOptions;
     
     // 视图类 (默认:TuSDKPFAlbumView, 需要继承 TuSDKPFAlbumView)
     // opt.viewClazz = [TuSDKPFAlbumView class];
@@ -223,23 +226,7 @@
     // 需要自动跳转到相册组名称 (需要设定 autoSkipToPhotoList = YES)
     // opt.skipAlbumName = @"相机胶卷";
     
-    TuSDKPFAlbumViewController *controller = opt.viewController;
-    controller.delegate = self;
-    controller.groups = groups;
-    // 开启相册列表
-    [self presentModalNavigationController:controller animated:YES];;
-}
-
-#pragma mark - albumComponentHandler TuSDKPFAlbumDelegate
-/**
- *  选中相册组
- *
- *  @param controller 系统相册控制器
- *  @param group 相册组
- */
-- (void)onTuSDKPFAlbum:(TuSDKPFAlbumViewController *)controller selectedGroup:(ALAssetsGroup *)group;
-{
-    TuSDKPFPhotosOptions *opt = [TuSDKPFPhotosOptions build];
+    // TuSDKPFPhotosOptions *opt = _component.options.photosOptions;
     // 视图类 (默认:TuSDKPFPhotosView, 需要继承 TuSDKPFPhotosView)
     // opt.viewClazz = [TuSDKPFPhotosView class];
     
@@ -255,24 +242,23 @@
     // 空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
     // opt.emptyViewClazz = [TuSDKPFEmptyView class];
     
-    TuSDKPFPhotosViewController *photosController = opt.viewController;
-    photosController.delegate = self;
-    photosController.group = group;
-    // 开启相片列表
-    [controller pushViewController:photosController animated:YES];
-}
-
-#pragma mark - TuSDKPFPhotosDelegate
-/**
- *  选中相片
- *
- *  @param controller 相册照片列表控制器
- *  @param asset      相片
- */
-- (void)onTuSDKPFPhotos:(TuSDKPFPhotosViewController *)controller selectedAsset:(ALAsset *)asset;
-{
-    [controller dismissModalViewControllerAnimated:YES];
-    lsqLDebug(@"onTuSDKPFPhotos: %@", asset);
+    lsqLDebug(@"avatarComponentHandler");
+    _albumComponent =
+    [TuSDK albumCommponentWithController:self
+                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+     {
+         [self clearComponents];
+         // 获取头像图片
+         if (error) {
+             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             return;
+         }
+         if (controller) {
+             [controller dismissModalViewControllerAnimated];
+         }
+         [result logInfo];
+     }];
+    [_albumComponent showComponent];
 }
 
 #pragma mark - cameraComponentHandler
@@ -318,8 +304,14 @@
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
     
+    // 默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
+    opt.showFilterDefault = YES;
+    
     // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
+    
+    // 视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+    opt.ratioType = lsqRatioAll;
     
     // 是否开启长按拍摄 (默认: NO)
     opt.enableLongTouchCapture = YES;
@@ -350,9 +342,6 @@
     
     // 照片输出分辨率
     // opt.outputSize = CGSizeMake(1440, 1920);
-    
-    // 开启用户手动设置屏幕比例
-    opt.enableManualRatio = YES;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
@@ -387,8 +376,8 @@
     // 旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
     // opt.bottomBarViewClazz = [TuSDKPFEditTurnAndCutBottomView class];
     
-    // 旋转和裁剪 裁剪区域视图类 (默认:TuSDKPFEditTurnAndCutRegion, 需要继承 TuSDKPFEditTurnAndCutRegion)
-    // opt.cutRegionViewClazz = [TuSDKPFEditTurnAndCutRegion class];
+    // 图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
+    // opt.editImageViewClazz = [TuSDKPFEditImageView class];
     
     // 滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
     // opt.filterViewClazz = [TuSDKPFCameraFilterView class];
@@ -436,6 +425,31 @@
  */
 - (void) editAndCutComponentHandler;
 {
+    _albumComponent =
+    [TuSDK albumCommponentWithController:self
+                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+     {
+         // 获取头像图片
+         if (error) {
+             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             return;
+         }
+         [self openEditAndCutWithController:controller result:result];
+     }];
+    [_albumComponent showComponent];
+}
+
+/**
+ *  开启图片编辑组件 (裁剪)
+ *
+ *  @param controller 来源控制器
+ *  @param result     处理结果
+ */
+- (void)openEditAndCutWithController:(UIViewController *)controller
+                              result:(TuSDKResult *)result;
+{
+    if (!controller || !result) return;
+    
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 是否开启滤镜支持 (默认: 关闭)
@@ -453,14 +467,16 @@
     // 保存到系统相册的相册名称
     // opt.saveToAlbumName = @"TuSdk";
     
-    TuSDKPFEditTurnAndCutViewController *controller = opt.viewController;
+    TuSDKPFEditTurnAndCutViewController *tcController = opt.viewController;
     // 添加委托
-    controller.delegate = self;
+    tcController.delegate = self;
     
     // 处理图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
-    controller.inputImage = [UIImage imageNamed:@"sample_photo.jpg"];
+    tcController.inputImage = result.image;
+    tcController.inputTempFilePath = result.imagePath;
+    tcController.inputAsset = result.imageAsset;
     
-    [self presentModalNavigationController:controller animated:YES];
+    [controller.navigationController pushViewController:tcController animated:YES];
 }
 #pragma mark - editComponentHandler TuSDKPFEditTurnAndCutDelegate
 /**
@@ -471,9 +487,8 @@
  */
 - (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
 {
-    if (!controller.showResultPreview) {
-        [controller dismissModalViewControllerAnimated];
-    }
+    [self clearComponents];
+    [controller dismissModalViewControllerAnimated];
     lsqLDebug(@"onTuSDKPFEditTurnAndCut: %@", result);
 }
 #pragma mark - avatarComponentHandler
@@ -483,17 +498,109 @@
 - (void) avatarComponentHandler;
 {
     lsqLDebug(@"avatarComponentHandler");
-    _avatarComponent = [TuSDK avatarCommponentWithController:self callbackBlock:^(TuSDKResult *result, NSError *error) {
-        // 获取头像图片
-        if (error) {
-            [self throwWithReason:@"avatar reader error" userInfo:error.userInfo];
-            return;
-        }
-        [result logInfo];
-    }];
+    _avatarComponent =
+    [TuSDK avatarCommponentWithController:self
+                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+     {
+         [self clearComponents];
+         // 获取头像图片
+         if (error) {
+             [self throwWithReason:@"avatar reader error" userInfo:error.userInfo];
+             return;
+         }
+         [result logInfo];
+     }];
     [_avatarComponent showComponent];
 }
 
+#pragma mark - editAdvancedComponentHandler
+/**
+ *  4-1 高级图片编辑组件
+ */
+- (void)editAdvancedComponentHandler;
+{
+    lsqLDebug(@"editAdvancedComponentHandler");
+    _albumComponent =
+    [TuSDK albumCommponentWithController:self
+                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+     {
+         // 获取头像图片
+         if (error) {
+             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             return;
+         }
+         [self openEditAdvancedWithController:controller result:result];
+     }];
+    
+    [_albumComponent showComponent];
+}
+
+/**
+ *  开启图片高级编辑
+ *
+ *  @param controller 来源控制器
+ *  @param result     处理结果
+ */
+- (void)openEditAdvancedWithController:(UIViewController *)controller
+                                result:(TuSDKResult *)result;
+{
+    //    // 图片编辑入口控制器配置选项
+    //    _editEntryOptions = [TuSDKPFEditEntryOptions build];
+    //    // 默认: true, 开启裁剪旋转功能
+    //    _editEntryOptions.enableCuter = YES;
+    //    // 默认: true, 开启滤镜功能
+    //    _editEntryOptions.enableFilter = YES;
+    //    // 默认: true, 开启贴纸功能
+    //    _editEntryOptions.enableSticker = YES;
+    //    // 最大输出图片按照设备屏幕 (默认:false, 如果设置了LimitSideSize, 将忽略LimitForScreen)
+    //    _editEntryOptions.limitForScreen = YES;
+    //    // 保存到系统相册
+    //    _editEntryOptions.saveToAlbum = YES;
+    //
+    //    // 图片编辑滤镜控制器配置选项
+    //    _editFilterOptions = [TuSDKPFEditFilterOptions build];
+    //    // 默认: true, 开启滤镜配置选项
+    //    _editFilterOptions.enableFilterConfig = YES;
+    //    // 是否仅返回滤镜，不返回处理图片(默认：false)
+    //    _editFilterOptions.onlyReturnFilter = YES;
+    //
+    //    // 图片编辑裁切旋转控制器配置选项
+    //    _editCuterOptions = [TuSDKPFEditCuterOptions build];
+    //    // 是否开启图片旋转(默认: false)
+    //    _editCuterOptions.enableTrun = YES;
+    //    // 是否开启图片镜像(默认: false)
+    //    _editCuterOptions.enableMirror = YES;
+    //    // 裁剪比例 (默认:lsqRatioAll)
+    //    _editCuterOptions.ratioType = lsqRatioAll;
+    //    // 是否仅返回裁切参数，不返回处理图片
+    //    _editCuterOptions.onlyReturnCuter = YES;
+    //
+    //    // 本地贴纸选择控制器配置选项
+    //    _stickerLocalOptions = [TuSDKPFStickerLocalOptions build];
+    
+    if (!controller || !result) return;
+    
+    _photoEditComponent =
+    [TuSDK photoEditCommponentWithController:controller
+                               callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+     {
+         [self clearComponents];
+         // 获取图片失败
+         if (error) {
+             [self throwWithReason:@"editAdvanced error" userInfo:error.userInfo];
+             return;
+         }
+         if (controller) {
+             [controller dismissModalViewControllerAnimated];
+         }
+         [result logInfo];
+     }];
+    // 设置图片
+    _photoEditComponent.inputImage = result.image;
+    _photoEditComponent.inputTempFilePath = result.imagePath;
+    _photoEditComponent.inputAsset = result.imageAsset;
+    [_photoEditComponent showComponent];
+}
 #pragma mark - TuSDKCPComponentErrorDelegate
 /**
  *  获取组件返回错误信息

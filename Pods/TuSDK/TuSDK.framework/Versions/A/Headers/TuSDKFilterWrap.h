@@ -69,4 +69,11 @@
  *  销毁
  */
 - (void)destroy;
+
+/**
+ *  克隆滤镜对象包装
+ *
+ *  @return 滤镜对象包装
+ */
+- (instancetype)clone;
 @end

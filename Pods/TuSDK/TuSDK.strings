@@ -5,6 +5,27 @@
   Created by Clear Hu on 14/10/28.
   Copyright (c) 2014年 Lasque. All rights reserved.
 */
+
+"lsq_reset" = "重置";
+"lsq_loading_image" = "读取图片...";
+
+// refreshListView
+"lsq_refresh_list_view_state_visible" = "下拉刷新";
+"lsq_refresh_list_view_state_hidden" = "加载完成";
+"lsq_refresh_list_view_state_triggered" = "释放开始刷新...";
+"lsq_refresh_list_view_state_loading" = "正在加载...";
+"lsq_refresh_list_view_state_lasttime" = "上次刷新时间：";
+"lsq_refresh_list_view_state_load_more" = "正在加载更多";
+
+// Date
+"lsq_date_seconds_ago" = "秒前";
+"lsq_date_minutes_ago" = "分钟前";
+"lsq_date_hours_ago" = "小时前";
+"lsq_date_month" = "月";
+"lsq_date_year" = "年";
+"lsq_date_today" = "今天";
+"lsq_date_formater" = "yyyy年M月d日";
+
 // nav
 "lsq_nav_cancel" = "取消";
 "lsq_nav_back" = "返回";
@@ -49,6 +70,23 @@
 "lsq_edit_filter_processing" = "正在处理...";
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
+"lsq_edit_entry_filter" = "滤镜";
+"lsq_edit_entry_cuter" = "裁切";
+"lsq_edit_entry_sticker" = "贴纸";
+"lsq_edit_cuter_ratio_orgin" = "原始";
+"lsq_edit_cuter_ratio_1_1" = "1:1";
+"lsq_edit_cuter_ratio_2_3" = "2:3";
+"lsq_edit_cuter_ratio_3_4" = "3:4";
+"lsq_edit_cuter_ratio_9_16" = "9:16";
+
+// sticker
+"lsq_sticker_cate_default" = "贴纸";
+"lsq_sticker_cate_watermark" = "水印";
+"lsq_sticker_cate_mood" = "心情";
+"lsq_sticker_cate_frame" = "相框";
+"lsq_sticker_loading" = "正在加载贴纸...";
+"lsq_sticker_load_unexsit" = "贴纸不存在，请换一个试试";
+"lsq_sticker_over_limit%ld" = "OMG, 同时仅允许使用 %ld 张贴纸";
 
 // format
 "las_date_format" = "yyyy年M月d日";
@@ -81,3 +119,25 @@
 "lsq_filter_Rough" = "粗犷";
 "lsq_filter_Thick" = "浓郁";
 "lsq_filter_Vintage" = "复古";
+
+// Filters Definition
+"lsq_filter_SkinTwiceMixed" = "双混美肤";
+"lsq_filter_SkinTwiceMixedSigma" = "双混加强";
+"lsq_filter_SkinRGBSpace" = "空间美肤";
+"lsq_filter_SkinColorMixed" = "色混美肤";
+"lsq_filter_BokehBlur" = "模糊";
+
+// Filters Definition skin
+"lsq_filter_set_BlurSize" = "强度";
+"lsq_filter_set_BlurWeight" = "权重";
+"lsq_filter_set_SkinColorThreshold" = "肤色";
+"lsq_filter_set_DistanceNormalizationFactor" = "边缘";
+"lsq_filter_set_BlurSigma" = "西格玛";
+
+// Filters Definition Bokeh
+"lsq_filter_set_IncludeBlurSize" = "外模糊";
+"lsq_filter_set_ExcludeCircleRadius" = "内半径";
+"lsq_filter_set_ExcludeCirclePointX" = "中心X";
+"lsq_filter_set_ExcludeCirclePointY" = "中心Y";
+"lsq_filter_set_ExcludeBlurSize" = "边缘";
+"lsq_filter_set_ExcludeAspectRatio" = "内范围";

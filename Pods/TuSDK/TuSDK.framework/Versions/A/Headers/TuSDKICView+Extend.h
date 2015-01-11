@@ -266,6 +266,26 @@
 - (void)setCornerRadius:(CGFloat)radius;
 
 /**
+ *  旋转视图
+ *
+ *  @param degrees 角度
+ */
+- (void)rotationWithDegrees:(CGFloat)degrees;
+
+/**
+ *  旋转视图
+ *
+ *  @param angle 弧度
+ */
+- (void)rotationWithAngle:(CGFloat)angle;
+
+/**
+ *  将变形应用到视图
+ *  防止使用变形后导致视图位置，大小错误 (视图变形后设置大小使用bounds, 位置使用: center)
+ */
+- (void)transformToView;
+
+/**
  *  视图将要销毁
  */
 - (void)viewWillDestory;
@@ -467,16 +487,6 @@
  *  @return 图片对象
  */
 + (instancetype)initWithFrame:(CGRect)frame imageNamed:(NSString *)imageNamed;
-
-/**
- *  初始化图片 从UI扩展包加载 (TuSDKFilterUI.bundle)
- *
- *  @param frame      坐标长宽
- *  @param imageNamed 图片名称
- *
- *  @return 图片对象
- */
-+ (instancetype)initWithFrame:(CGRect)frame imageLSQBundleNamed:(NSString *)imageNamed;
 @end
 
 #pragma mark - UIControl
@@ -506,16 +516,6 @@
 + (instancetype)buttonWithFrame:(CGRect)frame imageName:(NSString *)imageName;
 
 /**
- *  初始化图片 从UI扩展包加载 (TuSDKFilterUI.bundle)
- *
- *  @param frame      坐标长宽
- *  @param imageNamed 图片名称
- *
- *  @return 按钮对象
- */
-+ (instancetype)buttonWithFrame:(CGRect)frame imageLSQBundleNamed:(NSString *)imageNamed;
-
-/**
  *  初始化
  *
  *  @param frame     坐标长宽
@@ -525,15 +525,6 @@
  */
 + (instancetype)buttonWithFrame:(CGRect)frame backgroundImageName:(NSString *)imageName;
 
-/**
- *  初始化图片 从UI扩展包加载 (TuSDKFilterUI.bundle)
- *
- *  @param frame      坐标长宽
- *  @param imageNamed 背景图片名称
- *
- *  @return 按钮对象
- */
-+ (instancetype)buttonWithFrame:(CGRect)frame backgroundImageLSQBundleNamed:(NSString *)imageNamed;
 /**
  *  初始化
  *
@@ -611,13 +602,6 @@
 - (void)setStateNormalImageName:(NSString *)name;
 
 /**
- *  设置默认状态图片 从UI扩展包加载 (TuSDKFilterUI.bundle)
- *
- *  @param name 图片名称
- */
-- (void)setStateNormalLSQBundleImageName:(NSString *)name;
-
-/**
  *  设置默认状态背景
  *
  *  @param image 背景图片
@@ -630,13 +614,6 @@
  *  @param imageName 背景图片名称
  */
 - (void)setStateNormalBackgroundImageName:(NSString *)imageName;
-
-/**
- *  设置默认状态背景图片名称
- *
- *  @param imageName 背景图片名称  从UI扩展包加载 (TuSDKFilterUI.bundle)
- */
-- (void)setStateNormalBackgroundImageLSQBundleNamed:(NSString *)imageName;
 
 /**
  *  设置默认状态背景
@@ -675,6 +652,13 @@
  *  @param action 动作
  */
 - (void)addTouchUpInsideTarget:(id)target action:(SEL)action;
+
+/**
+ *  垂直居中图片和标题
+ *
+ *  @param space 图片和标题间距
+ */
+- (void)centerImageAndTitle:(float)space;
 @end
 
 #pragma mark - UIScrollViewExtend

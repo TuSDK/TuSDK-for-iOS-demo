@@ -35,24 +35,14 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKCPOptions.h"
-#import "TuSDKPFAlbumOptions.h"
-#import "TuSDKPFPhotosOptions.h"
+#import "TuSDKCPAlbumOptions.h"
 #import "TuSDKPFCameraOptions.h"
 #import "TuSDKPFEditTurnAndCutOptions.h"
 
 /**
  *  头像设置组件选项
  */
-@interface TuSDKCPAvatarOptions : TuSDKCPOptions
-/**
- *  系统相册控制器配置选项
- */
-@property (nonatomic, readonly) TuSDKPFAlbumOptions *albumOptions;
-
-/**
- *  相册照片列表控制器配置选项
- */
-@property (nonatomic, readonly) TuSDKPFPhotosOptions *photosOptions;
+@interface TuSDKCPAvatarOptions : TuSDKCPAlbumOptions
 
 /**
  *  默认相机视图控制器选项

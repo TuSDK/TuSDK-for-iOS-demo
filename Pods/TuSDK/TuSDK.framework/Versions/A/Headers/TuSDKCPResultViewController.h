@@ -49,8 +49,10 @@
  *  异步通知处理结果
  *
  *  @param result SDK处理结果
+ *
+ *  @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
  */
-- (void)asyncNotifyProcessingWithResult:(TuSDKResult *)result;
+- (BOOL)asyncNotifyProcessingWithResult:(TuSDKResult *)result;
 
 /**
  *  异步处理如果需要保存文件 (默认完成后执行:@selector(notifyProcessingWithResult:))
@@ -58,6 +60,13 @@
  *  @param result SDK处理结果
  */
 - (void)asyncProcessingIfNeedSave:(TuSDKResult *)result;
+
+/**
+ *  返回主线程通知结果
+ *
+ *  @param result SDK处理结果
+ */
+- (void)backUIThreadNotifyProcessingWithResult:(TuSDKResult *)result;
 
 /**
  *  保存图片到临时文件

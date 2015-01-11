@@ -15,24 +15,6 @@
  */
 @interface UIImage(ImageExtend)
 /**
- *  材质资源库图片名称
- *
- *  @param name 图片名称
- *
- *  @return 材质资源库图片名称
- */
-+ (NSString *)lsqBundleName:(NSString *)name;
-
-/**
- *  从材质资源库初始化
- *
- *  @param name 图片名称
- *
- *  @return 返回图片对象
- */
-+ (UIImage *) imageLSQBundleNamed:(NSString *)name;
-
-/**
  *  使用颜色获取Image对象
  *
  *  @param color 颜色对象
@@ -58,6 +40,24 @@
  *  @return 等比旋转缩放
  */
 - (UIImage *) scaleGeometricAndRotate:(CGSize)newSize;
+
+/**
+ *  获取限制最大边长图片
+ *
+ *  @param limit 最大边长
+ *
+ *  @return 修改限制后的图片
+ */
+- (UIImage *) imageLimit:(CGFloat)limit;
+
+/**
+ *  缩放图片
+ *
+ *  @param scale 缩放比例
+ *
+ *  @return 缩放后的图片
+ */
+- (UIImage *) imageScale:(CGFloat)scale;
 
 /**
  *  旋转图像到UP角度
@@ -256,7 +256,17 @@
 - (UIImage *) imageCorpResizeWithSize:(CGSize)size;
 
 /**
- *  裁剪图片
+ *  裁剪图片 (需要先旋转到正确地方向)
+ *
+ *  @param rect 百分比裁剪区域
+ *  @param imageOrientation 图片方向
+ *
+ *  @return 裁剪后的图片
+ */
+- (UIImage *)imageCorpWithPrecentRect:(CGRect)rect;
+
+/**
+ *  裁剪图片 (需要先旋转到正确地方向)
  *
  *  @param rect 百分比裁剪区域
  *  @param outputSize 输出图片长宽
@@ -281,4 +291,37 @@
                     outputSize:(CGSize)outputSize
                    orientation:(UIImageOrientation)orientation
           interpolationQuality:(CGInterpolationQuality)quality;
+@end
+
+#pragma mark - ImageTintColor
+/**
+ *  改变图片颜色
+ */
+@interface UIImage(ImageTintColor)
+/**
+ *  改变图片颜色
+ *
+ *  @param tintColor 颜色
+ *
+ *  @return 改变颜色的图片
+ */
+- (UIImage *) imageWithTintColor:(UIColor *)tintColor;
+/**
+ *  改变图片颜色 (使用灰度信息)
+ *
+ *  @param tintColor 颜色
+ *
+ *  @return 改变颜色的图片
+ */
+- (UIImage *) imageWithGradientTintColor:(UIColor *)tintColor;
+
+/**
+ *  改变图片颜色
+ *
+ *  @param tintColor 颜色
+ *  @param blendMode 混合模式
+ *
+ *  @return 改变颜色的图片
+ */
+- (UIImage *) imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
 @end

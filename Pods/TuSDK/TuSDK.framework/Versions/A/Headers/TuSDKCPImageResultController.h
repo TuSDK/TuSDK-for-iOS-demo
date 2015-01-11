@@ -1,0 +1,97 @@
+//
+//  TuSDKCPImageResultController.h
+//  TuSDK
+//
+//  Created by Clear Hu on 15/1/2.
+//  Copyright (c) 2015年 Lasque. All rights reserved.
+//
+
+#import "TuSDKCPResultViewController.h"
+#import "TuSDKTKThread.h"
+
+/**
+ *  图片处理结果视图控制器
+ */
+@interface TuSDKCPImageResultController : TuSDKCPResultViewController
+/**
+ *  输入的临时文件目录 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, copy) NSString *inputTempFilePath;
+
+/**
+ *  输入的相册图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, retain) ALAsset *inputAsset;
+
+/**
+ *  输入的图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, retain) UIImage *inputImage;
+
+/**
+ *  预览图片视图
+ */
+@property (nonatomic, readonly) UIButton *preview;
+
+/**
+ *  是否显示处理结果预览图 (默认：关闭，调试时可以开启)
+ */
+@property (nonatomic) BOOL showResultPreview;
+
+/**
+ *  加载来源图片
+ *
+ *  @return 来源图片
+ */
+- (UIImage *)loadOrginImage;
+
+/**
+ *  获取裁剪图片
+ *
+ *  @param image            图片对象
+ *  @param cutRect          裁剪百分区域
+ *  @param imageOrientation 图片方向
+ *
+ *  @return 裁剪图片
+ */
+- (UIImage *)cuterImage:(UIImage *)image
+                cutRect:(CGRect)cutRect
+       imageOrientation:(UIImageOrientation)imageOrientation;
+
+/**
+ *  获取裁剪图片
+ *
+ *  @param image            图片对象
+ *  @param cutRect          裁剪百分区域
+ *  @param imageOrientation 图片方向
+ *  @param cutRatio         裁切比例 (当CGRectIsEmpty(cutRect) 生效)
+ *
+ *  @return 裁剪图片
+ */
+- (UIImage *)cuterImage:(UIImage *)image
+                cutRect:(CGRect)cutRect
+       imageOrientation:(UIImageOrientation)imageOrientation
+               cutRatio:(CGFloat)cutRatio;
+
+/**
+ *  异步加载输入图片
+ *
+ *  @param block 快速线程开始方法
+ */
+- (void)asyncLoadInputImageWithBlock:(TuSDKTKThreadStartBlock)block;
+
+/**
+ *  异步加载输入图片完成
+ *
+ *  @param image 输入图片
+ */
+- (void)loadedInputImage:(UIImage *)image;
+
+/**
+ * 显示测试预览视图
+ *
+ * @param result
+ * @return 是否显示测试预览视图
+ */
+- (BOOL)showResultPreview:(TuSDKResult *)result;
+@end

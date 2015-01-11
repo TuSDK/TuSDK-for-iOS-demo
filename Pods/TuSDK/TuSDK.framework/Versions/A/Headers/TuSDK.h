@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TuSDKTKThread.h"
+
 #import "TuSDKTSALAssets+Extend.h"
 #import "TuSDKTSAnimation.h"
 #import "TuSDKTSAVAudioPlayer+Extend.h"
 #import "TuSDKTSAVCaptureDevice+Extend.h"
+#import "TuSDKTSBundle.h"
 #import "TuSDKTSDate+Extend.h"
 #import "TuSDKTSDevice+Extend.h"
 #import "TuSDKTSFileManager.h"
@@ -19,6 +22,8 @@
 #import "TuSDKTSLog.h"
 #import "TuSDKTSMath.h"
 #import "TuSDKTSMotion.h"
+#import "TuSDKTSNSArray+Extend.h"
+#import "TuSDKTSNSData+Extend.h"
 #import "TuSDKTSScreen+Extend.h"
 #import "TuSDKTSString+Extend.h"
 
@@ -32,51 +37,34 @@
 #import "TuSDKFilterConfig.h"
 #import "TuSDKFilterManager.h"
 #import "TuSDKStillCamera.h"
+#import "TuSDKPFStickerLocalPackage.h"
 
+#import "TuSDKRatioType.h"
 #import "TuSDKResult.h"
 #import "TuSDKCPAvatarComponent.h"
+#import "TuSDKCPPhotoEditComponent.h"
 
 #import "TuSDKTKFiltersSampleTask.h"
 
 /**
  *  SDK滤镜版本
  */
-extern float const lasFilterVersion;
+extern float const lsqFilterVersion;
 
 /**
- *  滤镜材质包 (TuSDKFilterTextures)
+ *  临时文件目录 (APP/Cache/%lsqTemp%)
  */
-extern NSString * const lasFilterTextureBundle;
+extern NSString * const lsqTempDir;
 
 /**
- *  UI材质包 (TuSDKFilterUI)
+ *  滤镜预览效果图文件名 (APP/Document/%lsqFilterSamples%)
  */
-extern NSString * const lasFilterUIBundle;
-
-/**
- *  临时文件目录 (APP/Cache/%lasFilterTempDir%)
- */
-extern NSString * const lasFilterTempDir;
-
-/**
- *  滤镜预览效果图文件名 (APP/Document/%lasFilterSampleDir%)
- */
-extern NSString * const lasFilterSampleDir;
+extern NSString * const lsqFilterSampleDir;
 
 /**
  *  滤镜预览效果图文件后缀 (lfs)
  */
-extern NSString * const lasFilterSampleExtension;
-
-/**
- *  滤镜预览效果图默认输入图片 (style_default_camera_filter_sample.jpg)
- */
-extern NSString * const lasFilterSampleDefaultOriginImage;
-
-/**
- *  相机聚焦音效 (camera_focus_beep.mp3)
- */
-extern NSString * const lasFilterCameraFocusBeepAudio;
+extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  TuSDK 核心
@@ -89,6 +77,19 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
  */
 
 @interface TuSDK : NSObject
+
+/**
+ *  SDK界面样式 (默认:lsqSdkUIDefault)
+ */
+@property (nonatomic, copy) NSString *style;
+
+/**
+ *  TuSDK 核心
+ *
+ *  @return TuSDK 核心
+ */
++ (TuSDK *)shared;
+
 /**
  *  初始化SDK
  *
@@ -128,19 +129,11 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
  *  获取滤镜任务
  *
  *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
+ *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  *
  *  @return 滤镜任务
  */
-+ (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image;
-
-/**
- *  材质资源库文件路径
- *
- *  @param name 文件名
- *
- *  @return 材质资源库文件路径
- */
-+ (NSString *)uiBundlePathWithName:(NSString *)name;
++ (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
 
 /**
  *  相机对象
@@ -157,12 +150,35 @@ extern NSString * const lasFilterCameraFocusBeepAudio;
                                    cameraView:(UIView *)view;
 
 /**
+ *  自定义系统相册组件
+ *
+ *  @param controller 来源控制器
+ *  @param block      组件回调结果
+ *
+ *  @return 自定义系统相册组件
+ */
++ (TuSDKCPAlbumComponent *)albumCommponentWithController:(UIViewController *)controller
+                                           callbackBlock:(TuSDKCPComponentBlock)block;
+
+/**
  *  获取头像设置组件
  *
  *  @param controller 来源控制器
- *  @param block      获取头像图片回调
+ *  @param block      组件回调结果
  *
  *  @return 头像设置组件
  */
-+ (TuSDKCPAvatarComponent *)avatarCommponentWithController:(UIViewController *)controller callbackBlock:(TuSDKCPAvatarReadedBlock)block;
++ (TuSDKCPAvatarComponent *)avatarCommponentWithController:(UIViewController *)controller
+                                             callbackBlock:(TuSDKCPComponentBlock)block;
+
+/**
+ *  获取图片编辑组件
+ *
+ *  @param controller 来源控制器
+ *  @param block      组件回调结果
+ *
+ *  @return 图片编辑组件
+ */
++ (TuSDKCPPhotoEditComponent *)photoEditCommponentWithController:(UIViewController *)controller
+                                                   callbackBlock:(TuSDKCPComponentBlock)block;
 @end

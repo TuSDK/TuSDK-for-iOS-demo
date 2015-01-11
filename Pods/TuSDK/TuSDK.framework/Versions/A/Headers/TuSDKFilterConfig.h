@@ -46,4 +46,13 @@
  *  @return 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
  */
 - (TuSDKFilterOption *)optionWithName:(NSString *)name;
+
+/**
+ *  验证滤镜名称
+ *
+ *  @param filterNames 滤镜名称
+ *
+ *  @return 滤镜名称
+ */
+- (NSArray *)verifyNames:(NSArray *)filterNames;
 @end

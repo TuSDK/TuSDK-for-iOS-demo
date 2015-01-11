@@ -7,35 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TuSDKPFEditImageView.h"
 #import "TuSDKPFCameraFilterView.h"
-#import "TuSDKICCutRegionView.h"
-
-/**
- *  图片方向改变
- */
-typedef NS_ENUM(NSInteger, lsqImageChange)
-{
-    /**
-     *  未知方向
-     */
-    lsqImageChangeUnknow                = 0,
-    /**
-     *  向左旋转
-     */
-    lsqImageChangeTurnLeft              = 1 << 0,
-    /**
-     *  向右旋转
-     */
-    lsqImageChangeTurnRight             = 1 << 1,
-    /**
-     *  水平镜像
-     */
-    lsqImageChangeMirrorHorizontal      = 1 << 2,
-    /**
-     *  垂直镜像
-     */
-    lsqImageChangeMirrorVertical        = 1 << 3
-};
 
 #pragma mark - TuSDKPFEditTurnAndCutBottomView
 /**
@@ -77,24 +50,16 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 /**
  *  旋转和裁剪视图
  */
-@interface TuSDKPFEditTurnAndCutView : UIView<UIScrollViewDelegate>{
+@interface TuSDKPFEditTurnAndCutView : UIView<TuSDKPFEditImageViewDelegate>{
     @protected
     // 返回按钮
     UIButton *_backButton;
     // 旋转和裁剪视图控制栏
     TuSDKPFEditTurnAndCutBottomView *_bottomBar;
-    // 旋转和裁剪 裁剪区域视图
-    TuSDKICCutRegionView *_cutRegionView;
+    // 图片编辑视图 (旋转，缩放)
+    TuSDKPFEditImageView *_editImageView;
     // 滤镜视图
     TuSDKPFCameraFilterView *_filterView;
-    // 包装视图
-    UIScrollView *_wrapView;
-    // 图片包装类 (处理缩放)
-    UIView *_imageWrapView;
-    // 图片视图  (处理旋转)
-    UIImageView *_imageView;
-    // 是否正在处理动画
-    BOOL _isInAniming;
 }
 
 /**
@@ -108,9 +73,9 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  旋转和裁剪 裁剪区域视图类 (默认:TuSDKPFEditTurnAndCutRegion, 需要继承 TuSDKPFEditTurnAndCutRegion)
+ *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
  */
-@property (nonatomic, strong) Class cutRegionViewClazz;
+@property (nonatomic, strong) Class editImageViewClazz;
 
 /**
  *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
@@ -123,9 +88,9 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 @property (nonatomic, readonly) TuSDKPFEditTurnAndCutBottomView *bottomBar;
 
 /**
- *  旋转和裁剪 裁剪区域视图
+ *  图片编辑视图 (旋转，缩放)
  */
-@property (nonatomic, readonly) TuSDKICCutRegionView *cutRegionView;
+@property (nonatomic, readonly) TuSDKPFEditImageView *editImageView;
 
 /**
  *  滤镜列表视图
@@ -133,66 +98,24 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 @property (nonatomic, readonly) TuSDKPFCameraFilterView *filterView;
 
 /**
- *  包装视图
- */
-@property (nonatomic, readonly) UIScrollView *wrapView;
-
-/**
- *  图片包装类 (处理缩放)
- */
-@property (nonatomic, readonly) UIView *imageWrapView;
-
-/**
- *  图片视图
- */
-@property (nonatomic, readonly) UIImageView *imageView;
-
-/**
- *  是否正在处理动画
- */
-@property (nonatomic, readonly) BOOL isInAniming;
-
-/**
  *  是否开启滤镜支持 (默认: 关闭)
  */
 @property (nonatomic) BOOL enableFilters;
 
 /**
- *  是否开启裁剪支持 (默认: 关闭，如果设置cutSize将返回YES)
+ *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
-@property (nonatomic, readonly) BOOL enableCut;
+@property (nonatomic, retain) NSArray *filterGroup;
 
 /**
  *  需要裁剪的长宽
  */
-@property (nonatomic) CGSize cutSize;
+@property (nonatomic, setter=setCutSize:) CGSize cutSize;
 
 /**
  *  设置图片
  *
  *  @param image           图片
- *  @param orginDirectionX 原图是否为横向图片
  */
 - (void)setImage:(UIImage *)image;
-
-/**
- *  改变图片方向
- *
- *  @param changed 图片方向改变
- */
-- (void)changeImage:(lsqImageChange)changed;
-
-/**
- *  计算图片裁剪区域百分比
- *
- *  @return 图片裁剪区域百分比
- */
-- (CGRect)countImageCutRect;
-
-/**
- *  是否正在动作
- *
- *  @return 是否正在动作
- */
-- (BOOL)inActioning;
 @end

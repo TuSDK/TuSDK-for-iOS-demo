@@ -199,4 +199,11 @@
  *  @return 是否移动成功
  */
 + (BOOL)movePath:(NSString *)path toPath:(NSString *)toPath;
+
+/**
+ *  获取文件的MD5
+ *
+ *  @param file 文件的MD5
+ */
++ md5File:(NSString *)file;
 @end

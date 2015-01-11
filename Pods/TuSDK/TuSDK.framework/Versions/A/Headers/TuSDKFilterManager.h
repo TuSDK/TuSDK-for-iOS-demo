@@ -37,18 +37,21 @@
  *  获取滤镜任务
  *
  *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
+ *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  *
  *  @return 滤镜任务
  */
-- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image;
+- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
 
 /**
  * 创建滤镜临时预览效果列表任务
  *
- * @param image
- *            输入的图片
+ *  @param image 输入的图片
+ *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ *
+ *  @return 滤镜任务
  */
-- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image;
+- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
 
 /**
  *  获取滤镜包装对象
@@ -61,9 +64,9 @@
 
 /**
  *  使用SDK配置滤镜预览效果列表任务
- *  version     = @see lasFilterVersion
+ *  version     = @see lsqFilterVersion
  *  filterNames = @see [TuSDKFilterManager manager].filterNames
- *  originPath  = [lasFilterUIBundle + lasFilterSampleDefaultOriginImage]
+ *  originPath  = [lsqSdkOthers + lsqFilterSampleDefaultOriginImage]
  *
  *  @return 滤镜预览效果列表任务
  */
@@ -75,7 +78,7 @@
  *  @param version 版本号
  *  @param names   滤镜名称列表
  *
- *  @return 滤镜预览效果列表任务 (默认源图片路径: lasFilterUIBundle/style_default_camera_filter_sample.jpg)
+ *  @return 滤镜预览效果列表任务 (默认源图片路径: lsqSdkOthers/style_default_camera_filter_sample.jpg)
  */
 - (TuSDKTKFiltersSampleTask *)configSampleTaskWithVersion:(CGFloat)version filterNames:(NSArray *)names;
 
@@ -84,7 +87,7 @@
  *
  *  @param version 版本号
  *  @param names   滤镜名称列表
- *  @param path    输入的源图片路径  (默认: lasFilterUIBundle/style_default_camera_filter_sample.jpg)
+ *  @param path    输入的源图片路径  (默认: lsqSdkOthers/style_default_camera_filter_sample.jpg)
  *
  *  @return 滤镜预览效果列表任务
  */

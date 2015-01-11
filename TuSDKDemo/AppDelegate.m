@@ -16,28 +16,27 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
     // 可选: 设置日志输出级别 (默认不输出)
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
-
+    
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
     [TuSDK initSdkWithAppKey:@"e922e6526eadf559-00"];
-
+    
     // 可选: 初始化滤镜预览图列表 (默认使用 [TuSDK.filterManager configSampleTaskWithSDK])
-    [TuSDK.filterManager configSampleTaskWithVersion:lasFilterVersion
+    [TuSDK.filterManager configSampleTaskWithVersion:lsqFilterVersion
                                          filterNames:@[@"Normal", @"Artistic", @"Brilliant", @"Cheerful", @"Clear", @"Fade", @"Forest", @"Gloss", @"Harmony", @"Instant", @"Lightup", @"Morning", @"Newborn", @"Noir", @"Relaxed", @"Rough", @"Thick", @"Vintage"]
-                                          originPath:[TuSDK uiBundlePathWithName:lasFilterSampleDefaultOriginImage]];
-
-
+                                          originPath:[TuSDKTSBundle sdkBundleOther:lsqFilterSampleDefaultOriginImage]];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
-
+    
     // 初始化根控制器
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:[DemoRootViewController controller]];
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
 

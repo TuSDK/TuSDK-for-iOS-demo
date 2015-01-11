@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "TuSDKPFCameraFilterView.h"
+#import "TuSDKRatioType.h"
 
 #pragma mark - TuSDKPFCameraFlashView
 @class TuSDKPFCameraFlashView;
@@ -99,9 +100,9 @@
 /**
  *  改变相机比例
  *
- *  @return 需要改变的比例
+ *  @param ratioType 相机比例类型
  */
-- (float)changeRatio;
+- (void)changeRatioType:(lsqRatioType)ratioType;
 @end
 
 #pragma mark - TuSDKPFCameraConfigView
@@ -212,9 +213,9 @@
 @property (nonatomic, assign) id<TuSDKPFCameraViewDelegate> delegate;
 
 /**
- *  视频视图显示比例 (默认:0.75f, 0 < cameraViewRatio <= 1)
+ *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
-@property (nonatomic) CGFloat cameraViewRatio;
+@property (nonatomic, retain) NSArray *filterGroup;
 
 /**
  *  通知系统旋转
@@ -225,6 +226,8 @@
 
 /**
  *  创建滤镜视图
+ *
+ *  @param showFilterDefault 是否默认显示滤镜列表
  */
-- (void)buildFilterView;
+- (void)buildFilterView:(BOOL)showFilterDefault;
 @end

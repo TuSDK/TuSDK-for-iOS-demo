@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 Lasque. All rights reserved.
 //
 
-#import "TuSDKCPResultOptions.h"
+#import "TuSDKCPImageResultOptions.h"
 #import "TuSDKPFEditTurnAndCutViewController.h"
 
 /**
  *  旋转和裁剪视图控制器配置选项
  */
-@interface TuSDKPFEditTurnAndCutOptions : TuSDKCPResultOptions
+@interface TuSDKPFEditTurnAndCutOptions : TuSDKCPImageResultOptions
 
 /**
  *  视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)
@@ -25,9 +25,9 @@
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  旋转和裁剪 裁剪区域视图类 (默认:TuSDKPFEditTurnAndCutRegion, 需要继承 TuSDKPFEditTurnAndCutRegion)
+ *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
  */
-@property (nonatomic, strong) Class cutRegionViewClazz;
+@property (nonatomic, strong) Class editImageViewClazz;
 
 /**
  *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
@@ -40,14 +40,14 @@
 @property (nonatomic) BOOL enableFilters;
 
 /**
+ *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ */
+@property (nonatomic, retain) NSArray *filterGroup;
+
+/**
  *  需要裁剪的长宽
  */
 @property (nonatomic) CGSize cutSize;
-
-/**
- *  是否显示处理结果预览图 (默认：关闭，调试时可以开启)
- */
-@property (nonatomic) BOOL showResultPreview;
 
 /**
  *  创建旋转和裁剪视图控制器对象

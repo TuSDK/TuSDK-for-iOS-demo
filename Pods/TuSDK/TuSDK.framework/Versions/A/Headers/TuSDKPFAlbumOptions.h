@@ -32,7 +32,7 @@
 /**
  *  是否自动选择相册组 (默认: YES, 如果没有设定相册组名称，自动跳转到系统相册组)
  */
-@property (nonatomic) BOOL autoSelectedAblumGroup;
+@property (nonatomic) BOOL autoSkipToPhotoList;
 
 /**
  *  需要自动跳转到相册组名称 (需要设定 autoSkipToPhotoList = YES)

@@ -39,7 +39,7 @@
 @property (nonatomic, readonly) CGFloat version;
 
 /**
- *  输入的源图片路径  (默认: lasFilterUIBundle/style_default_camera_filter_sample.jpg)
+ *  输入的源图片路径  (默认: lsqSdkOthers/style_default_camera_filter_sample.jpg)
  */
 @property (nonatomic, retain) NSString *inputImagePath;
 
@@ -52,6 +52,11 @@
  *  滤镜预览效果列表委托
  */
 @property (nonatomic, assign) id<TuSDKTKFiltersSampleTaskDelegate> delegate;
+
+/**
+ *  临时滤镜分组
+ */
+@property (nonatomic, retain) NSArray *tempFilterGroup;
 
 /**
  *  滤镜预览效果列表任务

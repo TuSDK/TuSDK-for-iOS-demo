@@ -23,7 +23,7 @@
     BOOL _taskCompleted;
 }
 /**
- *  输入图片名称
+ *  输入滤镜名称
  */
 @property (nonatomic, retain) NSArray *filerNames;
 

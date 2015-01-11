@@ -97,14 +97,14 @@
 @property (nonatomic, readonly) TuSDKICTableView *listView;
 
 /**
- *  是否禁用选择滤镜 (默认：NO)
- */
-@property (nonatomic) BOOL disableSelected;
-
-/**
  *  滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
  */
 @property (nonatomic, retain) UIImage *inputSampleImage;
+
+/**
+ *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ */
+@property (nonatomic, retain) NSArray *filterGroup;
 
 /**
  *  滤镜任务
@@ -134,4 +134,11 @@
  *  加载滤镜
  */
 - (void)loadFilters;
+
+/**
+ *  加载滤镜
+ *
+ *  @param filterName 当前选中的滤镜
+ */
+- (void)loadFiltersSelected:(NSString *)filterName;
 @end

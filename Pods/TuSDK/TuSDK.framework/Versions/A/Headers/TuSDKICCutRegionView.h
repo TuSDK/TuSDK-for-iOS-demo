@@ -15,10 +15,6 @@
     // 选区信息
     CGRect _regionRect;
 }
-/**
- *  区域长宽
- */
-@property (nonatomic) CGSize regionSize;
 
 /**
  *  区域长宽比例
@@ -46,9 +42,16 @@
 @property (nonatomic) CGFloat edgeSideWidth;
 
 /**
+ *  更新布局
+ */
+- (void)needUpdateLayout;
+
+/**
  *  改变范围比例 (使用动画)
  *
  *  @param regionRatio 范围比例
+ *
+ *  @return 确定的选取方位
  */
-- (void)changeRegionRatio:(CGFloat)regionRatio;
+- (CGRect)changeRegionRatio:(CGFloat)regionRatio;
 @end

@@ -11,23 +11,6 @@
  *  音频设备扩展
  */
 @interface AVAudioPlayer(TuSDKTSAVAudioPlayerExtend)
-
-/**
- *  播放 lasFilterUIBundle 相机对焦音效
- *
- *  @return 音频播放对象
- */
-+ (instancetype)playerLsqBundleCameraFocusBeep;
-
-/**
- *  播放 lasFilterUIBundle 内的音频文件
- *
- *  @param audioName 音频文件名
- *
- *  @return 音频播放对象
- */
-+ (instancetype)playerLsqBundlePathWithName:(NSString *)audioName;
-
 /**
  *  播放音频文件
  *

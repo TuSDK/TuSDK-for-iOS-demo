@@ -8,41 +8,44 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKProgressHUD.h"
+#import "TuSDKTSCATransition+Extend.h"
 
 /**
  *  控制器基础类
  */
 @interface TuSDKICViewController : UIViewController{
+    @protected
     /**
      *  页面是否已经返回 | 通过这个标记可以在viewDidDisappear里面确认销毁该控制器
      */
     BOOL _isBacked;
+    /**
+     *  来源控制器导航栏是否隐藏
+     */
+    BOOL _isOrginNavHidden;
+    /**
+     *  当前导航栏是否隐藏
+     */
+    BOOL _isNavHidden;
+    /**
+     *  来源控制器状态栏是否隐藏
+     */
+    BOOL _isOrginStatusHidden;
+    /**
+     *  当前状态栏是否隐藏
+     */
+    BOOL _isStatusHidden;
 }
 
 /**
- *  导航级数
+ *  系统版本大于7时，滚动视图位置置顶到状态栏
  */
-@property (nonatomic, readonly) NSInteger navCount;
+@property (nonatomic,assign) BOOL automaticallyAdjustsScrollViewInsets;
 
 /**
- *  返回前一页 使用动画
+ *  转场动画
  */
-- (void)backActionHadAnimated;
-
-/**
- *  返回前一页
- *
- *  @param animated 是否使用动画
- */
-- (void)backActionWithAnimated:(BOOL)animated;
-
-/**
- *  Push控制器
- *
- *  @param viewController 视图控制器
- *  @param animated       是否启动动画
- */
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+@property (nonatomic,retain) TuSDKTSCControllerTrans *transAnim;
 
 /**
  *  设置导航栏左边按钮
@@ -121,9 +124,120 @@
 + (instancetype)controller;
 
 /**
+ *  导航级数
+ */
+- (NSInteger)navCount;
+
+/**
+ *  返回前一页 使用动画
+ */
+- (void)backActionHadAnimated;
+
+/**
+ *  返回前一页
+ *
+ *  @param animated 是否使用动画
+ */
+- (void)backActionWithAnimated:(BOOL)animated;
+
+/**
+ *  返回前一页
+ *
+ *  @param anim 自定义动画
+ */
+- (void)backActionWithAnim:(CAAnimation *)anim;
+
+/**
  *  取消模态控制器 使用动画
  */
 - (void)dismissModalViewControllerAnimated;
+
+/**
+ *  取消模态控制器 使用动画
+ *
+ *  @param anim 自定义动画
+ */
+- (void)dismissModalViewControllerWithAnim:(CAAnimation *)anim;
+
+/**
+ *  取消控制器 使用动画
+ *
+ *  @param anim       自定义动画
+ *  @param completion 结束回调
+ */
+- (void)dismissViewControllerWithAnim:(CAAnimation *)anim completion:(void (^)(void))completion;
+
+/**
+ *  弹出一个视图控制器
+ *
+ *  @param viewController 视图控制器
+ *  @param animated       是否使用动画
+ */
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+
+/**
+ *  Push控制器
+ *
+ *  @param viewController 视图控制器
+ *  @param anim           自定义动画
+ */
+- (void)pushViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
+
+/**
+ *  退出一个视图控制器
+ *
+ *  @param animated 是否使用动画
+ *
+ *  @return 返回退出的视图控制器
+ */
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated;
+
+/**
+ *  退出一个视图控制器
+ *
+ *  @param anim 自定义动画
+ *
+ *  @return 返回退出的视图控制器
+ */
+- (UIViewController *)popViewControllerWithAnim:(CAAnimation *)anim;
+
+/**
+ *  退出到指定的控制器视图
+ *
+ *  @param viewController 指定的控制器视图
+ *  @param animated       是否使用动画
+ *
+ *  @return 返回退出的视图控制器列表
+ */
+- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated;
+
+/**
+ *  退出到指定的控制器视图
+ *
+ *  @param viewController 指定的控制器视图
+ *  @param anim       自定义动画
+ *
+ *  @return 返回退出的视图控制器列表
+ */
+- (NSArray *)popToViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
+
+/**
+ *  弹出到第一个视图控制器
+ *
+ *  @param animated 是否使用动画
+ *
+ *  @return 返回退出的视图控制器列表
+ */
+- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated;
+
+/**
+ *  弹出到第一个视图控制器
+ *
+ *  @param anim 自定义动画
+ *
+ *  @return 返回退出的视图控制器列表
+ */
+- (NSArray *)popToRootViewControllerWithAnim:(CAAnimation *)anim;
 
 /**
  *  弹出一个带导航的模态窗口
@@ -143,11 +257,36 @@
 - (void)presentModalNavigationController:(UIViewController *)controller animated:(BOOL)animated hiddenNav:(BOOL)hiddenNav;
 
 /**
+ *  弹出一个带导航的模态窗口
+ *
+ *  @param controller 控制器
+ *  @param anim   自定义动画
+ */
+- (void)presentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim;
+
+/**
+ *  弹出一个带导航的模态窗口
+ *
+ *  @param controller 控制器
+ *  @param anim   自定义动画
+ *  @param hiddenNav  是否隐藏导航栏
+ */
+- (void)presentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim hiddenNav:(BOOL)hiddenNav;
+
+/**
  *  设置全屏
  *
  *  @param wantFull 是否全屏
  */
 - (void)setFullScreenLayout:(BOOL)wantFull;
+
+/**
+ *  设置状态隐藏状态
+ *
+ *  @param hidden    是否隐藏
+ *  @param animation 使用动画
+ */
+- (void)setStatusBarHidden:(BOOL)hidden withAnimation:(UIStatusBarAnimation)animation;
 
 /**
  *  设置导航栏是否隐藏 (不使用动画)
