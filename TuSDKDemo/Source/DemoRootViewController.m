@@ -253,11 +253,13 @@
              [self throwWithReason:@"album reader error" userInfo:error.userInfo];
              return;
          }
-         if (controller) {
-             [controller dismissModalViewControllerAnimated];
-         }
+         
+         // if (controller) [controller dismissModalViewControllerAnimated];
          [result logInfo];
      }];
+    
+    // 是否在组件执行完成后自动关闭组件 (默认:NO)
+    _albumComponent.autoDismissWhenCompelted = YES;
     [_albumComponent showComponent];
 }
 
@@ -307,6 +309,12 @@
     // 默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
     opt.showFilterDefault = YES;
     
+    // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+    // opt.filterGroup = @[@"Normal", @"SkinTwiceMixedSigma", @"Artistic"];
+    
+    // 开启滤镜配置选项
+    opt.enableFilterConfig = YES;
+    
     // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
     
@@ -342,6 +350,9 @@
     
     // 照片输出分辨率
     // opt.outputSize = CGSizeMake(1440, 1920);
+    
+    // 禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
+    // opt.disableMirrorFrontFacing = YES;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
@@ -510,6 +521,8 @@
          }
          [result logInfo];
      }];
+    // 是否在组件执行完成后自动关闭组件 (默认:NO)
+    _avatarComponent.autoDismissWhenCompelted = YES;
     [_avatarComponent showComponent];
 }
 
@@ -524,7 +537,7 @@
     [TuSDK albumCommponentWithController:self
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
-         // 获取头像图片
+         // 获取图片错误
          if (error) {
              [self throwWithReason:@"album reader error" userInfo:error.userInfo];
              return;
@@ -590,15 +603,14 @@
              [self throwWithReason:@"editAdvanced error" userInfo:error.userInfo];
              return;
          }
-         if (controller) {
-             [controller dismissModalViewControllerAnimated];
-         }
          [result logInfo];
      }];
     // 设置图片
     _photoEditComponent.inputImage = result.image;
     _photoEditComponent.inputTempFilePath = result.imagePath;
     _photoEditComponent.inputAsset = result.imageAsset;
+    // 是否在组件执行完成后自动关闭组件 (默认:NO)
+    _photoEditComponent.autoDismissWhenCompelted = YES;
     [_photoEditComponent showComponent];
 }
 #pragma mark - TuSDKCPComponentErrorDelegate

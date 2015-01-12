@@ -34,6 +34,11 @@ typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIVie
 @property (nonatomic, strong) TuSDKCPComponentBlock callbackBlock;
 
 /**
+ *  是否在组件执行完成后自动关闭组件 (默认:NO)
+ */
+@property (nonatomic) BOOL autoDismissWhenCompelted;
+
+/**
  *  初始化组件
  *
  *  @param controller    来源控制器

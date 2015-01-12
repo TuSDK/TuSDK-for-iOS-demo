@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GPUImage/GPUImage.h>
 #import "TuSDKFilterOption.h"
+#import "TuSDKFilterParameter.h"
 
 /**
  *  滤镜对象包装
@@ -26,6 +27,11 @@
 @property (nonatomic, readonly) GPUImageOutput <GPUImageInput> *filter;
 
 /**
+ *  滤镜配置选项
+ */
+@property (nonatomic, readwrite) TuSDKFilterParameter *filterParameter;
+
+/**
  *  初始化滤镜对象包装
  *
  *  @param opt 滤镜配置选项
@@ -40,6 +46,11 @@
  *  @param view 视频视图
  */
 - (void)bindWithCameraView:(GPUImageView *)view;
+
+/**
+ *  提交滤镜配置选项
+ */
+- (void)submitParameter;
 
 /**
  *  处理材质

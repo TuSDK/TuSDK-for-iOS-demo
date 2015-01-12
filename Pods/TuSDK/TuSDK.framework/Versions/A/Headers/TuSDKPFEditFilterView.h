@@ -9,12 +9,23 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKFilterWrap.h"
 #import "TuSDKPFCameraFilterView.h"
+#import "TuSDKPFFilterConfigView.h"
 
 #pragma mark - TuSDKPFEditFilterImageView
 /**
  *  图片视图
  */
-@interface TuSDKPFEditFilterImageView : UIView
+@interface TuSDKPFEditFilterImageView : UIView<TuSDKPFFilterConfigViewDelegate>
+/**
+ *  滤镜配置视图
+ */
+@property (nonatomic, retain) TuSDKPFFilterConfigView *filterConfigView;
+
+/**
+ *  顶部边距
+ */
+@property (nonatomic) NSInteger topSpace;
+
 /**
  *  设置图片
  *

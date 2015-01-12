@@ -31,7 +31,7 @@
 #import "TuSDKICNavigationController.h"
 #import "TuSDKICTableView.h"
 #import "TuSDKICTableViewCell.h"
-#import "TuSDKICFocusTouchView.h"
+#import "TuSDKCPFocusTouchView.h"
 #import "TuSDKProgressHUD.h"
 
 #import "TuSDKFilterConfig.h"

@@ -131,6 +131,7 @@
 "lsq_filter_set_BlurSize" = "强度";
 "lsq_filter_set_BlurWeight" = "权重";
 "lsq_filter_set_SkinColorThreshold" = "肤色";
+"lsq_filter_set_SkinColorThresholdQuadraticMixture" = "矩阵";
 "lsq_filter_set_DistanceNormalizationFactor" = "边缘";
 "lsq_filter_set_BlurSigma" = "西格玛";
 

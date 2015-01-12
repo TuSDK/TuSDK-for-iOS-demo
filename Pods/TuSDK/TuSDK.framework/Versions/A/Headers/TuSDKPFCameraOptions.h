@@ -122,6 +122,11 @@
 @property (nonatomic) CGSize outputSize;
 
 /**
+ *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
+ */
+@property (nonatomic) BOOL disableMirrorFrontFacing;
+
+/**
  *  创建系统相机控制器对象
  *
  *  @return 系统相机控制器对象

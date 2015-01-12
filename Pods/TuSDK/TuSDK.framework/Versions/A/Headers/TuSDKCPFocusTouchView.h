@@ -1,5 +1,5 @@
 //
-//  TuSDKICFocusTouchView.h
+//  TuSDKCPFocusTouchView.h
 //  TuSDK
 //
 //  Created by Clear Hu on 14/10/29.
@@ -11,11 +11,13 @@
 #import "TuSDKStillCamera.h"
 #import "TuSDKICFocusRangeView.h"
 #import "TuSDKICCutRegionView.h"
+#import "TuSDKPFFilterConfigView.h"
+#import "TuSDKFilterWrap.h"
 
 /**
  *  相机聚焦触摸视图
  */
-@interface TuSDKICFocusTouchView : UIView
+@interface TuSDKCPFocusTouchView : UIView
 
 /**
  *  相机对象
@@ -31,6 +33,11 @@
  *  裁剪区域视图 (如果不设定，将使用 TuSDKICCutRegionView)
  */
 @property (nonatomic, retain) TuSDKICCutRegionView *cutRegionView;
+
+/**
+ *  滤镜配置视图
+ */
+@property (nonatomic, retain) TuSDKPFFilterConfigView *filterConfigView;
 
 /**
  *  聚焦模式
@@ -66,6 +73,11 @@
  *  视频覆盖区域颜色 (默认：[UIColor blackColor])
  */
 @property (nonatomic, retain) UIColor *regionViewColor;
+
+/**
+ *  顶部边距
+ */
+@property (nonatomic) NSInteger topSpace;
 
 /**
  *  相机状态改变
@@ -115,6 +127,13 @@
  *  @param point 聚焦点
  */
 - (void)notifyCameraWithFocusPoint:(CGPoint)point;
+
+/**
+ *  通知滤镜配置视图
+ *
+ *  @param filter 滤镜包装对象
+ */
+- (void)notifyFilterConfigView:(TuSDKFilterWrap *)filter;
 
 /**
  *  转换触摸点为百分比点

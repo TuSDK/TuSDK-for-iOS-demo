@@ -94,12 +94,14 @@
     [self configFlashView];
     
     // 可选: 绑定手动聚焦视图, 自动设置视图大小为显示大小
-    TuSDKICFocusTouchView *focusView = [TuSDKICFocusTouchView initWithFrame:CGRectZero];
+    TuSDKCPFocusTouchView *focusView = [TuSDKCPFocusTouchView initWithFrame:CGRectZero];
     [_camera bindFocusTouchView:focusView];
     // 开启持续自动对焦 (默认: NO)
     _camera.enableContinueFoucs = YES;
     // 是否开启长按拍摄 (默认: NO)
     _camera.enableLongTouchCapture = YES;
+    // 禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
+    _camera.disableMirrorFrontFacing = YES;
     
     // 启动相机
     [_camera tryStartCameraCapture];

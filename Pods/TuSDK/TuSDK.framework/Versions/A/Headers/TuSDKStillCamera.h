@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 /**
  *  相机聚焦触摸视图
  */
-@class TuSDKICFocusTouchView;
+@class TuSDKCPFocusTouchView;
 
 /**
  *  相机对象
@@ -94,6 +94,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic, readonly) BOOL isFilterChanging;
 
 /**
+ *  开启滤镜配置选项
+ */
+@property (nonatomic) BOOL enableFilterConfig;
+
+/**
  *  是否开启长按拍摄 (默认: NO)
  */
 @property (nonatomic) BOOL enableLongTouchCapture;
@@ -127,6 +132,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  照片输出分辨率
  */
 @property (nonatomic) CGSize outputSize;
+
+/**
+ *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
+ */
+@property (nonatomic) BOOL disableMirrorFrontFacing;
 
 /**
  *  初始化相机
@@ -173,7 +183,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *
  *  @param view 聚焦触摸视图
  */
-- (void)bindFocusTouchView:(TuSDKICFocusTouchView *)view;
+- (void)bindFocusTouchView:(TuSDKCPFocusTouchView *)view;
 
 /**
  *  改变视频视图显示比例 (使用动画)
