@@ -239,6 +239,16 @@
  *  @return 重设属性后的图片对象
  */
 - (UIImage *)changeMirrorVertical;
+
+/**
+ *  计算正确的的图片方向
+ *
+ *  @param orientation 图片方向
+ *  @param isMirror    是否镜像
+ *
+ *  @return 正确的的图片方向
+ */
++ (UIImageOrientation)orientation:(UIImageOrientation)orientation isMirror:(BOOL)isMirror;
 @end
 
 #pragma mark - ImageCorp

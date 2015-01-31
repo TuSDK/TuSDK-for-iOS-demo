@@ -9,6 +9,7 @@
 #import "DemoRootViewController.h"
 #import "SimpleCameraViewController.h"
 
+#import "SimpleEditTurnAndCutView.h"
 #pragma mark - DemoRootView
 /**
  *  演示选择
@@ -106,7 +107,7 @@
 
 #pragma mark - DemoRootViewController
 
-@interface DemoRootViewController ()<DemoChooseDelegate, TuSDKPFCameraDelegate, TuSDKPFEditTurnAndCutDelegate>
+@interface DemoRootViewController ()<DemoChooseDelegate, TuSDKPFCameraDelegate, TuSDKPFEditTurnAndCutDelegate, TuSDKFilterManagerDelegate>
 {
     // 自定义系统相册组件
     TuSDKCPAlbumComponent *_albumComponent;
@@ -132,6 +133,21 @@
     self.view.delegate = self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"涂图-TuSDK";
+    
+    // 异步方式初始化滤镜管理器
+    // 需要等待滤镜管理器初始化完成，才能使用所有功能
+    // 第二个参数为是否需要生成默认滤镜预览图，如果不生成将会造成相机实时滤镜无法显示预览图
+    [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
+    [TuSDK initFilterManagerWithDelegate:self initSample:YES];
+    
+    // 如果不想使用如上方式等待滤镜管理器初始化完成,允许使用如下方法生成滤镜预览图
+    // 当然，这样做是不安全的，会导致因为未初始化完成，SDK奔溃
+    // [TuSDK filterManager].initSample = YES;
+}
+
 /**
  *  清楚所有控件
  */
@@ -144,13 +160,17 @@
     // 图片编辑组件
     _photoEditComponent = nil;
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"涂图-TuSDK";
+#pragma mark - TuSDKFilterManagerDelegate
+/**
+ * 滤镜管理器初始化完成
+ *
+ * @param manager
+ *            滤镜管理器
+ */
+- (void)onTuSDKFilterManagerInited:(TuSDKFilterManager *)manager;
+{
+    [self showHubSuccessWithStatus:LSQString(@"lsq_inited", @"初始化完成")];
 }
-
 #pragma mark - DemoChooseDelegate
 /**
  *  选中一个演示
@@ -334,7 +354,7 @@
     // opt.longTouchDelay = 1.2;
     
     // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)
-    // opt.saveToAlbum = NO;
+    opt.saveToAlbum = YES;
     
     // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
     // opt.saveToTemp = NO;
@@ -382,7 +402,8 @@
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)
-    // opt.viewClazz = [TuSDKPFEditTurnAndCutView class];
+    // 自定义视图
+    opt.viewClazz = [SimpleEditTurnAndCutView class];
     
     // 旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
     // opt.bottomBarViewClazz = [TuSDKPFEditTurnAndCutBottomView class];

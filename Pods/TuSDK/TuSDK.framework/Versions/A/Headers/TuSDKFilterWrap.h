@@ -58,6 +58,13 @@
 - (void)processImage;
 
 /**
+ *  旋转材质到图片方向
+ *
+ *  @param imageOrientation 图片方向
+ */
+- (void)rotationTextures:(UIImageOrientation)imageOrientation;
+
+/**
  *  执行滤镜 并输出图形
  *
  *  @param image 输入图像

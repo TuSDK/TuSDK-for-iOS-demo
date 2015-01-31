@@ -45,6 +45,12 @@ extern NSString * const lsqFilterSampleDefaultOriginImage;
  *  相机聚焦音效 (camera_focus_beep.mp3)
  */
 extern NSString * const lsqCameraFocusBeepAudio;
+
+/**
+ * 内部滤镜配置 (lsq_internal_filters.filter)
+ */
+extern NSString * const lsqInternalFiltersConfig;
+
 /**
  *  SDK资源包帮助类
  */

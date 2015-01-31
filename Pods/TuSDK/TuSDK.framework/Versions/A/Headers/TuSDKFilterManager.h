@@ -10,7 +10,24 @@
 #import "TuSDKFilterWrap.h"
 #import "TuSDKTKFiltersTempTask.h"
 #import "TuSDKTKFiltersSampleTask.h"
+#import "TuSDKConfig.h"
 
+@class TuSDKFilterManager;
+
+/**
+ *  滤镜控管理器委托
+ */
+@protocol TuSDKFilterManagerDelegate <NSObject>
+/**
+ * 滤镜管理器初始化完成
+ *
+ * @param manager
+ *            滤镜管理器
+ */
+- (void)onTuSDKFilterManagerInited:(TuSDKFilterManager *)manager;
+@end
+
+#pragma mark - TuSDKFilterManager
 /**
  *  滤镜控管理器
  */
@@ -24,6 +41,25 @@
 + (instancetype) manager;
 
 /**
+ *  滤镜控管理器
+ *
+ *  @param config Sdk配置
+ *
+ *  @return 滤镜控管理器
+ */
++ (instancetype)initWithConfig:(TuSDKConfig *)config;
+
+/**
+ *  是否已初始化
+ */
+@property (nonatomic, readonly) BOOL isInited;
+
+/**
+ *  是否初始化默认滤镜预览图
+ */
+@property (nonatomic) BOOL initSample;
+
+/**
  *  滤镜名称列表
  */
 @property (nonatomic, readonly) NSArray *filterNames;
@@ -32,6 +68,15 @@
  *  滤镜预览效果列表任务
  */
 @property (nonatomic, readonly) TuSDKTKFiltersSampleTask *samplesTask;
+
+/**
+ *  初始化滤镜管理器
+ *
+ *  @param delegate   滤镜控管理器委托
+ *  @param initSample 是否初始化默认滤镜预览图
+ */
+- (void)initFilterManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate
+                           initSample:(BOOL)initSample;
 
 /**
  *  获取滤镜任务
@@ -61,37 +106,6 @@
  *  @return 滤镜包装对象
  */
 - (TuSDKFilterWrap *)filterWrapWithName:(NSString *)name;
-
-/**
- *  使用SDK配置滤镜预览效果列表任务
- *  version     = @see lsqFilterVersion
- *  filterNames = @see [TuSDKFilterManager manager].filterNames
- *  originPath  = [lsqSdkOthers + lsqFilterSampleDefaultOriginImage]
- *
- *  @return 滤镜预览效果列表任务
- */
-- (TuSDKTKFiltersSampleTask *)configSampleTaskWithSDK;
-
-/**
- *  配置滤镜预览效果列表任务
- *
- *  @param version 版本号
- *  @param names   滤镜名称列表
- *
- *  @return 滤镜预览效果列表任务 (默认源图片路径: lsqSdkOthers/style_default_camera_filter_sample.jpg)
- */
-- (TuSDKTKFiltersSampleTask *)configSampleTaskWithVersion:(CGFloat)version filterNames:(NSArray *)names;
-
-/**
- *  配置滤镜预览效果列表任务
- *
- *  @param version 版本号
- *  @param names   滤镜名称列表
- *  @param path    输入的源图片路径  (默认: lsqSdkOthers/style_default_camera_filter_sample.jpg)
- *
- *  @return 滤镜预览效果列表任务
- */
-- (TuSDKTKFiltersSampleTask *)configSampleTaskWithVersion:(CGFloat)version filterNames:(NSArray *)names originPath:(NSString *)path;
 
 /**
  *  执行滤镜 并输出图形

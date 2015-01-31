@@ -10,6 +10,8 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
 #import "TuSDKPFStickerText.h"
+#import "TuSDKDataJson.h"
+#import "TuSDKAOFile.h"
 
 /**
  *  贴纸元素类型
@@ -29,7 +31,7 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
 /**
  *  贴纸数据对象
  */
-@interface TuSDKPFSticker : NSObject
+@interface TuSDKPFSticker : TuSDKDataJson
 /**
  * 贴纸ID
  */
@@ -56,14 +58,14 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
 @property (nonatomic, copy) NSString *stickerImageName;
 
 /**
- * 贴纸文件MD5
- */
-@property (nonatomic, copy) NSString *md5;
-
-/**
  * 贴纸长宽 (单位DP: 需要与原始图片比例保持一致，否则会造成成图片变形)
  */
 @property (nonatomic) CGSize size;
+
+/**
+ *  SDK文件
+ */
+@property (nonatomic, retain) TuSDKAOFile *sdkFile;
 
 /**
  *  贴纸元素类型
@@ -107,4 +109,13 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
  *  @param sText 贴纸文字对象
  */
 - (void)appendText:(TuSDKPFStickerText *)sText;
+
+/**
+ * 获取材质图片
+ *
+ * @param name
+ *            贴纸名称
+ * @return
+ */
+- (UIImage *)stickerImageWithName:(NSString *)name;
 @end

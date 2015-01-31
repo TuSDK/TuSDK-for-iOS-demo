@@ -7,17 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TuSDKTSBundle.h"
+
 /**
  *  滤镜帮助类
  */
 @interface TuSDKFilterUtils : NSObject
 
 /**
- *  获取滤镜集成材质集合
+ *  获取材质
  *
- *  @param names 材质名称集合
+ *  @param name 材质名称
  *
- *  @return 滤镜集成材质集合
+ *  @return 获取材质
  */
-+ (NSArray *)texturesIntegrateWithNames:(NSArray *)names;
++ (UIImage *)textureBundleWithName:(NSString *)name;
 @end

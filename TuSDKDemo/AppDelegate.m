@@ -24,21 +24,6 @@
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
     [TuSDK initSdkWithAppKey:@"6560eb5fd613e677-04"];
     
-    // 可选: 初始化滤镜预览图列表 (默认使用 [TuSDK.filterManager configSampleTaskWithSDK])
-    [TuSDK.filterManager configSampleTaskWithVersion:lsqFilterVersion
-                                         filterNames:@[@"Normal",
-                                                       /*************磨皮测试功能，发布正式产品时，请删除该部分选项**************/
-                                                       @"SkinTwiceMixed", @"SkinTwiceMixedSigma", @"SkinRGBSpace",
-                                                       @"SkinColorMixed",
-                                                       /*************磨皮测试功能，发布正式产品时，请删除该部分选项**************/
-                                                       @"Artistic", @"Brilliant", @"Cheerful",
-                                                       @"Clear", @"Fade", @"Forest", @"Gloss",
-                                                       @"Harmony", @"Instant", @"Lightup",
-                                                       @"Morning", @"Newborn", @"Noir",
-                                                       @"Relaxed", @"Rough", @"Thick", @"Vintage"]
-                                          originPath:[TuSDKTSBundle sdkBundleOther:lsqFilterSampleDefaultOriginImage]];
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
     

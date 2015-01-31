@@ -118,6 +118,13 @@
 - (CGSize)getSize;
 
 /**
+ *  获取像素长宽
+ *
+ *  @return 长宽
+ */
+- (CGSize)getPixiesSize;
+
+/**
  *  设置宽度
  *
  *  @param width 宽度

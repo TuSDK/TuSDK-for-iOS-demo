@@ -128,4 +128,11 @@
  *  @return 10进制数字
  */
 - (NSUInteger)hexToDecimal;
+
+/**
+ *  转换为Json对象
+ *
+ *  @return Json对象
+ */
+- (id)toJson;
 @end

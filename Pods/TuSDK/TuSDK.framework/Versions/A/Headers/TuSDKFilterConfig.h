@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKFilterOption.h"
+#import "TuSDKConfig.h"
+
+/**
+ *  原生滤镜配置委托
+ */
+@protocol TuSDKFilterConfigDelegate <NSObject>
+/**
+ *  滤镜初始化完成
+ */
+- (void)onTuSDKFilterConfigInited;
+@end
 
 /**
  *  原生滤镜配置
@@ -25,11 +36,48 @@
 @property (nonatomic, readonly) NSArray *names;
 
 /**
+ *  是否已初始化
+ */
+@property (nonatomic, readonly) BOOL isInited;
+
+/**
+ *  原生滤镜配置委托
+ */
+@property (nonatomic, assign) id<TuSDKFilterConfigDelegate> delegate;
+
+/**
+ *  原生滤镜配置
+ *
+ *  @param config Sdk配置
+ *
+ *  @return 原生滤镜配置
+ */
++ (instancetype)initWithConfig:(TuSDKConfig *)config;
+
+/**
  *  原生滤镜配置
  *
  *  @return 原生滤镜配置
  */
 + (instancetype)config;
+
+/**
+ *  获取滤镜内部配置选项
+ *
+ *  @param name 配置名称
+ *
+ *  @return 配置选项
+ */
++ (NSString *)internalConfigWithName:(NSString *)name;
+
+/**
+ *  加载材质列表
+ *
+ *  @param name 滤镜名称
+ *
+ *  @return 材质列表
+ */
+- (NSArray *)loadTexturesWithName:(NSString *)name;
 
 /**
  *  默认滤镜选项

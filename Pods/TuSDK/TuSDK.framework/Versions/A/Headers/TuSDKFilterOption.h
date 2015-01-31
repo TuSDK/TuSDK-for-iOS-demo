@@ -7,26 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
-/**
- *  滤镜类型
- */
-typedef NS_ENUM(NSInteger, lsqFilterType)
-{
-    /**
-     *  未知
-     */
-    lsqFilterTypeUnknow = 0,
-    /**
-     *  内部集成
-     */
-    lsqFilterTypeIntegrate = 1
-};
+#import <GPUImage/GPUImage.h>
+#import "TuSDKDataJson.h"
+#import "TuSDKAOFile.h"
 
 /**
  *  滤镜配置选项
  */
-@interface TuSDKFilterOption : NSObject
+@interface TuSDKFilterOption : TuSDKDataJson
+
+/**
+ * 滤镜ID
+ */
+@property (nonatomic)uint64_t filterId;
 
 /**
  *  滤镜名称
@@ -34,9 +27,14 @@ typedef NS_ENUM(NSInteger, lsqFilterType)
 @property (nonatomic, retain) NSString *name;
 
 /**
- *  滤镜类名
+ * 滤镜类型
  */
-@property (nonatomic, retain) NSString *clazzName;
+@property (nonatomic) NSUInteger filterType;
+
+/**
+ * 滤镜配置参数
+ */
+@property (nonatomic, retain) NSArray *configs;
 
 /**
  *  滤镜材质列表
@@ -44,30 +42,50 @@ typedef NS_ENUM(NSInteger, lsqFilterType)
 @property (nonatomic, retain) NSArray *textures;
 
 /**
- *  滤镜类型
+ *  材质需要保持和输入图片相同的大小与方向
  */
-@property (nonatomic) lsqFilterType type;
+@property (nonatomic) BOOL texturesKeepInput;
 
 /**
- *  快速创建选项
- *
- *  @param name     滤镜名称
- *  @param clazz    滤镜类名
- *  @param textures 滤镜材质列表
- *  @param type     滤镜类型
- *
- *  @return 滤镜配置选项
+ * 是否允许调节参数
  */
-+ (instancetype) buildWithName:(NSString *)name clazz:(NSString *)clazz textures:(NSArray *)textures type:(lsqFilterType)type;
+@property (nonatomic) BOOL canDefinition;
 
 /**
- *  快速创建选项 - 内部集成
- *
- *  @param name     滤镜名称
- *  @param clazz    滤镜类名
- *  @param textures 滤镜材质列表
- *
- *  @return 滤镜配置选项
+ * 加密级别
  */
-+ (instancetype) buildIntegrateWithName:(NSString *)name clazz:(NSString *)clazz textures:(NSArray *)textures;
+@property (nonatomic) NSUInteger encryptType;
+
+/**
+ * 是否为内置滤镜
+ */
+@property (nonatomic) BOOL isInternal;
+
+/**
+ *  SDK文件
+ */
+@property (nonatomic, retain) TuSDKAOFile *sdkFile;
+
+/**
+ * 复制滤镜配置选项
+ *
+ * @return
+ */
+- (TuSDKFilterOption *)copy;
+
+/**
+ * 获取滤镜实例
+ *
+ * @return
+ */
+- (GPUImageOutput <GPUImageInput> *)getFilter;
+
+/**
+ *  获取材质图片
+ *
+ *  @param name 材质图片名称
+ *
+ *  @return 材质图片
+ */
+- (UIImage *)textureImageWithName:(NSString *)name;
 @end

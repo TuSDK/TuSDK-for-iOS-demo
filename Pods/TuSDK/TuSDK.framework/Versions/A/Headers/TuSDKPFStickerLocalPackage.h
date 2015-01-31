@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKPFStickerCategory.h"
+#import "TuSDKConfig.h"
 
 /**
  *  默认贴纸文件夹名称
@@ -31,12 +32,26 @@ extern NSString * const lsq_STICKER_LOCAL_WATERMARK;
  *  分类列表
  */
 @property (nonatomic, readonly) NSArray *categories;
+
+/**
+ *  是否已初始化
+ */
+@property (nonatomic, readonly) BOOL isInited;
 /**
  *  本地贴纸包
  *
  *  @return 本地贴纸包
  */
 + (instancetype)package;
+
+/**
+ *  本地贴纸包
+ *
+ *  @param config Sdk配置
+ *
+ *  @return 本地贴纸包
+ */
++ (instancetype)initWithConfig:(TuSDKConfig *)config;
 
 /**
  *  加载贴纸预览图片

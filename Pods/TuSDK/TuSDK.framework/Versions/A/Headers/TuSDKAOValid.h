@@ -67,4 +67,14 @@
  *  @return 最多使用贴纸数量
  */
 - (NSUInteger)maxStickers;
+
+/**
+ *  获取文本加密KEY
+ *
+ *  @param key  key
+ *  @param type 加密类型
+ *
+ *  @return 文本加密KEY
+ */
+- (NSString *)sdkTextKey:(NSString *)key type:(NSUInteger)type;
 @end

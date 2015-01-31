@@ -52,6 +52,11 @@
 extern float const lsqFilterVersion;
 
 /**
+ * SDK配置文件 (lsq_tusdk_configs.json)
+ */
+extern NSString * const lsqSdkConfigs;
+
+/**
  *  临时文件目录 (APP/Cache/%lsqTemp%)
  */
 extern NSString * const lsqTempDir;
@@ -105,18 +110,11 @@ extern NSString * const lsqFilterSampleExtension;
 + (void)setLogLevel:(lsqLogLevel)level;
 
 /**
- *  内部滤镜名称列表
+ *  滤镜名称列表
  *
- *  @return 内部滤镜名称列表
+ *  @return 滤镜名称列表
  */
-+ (NSArray *)internalFilterNames;
-
-/**
- *  自定义滤镜名称列表
- *
- *  @return 内部滤镜名称列表
- */
-+ (NSArray *)customFilterNames;
++ (NSArray *)filterNames;
 
 /**
  *  滤镜管理器
@@ -124,6 +122,15 @@ extern NSString * const lsqFilterSampleExtension;
  *  @return 滤镜管理器
  */
 + (TuSDKFilterManager *)filterManager;
+
+/**
+ *  初始化滤镜管理器
+ *
+ *  @param delegate   滤镜控管理器委托
+ *  @param initSample 是否初始化默认滤镜预览图
+ */
++ (void)initFilterManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate
+                           initSample:(BOOL)initSample;
 
 /**
  *  获取滤镜任务
