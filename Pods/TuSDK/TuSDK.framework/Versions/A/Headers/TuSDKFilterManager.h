@@ -44,10 +44,11 @@
  *  滤镜控管理器
  *
  *  @param config Sdk配置
+ *  @param buildFilterSimple 是否生成滤镜预览图
  *
  *  @return 滤镜控管理器
  */
-+ (instancetype)initWithConfig:(TuSDKConfig *)config;
++ (instancetype)initWithConfig:(TuSDKConfig *)config buildFilterSimple:(BOOL)buildFilterSimple;
 
 /**
  *  是否已初始化
@@ -70,13 +71,11 @@
 @property (nonatomic, readonly) TuSDKTKFiltersSampleTask *samplesTask;
 
 /**
- *  初始化滤镜管理器
+ *  检查滤镜管理器是否初始化
  *
  *  @param delegate   滤镜控管理器委托
- *  @param initSample 是否初始化默认滤镜预览图
  */
-- (void)initFilterManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate
-                           initSample:(BOOL)initSample;
+- (void)checkManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate;
 
 /**
  *  获取滤镜任务

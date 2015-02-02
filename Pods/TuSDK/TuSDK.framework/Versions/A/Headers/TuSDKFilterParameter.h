@@ -27,6 +27,19 @@
 - (void)submitParameter;
 @end
 
+#pragma mark - TuSDKFilterTexturesProtocol
+/**
+ *  材质协议
+ */
+@protocol TuSDKFilterTexturesProtocol <NSObject>
+/**
+ *  加载材质
+ *
+ *  @param textures 材质列表
+ */
+- (void)appendTextures:(NSArray *)textures;
+@end
+
 
 #pragma mark - TuSDKFilterArg
 /**

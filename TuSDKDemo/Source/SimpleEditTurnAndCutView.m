@@ -23,7 +23,7 @@
     self.bottomBar.mirrorButton.hidden = YES;
     // 创建向右旋转按钮
     _trunRightButton = [UIButton buttonWithFrame:self.bottomBar.mirrorButton.frame
-                           imageLSQBundleNamed:@"style_default_edit_button_trun_right"];
+                             imageLSQBundleNamed:@"style_default_edit_button_trun_right"];
     // 绑定动作
     [_trunRightButton addTouchUpInsideTarget:self action:@selector(onImageTurnRightAction)];
     // 添加到视图
