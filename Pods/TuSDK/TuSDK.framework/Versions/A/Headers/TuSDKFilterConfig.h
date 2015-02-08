@@ -62,15 +62,6 @@
 + (instancetype)config;
 
 /**
- *  获取滤镜内部配置选项
- *
- *  @param name 配置名称
- *
- *  @return 配置选项
- */
-+ (NSString *)internalConfigWithName:(NSString *)name;
-
-/**
  *  加载材质列表
  *
  *  @param name 滤镜名称

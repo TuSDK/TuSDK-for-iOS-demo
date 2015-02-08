@@ -153,8 +153,13 @@
 "lsq_filter_set_distanceNormalizationFactor" = "边缘";
 "lsq_filter_set_blurSigma" = "西格玛";
 "lsq_filter_set_mixied" = "混合";
+"lsq_filter_set_saturation" = "饱和度";
 "lsq_filter_set_contrast" = "对比度";
 "lsq_filter_set_sharpness" = "锐化";
+"lsq_filter_set_highlights" = "高光";
+"lsq_filter_set_shadows" = "阴影";
+"lsq_filter_set_temperature" = "色温";
+"lsq_filter_set_skinColor" = "肤色";
 "lsq_filter_set_autumnColorThreshold" = "秋意";
 
 // Filters Definition Bokeh
@@ -164,3 +169,12 @@
 "lsq_filter_set_excludeCirclePointY" = "中心Y";
 "lsq_filter_set_excludeBlurSize" = "边缘";
 "lsq_filter_set_excludeAspectRatio" = "内范围";
+
+// network
+"lsq_network_request_error" = "服务器请求错误";
+"lsq_network_request_return_error" = "服务器返回错误";
+"lsq_network_connection_without" = "设备无网络";
+"lsq_network_connection_interruption" = "网络连接中断，请检查网络设置";
+"lsq_network_connection_failed" = "网络连接失败";
+"lsq_network_connection_timeout" = "服务器连接超时";
+"lsq_network_paser_data_failed" = "数据处理失败";

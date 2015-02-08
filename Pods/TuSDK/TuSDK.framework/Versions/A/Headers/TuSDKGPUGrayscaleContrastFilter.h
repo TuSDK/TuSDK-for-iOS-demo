@@ -20,4 +20,20 @@
  *  对比度 （由于此种亮白原理是全图亮白，通过对比度控制画面色调整体变浅 0-4）
  */
 @property (nonatomic) CGFloat contrast;
+
+/**
+ *  Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 1.0 as the normal level
+ */
+@property(readwrite, nonatomic) CGFloat saturation;
+
+/**
+ * 0 - 1, increase to lighten shadows.
+ * @default 0
+ */
+@property(readwrite, nonatomic) CGFloat shadows;
+
+/**
+ *  色温 (默认：5000)
+ */
+@property(readwrite, nonatomic) CGFloat temperature;
 @end

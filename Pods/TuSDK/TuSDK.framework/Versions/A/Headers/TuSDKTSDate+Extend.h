@@ -286,4 +286,18 @@
  *  @return 周名称 TuSDK.strings=>"las_week_Sun" = "周日";
  */
 - (NSString *)weekdayName;
+
+#pragma mark - RFC1123
+/**
+ Convert a RFC1123 'Full-Date' string
+ (http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1)
+ into NSDate.
+ */
++ (NSDate *)dateFromRFC1123:(NSString *)value;
+
+/**
+ Convert NSDate into a RFC1123 'Full-Date' string
+ (http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1).
+ */
+- (NSString *)rfc1123String;
 @end

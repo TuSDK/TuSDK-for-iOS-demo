@@ -47,9 +47,14 @@
 #import "TuSDKTKFiltersSampleTask.h"
 
 /**
+ *  SDK版本
+ */
+extern NSString * const lsqSDKVersion;
+
+/**
  *  SDK滤镜版本
  */
-extern float const lsqFilterVersion;
+extern CGFloat const lsqFilterVersion;
 
 /**
  * SDK配置文件 (lsq_tusdk_configs.json)

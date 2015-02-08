@@ -31,6 +31,13 @@
 + (NSString*)base64encode:(NSString*)str;
 
 /**
+ *  base64编码
+ *
+ *  @return base64编码
+ */
+- (NSString*)base64encode;
+
+/**
  *  判断字符串是否为空
  *
  *  @param str 输入字符串

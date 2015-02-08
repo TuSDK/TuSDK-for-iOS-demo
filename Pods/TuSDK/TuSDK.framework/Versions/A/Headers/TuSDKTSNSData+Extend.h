@@ -45,4 +45,22 @@
  *  @return 解密数据
  */
 - (NSData *)decryptAES256CBCPKCS7PaddingWithKey:(NSString *)key;
+
+/**
+ *  解析base64字符串
+ *
+ *  @param str base64编码字符串
+ *
+ *  @return 解析base64数据
+ */
++ (NSData *)dataFromBase64String:(NSString*)str;
+
+/**
+ *  base64编码
+ *
+ *  @param str 输入字符串
+ *
+ *  @return base64编码
+ */
+- (NSString* )base64encode;
 @end

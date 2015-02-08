@@ -120,6 +120,24 @@
  *  @return 是否换位
  */
 - (BOOL) sizeTransposed;
+
+/**
+ *  重新解析图片
+ *
+ *  @param image 图片对象
+ *
+ *  @return 图片对象
+ */
++ (UIImage *)decodedImageWithImage:(UIImage *)image;
+
+/**
+ *  根据图片文件名按屏幕DPI进行缩放
+ *
+ *  @param key 图片文件名
+ *
+ *  @return 按屏幕DPI进行缩放后的图片
+ */
+- (UIImage *)scaledImageForKey:(NSString *)key;
 @end
 
 #pragma mark - ResizeAndRotate
@@ -249,6 +267,15 @@
  *  @return 正确的的图片方向
  */
 + (UIImageOrientation)orientation:(UIImageOrientation)orientation isMirror:(BOOL)isMirror;
+
+/**
+ *  获取图片EXIF的方向
+ *
+ *  @param exifOrientation EXIF方向
+ *
+ *  @return 图片的方向
+ */
++ (UIImageOrientation)orientationWithExif:(NSUInteger)exifOrientation;
 @end
 
 #pragma mark - ImageCorp
