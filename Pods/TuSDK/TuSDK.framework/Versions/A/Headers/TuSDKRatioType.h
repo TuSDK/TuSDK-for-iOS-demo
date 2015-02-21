@@ -127,4 +127,13 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 + (lsqRatioType) nextRatioType:(lsqRatioType)ratioType
                    currentType:(lsqRatioType) currentType
                     ignoreType:(lsqRatioType)ignoreType;
+
+/**
+ *  获取比例动作类型
+ *
+ *  @param ratioType 比例类型
+ *
+ *  @return 比例动作类型
+ */
++ (NSInteger) componentTypeWithRatioType:(lsqRatioType)ratioType;
 @end

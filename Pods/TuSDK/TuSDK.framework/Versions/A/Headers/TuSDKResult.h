@@ -68,9 +68,9 @@
 @property (nonatomic) CGFloat imageRatio;
 
 /**
- *  滤镜名称
+ *  滤镜代号
  */
-@property (nonatomic, copy) NSString *filterName;
+@property (nonatomic, copy) NSString *filterCode;
 
 /**
  *  当前所使用的滤镜

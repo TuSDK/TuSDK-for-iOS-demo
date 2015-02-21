@@ -12,7 +12,7 @@
 
 #pragma mark - SimpleCameraViewController
 
-@interface SimpleCameraViewController ()<TuSDKStillCameraDelegate>
+@interface SimpleCameraViewController ()<TuSDKStillCameraDelegate, TuSDKPFCameraFilterGroupViewDelegate>
 {
     // 相机对象
     TuSDKStillCamera *_camera;
@@ -34,11 +34,10 @@
     UIView *_bottomBar;
     // 拍摄按钮
     UIButton *_captureButton;
-    // 滤镜名称列表
-    UIScrollView *_filterWindow;
-    // 滤镜列表名称
-    NSArray *_filterNames;
-    
+    // 相机滤镜视图
+    TuSDKPFCameraFilterGroupView *_filterBar;
+    // 滤镜开关
+    UIButton *_filterButton;
     // 照片预览视图
     UIButton *_preview;
 }
@@ -134,15 +133,15 @@
 }
 
 /**
- *  切换滤镜
+ *  选中一个滤镜
  *
- *  @param sender
+ *  @param filterName 滤镜名称
+ *  @return 是否成功切换滤镜
  */
-- (void)onFilterSelected:(UIButton *)sender;
+- (BOOL)onSelectedFilterCode:(NSString *)code;
 {
-    if (!_camera) return;
-    
-    [_camera switchFilterWithName:_filterNames[sender.tag]];
+    if (!_camera) return YES;
+    return [_camera switchFilterWithCode:code];
 }
 
 /**
@@ -203,6 +202,45 @@
         [_camera destory];
         _camera = nil;
     }
+}
+#pragma mark - TuSDKPFCameraFilterGroupViewDelegate
+/**
+ *  选中一个滤镜
+ *
+ *  @param view    相机滤镜视图
+ *  @param item    滤镜分组元素
+ *  @param capture 是否允许拍摄
+ *
+ *  @return 是否允许继续执行
+ */
+- (BOOL)onTuSDKPFCameraFilterGroup:(TuSDKPFCameraFilterGroupView *)view
+                      selectedItem:(TuSDKCPGroupFilterItem *)item
+                           capture:(BOOL)capture;
+{
+    if (capture) {
+        [self onCapturePhoto:nil];
+        return YES;
+    }
+    
+    switch (item.type) {
+        case lsqGroupFilterItemFilter:
+            return [self onSelectedFilterCode:[item filterCode]];
+        default:
+            break;
+    }
+    return YES;
+}
+
+/**
+ *  相机滤镜视图状态改变
+ *
+ *  @param view   相机滤镜视图
+ *  @param isShow 是否显示
+ */
+- (void)onTuSDKPFCameraFilterGroup:(TuSDKPFCameraFilterGroupView *)view
+                      stateChanged:(BOOL)isShow;
+{
+    
 }
 #pragma mark - TuSDKStillCameraDelegate
 /**
@@ -275,6 +313,9 @@
 -(void)viewDidLoad;
 {
     [super viewDidLoad];
+    
+    // sdk统计代码，请不要加入您的应用
+    [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkSimpleCamera];
     
     self.view = [UIView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
     self.view.backgroundColor = RGB(122, 122, 122);
@@ -377,26 +418,28 @@
  */
 - (void)buildFilterWindow;
 {
-    // 滤镜名称列表
-    _filterWindow = [UIScrollView initWithFrame:CGRectMake(0, _bottomBar.getOriginY - 44, self.view.getSizeWidth, 44)];
-    _filterWindow.backgroundColor = RGBA(0, 0, 0, 0.5);
-    [self.view addSubview:_filterWindow];
+    // 相机滤镜视图
+    _filterBar = [TuSDKPFCameraFilterGroupView initWithFrame:self.view.bounds];
+    [self.view addSubview:_filterBar];
+    [_filterBar setDefaultShowState: YES];
+    _filterBar.autoSelectGroupDefaultFilter = YES;
+    _filterBar.delegate = self;
+    [_filterBar loadFilters];
     
-    _filterNames = [TuSDK filterNames];
-    
-    CGFloat left = 0;
-    int index = 0;
-    
-    for (NSString *title in _filterNames) {
-        UIButton *btn = [UIButton buttonWithFrame:CGRectMake(left, 0, 60, _filterWindow.getSizeHeight)
-                                            title:title font:FONT(12) color:[UIColor whiteColor]];
-        left = btn.getRightX + 10;
-        btn.tag = index;
-        [btn addTouchUpInsideTarget:self action:@selector(onFilterSelected:)];
-        [_filterWindow addSubview:btn];
-        index++;
-    }
-    _filterWindow.contentSize = CGSizeMake(left, _filterWindow.getSizeHeight);
+    // 滤镜开关
+    _filterButton = [UIButton buttonWithFrame:CGRectMake(_bottomBar.getSizeWidth - 100, [_bottomBar getCenterY:30], 100, 30)
+                                        title:@"滤镜" font:FONT(14)
+                                        color:[UIColor whiteColor]];
+    [_filterButton addTouchUpInsideTarget:self action:@selector(onFilterWindowToggle)];
+    [_bottomBar addSubview:_filterButton];
+}
+
+/**
+ *  滤镜视图开关
+ */
+- (void)onFilterWindowToggle;
+{
+    [_filterBar showGroupView];
 }
 
 /**

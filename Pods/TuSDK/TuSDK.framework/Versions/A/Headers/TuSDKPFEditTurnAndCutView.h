@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKPFEditImageView.h"
-#import "TuSDKPFCameraFilterView.h"
+#import "TuSDKPFEditTurnAndCutFilterView.h"
 
 #pragma mark - TuSDKPFEditTurnAndCutBottomView
 /**
@@ -59,7 +59,7 @@
     // 图片编辑视图 (旋转，缩放)
     TuSDKPFEditImageView *_editImageView;
     // 滤镜视图
-    TuSDKPFCameraFilterView *_filterView;
+    TuSDKPFEditTurnAndCutFilterView *_filterView;
 }
 
 /**
@@ -78,7 +78,7 @@
 @property (nonatomic, strong) Class editImageViewClazz;
 
 /**
- *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 
@@ -95,17 +95,12 @@
 /**
  *  滤镜列表视图
  */
-@property (nonatomic, readonly) TuSDKPFCameraFilterView *filterView;
+@property (nonatomic, readonly) TuSDKPFEditTurnAndCutFilterView *filterView;
 
 /**
  *  是否开启滤镜支持 (默认: 关闭)
  */
 @property (nonatomic) BOOL enableFilters;
-
-/**
- *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
- */
-@property (nonatomic, retain) NSArray *filterGroup;
 
 /**
  *  需要裁剪的长宽

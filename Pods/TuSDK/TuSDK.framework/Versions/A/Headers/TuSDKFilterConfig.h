@@ -7,8 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "TuSDKFilterOption.h"
+#import "TuSDKFilterGroup.h"
 #import "TuSDKConfig.h"
+#import "TuSDKTKImageViewTask.h"
+
+/**
+ *  默认滤镜代号
+ */
+extern NSString * const lsqNormalFilterCode;
 
 /**
  *  原生滤镜配置委托
@@ -23,17 +31,17 @@
 /**
  *  原生滤镜配置
  */
-@interface TuSDKFilterConfig : NSObject
+@interface TuSDKFilterConfig : TuSDKTKImageViewTask
 
 /**
- *  原生滤镜配置选项列表
+ *  原生滤镜代号列表
  */
-@property (nonatomic, readonly) NSDictionary *maps;
+@property (nonatomic, readonly) NSArray *codes;
 
 /**
- *  原生滤镜名称列表
+ *  滤镜分组列表
  */
-@property (nonatomic, readonly) NSArray *names;
+@property (nonatomic, readonly) NSArray *groups;
 
 /**
  *  是否已初始化
@@ -62,15 +70,6 @@
 + (instancetype)config;
 
 /**
- *  加载材质列表
- *
- *  @param name 滤镜名称
- *
- *  @return 材质列表
- */
-- (NSArray *)loadTexturesWithName:(NSString *)name;
-
-/**
  *  默认滤镜选项
  *
  *  @return 默认滤镜选项
@@ -80,18 +79,79 @@
 /**
  *  获取滤镜选项配置
  *
- *  @param name 滤镜名称
+ *  @param code 滤镜代号
  *
  *  @return 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
  */
-- (TuSDKFilterOption *)optionWithName:(NSString *)name;
+- (TuSDKFilterOption *)optionWithCode:(NSString *)code;
 
 /**
- *  验证滤镜名称
+ *  验证滤镜代号
  *
- *  @param filterNames 滤镜名称
+ *  @param filterCodes 滤镜代号列表
  *
  *  @return 滤镜名称
  */
-- (NSArray *)verifyNames:(NSArray *)filterNames;
+- (NSArray *)verifyCodes:(NSArray *)codes;
+
+/**
+ *  获取指定名称的滤镜列表
+ *
+ *  @param codes 滤镜代号列表
+ *
+ *  @return 滤镜列表
+ */
+- (NSArray *)optionsWithCodes:(NSArray *)codes;
+
+/**
+ *  获取滤镜组
+ *
+ *  @param group 滤镜分组
+ *
+ *  @return 滤镜列表
+ */
+- (NSArray *)optionsWithGroup:(TuSDKFilterGroup *)group;
+
+/**
+ *  滤镜组名称键
+ *
+ *  @param groupID 滤镜组ID
+ *
+ *  @return 滤镜组名称键
+ */
+- (NSString *)groupNameKeyWithGroupID:(uint64_t)groupID;
+
+/**
+ *  加载材质列表
+ *
+ *  @param code 滤镜代号
+ *
+ *  @return 材质列表
+ */
+- (NSArray *)loadTexturesWithCode:(NSString *)code;
+
+#pragma mark - imageLoad
+/**
+ *  加载滤镜组预览图
+ *
+ *  @param view 图片视图
+ *  @param group 滤镜分组
+ */
+- (void)loadGroupThumbWithImageView:(UIImageView *)view group:(TuSDKFilterGroup *)group;
+
+/**
+ *  加载滤镜组默认滤镜预览图
+ *
+ *  @param view 图片视图
+ *  @param group 滤镜分组
+ */
+- (void)loadGroupDefaultFilterThumbWithImageView:(UIImageView *)view group:(TuSDKFilterGroup *)group;
+
+/**
+ *  加载滤镜组默认滤镜预览图
+ *
+ *  @param view 图片视图
+ *  @param option 滤镜配置选项
+ */
+- (void)loadFilterThumbWithImageView:(UIImageView *)view option:(TuSDKFilterOption *)option;
 @end

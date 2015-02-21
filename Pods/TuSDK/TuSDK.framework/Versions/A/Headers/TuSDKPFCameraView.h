@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "TuSDKPFCameraFilterView.h"
+#import "TuSDKPFCameraFilterGroupView.h"
 #import "TuSDKRatioType.h"
 
 #pragma mark - TuSDKPFCameraFlashView
@@ -160,7 +160,7 @@
     // 闪光灯视图
     TuSDKPFCameraFlashView *_flashView;
     // 滤镜视图
-    TuSDKPFCameraFilterView *_filterView;
+    TuSDKPFCameraFilterGroupView *_filterView;
 }
 /**
  *  默认相机控制栏视图类 (默认:TuSDKPFCameraConfigView, 需要继承 TuSDKPFCameraConfigView)
@@ -178,7 +178,7 @@
 @property (nonatomic, strong) Class flashViewClazz;
 
 /**
- *  滤镜视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 
@@ -205,17 +205,12 @@
 /**
  *  滤镜列表视图
  */
-@property (nonatomic, readonly) TuSDKPFCameraFilterView *filterView;
+@property (nonatomic, readonly) TuSDKPFCameraFilterGroupView *filterView;
 
 /**
  *  滤镜视图
  */
 @property (nonatomic, assign) id<TuSDKPFCameraViewDelegate> delegate;
-
-/**
- *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
- */
-@property (nonatomic, retain) NSArray *filterGroup;
 
 /**
  *  通知系统旋转
@@ -230,4 +225,9 @@
  *  @param showFilterDefault 是否默认显示滤镜列表
  */
 - (void)buildFilterView:(BOOL)showFilterDefault;
+
+/**
+ *  显示底部栏
+ */
+- (void)showBottomBar;
 @end

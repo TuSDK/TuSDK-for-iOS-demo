@@ -19,11 +19,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
      */
     lsqCameraStateUnknow = 0,
     /**
-     *  内部集成
+     *  正在启动
      */
     lsqCameraStateStarting = 1,
     /**
-     *  内部集成
+     *  启动完成
      */
     lsqCameraStateStarted = 2,
     /**
@@ -157,9 +157,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 /**
  *  切换滤镜
  *
- *  @param name 滤镜名称
+ *  @param code 滤镜代号
+ *
+ *  @return 是否成功切换滤镜
  */
-- (void)switchFilterWithName:(NSString *)name;
+- (BOOL)switchFilterWithCode:(NSString *)code;
 
 #pragma mark - Flash
 /**

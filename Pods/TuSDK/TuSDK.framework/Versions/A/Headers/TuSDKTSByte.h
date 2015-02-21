@@ -67,9 +67,56 @@ __LSQBytesToIntegerFill(const Byte *bytes, size_t length)
 				| (0xff000000 & (bytes[0] << 24));
 }
 #define LSQBytesToIntegerFill __LSQBytesToIntegerFill
+
+/**
+ *  双精度浮点数转为Bits
+ *
+ *  @param x 值
+ *
+ *  @return Bits
+ */
+CG_EXTERN uint64_t LSQDoubleToBits(double x);
+CG_INLINE uint64_t
+__LSQDoubleToBits(double x) {
+    const union { double f; uint64_t i; } xUnion = { .f = x };
+    return xUnion.i;
+}
+#define LSQDoubleToBits __LSQDoubleToBits
+
+/**
+ *  单精度浮点数转为Bits
+ *
+ *  @param x 值
+ *
+ *  @return Bits
+ */
+CG_EXTERN uint32_t LSQDFloatToBits(float x);
+CG_INLINE uint32_t
+__LSQDFloatToBits(float x) {
+    const union { float f; uint32_t i; } xUnion = { .f = x };
+    return xUnion.i;
+}
+#define LSQDFloatToBits __LSQDFloatToBits
+
 /**
  *  Byte帮助类
  */
 @interface TuSDKTSByte : NSObject
+/**
+ *  长整形转为Data对象
+ *
+ *  @param value 值
+ *
+ *  @return Data对象
+ */
++ (NSData *)dataWithLong:(uint64_t)value;
 
+/**
+ *  浮点数转为Data对象
+ *
+ *  @param value 值
+ *
+ *  @return Data对象
+ */
++ (NSData *)dataWithDouble:(double)value;
 @end

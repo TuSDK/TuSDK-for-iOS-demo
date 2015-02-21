@@ -75,4 +75,17 @@
  *  @param enable 是否取消选中
  */
 - (void)deselectRow:(BOOL)enable;
+
+/**
+ *  取消选中行视图
+ */
+- (void)deselectRow;
+
+/**
+ *  设置行视图选中状态
+ *
+ *  @param selected  是否选中
+ *  @param indexPath 索引
+ */
+- (void)setCellSelected:(BOOL)selected rowAtIndexPath:(NSIndexPath *)indexPath;
 @end

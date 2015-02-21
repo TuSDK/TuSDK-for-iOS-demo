@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "TuSDKTKThread.h"
+#import "TuSDKTKStatistics.h"
 
 #import "TuSDKTSALAssets+Extend.h"
 #import "TuSDKTSAnimation.h"
@@ -24,8 +25,10 @@
 #import "TuSDKTSMotion.h"
 #import "TuSDKTSNSArray+Extend.h"
 #import "TuSDKTSNSData+Extend.h"
+#import "TuSDKTSNSUserDefaults+Extend.h"
 #import "TuSDKTSScreen+Extend.h"
 #import "TuSDKTSString+Extend.h"
+#import "TuSDKTSUIColor+Extend.h"
 
 #import "TuSDKICView+Extend.h"
 #import "TuSDKICNavigationController.h"
@@ -123,11 +126,11 @@ extern NSString * const lsqFilterSampleExtension;
 + (void)setLogLevel:(lsqLogLevel)level;
 
 /**
- *  滤镜名称列表
+ *  滤镜代号列表
  *
- *  @return 滤镜名称列表
+ *  @return 滤镜代号列表
  */
-+ (NSArray *)filterNames;
++ (NSArray *)filterCodes;
 
 /**
  *  滤镜管理器

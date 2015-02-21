@@ -39,7 +39,7 @@
 /**
  *  图片编辑滤镜控制器
  */
-@interface TuSDKPFEditFilterController : TuSDKCPImageResultController<TuSDKPFCameraFilterDelegate>{
+@interface TuSDKPFEditFilterController : TuSDKCPImageResultController<TuSDKPFEditFilterBarDelegate, TuSDKICGPUImageViewDelegate>{
 @protected
     // 默认样式视图
     TuSDKPFEditFilterView *_defaultStyleView;

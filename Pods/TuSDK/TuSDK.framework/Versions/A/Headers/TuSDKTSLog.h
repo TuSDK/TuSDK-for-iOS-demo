@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TuSDKTKStatistics.h"
+
 #pragma mark - NSObjectExceptionExtend
 /**
  *  异常管理

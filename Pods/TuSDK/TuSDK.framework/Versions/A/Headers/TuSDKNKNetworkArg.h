@@ -67,7 +67,7 @@ typedef void (^TuSDKNKNetworkArgFinishBlock)(TuSDKNKNetworkArg* arg);
  *
  *  @param operation 网络操作对象
  */
-- (void) onNetworkRequestFinishedWithOperation:(TuSDKNetworkOperation *)operation;
+- (void)onNetworkRequestFinishedWithOperation:(TuSDKNetworkOperation *)operation;
 
 // 处理返回数据
 - (void)dataParseWithBlock:(TuSDKNKNetworkArgReceivedBlock)block;

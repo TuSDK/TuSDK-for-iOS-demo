@@ -92,6 +92,15 @@ extern NSString * const lsqInternalFiltersConfig;
 + (NSString *)sdkBundleTexture:(NSString *)file;
 
 /**
+ *  SDK资源包材质图片路径
+ *
+ *  @param imageName 图片名称
+ *
+ *  @return SDK资源包材质图片路径
+ */
++ (NSString *)sdkBundleTextureImageName:(NSString *)imageName;
+
+/**
  *  SDK资源包其他文件路径
  *
  *  @param file 文件名称

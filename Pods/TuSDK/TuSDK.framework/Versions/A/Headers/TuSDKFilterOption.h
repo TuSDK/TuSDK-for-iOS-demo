@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <GPUImage/GPUImage.h>
 #import "TuSDKDataJson.h"
-#import "TuSDKAOFile.h"
 
 /**
  *  滤镜配置选项
@@ -22,9 +21,24 @@
 @property (nonatomic)uint64_t filterId;
 
 /**
+ * 分组ID
+ */
+@property (nonatomic) uint64_t groupId;
+
+/**
+ * 滤镜代号
+ */
+@property (nonatomic, retain) NSString *code;
+
+/**
  *  滤镜名称
  */
 @property (nonatomic, retain) NSString *name;
+
+/**
+ * 滤镜封面
+ */
+@property (nonatomic, retain) NSString *thumb;
 
 /**
  * 滤镜类型
@@ -32,9 +46,14 @@
 @property (nonatomic) NSUInteger filterType;
 
 /**
- * 滤镜配置参数
+ * 滤镜颜色
  */
-@property (nonatomic, retain) NSArray *configs;
+@property (nonatomic, retain) NSString *color;
+
+/**
+ * 滤镜渲染名称
+ */
+@property (nonatomic, retain) NSArray *shaders;
 
 /**
  *  滤镜材质列表
@@ -62,11 +81,6 @@
 @property (nonatomic) BOOL isInternal;
 
 /**
- *  SDK文件
- */
-@property (nonatomic, retain) TuSDKAOFile *sdkFile;
-
-/**
  * 复制滤镜配置选项
  *
  * @return
@@ -81,11 +95,16 @@
 - (GPUImageOutput <GPUImageInput> *)getFilter;
 
 /**
- *  获取材质图片
+ *  获取语言资源名称
  *
- *  @param name 材质图片名称
- *
- *  @return 材质图片
+ *  @return 获取语言资源名称
  */
-- (UIImage *)textureImageWithName:(NSString *)name;
+- (NSString *)nameKey;
+
+/**
+ *  获取预览图名称
+ *
+ *  @return 获取预览图名称
+ */
+- (NSString *)thumbKey;
 @end

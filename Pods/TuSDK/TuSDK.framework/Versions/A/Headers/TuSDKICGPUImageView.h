@@ -9,6 +9,22 @@
 #import <GPUImage/GPUImage.h>
 #import "TuSDKFilterWrap.h"
 
+@class TuSDKICGPUImageView;
+
+/**
+ *  GPU视图委托
+ */
+@protocol TuSDKICGPUImageViewDelegate <NSObject>
+/**
+ *  GPU视图滤镜对象改变
+ *
+ *  @param view   GPU视图
+ *  @param filter 滤镜包装对象
+ */
+- (void)onTuSDKICGPUImageView:(TuSDKICGPUImageView *)view
+                 changeFilter:(TuSDKFilterWrap *)filter;
+@end
+
 /**
  *  GPU视图
  */
@@ -27,6 +43,11 @@
  *  开启触摸时显示原图效果
  */
 @property (nonatomic) BOOL enableTouchCleanFilter;
+
+/**
+ *  GPU视图委托
+ */
+@property (nonatomic, assign) id<TuSDKICGPUImageViewDelegate> delegate;
 
 /**
  *  请求渲染图片

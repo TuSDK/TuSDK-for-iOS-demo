@@ -78,6 +78,11 @@
 @property (nonatomic, readonly) NSArray *args;
 
 /**
+ *  参数键名列表
+ */
+@property (nonatomic, readonly) NSArray *argKeys;
+
+/**
  *  配置参数总数
  */
 @property (nonatomic, readonly) NSUInteger count;

@@ -7,24 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKFilterWrap.h"
-#import "TuSDKPFCameraFilterView.h"
-#import "TuSDKPFFilterConfigView.h"
+#import "TuSDKICGPUImageView.h"
+#import "TuSDKPFEditFilterBarView.h"
 
 #pragma mark - TuSDKPFEditFilterImageView
 /**
  *  图片视图
  */
-@interface TuSDKPFEditFilterImageView : UIView<TuSDKPFFilterConfigViewDelegate>
+@interface TuSDKPFEditFilterImageView : UIView
 /**
- *  滤镜配置视图
+ *  GPU视图委托
  */
-@property (nonatomic, retain) TuSDKPFFilterConfigView *filterConfigView;
+@property (nonatomic, assign) id<TuSDKICGPUImageViewDelegate> delegate;
 
 /**
- *  顶部边距
+ *  滤镜对象
  */
-@property (nonatomic) NSInteger topSpace;
+@property (nonatomic, assign) TuSDKFilterWrap *filterWrap;
 
 /**
  *  设置图片
@@ -34,11 +33,9 @@
 - (void)setImage:(UIImage *)image;
 
 /**
- *  设置滤镜对象
- *
- *  @param filterWrap 滤镜对象
+ *  请求渲染图片
  */
-- (void)setFilterWrap:(TuSDKFilterWrap *)filterWrap;
+- (void)requestRender;
 @end
 
 #pragma mark - TuSDKPFEditFilterBottomBar
@@ -75,5 +72,5 @@
 /**
  *  滤镜列表视图
  */
-@property (nonatomic, readonly) TuSDKPFCameraFilterView *filterBar;
+@property (nonatomic, readonly) TuSDKPFEditFilterBarView *filterBar;
 @end

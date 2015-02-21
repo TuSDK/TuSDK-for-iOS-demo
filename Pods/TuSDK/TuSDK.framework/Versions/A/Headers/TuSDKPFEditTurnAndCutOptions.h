@@ -30,7 +30,7 @@
 @property (nonatomic, strong) Class editImageViewClazz;
 
 /**
- *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 

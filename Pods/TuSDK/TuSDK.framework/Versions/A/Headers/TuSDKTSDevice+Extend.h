@@ -73,7 +73,14 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 系统版本号 e.g. @"4.0"
  */
-+ (CGFloat)systemVersion;
++ (CGFloat)systemFloatVersion;
+
+/**
+ *  系统版本号
+ *
+ *  @return 系统版本号 e.g. @"4.0.2"
+ */
++ (NSString *)systemVersion;
 
 /**
  *  硬件型号

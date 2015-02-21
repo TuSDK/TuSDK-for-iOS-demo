@@ -9,17 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "TuSDKDataJson.h"
-
-#pragma mark - TuSDKConfigFilter
-/**
- *  滤镜配置
- */
-@interface TuSDKConfigFilter : TuSDKDataJson
-/**
- *  文件路径
- */
-@property (nonatomic, retain) NSString *file;
-@end
+#import "TuSDKFilterGroup.h"
 
 #pragma mark - TuSDKConfigSticker
 /**
@@ -49,9 +39,9 @@
 @property (nonatomic) CGFloat filterVersion;
 
 /**
- * 滤镜配置列表
+ *  滤镜分组列表
  */
-@property (nonatomic, retain) NSArray *filters;
+@property (nonatomic, retain) NSArray *filterGroups;
 
 /**
  * 贴纸配置列表

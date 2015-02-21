@@ -37,7 +37,7 @@
 /**
  *  默认相机视图控制器
  */
-@interface TuSDKPFCameraViewController : TuSDKCPResultViewController<TuSDKStillCameraDelegate, TuSDKPFCameraViewDelegate, TuSDKPFCameraFilterDelegate>{
+@interface TuSDKPFCameraViewController : TuSDKCPResultViewController<TuSDKStillCameraDelegate, TuSDKPFCameraViewDelegate, TuSDKPFCameraFilterGroupViewDelegate>{
 @protected
     // 默认样式视图
     TuSDKPFCameraView *_defaultStyleView;
@@ -118,7 +118,17 @@
 /**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
-@property (nonatomic, retain) NSArray *filterGroup;
+@property (nonatomic, retain) NSArray * filterGroup;
+
+/**
+ *  是否保存最后一次使用的滤镜
+ */
+@property (nonatomic) BOOL saveLastFilter;
+
+/**
+ *  自动选择分组滤镜指定的默认滤镜
+ */
+@property (nonatomic) BOOL autoSelectGroupDefaultFilter;
 
 /**
  *  开启滤镜配置选项
@@ -169,6 +179,11 @@
  *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
  */
 @property (nonatomic) BOOL disableMirrorFrontFacing;
+
+/**
+ *  最后选中的滤镜代号
+ */
+@property (nonatomic) NSString *lastFilterCode;
 
 /**
  *  开始启动相机

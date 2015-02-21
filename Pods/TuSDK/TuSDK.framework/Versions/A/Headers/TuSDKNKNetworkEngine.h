@@ -10,6 +10,11 @@
 #import "TuSDKNKNetworkArg.h"
 
 /**
+ *  是否为调试模式
+ */
+extern BOOL const lsqTuSDKNKNetworkEngineDebug;
+
+/**
  *  sdk应用层网络引擎
  */
 @interface TuSDKNKNetworkEngine : TuSDKNetworkEngine

@@ -102,8 +102,16 @@
 "las_week_Fri" = "周五";
 "las_week_Sat" = "周六";
 
+// FilterGroup
+"lsq_filter_group_Leica" = "莱卡";
+"lsq_filter_group_Lomo" = "LOMO";
+"lsq_filter_group_Food" = "美食";
+"lsq_filter_group_Enhance" = "增强";
+"lsq_filter_group_Glare" = "光效";
+"lsq_filter_group_Beauty" = "人像";
+
 // Filters
-"lsq_filter_Normal" = "默认";
+"lsq_filter_Normal" = "无效果";
 "lsq_filter_Lomo" = "LOMO";
 "lsq_filter_Noir" = "黑白";
 "lsq_filter_Abao" = "阿宝";
@@ -125,6 +133,15 @@
 "lsq_filter_Relaxed" = "轻松";
 "lsq_filter_Rough" = "粗犷";
 "lsq_filter_Leica" = "莱卡";
+
+// Beauty
+"lsq_filter_SkinNature" = "自然";
+"lsq_filter_SkinPink" = "粉嫩";
+"lsq_filter_SkinJelly" = "果冻";
+"lsq_filter_SkinNoir" = "黑白";
+"lsq_filter_SkinRuddy" = "红润";
+"lsq_filter_SkinPowder" = "蜜粉";
+"lsq_filter_SkinSugar" = "糖水色";
 
 // Filters Definition
 "lsq_filter_SkinWhitening" = "美白";

@@ -39,12 +39,12 @@
 /**
  *  旋转和裁剪视图控制器
  */
-@interface TuSDKPFEditTurnAndCutViewController : TuSDKCPImageResultController<TuSDKPFCameraFilterDelegate>{
+@interface TuSDKPFEditTurnAndCutViewController : TuSDKCPImageResultController<TuSDKPFEditTurnAndCutFilterDelegate>{
     @protected
     // 默认样式视图
     TuSDKPFEditTurnAndCutView *_defaultStyleView;
     // 选中的滤镜名称
-    NSString *_selectedFilterName;
+    NSString *_selectedFilterCode;
 }
 /**
  *  默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
@@ -72,7 +72,7 @@
 @property (nonatomic, strong) Class editImageViewClazz;
 
 /**
- *  滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 

@@ -36,7 +36,7 @@
 @property (nonatomic, strong) Class flashViewClazz;
 
 /**
- *  滤镜视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 
@@ -74,7 +74,17 @@
 /**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
-@property (nonatomic, retain) NSArray *filterGroup;
+@property (nonatomic, retain) NSArray * filterGroup;
+
+/**
+ *  是否保存最后一次使用的滤镜
+ */
+@property (nonatomic) BOOL saveLastFilter;
+
+/**
+ *  自动选择分组滤镜指定的默认滤镜
+ */
+@property (nonatomic) BOOL autoSelectGroupDefaultFilter;
 
 /**
  *  开启滤镜配置选项

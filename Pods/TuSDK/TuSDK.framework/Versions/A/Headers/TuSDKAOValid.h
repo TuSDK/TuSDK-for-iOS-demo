@@ -77,4 +77,15 @@
  *  @return 文本加密KEY
  */
 - (NSString *)sdkTextKey:(NSString *)key type:(NSUInteger)type;
+
+/**
+ *  验证滤镜密钥
+ *
+ *  @param key      滤镜验证码
+ *  @param type     验证方式
+ *  @param filterId 滤镜ID
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)filterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
 @end

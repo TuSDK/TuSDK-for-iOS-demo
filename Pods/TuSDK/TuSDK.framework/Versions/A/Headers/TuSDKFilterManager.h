@@ -61,9 +61,9 @@
 @property (nonatomic) BOOL initSample;
 
 /**
- *  滤镜名称列表
+ *  滤镜代号列表
  */
-@property (nonatomic, readonly) NSArray *filterNames;
+@property (nonatomic, readonly) NSArray *filterCodes;
 
 /**
  *  滤镜预览效果列表任务
@@ -81,49 +81,48 @@
  *  获取滤镜任务
  *
  *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
- *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ *  @param codes 需要显示的滤镜代号列表 (如果为空将显示所有自定义滤镜)
  *
  *  @return 滤镜任务
  */
-- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
+- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterCodes:(NSArray *)codes;
 
 /**
  * 创建滤镜临时预览效果列表任务
  *
  *  @param image 输入的图片
- *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+ *  @param codes 需要显示的滤镜代号列表 (如果为空将显示所有自定义滤镜)
  *
  *  @return 滤镜任务
  */
-- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
-
+- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image filterCodes:(NSArray *)codes;
 /**
  *  获取滤镜包装对象
  *
- *  @param name 滤镜名称
+ *  @param code 滤镜代号
  *
  *  @return 滤镜包装对象
  */
-- (TuSDKFilterWrap *)filterWrapWithName:(NSString *)name;
+- (TuSDKFilterWrap *)filterWrapWithCode:(NSString *)code;
 
 /**
  *  执行滤镜 并输出图形
  *
  *  @param image image 输入图像
- *  @param name  滤镜名称
+ *  @param code  滤镜代号
  *
  *  @return 滤镜处理过的图像 (默认使用图像自身的方向属性)
  */
-- (UIImage *)processWithImage:(UIImage *)image byFilterName:(NSString *)name;
+- (UIImage *)processWithImage:(UIImage *)image byFilterCode:(NSString *)code;
 
 /**
  *  执行滤镜 并输出图形
  *
  *  @param image            输入图像
  *  @param imageOrientation 图像方向
- *  @param name             滤镜名称
+ *  @param code             滤镜代号
  *
  *  @return 滤镜处理过的图像
  */
-- (UIImage *)processWithImage:(UIImage *)image orientation:(UIImageOrientation)imageOrientation byFilterName:(NSString *)name;
+- (UIImage *)processWithImage:(UIImage *)image orientation:(UIImageOrientation)imageOrientation byFilterCode:(NSString *)code;
 @end

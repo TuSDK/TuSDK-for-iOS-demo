@@ -104,9 +104,7 @@
 }
 @end
 
-
 #pragma mark - DemoRootViewController
-
 @interface DemoRootViewController ()<DemoChooseDelegate, TuSDKPFCameraDelegate, TuSDKPFEditTurnAndCutDelegate, TuSDKFilterManagerDelegate>
 {
     // 自定义系统相册组件
@@ -135,7 +133,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"涂图-TuSDK";
+    self.title = @"TuSDK";
+    
+    // 启动GPS
+    [TuSDKTKLocation shared].requireAuthor = YES;
+    
+    // sdk统计代码，请不要加入您的应用
+    [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
     
     // 异步方式初始化滤镜管理器
     // 需要等待滤镜管理器初始化完成，才能使用所有功能
@@ -303,7 +307,7 @@
     // 闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
     // opt.flashViewClazz = [TuSDKPFCameraFlashView class];
     
-    // 滤镜视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+    // 滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
     // opt.filterViewClazz = [TuSDKPFCameraFilterView class];
     
     // 聚焦触摸视图类 (默认:TuSDKICFocusTouchView, 需要继承 TuSDKICFocusTouchView)
@@ -325,7 +329,13 @@
     opt.showFilterDefault = YES;
     
     // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
-    // opt.filterGroup = @[@"Normal", @"SkinTwiceMixedSigma", @"Artistic"];
+    // opt.filterGroup = @[@"Artistic", @"Brilliant", @"Cheerful", @"Clear", @"Fade", @"Forest"];
+    
+    // 是否保存最后一次使用的滤镜
+    opt.saveLastFilter = YES;
+    
+    // 自动选择分组滤镜指定的默认滤镜
+    opt.autoSelectGroupDefaultFilter = YES;
     
     // 开启滤镜配置选项
     opt.enableFilterConfig = YES;
@@ -406,8 +416,8 @@
     // 图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
     // opt.editImageViewClazz = [TuSDKPFEditImageView class];
     
-    // 滤镜列表视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
-    // opt.filterViewClazz = [TuSDKPFCameraFilterView class];
+    // 滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
+    // opt.filterViewClazz = [TuSDKPFEditTurnAndCutFilterView class];
     
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
