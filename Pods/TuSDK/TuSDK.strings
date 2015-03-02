@@ -169,7 +169,7 @@
 "lsq_filter_set_skinColorThresholdQuadraticMixture" = "矩阵";
 "lsq_filter_set_distanceNormalizationFactor" = "边缘";
 "lsq_filter_set_blurSigma" = "西格玛";
-"lsq_filter_set_mixied" = "混合";
+"lsq_filter_set_mixied" = "效果";
 "lsq_filter_set_saturation" = "饱和度";
 "lsq_filter_set_contrast" = "对比度";
 "lsq_filter_set_sharpness" = "锐化";

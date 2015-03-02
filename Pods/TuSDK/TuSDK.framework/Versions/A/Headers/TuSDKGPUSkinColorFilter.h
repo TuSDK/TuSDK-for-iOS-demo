@@ -13,8 +13,5 @@
  *  美白颜色滤镜
  */
 @interface TuSDKGPUSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
-/**
- *  皮肤平滑度（默认0.5， 0 - 1, 越大越平滑）
- */
-@property (nonatomic) CGFloat smoothing;
+
 @end

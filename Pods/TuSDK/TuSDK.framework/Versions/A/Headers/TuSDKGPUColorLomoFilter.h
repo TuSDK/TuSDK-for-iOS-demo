@@ -7,9 +7,11 @@
 //
 
 #import <GPUImage/GPUImage.h>
+#import "TuSDKFilterParameter.h"
+
 /**
  *  LOMO滤镜
  */
-@interface TuSDKGPUColorLomoFilter : GPUImageTwoInputFilter
+@interface TuSDKGPUColorLomoFilter : GPUImageTwoInputFilter<TuSDKFilterParameterProtocol>
 
 @end

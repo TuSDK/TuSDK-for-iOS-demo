@@ -329,7 +329,7 @@
     opt.showFilterDefault = YES;
     
     // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
-    // opt.filterGroup = @[@"Artistic", @"Brilliant", @"Cheerful", @"Clear", @"Fade", @"Forest"];
+    // opt.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];
     
     // 是否保存最后一次使用的滤镜
     opt.saveLastFilter = YES;
@@ -473,6 +473,7 @@
          }
          [self openEditAndCutWithController:controller result:result];
      }];
+    
     [_albumComponent showComponent];
 }
 
@@ -547,6 +548,8 @@
          }
          [result logInfo];
      }];
+    // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
+    _avatarComponent.options.cameraOptions.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _avatarComponent.autoDismissWhenCompelted = YES;
     [_avatarComponent showComponent];
