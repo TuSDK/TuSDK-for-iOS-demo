@@ -18,6 +18,7 @@
 #import "TuSDKTSBundle.h"
 #import "TuSDKTSDate+Extend.h"
 #import "TuSDKTSDevice+Extend.h"
+#import "TuSDKTSDeviceSettings.h"
 #import "TuSDKTSFileManager.h"
 #import "TuSDKTSImage+Extend.h"
 #import "TuSDKTSLog.h"

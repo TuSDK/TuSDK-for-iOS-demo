@@ -7,6 +7,8 @@
 */
 
 "lsq_reset" = "重置";
+"lsq_cancel" = "取消";
+"lsq_setting" = "设置";
 "lsq_loading_image" = "读取图片...";
 "lsq_initing" = "正在初始化";
 "lsq_inited" = "初始化完成";
@@ -50,6 +52,7 @@
 // camera
 "lsq_carema_no_device" = "您的设备没有相机功能！";
 "lsq_carema_access_error%@" = "无法访问系统相机.请在'设置->隐私->相机'设置 %@ 为打开状态.";
+"lsq_carema_access_error_title" = "无法访问系统相机";
 
 // album
 "lsq_album_title" = "相簿";
@@ -57,7 +60,12 @@
 "lsq_album_total_format%ld" = "%ld 张照片";
 "lsq_album_ALAssetsLibraryAccessDefaultError%@" = "相册访问失败(%@)";
 "lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相册访问失败.请在'设置->隐私->照片'设置 %@ 为打开状态.";
-"lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "无法访问相册.请在'设置->隐私->定位服务'设置 %@ 为打开状态.";
+"lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "无法访问相册.请在'设置->隐私->照片'设置 %@ 为打开状态.";
+"lsq_album_ALAssets_error_title" = "无法访问相册";
+
+// location
+"lsq_location_error_title" = "无法获取地理信息";
+"lsq_location_AccessUserDeniedError%@" = "无法获取地理信息.请在'设置->隐私->定位服务'设置 定位服务以及 %@ 为打开状态.";
 
 // save
 "lsq_save_saveToTemp" = "正在处理...";

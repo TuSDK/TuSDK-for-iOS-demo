@@ -125,6 +125,11 @@ extern NSString * const kDeviceiPad4G;
 + (NSString *)appIdentifier;
 
 /**
+ *  开启应用设置页面
+ */
++ (void)openAppSettings  NS_AVAILABLE_IOS(8_0);
+
+/**
  *  获取WIFI IP地址
  *
  *  @return WIFI IP地址

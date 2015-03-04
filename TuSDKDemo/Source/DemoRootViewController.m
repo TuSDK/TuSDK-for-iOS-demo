@@ -269,7 +269,7 @@
          [self clearComponents];
          // 获取头像图片
          if (error) {
-             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             lsqLError(@"album reader error: %@", error.userInfo);
              return;
          }
          
@@ -288,11 +288,21 @@
  */
 - (void) cameraComponentHandler;
 {
-    // 如果不支持摄像头显示警告信息
-    if ([AVCaptureDevice showAlertIfNotSupportCamera]){
-        return;
-    }
-    
+    // 开启访问相机权限
+    [TuSDKTSDeviceSettings checkAllowWithType:lsqDeviceSettingsCamera
+                                    completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+     {
+         if (openSetting) {
+             lsqLError(@"Can not open camera");
+             return;
+         }
+         [self showCameraController];
+     }];
+}
+
+#pragma mark - cameraComponentHandler TuSDKPFCameraDelegate
+- (void)showCameraController;
+{
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)
@@ -383,9 +393,9 @@
     // 添加委托
     controller.delegate = self;
     [self presentModalNavigationController:controller animated:YES];
+    
 }
 
-#pragma mark - cameraComponentHandler TuSDKPFCameraDelegate
 /**
  *  获取一个拍摄结果
  *
@@ -468,7 +478,7 @@
      {
          // 获取头像图片
          if (error) {
-             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             lsqLError(@"album reader error: %@", error.userInfo);
              return;
          }
          [self openEditAndCutWithController:controller result:result];
@@ -543,7 +553,7 @@
          [self clearComponents];
          // 获取头像图片
          if (error) {
-             [self throwWithReason:@"avatar reader error" userInfo:error.userInfo];
+             lsqLError(@"avatar reader error: %@", error.userInfo);
              return;
          }
          [result logInfo];
@@ -568,7 +578,7 @@
      {
          // 获取图片错误
          if (error) {
-             [self throwWithReason:@"album reader error" userInfo:error.userInfo];
+             lsqLError(@"album reader error: %@", error.userInfo);
              return;
          }
          [self openEditAdvancedWithController:controller result:result];
@@ -629,7 +639,7 @@
          [self clearComponents];
          // 获取图片失败
          if (error) {
-             [self throwWithReason:@"editAdvanced error" userInfo:error.userInfo];
+             lsqLError(@"editAdvanced error: %@", error.userInfo);
              return;
          }
          [result logInfo];
