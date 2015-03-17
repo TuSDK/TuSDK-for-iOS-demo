@@ -33,6 +33,14 @@
  *  滤镜组选择栏
  */
 @interface TuSDKCPGroupFilterBar : UIView<TuSDKCPGroupFilterTableViewDelegate>
+{
+    // 滤镜分组列表
+    TuSDKCPGroupFilterTableView *_groupTable;
+    // 滤镜列表
+    TuSDKCPGroupFilterTableView *_filterTable;
+    // 后退按钮
+    UIButton *_backButton;
+}
 /**
  *  滤镜分组列表
  */
@@ -62,6 +70,16 @@
  *  行视图宽度
  */
 @property (nonatomic)CGFloat cellWidth;
+
+/**
+ *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
+ */
+@property (nonatomic, strong)Class groupTableCellClazz;
+
+/**
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ */
+@property (nonatomic, strong)Class filterTableCellClazz;
 
 /**
  *  是否保存最后一次使用的滤镜

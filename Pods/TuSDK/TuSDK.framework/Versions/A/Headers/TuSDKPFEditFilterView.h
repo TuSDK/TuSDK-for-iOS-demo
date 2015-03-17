@@ -43,6 +43,13 @@
  *  底部动作栏
  */
 @interface TuSDKPFEditFilterBottomBar : UIView
+{
+    // 取消按钮
+    UIButton *_cancelButton;
+    // 完成按钮
+    UIButton *_completeButton;
+}
+
 /**
  *  取消按钮
  */
@@ -59,6 +66,14 @@
  *  图片编辑滤镜控制器视图
  */
 @interface TuSDKPFEditFilterView : UIView
+{
+    // 图片视图
+    TuSDKPFEditFilterImageView *_imageView;
+    // 底部动作栏
+    TuSDKPFEditFilterBottomBar *_bottomBar;
+    // 滤镜列表视图
+    TuSDKPFEditFilterBarView *_filterBar;
+}
 /**
  *  图片视图
  */

@@ -1,2 +1,2 @@
 platform :ios, '5.1'
-pod 'TuSDK', '1.6.2'
+pod 'TuSDK', '1.6.3'

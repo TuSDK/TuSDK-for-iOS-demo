@@ -54,4 +54,11 @@
  *  创建默认样式视图 (如需创建自定义视图，请覆盖该方法，并创建自己的视图类)
  */
 - (void)buildDefaultStyleView;
+
+/**
+ *  配置默认样式视图
+ *
+ *  @param view 默认样式视图 (如需创建自定义视图，请覆盖该方法，并配置自己的视图类)
+ */
+- (void)configDefaultStyleView:(UIView *)view;
 @end

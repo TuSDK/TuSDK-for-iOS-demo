@@ -81,6 +81,11 @@
 @property (nonatomic, retain) TuSDKFilterWrap *filter;
 
 /**
+ *  滤镜组选择栏底部距离
+ */
+@property (nonatomic) CGFloat filterBarBottom;
+
+/**
  *  加载滤镜
  *
  *  @param option 滤镜配置选项

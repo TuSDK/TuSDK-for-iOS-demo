@@ -35,6 +35,21 @@
 @property (nonatomic)CGFloat cellWidth;
 
 /**
+ *  滤镜组选择栏高度
+ */
+@property (nonatomic)CGFloat filterBarHeight;
+
+/**
+ *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
+ */
+@property (nonatomic, strong)Class groupTableCellClazz;
+
+/**
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ */
+@property (nonatomic, strong)Class filterTableCellClazz;
+
+/**
  *  滤镜组选择栏
  */
 @property (nonatomic, readonly) TuSDKCPGroupFilterBar *filterBar;

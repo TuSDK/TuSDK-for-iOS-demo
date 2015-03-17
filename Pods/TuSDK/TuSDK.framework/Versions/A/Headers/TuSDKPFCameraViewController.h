@@ -116,6 +116,26 @@
 @property (nonatomic) BOOL showFilterDefault;
 
 /**
+ *  滤镜列表行视图宽度
+ */
+@property (nonatomic)CGFloat filterBarCellWidth;
+
+/**
+ *  滤镜列表选择栏高度
+ */
+@property (nonatomic)CGFloat filterBarHeight;
+
+/**
+ *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
+ */
+@property (nonatomic, strong)Class filterBarGroupCellClazz;
+
+/**
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ */
+@property (nonatomic, strong)Class filterBarTableCellClazz;
+
+/**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
 @property (nonatomic, retain) NSArray * filterGroup;

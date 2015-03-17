@@ -45,6 +45,26 @@
 @property (nonatomic, retain) NSArray *filterGroup;
 
 /**
+ *  滤镜列表行视图宽度
+ */
+@property (nonatomic)CGFloat filterBarCellWidth;
+
+/**
+ *  滤镜列表选择栏高度
+ */
+@property (nonatomic)CGFloat filterBarHeight;
+
+/**
+ *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
+ */
+@property (nonatomic, strong)Class filterBarGroupCellClazz;
+
+/**
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ */
+@property (nonatomic, strong)Class filterBarTableCellClazz;
+
+/**
  *  需要裁剪的长宽
  */
 @property (nonatomic) CGSize cutSize;
