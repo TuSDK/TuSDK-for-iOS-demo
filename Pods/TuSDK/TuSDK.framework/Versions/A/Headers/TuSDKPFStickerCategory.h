@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKPFSticker.h"
+#import "TuSDKPFStickerGroup.h"
 
 /**
  *  贴纸分类
  */
-@interface TuSDKPFStickerCategory : NSObject
+@interface TuSDKPFStickerCategory : TuSDKDataJson
 /**
  * 贴纸分类ID
  */
@@ -21,7 +21,7 @@
 /**
  * 贴纸分类名称
  */
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *name;
 
 /**
  * 贴纸数据列表
@@ -45,9 +45,25 @@
 /**
  * 添加分类数据
  *
- * @param sticker 贴纸数据对象
+ * @param group 贴纸包
  */
-- (void)appendSticker:(TuSDKPFSticker*) sticker;
+- (void)appendGroup:(TuSDKPFStickerGroup *) group;
+
+/**
+ *  插入分类数据到第一个
+ *
+ *  @param group 贴纸包
+ */
+- (void)insertFirstWithGroup:(TuSDKPFStickerGroup *) group;
+
+/**
+ *  删除一个贴纸包
+ *
+ *  @param idt 贴纸包ID
+ *
+ *  @return 被删除的贴纸包
+ */
+- (TuSDKPFStickerGroup *)removeGroupWithID:(uint64_t)idt;
 
 /**
  *  复制数据

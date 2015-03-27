@@ -37,6 +37,11 @@ typedef void (^TuSDKNKNetworkArgFinishBlock)(TuSDKNKNetworkArg* arg);
 @property (nonatomic, retain) NSObject *data;
 
 /**
+ *  是否为下载动作
+ */
+@property (nonatomic) BOOL downFile;
+
+/**
  *  初始化
  *
  *  @param target 委托对象

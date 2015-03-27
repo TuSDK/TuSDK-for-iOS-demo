@@ -188,7 +188,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     /**
      * 本地贴纸控制器
      */
-    tkc_editLocalStickerFragment = 0x601000,
+    tkc_editStickerLocalFragment = 0x601000,
+    /**
+     * 在线贴纸控制器
+     */
+    tkc_editStickerOnlineFragment = 0x602000,
 };
 
 #pragma mark - TuSDKTKStatistics

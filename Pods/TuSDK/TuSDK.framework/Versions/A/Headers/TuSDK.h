@@ -26,6 +26,7 @@
 #import "TuSDKTSMotion.h"
 #import "TuSDKTSNSArray+Extend.h"
 #import "TuSDKTSNSData+Extend.h"
+#import "TuSDKTSNSDictionary+Extend.h"
 #import "TuSDKTSNSUserDefaults+Extend.h"
 #import "TuSDKTSScreen+Extend.h"
 #import "TuSDKTSString+Extend.h"
@@ -71,6 +72,11 @@ extern NSString * const lsqSdkConfigs;
 extern NSString * const lsqTempDir;
 
 /**
+ *  资源文件下载目录 (APP/Document/%lsqDownload%)
+ */
+extern NSString * const lsqDownloadDir;
+
+/**
  *  滤镜预览效果图文件名 (APP/Document/%lsqFilterSamples%)
  */
 extern NSString * const lsqFilterSampleDir;
@@ -96,6 +102,11 @@ extern NSString * const lsqFilterSampleExtension;
  *  SDK界面样式 (默认:lsqSdkUIDefault)
  */
 @property (nonatomic, copy) NSString *style;
+
+/**
+ *  用户标识
+ */
+@property (nonatomic, copy) NSString *userIdentify;
 
 /**
  *  TuSDK 核心
@@ -125,6 +136,20 @@ extern NSString * const lsqFilterSampleExtension;
  *  @param level 日志输出级别 (默认：lsqLogLevelFATAL 不输出)
  */
 + (void)setLogLevel:(lsqLogLevel)level;
+
+/**
+ *  应用临时目录
+ *
+ *  @return 应用临时目录
+ */
++ (NSString *)appTempPath;
+
+/**
+ *  应用下载目录
+ *
+ *  @return 应用下载目录
+ */
++ (NSString *)appDownloadPath;
 
 /**
  *  滤镜代号列表

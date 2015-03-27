@@ -25,6 +25,25 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  */
 + (instancetype) sharedEngine;
 
+/**
+ *  开发者ID
+ */
+@property (nonatomic, copy) NSString *developerId;
+
+/**
+ *  用户标识
+ */
+@property (nonatomic, copy) NSString *userIdentify;
+
+/**
+ * 获取在线链接
+ *
+ * @param url
+ * @param needAuth
+ *            是否需要验证
+ * @return
+ */
+- (NSString *)webUrlWithUrl:(NSString *)url needAuth:(BOOL)needAuth;
 #pragma mark - Http
 // Get方式提交
 - (TuSDKNetworkOperation *)get:(NSString*)url needAuth:(BOOL)needAuth arg:(TuSDKNKNetworkArg *)arg;

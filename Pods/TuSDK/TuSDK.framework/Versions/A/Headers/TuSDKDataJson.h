@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TuSDKTSString+Extend.h"
+
 /**
  *  Json数据
  */

@@ -23,6 +23,14 @@
 }
 
 /**
+ *  图标视图
+ */
+@property (nonatomic, readonly) UIImageView *iconView;
+/**
+ *  标题视图
+ */
+@property (nonatomic, readonly) UILabel *titleView;
+/**
  *  初始化视图
  */
 - (void)initView;

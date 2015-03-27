@@ -113,11 +113,10 @@ extern NSString * const lsqInternalFiltersConfig;
  *  SDK资源包贴纸文件路径
  *
  *  @param file 文件名称
- *  @param cate 分类名称
  *
  *  @return SDK资源包贴纸文件路径
  */
-+ (NSString *)sdkBundleSticker:(NSString *)file cate:(NSString *)cate;
++ (NSString *)sdkBundleSticker:(NSString *)file;
 @end
 
 #pragma mark - ImageBundleExtend

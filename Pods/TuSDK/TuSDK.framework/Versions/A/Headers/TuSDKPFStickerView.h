@@ -10,6 +10,8 @@
 #import "TuSDKPFStickerResult.h"
 
 @class TuSDKPFStickerItemView;
+@class TuSDKPFStickerView;
+
 /**
  *  贴纸元件视图委托
  */
@@ -93,10 +95,31 @@
 @end
 
 #pragma mark - TuSDKPFStickerView
+
+/**
+ *  贴纸视图委托
+ */
+@protocol TuSDKPFStickerViewDelegate <NSObject>
+/**
+ *  检查是否允许使用贴纸
+ *
+ *  @param view    贴纸视图
+ *  @param sticker 贴纸数据
+ *
+ *  @return 是否允许使用贴纸
+ */
+- (BOOL)stickerView:(TuSDKPFStickerView *)view canAppend:(TuSDKPFSticker *)sticker;
+@end
+
 /**
  *  贴纸视图
  */
 @interface TuSDKPFStickerView : UIView<TuSDKPFStickerItemViewDelegate>
+/**
+ *  贴纸视图委托
+ */
+@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> delegate;
+
 /**
  *  添加一个贴纸
  *

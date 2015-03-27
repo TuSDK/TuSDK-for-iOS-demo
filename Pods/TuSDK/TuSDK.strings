@@ -33,6 +33,8 @@
 // nav
 "lsq_nav_cancel" = "取消";
 "lsq_nav_back" = "返回";
+"lsq_nav_more" = "更多";
+"lsq_nav_remove" = "删除";
 
 // button
 "lsq_button_done" = "我知道了";
@@ -97,6 +99,14 @@
 "lsq_sticker_loading" = "正在加载贴纸...";
 "lsq_sticker_load_unexsit" = "贴纸不存在，请换一个试试";
 "lsq_sticker_over_limit%ld" = "OMG, 同时仅允许使用 %ld 张贴纸";
+"lsq_sticker_title" = "贴纸";
+"lsq_sticker_online_title" = "贴纸商店";
+"lsq_sticker_total_format%ld" = "%ld 张贴纸";
+"lsq_sticker_empty" = "还没有贴纸";
+"lsq_sticker_empty_msg" = "快去贴纸商店挑选海量贴纸";
+"lsq_sticker_1_1" = "新年大礼包";
+"lsq_sticker_remove_title" = "删除贴纸";
+"lsq_sticker_remove_msg%@" = "您是否需要删除贴纸 《%@》 ?";
 
 // format
 "las_date_format" = "yyyy年M月d日";

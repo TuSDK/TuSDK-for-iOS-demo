@@ -8,24 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TuSDKDataJson.h"
 #import "TuSDKFilterGroup.h"
-
-#pragma mark - TuSDKConfigSticker
-/**
- *  贴纸配置
- */
-@interface TuSDKConfigSticker : TuSDKDataJson
-/**
- *  文件路径
- */
-@property (nonatomic, retain) NSString *file;
-
-/**
- *  贴纸分类ID
- */
-@property (nonatomic)uint64_t categoryId;
-@end
+#import "TuSDKPFStickerCategory.h"
 
 #pragma mark - TuSDKConfig
 /**
@@ -44,9 +28,14 @@
 @property (nonatomic, retain) NSArray *filterGroups;
 
 /**
+ * 贴纸分类
+ */
+@property (nonatomic, retain) NSArray *stickerCategories;
+
+/**
  * 贴纸配置列表
  */
-@property (nonatomic, retain) NSArray *stickers;
+@property (nonatomic, retain) NSArray *stickerGroups;
 @end
 
 

@@ -142,4 +142,18 @@
  *  @return Json对象
  */
 - (id)toJson;
+
+/**
+ *  转换为 unsigned long long
+ *
+ *  @return unsigned long long
+ */
+- (unsigned long long)unsignedLongLongValue;
+
+/**
+ *  转换为 NSUInteger
+ *
+ *  @return NSUInteger
+ */
+- (NSUInteger)unsignedIntegerValue;
 @end

@@ -32,6 +32,11 @@
 @property (nonatomic, readonly, getter=level) NSInteger level;
 
 /**
+ *  开发者ID
+ */
+@property (nonatomic, readonly) NSString *developerId;
+
+/**
  *  验证开发者ID
  *
  *  @param key 开发者ID
@@ -88,4 +93,15 @@
  *  @return 是否验证成功
  */
 - (BOOL)filterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
+
+/**
+ *  验证贴纸密钥
+ *
+ *  @param key       贴纸密钥
+ *  @param type      验证方式
+ *  @param stickerId 贴纸ID
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)stickerValidWithKey:(NSString *)key type:(NSUInteger)type stickerId:(uint64_t)stickerId;
 @end

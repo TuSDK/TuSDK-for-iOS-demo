@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
+#import "TuSDKDataJson.h"
 
 /**
  *  贴纸文字类型
@@ -18,33 +19,53 @@ typedef NS_ENUM(NSInteger, lsqStickerTextType)
     /**
      * 默认文字类型
      */
-    lsqStickerTextDefault,
+    lsqStickerTextDefault = 1,
     /**
      * 时间信息 09:38
      */
-    lsqStickerTextTime,
+    lsqStickerTextTime = 2,
     /**
      * 日期信息 29/05/2014
      */
-    lsqStickerTextDate,
+    lsqStickerTextDate = 3,
     /**
      * 日期时间信息 29/05/2014 09:38
      */
-    lsqStickerTextDateTime,
+    lsqStickerTextDateTime = 4,
     /**
      * 地理信息
      */
-    lsqStickerTextLocal,
+    lsqStickerTextLocal = 5,
     /**
      * 天气信息
      */
-    lsqStickerTextWeather,
+    lsqStickerTextWeather = 6,
 };
 
 /**
  *  贴纸文字
  */
-@interface TuSDKPFStickerText : NSObject
+@interface TuSDKPFStickerText : TuSDKDataJson
+/**
+ * 贴纸ID
+ */
+@property (nonatomic) uint64_t idt;
+
+/**
+ * 贴纸ID
+ */
+@property (nonatomic) uint64_t stickerId;
+
+/**
+ * 贴纸包ID
+ */
+@property (nonatomic) uint64_t groupId;
+
+/**
+ * 贴纸分类ID
+ */
+@property (nonatomic) uint64_t categoryId;
+
 /**
  *  贴纸文字类型
  */
@@ -63,7 +84,7 @@ typedef NS_ENUM(NSInteger, lsqStickerTextType)
 /**
  * 文字大小 (单位:SP)
  */
-@property (nonatomic) float size;
+@property (nonatomic) CGFloat size;
 
 /**
  * 文字区域位置长宽百分比信息

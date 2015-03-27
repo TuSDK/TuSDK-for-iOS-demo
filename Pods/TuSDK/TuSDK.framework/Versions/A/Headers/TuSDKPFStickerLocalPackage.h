@@ -9,24 +9,32 @@
 #import <Foundation/Foundation.h>
 #import "TuSDKPFStickerCategory.h"
 #import "TuSDKConfig.h"
+#import "TuSDKTKImageViewTask.h"
+#import "TuSDKNKDownloadItem.h"
+
+@class TuSDKPFStickerLocalPackage;
 
 /**
- *  默认贴纸文件夹名称
+ *  本地贴纸包委托
  */
-extern NSString * const lsq_STICKER_LOCAL_IMAGE;
+@protocol TuSDKPFStickerLocalPackageDelegate <NSObject>
+
 /**
- *  心情贴纸文件夹名称
+ *  本地贴纸包下载状态改变
+ *
+ *  @param manager 本地贴纸包
+ *  @param item    下载对象
+ *  @param status  下载状态
  */
-extern NSString * const lsq_STICKER_LOCAL_MOOD;
-/**
- *  水印贴纸文件夹名称
- */
-extern NSString * const lsq_STICKER_LOCAL_WATERMARK;
+- (void)stickerManager:(TuSDKPFStickerLocalPackage *)manager
+                  item:(TuSDKNKDownloadItem *)item
+         changedStatus:(lsqDownloadTaskStatus)status;
+@end
 
 /**
  *  本地贴纸包
  */
-@interface TuSDKPFStickerLocalPackage : NSObject
+@interface TuSDKPFStickerLocalPackage : TuSDKTKImageViewTask
 
 /**
  *  分类列表
@@ -66,7 +74,78 @@ extern NSString * const lsq_STICKER_LOCAL_WATERMARK;
  *
  *  @param sticker  贴纸数据对象
  *
- *  @return  新的贴纸数据对象
+ *  @return  是否加载贴纸数据对象
  */
-- (TuSDKPFSticker *)loadStickerData:(TuSDKPFSticker *)sticker;
+- (BOOL)loadStickerData:(TuSDKPFSticker *)sticker;
+
+/**
+ *  添加本地贴纸包委托
+ *
+ *  @param delegate 本地贴纸包委托
+ */
+- (void)appenDelegate:(id<TuSDKPFStickerLocalPackageDelegate>)delegate;
+
+/**
+ *  删除本地贴纸包委托
+ *
+ *  @param delegate 本地贴纸包委托
+ */
+- (void)removeDelegate:(id<TuSDKPFStickerLocalPackageDelegate>)delegate;
+
+/**
+ *  下载贴纸
+ *
+ *  @param idt 贴纸ID
+ *  @param key 下载SN
+ *  @param fileId 文件ID
+ */
+- (void)downloadWithIdt:(uint64_t)idt key:(NSString *)key fileId:(NSString *)fileId;
+
+/**
+ *  取消下载贴纸
+ *
+ *  @param idt 贴纸ID
+ */
+- (void)cancelDownloadWithIdt:(uint64_t)idt;
+
+/**
+ *  删除下载贴纸
+ *
+ *  @param idt 贴纸ID
+ */
+- (void)removeDownloadWithIdt:(uint64_t)idt;
+
+/**
+ *  获取分类数据
+ *
+ *  @param idt 分类ID
+ *
+ *  @return 分类数据
+ */
+- (TuSDKPFStickerCategory *)categorieWithIdt:(uint64_t)idt;
+
+/**
+ *  获取贴纸数据对象
+ *
+ *  @param idt 贴纸数据对象ID
+ *
+ *  @return 贴纸数据对象
+ */
+- (TuSDKPFSticker *)stickerWithIdt:(uint64_t)idt;
+
+/**
+ *  分类列表
+ *
+ *  @param categories 已选中分类列表 (如果为空返回所有分类)
+ *
+ *  @return 分类列表
+ */
+- (NSArray *)categoriesWithCategories:(NSArray *)categories;
+
+/**
+ *  获取所有json数据
+ *
+ *  @return json数据
+ */
+- (NSString *)jsonAllData;
 @end

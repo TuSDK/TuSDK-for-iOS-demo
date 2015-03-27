@@ -40,6 +40,11 @@ typedef NS_ENUM(NSInteger, lsqImageViewTaskWareLoadType)
 @property (nonatomic, assign) UIImageView * imageView;
 
 /**
+ *  是否任务已取消
+ */
+@property (nonatomic, readonly) BOOL isCancel;
+
+/**
  *  初始化图片视图任务包装
  *
  *  @param imageView 图片视图
@@ -54,6 +59,11 @@ typedef NS_ENUM(NSInteger, lsqImageViewTaskWareLoadType)
  *  @return 缓存名称
  */
 - (NSString *)cacheKey;
+
+/**
+ *  取消任务
+ */
+- (void)cancel;
 
 /**
  *  是否为相同的视图
@@ -106,11 +116,4 @@ typedef NS_ENUM(NSInteger, lsqImageViewTaskWareLoadType)
  *  @param ware 图片视图任务包装
  */
 - (void)loadImageWithWare:(TuSDKTKImageViewTaskWare *)ware;
-
-/**
- *  提交任务
- *
- *  @param ware 图片视图任务包装
- */
-- (void)submitTask:(TuSDKTKImageViewTaskWare *)ware;
 @end

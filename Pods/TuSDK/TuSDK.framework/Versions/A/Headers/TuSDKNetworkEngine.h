@@ -399,4 +399,11 @@ extern NSString *const kTuSDKNetworkEngineOperationCountChanged;
  */
 @property (nonatomic, assign) BOOL shouldSendAcceptLanguageHeader;
 
+/**
+ *  put Custom Header
+ *
+ *  @param key   key
+ *  @param value value
+ */
+- (void)putCustomHeaderWithKey:(NSString *)key value:(NSString *)value;
 @end

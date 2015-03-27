@@ -22,7 +22,7 @@
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
     
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
-    [TuSDK initSdkWithAppKey:@"6560eb5fd613e677-04"];
+    [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
