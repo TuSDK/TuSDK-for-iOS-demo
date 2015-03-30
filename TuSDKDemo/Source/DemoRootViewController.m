@@ -46,6 +46,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        /**
+         * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+         * 关于TuSDK体积（SDK编译后仅为1.9MB）：
+         * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/TuSDK.bundle/stickers文件夹
+         * 2,如果您仅需要几款滤镜，您可以删除/app/TuSDK.bundle/textures下的*.gsce文件
+         * 3,如果您不需要使用滤镜功能，请删除/app/TuSDK.bundle/textures文件夹
+         * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+         *
+         * IOS编译Framework知识：
+         * Framework包含armv7,arm64等不同CPU的编译结果的集合；
+         * 其中每种CPU编译结果还包含Debug以及Realse两种子结果；
+         * 当集成某个Framework（假如TuSDK.Framework物理文件大小为30MB），编译成APP发布后，实际大小约为不到2MB
+         *
+         * 开发文档:http://tusdk.com/docs/ios/api/
+         */
         [self initView];
     }
     return self;
@@ -133,7 +148,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"TuSDK 涂图";
+    self.title = @"涂图-TuSDK";
     
     // 启动GPS
     [TuSDKTKLocation shared].requireAuthor = YES;
@@ -141,7 +156,24 @@
     // sdk统计代码，请不要加入您的应用
     [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
     
-    // 异步方式初始化滤镜管理器
+    
+    /**
+     * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+     * 关于TuSDK体积（SDK编译后仅为1.9MB）：
+     * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/TuSDK.bundle/stickers文件夹
+     * 2,如果您仅需要几款滤镜，您可以删除/app/TuSDK.bundle/textures下的*.gsce文件
+     * 3,如果您不需要使用滤镜功能，请删除/app/TuSDK.bundle/textures文件夹
+     * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+     *
+     * IOS编译Framework知识：
+     * Framework包含armv7,arm64等不同CPU的编译结果的集合；
+     * 其中每种CPU编译结果还包含Debug以及Realse两种子结果；
+     * 当集成某个Framework（假如TuSDK.Framework物理文件大小为30MB），编译成APP发布后，实际大小约为不到2MB
+     *
+     * 开发文档:http://tusdk.com/docs/ios/api/
+     */
+    
+    // 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
     // 需要等待滤镜管理器初始化完成，才能使用所有功能
     [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
     [TuSDK checkManagerWithDelegate:self];
@@ -262,6 +294,7 @@
     // opt.emptyViewClazz = [TuSDKPFEmptyView class];
     
     lsqLDebug(@"avatarComponentHandler");
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
     _albumComponent =
     [TuSDK albumCommponentWithController:self
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -276,6 +309,16 @@
          // if (controller) [controller dismissModalViewControllerAnimated];
          [result logInfo];
      }];
+    
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarOptions.html
+    // _albumComponent.options
+    
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFAlbumOptions.html
+    // _albumComponent.options.albumOptions
+    
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFPhotosOptions.html
+    // _albumComponent.options.photosOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _albumComponent.autoDismissWhenCompelted = YES;
@@ -303,6 +346,8 @@
 #pragma mark - cameraComponentHandler TuSDKPFCameraDelegate
 - (void)showCameraController;
 {
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFCameraOptions.html
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)
@@ -426,6 +471,8 @@
  */
 - (void) editComponentHandler;
 {
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)
@@ -473,6 +520,9 @@
     
     // 照片输出压缩率 0-1 如果设置为0 将保存为PNG格式 (默认: 0.95)
     // opt.outputCompress = 0.95f;
+    
+    // 控制器关闭后是否自动删除临时文件
+    // opt.isAutoRemoveTemp = YES;
     
     TuSDKPFEditTurnAndCutViewController *controller = opt.viewController;
     // 添加委托
@@ -522,6 +572,8 @@
 {
     if (!controller || !result) return;
     
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 是否开启滤镜支持 (默认: 关闭)
@@ -559,6 +611,7 @@
  */
 - (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
 {
+    // 清除所有控件
     [self clearComponents];
     [controller dismissModalViewControllerAnimated];
     lsqLDebug(@"onTuSDKPFEditTurnAndCut: %@", result);
@@ -570,6 +623,9 @@
 - (void) avatarComponentHandler;
 {
     lsqLDebug(@"avatarComponentHandler");
+    
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarComponent.html
     _avatarComponent =
     [TuSDK avatarCommponentWithController:self
                             callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -582,6 +638,25 @@
          }
          [result logInfo];
      }];
+    
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarOptions.html
+    // _avatarComponent.options
+    
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFAlbumOptions.html
+    // _avatarComponent.options.albumOptions
+    
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFPhotosOptions.html
+    // _avatarComponent.options.photosOptions
+    
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFCameraOptions.html
+    // _avatarComponent.options.cameraOptions
+    
+    // http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // _avatarComponent.options.editTurnAndCutOptions
+    
+    
+    
     // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
     _avatarComponent.options.cameraOptions.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
@@ -596,6 +671,7 @@
 - (void)editAdvancedComponentHandler;
 {
     lsqLDebug(@"editAdvancedComponentHandler");
+    
     _albumComponent =
     [TuSDK albumCommponentWithController:self
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -622,6 +698,8 @@
 {
     if (!controller || !result) return;
     
+    // 组件选项配置
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditComponent.html
     _photoEditComponent =
     [TuSDK photoEditCommponentWithController:controller
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -635,7 +713,12 @@
          [result logInfo];
      }];
     
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditOptions.html
+    // _photoEditComponent.options
+    
     //    // 图片编辑入口控制器配置选项
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditEntryOptions.html
+    // _photoEditComponent.options.editEntryOptions
     //    // 默认: true, 开启裁剪旋转功能
     //    _photoEditComponent.options.editEntryOptions.enableCuter = YES;
     //    // 默认: true, 开启滤镜功能
@@ -646,8 +729,12 @@
     //    _photoEditComponent.options.editEntryOptions.limitForScreen = YES;
     //    // 保存到系统相册
     //    _photoEditComponent.options.editEntryOptions.saveToAlbum = YES;
+    //    // 控制器关闭后是否自动删除临时文件
+    //    _photoEditComponent.options.editEntryOptions.isAutoRemoveTemp = YES;
     //
     //    // 图片编辑滤镜控制器配置选项
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditFilterOptions.html
+    // _photoEditComponent.options.editFilterOptions
     //    // 默认: true, 开启滤镜配置选项
     //    _photoEditComponent.options.editFilterOptions.enableFilterConfig = YES;
     //    // 是否仅返回滤镜，不返回处理图片(默认：false)
@@ -662,6 +749,8 @@
     //    _photoEditComponent.options.editFilterOptions.filterBarTableCellClazz = [TuSDKCPGroupFilterItem class];
     //
     //    // 图片编辑裁切旋转控制器配置选项
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditCuterOptions.html
+    // _photoEditComponent.options.editCuterOptions
     //    // 是否开启图片旋转(默认: false)
     //    _photoEditComponent.options.editCuterOptions.enableTrun = YES;
     //    // 是否开启图片镜像(默认: false)
@@ -670,6 +759,9 @@
     //    _photoEditComponent.options.editCuterOptions.ratioType = lsqRatioAll;
     //    // 是否仅返回裁切参数，不返回处理图片
     //    _photoEditComponent.options.editCuterOptions.onlyReturnCuter = YES;
+    //    // 本地贴纸选择控制器配置选项
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFStickerLocalOptions.html
+    // _photoEditComponent.options.stickerLocalOptions
     
     // 设置图片
     _photoEditComponent.inputImage = result.image;

@@ -39,6 +39,11 @@
 @property (nonatomic) BOOL showResultPreview;
 
 /**
+ *  控制器关闭后是否自动删除临时文件 (默认：NO)
+ */
+@property (nonatomic) BOOL isAutoRemoveTemp;
+
+/**
  *  加载来源图片
  *
  *  @return 来源图片

@@ -17,4 +17,9 @@
  *  是否显示处理结果预览图 (默认：关闭，调试时可以开启)
  */
 @property (nonatomic) BOOL showResultPreview;
+
+/**
+ *  控制器关闭后是否自动删除临时文件 (默认：NO)
+ */
+@property (nonatomic) BOOL isAutoRemoveTemp;
 @end

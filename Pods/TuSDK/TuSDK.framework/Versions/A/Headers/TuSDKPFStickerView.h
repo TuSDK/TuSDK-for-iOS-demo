@@ -35,7 +35,15 @@
 /**
  *  贴纸元件视图
  */
-@interface TuSDKPFStickerItemView : UIView
+@interface TuSDKPFStickerItemView : UIView{
+    @protected
+    // 图片视图
+    UIImageView *_imageView;
+    // 取消按钮
+    UIButton *_cancelButton;
+    // 旋转缩放按钮
+    UIImageView *_turnButton;
+}
 /**
  *  图片视图
  */

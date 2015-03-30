@@ -4,6 +4,7 @@
 //
 //  Created by Clear Hu on 14/10/25.
 //  Copyright (c) 2014年 Lasque. All rights reserved.
+//  http://tusdk.com/docs/ios/api/
 //
 
 #import <Foundation/Foundation.h>
