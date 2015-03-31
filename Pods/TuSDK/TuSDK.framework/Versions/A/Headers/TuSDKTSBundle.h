@@ -37,11 +37,6 @@ extern NSString * const lsqSdkOthers;
 extern NSString * const lsqLocalStickers;
 
 /**
- *  滤镜预览效果图默认输入图片 (style_default_camera_filter_sample.jpg)
- */
-extern NSString * const lsqFilterSampleDefaultOriginImage;
-
-/**
  *  相机聚焦音效 (camera_focus_beep.mp3)
  */
 extern NSString * const lsqCameraFocusBeepAudio;

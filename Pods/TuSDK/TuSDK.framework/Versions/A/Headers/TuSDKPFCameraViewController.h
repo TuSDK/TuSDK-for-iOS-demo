@@ -75,7 +75,7 @@
 @property (nonatomic, strong) Class flashViewClazz;
 
 /**
- *  滤镜视图类 (默认:TuSDKPFCameraFilterView, 需要继承 TuSDKPFCameraFilterView)
+ *  滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 

@@ -50,8 +50,6 @@
 #import "TuSDKCPAvatarComponent.h"
 #import "TuSDKCPPhotoEditComponent.h"
 
-#import "TuSDKTKFiltersSampleTask.h"
-
 /**
  *  SDK版本
  */
@@ -89,6 +87,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  TuSDK 核心
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDK.html
  *
  *  内部集成滤镜列表(17):
  *  Normal, Artistic, Brilliant, Cheerful, Clear, Fade, Forest, Gloss,
@@ -124,14 +123,6 @@ extern NSString * const lsqFilterSampleExtension;
 + (void)initSdkWithAppKey:(NSString *)appkey;
 
 /**
- *  初始化SDK
- *
- *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
- *  @param buildFilterSimple 是否生成滤镜预览图
- */
-+ (void)initSdkWithAppKey:(NSString *)appkey buildFilterSimple:(BOOL)buildFilterSimple;
-
-/**
  *  设置日志输出级别
  *
  *  @param level 日志输出级别 (默认：lsqLogLevelFATAL 不输出)
@@ -161,10 +152,19 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  滤镜管理器
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKFilterManager.html
  *
  *  @return 滤镜管理器
  */
 + (TuSDKFilterManager *)filterManager;
+
+/**
+ *  贴纸管理器
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFStickerLocalPackage.html
+ *
+ *  @return 贴纸管理器
+ */
++ (TuSDKPFStickerLocalPackage *)stickerManager;
 
 /**
  *  检查滤镜管理器是否初始化
@@ -175,6 +175,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  获取滤镜任务
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKTKFiltersTempTask.html
  *
  *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
  *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
@@ -185,6 +186,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  相机对象
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKStillCamera.html
  *
  *  @param sessionPreset  相机分辨率类型 
  *  @see AVCaptureSessionPresetPhoto
@@ -199,6 +201,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  自定义系统相册组件
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
  *
  *  @param controller 来源控制器
  *  @param block      组件回调结果
@@ -210,6 +213,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  获取头像设置组件
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarComponent.html
  *
  *  @param controller 来源控制器
  *  @param block      组件回调结果
@@ -221,6 +225,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  获取图片编辑组件
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditComponent.html
  *
  *  @param controller 来源控制器
  *  @param block      组件回调结果

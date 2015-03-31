@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "TuSDKFilterWrap.h"
 #import "TuSDKTKFiltersTempTask.h"
-#import "TuSDKTKFiltersSampleTask.h"
 #import "TuSDKConfig.h"
 
 @class TuSDKFilterManager;
@@ -44,11 +43,10 @@
  *  滤镜控管理器
  *
  *  @param config Sdk配置
- *  @param buildFilterSimple 是否生成滤镜预览图
  *
  *  @return 滤镜控管理器
  */
-+ (instancetype)initWithConfig:(TuSDKConfig *)config buildFilterSimple:(BOOL)buildFilterSimple;
++ (instancetype)initWithConfig:(TuSDKConfig *)config;
 
 /**
  *  是否已初始化
@@ -56,19 +54,9 @@
 @property (nonatomic, readonly) BOOL isInited;
 
 /**
- *  是否初始化默认滤镜预览图
- */
-@property (nonatomic) BOOL initSample;
-
-/**
  *  滤镜代号列表
  */
 @property (nonatomic, readonly) NSArray *filterCodes;
-
-/**
- *  滤镜预览效果列表任务
- */
-@property (nonatomic, readonly) TuSDKTKFiltersSampleTask *samplesTask;
 
 /**
  *  检查滤镜管理器是否初始化
@@ -76,16 +64,6 @@
  *  @param delegate   滤镜控管理器委托
  */
 - (void)checkManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate;
-
-/**
- *  获取滤镜任务
- *
- *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
- *  @param codes 需要显示的滤镜代号列表 (如果为空将显示所有自定义滤镜)
- *
- *  @return 滤镜任务
- */
-- (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterCodes:(NSArray *)codes;
 
 /**
  * 创建滤镜临时预览效果列表任务

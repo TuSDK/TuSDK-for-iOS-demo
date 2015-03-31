@@ -363,7 +363,7 @@
     // opt.flashViewClazz = [TuSDKPFCameraFlashView class];
     
     // 滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
-    // opt.filterViewClazz = [TuSDKPFCameraFilterView class];
+    // opt.filterViewClazz = [TuSDKPFCameraFilterGroupView class];
     
     // 聚焦触摸视图类 (默认:TuSDKICFocusTouchView, 需要继承 TuSDKICFocusTouchView)
     // opt.focusTouchViewClazz = [TuSDKICFocusTouchView class];
