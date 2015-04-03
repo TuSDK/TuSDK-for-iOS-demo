@@ -95,6 +95,15 @@
 + (instancetype)parameter;
 
 /**
+ *  滤镜配置选项
+ *
+ *  @param args 自定义参数
+ *
+ *  @return 滤镜配置选项
+ */
++ (instancetype)parameterWithArgs:(NSDictionary *)args;
+
+/**
  *  获取已改变数值的参数列表
  */
 - (NSArray *)changedArgs;

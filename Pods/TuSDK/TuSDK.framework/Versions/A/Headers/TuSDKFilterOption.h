@@ -76,6 +76,16 @@
 @property (nonatomic) NSUInteger encryptType;
 
 /**
+ *  滤镜配置参数
+ */
+@property (nonatomic, retain) NSDictionary *args;
+
+/**
+ *  滤镜版本
+ */
+@property (nonatomic) NSUInteger version;
+
+/**
  * 是否为内置滤镜
  */
 @property (nonatomic) BOOL isInternal;

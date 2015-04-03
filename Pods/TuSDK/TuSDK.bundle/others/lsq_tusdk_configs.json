@@ -7,16 +7,33 @@
             "name": "lsq_filter_group_Leica",
             "thumb": "lsq_filter_group_thumb_1.jpg",
             "default_filter": 12,
+            "color": "#E74C3C",
             "filters": [
                 {
                     "filter_id": 11,
                     "name": "lsq_filter_Brilliant",
-                    "thumb": "lsq_filter_thumb_Brilliant"
+                    "thumb": "lsq_filter_thumb_Brilliant",
+                    "color": "#E74C3C",
+                    "args": {
+                        "mixied": 0.5
+                    }
                 },
                 { "filter_id": 12, "name": "lsq_filter_Leica" },
                 { "filter_id": 13, "name": "lsq_filter_Gloss" },
                 { "filter_id": 14, "name": "lsq_filter_Harmony" },
                 { "filter_id": 15, "name": "lsq_filter_Noir" }
+            ]
+        },
+        {
+            "file": "lsq_filter_Magic_7.gfilter",
+            "valid_key": "c1c97faef75674ad",
+            "default_filter": 72,
+            "filters": [
+                { "filter_id": 71, "name": "lsq_filter_MagicRed" },
+                { "filter_id": 72, "name": "lsq_filter_MagicYellow" },
+                { "filter_id": 73, "name": "lsq_filter_MagicBlue" },
+                { "filter_id": 74, "name": "lsq_filter_MagicGreen" },
+                { "filter_id": 75, "name": "lsq_filter_MagicPurple" }
             ]
         },
         {
@@ -74,7 +91,13 @@
             "valid_key": "e27b73af59c102a0",
             "default_filter": 57,
             "filters": [
-                { "filter_id": 51, "name": "lsq_filter_Wintersunshine" },
+                {
+                    "filter_id": 51,
+                    "name": "lsq_filter_Wintersunshine",
+                    "args": {
+                        "mixied": 0.5
+                    }
+                 },
                 { "filter_id": 52, "name": "lsq_filter_Coloration" },
                 { "filter_id": 53, "name": "lsq_filter_Fluorescent" },
                 { "filter_id": 54, "name": "lsq_filter_Freshmorning" },

@@ -58,7 +58,7 @@ extern NSString * const lsqSDKVersion;
 /**
  *  SDK滤镜版本
  */
-extern CGFloat const lsqFilterVersion;
+extern NSUInteger const lsqFilterVersion;
 
 /**
  * SDK配置文件 (lsq_tusdk_configs.json)
