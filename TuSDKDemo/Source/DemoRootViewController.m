@@ -136,6 +136,7 @@
 @end
 
 @implementation DemoRootViewController
+@dynamic view;
 
 - (void)loadView;
 {
