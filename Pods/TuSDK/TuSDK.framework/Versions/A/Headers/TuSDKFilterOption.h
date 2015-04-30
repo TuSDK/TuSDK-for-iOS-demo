@@ -41,6 +41,11 @@
 @property (nonatomic, retain) NSString *thumb;
 
 /**
+ * 滤镜封面名称
+ */
+@property (nonatomic, retain) NSString *thumbKey;
+
+/**
  * 滤镜类型
  */
 @property (nonatomic) NSUInteger filterType;

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Lasque. All rights reserved.
 //
 
-#import "TuSDK/TuSDK.h"
+#import "TuSDKFramework.h"
 
 #pragma mark - DemoRootViewController
 /**

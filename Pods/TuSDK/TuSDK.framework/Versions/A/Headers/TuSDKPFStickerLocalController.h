@@ -17,7 +17,7 @@
 /**
  *  本地贴纸选择控制器委托
  */
-@protocol TuSDKPFStickerLocalControllerDelegate <TuSDKCPComponentErrorDelegate>
+@protocol TuSDKPFStickerLocalControllerDelegate <NSObject>
 /**
  *  图片编辑完成
  *

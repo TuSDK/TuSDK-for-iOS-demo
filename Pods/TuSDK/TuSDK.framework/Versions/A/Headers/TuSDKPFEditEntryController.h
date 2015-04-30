@@ -11,29 +11,7 @@
 #import "TuSDKRatioType.h"
 #import "TuSDKFilterWrap.h"
 #import "TuSDKPFSticker.h"
-
-/**
- *  图片编辑动作类型
- */
-typedef NS_ENUM(NSInteger, lsqTuSDKPFEditEntryAction)
-{
-    /**
-     * 未知动作
-     */
-    lsqTuSDKPFEditEntryUnknow,
-    /**
-     * 裁剪动作
-     */
-    lsqTuSDKPFEditEntryCuter,
-    /**
-     * 滤镜动作
-     */
-    lsqTuSDKPFEditEntryFilter,
-    /**
-     * 贴纸动作
-     */
-    lsqTuSDKPFEditEntrySticker,
-};
+#import "TuSdkCPEditActionType.h"
 
 #pragma mark - TuSDKPFEditEntryControllerDelegate
 @class TuSDKPFEditEntryController;
@@ -56,7 +34,7 @@ typedef NS_ENUM(NSInteger, lsqTuSDKPFEditEntryAction)
  *  @param controller 图片编辑入口控制器
  *  @param action 图片编辑动作类型
  */
-- (void)onTuSDKPFEditEntry:(TuSDKPFEditEntryController *)controller action:(lsqTuSDKPFEditEntryAction)action;
+- (void)onTuSDKPFEditEntry:(TuSDKPFEditEntryController *)controller action:(lsqTuSDKCPEditActionType)action;
 @optional
 /**
  *  图片编辑完成  (异步方法)

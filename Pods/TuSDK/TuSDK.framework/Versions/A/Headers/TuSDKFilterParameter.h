@@ -88,6 +88,11 @@
 @property (nonatomic, readonly) NSUInteger count;
 
 /**
+ *  是否已初始化
+ */
+@property (nonatomic, readonly) BOOL isInited;
+
+/**
  *  滤镜配置选项
  *
  *  @return 滤镜配置选项

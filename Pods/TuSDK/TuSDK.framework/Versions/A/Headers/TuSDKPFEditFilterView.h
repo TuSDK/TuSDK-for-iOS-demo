@@ -48,6 +48,8 @@
     UIButton *_cancelButton;
     // 完成按钮
     UIButton *_completeButton;
+    // 标题视图
+    UILabel *_titleView;
 }
 
 /**
@@ -59,6 +61,11 @@
  *  完成按钮
  */
 @property (nonatomic, readonly) UIButton *completeButton;
+
+/**
+ *  标题视图
+ */
+@property (nonatomic, readonly) UILabel *titleView;
 @end
 
 #pragma mark - TuSDKPFEditFilterView

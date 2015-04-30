@@ -47,6 +47,10 @@ typedef NS_ENUM(NSInteger, lsqDownloadTaskStatus)
      * 取消处理
      */
     lsqDownloadTaskStatusCancel = 40,
+    /**
+     * 删除处理
+     */
+    lsqDownloadTaskStatusRemoved = 100,
 };
 
 /**

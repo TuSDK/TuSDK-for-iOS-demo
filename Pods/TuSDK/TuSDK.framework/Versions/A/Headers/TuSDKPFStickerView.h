@@ -129,6 +129,11 @@
 @property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> delegate;
 
 /**
+ *  当前已使用贴纸总数
+ */
+@property (nonatomic) NSUInteger stickerCount;
+
+/**
  *  添加一个贴纸
  *
  *  @param sticker 贴纸元素

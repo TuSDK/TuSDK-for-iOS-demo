@@ -115,6 +115,13 @@ extern CGFloat const lsq_TAB_BAR_HEIGHT;
 + (CGFloat)topIfStatusBarLayout;
 
 /**
+ *  全屏视图时Y坐标
+ *
+ *  @return @return 全屏视图时Y坐标 (大于等于IOS7时返回状态栏和导航栏高度, 否则返回0)
+ */
++ (CGFloat)topIfStatusNavgationBarLayout;
+
+/**
  *  是否为Retina屏幕
  *
  *  @return 是否为Retina屏幕

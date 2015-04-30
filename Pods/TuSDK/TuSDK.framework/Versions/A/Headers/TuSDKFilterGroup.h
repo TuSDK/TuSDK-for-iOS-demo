@@ -50,6 +50,11 @@
 @property (nonatomic, retain) NSString *thumb;
 
 /**
+ * 分组封面名称
+ */
+@property (nonatomic, retain) NSString *thumbKey;
+
+/**
  * 默认选中滤镜ID
  */
 @property (nonatomic) uint64_t defaultFilterId;

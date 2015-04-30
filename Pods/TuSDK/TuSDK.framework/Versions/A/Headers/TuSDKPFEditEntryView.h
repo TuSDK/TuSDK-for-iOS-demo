@@ -17,6 +17,12 @@
  *  图片视图
  */
 @interface TuSDKPFEditEntryImageView : UIView
+{
+    // 旋转和裁剪 裁剪区域视图
+    TuSDKICCutRegionView *_cutRegionView;
+    // 贴纸视图
+    TuSDKPFStickerView *_stickerView;
+}
 /**
  *  旋转和裁剪 裁剪区域视图
  */
@@ -59,6 +65,14 @@
  *  选项栏目
  */
 @interface TuSDKPFEditEntryOptionBar : UIView
+{
+    // 裁切按钮
+    UIButton *_cutButton;
+    // 滤镜按钮
+    UIButton *_filterButton;
+    // 贴纸按钮
+    UIButton *_stickerButton;
+}
 /**
  *  裁切按钮
  */
@@ -85,6 +99,14 @@
  *  底部动作栏
  */
 @interface TuSDKPFEditEntryBottomBar : UIView
+{
+    // 后退按钮
+    UIButton *_backButton;
+    // 完成按钮
+    UIButton *_completeButton;
+    // 标题视图
+    UILabel *_titleView;
+}
 /**
  *  后退按钮
  */
@@ -94,6 +116,11 @@
  *  完成按钮
  */
 @property (nonatomic, readonly) UIButton *completeButton;
+
+/**
+ *  标题视图
+ */
+@property (nonatomic, readonly) UILabel *titleView;
 @end
 
 #pragma mark - TuSDKPFEditEntryView
@@ -101,6 +128,14 @@
  *  图片编辑入口控制器视图
  */
 @interface TuSDKPFEditEntryView : UIView
+{
+    // 图片视图
+    TuSDKPFEditEntryImageView *_imageView;
+    // 底部动作栏
+    TuSDKPFEditEntryBottomBar *_bottomBar;
+    // 选项栏目
+    TuSDKPFEditEntryOptionBar *_optionBar;
+}
 
 /**
  *  图片视图

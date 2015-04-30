@@ -133,6 +133,21 @@ typedef NS_ENUM(NSInteger, lsqStickerSectionHeaderAction)
  *  贴纸对象数据
  */
 @property (nonatomic, retain) TuSDKPFSticker *data;
+
+/**
+ *  图片边距
+ */
+@property (nonatomic) NSInteger innerWarpSpace;
+
+/**
+ *  需要重置视图
+ */
+-(void)viewNeedRest;
+
+/**
+ *  绘制成圆形
+ */
+- (void)makeRadius;
 @end
 
 #pragma mark - TuSDKPFStickerLocalCellView

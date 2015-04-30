@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TuSDK/TuSDK.h"
+#import "TuSDKFramework.h"
 #import "DemoRootViewController.h"
 
 @interface AppDelegate ()

@@ -50,6 +50,20 @@
  *  参数配置视图
  */
 @interface TuSDKCPParameterConfigView : UIView<TuSDKICSeekBarDelegate>
+{
+    // 参数选项视图
+    UIView *_paramsView;
+    // 重置按钮
+    UIButton *_restButton;
+    // 数字显示视图
+    UILabel *_numberView;
+    // 百分比控制条
+    TuSDKICSeekBar *_seekBar;
+    // 分割线1
+    UIView *_splitOne;
+    // 分割线2
+    UIView *_splitTwo;
+}
 /**
  *  参数配置视图委托
  */

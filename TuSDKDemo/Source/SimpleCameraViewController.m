@@ -8,7 +8,7 @@
 
 #import "SimpleCameraViewController.h"
 
-#import "TuSDK/TuSDK.h"
+#import "TuSDKFramework.h"
 
 #pragma mark - SimpleCameraViewController
 

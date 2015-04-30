@@ -16,12 +16,6 @@
  *  Sdk配置
  */
 @interface TuSDKConfig : TuSDKDataJson
-
-/**
- *  滤镜版本
- */
-@property (nonatomic) CGFloat filterVersion;
-
 /**
  *  滤镜分组列表
  */

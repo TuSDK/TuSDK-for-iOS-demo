@@ -39,19 +39,9 @@
 @property (nonatomic, copy) NSString *validKey;
 
 /**
- * 贴纸包代号
- */
-@property (nonatomic, copy) NSString *code;
-
-/**
  * 贴纸包名称
  */
 @property (nonatomic, copy) NSString *name;
-
-/**
- * 分组封面
- */
-@property (nonatomic, copy) NSString *thumb;
 
 /**
  * 滤镜列表

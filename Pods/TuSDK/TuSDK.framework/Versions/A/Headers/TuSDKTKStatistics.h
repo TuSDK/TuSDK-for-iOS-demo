@@ -24,7 +24,10 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * sdk 组件
      */
     tkc_sdkComponent = 0x01,
-    
+    /**
+     * sdk 加载完成组件
+     */
+    tkc_sdkLoadedComponent = 0x02,
     /**
      * sdk 快速相机范例
      */
@@ -126,6 +129,31 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editPhotoAction = 0x405000,
     
     /**
+     * 多功能图片处理组件
+     */
+    tkc_editMultipleComponent = 0x406000,
+    
+    /**
+     * 多功能图片处理控制器
+     */
+    tkc_editMultipleFragment = 0x407000,
+    
+    /**
+     * 美肤控制器
+     */
+    tkc_editSkinFragment = 0x408000,
+    
+    /**
+     * 图像调整控制器
+     */
+    tkc_editAdjustFragment = 0x409000,
+    
+    /**
+     * 图像锐化控制器
+     */
+    tkc_editSharpnessFragment = 0x409100,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,
@@ -193,6 +221,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * 在线贴纸控制器
      */
     tkc_editStickerOnlineFragment = 0x602000,
+    
+    /**
+     * 贴纸编辑控制器
+     */
+    tkc_editStickerFragment = 0x603000,
 };
 
 #pragma mark - TuSDKTKStatistics

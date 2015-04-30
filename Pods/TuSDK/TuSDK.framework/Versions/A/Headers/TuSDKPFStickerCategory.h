@@ -10,6 +10,25 @@
 #import "TuSDKPFStickerGroup.h"
 
 /**
+ *  贴纸分类扩展类型
+ */
+typedef NS_ENUM(NSInteger, lsqStickerCategoryExtendType)
+{
+    /**
+     *  未知扩展
+     */
+    lsqStickerCategoryExtendUnknow,
+    /**
+     * 全部
+     */
+    lsqStickerCategoryExtendAll = 1,
+    /**
+     * 常用
+     */
+    lsqStickerCategoryExtendHistory = 2,
+};
+
+/**
  *  贴纸分类
  */
 @interface TuSDKPFStickerCategory : TuSDKDataJson
@@ -27,6 +46,11 @@
  * 贴纸数据列表
  */
 @property (nonatomic, retain) NSArray *datas;
+
+/**
+ *  贴纸分类扩展类型
+ */
+@property (nonatomic) lsqStickerCategoryExtendType extendType;
 
 /**
  *  贴纸分类

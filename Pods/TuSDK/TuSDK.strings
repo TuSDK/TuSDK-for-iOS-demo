@@ -35,6 +35,7 @@
 "lsq_nav_back" = "返回";
 "lsq_nav_more" = "更多";
 "lsq_nav_remove" = "删除";
+"lsq_nav_complete" = "完成";
 
 // button
 "lsq_button_done" = "我知道了";
@@ -79,6 +80,7 @@
 
 // edit
 "lsq_edit_button_complete" = "完成";
+"lsq_edit_loading" = "正在读取...";
 "lsq_edit_filter_processing" = "正在处理...";
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
@@ -90,6 +92,9 @@
 "lsq_edit_cuter_ratio_2_3" = "2:3";
 "lsq_edit_cuter_ratio_3_4" = "3:4";
 "lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_title" = "编辑";
+"lsq_edit_multiple_title" = "编辑";
+"lsq_edit_skin_title" = "美颜";
 
 // sticker
 "lsq_sticker_cate_default" = "贴纸";
@@ -107,6 +112,8 @@
 "lsq_sticker_1_1" = "新年大礼包";
 "lsq_sticker_remove_title" = "删除贴纸";
 "lsq_sticker_remove_msg%@" = "您是否需要删除贴纸 《%@》 ?";
+"lsq_sticker_cate_all" = "全部";
+"lsq_sticker_cate_history" = "常用";
 
 // format
 "las_date_format" = "yyyy年M月d日";
@@ -206,6 +213,11 @@
 "lsq_filter_set_autumnColorThreshold" = "秋意";
 "lsq_filter_set_hue" = "色相";
 "lsq_filter_set_hueSpace" = "范围";
+"lsq_filter_set_brightness" = "亮度";
+"lsq_filter_set_exposure" = "曝光度";
+"lsq_filter_set_vignette" = "晕角";
+"lsq_filter_set_depthfield" = "景深";
+"lsq_filter_set_adjustment" = "调整";
 
 // Filters Definition Bokeh
 "lsq_filter_set_includeBlurSize" = "外模糊";

@@ -49,6 +49,7 @@
 #import "TuSDKResult.h"
 #import "TuSDKCPAvatarComponent.h"
 #import "TuSDKCPPhotoEditComponent.h"
+#import "TuSDKCPPhotoEditMultipleComponent.h"
 
 /**
  *  SDK版本
@@ -234,4 +235,16 @@ extern NSString * const lsqFilterSampleExtension;
  */
 + (TuSDKCPPhotoEditComponent *)photoEditCommponentWithController:(UIViewController *)controller
                                                    callbackBlock:(TuSDKCPComponentBlock)block;
+
+/**
+ *  获取多功能图像编辑组件
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditMultipleComponent.html
+ *
+ *  @param controller 来源控制器
+ *  @param block      组件回调结果
+ *
+ *  @return 多功能图像编辑组件
+ */
++ (TuSDKCPPhotoEditMultipleComponent *)photoEditMultipleWithController:(UIViewController *)controller
+                                                         callbackBlock:(TuSDKCPComponentBlock)block;
 @end

@@ -18,6 +18,7 @@
  */
 typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIViewController *controller);
 
+#pragma mark - TuSDKCPComponent
 /**
  *  组件基础类
  */
@@ -63,4 +64,25 @@ typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIVie
 - (void)notifyResult:(TuSDKResult *)result
                error:(NSError *)error
           controller:(UIViewController *)controller;
+@end
+
+#pragma mark - TuSDKCPInputComponent
+/**
+ *  组件基础类(输入内容)
+ */
+@interface TuSDKCPInputComponent : TuSDKCPComponent
+/**
+ *  输入的临时文件目录 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, copy) NSString *inputTempFilePath;
+
+/**
+ *  输入的相册图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, retain) ALAsset *inputAsset;
+
+/**
+ *  输入的图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
+ */
+@property (nonatomic, retain) UIImage *inputImage;
 @end

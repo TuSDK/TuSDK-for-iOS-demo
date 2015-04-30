@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBCC545807A3B0CA100644B /* libPods.a */; };
 		DC1953591A7E00AB00B37597 /* SimpleEditTurnAndCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953581A7E00AB00B37597 /* SimpleEditTurnAndCutView.m */; };
+		DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */; };
 		DC8851B11A45221000839674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8851AF1A45221000839674 /* Images.xcassets */; };
 		DC8851B21A45221000839674 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC8851B01A45221000839674 /* sample_photo.jpg */; };
 		DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8851B51A45221700839674 /* DemoRootViewController.m */; };
@@ -16,6 +17,16 @@
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
+		DCA81D7A1AF23530003C5882 /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D791AF23530003C5882 /* DemoRootView.m */; };
+		DCA81D8D1AF2353A003C5882 /* DemoSimpleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */; };
+		DCA81D8E1AF2353A003C5882 /* SimpleAlbumComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */; };
+		DCA81D8F1AF2353A003C5882 /* SimpleCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */; };
+		DCA81D901AF2353A003C5882 /* SimpleDefineCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */; };
+		DCA81D911AF2353A003C5882 /* SimpleEditAdvancedComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */; };
+		DCA81D921AF2353A003C5882 /* SimpleEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */; };
+		DCA81D931AF2353A003C5882 /* SimpleEditAvatarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */; };
+		DCA81D941AF2353A003C5882 /* SimpleEditComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */; };
+		DCA81D951AF2353A003C5882 /* SimpleEditMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +44,7 @@
 		6EBCC545807A3B0CA100644B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1953571A7E00AB00B37597 /* SimpleEditTurnAndCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditTurnAndCutView.h; sourceTree = "<group>"; };
 		DC1953581A7E00AB00B37597 /* SimpleEditTurnAndCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditTurnAndCutView.m; sourceTree = "<group>"; };
+		DC7B2B771AF21D9D00EBA4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC8851AF1A45221000839674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC8851B01A45221000839674 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		DC8851B41A45221700839674 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
@@ -47,6 +59,27 @@
 		DC98F0901A17668F006B6417 /* TuSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC98F0951A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuSDKDemoTests.m; sourceTree = "<group>"; };
+		DCA81D751AF23411003C5882 /* TuSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
+		DCA81D781AF23530003C5882 /* DemoRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootView.h; sourceTree = "<group>"; };
+		DCA81D791AF23530003C5882 /* DemoRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootView.m; sourceTree = "<group>"; };
+		DCA81D7B1AF2353A003C5882 /* DemoSimpleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSimpleBase.h; sourceTree = "<group>"; };
+		DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSimpleBase.m; sourceTree = "<group>"; };
+		DCA81D7D1AF2353A003C5882 /* SimpleAlbumComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAlbumComponent.h; sourceTree = "<group>"; };
+		DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAlbumComponent.m; sourceTree = "<group>"; };
+		DCA81D7F1AF2353A003C5882 /* SimpleCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCameraComponent.h; sourceTree = "<group>"; };
+		DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCameraComponent.m; sourceTree = "<group>"; };
+		DCA81D811AF2353A003C5882 /* SimpleDefineCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDefineCamera.h; sourceTree = "<group>"; };
+		DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDefineCamera.m; sourceTree = "<group>"; };
+		DCA81D831AF2353A003C5882 /* SimpleEditAdvancedComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAdvancedComponent.h; sourceTree = "<group>"; };
+		DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAdvancedComponent.m; sourceTree = "<group>"; };
+		DCA81D851AF2353A003C5882 /* SimpleEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAndCutComponent.h; sourceTree = "<group>"; };
+		DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAndCutComponent.m; sourceTree = "<group>"; };
+		DCA81D871AF2353A003C5882 /* SimpleEditAvatarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAvatarComponent.h; sourceTree = "<group>"; };
+		DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAvatarComponent.m; sourceTree = "<group>"; };
+		DCA81D891AF2353A003C5882 /* SimpleEditComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditComponent.h; sourceTree = "<group>"; };
+		DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditComponent.m; sourceTree = "<group>"; };
+		DCA81D8B1AF2353A003C5882 /* SimpleEditMultipleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditMultipleComponent.h; sourceTree = "<group>"; };
+		DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditMultipleComponent.m; sourceTree = "<group>"; };
 		E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DC8851AF1A45221000839674 /* Images.xcassets */,
+				DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */,
 				DC8851B01A45221000839674 /* sample_photo.jpg */,
 			);
 			path = Resources;
@@ -99,11 +133,12 @@
 		DC8851B31A45221700839674 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DC1953561A7E009600B37597 /* Examples */,
 				DC8851B41A45221700839674 /* DemoRootViewController.h */,
 				DC8851B51A45221700839674 /* DemoRootViewController.m */,
+				DC1953561A7E009600B37597 /* Examples */,
 				DC8851B61A45221700839674 /* SimpleCameraViewController.h */,
 				DC8851B71A45221700839674 /* SimpleCameraViewController.m */,
+				DCA81D761AF234D5003C5882 /* Simples */,
 			);
 			name = Source;
 			path = TuSDKDemo/Source;
@@ -146,6 +181,7 @@
 			children = (
 				DC98F07B1A17668F006B6417 /* Info.plist */,
 				DC98F07C1A17668F006B6417 /* main.m */,
+				DCA81D751AF23411003C5882 /* TuSDKFramework.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,6 +201,41 @@
 				DC98F0951A17668F006B6417 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCA81D761AF234D5003C5882 /* Simples */ = {
+			isa = PBXGroup;
+			children = (
+				DCA81D771AF2351F003C5882 /* Views */,
+				DCA81D7B1AF2353A003C5882 /* DemoSimpleBase.h */,
+				DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */,
+				DCA81D7D1AF2353A003C5882 /* SimpleAlbumComponent.h */,
+				DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */,
+				DCA81D7F1AF2353A003C5882 /* SimpleCameraComponent.h */,
+				DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */,
+				DCA81D811AF2353A003C5882 /* SimpleDefineCamera.h */,
+				DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */,
+				DCA81D831AF2353A003C5882 /* SimpleEditAdvancedComponent.h */,
+				DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */,
+				DCA81D851AF2353A003C5882 /* SimpleEditAndCutComponent.h */,
+				DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */,
+				DCA81D871AF2353A003C5882 /* SimpleEditAvatarComponent.h */,
+				DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */,
+				DCA81D891AF2353A003C5882 /* SimpleEditComponent.h */,
+				DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */,
+				DCA81D8B1AF2353A003C5882 /* SimpleEditMultipleComponent.h */,
+				DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */,
+			);
+			name = Simples;
+			sourceTree = "<group>";
+		};
+		DCA81D771AF2351F003C5882 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCA81D781AF23530003C5882 /* DemoRootView.h */,
+				DCA81D791AF23530003C5882 /* DemoRootView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		DD26EFB9BE3EABB13D356AAE /* Frameworks */ = {
@@ -258,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8851B11A45221000839674 /* Images.xcassets in Resources */,
+				DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */,
 				DC8851B21A45221000839674 /* sample_photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,10 +382,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */,
+				DCA81D8F1AF2353A003C5882 /* SimpleCameraComponent.m in Sources */,
+				DCA81D8D1AF2353A003C5882 /* DemoSimpleBase.m in Sources */,
 				DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */,
+				DCA81D921AF2353A003C5882 /* SimpleEditAndCutComponent.m in Sources */,
+				DCA81D941AF2353A003C5882 /* SimpleEditComponent.m in Sources */,
 				DC1953591A7E00AB00B37597 /* SimpleEditTurnAndCutView.m in Sources */,
 				DC8851B91A45221700839674 /* SimpleCameraViewController.m in Sources */,
 				DC98F07D1A17668F006B6417 /* main.m in Sources */,
+				DCA81D7A1AF23530003C5882 /* DemoRootView.m in Sources */,
+				DCA81D911AF2353A003C5882 /* SimpleEditAdvancedComponent.m in Sources */,
+				DCA81D931AF2353A003C5882 /* SimpleEditAvatarComponent.m in Sources */,
+				DCA81D951AF2353A003C5882 /* SimpleEditMultipleComponent.m in Sources */,
+				DCA81D8E1AF2353A003C5882 /* SimpleAlbumComponent.m in Sources */,
+				DCA81D901AF2353A003C5882 /* SimpleDefineCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +416,17 @@
 			targetProxy = DC98F0911A17668F006B6417 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7B2B771AF21D9D00EBA4FD /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DC98F0981A17668F006B6417 /* Debug */ = {

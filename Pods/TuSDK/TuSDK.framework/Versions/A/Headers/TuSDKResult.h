@@ -105,4 +105,11 @@
  *  打印出日志信息
  */
 - (void)logInfo;
+
+/**
+ *  创建临时文件路径
+ *
+ *  @return 临时文件路径
+ */
+- (NSString *)buildTempFile;
 @end

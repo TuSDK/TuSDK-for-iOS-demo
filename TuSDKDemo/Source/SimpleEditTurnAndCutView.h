@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 Lasque. All rights reserved.
 //
 
-#import "TuSDK/TuSDK.h"
+#import "TuSDKFramework.h"
 /**
  *  自定义旋转和裁剪视图
  */
