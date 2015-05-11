@@ -45,7 +45,7 @@
 @property (nonatomic, strong)Class groupTableCellClazz;
 
 /**
- *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 TuSDKCPGroupFilterItemCell)
  */
 @property (nonatomic, strong)Class filterTableCellClazz;
 

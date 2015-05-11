@@ -12,12 +12,15 @@
 //Simples
 #import "SimpleAlbumComponent.h"
 #import "SimpleCameraComponent.h"
-#import "SimpleDefineCamera.h"
 #import "SimpleEditAdvancedComponent.h"
 #import "SimpleEditAndCutComponent.h"
 #import "SimpleEditAvatarComponent.h"
-#import "SimpleEditComponent.h"
 #import "SimpleEditMultipleComponent.h"
+
+#import "ExtendEditAndCutComponent.h"
+#import "ExtendCameraBaseComponent.h"
+
+#import "DefineCameraBaseComponent.h"
 
 #pragma mark - DemoRootViewController
 @interface DemoRootViewController ()<DemoRootViewDelegate, TuSDKFilterManagerDelegate>
@@ -33,7 +36,7 @@
 - (void)loadView;
 {
     [super loadView];
-    
+
     self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
     self.view.backgroundColor = RGB(255, 255, 255);
     self.view.delegate = self;
@@ -51,7 +54,7 @@
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
      * 您可以通过查看 [group appenWithSimple:] 的具体类
-     * - (void)showSimpleWithController:(UIViewController *)controller;
+     * - (void)showSimpleWithController:(UIViewController *)controller; 
      * 方法，学习使用范例。
      */
     // 范例分组
@@ -60,8 +63,6 @@
     [group appenWithSimple:[SimpleAlbumComponent simple]];
     // 相机组件范例
     [group appenWithSimple:[SimpleCameraComponent simple]];
-    // 图片编辑组件范例
-    [group appenWithSimple:[SimpleEditComponent simple]];
     // 图片编辑组件 (裁剪)范例
     [group appenWithSimple:[SimpleEditAndCutComponent simple]];
     // 头像设置组件(编辑)范例
@@ -70,8 +71,12 @@
     [group appenWithSimple:[SimpleEditAdvancedComponent simple]];
     // 多功能图片编辑组件范例
     [group appenWithSimple:[SimpleEditMultipleComponent simple]];
-    // 自定义相机范例
-    [group appenWithSimple:[SimpleDefineCamera simple]];
+    // 图片编辑组件范例 (对现有组件进行扩展 - 修改界面)
+    [group appenWithSimple:[ExtendEditAndCutComponent simple]];
+    // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)
+    [group appenWithSimple:[ExtendCameraBaseComponent simple]];
+    // 基础相机自定义 - 底层API
+    [group appenWithSimple:[DefineCameraBaseComponent simple]];
     
     // 设置范例分组数据
     self.view.group = group;

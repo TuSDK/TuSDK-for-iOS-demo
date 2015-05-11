@@ -131,7 +131,7 @@
 @property (nonatomic, strong)Class filterBarGroupCellClazz;
 
 /**
- *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 TuSDKCPGroupFilterItemCell)
  */
 @property (nonatomic, strong)Class filterBarTableCellClazz;
 
@@ -204,6 +204,21 @@
  *  最后选中的滤镜代号
  */
 @property (nonatomic) NSString *lastFilterCode;
+
+/**
+ *  创建滤镜栏视图
+ *
+ *  @param view 默认样式视图 (如需创建自定义视图，请覆盖该方法，并配置自己的视图类)
+ */
+- (void)buildFilterBar:(TuSDKPFCameraView *)view;
+
+/**
+ *  选中一个滤镜
+ *
+ *  @param filterName 滤镜名称
+ *  @return 是否成功切换滤镜
+ */
+- (BOOL)onSelectedFilterCode:(NSString *)code;
 
 /**
  *  开始启动相机

@@ -8,25 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBCC545807A3B0CA100644B /* libPods.a */; };
-		DC1953591A7E00AB00B37597 /* SimpleEditTurnAndCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1953581A7E00AB00B37597 /* SimpleEditTurnAndCutView.m */; };
+		DC5DA9A51B00A73B00DEDEC2 /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9A41B00A73B00DEDEC2 /* DemoRootView.m */; };
+		DC5DA9B41B00A74C00DEDEC2 /* DemoSimpleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9A71B00A74C00DEDEC2 /* DemoSimpleBase.m */; };
+		DC5DA9B51B00A74C00DEDEC2 /* SimpleAlbumComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9A91B00A74C00DEDEC2 /* SimpleAlbumComponent.m */; };
+		DC5DA9B61B00A74C00DEDEC2 /* SimpleCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9AB1B00A74C00DEDEC2 /* SimpleCameraComponent.m */; };
+		DC5DA9B71B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9AD1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m */; };
+		DC5DA9B81B00A74C00DEDEC2 /* SimpleEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9AF1B00A74C00DEDEC2 /* SimpleEditAndCutComponent.m */; };
+		DC5DA9B91B00A74C00DEDEC2 /* SimpleEditAvatarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9B11B00A74C00DEDEC2 /* SimpleEditAvatarComponent.m */; };
+		DC5DA9BA1B00A74C00DEDEC2 /* SimpleEditMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9B31B00A74C00DEDEC2 /* SimpleEditMultipleComponent.m */; };
+		DC5DA9BF1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9BC1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m */; };
+		DC5DA9C01B00A76300DEDEC2 /* ExtendEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9BE1B00A76300DEDEC2 /* ExtendEditAndCutComponent.m */; };
+		DC5DA9C31B00A76B00DEDEC2 /* DefineCameraBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5DA9C21B00A76B00DEDEC2 /* DefineCameraBaseComponent.m */; };
 		DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */; };
 		DC8851B11A45221000839674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8851AF1A45221000839674 /* Images.xcassets */; };
 		DC8851B21A45221000839674 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC8851B01A45221000839674 /* sample_photo.jpg */; };
 		DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8851B51A45221700839674 /* DemoRootViewController.m */; };
-		DC8851B91A45221700839674 /* SimpleCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8851B71A45221700839674 /* SimpleCameraViewController.m */; };
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
-		DCA81D7A1AF23530003C5882 /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D791AF23530003C5882 /* DemoRootView.m */; };
-		DCA81D8D1AF2353A003C5882 /* DemoSimpleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */; };
-		DCA81D8E1AF2353A003C5882 /* SimpleAlbumComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */; };
-		DCA81D8F1AF2353A003C5882 /* SimpleCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */; };
-		DCA81D901AF2353A003C5882 /* SimpleDefineCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */; };
-		DCA81D911AF2353A003C5882 /* SimpleEditAdvancedComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */; };
-		DCA81D921AF2353A003C5882 /* SimpleEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */; };
-		DCA81D931AF2353A003C5882 /* SimpleEditAvatarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */; };
-		DCA81D941AF2353A003C5882 /* SimpleEditComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */; };
-		DCA81D951AF2353A003C5882 /* SimpleEditMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,15 +41,33 @@
 /* Begin PBXFileReference section */
 		228CA7148CD6AE112449EEB6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBCC545807A3B0CA100644B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC1953571A7E00AB00B37597 /* SimpleEditTurnAndCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditTurnAndCutView.h; sourceTree = "<group>"; };
-		DC1953581A7E00AB00B37597 /* SimpleEditTurnAndCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditTurnAndCutView.m; sourceTree = "<group>"; };
+		DC5DA9A31B00A73B00DEDEC2 /* DemoRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoRootView.h; path = Simples/Views/DemoRootView.h; sourceTree = "<group>"; };
+		DC5DA9A41B00A73B00DEDEC2 /* DemoRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoRootView.m; path = Simples/Views/DemoRootView.m; sourceTree = "<group>"; };
+		DC5DA9A61B00A74C00DEDEC2 /* DemoSimpleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoSimpleBase.h; path = Simples/DemoSimpleBase.h; sourceTree = "<group>"; };
+		DC5DA9A71B00A74C00DEDEC2 /* DemoSimpleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoSimpleBase.m; path = Simples/DemoSimpleBase.m; sourceTree = "<group>"; };
+		DC5DA9A81B00A74C00DEDEC2 /* SimpleAlbumComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAlbumComponent.h; path = Simples/SimpleAlbumComponent.h; sourceTree = "<group>"; };
+		DC5DA9A91B00A74C00DEDEC2 /* SimpleAlbumComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAlbumComponent.m; path = Simples/SimpleAlbumComponent.m; sourceTree = "<group>"; };
+		DC5DA9AA1B00A74C00DEDEC2 /* SimpleCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCameraComponent.h; path = Simples/SimpleCameraComponent.h; sourceTree = "<group>"; };
+		DC5DA9AB1B00A74C00DEDEC2 /* SimpleCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCameraComponent.m; path = Simples/SimpleCameraComponent.m; sourceTree = "<group>"; };
+		DC5DA9AC1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditAdvancedComponent.h; path = Simples/SimpleEditAdvancedComponent.h; sourceTree = "<group>"; };
+		DC5DA9AD1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditAdvancedComponent.m; path = Simples/SimpleEditAdvancedComponent.m; sourceTree = "<group>"; };
+		DC5DA9AE1B00A74C00DEDEC2 /* SimpleEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditAndCutComponent.h; path = Simples/SimpleEditAndCutComponent.h; sourceTree = "<group>"; };
+		DC5DA9AF1B00A74C00DEDEC2 /* SimpleEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditAndCutComponent.m; path = Simples/SimpleEditAndCutComponent.m; sourceTree = "<group>"; };
+		DC5DA9B01B00A74C00DEDEC2 /* SimpleEditAvatarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditAvatarComponent.h; path = Simples/SimpleEditAvatarComponent.h; sourceTree = "<group>"; };
+		DC5DA9B11B00A74C00DEDEC2 /* SimpleEditAvatarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditAvatarComponent.m; path = Simples/SimpleEditAvatarComponent.m; sourceTree = "<group>"; };
+		DC5DA9B21B00A74C00DEDEC2 /* SimpleEditMultipleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditMultipleComponent.h; path = Simples/SimpleEditMultipleComponent.h; sourceTree = "<group>"; };
+		DC5DA9B31B00A74C00DEDEC2 /* SimpleEditMultipleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditMultipleComponent.m; path = Simples/SimpleEditMultipleComponent.m; sourceTree = "<group>"; };
+		DC5DA9BB1B00A76300DEDEC2 /* ExtendCameraBaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtendCameraBaseComponent.h; path = Extends/ExtendCameraBaseComponent.h; sourceTree = "<group>"; };
+		DC5DA9BC1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExtendCameraBaseComponent.m; path = Extends/ExtendCameraBaseComponent.m; sourceTree = "<group>"; };
+		DC5DA9BD1B00A76300DEDEC2 /* ExtendEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtendEditAndCutComponent.h; path = Extends/ExtendEditAndCutComponent.h; sourceTree = "<group>"; };
+		DC5DA9BE1B00A76300DEDEC2 /* ExtendEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExtendEditAndCutComponent.m; path = Extends/ExtendEditAndCutComponent.m; sourceTree = "<group>"; };
+		DC5DA9C11B00A76B00DEDEC2 /* DefineCameraBaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefineCameraBaseComponent.h; path = Defines/DefineCameraBaseComponent.h; sourceTree = "<group>"; };
+		DC5DA9C21B00A76B00DEDEC2 /* DefineCameraBaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefineCameraBaseComponent.m; path = Defines/DefineCameraBaseComponent.m; sourceTree = "<group>"; };
 		DC7B2B771AF21D9D00EBA4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC8851AF1A45221000839674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC8851B01A45221000839674 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		DC8851B41A45221700839674 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
 		DC8851B51A45221700839674 /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
-		DC8851B61A45221700839674 /* SimpleCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCameraViewController.h; sourceTree = "<group>"; };
-		DC8851B71A45221700839674 /* SimpleCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCameraViewController.m; sourceTree = "<group>"; };
 		DC98F0771A17668F006B6417 /* TuSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC98F07B1A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC98F07C1A17668F006B6417 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,26 +77,6 @@
 		DC98F0951A17668F006B6417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuSDKDemoTests.m; sourceTree = "<group>"; };
 		DCA81D751AF23411003C5882 /* TuSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
-		DCA81D781AF23530003C5882 /* DemoRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootView.h; sourceTree = "<group>"; };
-		DCA81D791AF23530003C5882 /* DemoRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootView.m; sourceTree = "<group>"; };
-		DCA81D7B1AF2353A003C5882 /* DemoSimpleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSimpleBase.h; sourceTree = "<group>"; };
-		DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSimpleBase.m; sourceTree = "<group>"; };
-		DCA81D7D1AF2353A003C5882 /* SimpleAlbumComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAlbumComponent.h; sourceTree = "<group>"; };
-		DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAlbumComponent.m; sourceTree = "<group>"; };
-		DCA81D7F1AF2353A003C5882 /* SimpleCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCameraComponent.h; sourceTree = "<group>"; };
-		DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCameraComponent.m; sourceTree = "<group>"; };
-		DCA81D811AF2353A003C5882 /* SimpleDefineCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDefineCamera.h; sourceTree = "<group>"; };
-		DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDefineCamera.m; sourceTree = "<group>"; };
-		DCA81D831AF2353A003C5882 /* SimpleEditAdvancedComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAdvancedComponent.h; sourceTree = "<group>"; };
-		DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAdvancedComponent.m; sourceTree = "<group>"; };
-		DCA81D851AF2353A003C5882 /* SimpleEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAndCutComponent.h; sourceTree = "<group>"; };
-		DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAndCutComponent.m; sourceTree = "<group>"; };
-		DCA81D871AF2353A003C5882 /* SimpleEditAvatarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditAvatarComponent.h; sourceTree = "<group>"; };
-		DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditAvatarComponent.m; sourceTree = "<group>"; };
-		DCA81D891AF2353A003C5882 /* SimpleEditComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditComponent.h; sourceTree = "<group>"; };
-		DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditComponent.m; sourceTree = "<group>"; };
-		DCA81D8B1AF2353A003C5882 /* SimpleEditMultipleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditMultipleComponent.h; sourceTree = "<group>"; };
-		DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditMultipleComponent.m; sourceTree = "<group>"; };
 		E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,13 +108,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DC1953561A7E009600B37597 /* Examples */ = {
+		DC5DA99F1B00A6D800DEDEC2 /* Simples */ = {
 			isa = PBXGroup;
 			children = (
-				DC1953571A7E00AB00B37597 /* SimpleEditTurnAndCutView.h */,
-				DC1953581A7E00AB00B37597 /* SimpleEditTurnAndCutView.m */,
+				DC5DA9A21B00A6FF00DEDEC2 /* Views */,
+				DC5DA9A61B00A74C00DEDEC2 /* DemoSimpleBase.h */,
+				DC5DA9A71B00A74C00DEDEC2 /* DemoSimpleBase.m */,
+				DC5DA9A81B00A74C00DEDEC2 /* SimpleAlbumComponent.h */,
+				DC5DA9A91B00A74C00DEDEC2 /* SimpleAlbumComponent.m */,
+				DC5DA9AA1B00A74C00DEDEC2 /* SimpleCameraComponent.h */,
+				DC5DA9AB1B00A74C00DEDEC2 /* SimpleCameraComponent.m */,
+				DC5DA9AC1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.h */,
+				DC5DA9AD1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m */,
+				DC5DA9AE1B00A74C00DEDEC2 /* SimpleEditAndCutComponent.h */,
+				DC5DA9AF1B00A74C00DEDEC2 /* SimpleEditAndCutComponent.m */,
+				DC5DA9B01B00A74C00DEDEC2 /* SimpleEditAvatarComponent.h */,
+				DC5DA9B11B00A74C00DEDEC2 /* SimpleEditAvatarComponent.m */,
+				DC5DA9B21B00A74C00DEDEC2 /* SimpleEditMultipleComponent.h */,
+				DC5DA9B31B00A74C00DEDEC2 /* SimpleEditMultipleComponent.m */,
 			);
-			name = Examples;
+			name = Simples;
+			sourceTree = "<group>";
+		};
+		DC5DA9A01B00A6E200DEDEC2 /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DA9BB1B00A76300DEDEC2 /* ExtendCameraBaseComponent.h */,
+				DC5DA9BC1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m */,
+				DC5DA9BD1B00A76300DEDEC2 /* ExtendEditAndCutComponent.h */,
+				DC5DA9BE1B00A76300DEDEC2 /* ExtendEditAndCutComponent.m */,
+			);
+			name = Extends;
+			sourceTree = "<group>";
+		};
+		DC5DA9A11B00A6E800DEDEC2 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DA9C11B00A76B00DEDEC2 /* DefineCameraBaseComponent.h */,
+				DC5DA9C21B00A76B00DEDEC2 /* DefineCameraBaseComponent.m */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		DC5DA9A21B00A6FF00DEDEC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC5DA9A31B00A73B00DEDEC2 /* DemoRootView.h */,
+				DC5DA9A41B00A73B00DEDEC2 /* DemoRootView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		DC8851AE1A45221000839674 /* Resources */ = {
@@ -135,10 +174,9 @@
 			children = (
 				DC8851B41A45221700839674 /* DemoRootViewController.h */,
 				DC8851B51A45221700839674 /* DemoRootViewController.m */,
-				DC1953561A7E009600B37597 /* Examples */,
-				DC8851B61A45221700839674 /* SimpleCameraViewController.h */,
-				DC8851B71A45221700839674 /* SimpleCameraViewController.m */,
-				DCA81D761AF234D5003C5882 /* Simples */,
+				DC5DA99F1B00A6D800DEDEC2 /* Simples */,
+				DC5DA9A01B00A6E200DEDEC2 /* Extends */,
+				DC5DA9A11B00A6E800DEDEC2 /* Defines */,
 			);
 			name = Source;
 			path = TuSDKDemo/Source;
@@ -201,41 +239,6 @@
 				DC98F0951A17668F006B6417 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DCA81D761AF234D5003C5882 /* Simples */ = {
-			isa = PBXGroup;
-			children = (
-				DCA81D771AF2351F003C5882 /* Views */,
-				DCA81D7B1AF2353A003C5882 /* DemoSimpleBase.h */,
-				DCA81D7C1AF2353A003C5882 /* DemoSimpleBase.m */,
-				DCA81D7D1AF2353A003C5882 /* SimpleAlbumComponent.h */,
-				DCA81D7E1AF2353A003C5882 /* SimpleAlbumComponent.m */,
-				DCA81D7F1AF2353A003C5882 /* SimpleCameraComponent.h */,
-				DCA81D801AF2353A003C5882 /* SimpleCameraComponent.m */,
-				DCA81D811AF2353A003C5882 /* SimpleDefineCamera.h */,
-				DCA81D821AF2353A003C5882 /* SimpleDefineCamera.m */,
-				DCA81D831AF2353A003C5882 /* SimpleEditAdvancedComponent.h */,
-				DCA81D841AF2353A003C5882 /* SimpleEditAdvancedComponent.m */,
-				DCA81D851AF2353A003C5882 /* SimpleEditAndCutComponent.h */,
-				DCA81D861AF2353A003C5882 /* SimpleEditAndCutComponent.m */,
-				DCA81D871AF2353A003C5882 /* SimpleEditAvatarComponent.h */,
-				DCA81D881AF2353A003C5882 /* SimpleEditAvatarComponent.m */,
-				DCA81D891AF2353A003C5882 /* SimpleEditComponent.h */,
-				DCA81D8A1AF2353A003C5882 /* SimpleEditComponent.m */,
-				DCA81D8B1AF2353A003C5882 /* SimpleEditMultipleComponent.h */,
-				DCA81D8C1AF2353A003C5882 /* SimpleEditMultipleComponent.m */,
-			);
-			name = Simples;
-			sourceTree = "<group>";
-		};
-		DCA81D771AF2351F003C5882 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DCA81D781AF23530003C5882 /* DemoRootView.h */,
-				DCA81D791AF23530003C5882 /* DemoRootView.m */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		DD26EFB9BE3EABB13D356AAE /* Frameworks */ = {
@@ -382,20 +385,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */,
-				DCA81D8F1AF2353A003C5882 /* SimpleCameraComponent.m in Sources */,
-				DCA81D8D1AF2353A003C5882 /* DemoSimpleBase.m in Sources */,
+				DC5DA9BF1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m in Sources */,
+				DC5DA9B71B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m in Sources */,
+				DC5DA9B51B00A74C00DEDEC2 /* SimpleAlbumComponent.m in Sources */,
+				DC5DA9C31B00A76B00DEDEC2 /* DefineCameraBaseComponent.m in Sources */,
+				DC5DA9A51B00A73B00DEDEC2 /* DemoRootView.m in Sources */,
+				DC5DA9B81B00A74C00DEDEC2 /* SimpleEditAndCutComponent.m in Sources */,
+				DC5DA9B61B00A74C00DEDEC2 /* SimpleCameraComponent.m in Sources */,
+				DC5DA9B41B00A74C00DEDEC2 /* DemoSimpleBase.m in Sources */,
+				DC5DA9C01B00A76300DEDEC2 /* ExtendEditAndCutComponent.m in Sources */,
 				DC8851B81A45221700839674 /* DemoRootViewController.m in Sources */,
-				DCA81D921AF2353A003C5882 /* SimpleEditAndCutComponent.m in Sources */,
-				DCA81D941AF2353A003C5882 /* SimpleEditComponent.m in Sources */,
-				DC1953591A7E00AB00B37597 /* SimpleEditTurnAndCutView.m in Sources */,
-				DC8851B91A45221700839674 /* SimpleCameraViewController.m in Sources */,
+				DC5DA9BA1B00A74C00DEDEC2 /* SimpleEditMultipleComponent.m in Sources */,
+				DC5DA9B91B00A74C00DEDEC2 /* SimpleEditAvatarComponent.m in Sources */,
 				DC98F07D1A17668F006B6417 /* main.m in Sources */,
-				DCA81D7A1AF23530003C5882 /* DemoRootView.m in Sources */,
-				DCA81D911AF2353A003C5882 /* SimpleEditAdvancedComponent.m in Sources */,
-				DCA81D931AF2353A003C5882 /* SimpleEditAvatarComponent.m in Sources */,
-				DCA81D951AF2353A003C5882 /* SimpleEditMultipleComponent.m in Sources */,
-				DCA81D8E1AF2353A003C5882 /* SimpleAlbumComponent.m in Sources */,
-				DCA81D901AF2353A003C5882 /* SimpleDefineCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
