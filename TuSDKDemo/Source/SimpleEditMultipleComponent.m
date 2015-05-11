@@ -68,7 +68,7 @@
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDK photoEditMultipleWithController:controller
-                               callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                             callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
          // 获取图片失败
@@ -154,11 +154,27 @@
     //
     //    // 锐化功能控制器配置选项
     // _photoEditMultipleComponent.options.editSharpnessOptions
-    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKEditSharpnessOptions.html
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditSharpnessOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editSharpnessOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSharpnessOptions.outputCompress = 0.95f;
+    //
+    //    // 大光圈控制器配置选项
+    // _photoEditMultipleComponent.options.editApertureOptions
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditApertureOptions.html
+    //    // 保存到临时文
+    //    _photoEditMultipleComponent.options.editApertureOptions.saveToTemp = YES;
+    //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
+    //    _photoEditMultipleComponent.options.editApertureOptions.outputCompress = 0.95f;
+    //
+    //    // 暗角控制器功能控制器配置选项
+    // _photoEditMultipleComponent.options.editVignetteOptions
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditVignetteOptions.html
+    //    // 保存到临时文
+    //    _photoEditMultipleComponent.options.editVignetteOptions.saveToTemp = YES;
+    //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
+    //    _photoEditMultipleComponent.options.editVignetteOptions.outputCompress = 0.95f;
     
     // 设置图片
     _photoEditMultipleComponent.inputImage = result.image;

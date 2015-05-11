@@ -106,4 +106,17 @@
  *  @param result 异步处理图片
  */
 - (void)asyncEditWithResult:(TuSDKResult *)result;
+
+/**
+ *  请求渲染视图
+ */
+- (void)requestRender;
+
+/**
+ *  绑定滤镜配置选项
+ *
+ *  @param params 配置选项列表
+ *  @param index  选中索引
+ */
+- (void)bindWithConfigParams:(NSArray *)params selectedIndex:(NSUInteger)index;
 @end

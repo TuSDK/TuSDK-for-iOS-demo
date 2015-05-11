@@ -13,7 +13,9 @@
 #import "TuSDKPFEditSkinOptions.h"
 #import "TuSDKPFEditStickerOptions.h"
 #import "TuSDKPFEditAdjustOptions.h"
-#import "TuSDKEditSharpnessController.h"
+#import "TuSDKPFEditSharpnessController.h"
+#import "TuSDKPFEditApertureController.h"
+#import "TuSDKPFEditVignetteController.h"
 
 /**
  *  多功能图像编辑组件选项
@@ -52,5 +54,15 @@
 /**
  *  锐化功能控制器配置选项
  */
-@property (nonatomic, readonly) TuSDKEditSharpnessOptions *editSharpnessOptions;
+@property (nonatomic, readonly) TuSDKPFEditSharpnessOptions *editSharpnessOptions;
+
+/**
+ *  大光圈控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditApertureOptions *editApertureOptions;
+
+/**
+ *  暗角控制器功能控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditVignetteOptions *editVignetteOptions;
 @end

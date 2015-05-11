@@ -26,6 +26,11 @@
 @property (nonatomic, assign) TuSDKFilterWrap *filterWrap;
 
 /**
+ *  开启触摸时显示原图效果
+ */
+@property (nonatomic, readwrite) BOOL enableTouchCleanFilter;
+
+/**
  *  设置图片
  *
  *  @param image 图片
@@ -36,6 +41,7 @@
  *  请求渲染图片
  */
 - (void)requestRender;
+
 @end
 
 #pragma mark - TuSDKPFEditFilterBottomBar

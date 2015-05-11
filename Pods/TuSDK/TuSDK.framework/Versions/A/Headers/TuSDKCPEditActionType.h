@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
     /**
      * 景深动作
      */
-    lsqTuSDKCPEditActionDepthField,
+    lsqTuSDKCPEditActionAperture,
 };
 
 /**

@@ -154,6 +154,16 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editSharpnessFragment = 0x409100,
     
     /**
+     * 大光圈控制器
+     */
+    tkc_editApertureFragment = 0x409200,
+    
+    /**
+     * 暗角控制器
+     */
+    tkc_editVignetteFragment = 0x409300,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,

@@ -114,6 +114,43 @@
 - (NSArray *)changedArgs;
 
 /**
+ *  重置参数
+ */
+- (void)reset;
+
+/**
+ *  重置参数
+ *
+ *  @param key 参数键名
+ */
+- (void)resetWithKey:(NSString *)key;
+
+/**
+ *  获取滤镜参数
+ *
+ *  @param key 参数键名
+ *
+ *  @return 滤镜参数
+ */
+- (TuSDKFilterArg *)argWithKey:(NSString *)key;
+
+/**
+ *  设置滤镜参数百分比
+ *
+ *  @param key     参数键名
+ *  @param precent 百分比 0 - 1
+ */
+- (void)setArgWithKey:(NSString *)key precent:(CGFloat)precent;
+
+/**
+ *  步进滤镜参数百分比
+ *
+ *  @param key     参数键名
+ *  @param precent 百分比 0 - 1
+ */
+- (void)stepArgWithKey:(NSString *)key precent:(CGFloat)precent;
+
+/**
  * 添加一个浮点参数
  *
  * @param key

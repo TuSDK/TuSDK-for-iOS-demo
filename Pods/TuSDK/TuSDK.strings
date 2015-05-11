@@ -215,17 +215,20 @@
 "lsq_filter_set_hueSpace" = "范围";
 "lsq_filter_set_brightness" = "亮度";
 "lsq_filter_set_exposure" = "曝光度";
-"lsq_filter_set_vignette" = "晕角";
-"lsq_filter_set_depthfield" = "景深";
+"lsq_filter_set_vignette" = "暗角";
+"lsq_filter_set_aperture" = "光圈";
 "lsq_filter_set_adjustment" = "调整";
+"lsq_filter_set_selective" = "选区";
+"lsq_filter_set_linear" = "线性";
+"lsq_filter_set_radial" = "径向";
 
 // Filters Definition Bokeh
-"lsq_filter_set_includeBlurSize" = "外模糊";
-"lsq_filter_set_excludeCircleRadius" = "内半径";
-"lsq_filter_set_excludeCirclePointX" = "中心X";
-"lsq_filter_set_excludeCirclePointY" = "中心Y";
-"lsq_filter_set_excludeBlurSize" = "边缘";
-"lsq_filter_set_excludeAspectRatio" = "内范围";
+"lsq_filter_set_radius" = "内半径";
+"lsq_filter_set_centerX" = "中心X";
+"lsq_filter_set_centerY" = "中心Y";
+"lsq_filter_set_excessive" = "边缘";
+"lsq_filter_set_maskAlpha" = "强调";
+"lsq_filter_set_degree" = "角度";
 
 // network
 "lsq_network_request_error" = "服务器请求错误";
