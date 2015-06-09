@@ -88,4 +88,9 @@
  *  @param indexPath 索引
  */
 - (void)setCellSelected:(BOOL)selected rowAtIndexPath:(NSIndexPath *)indexPath;
+
+/**
+ *  刷新数据，同时记录已选中状态
+ */
+- (void)reloadDataSaveSelected;
 @end

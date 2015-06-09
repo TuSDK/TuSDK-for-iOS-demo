@@ -41,7 +41,7 @@
 @property (nonatomic, strong) Class filterViewClazz;
 
 /**
- *  聚焦触摸视图类 (默认:TuSDKICFocusTouchView, 需要继承 TuSDKICFocusTouchView)
+ *  聚焦触摸视图类 (默认:TuSDKCPFocusTouchView, 需要继承 TuSDKCPFocusTouchView)
  */
 @property (nonatomic, strong) Class focusTouchViewClazz;
 
@@ -70,6 +70,11 @@
  *  默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
  */
 @property (nonatomic) BOOL showFilterDefault;
+
+/**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
 
 /**
  *  滤镜列表行视图宽度

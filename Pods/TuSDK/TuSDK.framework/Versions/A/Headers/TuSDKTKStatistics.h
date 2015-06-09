@@ -164,6 +164,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editVignetteFragment = 0x409300,
     
     /**
+     * 在线滤镜控制器
+     */
+    tkc_editFilterOnlineFragment = 0x409400,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,

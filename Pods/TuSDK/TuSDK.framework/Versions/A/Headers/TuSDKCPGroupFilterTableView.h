@@ -71,6 +71,11 @@
 @property (nonatomic) BOOL allowsSelection;
 
 /**
+ *  滤镜分组视图委托
+ */
+@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
+
+/**
  *  选中索引
  *
  *  @param position 索引
@@ -87,4 +92,9 @@
  *  @param anim     是否使用动画
  */
 - (void)changeSelectPostion:(NSUInteger)position scrollToCenter:(BOOL)toCenter anim:(BOOL)anim;
+
+/**
+ *  刷新数据
+ */
+- (void)reloadData;
 @end

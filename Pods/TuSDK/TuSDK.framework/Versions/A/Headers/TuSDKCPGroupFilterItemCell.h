@@ -98,6 +98,11 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 @property (nonatomic, retain) TuSDKFilterGroup *group;
 
 /**
+ *  是否为动作状态
+ */
+@property (nonatomic) BOOL isInActingType;
+
+/**
  *  初始化
  *
  *  @param type 滤镜分组元素类型
@@ -234,9 +239,51 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 @end
 
 #pragma mark - TuSDKCPGroupFilterGroupCell
+
+@class TuSDKCPGroupFilterGroupCell;
+
+/**
+ *  滤镜分组视图委托
+ */
+@protocol TuSDKCPGroupFilterGroupCellDelegate <NSObject>
+
+/**
+ *  长按视图
+ *
+ *  @param cell 滤镜分组视图
+ */
+- (void)onFilterGroupCellLongClick:(TuSDKCPGroupFilterGroupCell *)cell;
+
+/**
+ *  删除滤镜组
+ *
+ *  @param cell 滤镜分组视图
+ */
+- (void)onFilterGroupCellRemove:(TuSDKCPGroupFilterGroupCell *)cell;
+@end
+
 /**
  *  滤镜分组视图
  */
-@interface TuSDKCPGroupFilterGroupCell : TuSDKCPGroupFilterItemCell
+@interface TuSDKCPGroupFilterGroupCell : TuSDKCPGroupFilterItemCell{
+    @protected
+    /**
+     *  删除按钮
+     */
+    UIButton *_removeButton;
+}
+/**
+ *  滤镜分组视图委托
+ */
+@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> delegate;
 
+/**
+ *  删除按钮
+ */
+@property (nonatomic, readonly) UIButton *removeButton;
+
+/**
+ *  处理按钮删除事件
+ */
+- (void)handleRemoveButton;
 @end

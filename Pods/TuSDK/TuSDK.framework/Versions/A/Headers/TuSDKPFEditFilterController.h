@@ -90,6 +90,11 @@
 @property (nonatomic) BOOL enableFilterConfig;
 
 /**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
+
+/**
  *  是否仅返回滤镜，不返回处理图片
  */
 @property (nonatomic) BOOL onlyReturnFilter;
@@ -98,6 +103,13 @@
  *  当前所使用的滤镜
  */
 @property (nonatomic, retain) TuSDKFilterWrap *filterWrap;
+
+/**
+ *  配置滤镜栏视图
+ *
+ *  @param view 滤镜栏视图
+ */
+- (void)configWithGroupFilterView:(TuSDKCPGroupFilterBaseView *)view;
 
 /**
  *  编辑图片完成按钮动作

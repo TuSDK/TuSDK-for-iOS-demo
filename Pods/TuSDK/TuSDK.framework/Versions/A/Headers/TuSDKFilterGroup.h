@@ -75,6 +75,11 @@
 @property (nonatomic, retain) TuSDKAOFile *sdkFile;
 
 /**
+ *  是否为下载滤镜
+ */
+@property (nonatomic) BOOL isDownload;
+
+/**
  * 复制滤镜分组
  *
  * @return

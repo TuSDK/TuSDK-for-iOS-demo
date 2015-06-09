@@ -137,6 +137,9 @@
 "lsq_filter_group_Magic" = "魔法色";
 
 // Filters
+"lsq_filter_online_title" = "在线滤镜";
+"lsq_filter_remove_title" = "删除滤镜";
+"lsq_filter_remove_msg%@" = "您是否需要删除滤镜 《%@》 ?";
 "lsq_filter_Normal" = "无效果";
 "lsq_filter_Lomo" = "LOMO";
 "lsq_filter_Noir" = "黑白";

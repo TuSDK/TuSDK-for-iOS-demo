@@ -32,7 +32,7 @@
 /**
  *  滤镜组选择栏
  */
-@interface TuSDKCPGroupFilterBar : UIView<TuSDKCPGroupFilterTableViewDelegate>
+@interface TuSDKCPGroupFilterBar : UIView<TuSDKCPGroupFilterTableViewDelegate, TuSDKCPGroupFilterGroupCellDelegate>
 {
     // 滤镜分组列表
     TuSDKCPGroupFilterTableView *_groupTable;
@@ -102,6 +102,21 @@
 @property (nonatomic) BOOL allowsSelection;
 
 /**
+ *  开启在线滤镜
+ */
+@property (nonatomic) BOOL enableOnlineFilter;
+
+/**
+ *  视图控制器
+ */
+@property (nonatomic, assign) UIViewController *controller;
+
+/**
+ *  开启用户历史记录
+ */
+@property (nonatomic) BOOL enableHistory;
+
+/**
  *  加载滤镜分组
  */
 - (void)loadFilters;
@@ -112,4 +127,9 @@
  *  @param option 滤镜配置选项
  */
 - (void)loadFiltersWithOption:(TuSDKFilterOption *)option;
+
+/**
+ *  退出删除状态
+ */
+- (void)exitRemoveState;
 @end

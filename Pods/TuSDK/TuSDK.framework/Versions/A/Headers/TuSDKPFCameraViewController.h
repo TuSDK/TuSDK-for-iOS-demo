@@ -80,7 +80,7 @@
 @property (nonatomic, strong) Class filterViewClazz;
 
 /**
- *  聚焦触摸视图类 (需要继承 TuSDKICFocusTouchView)
+ *  聚焦触摸视图类 (需要继承 TuSDKCPFocusTouchView)
  */
 @property (nonatomic, strong) Class focusTouchViewClazz;
 
@@ -114,6 +114,11 @@
  *  默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
  */
 @property (nonatomic) BOOL showFilterDefault;
+
+/**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
 
 /**
  *  滤镜列表行视图宽度
@@ -211,6 +216,13 @@
  *  @param view 默认样式视图 (如需创建自定义视图，请覆盖该方法，并配置自己的视图类)
  */
 - (void)buildFilterBar:(TuSDKPFCameraView *)view;
+
+/**
+ *  配置滤镜栏视图
+ *
+ *  @param view 滤镜栏视图
+ */
+- (void)configWithGroupFilterView:(TuSDKCPGroupFilterBaseView *)view;
 
 /**
  *  选中一个滤镜

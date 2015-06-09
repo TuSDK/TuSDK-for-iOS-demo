@@ -66,9 +66,9 @@
     // 滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
     // opt.filterViewClazz = [TuSDKPFCameraFilterGroupView class];
     
-    // 聚焦触摸视图类 (默认:TuSDKICFocusTouchView, 需要继承 TuSDKICFocusTouchView)
-    // opt.focusTouchViewClazz = [TuSDKICFocusTouchView class];
     
+    // 聚焦触摸视图类 (默认:TuSDKCPFocusTouchView, 需要继承 TuSDKCPFocusTouchView)
+    // opt.focusTouchViewClazz = [TuSDKCPFocusTouchView class];
     // 摄像头前后方向 (默认为后置优先)
     // opt.avPostion = [AVCaptureDevice firstBackCameraPosition];
     

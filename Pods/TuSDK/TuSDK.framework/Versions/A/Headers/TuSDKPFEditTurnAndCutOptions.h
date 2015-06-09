@@ -40,6 +40,11 @@
 @property (nonatomic) BOOL enableFilters;
 
 /**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
+
+/**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
 @property (nonatomic, retain) NSArray *filterGroup;

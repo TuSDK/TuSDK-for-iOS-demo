@@ -49,6 +49,11 @@
 @property (nonatomic) BOOL enableFilterConfig;
 
 /**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
+
+/**
  *  是否仅返回滤镜，不返回处理图片
  */
 @property (nonatomic) BOOL onlyReturnFilter;

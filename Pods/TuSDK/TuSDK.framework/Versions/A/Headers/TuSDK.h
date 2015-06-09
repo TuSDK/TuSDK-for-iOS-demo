@@ -40,7 +40,7 @@
 #import "TuSDKCPFocusTouchView.h"
 #import "TuSDKProgressHUD.h"
 
-#import "TuSDKFilterConfig.h"
+#import "TuSDKFilterLocalPackage.h"
 #import "TuSDKFilterManager.h"
 #import "TuSDKStillCamera.h"
 #import "TuSDKPFStickerLocalPackage.h"

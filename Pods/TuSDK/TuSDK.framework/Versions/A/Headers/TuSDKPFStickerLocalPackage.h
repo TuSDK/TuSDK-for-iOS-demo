@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "TuSDKPFStickerCategory.h"
 #import "TuSDKConfig.h"
-#import "TuSDKTKImageViewTask.h"
 #import "TuSDKNKDownloadItem.h"
 
 @class TuSDKPFStickerLocalPackage;
@@ -34,7 +33,7 @@
 /**
  *  本地贴纸包
  */
-@interface TuSDKPFStickerLocalPackage : TuSDKTKImageViewTask
+@interface TuSDKPFStickerLocalPackage : NSObject
 
 /**
  *  分类列表
@@ -68,6 +67,13 @@
  *  @param imageView 图片视图
  */
 - (void)loadThumbWtihSticker:(TuSDKPFSticker *)sticker imageView:(UIImageView *)imageView;
+
+/**
+ *  取消加载图片
+ *
+ *  @param imageView 图片视图
+ */
+- (void)cancelLoadImage:(UIImageView *)imageView;
 
 /**
  *  加载贴纸数据

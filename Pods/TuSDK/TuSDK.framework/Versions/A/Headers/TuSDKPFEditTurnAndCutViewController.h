@@ -82,6 +82,11 @@
 @property (nonatomic) BOOL enableFilters;
 
 /**
+ *  开启滤镜历史记录
+ */
+@property (nonatomic) BOOL enableFilterHistory;
+
+/**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
 @property (nonatomic, retain) NSArray *filterGroup;
@@ -110,6 +115,13 @@
  *  需要裁剪的长宽
  */
 @property (nonatomic) CGSize cutSize;
+
+/**
+ *  配置滤镜栏视图
+ *
+ *  @param view 滤镜栏视图
+ */
+- (void)configWithGroupFilterView:(TuSDKCPGroupFilterBaseView *)view;
 
 /**
  *  编辑图片完成按钮动作

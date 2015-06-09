@@ -80,6 +80,21 @@
 @property (nonatomic) BOOL allowsSelection;
 
 /**
+ *  开启在线滤镜
+ */
+@property (nonatomic) BOOL enableOnlineFilter;
+
+/**
+ *  视图控制器
+ */
+@property (nonatomic, assign) UIViewController *controller;
+
+/**
+ *  开启用户历史记录
+ */
+@property (nonatomic) BOOL enableHistory;
+
+/**
  *  通知显示标题
  *
  *  @param cell 滤镜分组元素视图
@@ -108,4 +123,9 @@
  *  @param isShow 是否显示
  */
 - (void)setDefaultShowState:(BOOL)isShow;
+
+/**
+ *  退出删除状态
+ */
+- (void)exitRemoveState;
 @end
