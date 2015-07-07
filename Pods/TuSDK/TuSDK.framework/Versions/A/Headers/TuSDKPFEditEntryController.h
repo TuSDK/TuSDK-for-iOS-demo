@@ -123,6 +123,11 @@
 @property (nonatomic, retain) TuSDKFilterWrap *filterWrap;
 
 /**
+ *  贴纸视图委托
+ */
+@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+
+/**
  *  添加贴纸数据
  *
  *  @param sticker 贴纸数据

@@ -87,6 +87,11 @@ TuSDKPFStickerOnlineControllerDelegate, TuSDKPFStickerLocalControllerDelegate>
 @property (nonatomic, retain) NSArray *categories;
 
 /**
+ *  贴纸视图委托
+ */
+@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+
+/**
  *  开启详细列表动作按钮动作
  */
 - (void)openListDetailAtion;

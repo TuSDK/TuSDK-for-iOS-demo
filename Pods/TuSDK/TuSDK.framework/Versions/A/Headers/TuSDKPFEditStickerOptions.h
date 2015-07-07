@@ -44,6 +44,11 @@
 @property (nonatomic, retain) NSArray *categories;
 
 /**
+ *  贴纸视图委托
+ */
+@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+
+/**
  *  创建图片编辑滤镜控制器对象
  *
  *  @return 图片编辑滤镜控制器对象

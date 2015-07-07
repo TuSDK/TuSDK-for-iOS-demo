@@ -1,0 +1,26 @@
+/*
+ Localizable.strings
+ TuSDKDemo
+ 
+ Created by idealhack on 15/7/7.
+ Copyright (c) 2015 Lasque. All rights reserved.
+ */
+
+"app_name" = "TuSDK";
+
+// simple group
+"simple_group_adv_comp" = "Andvanced Components";
+"simple_group_comp" = "Base Components";
+"simple_group_extend" = "Extended Components - Custom UI";
+"simple_group_define" = "Customized Components - Low level API";
+
+// simple
+"simple_EditAndCutComponent" = "Edit Component";
+"simple_EditAvatarComponent" = "Avatar Component";
+"simple_EditAdvancedComponent" = "Andvanced Edit Component";
+"simple_EditMultipleComponent" = "Multifunctional Edit Component";
+"simple_AlbumComponent" = "Album Component";
+"simple_CameraComponent" = "Camera Component";
+"extend_EditComponent" = "Extended Edit Component";
+"extend_CameraBase" = "Extended Camera Component";
+"define_CameraBase" = "Customized Camera Component";

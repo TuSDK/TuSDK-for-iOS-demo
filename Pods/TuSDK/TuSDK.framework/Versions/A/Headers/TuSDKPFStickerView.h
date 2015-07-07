@@ -131,7 +131,7 @@
 /**
  *  当前已使用贴纸总数
  */
-@property (nonatomic) NSUInteger stickerCount;
+@property (nonatomic, readonly) NSUInteger stickerCount;
 
 /**
  *  添加一个贴纸

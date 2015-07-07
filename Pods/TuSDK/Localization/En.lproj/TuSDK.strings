@@ -1,0 +1,243 @@
+/*
+ TuSDK.strings
+ TuSDKDemo
+ 
+ Created by idealhack on 15/7/7.
+ Copyright (c) 2015 Lasque. All rights reserved.
+ */
+
+"lsq_reset" = "Reset";
+"lsq_cancel" = "Cancel";
+"lsq_setting" = "Settings";
+"lsq_loading_image" = "Loading image...";
+"lsq_initing" = "Initializing";
+"lsq_inited" = "Initialized";
+
+// refreshListView
+"lsq_refresh_list_view_state_visible" = "Pull to refresh";
+"lsq_refresh_list_view_state_hidden" = "Load complete";
+"lsq_refresh_list_view_state_triggered" = "Release to refresh";
+"lsq_refresh_list_view_state_loading" = "Loding...";
+"lsq_refresh_list_view_state_lasttime" = "Last updated: ";
+"lsq_refresh_list_view_state_load_more" = "Loding more...";
+
+// Date
+"lsq_date_seconds_ago" = "seconds ago";
+"lsq_date_minutes_ago" = "minutes ago";
+"lsq_date_hours_ago" = "hours ago";
+"lsq_date_month" = "Month";
+"lsq_date_year" = "Year";
+"lsq_date_today" = "Today";
+"lsq_date_formater" = "M/d/yyyy";
+
+// nav
+"lsq_nav_cancel" = "Cancel";
+"lsq_nav_back" = "Back";
+"lsq_nav_more" = "More";
+"lsq_nav_remove" = "Remove";
+"lsq_nav_complete" = "Done";
+
+// button
+"lsq_button_done" = "OK";
+"lsq_button_close" = "Close";
+"lsq_button_switch_camera" = "Switch";
+"lsq_button_flash" = "Flash:";
+"lsq_button_flash_model_off" = "Off";
+"lsq_button_flash_model_auto" = "Auto";
+"lsq_button_flash_model_open" = "On";
+
+// avatar
+"lsq_avatar_actionsheet_title" = "Set Avatar";
+"lsq_avatar_actionsheet_cancel" = "Cancel";
+"lsq_avatar_actionsheet_camera" = "Take Photo";
+"lsq_avatar_actionsheet_album" = "Choose from Albums";
+
+// camera
+"lsq_carema_no_device" = "Your device has no camera!";
+"lsq_carema_access_error%@" = "Can’t access camera. Please trun %@ on in Settings - Privacy - Camera.";
+"lsq_carema_access_error_title" = "Can’t access camera";
+
+// album
+"lsq_album_title" = "Albums";
+"lsq_album_empty" = "No photos yet";
+"lsq_album_total_format%ld" = "%ld photos";
+"lsq_album_ALAssetsLibraryAccessDefaultError%@" = "Failed to access photos (%@)";
+"lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "Failed to access photos. Please trun %@ on in Settings - Privacy - Photos.";
+"lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "Can’t access photos. Please trun %@ on in Settings - Privacy - Photos.";
+"lsq_album_ALAssets_error_title" = "Can’t access photos";
+
+// location
+"lsq_location_error_title" = "Can’t get location";
+"lsq_location_AccessUserDeniedError%@" = "Can’t get location. Please trun %@ on in Settings - Privacy - Location Services.";
+
+// save
+"lsq_save_saveToTemp" = "Processing...";
+"lsq_save_saveToTemp_completed" = "Process completed";
+"lsq_save_saveToTemp_failed" = "Failed to process";
+"lsq_save_saveToAlbum" = "Saving to albums...";
+"lsq_save_saveToAlbum_succeed" = "Saved successfully";
+"lsq_save_saveToAlbum_failed" = "Failed to save";
+
+// edit
+"lsq_edit_button_complete" = "Done";
+"lsq_edit_loading" = "Loading...";
+"lsq_edit_filter_processing" = "Processing...";
+"lsq_edit_processing" = "Processing...";
+"lsq_edit_processed" = "Process completed";
+"lsq_edit_entry_filter" = "Filters";
+"lsq_edit_entry_cuter" = "Crop";
+"lsq_edit_entry_sticker" = "Stickers";
+"lsq_edit_cuter_ratio_orgin" = "Original";
+"lsq_edit_cuter_ratio_1_1" = "1:1";
+"lsq_edit_cuter_ratio_2_3" = "2:3";
+"lsq_edit_cuter_ratio_3_4" = "3:4";
+"lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_title" = "Edit";
+"lsq_edit_multiple_title" = "Edit";
+"lsq_edit_skin_title" = "Beautify";
+
+// sticker
+"lsq_sticker_cate_default" = "Stickers";
+"lsq_sticker_cate_watermark" = "Watermarks";
+"lsq_sticker_cate_mood" = "Moods";
+"lsq_sticker_cate_frame" = "Frames";
+"lsq_sticker_loading" = "Loading stickers...";
+"lsq_sticker_load_unexsit" = "Stickers doesn’t exists, please try another.";
+"lsq_sticker_over_limit%ld" = "Oops, Can’t use more than %ld stickers";
+"lsq_sticker_title" = "Stickers";
+"lsq_sticker_online_title" = "Online Stickers";
+"lsq_sticker_total_format%ld" = "%ld stickers";
+"lsq_sticker_empty" = "No stickers yet";
+"lsq_sticker_empty_msg" = "Go get some in the Stickers Shop";
+"lsq_sticker_1_1" = "Arms";
+"lsq_sticker_remove_title" = "Remove Sticker";
+"lsq_sticker_remove_msg%@" = "Are you sure to remove the sticker %@?";
+"lsq_sticker_cate_all" = "All";
+"lsq_sticker_cate_history" = "History";
+
+// format
+"las_date_format" = "M/d/yyyy";
+
+// Week
+"las_week_Sun" = "Sun";
+"las_week_Mon" = "Mon";
+"las_week_Tue" = "Tue";
+"las_week_Wed" = "Wed";
+"las_week_Thu" = "Thu";
+"las_week_Fri" = "Fri";
+"las_week_Sat" = "Sat";
+
+// FilterGroup
+"lsq_filter_group_Leica" = "Leica";
+"lsq_filter_group_Lomo" = "LOMO";
+"lsq_filter_group_Food" = "Food";
+"lsq_filter_group_Enhance" = "Enhance";
+"lsq_filter_group_Glare" = "Lights";
+"lsq_filter_group_Beauty" = "Portrait";
+"lsq_filter_group_Magic" = "Magic";
+
+// Filters
+"lsq_filter_online_title" = "Online Filters";
+"lsq_filter_remove_title" = "Remove Filter";
+"lsq_filter_remove_msg%@" = "Are you sure to remove the filter %@?";
+"lsq_filter_Normal" = "Normal";
+"lsq_filter_Lomo" = "LOMO";
+"lsq_filter_Noir" = "Noir";
+"lsq_filter_Abao" = "Abao";
+"lsq_filter_Instant" = "Instant";
+"lsq_filter_Nostalgic" = "Nostalgic";
+"lsq_filter_Newborn" = "Newborn";
+"lsq_filter_Morning" = "Morning";
+"lsq_filter_Cheerful" = "Cheerful";
+"lsq_filter_Lightup" = "Lightup";
+"lsq_filter_Vintage" = "Vintage";
+"lsq_filter_Thick" = "Thick";
+"lsq_filter_Fade" = "Fade";
+"lsq_filter_Clear" = "Clear";
+"lsq_filter_Artistic" = "Artistic";
+"lsq_filter_Brilliant" = "Brilliant";
+"lsq_filter_Harmony" = "Harmony";
+"lsq_filter_Gloss" = "Gloss";
+"lsq_filter_Forest" = "Forest";
+"lsq_filter_Relaxed" = "Relaxed";
+"lsq_filter_Rough" = "Rough";
+"lsq_filter_Leica" = "Leica";
+
+// Beauty
+"lsq_filter_SkinNature" = "Nature";
+"lsq_filter_SkinPink" = "Pink";
+"lsq_filter_SkinJelly" = "Jelly";
+"lsq_filter_SkinNoir" = "Noir";
+"lsq_filter_SkinRuddy" = "Ruddy";
+"lsq_filter_SkinPowder" = "Pink";
+"lsq_filter_SkinSugar" = "Sugar";
+
+// Magic
+"lsq_filter_MagicRed" = "Red";
+"lsq_filter_MagicYellow" = "Yellow";
+"lsq_filter_MagicBlue" = "Blue";
+"lsq_filter_MagicGreen" = "Green";
+"lsq_filter_MagicPurple" = "Purple";
+
+// Filters Definition
+"lsq_filter_SkinWhitening" = "Whiten";
+"lsq_filter_SkinTwiceMixed" = "Twice Mixed";
+"lsq_filter_SkinTwiceMixedSigma" = "Twice Mixed Sigma";
+"lsq_filter_SkinWhiteMixed" = "Whiten Mixed";
+"lsq_filter_SkinRGBSpace" = "RGB Space";
+"lsq_filter_SkinColorMixed" = "Color Mixed";
+"lsq_filter_BokehBlur" = "Blur";
+"lsq_filter_SenseOfAutumn" = "Autumn";
+"lsq_filter_Coloration" = "Coloration";
+"lsq_filter_Fluorescent" = "Fluorescent";
+"lsq_filter_Freshmorning" = "Morning";
+"lsq_filter_Holidaysunshine" = "Holiday";
+"lsq_filter_Purplemoon" = "Purple";
+"lsq_filter_Summersunshine" = "Summer";
+"lsq_filter_Wintersunshine" = "Winter";
+
+// Filters Definition skin
+"lsq_filter_set_smoothing" = "Smoothing";
+"lsq_filter_set_whitening" = "Whitening";
+"lsq_filter_set_blurSize" = "Blur Size";
+"lsq_filter_set_blurWeight" = "Blur Weight";
+"lsq_filter_set_skinColorThreshold" = "Skin Color";
+"lsq_filter_set_skinColorThresholdQuadraticMixture" = "Skin Color Mixture";
+"lsq_filter_set_distanceNormalizationFactor" = "Edge";
+"lsq_filter_set_blurSigma" = "Blur Sigma";
+"lsq_filter_set_mixied" = "Mixed";
+"lsq_filter_set_saturation" = "Saturation";
+"lsq_filter_set_contrast" = "Contrast";
+"lsq_filter_set_sharpness" = "Sharpness";
+"lsq_filter_set_highlights" = "Highlights";
+"lsq_filter_set_shadows" = "Shadows";
+"lsq_filter_set_temperature" = "Tone";
+"lsq_filter_set_skinColor" = "Skin";
+"lsq_filter_set_autumnColorThreshold" = "Autumn";
+"lsq_filter_set_hue" = "Hue";
+"lsq_filter_set_hueSpace" = "Hue Space";
+"lsq_filter_set_brightness" = "Brightness";
+"lsq_filter_set_exposure" = "Exposure";
+"lsq_filter_set_vignette" = "Vignette";
+"lsq_filter_set_aperture" = "Aperture";
+"lsq_filter_set_adjustment" = "Adjustment";
+"lsq_filter_set_selective" = "Selective";
+"lsq_filter_set_linear" = "Linear";
+"lsq_filter_set_radial" = "Radial";
+
+// Filters Definition Bokeh
+"lsq_filter_set_radius" = "Radius";
+"lsq_filter_set_centerX" = "Center X";
+"lsq_filter_set_centerY" = "Center Y";
+"lsq_filter_set_excessive" = "Edge";
+"lsq_filter_set_maskAlpha" = "Mask";
+"lsq_filter_set_degree" = "Degree";
+
+// network
+"lsq_network_request_error" = "Network request error";
+"lsq_network_request_return_error" = "Server response error";
+"lsq_network_connection_without" = "No network";
+"lsq_network_connection_interruption" = "Connection was interrupted, please check your settings";
+"lsq_network_connection_failed" = "Failed to connect to network";
+"lsq_network_connection_timeout" = "Network request timeout";
+"lsq_network_paser_data_failed" = "Failed to process data";
