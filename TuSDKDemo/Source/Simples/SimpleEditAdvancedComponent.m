@@ -115,6 +115,8 @@
     //    _photoEditComponent.options.editFilterOptions.filterBarGroupCellClazz = [TuSDKCPGroupFilterGroupCell class];
     //    // 滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
     //    _photoEditComponent.options.editFilterOptions.filterBarTableCellClazz = [TuSDKCPGroupFilterItem class];
+    //    // 开启用户滤镜历史记录
+    //    _photoEditComponent.options.editFilterOptions.enableFilterHistory = YES;
     //
     //    // 图片编辑裁切旋转控制器配置选项
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditCuterOptions.html

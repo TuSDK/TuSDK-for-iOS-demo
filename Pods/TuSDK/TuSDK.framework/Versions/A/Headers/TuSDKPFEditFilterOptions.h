@@ -54,6 +54,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  显示滤镜标题视图
+ */
+@property (nonatomic) BOOL displayFilterSubtitles;
+
+/**
  *  是否仅返回滤镜，不返回处理图片
  */
 @property (nonatomic) BOOL onlyReturnFilter;

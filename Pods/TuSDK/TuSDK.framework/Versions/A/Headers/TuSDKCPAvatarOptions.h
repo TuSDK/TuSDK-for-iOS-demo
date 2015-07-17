@@ -23,6 +23,8 @@
 //    _cameraOptions.enableLongTouchCapture = YES;
 //    // 开启持续自动对焦 (默认: NO)
 //    _cameraOptions.enableContinueFoucs = YES;
+//    // 显示滤镜标题视图
+//    _cameraOptions.displayFilterSubtitles = YES;
 //
 //    // 旋转和裁剪视图控制器配置选项
 //    _editTurnAndCutOptions = [TuSDKPFEditTurnAndCutOptions build];
@@ -32,6 +34,8 @@
 //    _editTurnAndCutOptions.cutSize = CGSizeMake(640, 640);
 //    // 保存头像到相册
 //    _editTurnAndCutOptions.saveToAlbum = YES;
+//    // 显示滤镜标题视图
+//    _editTurnAndCutOptions.displayFilterSubtitles = YES;
 
 #import <Foundation/Foundation.h>
 #import "TuSDKCPOptions.h"

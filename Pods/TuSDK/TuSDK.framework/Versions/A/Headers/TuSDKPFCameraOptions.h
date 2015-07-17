@@ -77,6 +77,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  显示滤镜标题视图
+ */
+@property (nonatomic) BOOL displayFilterSubtitles;
+
+/**
  *  滤镜列表行视图宽度
  */
 @property (nonatomic)CGFloat filterBarCellWidth;

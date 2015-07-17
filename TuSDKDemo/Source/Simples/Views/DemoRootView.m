@@ -105,7 +105,7 @@
     TuSDKICTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
     if (!cell) {
         cell = [TuSDKICTableViewCell initWithReuseIdentifier:_cellIdentifier];
-        cell.textLabel.font = FONT(15);
+        cell.textLabel.font = lsqFontSize(15);
     }
     
     DemoSimpleBase *simple = [self simpleWithIndexPath:indexPath];

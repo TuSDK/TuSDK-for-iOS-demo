@@ -67,6 +67,12 @@
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
     
+    // 开启滤镜历史记录
+    opt.enableFilterHistory = YES;
+    
+    // 显示滤镜标题视图
+    opt.displayFilterSubtitles = YES;
+    
     // 需要裁剪的长宽
     opt.cutSize = CGSizeMake(640, 640);
     

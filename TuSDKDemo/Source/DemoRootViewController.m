@@ -38,7 +38,7 @@
     [super loadView];
 
     self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
-    self.view.backgroundColor = RGB(255, 255, 255);
+    self.view.backgroundColor = lsqRGB(255, 255, 255);
     self.view.delegate = self;
 }
 

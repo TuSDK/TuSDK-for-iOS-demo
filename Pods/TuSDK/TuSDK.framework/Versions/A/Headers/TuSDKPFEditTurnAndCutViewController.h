@@ -87,6 +87,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  显示滤镜标题视图
+ */
+@property (nonatomic) BOOL displayFilterSubtitles;
+
+/**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
  */
 @property (nonatomic, retain) NSArray *filterGroup;

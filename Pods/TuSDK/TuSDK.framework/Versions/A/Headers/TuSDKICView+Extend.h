@@ -18,7 +18,7 @@
  *
  *  @return 返回字体对象
  */
-#define FONT(X)                 [UIFont systemFontOfSize:X]
+#define lsqFontSize(X)                 [UIFont systemFontOfSize:X]
 
 /**
  *  系统加粗字体
@@ -27,7 +27,7 @@
  *
  *  @return 返回字体对象
  */
-#define FONTBLOD(X)             [UIFont boldSystemFontOfSize:X]
+#define lsqBoldFontSize(X)             [UIFont boldSystemFontOfSize:X]
 
 /**
  *  系统颜色
@@ -39,7 +39,7 @@
  *
  *  @return 系统颜色
  */
-#define RGBA(r, g, b, a)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define lsqRGBA(r, g, b, a)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
 /**
  *  系统颜色
@@ -50,7 +50,7 @@
  *
  *  @return
  */
-#define RGB(r, g, b)            RGBA(r, g, b, 1)
+#define lsqRGB(r, g, b)            lsqRGBA(r, g, b, 1)
 
 /**
  *  定义获取语言

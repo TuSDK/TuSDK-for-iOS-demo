@@ -84,6 +84,12 @@
     // 默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
     opt.showFilterDefault = YES;
     
+    // 开启滤镜历史记录
+    opt.enableFilterHistory = YES;
+    
+    // 显示滤镜标题视图
+    opt.displayFilterSubtitles = YES;
+    
     // 滤镜列表行视图宽度
     // opt.filterBarCellWidth = 75;
     
@@ -141,7 +147,7 @@
     // opt.outputCompress = 0.95f;
     
     // 视频覆盖区域颜色 (默认：[UIColor clearColor])
-    opt.regionViewColor = RGB(51, 51, 51);
+    opt.regionViewColor = lsqRGB(51, 51, 51);
     
     // 照片输出分辨率
     // opt.outputSize = CGSizeMake(1440, 1920);

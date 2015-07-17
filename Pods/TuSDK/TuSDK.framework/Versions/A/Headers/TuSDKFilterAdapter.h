@@ -108,6 +108,14 @@
  */
 - (NSArray *)loadTexturesWithCode:(NSString *)code;
 
+/**
+ *  通过选项配置初始化滤镜
+ *
+ *  @param option 滤镜选项配置
+ *
+ *  @return 获取滤镜实例
+ */
+- (GPUImageOutput <GPUImageInput> *)filterWithOption:(TuSDKFilterOption *)option;
 #pragma mark - imageLoad
 /**
  *  加载滤镜组预览图

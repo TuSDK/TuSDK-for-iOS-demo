@@ -95,6 +95,11 @@
 @property (nonatomic) BOOL enableHistory;
 
 /**
+ *  显示滤镜标题视图
+ */
+@property (nonatomic) BOOL displaySubtitles;
+
+/**
  *  通知显示标题
  *
  *  @param cell 滤镜分组元素视图

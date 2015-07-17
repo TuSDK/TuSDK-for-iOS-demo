@@ -56,11 +56,6 @@
 @property (nonatomic, retain) NSString *color;
 
 /**
- * 滤镜渲染名称
- */
-@property (nonatomic, retain) NSArray *shaders;
-
-/**
  *  滤镜材质列表
  */
 @property (nonatomic, retain) NSArray *textures;
@@ -84,6 +79,21 @@
  *  滤镜配置参数
  */
 @property (nonatomic, retain) NSDictionary *args;
+
+/**
+ *  滤镜参数列表
+ */
+@property (nonatomic, copy) NSString *argList;
+
+/**
+ *  vertex
+ */
+@property (nonatomic, copy) NSString *vertex;
+
+/**
+ *  fragment
+ */
+@property (nonatomic, copy) NSString *fragment;
 
 /**
  *  滤镜版本

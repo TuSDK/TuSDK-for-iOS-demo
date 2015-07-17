@@ -293,17 +293,16 @@
 - (UIImage *) imageCorpResizeWithSize:(CGSize)size;
 
 /**
- *  裁剪图片 (需要先旋转到正确地方向)
+ *  裁剪图片 (需要先旋转到正确的方向)
  *
  *  @param rect 百分比裁剪区域
- *  @param imageOrientation 图片方向
  *
  *  @return 裁剪后的图片
  */
 - (UIImage *)imageCorpWithPrecentRect:(CGRect)rect;
 
 /**
- *  裁剪图片 (需要先旋转到正确地方向)
+ *  裁剪图片 (需要先旋转到正确的方向)
  *
  *  @param rect 百分比裁剪区域
  *  @param outputSize 输出图片长宽

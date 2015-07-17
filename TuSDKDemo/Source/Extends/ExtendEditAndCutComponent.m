@@ -28,7 +28,7 @@
     [super initView];
     
     // 修改底部工具栏背景
-    self.bottomBar.backgroundColor = RGB(255,123,44);
+    self.bottomBar.backgroundColor = lsqRGB(255,123,44);
     // 改变底部镜像按钮为向右旋转按钮
     // 隐藏镜像按钮
     self.bottomBar.mirrorButton.hidden = YES;
@@ -95,6 +95,12 @@
     
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
+    
+    // 开启滤镜历史记录
+    opt.enableFilterHistory = YES;
+    
+    // 显示滤镜标题视图
+    opt.displayFilterSubtitles = YES;
     
     // 滤镜列表行视图宽度
     // opt.filterBarCellWidth = 75;
