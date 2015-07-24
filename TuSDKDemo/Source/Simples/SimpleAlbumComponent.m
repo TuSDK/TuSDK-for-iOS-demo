@@ -34,7 +34,7 @@
     if (!controller) return;
     self.controller = controller;
     
-    // TuSDKPFAlbumOptions *opt = _component.options.albumOptions;
+    // TuSDKPFAlbumOptions *opt = _albumComponent.options.albumOptions;
     
     // 视图类 (默认:TuSDKPFAlbumView, 需要继承 TuSDKPFAlbumView)
     // opt.viewClazz = [TuSDKPFAlbumView class];
@@ -51,7 +51,7 @@
     // 需要自动跳转到相册组名称 (需要设定 autoSkipToPhotoList = YES)
     // opt.skipAlbumName = @"相机胶卷";
     
-    // TuSDKPFPhotosOptions *opt = _component.options.photosOptions;
+    // TuSDKPFPhotosOptions *opt = _albumComponent.options.photosOptions;
     // 视图类 (默认:TuSDKPFPhotosView, 需要继承 TuSDKPFPhotosView)
     // opt.viewClazz = [TuSDKPFPhotosView class];
     

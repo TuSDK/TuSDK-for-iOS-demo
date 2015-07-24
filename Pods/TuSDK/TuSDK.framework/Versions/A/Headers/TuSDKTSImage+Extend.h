@@ -361,3 +361,11 @@
  */
 - (UIImage *) imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
 @end
+
+#pragma mark - ImageDump
+@interface UIImage(ImageDump)
+/**
+ *  打印图片信息
+ */
+- (void)dump;
+@end
