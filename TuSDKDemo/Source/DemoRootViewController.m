@@ -16,6 +16,8 @@
 #import "SimpleEditAndCutComponent.h"
 #import "SimpleEditAvatarComponent.h"
 #import "SimpleEditMultipleComponent.h"
+#import "SimpleCameraAndEditCutComponent.h"
+
 
 #import "ExtendEditAndCutComponent.h"
 #import "ExtendCameraBaseComponent.h"
@@ -71,6 +73,10 @@
     [group appenWithSimple:[SimpleEditAdvancedComponent simple]];
     // 多功能图片编辑组件范例
     [group appenWithSimple:[SimpleEditMultipleComponent simple]];
+    // 相机连接编辑组件范例
+    [group appenWithSimple:[SimpleCameraAndEditCutComponent simple]];
+
+
     // 图片编辑组件范例 (对现有组件进行扩展 - 修改界面)
     [group appenWithSimple:[ExtendEditAndCutComponent simple]];
     // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)

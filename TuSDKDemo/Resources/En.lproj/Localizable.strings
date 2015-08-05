@@ -19,6 +19,7 @@
 "simple_EditAvatarComponent" = "Avatar Component";
 "simple_EditAdvancedComponent" = "Andvanced Edit Component";
 "simple_EditMultipleComponent" = "Multifunctional Edit Component";
+"simple_CameraAndEditCutComponent" = "Camera and Edit Component";
 "simple_AlbumComponent" = "Album Component";
 "simple_CameraComponent" = "Camera Component";
 "extend_EditComponent" = "Extended Edit Component";
