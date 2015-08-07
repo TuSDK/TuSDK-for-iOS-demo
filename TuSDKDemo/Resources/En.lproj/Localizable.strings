@@ -9,7 +9,7 @@
 "app_name" = "TuSDK";
 
 // simple group
-"simple_group_adv_comp" = "Andvanced Components";
+"simple_group_adv_comp" = "Advanced Components";
 "simple_group_comp" = "Base Components";
 "simple_group_extend" = "Extended Components - Custom UI";
 "simple_group_define" = "Customized Components - Low level API";
@@ -17,7 +17,7 @@
 // simple
 "simple_EditAndCutComponent" = "Edit Component";
 "simple_EditAvatarComponent" = "Avatar Component";
-"simple_EditAdvancedComponent" = "Andvanced Edit Component";
+"simple_EditAdvancedComponent" = "Advanced Edit Component";
 "simple_EditMultipleComponent" = "Multifunctional Edit Component";
 "simple_CameraAndEditCutComponent" = "Camera and Edit Component";
 "simple_AlbumComponent" = "Album Component";

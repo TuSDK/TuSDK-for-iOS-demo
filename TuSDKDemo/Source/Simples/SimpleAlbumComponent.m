@@ -33,42 +33,12 @@
 {
     if (!controller) return;
     self.controller = controller;
-    
-    // TuSDKPFAlbumOptions *opt = _albumComponent.options.albumOptions;
-    
-    // 视图类 (默认:TuSDKPFAlbumView, 需要继承 TuSDKPFAlbumView)
-    // opt.viewClazz = [TuSDKPFAlbumView class];
-    
-    // 表格行视图类 (默认:TuSDKPFAlbumCell, 需要继承 TuSDKPFAlbumCell)
-    // opt.cellViewClazz = [TuSDKPFAlbumCell class];
-    
-    // 空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
-    // opt.emptyViewClazz = [TuSDKPFEmptyView class];
-    
-    // 是否自动选择相册组 (默认: YES, 如果没有设定相册组名称，自动跳转到系统相册组)
-    // opt.autoSelectedAblumGroup = YES;
-    
-    // 需要自动跳转到相册组名称 (需要设定 autoSkipToPhotoList = YES)
-    // opt.skipAlbumName = @"相机胶卷";
-    
-    // TuSDKPFPhotosOptions *opt = _albumComponent.options.photosOptions;
-    // 视图类 (默认:TuSDKPFPhotosView, 需要继承 TuSDKPFPhotosView)
-    // opt.viewClazz = [TuSDKPFPhotosView class];
-    
-    // 表格行视图类 (默认:TuSDKPFPhotosCell, 需要继承 TuSDKPFPhotosCell)
-    // opt.cellViewClazz = [TuSDKPFPhotosCell class];
-    
-    // 表格单元格视图类 (默认:TuSDKPFPhotosGrid, 需要继承 TuSDKPFPhotosGrid)
-    // opt.gridViewClazz = [TuSDKPFPhotosGrid class];
-    
-    // 表格行头部视图类 (默认:TuSDKPFPhotosCellSectionHeader, 需要继承 TuSDKPFPhotosCellSectionHeader)
-    // opt.cellHeaderViewClazz = [TuSDKPFPhotosCellSectionHeader class];
-    
-    // 空数据视图类 (默认:TuSDKPFEmptyView, 需要继承 TuSDKPFEmptyView)
-    // opt.emptyViewClazz = [TuSDKPFEmptyView class];
-    
-    lsqLDebug(@"avatarComponentHandler");
+
+    lsqLDebug(@"albumComponentHandler");
+
+    // 组件选项配置
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
+
     _albumComponent =
     [TuSDK albumCommponentWithController:controller
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -85,7 +55,7 @@
      }];
     
     // 组件选项配置
-    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarOptions.html
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
     // _albumComponent.options
     
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFAlbumOptions.html
