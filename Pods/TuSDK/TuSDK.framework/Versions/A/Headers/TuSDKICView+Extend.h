@@ -1,5 +1,5 @@
 //
-//  TuSDKICUIView+Extend.h
+//  TuSDKICView+Extend.h
 //  TuSDK
 //
 //  Created by Clear Hu on 14/10/28.

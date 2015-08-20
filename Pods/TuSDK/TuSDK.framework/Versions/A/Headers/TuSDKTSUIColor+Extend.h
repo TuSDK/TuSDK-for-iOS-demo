@@ -18,5 +18,5 @@
  *
  *  @return 颜色对象 (为空或者错误返回透明)
  */
-+ (UIColor *)colorWithHex:(NSString *)hexString;
++ (UIColor *)lsqClorWithHex:(NSString *)hexString;
 @end
