@@ -1,9 +1,9 @@
 /*
- Localizable.strings
+ TuSDKDemo.strings
  TuSDKDemo
  
  Created by idealhack on 15/7/7.
- Copyright (c) 2015 Lasque. All rights reserved.
+ Copyright (c) 2015 tusdk.com. All rights reserved.
  */
 
 "app_name" = "TuSDK";
@@ -19,7 +19,6 @@
 "simple_EditAvatarComponent" = "Avatar Component";
 "simple_EditAdvancedComponent" = "Advanced Edit Component";
 "simple_EditMultipleComponent" = "Multifunctional Edit Component";
-"simple_CameraAndEditCutComponent" = "Camera and Edit Component";
 "simple_AlbumComponent" = "Album Component";
 "simple_CameraComponent" = "Camera Component";
 "extend_EditComponent" = "Extended Edit Component";

@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 14/10/27.
-//  Copyright (c) 2014年 Lasque. All rights reserved.
+//  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -17,7 +17,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
      * 关于TuSDK体积（SDK编译后仅为1.9MB）：
@@ -39,14 +39,14 @@
     
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
     [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1"];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
-    
+
     // 初始化根控制器
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:[DemoRootViewController controller]];
     [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 

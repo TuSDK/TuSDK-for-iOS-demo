@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/4/24.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 /**
@@ -22,4 +22,5 @@
  * 开发文档:http://tusdk.com/docs/ios/api/
  */
 
-#import "TuSDK/TuSDK.h"
+//#import "TuSDKGeeV1.h"
+#import <TuSDKGeeV1/TuSDKGeeV1.h>

@@ -3,7 +3,7 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 15/5/21.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "TuSDKCPViewController.h"
@@ -31,19 +31,10 @@
  *  在线资源控制器
  */
 @interface TuSDKCPOnlineController : TuSDKCPViewController<TuSDKICWebViewDelegate>
-{
-@protected
-    // 默认样式视图
-    TuSDKCPOnlineView *_defaultStyleView;
-}
 /**
  *  Web视图
  */
-@property (nonatomic, readonly)TuSDKICWebView *webView;
-/**
- *  默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
- */
-@property (nonatomic, readonly) TuSDKCPOnlineView *defaultStyleView;
+@property (nonatomic, readonly) TuSDKICWebView *webView;
 
 /**
  *  视图类 (默认:TuSDKCPOnlineView, 需要继承 TuSDKCPOnlineView)

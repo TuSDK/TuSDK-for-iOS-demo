@@ -3,14 +3,13 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 15/2/18.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "TuSDKICTableView.h"
-#import "TuSDKCPGroupFilterItemCell.h"
+#import "TuSDKCPGroupFilterItemCellBase.h"
 
-@class TuSDKCPGroupFilterTableView;
-
+@protocol TuSDKCPGroupFilterTableViewInterface;
 /**
  *  滤镜分组列表行视图委托
  */
@@ -25,30 +24,30 @@
  *
  *  @return 是否允许选中
  */
-- (BOOL)onTuSDKCPGroupFilterTableView:(TuSDKCPGroupFilterTableView *)tableView
-                         selectedCell:(TuSDKCPGroupFilterItemCell *)cell
+- (BOOL)onTuSDKCPGroupFilterTableView:(UIView<TuSDKCPGroupFilterTableViewInterface> *)tableView
+                         selectedCell:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)cell
                                 model:(TuSDKCPGroupFilterItem *)mode
                             indexPath:(NSIndexPath *)indexPath;
 @end
-
+#pragma mark - TuSDKCPGroupFilterTableViewInterface
 /**
- *  滤镜分组列表
+ *  滤镜分组列表接口
  */
-@interface TuSDKCPGroupFilterTableView : UIView<UITableViewDataSource, UITableViewDelegate>
+@protocol TuSDKCPGroupFilterTableViewInterface <NSObject>
+/**
+ *  滤镜分组列表行视图委托
+ */
+@property (nonatomic, assign) id<TuSDKCPGroupFilterTableViewDelegate> delegate;
+
 /**
  *  滤镜分组元素类型
  */
 @property (nonatomic)lsqGroupFilterAction action;
 
 /**
- *  滤镜分组元素视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 TuSDKCPGroupFilterItemCell)
+ *  滤镜分组元素视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)
  */
 @property (nonatomic, strong) Class cellViewClazz;
-
-/**
- *  滤镜分组列表行视图委托
- */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterTableViewDelegate> delegate;
 
 /**
  *  行视图宽度
@@ -59,11 +58,6 @@
  *  数据列表
  */
 @property (nonatomic, retain) NSArray *modeList;
-
-/**
- *  列表视图
- */
-@property (nonatomic, readonly)TuSDKICTableView *tableView;
 
 /**
  *  是否允许选择列表
@@ -97,4 +91,55 @@
  *  刷新数据
  */
 - (void)reloadData;
+
+- (NSIndexPath *)indexPathForSelectedRow; 
+- (void)insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+- (void)deleteRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
+- (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
+@end
+
+#pragma mark - TuSDKCPGroupFilterTableView
+/**
+ *  滤镜分组列表
+ */
+@interface TuSDKCPGroupFilterTableView : UIView<UITableViewDataSource, UITableViewDelegate, TuSDKCPGroupFilterTableViewInterface>
+/**
+ *  滤镜分组元素类型
+ */
+@property (nonatomic)lsqGroupFilterAction action;
+
+/**
+ *  滤镜分组元素视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)
+ */
+@property (nonatomic, strong) Class cellViewClazz;
+
+/**
+ *  滤镜分组列表行视图委托
+ */
+@property (nonatomic, assign) id<TuSDKCPGroupFilterTableViewDelegate> delegate;
+
+/**
+ *  行视图宽度
+ */
+@property (nonatomic)CGFloat cellWidth;
+
+/**
+ *  数据列表
+ */
+@property (nonatomic, retain) NSArray *modeList;
+
+/**
+ *  列表视图
+ */
+@property (nonatomic, readonly)TuSDKICTableView *tableView;
+
+/**
+ *  是否允许选择列表
+ */
+@property (nonatomic) BOOL allowsSelection;
+
+/**
+ *  滤镜分组视图委托
+ */
+@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
 @end

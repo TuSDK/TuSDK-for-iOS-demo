@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/4/24.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "SimpleEditMultipleComponent.h"
@@ -39,7 +39,7 @@
     lsqLDebug(@"editAdvancedComponentHandler");
     
     _albumComponent =
-    [TuSDK albumCommponentWithController:controller
+    [TuSDKGeeV1 albumCommponentWithController:controller
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          // 获取图片错误
@@ -67,7 +67,7 @@
     // 组件选项配置
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
-    [TuSDK photoEditMultipleWithController:controller
+    [TuSDKGeeV1 photoEditMultipleWithController:controller
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;

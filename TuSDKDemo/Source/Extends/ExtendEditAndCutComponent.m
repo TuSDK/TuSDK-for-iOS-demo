@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/5/11.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "ExtendEditAndCutComponent.h"
@@ -98,6 +98,9 @@
     
     // 开启滤镜历史记录
     opt.enableFilterHistory = YES;
+    
+    // 开启在线滤镜
+    opt.enableOnlineFilter = YES;
     
     // 显示滤镜标题视图
     opt.displayFilterSubtitles = YES;

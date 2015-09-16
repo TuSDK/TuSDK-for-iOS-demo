@@ -3,11 +3,12 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 14/12/15.
-//  Copyright (c) 2014年 Lasque. All rights reserved.
+//  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "TuSDKConfig.h"
 
 /**
  *  SDK用户验证
@@ -35,6 +36,11 @@
  *  开发者ID
  */
 @property (nonatomic, readonly) NSString *developerId;
+
+/**
+ *  Sdk配置
+ */
+@property (nonatomic, readonly) TuSDKConfig *sdkConfig;
 
 /**
  *  验证开发者ID
@@ -73,15 +79,41 @@
  */
 - (NSUInteger)maxStickers;
 
+/** local filter Count */
+- (NSUInteger)localFilterCount;
+
+/** local sticker Count */
+- (NSUInteger)localStickerCount;
+
 /**
- *  获取文本加密KEY
+ *  解密文本
  *
- *  @param key  key
- *  @param type 加密类型
+ *  @param txt 加密文本
  *
- *  @return 文本加密KEY
+ *  @return 解密文本
  */
-- (NSString *)sdkTextKey:(NSString *)key type:(NSUInteger)type;
+- (NSString *)sdkDecodeWithString:(NSString *)txt;
+
+/**
+ *  解密数据
+ *
+ *  @param data 数据
+ *  @param key  key
+ *  @param type type
+ *
+ *  @return 解密文本
+ */
+- (NSString *)sdkDecodeWithData:(NSData *)data key:(NSString *)key type:(NSUInteger)type;
+
+/**
+ *  验证滤镜
+ *
+ *  @param filterId 滤镜ID
+ *  @param type     验证方式
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)filterValidWithID:(uint64_t)filterId type:(NSUInteger)type;
 
 /**
  *  验证滤镜密钥
@@ -93,6 +125,16 @@
  *  @return 是否验证成功
  */
 - (BOOL)filterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
+
+/**
+ *  验证贴纸
+ *
+ *  @param stickerId 贴纸ID
+ *  @param type      验证方式
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)stickerValidWithID:(uint64_t)stickerId type:(NSUInteger)type;
 
 /**
  *  验证贴纸密钥

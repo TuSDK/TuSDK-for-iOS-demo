@@ -3,13 +3,39 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 15/1/31.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "TuSDKFilterGroup.h"
 #import "TuSDKPFStickerCategory.h"
+
+#pragma mark - TuSDKPermission
+/**
+ *  SDK Permission
+ */
+@interface TuSDKPermission : TuSDKDataJson
+/**
+ *  resolution
+ */
+@property (nonatomic) NSInteger resolution;
+
+/**
+ * sticker Use Count
+ */
+@property (nonatomic) NSInteger stickerUseCount;
+
+/**
+ * local filter Count
+ */
+@property (nonatomic) NSInteger localFilterCount;
+
+/**
+ *  local sticker Count
+ */
+@property (nonatomic) NSInteger localStickerCount;
+@end
 
 #pragma mark - TuSDKConfig
 /**
@@ -30,6 +56,14 @@
  * 贴纸配置列表
  */
 @property (nonatomic, retain) NSArray *stickerGroups;
+
+/**
+ *  配置信息
+ */
+@property (nonatomic, copy) NSString * master;
+
+/**
+ *  SDK Permission
+ */
+@property (nonatomic, retain) TuSDKPermission *permission;
 @end
-
-

@@ -54,6 +54,7 @@ install_resource()
                     install_resource "GPUImage/framework/Resources/lookup_soft_elegance_2.png"
                     install_resource "TuSDK/Localization/Base.lproj"
                     install_resource "TuSDK/Localization/En.lproj"
+                    install_resource "TuSDK/Localization/zh-Hant.lproj"
                     install_resource "TuSDK/TuSDK.bundle"
           
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

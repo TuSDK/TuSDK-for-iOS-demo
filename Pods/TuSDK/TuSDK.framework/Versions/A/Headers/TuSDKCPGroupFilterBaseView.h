@@ -3,22 +3,17 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 15/2/19.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKCPGroupFilterBar.h"
+#import "TuSDKCPGroupFilterBarBase.h"
 #import "TuSDKCPSubtitlesView.h"
 
 /**
  *  滤镜分组视图基类
  */
-@interface TuSDKCPGroupFilterBaseView : UIView<TuSDKCPGroupFilterBarDelegate>{
-    // 滤镜组选择栏
-    TuSDKCPGroupFilterBar *_filterBar;
-    // 滤镜标题视图
-    TuSDKCPSubtitlesView *_titleView;
-}
+@interface TuSDKCPGroupFilterBaseView : UIView<TuSDKCPGroupFilterBarDelegate>
 /**
  *  滤镜分组元素类型
  */
@@ -45,19 +40,19 @@
 @property (nonatomic, strong)Class groupTableCellClazz;
 
 /**
- *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 TuSDKCPGroupFilterItemCell)
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)
  */
 @property (nonatomic, strong)Class filterTableCellClazz;
 
 /**
  *  滤镜组选择栏
  */
-@property (nonatomic, readonly) TuSDKCPGroupFilterBar *filterBar;
+@property (nonatomic, readonly) UIView<TuSDKCPGroupFilterBarInterface> *filterBar;
 
 /**
  *  滤镜标题视图
  */
-@property (nonatomic, readonly) TuSDKCPSubtitlesView *titleView;
+@property (nonatomic, readonly) UIView<TuSDKCPSubtitlesViewInterface> *titleView;
 
 /**
  *  需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
@@ -85,6 +80,11 @@
 @property (nonatomic) BOOL enableOnlineFilter;
 
 /**
+ *  在线滤镜控制器类型 (需要继承 UIViewController,以及实现TuSDKCPFilterOnlineControllerInterface接口)
+ */
+@property (nonatomic) Class onlineControllerClazz;
+
+/**
  *  视图控制器
  */
 @property (nonatomic, assign) UIViewController *controller;
@@ -107,7 +107,7 @@
  *
  *  @return 是否通知
  */
-- (BOOL)notifyTitleWithCell:(TuSDKCPGroupFilterItemCell *)cell
+- (BOOL)notifyTitleWithCell:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)cell
                        mode:(TuSDKCPGroupFilterItem *)mode;
 
 /**

@@ -1,0 +1,26 @@
+/*
+ TuSDKDemo.strings
+ TuSDKDemo
+
+ Created by idealhack on 15/7/7.
+ Copyright (c) 2015 tusdk.com. All rights reserved.
+ */
+
+"app_name" = "塗圖 TuSDK";
+
+// simple group
+"simple_group_adv_comp" = "高級組件";
+"simple_group_comp" = "基礎組件";
+"simple_group_extend" = "擴展組件 - 修改界面";
+"simple_group_define" = "自定義組件 - 底層API";
+
+// simple
+"simple_EditAndCutComponent" = "圖片編輯組件 (裁剪)";
+"simple_EditAvatarComponent" = "頭像設置組件 (編輯)";
+"simple_EditAdvancedComponent" = "高級圖片編輯組件";
+"simple_EditMultipleComponent" = "多功能圖片編輯組件";
+"simple_AlbumComponent" = "相冊組件";
+"simple_CameraComponent" = "相機組件";
+"extend_EditComponent" = "圖片編輯組件";
+"extend_CameraBase" = "基礎相機界面修改";
+"define_CameraBase" = "基礎相機自定義";

@@ -3,7 +3,7 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 14/11/5.
-//  Copyright (c) 2014年 Lasque. All rights reserved.
+//  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

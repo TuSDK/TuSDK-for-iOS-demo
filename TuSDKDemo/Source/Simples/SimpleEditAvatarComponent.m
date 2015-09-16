@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/4/24.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "SimpleEditAvatarComponent.h"
@@ -39,7 +39,7 @@
     // 组件选项配置
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAvatarComponent.html
     _avatarComponent =
-    [TuSDK avatarCommponentWithController:controller
+    [TuSDKGeeV1 avatarCommponentWithController:controller
                             callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          _avatarComponent = nil;

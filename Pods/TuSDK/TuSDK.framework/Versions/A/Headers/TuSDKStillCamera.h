@@ -3,75 +3,16 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 14/10/27.
-//  Copyright (c) 2014年 Lasque. All rights reserved.
+//  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
 #import <GPUImage/GPUImage.h>
-#import "TuSDKResult.h"
-
-/**
- *  滤镜类型
- */
-typedef NS_ENUM(NSInteger, lsqCameraState)
-{
-    /**
-     *  未知
-     */
-    lsqCameraStateUnknow = 0,
-    /**
-     *  正在启动
-     */
-    lsqCameraStateStarting = 1,
-    /**
-     *  启动完成
-     */
-    lsqCameraStateStarted = 2,
-    /**
-     * 正在拍摄
-     */
-    lsqCameraStateCapturing = 3,
-    /**
-     * 拍摄完成
-     */
-    lsqCameraStateCaptured = 4
-};
-
-/**
- *  相机聚焦触摸视图
- */
-@class TuSDKCPFocusTouchView;
+#import "TuSDKVideoCameraInterface.h"
 
 /**
  *  相机对象
  */
-@class TuSDKStillCamera;
-
-/**
- *  相机事件委托
- */
-@protocol TuSDKStillCameraDelegate <NSObject>
-/**
- *  相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
- *
- *  @param camera 相机对象
- *  @param state  相机运行状态
- */
-- (void)onCamera:(TuSDKStillCamera *)camera stateChanged:(lsqCameraState)state;
-
-/**
- *  获取拍摄图片 (如需操作UI线程， 请检查当前线程是否为主线程)
- *
- *  @param camera 相机对象
- *  @param result 获取的结果
- *  @param error  错误信息
- */
-- (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
-@end
-
-/**
- *  相机对象
- */
-@interface TuSDKStillCamera : GPUImageStillCamera
+@interface TuSDKStillCamera : GPUImageStillCamera<TuSDKStillCameraInterface>
 
 /**
  *  相机事件委托
@@ -104,9 +45,9 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic) BOOL enableLongTouchCapture;
 
 /**
- *  开启持续自动对焦 (默认: NO)
+ *  禁用持续自动对焦 (默认: NO)
  */
-@property (nonatomic) BOOL enableContinueFoucs;
+@property (nonatomic) BOOL disableContinueFoucs;
 
 /**
  *  自动聚焦延时 (默认: 5秒)
@@ -149,50 +90,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 + (instancetype)initWithSessionPreset:(NSString *)sessionPreset cameraPosition:(AVCaptureDevicePosition)cameraPosition cameraView:(UIView *)view;
 
-/**
- *  尝试启动相机
- */
-- (void)tryStartCameraCapture;
-#pragma mark - filter
-/**
- *  切换滤镜
- *
- *  @param code 滤镜代号
- *
- *  @return 是否成功切换滤镜
- */
-- (BOOL)switchFilterWithCode:(NSString *)code;
-
-#pragma mark - Flash
-/**
- *  是否存在闪关灯
- *
- *  @return 是否存在闪关灯
- */
-- (BOOL)hasFlash;
-
-/**
- *  设置闪光灯模式
- *  @see AVCaptureFlashMode
- *
- *  @param flashMode 设置闪光灯模式
- */
-- (void)flashWithMode:(AVCaptureFlashMode)flashMode;
-
 #pragma mark - Focus
-/**
- *  绑定聚焦触摸视图
- *
- *  @param view 聚焦触摸视图
- */
-- (void)bindFocusTouchView:(TuSDKCPFocusTouchView *)view;
-
-/**
- *  改变视频视图显示比例 (使用动画)
- *
- *  @param regionRatio 范围比例
- */
-- (void)changeCameraViewRatio:(CGFloat)cameraViewRatio;
 
 /**
  *  设置聚焦模式
@@ -214,15 +112,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (BOOL)focusWithMode:(AVCaptureFocusMode)focusMode point:(CGPoint)point;
 
 /**
- *  是否支持对焦
- *
- *  @param focusMode 对焦模式
- *
- *  @return 是否支持对焦
- */
-- (BOOL)isSupportFocusWithMode:(AVCaptureFocusMode)focusMode;
-
-/**
  *  设置曝光模式
  *
  *  @param exposureMode 曝光模式
@@ -240,20 +129,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @return 是否支持曝光模式
  */
 - (BOOL)exposureWithMode:(AVCaptureExposureMode)exposureMode point:(CGPoint)point;
-
-/**
- *  是否支持曝光模式
- *
- *  @param focusMode 曝光模式
- *
- *  @return 是否支持曝光模式
- */
-- (BOOL)isSupportExposureWithMode:(AVCaptureExposureMode)exposureMode;
-
-/**
- *  开始获取照片
- */
--(void)captureImage;
 
 /**
  *  当前聚焦状态

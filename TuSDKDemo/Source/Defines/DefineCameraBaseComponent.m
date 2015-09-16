@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/5/11.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "DefineCameraBaseComponent.h"
@@ -41,7 +41,7 @@
 @interface DefineCameraViewController ()<TuSDKStillCameraDelegate, TuSDKPFCameraFilterGroupViewDelegate>
 {
     // 相机对象
-    TuSDKStillCamera *_camera;
+    id<TuSDKStillCameraInterface> _camera;
     // 相机视图
     UIView *_cameraView;
     // 相机配置栏目
@@ -109,9 +109,9 @@
 {
     [self destoryCamera];
     
-    _camera = [TuSDKStillCamera initWithSessionPreset:AVCaptureSessionPresetHigh
-                                       cameraPosition:[AVCaptureDevice firstBackCameraPosition] // AVCaptureDevicePositionBack
-                                           cameraView:_cameraView];
+    _camera = [TuSDK cameraWithSessionPreset:AVCaptureSessionPresetHigh
+                              cameraPosition:[AVCaptureDevice firstBackCameraPosition] // AVCaptureDevicePositionBack
+                                  cameraView:_cameraView];
     // 设置拍摄委托
     _camera.captureDelegate = self;
     
@@ -121,8 +121,6 @@
     // 可选: 绑定手动聚焦视图, 自动设置视图大小为显示大小
     TuSDKCPFocusTouchView *focusView = [TuSDKCPFocusTouchView initWithFrame:CGRectZero];
     [_camera bindFocusTouchView:focusView];
-    // 开启持续自动对焦 (默认: NO)
-    _camera.enableContinueFoucs = YES;
     // 是否开启长按拍摄 (默认: NO)
     _camera.enableLongTouchCapture = YES;
     // 禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
@@ -214,7 +212,7 @@
 {
     if (!_camera) return;
     
-    // 点击拍摄后，访问 - (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
+    // 点击拍摄后，访问 - (void)onStillCamera:(id<TuSDKStillCameraInterface>)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
     // 方法获取拍摄结果
     [_camera captureImage];
 }
@@ -286,7 +284,7 @@
  *  @param camera 相机对象
  *  @param state  相机运行状态
  */
-- (void)onCamera:(TuSDKStillCamera *)camera stateChanged:(lsqCameraState)state;
+- (void)onStillCamera:(id<TuSDKStillCameraInterface>)camera stateChanged:(lsqCameraState)state;
 {
     
 }
@@ -298,7 +296,7 @@
  *  @param result 获取的结果
  *  @param error  错误信息
  */
-- (void)onCamera:(TuSDKStillCamera *)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
+- (void)onStillCamera:(id<TuSDKStillCameraInterface>)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
 {
     if (error) return;
     

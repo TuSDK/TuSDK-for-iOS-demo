@@ -3,41 +3,26 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 15/4/29.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "TuSDKCPImageResultController.h"
-#import "TuSDKICGPUImageView.h"
-#import "TuSDKPFEditFilterView.h"
-#import "TuSDKCPParameterConfigView.h"
+#import "TuSDKICFilterImageViewWrap.h"
+#import "TuSDKCPParameterConfigViewInterface.h"
 
-#pragma mark - TuSDKCPFilterResultView
+#pragma mark - TuSDKCPFilterResultViewInterface
 /**
- *  滤镜处理结果控制器视图
+ *  滤镜处理结果控制器视图接口
  */
-@interface TuSDKCPFilterResultView : UIView
-{
-    // 图片视图
-    TuSDKPFEditFilterImageView *_imageView;
-    // 底部动作栏
-    TuSDKPFEditFilterBottomBar *_bottomBar;
-    // 参数配置视图
-    TuSDKCPParameterConfigView *_configView;
-}
+@protocol TuSDKCPFilterResultViewInterface <NSObject>
 /**
- *  图片视图
+ *  Filter Image View
  */
-@property (nonatomic, readonly) TuSDKPFEditFilterImageView *imageView;
-
-/**
- *  底部动作栏
- */
-@property (nonatomic, readonly) TuSDKPFEditFilterBottomBar *bottomBar;
-
+@property (nonatomic, readonly) UIView<TuSDKICFilterImageViewInterface> *imageView;
 /**
  *  参数配置视图
  */
-@property (nonatomic, readonly) TuSDKCPParameterConfigView *configView;
+@property (nonatomic, readonly) UIView<TuSDKCPParameterConfigViewInterface> *configView;
 @end
 
 #pragma mark - TuSDKPFEditSkinControllerDelegate
@@ -68,33 +53,35 @@
 /**
  *  滤镜处理结果控制器
  */
-@interface TuSDKCPFilterResultController : TuSDKCPImageResultController<TuSDKICGPUImageViewDelegate, TuSDKCPParameterConfigDelegate>
+@interface TuSDKCPFilterResultController : TuSDKCPImageResultController<TuSDKCPParameterConfigDelegate>
 {
     @protected
     // 默认样式视图
-    TuSDKCPFilterResultView *_defaultStyleView;
+    UIView<TuSDKCPFilterResultViewInterface> *_defaultStyleView;
 }
 
 /**
  *  默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
  */
-@property (nonatomic, readonly) TuSDKCPFilterResultView *defaultStyleView;
+@property (nonatomic, readonly) UIView<TuSDKCPFilterResultViewInterface> *defaultStyleView;
 
 /**
- *  美颜控制器委托
+ *  控制器委托
  */
 @property (nonatomic, assign) id<TuSDKCPFilterResultControllerDelegate> delegate;
 
 /**
- *  视图类 (默认:TuSDKCPFilterResultView, 需要继承 TuSDKCPFilterResultView)
+ *  视图类 (需要实现 TuSDKCPFilterResultViewInterface 接口)
  */
 @property (nonatomic, strong) Class viewClazz;
 
 /**
- *  当前所使用的滤镜
+ *  滤镜包装
  */
-@property (nonatomic, retain) TuSDKFilterWrap *filterWrap;
+- (void)setFilterWrap:(TuSDKFilterWrap *)filterWrap;
 
+/** 获取滤镜配置参数 */
+- (TuSDKFilterParameter *)getFilterPrarameter;
 /**
  *  编辑图片完成按钮动作
  */

@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/4/24.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "SimpleEditAndCutComponent.h"
@@ -35,7 +35,7 @@
     self.controller = controller;
     
     _albumComponent =
-    [TuSDK albumCommponentWithController:controller
+    [TuSDKGeeV1 albumCommponentWithController:controller
                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          // 获取头像图片
@@ -69,6 +69,9 @@
     
     // 开启滤镜历史记录
     opt.enableFilterHistory = YES;
+    
+    // 开启在线滤镜
+    opt.enableOnlineFilter = YES;
     
     // 显示滤镜标题视图
     opt.displayFilterSubtitles = YES;

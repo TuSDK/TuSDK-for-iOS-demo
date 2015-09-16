@@ -3,7 +3,7 @@
 //  TuSDK
 //
 //  Created by Clear Hu on 14/10/27.
-//  Copyright (c) 2014年 Lasque. All rights reserved.
+//  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,17 +19,22 @@
 /**
  *  滤镜配置选项
  */
-@property (nonatomic, readonly) TuSDKFilterOption *opt;
+@property (nonatomic, readonly, nullable) TuSDKFilterOption *opt;
+
+/**
+ *  滤镜代号
+ */
+@property (nonatomic, readonly, nullable) NSString *code;
 
 /**
  *  滤镜对象
  */
-@property (nonatomic, readonly) GPUImageOutput <GPUImageInput> *filter;
+@property (nonatomic, readonly, nullable) GPUImageOutput <GPUImageInput> *filter;
 
 /**
  *  滤镜配置选项
  */
-@property (nonatomic, readwrite) TuSDKFilterParameter *filterParameter;
+@property (nonatomic, readwrite, nullable) TuSDKFilterParameter *filterParameter;
 
 /**
  *  初始化滤镜对象包装
@@ -38,14 +43,14 @@
  *
  *  @return 滤镜对象包装
  */
-+ (instancetype) initWithOpt:(TuSDKFilterOption *)opt;
++ (nullable instancetype) initWithOpt:(nullable TuSDKFilterOption *)opt;
 
 /**
  *  绑定视频视图
  *
  *  @param view 视频视图
  */
-- (void)bindWithCameraView:(GPUImageView *)view;
+- (void)bindWithCameraView:(nullable GPUImageView *)view;
 
 /**
  *  提交滤镜配置选项
@@ -71,7 +76,7 @@
  *
  *  @return 滤镜处理过的图像 (默认使用图像自身的方向属性)
  */
-- (UIImage *)processWithImage:(UIImage *)image;
+- (nullable UIImage *)processWithImage:(nullable UIImage *)image;
 
 /**
  *  执行滤镜 并输出图形
@@ -81,7 +86,7 @@
  *
  *  @return 滤镜处理过的图像
  */
-- (UIImage *)processWithImage:(UIImage *)image orientation:(UIImageOrientation)imageOrientation;
+- (nullable UIImage *)processWithImage:(nullable UIImage *)image orientation:(UIImageOrientation)imageOrientation;
 
 /**
  *  销毁
@@ -93,5 +98,14 @@
  *
  *  @return 滤镜对象包装
  */
-- (instancetype)clone;
+- (nullable instancetype)clone;
+
+/**
+ *  是否为同一个滤镜代号
+ *
+ *  @param code 滤镜代号
+ *
+ *  @return 是否为同一个滤镜代号
+ */
+- (BOOL) isEqualCode:(nullable NSString *)code;
 @end

@@ -3,7 +3,7 @@
 //  TuSDKDemo
 //
 //  Created by Clear Hu on 15/5/11.
-//  Copyright (c) 2015年 Lasque. All rights reserved.
+//  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
 #import "ExtendCameraBaseComponent.h"
@@ -99,6 +99,9 @@
     // 开启滤镜历史记录
     opt.enableFilterHistory = YES;
     
+    // 开启在线滤镜
+    opt.enableOnlineFilter = YES;
+    
     // 显示滤镜标题视图
     opt.displayFilterSubtitles = YES;
     
@@ -137,8 +140,8 @@
     // 是否开启长按拍摄 (默认: NO)
     opt.enableLongTouchCapture = YES;
     
-    // 开启持续自动对焦 (默认: NO)
-    opt.enableContinueFoucs = YES;
+    // 禁用持续自动对焦 (默认: NO)
+    // opt.disableContinueFoucs = YES;
     
     // 自动聚焦延时 (默认: 5秒)
     // opt.autoFoucsDelay = 5;
@@ -203,10 +206,10 @@
 /**
  *  基础相机组件范例 - 相机视图控制器
  */
-@interface ExtendCameraBaseController()<TuSDKPFEditTurnAndCutFilterDelegate>
+@interface ExtendCameraBaseController()<TuSDKPFNormalFilterGroupDelegate>
 {
     // 滤镜栏视图
-    TuSDKPFEditTurnAndCutFilterView *_filterBar;
+    TuSDKPFNormalFilterGroupView *_filterBar;
 }
 @end
 
@@ -232,7 +235,7 @@
 - (void)buildFilterBar:(TuSDKPFCameraView *)view;
 {
     // 滤镜栏视图
-    _filterBar = [TuSDKPFEditTurnAndCutFilterView initWithFrame:CGRectMake(0, 0, view.getSizeWidth, view.bottomBar.getOriginY)];
+    _filterBar = [TuSDKPFNormalFilterGroupView initWithFrame:CGRectMake(0, 0, view.getSizeWidth, view.bottomBar.getOriginY)];
     _filterBar.filterBar.backgroundColor = [UIColor clearColor];
     
     // 配置滤镜栏视图
@@ -258,7 +261,7 @@
  *
  *  @return 是否允许继续执行
  */
-- (BOOL)onTuSDKPFEditTurnAndCutFilter:(TuSDKPFEditTurnAndCutFilterView *)view
+- (BOOL)onTuSDKPFNormalFilterGroup:(TuSDKPFNormalFilterGroupView *)view
                          selectedItem:(TuSDKCPGroupFilterItem *)item;
 {
     if (item.type == lsqGroupFilterItemFilter) {

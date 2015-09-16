@@ -1,9 +1,9 @@
 /* 
-  Localizable.strings
+  TuSDKDemo.strings
   TuSDKDemo
 
   Created by Clear Hu on 15/4/24.
-  Copyright (c) 2015年 Lasque. All rights reserved.
+  Copyright (c) 2015年 tusdk.com. All rights reserved.
 */
 
 "app_name" = "涂图 TuSDK";
@@ -19,7 +19,6 @@
 "simple_EditAvatarComponent" = "头像设置组件 (编辑)";
 "simple_EditAdvancedComponent" = "高级图片编辑组件";
 "simple_EditMultipleComponent" = "多功能图片编辑组件";
-"simple_CameraAndEditCutComponent" = "相机连接图片编辑组件";
 "simple_AlbumComponent" = "相册组件";
 "simple_CameraComponent" = "相机组件";
 "extend_EditComponent" = "图片编辑组件";
