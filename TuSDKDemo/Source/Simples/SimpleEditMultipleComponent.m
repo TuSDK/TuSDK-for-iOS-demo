@@ -71,6 +71,13 @@
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
+         
+         // 如果在RootViewController presentViewController,autoDismissWhenCompelted参数将无效
+         // 请使用以下方法关闭
+         //if (_photoEditMultipleComponent.autoDismissWhenCompelted && controller) {
+         //    [controller popViewControllerAnimated:YES];
+         //}
+         
          // 获取图片失败
          if (error) {
              lsqLError(@"editMultiple error: %@", error.userInfo);
