@@ -17,7 +17,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
      * 关于TuSDK体积（SDK编译后仅为1.9MB）：
@@ -39,14 +39,16 @@
     
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
     [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1"];
-
+    // 需要指定开发模式 需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
+    // [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1" devType:@"debug"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
-
+    
     // 初始化根控制器
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:[DemoRootViewController controller]];
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
 

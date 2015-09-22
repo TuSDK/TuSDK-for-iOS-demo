@@ -503,7 +503,7 @@
 }
 
 // 支持的旋转模式 IOS6
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
 }

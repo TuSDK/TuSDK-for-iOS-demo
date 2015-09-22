@@ -179,6 +179,14 @@ extern NSString * const lsqFilterSampleExtension;
 + (void)initSdkWithAppKey:(NSString *)appkey;
 
 /**
+ *  初始化SDK
+ *
+ *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+ *  @param devType 开发模式(需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段)
+ */
++ (void)initSdkWithAppKey:(NSString *)appkey devType:(NSString *)devType;
+
+/**
  *  设置日志输出级别
  *
  *  @param level 日志输出级别 (默认：lsqLogLevelFATAL 不输出)

@@ -46,10 +46,11 @@
  *  验证开发者ID
  *
  *  @param key 开发者ID
+ *  @param devType 开发模式(需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段)
  *
  *  @return 是否通过验证
  */
-- (BOOL)sdkValidWithKey:(NSString *)key;
+- (BOOL)sdkValidWithKey:(NSString *)key devType:(NSString *)devType;
 
 /**
  *  验证开发者ID

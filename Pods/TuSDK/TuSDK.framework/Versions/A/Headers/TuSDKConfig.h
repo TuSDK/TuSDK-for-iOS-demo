@@ -63,6 +63,11 @@
 @property (nonatomic, copy) NSString * master;
 
 /**
+ *  配置信息列表
+ */
+@property (nonatomic, copy) NSDictionary * masters;
+
+/**
  *  SDK Permission
  */
 @property (nonatomic, retain) TuSDKPermission *permission;
