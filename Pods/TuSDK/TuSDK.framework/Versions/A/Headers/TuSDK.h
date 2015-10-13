@@ -12,6 +12,7 @@
 #import "TuSDKTSALAssets+Extend.h"
 #import "TuSDKTSALAssetsGrouped+CreateTimeDesc.h"
 #import "TuSDKTSAnimation.h"
+#import "TuSDKTSAsset.h"
 #import "TuSDKTSAVAudioPlayer+Extend.h"
 #import "TuSDKTSAVCaptureDevice+Extend.h"
 #import "TuSDKTSBundle.h"
@@ -31,6 +32,7 @@
 #import "TuSDKTSString+Extend.h"
 #import "TuSDKTSUIColor+Extend.h"
 
+#import "TuSDKICAlertView.h"
 #import "TuSDKICEmptyView.h"
 #import "TuSDKICFilterImageViewWrap.h"
 #import "TuSDKICFocusRangeView.h"

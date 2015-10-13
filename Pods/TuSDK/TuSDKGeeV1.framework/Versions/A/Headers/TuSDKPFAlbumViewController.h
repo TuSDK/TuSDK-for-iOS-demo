@@ -21,7 +21,7 @@
  *  @param controller 系统相册控制器
  *  @param group 相册组
  */
-- (void)onTuSDKPFAlbum:(TuSDKPFAlbumViewController *)controller selectedGroup:(ALAssetsGroup *)group;
+- (void)onTuSDKPFAlbum:(TuSDKPFAlbumViewController *)controller selectedGroup:(id<TuSDKTSAssetsGroupInterface>)group;
 @end
 
 /**

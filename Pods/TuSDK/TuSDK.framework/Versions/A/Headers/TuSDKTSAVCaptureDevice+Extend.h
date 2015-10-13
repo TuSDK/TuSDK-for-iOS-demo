@@ -31,9 +31,11 @@
 /**
  *  如果不支持摄像头显示警告信息
  *
+ *  @param controller UIViewController
+ *
  *  @return 是否显示警告
  */
-+ (BOOL)showAlertIfNotSupportCamera;
++ (BOOL)showAlertIfNotSupportCameraWithController:(UIViewController *)controller;
 
 /**
  *  获取相机设备标识（前置或后置） 后置优先

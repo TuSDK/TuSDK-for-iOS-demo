@@ -23,7 +23,7 @@
  *  @param controller 相册照片列表控制器
  *  @param asset      相片
  */
-- (void)onTuSDKPFPhotos:(TuSDKPFPhotosViewController *)controller selectedAsset:(ALAsset *)asset;
+- (void)onTuSDKPFPhotos:(TuSDKPFPhotosViewController *)controller selectedAsset:(id<TuSDKTSAssetInterface>)asset;
 @end
 
 /**
@@ -74,12 +74,12 @@
 /**
  *  系统相册组
  */
-@property (nonatomic, retain) ALAssetsGroup *group;
+@property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;
 
 /**
  *  通知获取一个相片
  *
  *  @param asset 相片
  */
-- (void)notifySelectedAsset:(ALAsset *)asset;
+- (void)notifySelectedAsset:(id<TuSDKTSAssetInterface>)asset;
 @end

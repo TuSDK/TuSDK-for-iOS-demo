@@ -111,6 +111,13 @@
 - (void)loadFiltersWithOption:(TuSDKFilterOption *)option;
 
 /**
+ *  删除滤镜组
+ *
+ *  @param groupId 滤镜组ID
+ */
+- (void)removeWithGroupId:(uint64_t)groupId;
+
+/**
  *  退出删除状态
  */
 - (void)exitRemoveState;

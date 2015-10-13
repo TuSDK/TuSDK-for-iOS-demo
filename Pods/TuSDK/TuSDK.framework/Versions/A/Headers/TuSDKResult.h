@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <AssetsLibrary/AssetsLibrary.h>
 #import "TuSDKTSNSMutableDictionary+ImageMetadata.h"
 #import "TuSDKRatioType.h"
 #import "TuSDKFilterWrap.h"
+#import "TuSDKTSAsset.h"
 
 /**
  *  SDK处理结果
@@ -40,7 +40,7 @@
 /**
  *  相册图片对象
  */
-@property (nonatomic, retain) ALAsset *imageAsset;
+@property (nonatomic, retain) id<TuSDKTSAssetInterface> imageAsset;
 
 /**
  *  裁剪区域

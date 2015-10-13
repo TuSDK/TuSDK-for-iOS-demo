@@ -38,7 +38,7 @@
 /**
  *  系统相册组
  */
-@property (nonatomic, retain) ALAssetsGroup *group;
+@property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;
 
 /**
  *  相册照片列表行视图委托

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "TuSDKTSAsset.h"
 
 /**
  *  系统相册授权回调
@@ -28,29 +29,6 @@ typedef void (^ALAssetsLibraryGroupsBlock)(NSArray *groups, NSError *error);
 #pragma mark - ALAssetsLibraryExtend
 // 系统相册帮助类
 @interface ALAssetsLibrary(ALAssetsLibraryExtend)
-/**
- *  获取系统相册加载错误信息
- *
- *  @param error 错误信息
- *
- *  @return 返回详细信息
- */
-+ (NSString *)assetsGroupsLoadFailure:(NSError *)error;
-
-/**
- *  显示系统相册加载错误信息警告
- *
- *  @param error 错误信息
- */
-+ (void)showAlertWithLoadFailure:(NSError *)error;
-
-/**
- *  获取相册访问失败信息
- *
- *  @return 相册访问失败信息
- */
-+ (NSString *)accessFailedInfo;
-
 /**
  *  是否用户已授权访问系统相册
  *
@@ -294,4 +272,44 @@ ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
  *  @param ablumCompletionBlock 保存相片到指定相册
  */
 - (void) addALAsset:(ALAsset *)asset toAblum:(NSString *)albumName ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
+@end
+
+#pragma mark - TuSDKTSALAsset
+/**
+ *  媒体资源对象
+ */
+@interface TuSDKTSALAsset : NSObject<TuSDKTSAssetInterface>
+/**
+ *  初始化媒体资源对象
+ *
+ *  @param asset ALAsset
+ *
+ *  @return 媒体资源对象
+ */
++ (instancetype)initWithALAsset:(ALAsset *)asset;
+
+/**
+ *  媒体资源对象
+ */
+@property (nonatomic, readonly)ALAsset *asset;
+@end
+
+#pragma mark - TuSDKTSALAssetsGroup
+/**
+ *  媒体资源组对象
+ */
+@interface TuSDKTSALAssetsGroup : NSObject<TuSDKTSAssetsGroupInterface>
+/**
+ *  初始化媒体资源组对象
+ *
+ *  @param group ALAssetsGroup
+ *
+ *  @return 媒体资源组对象
+ */
++ (instancetype)initWithALAssetsGroup:(ALAssetsGroup *)group;
+
+/**
+ *  媒体资源组对象
+ */
+@property (nonatomic, readonly)ALAssetsGroup *group;
 @end

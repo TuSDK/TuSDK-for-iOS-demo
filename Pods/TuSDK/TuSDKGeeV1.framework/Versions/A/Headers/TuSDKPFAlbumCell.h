@@ -31,5 +31,5 @@
 /**
  *  相册组数据
  */
-@property (nonatomic, retain) ALAssetsGroup *group;
+@property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;
 @end

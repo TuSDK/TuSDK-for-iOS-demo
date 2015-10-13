@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 /**
  *  设备权限设置类型
  */
@@ -45,7 +47,9 @@ typedef void (^TuSDKTSDeviceSettingsBlock)(lsqDeviceSettingsType type, BOOL open
 /**
  *  检查设备权限
  *
- *  @param type 设备权限设置类型
+ *  @param controller UIViewController
+ *  @param type       设备权限设置类型
+ *  @param completed  设备权限设置
  */
-+ (void)checkAllowWithType:(lsqDeviceSettingsType)type completed:(TuSDKTSDeviceSettingsBlock)completed;
++ (void)checkAllowWithController:(UIViewController *)controller type:(lsqDeviceSettingsType)type completed:(TuSDKTSDeviceSettingsBlock)completed;
 @end

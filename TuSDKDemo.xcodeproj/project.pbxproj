@@ -26,6 +26,8 @@
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
+		DCF7DFAC1BCCE956002CB757 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */; settings = {ASSET_TAGS = (); }; };
+		DCF7DFAE1BCCF397002CB757 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7DFAD1BCCF397002CB757 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuSDKDemoTests.m; sourceTree = "<group>"; };
 		DCA81D751AF23411003C5882 /* TuSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
 		DCCF69AC1B4C216F00DE7E70 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
+		DCF7DFAD1BCCF397002CB757 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */,
+				DCF7DFAE1BCCF397002CB757 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +171,7 @@
 			children = (
 				DC8851AF1A45221000839674 /* Images.xcassets */,
 				DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */,
+				DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */,
 				DC8851B01A45221000839674 /* sample_photo.jpg */,
 			);
 			path = Resources;
@@ -246,6 +252,7 @@
 		DD26EFB9BE3EABB13D356AAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCF7DFAD1BCCF397002CB757 /* Photos.framework */,
 				6EBCC545807A3B0CA100644B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -337,6 +344,7 @@
 				DC8851B11A45221000839674 /* Images.xcassets in Resources */,
 				DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */,
 				DC8851B21A45221000839674 /* sample_photo.jpg in Resources */,
+				DCF7DFAC1BCCE956002CB757 /* TuSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

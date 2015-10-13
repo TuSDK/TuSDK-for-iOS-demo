@@ -18,7 +18,7 @@
  *
  *  @param group 相册组
  */
-- (void) onTuSDKPFAlbumViewSelectedGroup:(ALAssetsGroup *)group;
+- (void) onTuSDKPFAlbumViewSelectedGroup:(id<TuSDKTSAssetsGroupInterface>)group;
 @end
 
 /**
@@ -39,7 +39,7 @@
 /**
  *  系统相册列表
  */
-@property (nonatomic, retain) NSArray *groups;
+@property (nonatomic, retain) NSArray<TuSDKTSAssetsGroupInterface> *groups;
 
 /**
  *  列表样式视图委托

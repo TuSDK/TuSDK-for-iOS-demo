@@ -44,12 +44,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 启动GPS
+    [[TuSDKTKLocation shared] requireAuthorWithController:self];
+    
     // sdk统计代码，请不要加入您的应用
     [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
     
     self.title = NSLocalizedString(@"app_name", @"TuSDK 涂图");
-    // 启动GPS
-    [TuSDKTKLocation shared].requireAuthor = YES;
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！

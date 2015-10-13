@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKCPViewController.h"
+#import "TuSDKTSAsset.h"
 /**
  *  系统相册控制器基础类
  */
@@ -15,7 +16,7 @@
 /**
  *  系统相册列表
  */
-@property (nonatomic, retain) NSArray *groups;
+@property (nonatomic, retain) NSArray<TuSDKTSAssetsGroupInterface> *groups;
 
 /**
  *  是否禁用自动选择相册组 (默认: NO, 如果没有设定相册组名称，自动跳转到系统相册组)
@@ -32,5 +33,5 @@
  *
  *  @param group 相册组
  */
-- (void)notifySelectedGroup:(ALAssetsGroup *)group;
+- (void)notifySelectedGroup:(id<TuSDKTSAssetsGroupInterface>)group;
 @end

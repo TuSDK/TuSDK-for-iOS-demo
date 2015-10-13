@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AssetsLibrary/AssetsLibrary.h>
 
 #import "TuSDKGeeV1Import.h"
 
@@ -42,7 +41,7 @@
 /**
  *  照片数据
  */
-@property (nonatomic, retain) ALAsset *data;
+@property (nonatomic, retain) id<TuSDKTSAssetInterface> data;
 @end
 
 #pragma mark - TuSDKPFPhotosCell
@@ -55,7 +54,7 @@
  *
  *  @param asset 照片对象
  */
-- (void)onTuSDKPFPhotosCellSelectedWithAsset:(ALAsset *)asset;
+- (void)onTuSDKPFPhotosCellSelectedWithAsset:(id<TuSDKTSAssetInterface>)asset;
 @end
 
 /**
@@ -87,5 +86,5 @@
  *
  *  @param data 数据
  */
-- (void)setData:(NSArray *)data;
+- (void)setData:(NSArray<TuSDKTSAssetInterface> *)data;
 @end
