@@ -86,6 +86,12 @@
 /** local sticker Count */
 - (NSUInteger)localStickerCount;
 
+/** service Expire */
+- (BOOL)serviceExpire;
+
+/** no Power */
+- (BOOL)noPower;
+
 /**
  *  解密文本
  *

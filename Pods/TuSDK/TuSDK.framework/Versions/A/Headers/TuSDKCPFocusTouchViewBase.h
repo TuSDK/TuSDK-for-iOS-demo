@@ -46,6 +46,11 @@
 @property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
+ *  显示区域百分比
+ */
+@property (nonatomic) CGRect regionPercent;
+
+/**
  *  相机状态改变
  *
  *  @param state 改变

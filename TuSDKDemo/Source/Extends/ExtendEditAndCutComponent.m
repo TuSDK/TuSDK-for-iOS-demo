@@ -87,8 +87,8 @@
     // 旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
     // opt.bottomBarViewClazz = [TuSDKPFEditTurnAndCutBottomView class];
     
-    // 图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
-    // opt.editImageViewClazz = [TuSDKPFEditImageView class];
+    // 图片编辑视图 (旋转，缩放)类 (默认:TuSDKICTouchImageView, 需要继承 TuSDKICTouchImageView)
+    // opt.editImageViewClazz = [TuSDKICTouchImageView class];
     
     // 滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
     // opt.filterViewClazz = [TuSDKPFEditTurnAndCutFilterView class];
@@ -152,6 +152,8 @@
     tcController.inputImage = [UIImage imageNamed:@"sample_photo.jpg"];
     
     [self.controller presentModalNavigationController:tcController animated:YES];
+    
+    [tcController.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 }
 
 /**

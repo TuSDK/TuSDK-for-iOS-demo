@@ -17,6 +17,18 @@
  */
 @interface TuSDKPermission : TuSDKDataJson
 /**
+ *  level
+ */
+@property (nonatomic) NSInteger level;
+/**
+ *  no Power
+ */
+@property (nonatomic) BOOL noPower;
+/**
+ *  service Expire
+ */
+@property (nonatomic, retain) NSDate *serviceExpire;
+/**
  *  resolution
  */
 @property (nonatomic) NSInteger resolution;

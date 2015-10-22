@@ -20,6 +20,7 @@
 "simple_EditAdvancedComponent" = "Advanced Edit Component";
 "simple_EditMultipleComponent" = "Multifunctional Edit Component";
 "simple_AlbumComponent" = "Album Component";
+"simple_MultipleAlbumComponent" = "Multifunctional Album Component";
 "simple_CameraComponent" = "Camera Component";
 "extend_EditComponent" = "Extended Edit Component";
 "extend_CameraBase" = "Extended Camera Component";

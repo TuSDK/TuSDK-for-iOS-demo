@@ -6,11 +6,12 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
+
 /**
  *  GaussianBlurFiveRadius
  */
-@interface TuSDKGaussianBlurFiveRadiusFilter : GPUImageTwoPassTextureSamplingFilter
+@interface TuSDKGaussianBlurFiveRadiusFilter : TuSDKTwoPassTextureSamplingFilter
 /**
  *  模糊范围 (从0.0开始，数值越大越模糊)
  */

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 /**
  *  暗角滤镜
  */
-@interface TuSDKGPULightVignetteFilter : GPUImageFilter<TuSDKFilterParameterProtocol>
+@interface TuSDKGPULightVignetteFilter : TuSDKFilter<TuSDKFilterParameterProtocol>
 
 @end

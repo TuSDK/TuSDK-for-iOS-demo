@@ -82,7 +82,7 @@
     // 取消按钮
     UIButton *_cancelButton;
     // 旋转缩放按钮
-    UIImageView *_turnButton;
+    UIButton *_turnButton;
 }
 /**
  *  图片视图
@@ -95,7 +95,7 @@
 /**
  *  旋转缩放按钮
  */
-@property (nonatomic, readonly) UIImageView *turnButton;
+@property (nonatomic, readonly) UIButton *turnButton;
 
 /**
  *  贴纸元件视图委托

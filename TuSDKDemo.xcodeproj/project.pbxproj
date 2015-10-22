@@ -26,6 +26,7 @@
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
+		DCE8ABEC1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8ABEB1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m */; settings = {ASSET_TAGS = (); }; };
 		DCF7DFAC1BCCE956002CB757 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */; settings = {ASSET_TAGS = (); }; };
 		DCF7DFAE1BCCF397002CB757 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7DFAD1BCCF397002CB757 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -81,6 +82,8 @@
 		DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuSDKDemoTests.m; sourceTree = "<group>"; };
 		DCA81D751AF23411003C5882 /* TuSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
 		DCCF69AC1B4C216F00DE7E70 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DCE8ABEA1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleAlbumMultipleComponent.h; path = Simples/SimpleAlbumMultipleComponent.h; sourceTree = "<group>"; };
+		DCE8ABEB1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleAlbumMultipleComponent.m; path = Simples/SimpleAlbumMultipleComponent.m; sourceTree = "<group>"; };
 		DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
 		DCF7DFAD1BCCF397002CB757 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		E08380B7687DA29FB71AC3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				DC5DA9A71B00A74C00DEDEC2 /* DemoSimpleBase.m */,
 				DC5DA9A81B00A74C00DEDEC2 /* SimpleAlbumComponent.h */,
 				DC5DA9A91B00A74C00DEDEC2 /* SimpleAlbumComponent.m */,
+				DCE8ABEA1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.h */,
+				DCE8ABEB1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m */,
 				DC5DA9AA1B00A74C00DEDEC2 /* SimpleCameraComponent.h */,
 				DC5DA9AB1B00A74C00DEDEC2 /* SimpleCameraComponent.m */,
 				DC5DA9AC1B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.h */,
@@ -304,7 +309,7 @@
 		DC98F06F1A17668F006B6417 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Lasque;
 				TargetAttributes = {
 					DC98F0761A17668F006B6417 = {
@@ -397,6 +402,7 @@
 			files = (
 				DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */,
 				DC5DA9BF1B00A76300DEDEC2 /* ExtendCameraBaseComponent.m in Sources */,
+				DCE8ABEC1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m in Sources */,
 				DC5DA9B71B00A74C00DEDEC2 /* SimpleEditAdvancedComponent.m in Sources */,
 				DC5DA9B51B00A74C00DEDEC2 /* SimpleAlbumComponent.m in Sources */,
 				DC5DA9C31B00A76B00DEDEC2 /* DefineCameraBaseComponent.m in Sources */,
@@ -464,6 +470,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -530,6 +537,7 @@
 				INFOPLIST_FILE = TuSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -545,6 +553,7 @@
 				INFOPLIST_FILE = TuSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -564,6 +573,7 @@
 				);
 				INFOPLIST_FILE = TuSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuSDKDemo.app/TuSDKDemo";
 			};
@@ -579,6 +589,7 @@
 				);
 				INFOPLIST_FILE = TuSDKDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuSDKDemo.app/TuSDKDemo";
 			};

@@ -60,6 +60,10 @@
     TuSDKPFEditAdjustOptionBar *_optionBar;
     // 参数配置视图完成按钮
     UIButton *_configCompleteButton;
+    // 参数配置视图取消按钮
+    UIButton *_configCancalButton;
+    // 参数配置容器
+    UIView *_configActionContainer;
 }
 /**
  *  选项栏目
@@ -72,9 +76,9 @@
 @property (nonatomic, readonly) UIButton *configCompleteButton;
 
 /**
- *  点击配置完成按钮动作
+ *  参数配置视图完成按钮
  */
-- (void)onConfigCompleteAction;
+@property (nonatomic, readonly) UIButton *configCancalButton;
 
 /**
  *  设置配置视图隐藏状态

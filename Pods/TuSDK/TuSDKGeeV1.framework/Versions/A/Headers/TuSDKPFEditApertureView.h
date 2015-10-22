@@ -55,6 +55,10 @@
     TuSDKPFEditApertureOptionBar *_optionBar;
     // 参数配置视图完成按钮
     UIButton *_configCompleteButton;
+    // 参数配置视图取消按钮
+    UIButton *_configCancalButton;
+    // 参数配置容器
+    UIView *_configActionContainer;
     // 触摸视图
     UIView<TuSDKICGestureRecognizerViewInterface> *_touchView;
 }
@@ -67,6 +71,11 @@
  *  参数配置视图完成按钮
  */
 @property (nonatomic, readonly) UIButton *configCompleteButton;
+
+/**
+ *  参数配置视图完成按钮
+ */
+@property (nonatomic, readonly) UIButton *configCancalButton;
 
 /**
  *  触摸视图

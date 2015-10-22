@@ -1,6 +1,6 @@
 //
 //  TuSDKPFCameraOptions.h
-//  TuSDK
+//  TuSDKGeeV1
 //
 //  Created by Clear Hu on 14/11/6.
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
@@ -173,6 +173,16 @@
  *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
  */
 @property (nonatomic) BOOL disableMirrorFrontFacing;
+
+/**
+ *  显示相册照片，点击后请求打开相册 (默认: false，不显示相册入口)
+ */
+@property (nonatomic) BOOL displayAlbumPoster;
+
+/**
+ *  是否显示辅助线 (默认: false)
+ */
+@property (nonatomic) BOOL displayGuideLine;
 
 /**
  *  创建系统相机控制器对象

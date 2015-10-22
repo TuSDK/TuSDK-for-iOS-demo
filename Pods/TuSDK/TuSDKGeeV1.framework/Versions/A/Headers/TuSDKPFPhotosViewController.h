@@ -1,6 +1,6 @@
 //
 //  TuSDKPFPhotosViewController.h
-//  TuSDK
+//  TuSDKGeeV1
 //
 //  Created by Clear Hu on 14/11/1.
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
@@ -52,7 +52,7 @@
 @property (nonatomic, strong) Class viewClazz;
 
 /**
- *  表格行视图类 (默认:TuSDKPFPhotosCell, 需要继承 TuSDKPFPhotosCell)
+ *  表格行视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
  */
 @property (nonatomic, strong) Class cellViewClazz;
 

@@ -11,6 +11,7 @@
 
 //Simples
 #import "SimpleAlbumComponent.h"
+#import "SimpleAlbumMultipleComponent.h"
 #import "SimpleCameraComponent.h"
 #import "SimpleEditAdvancedComponent.h"
 #import "SimpleEditAndCutComponent.h"
@@ -62,6 +63,8 @@
     DemoSimpleGroup *group = [DemoSimpleGroup group];
     // 相册组件范例
     [group appenWithSimple:[SimpleAlbumComponent simple]];
+    // 多功能相册组件范例
+    [group appenWithSimple:[SimpleAlbumMultipleComponent simple]];
     // 相机组件范例
     [group appenWithSimple:[SimpleCameraComponent simple]];
     // 图片编辑组件 (裁剪)范例
@@ -102,6 +105,11 @@
     // 需要等待滤镜管理器初始化完成，才能使用所有功能
     [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
     [TuSDK checkManagerWithDelegate:self];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 #pragma mark - TuSDKFilterManagerDelegate

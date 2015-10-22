@@ -95,10 +95,10 @@
     opt.displayFilterSubtitles = YES;
     
     // 滤镜列表行视图宽度
-    // opt.filterBarCellWidth = 75;
+    // opt.filterBarCellWidth = 60;
     
     // 滤镜列表选择栏高度
-    // opt.filterBarHeight = 100;
+    // opt.filterBarHeight = 80;
     
     // 滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
     // opt.filterBarGroupCellClazz = [TuSDKCPGroupFilterGroupCell class];
@@ -118,7 +118,7 @@
     opt.autoSelectGroupDefaultFilter = YES;
     
     // 开启滤镜配置选项
-    opt.enableFilterConfig = YES;
+    opt.enableFilterConfig = NO;
     
     // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
@@ -151,13 +151,16 @@
     // opt.outputCompress = 0.95f;
     
     // 视频覆盖区域颜色 (默认：[UIColor clearColor])
-    opt.regionViewColor = lsqRGB(51, 51, 51);
+    opt.regionViewColor = [UIColor lsqClorWithHex:@"#403e43"];
     
     // 照片输出分辨率
     // opt.outputSize = CGSizeMake(1440, 1920);
     
     // 禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
     // opt.disableMirrorFrontFacing = YES;
+    
+    // 是否显示辅助线 (默认: false)
+    opt.displayGuideLine = false;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托

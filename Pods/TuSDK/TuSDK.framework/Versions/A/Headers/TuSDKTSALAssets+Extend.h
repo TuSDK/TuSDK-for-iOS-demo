@@ -26,6 +26,13 @@ typedef void (^ALAssetsLibraryAuthorBlock)(NSError *error);
  */
 typedef void (^ALAssetsLibraryGroupsBlock)(NSArray *groups, NSError *error);
 
+/**
+ *  获取相册封面回调
+ *
+ *  @param image CGImageRef对象
+ */
+typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
+
 #pragma mark - ALAssetsLibraryExtend
 // 系统相册帮助类
 @interface ALAssetsLibrary(ALAssetsLibraryExtend)
@@ -56,6 +63,13 @@ typedef void (^ALAssetsLibraryGroupsBlock)(NSArray *groups, NSError *error);
  *  @param groupsBlock 获取系统相册列表回调
  */
 - (void)getGroupsWithBlock:(ALAssetsLibraryGroupsBlock)groupsBlock;
+
+/**
+ *  获取相册封面
+ *
+ *  @param posterBlock 获取相册封面回调
+ */
+- (void)getLibraryPosterWithBlock:(ALAssetsLibraryPosterBlock)posterBlock;
 @end
 
 #pragma mark - ALAssetsGroupExtend

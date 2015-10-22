@@ -20,8 +20,6 @@
     UIImageView *_thumbView;
     // 标题视图
     UILabel *_titleView;
-    // 标识视图
-    UIView *_flagView;
     // 选中状态视图
     UIView *_selectedView;
     // 图标视图
@@ -59,10 +57,10 @@
     UIView *_wrapView;
     // 图片视图
     UIImageView *_thumbView;
+    // 图片视图蒙版效果
+    UIView *_thumbMaskView;
     // 标题视图
     UILabel *_titleView;
-    // 标识视图
-    UIView *_flagView;
     // 选中状态视图
     UIView *_selectedView;
     // 图标视图

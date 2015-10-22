@@ -12,4 +12,7 @@
 
 /** A normalization factor for the distance between central color and sample color. */
 @property(nonatomic, readwrite) CGFloat distanceNormalizationFactor;
+
+/**init On Performance*/
+- (id)initOnPerformance;
 @end

@@ -64,7 +64,7 @@
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
+ *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKICTouchImageView, 需要继承 TuSDKICTouchImageView)
  */
 @property (nonatomic, strong) Class editImageViewClazz;
 

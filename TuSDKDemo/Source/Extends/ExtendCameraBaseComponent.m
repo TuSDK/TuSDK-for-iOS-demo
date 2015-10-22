@@ -220,7 +220,7 @@
     if (!view) return;
     [super configDefaultStyleView:view];
     
-    UIButton *closeButton = [UIButton buttonWithFrame:CGRectMake(20, [view.bottomBar getCenterY:60], 60, 60)
+    UIButton *closeButton = [UIButton buttonWithFrame:CGRectMake(20, [view.bottomBar getCenterY:60] + 8, 60, 60)
                                                 title:LSQString(@"lsq_cancel", @"取消") font:lsqFontSize(16)
                                                 color:[UIColor whiteColor]];
     // 关闭摄像头按钮
@@ -283,15 +283,8 @@
     
     // 默认相机控制栏视图
     [_configBar setSizeHeight:44];
-    _configBar.backgroundColor = lsqRGBA(0, 0, 0, 0.8);
     _configBar.closeButton.hidden = YES;
     [_configBar.flashButton setOriginX:10];
-    
-    // 默认相机底部栏视图
-    [_bottomBar setSizeHeight:60];
-    [_bottomBar setOriginY:self.getSizeHeight - 60];
-    _bottomBar.captureButton.frame = CGRectMake([_bottomBar getCenterX:50], [_bottomBar getCenterY:50], 50, 50);
-    _bottomBar.backgroundColor = _configBar.backgroundColor;
     
     // 闪光灯视图
     [_flashView setFlashFrame:_configBar.flashButton.frame];
@@ -306,9 +299,7 @@
 - (void)initView;
 {
     [super initView];
-    
-    // 标识视图
-    _flagView.frame = _wrapView.bounds;
+
     // 标题视图
     _titleView.hidden = YES;
 }
@@ -319,8 +310,6 @@
     
     // 图片视图
     _thumbView.frame = _wrapView.bounds;
-    // 标识视图
-    _flagView.frame = CGRectMake(0, _wrapView.getSizeHeight - 2, _wrapView.getSizeWidth, 2);
     // 标题视图
     _titleView.hidden = YES;
     return self;

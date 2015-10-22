@@ -25,6 +25,11 @@
 @property (nonatomic, readonly) lsqCameraState state;
 
 /**
+ *  选区范围算法
+ */
+@property (nonatomic, retain) id<TuSDKCPRegionHandler> regionHandler;
+
+/**
  *  是否已注册聚焦事件
  */
 @property (nonatomic) BOOL isResgisterFocusEvent;
@@ -70,7 +75,12 @@
 @property (nonatomic, retain) UIColor *regionViewColor;
 
 /**
- *  照片输出分辨率
+ *  默认是否显示辅助线 (默认: false)
+ */
+@property (nonatomic) BOOL displayGuideLine;
+
+/**
+ *  照片输出分辨率 (设置后 cameraViewRatio 将失效)
  */
 @property (nonatomic) CGSize outputSize;
 

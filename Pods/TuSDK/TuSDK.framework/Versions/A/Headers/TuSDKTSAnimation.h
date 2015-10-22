@@ -317,6 +317,11 @@ typedef void (^TuSDKTSAnimationBlock)(TuSDKTSAnimation *anim, NSTimeInterval ste
 - (void)start;
 
 /**
+ *  动画开始
+ */
+- (void)startWithBlock:(TuSDKTSAnimationBlock)block;
+
+/**
  *  动画停止
  */
 - (void)stop;

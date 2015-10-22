@@ -1,6 +1,6 @@
 //
 //  TuSDKPFPhotosCell.h
-//  TuSDK
+//  TuSDKGeeV1
 //
 //  Created by Clear Hu on 14/11/2.
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.

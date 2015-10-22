@@ -19,8 +19,6 @@
     UIButton *_cancelButton;
     // 完成按钮
     UIButton *_completeButton;
-    // 标题视图
-    UILabel *_titleView;
 }
 
 /**

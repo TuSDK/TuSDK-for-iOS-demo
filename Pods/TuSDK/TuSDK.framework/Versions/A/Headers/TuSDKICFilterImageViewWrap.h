@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKFilterWrap.h"
+#import "TuSDKGPUSmartView.h"
 
+#pragma mark - TuSDKICFilterImageViewInterface
 /**
  *  Filter Image View Interface
  */
@@ -39,9 +41,21 @@
 - (void)needUpdateLayout;
 @end
 
+#pragma mark - TuSDKICFilterImageViewWrap
 /**
  *  滤镜显示视图包装
  */
 @interface TuSDKICFilterImageViewWrap : UIView<TuSDKICFilterImageViewInterface>
 
+@end
+
+#pragma mark - TuSDKICFilterVideoViewWrap
+/**
+ *  滤镜视频显示视图包装
+ */
+@interface TuSDKICFilterVideoViewWrap : UIView
+/**
+ *  GPU智能视图
+ */
+@property (nonatomic, readonly) TuSDKGPUSmartView *view;
 @end

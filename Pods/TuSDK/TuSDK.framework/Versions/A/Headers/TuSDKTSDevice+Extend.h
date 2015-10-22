@@ -167,6 +167,13 @@ extern NSString * const kDeviceiPad4G;
 + (void) logMemory:(NSString *)tag;
 
 /**
+ *  硬件性能
+ *
+ *  @return 2-5
+ */
++ (NSUInteger) performance;
+
+/**
  *  Universally Unique Identifier 通用唯一识别码
  *
  *  @return 通用唯一识别码

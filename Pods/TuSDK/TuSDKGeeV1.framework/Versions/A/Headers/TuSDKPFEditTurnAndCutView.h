@@ -52,8 +52,6 @@
  */
 @interface TuSDKPFEditTurnAndCutView : UIView<TuSDKICTouchImageViewDelegate>{
     @protected
-    // 返回按钮
-    UIButton *_backButton;
     // 旋转和裁剪视图控制栏
     TuSDKPFEditTurnAndCutBottomView *_bottomBar;
     // 图片编辑视图 (旋转，缩放)
@@ -63,17 +61,12 @@
 }
 
 /**
- *  返回按钮
- */
-@property (nonatomic, readonly) UIButton *backButton;
-
-/**
  *  旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
  */
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKPFEditImageView, 需要继承 TuSDKPFEditImageView)
+ *  图片编辑视图 (旋转，缩放)类 (默认:TuSDKICTouchImageView, 需要继承 TuSDKICTouchImageView)
  */
 @property (nonatomic, strong) Class editImageViewClazz;
 
@@ -113,4 +106,9 @@
  *  @param image           图片
  */
 - (void)setImage:(UIImage *)image;
+
+/**
+ *  重新计算布局
+ */
+- (void)needUpdateLayout;
 @end

@@ -15,7 +15,7 @@
 @interface SimpleEditAdvancedComponent ()
 {
     // 自定义系统相册组件
-    TuSDKCPAlbumComponent *_albumComponent;
+    TuSDKCPAlbumMultipleComponent *_albumComponent;
     // 图片编辑组件
     TuSDKCPPhotoEditComponent *_photoEditComponent;
 }
@@ -40,9 +40,8 @@
     
     lsqLDebug(@"editAdvancedComponentHandler");
     
-    _albumComponent =
-    [TuSDKGeeV1 albumCommponentWithController:controller
-                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+    _albumComponent = [TuSDKGeeV1 albumMultipleCommponentWithController:controller
+                                                          callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          // 获取图片错误
          if (error) {

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
 /**
  *  圆形选区滤镜
  */
-@interface TuSDKGPUSelectiveCircleFilter : GPUImageTwoInputFilter
+@interface TuSDKGPUSelectiveCircleFilter : TuSDKTwoInputFilter
 /// The center about which to apply the distortion, with a default of (0.5, 0.5)
 @property(readwrite, nonatomic) CGPoint center;
 /// The radius of the distortion, ranging from 0.0 to 1.0, with a default of 0.25

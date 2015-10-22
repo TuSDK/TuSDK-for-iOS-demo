@@ -78,4 +78,16 @@
  *  @param sender
  */
 - (void)onCameraRatioChange:(id)sender;
+
+/**
+ *  设置辅助线显示状态
+ *
+ *  @param isShow 是否显示辅助线
+ */
+- (void)setGuideLineViewState:(BOOL)isShow;
+
+/**
+ *  获取辅助线显示状态
+ */
+- (BOOL)getGuideLineViewState;
 @end

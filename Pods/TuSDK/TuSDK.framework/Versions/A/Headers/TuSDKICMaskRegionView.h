@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - TuSDKICMaskRegionView
 /**
  *  裁剪区域视图
  */
@@ -54,4 +55,5 @@
  *  @return 确定的选取方位
  */
 - (CGRect)changeRegionRatio:(CGFloat)regionRatio;
+
 @end

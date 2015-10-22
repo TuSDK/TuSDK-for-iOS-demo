@@ -31,6 +31,14 @@
  *  @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
  */
 - (BOOL)onAsyncTuSDKPFCamera:(TuSDKPFCameraViewController *)controller captureResult:(TuSDKResult *)result;
+
+/**
+ *  请求从相机界面跳转至相册
+ *
+ *  @param controller 默认相机视图控制器
+ */
+- (void)onTuSDKAlbumDemand:(TuSDKPFCameraViewController *)controller;
+
 @end
 
 /**
@@ -190,6 +198,21 @@
  *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
  */
 @property (nonatomic) BOOL disableMirrorFrontFacing;
+
+/**
+ *  显示相册照片，点击后请求打开相册 (默认: false，不显示相册入口)
+ */
+@property (nonatomic) BOOL displayAlbumPoster;
+
+/**
+ *  是否从相册界面进入 (默认: NO)
+ */
+@property (nonatomic) BOOL openedByAlbumController;
+
+/**
+ *  默认是否显示辅助线 (默认: false)
+ */
+@property (nonatomic) BOOL displayGuideLine;
 
 /**
  *  最后选中的滤镜代号

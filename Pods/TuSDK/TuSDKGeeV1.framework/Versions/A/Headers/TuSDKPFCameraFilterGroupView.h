@@ -1,6 +1,6 @@
 //
 //  TuSDKPFCameraFilterGroupView.h
-//  TuSDK
+//  TuSDKGeeV1
 //
 //  Created by Clear Hu on 15/2/19.
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.

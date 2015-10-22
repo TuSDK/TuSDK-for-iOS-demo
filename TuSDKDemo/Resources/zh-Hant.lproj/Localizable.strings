@@ -20,6 +20,7 @@
 "simple_EditAdvancedComponent" = "高級圖片編輯組件";
 "simple_EditMultipleComponent" = "多功能圖片編輯組件";
 "simple_AlbumComponent" = "相冊組件";
+"simple_MultipleAlbumComponent" = "相冊組件 (帶相機)";
 "simple_CameraComponent" = "相機組件";
 "extend_EditComponent" = "圖片編輯組件";
 "extend_CameraBase" = "基礎相機界面修改";

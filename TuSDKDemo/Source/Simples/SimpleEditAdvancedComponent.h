@@ -7,6 +7,7 @@
 //
 
 #import "DemoSimpleBase.h"
+
 /**
  *  高级图片编辑组件范例
  */

@@ -21,6 +21,13 @@
 - (void)onArgSelectedAction:(UIView *)btn;
 
 /**
+ *  获取当前选中动作
+ *
+ *  @return 当前动作索引
+ */
+- (NSUInteger)getCurrentAction;
+
+/**
  *  设置配置视图隐藏状态
  *
  *  @param isHidden 是否隐藏

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
-@interface TuSDKGPUColorSelectiveFilter : GPUImageFilter<TuSDKFilterParameterProtocol>
+@interface TuSDKGPUColorSelectiveFilter : TuSDKFilter<TuSDKFilterParameterProtocol>
 
 @end

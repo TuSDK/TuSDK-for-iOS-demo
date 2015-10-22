@@ -119,6 +119,11 @@
 - (void)reset;
 
 /**
+ *  强制刷新滤镜参数
+ */
+- (void)forceProcessing;
+
+/**
  *  重置参数
  *
  *  @param key 参数键名

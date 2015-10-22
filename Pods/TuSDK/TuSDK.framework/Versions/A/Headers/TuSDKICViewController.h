@@ -56,6 +56,15 @@
 - (void)navLeftButtonWithTitle:(NSString *)title action:(SEL)action;
 
 /**
+ *  设置导航栏左边按钮
+ *
+ *  @param title  标题
+ *  @param color  标题颜色
+ *  @param action 动作
+ */
+-(void)navLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
+
+/**
  *  设置导航栏右边按钮
  *
  *  @param title  标题
@@ -64,14 +73,37 @@
 - (void)navRightButtonWithTitle:(NSString *)title action:(SEL)action;
 
 /**
+ *  设置导航栏右边按钮
+ *
+ *  @param title  标题
+ *  @param color  标题颜色
+ *  @param action 动作
+ */
+-(void)navRightButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
+
+/**
  *  设置导航栏左边取消按钮
  */
 - (void)setNavLeftCancelButton;
 
 /**
+ *  设置导航栏左边取消按钮
+ *
+ *  @param color  文字颜色
+ */
+- (void)setNavLeftCancelButtonWithColor:(UIColor *)color;
+
+/**
  *  设置导航栏右边取消按钮
  */
 - (void)setNavRightCancelButton;
+
+/**
+ *  设置导航栏右边取消按钮和文本颜色
+ *
+ *  @param color  文字颜色
+ */
+- (void)setNavRightCancelButtonWithColor:(UIColor *)color;
 
 /**
  *  取消按钮响应事件

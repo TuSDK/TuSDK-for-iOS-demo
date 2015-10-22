@@ -10,6 +10,7 @@
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterGroup.h"
 #import "TuSDKConfig.h"
+#import <GPUImage/GPUImage.h>
 
 @protocol TuSDKFilterConfigDelegate;
 
@@ -140,4 +141,20 @@
  *  @param option 滤镜配置选项
  */
 - (void)loadFilterThumbWithImageView:(UIImageView *)view option:(TuSDKFilterOption *)option;
+@end
+
+#pragma mark - TuSDKFilter
+@interface TuSDKFilter: GPUImageFilter
+@end
+
+#pragma mark - TuSDKTwoInputFilter
+@interface TuSDKTwoInputFilter: GPUImageTwoInputFilter
+@end
+
+#pragma mark - TuSDKThreeInputFilter
+@interface TuSDKThreeInputFilter: GPUImageThreeInputFilter
+@end
+
+#pragma mark - TuSDKTwoPassTextureSamplingFilter
+@interface TuSDKTwoPassTextureSamplingFilter : GPUImageTwoPassTextureSamplingFilter
 @end

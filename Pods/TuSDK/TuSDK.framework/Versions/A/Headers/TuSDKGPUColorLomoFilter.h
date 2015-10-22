@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
 /**
  *  LOMO滤镜
  */
-@interface TuSDKGPUColorLomoFilter : GPUImageTwoInputFilter<TuSDKFilterParameterProtocol>
+@interface TuSDKGPUColorLomoFilter : TuSDKTwoInputFilter<TuSDKFilterParameterProtocol>
 
 @end

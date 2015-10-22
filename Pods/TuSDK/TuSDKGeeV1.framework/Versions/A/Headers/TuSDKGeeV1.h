@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKGeeV1Import.h"
+#import "TuSDKGeeV1Theme.h"
 #import "TuSDKCPAvatarComponent.h"
+#import "TuSDKCPAlbumMultipleComponent.h"
 #import "TuSDKCPPhotoEditComponent.h"
 #import "TuSDKCPPhotoEditMultipleComponent.h"
 #import "TuSDKCPFocusTouchView.h"
@@ -29,6 +31,18 @@ extern NSString * const lsqGeeVersion;
  */
 + (TuSDKCPAlbumComponent *)albumCommponentWithController:(UIViewController *)controller
                                            callbackBlock:(TuSDKCPComponentBlock)block;
+
+/**
+ *  自定义多功能相册组件
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
+ *
+ *  @param controller 来源控制器
+ *  @param block      组件回调结果
+ *
+ *  @return 自定义多功能相册组件
+ */
++ (TuSDKCPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
+                                                           callbackBlock:(TuSDKCPComponentBlock)block;
 
 /**
  *  获取头像设置组件

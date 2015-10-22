@@ -22,10 +22,6 @@
     UILabel *_numberView;
     // 百分比控制条
     TuSDKICSeekBar *_seekBar;
-    // 分割线1
-    UIView *_splitOne;
-    // 分割线2
-    UIView *_splitTwo;
 }
 /**
  *  参数配置视图委托
@@ -51,16 +47,6 @@
  *  百分比控制条
  */
 @property (nonatomic, readonly) TuSDKICSeekBar *seekBar;
-
-/**
- *  分割线1
- */
-@property (nonatomic, readonly) UIView *splitOne;
-
-/**
- *  分割线2
- */
-@property (nonatomic, readonly) UIView *splitTwo;
 
 /**
  *  跳到指定百分比

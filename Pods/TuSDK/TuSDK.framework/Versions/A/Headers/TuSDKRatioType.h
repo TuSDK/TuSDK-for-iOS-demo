@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
     lsqRatio_3_4 = 1 << 3,
     
     /**
-     * 3:4比例
+     * 9:16比例
      */
     lsqRatio_9_16 = 1 << 4,
     

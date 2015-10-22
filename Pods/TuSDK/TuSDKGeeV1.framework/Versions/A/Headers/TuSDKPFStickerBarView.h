@@ -124,10 +124,6 @@
     @protected
     // 参数选项视图
     UIView *_paramsView;
-    // 分割线1
-    UIView *_splitOne;
-    // 分割线2
-    UIView *_splitTwo;
     // 空数据标题
     UIButton *_emptyTitle;
     // 贴纸列表视图
@@ -141,14 +137,6 @@
  *  参数选项视图
  */
 @property (nonatomic, readonly) UIView *paramsView;
-/**
- *  分割线1
- */
-@property (nonatomic, readonly) UIView *splitOne;
-/**
- *  分割线2
- */
-@property (nonatomic, readonly) UIView *splitTwo;
 /**
  *  空数据标题
  */

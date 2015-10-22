@@ -7,6 +7,8 @@
 //
 
 #import "TuSDKResult.h"
+#import "TuSDKTSMath.h"
+#import "TuSDKCPRegionHandler.h"
 
 /**
  *  视频相机状态
@@ -102,6 +104,16 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  视频覆盖区域颜色 (默认：[UIColor blackColor])
  */
 @property (nonatomic, retain) UIColor *regionViewColor;
+
+/**
+ *  是否显示辅助线 (默认: false)
+ */
+@property (nonatomic) BOOL displayGuideLine;
+
+/**
+ *  选区范围算法
+ */
+@property (nonatomic, retain) id<TuSDKCPRegionHandler> regionHandler;
 
 /**
  *  照片输出分辨率
@@ -265,14 +277,14 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
- *  区域长宽比例
+ *  显示区域百分比
  */
-@property (nonatomic) CGFloat regionRatio;
+@property (nonatomic) CGRect regionPercent;
 
 /**
- *  视频覆盖区域颜色 (默认：[UIColor blackColor])
+ *  是否显示辅助线 (默认: false)
  */
-@property (nonatomic, retain) UIColor *regionViewColor;
+@property (nonatomic) BOOL displayGuideLine;
 
 /**
  *  相机状态改变
@@ -280,13 +292,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @param state 改变
  */
 - (void)cameraStateChanged:(lsqCameraState)state;
-
-/**
- *  改变范围比例 (使用动画)
- *
- *  @param regionRatio 范围比例
- */
-- (void)changeRegionRatio:(CGFloat)regionRatio;
 
 /**
  *  当前聚焦状态

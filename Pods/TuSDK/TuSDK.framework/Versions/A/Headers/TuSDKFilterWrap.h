@@ -50,7 +50,7 @@
  *
  *  @param view 视频视图
  */
-- (void)bindWithCameraView:(nullable GPUImageView *)view;
+- (void)bindWithCameraView:(nullable UIView <GPUImageInput> *)view;
 
 /**
  *  提交滤镜配置选项

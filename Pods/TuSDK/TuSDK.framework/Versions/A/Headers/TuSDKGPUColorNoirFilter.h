@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "TuSDKFilterAdapter.h"
 /**
  *  普通黑白滤镜
  */
-@interface TuSDKGPUColorNoirFilter : GPUImageTwoInputFilter
+@interface TuSDKGPUColorNoirFilter : TuSDKTwoInputFilter
 
 @end

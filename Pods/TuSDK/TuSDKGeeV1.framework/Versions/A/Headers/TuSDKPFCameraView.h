@@ -70,6 +70,8 @@
     UIButton *_switchButton;
     // 屏幕比例按钮
     UIButton *_ratioButton;
+    // 辅助线按钮
+    UIButton *_guideLineButton;
 }
 /**
  *  关闭按钮
@@ -92,6 +94,11 @@
 @property (nonatomic, readonly) UIButton *ratioButton;
 
 /**
+ *  辅助线按钮
+ */
+@property (nonatomic, readonly) UIButton *guideLineButton;
+
+/**
  *  闪光灯模式
  */
 @property (nonatomic) AVCaptureFlashMode flashMode;
@@ -102,6 +109,13 @@
  *  @param ratioType 相机比例类型
  */
 - (void)changeRatioType:(lsqRatioType)ratioType;
+
+/**
+ *  设置辅助线显示状态
+ *
+ *  @param isShow 是否显示辅助线
+ */
+- (void)setGuideLineViewState:(BOOL)isShow;
 @end
 
 #pragma mark - TuSDKPFCameraConfigView
@@ -114,6 +128,8 @@
     UIButton *_captureButton;
     // 滤镜开关按钮
     UIButton *_filterButton;
+    // 相册链接
+    UIButton *_albumPoster;
 }
 /**
  *  拍摄按钮
@@ -126,9 +142,19 @@
 @property (nonatomic, readonly) UIButton *filterButton;
 
 /**
+ *  相册图片
+ */
+@property (nonatomic, readonly) UIButton *albumPoster;
+
+/**
  *  创建滤镜开关按钮
  */
 - (void)buildFilterButton;
+
+/**
+ *  创建相册按钮，点击后请求跳转到相册
+ */
+- (void)buildAlbumButton;
 @end
 
 #pragma mark - TuSDKPFCameraView
@@ -224,6 +250,11 @@
  *  @param showFilterDefault 是否默认显示滤镜列表
  */
 - (void)buildFilterView:(BOOL)showFilterDefault;
+
+/**
+ *  创建相册按钮，点击后请求跳转到相册
+ */
+- (void)buildAlbumButton;
 
 /**
  *  显示底部栏
