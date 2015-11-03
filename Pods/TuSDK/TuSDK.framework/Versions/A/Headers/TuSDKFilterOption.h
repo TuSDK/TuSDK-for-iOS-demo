@@ -101,6 +101,11 @@
 @property (nonatomic) NSUInteger version;
 
 /**
+ *  是否禁止实时处理
+ */
+@property (nonatomic) BOOL disableRuntime;
+
+/**
  * 是否为内置滤镜
  */
 @property (nonatomic) BOOL isInternal;

@@ -104,6 +104,11 @@
 @property (nonatomic) AVCaptureFlashMode flashMode;
 
 /**
+ *  更新布局
+ */
+- (void)needUpdateLayout;
+
+/**
  *  改变相机比例
  *
  *  @param ratioType 相机比例类型
@@ -236,6 +241,11 @@
  *  滤镜视图
  */
 @property (nonatomic, assign) id<TuSDKPFCameraViewDelegate> delegate;
+
+/**
+ *  更新布局
+ */
+- (void)needUpdateLayout;
 
 /**
  *  通知系统旋转

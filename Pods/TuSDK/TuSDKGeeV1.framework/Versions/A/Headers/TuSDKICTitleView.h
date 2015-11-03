@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * 带图标的文本
+ */
 @interface TuSDKICTitleView : UIView {
     
     @protected

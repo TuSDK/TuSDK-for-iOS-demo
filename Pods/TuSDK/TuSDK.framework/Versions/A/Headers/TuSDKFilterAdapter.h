@@ -101,6 +101,15 @@
 - (NSString *)groupNameKeyWithGroupID:(uint64_t)groupID;
 
 /**
+ *  获取滤镜组默认滤镜代号
+ *
+ *  @param group 滤镜分组
+ *
+ *  @return 滤镜组默认滤镜代号
+ */
+- (NSString *)defaultFilterCodeWithGroup:(TuSDKFilterGroup *)group;
+
+/**
  *  加载材质列表
  *
  *  @param code 滤镜代号

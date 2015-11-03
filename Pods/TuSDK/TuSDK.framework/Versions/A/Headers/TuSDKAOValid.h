@@ -92,6 +92,9 @@
 /** no Power */
 - (BOOL)noPower;
 
+/** render filter thumb */
+- (BOOL)renderFilterThumb;
+
 /**
  *  解密文本
  *

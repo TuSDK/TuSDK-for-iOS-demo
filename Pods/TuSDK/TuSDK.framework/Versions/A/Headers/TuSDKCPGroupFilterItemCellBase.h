@@ -10,6 +10,7 @@
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterGroup.h"
 #import "TuSDKICTableViewCell.h"
+#import "TuSDKTKFiltersTaskBase.h"
 
 /**
  *  滤镜分组元素类型
@@ -78,6 +79,11 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *  滤镜分组元素
  */
 @property (nonatomic, retain)TuSDKCPGroupFilterItem *mode;
+
+/**
+ *  滤镜任务
+ */
+@property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
 
 /**
  *  是否为相机动作
@@ -205,6 +211,16 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 @property (nonatomic, readonly) UIImageView *thumbView;
 
 /**
+ *  滤镜任务
+ */
+@property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
+
+/**
+ *  是否渲染封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+ */
+@property (nonatomic, readonly) BOOL isRenderFilterThumb;
+
+/**
  *  初始化视图 (空方法, 默认当使用+(id)initWithFrame:(CGRect)frame;初始化视图时调用)
  */
 - (void)initView;
@@ -284,6 +300,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  */
 - (void)onFilterGroupCellRemove:(TuSDKCPGroupFilterGroupCellBase *)cell;
 @end
+
 
 /**
  *  滤镜分组视图基础类

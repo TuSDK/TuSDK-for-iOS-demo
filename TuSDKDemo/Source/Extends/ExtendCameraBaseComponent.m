@@ -83,13 +83,13 @@
     // 聚焦触摸视图类 (默认:TuSDKCPFocusTouchView, 需要继承 TuSDKCPFocusTouchView)
     // opt.focusTouchViewClazz = [TuSDKCPFocusTouchView class];
     // 摄像头前后方向 (默认为后置优先)
-    // opt.avPostion = [AVCaptureDevice firstBackCameraPosition];
+    // opt.cameraPostion = [AVCaptureDevice firstBackCameraPosition];
     
     // 设置分辨率模式
     // opt.sessionPreset = AVCaptureSessionPresetHigh;
     
     // 闪光灯模式 (默认:AVCaptureFlashModeOff)
-    // opt.defaultFlashMode = AVCaptureFlashModeOff;
+    // opt.cameraDefaultFlashMode = AVCaptureFlashModeOff;
     
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;

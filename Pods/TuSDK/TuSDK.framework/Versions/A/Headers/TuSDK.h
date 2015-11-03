@@ -66,6 +66,7 @@
 #import "TuSDKCPOptions.h"
 
 #import "TuSDKPFAlbumViewControllerBase.h"
+#import "TuSDKPFAlbumMultipleViewControllerBase.h"
 #import "TuSDKPFCameraViewControllerBase.h"
 #import "TuSDKPFEditAdjustControllerBase.h"
 #import "TuSDKPFEditApertureControllerBase.h"
@@ -238,17 +239,6 @@ extern NSString * const lsqFilterSampleExtension;
  *  @param delegate   滤镜控管理器委托
  */
 + (void)checkManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate;
-
-/**
- *  获取滤镜任务
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKTKFiltersTempTask.html
- *
- *  @param image 滤镜预览源图 (如果为空使用SDK自带源图进行渲染)
- *  @param filterNames 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
- *
- *  @return 滤镜任务
- */
-+ (TuSDKTKFiltersTaskBase *)samplesTaskWithImage:(UIImage *)image filterNames:(NSArray *)filterNames;
 
 /**
  *  相机对象

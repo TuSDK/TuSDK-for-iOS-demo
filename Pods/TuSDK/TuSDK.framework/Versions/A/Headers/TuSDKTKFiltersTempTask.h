@@ -11,13 +11,11 @@
 /**
  *  滤镜临时预览效果列表任务
  */
-@interface TuSDKTKFiltersTempTask : TuSDKTKFiltersTaskBase{
-    @protected
-    // 输入的图片
-    UIImage *_inputImage;
-    // 是否取消任务
-    BOOL _isCancelTask;
-}
+@interface TuSDKTKFiltersTempTask : TuSDKTKFiltersTaskBase
+/**
+ *  是否取消任务
+ */
+@property (nonatomic, readonly) BOOL isCancelTask;
 
 /**
  *  初始化

@@ -70,6 +70,11 @@
 @property (nonatomic, retain) NSString *color;
 
 /**
+ *  是否禁止实时处理
+ */
+@property (nonatomic) BOOL disableRuntime;
+
+/**
  *  SDK文件
  */
 @property (nonatomic, retain) TuSDKAOFile *sdkFile;

@@ -82,6 +82,9 @@
     // 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
     opt.showResultPreview = YES;
     
+    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    // opt.isRenderFilterThumb = YES;
+    
     // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)
     // opt.saveToAlbum = YES;
     

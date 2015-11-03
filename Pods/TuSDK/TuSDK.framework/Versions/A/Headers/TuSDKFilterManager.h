@@ -66,15 +66,6 @@
 - (void)checkManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate;
 
 /**
- * 创建滤镜临时预览效果列表任务
- *
- *  @param image 输入的图片
- *  @param codes 需要显示的滤镜代号列表 (如果为空将显示所有自定义滤镜)
- *
- *  @return 滤镜任务
- */
-- (TuSDKTKFiltersTempTask *)tempTaskWithImage:(UIImage *)image filterCodes:(NSArray *)codes;
-/**
  *  获取滤镜包装对象
  *
  *  @param code 滤镜代号

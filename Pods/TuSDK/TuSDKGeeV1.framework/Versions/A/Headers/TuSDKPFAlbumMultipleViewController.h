@@ -47,7 +47,7 @@
 /**
  *  包含相机的系统相册控制器
  */ 
-@interface TuSDKPFAlbumMultipleViewController : TuSDKCPViewController<TuSDKPFAlbumMultipleViewProtocol>{
+@interface TuSDKPFAlbumMultipleViewController : TuSDKPFAlbumMultipleViewControllerBase<TuSDKPFAlbumMultipleViewProtocol>{
     @protected
     /**
      *  默认样式视图
@@ -84,16 +84,6 @@
  *  相册照片列表视图类 (默认:TuSDKPFPhotosGridView, 需要继承 TuSDKPFPhotosGridView)
  */
 @property (nonatomic, strong) Class photosViewClazz;
-
-/**
- *  系统相册列表
- */
-@property (nonatomic, retain) NSArray *groups;
-
-/**
- *  需要自动跳转到相册组名称
- */
-@property (nonatomic, copy) NSString *skipAlbumName;
 
 /**
  *  相册列表每行显示的照片数量 (默认:0, 程序自动适配设备)

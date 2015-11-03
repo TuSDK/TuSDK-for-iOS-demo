@@ -138,6 +138,9 @@
     // 控制器关闭后是否自动删除临时文件
     // opt.isAutoRemoveTemp = YES;
     
+    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    // opt.isRenderFilterThumb = YES;
+    
     TuSDKPFEditTurnAndCutViewController *tcController = opt.viewController;
     // 添加委托
     tcController.delegate = self;

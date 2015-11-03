@@ -70,6 +70,11 @@
 @property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
 
 /**
+ *  滤镜任务
+ */
+@property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
+
+/**
  *  选中索引
  *
  *  @param position 索引
@@ -142,4 +147,9 @@
  *  滤镜分组视图委托
  */
 @property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
+
+/**
+ *  滤镜任务
+ */
+@property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
 @end

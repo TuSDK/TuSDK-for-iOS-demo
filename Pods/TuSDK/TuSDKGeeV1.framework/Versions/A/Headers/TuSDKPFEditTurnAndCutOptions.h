@@ -89,6 +89,11 @@
 @property (nonatomic) CGSize cutSize;
 
 /**
+ *  是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+ */
+@property (nonatomic) BOOL isRenderFilterThumb;
+
+/**
  *  创建旋转和裁剪视图控制器对象
  *
  *  @return 旋转和裁剪视图控制器对象

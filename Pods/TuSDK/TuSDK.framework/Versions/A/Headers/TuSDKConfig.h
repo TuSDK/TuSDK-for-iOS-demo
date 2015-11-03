@@ -47,6 +47,11 @@
  *  local sticker Count
  */
 @property (nonatomic) NSInteger localStickerCount;
+
+/**
+ *  render filter thumb
+ */
+@property (nonatomic) BOOL renderFilterThumb;
 @end
 
 #pragma mark - TuSDKConfig

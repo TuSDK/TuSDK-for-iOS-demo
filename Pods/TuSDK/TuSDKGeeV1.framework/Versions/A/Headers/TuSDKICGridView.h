@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TuSDKGeeV1Import.h"
 
 /**
  *  网格视图

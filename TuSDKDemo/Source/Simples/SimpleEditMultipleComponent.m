@@ -121,7 +121,9 @@
     //    // 开启用户滤镜历史记录
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterHistory = YES;
     //    // 显示滤镜标题视图
-    //    _photoEditMultipleComponent.options.editFilterOptions..displayFilterSubtitles = YES;
+    //    _photoEditMultipleComponent.options.editFilterOptions.displayFilterSubtitles = YES;
+    //    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    //    _photoEditMultipleComponent.options.editFilterOptions.isRenderFilterThumb = YES;
     //
     //    // 图片编辑裁切旋转控制器配置选项
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditCuterOptions.html

@@ -107,6 +107,11 @@
 @property (nonatomic) Class onlineControllerClazz;
 
 /**
+ *  是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+ */
+@property (nonatomic) BOOL isRenderFilterThumb;
+
+/**
  *  配置滤镜栏视图
  *
  *  @param view 滤镜栏视图
