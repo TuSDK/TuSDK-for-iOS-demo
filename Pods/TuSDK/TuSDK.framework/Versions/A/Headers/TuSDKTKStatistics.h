@@ -10,6 +10,7 @@
 #import "TuSDKTKLocation.h"
 #import "TuSDKFilterOption.h"
 #import "TuSDKPFSticker.h"
+#import "TuSDKPFBrush.h"
 
 #pragma mark - TuSDKTKStatisticsType
 /**
@@ -169,6 +170,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editFilterOnlineFragment = 0x409400,
     
     /**
+     * 笔刷控制器
+     */
+    tkc_editBrushFragment = 0x409500,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,
@@ -279,6 +285,14 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
  *            贴纸数据
  */
 + (void)appendWithSticker:(TuSDKPFSticker *)sticker;
+
+/**
+ * 添加笔刷统计
+ *
+ * @param brush
+ *            笔刷数据
+ */
++ (void)appendWithBrush:(TuSDKPFBrush *)brush;
 
 /**
  *  刷新数据

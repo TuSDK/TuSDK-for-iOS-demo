@@ -84,6 +84,9 @@
              return;
          }
          [result logInfo];
+         
+         // 可在此添加自定义方法，将result结果传出，例如 ：  [self openEditorWithImage:result.image];
+         // 并在外部使用方法接收result结果，例如 ： -(void)openEditorWithImage:(UIImage *)image;
      }];
     
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditMultipleOptions.html
@@ -138,6 +141,20 @@
     //    _photoEditMultipleComponent.options.editCuterOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editCuterOptions.outputCompress = 0.95f;
+    //
+    //    // 图片编辑涂抹控制器配置选项
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditSmudgeOptions.html
+    // _photoEditMultipleComponent.options.editSmudgeOptions
+    //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
+    //    _photoEditMultipleComponent.options.editSmudgeOptions.defaultBrushSize = lsqMediumBrush;
+    //    // 是否保存上一次使用的笔刷 (默认: YES)
+    //    _photoEditMultipleComponent.options.editSmudgeOptions.saveLastBrush = YES;
+    //    // 默认撤销的最大次数 (默认: 5)
+    //    _photoEditMultipleComponent.options.editSmudgeOptions.maxUndoCount = 5;
+    //    // 保存到临时文件
+    //    _photoEditMultipleComponent.options.editSmudgeOptions.saveToTemp = YES;
+    //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
+    //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
     //    // 美颜控制器视图配置选项
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditSkinOptions.html

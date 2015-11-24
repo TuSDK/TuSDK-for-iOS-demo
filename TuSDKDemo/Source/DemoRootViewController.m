@@ -38,7 +38,7 @@
 {
     [super loadView];
 
-    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
+    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, [UIScreen midViewAutoHeight])];
     self.view.backgroundColor = lsqRGB(255, 255, 255);
     self.view.delegate = self;
 }
@@ -51,7 +51,7 @@
     // sdk统计代码，请不要加入您的应用
     [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
     
-    self.title = NSLocalizedString(@"app_name", @"TuSDK 涂图");
+    self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqSDKVersion ];
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！

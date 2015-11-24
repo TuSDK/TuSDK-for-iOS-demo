@@ -83,6 +83,7 @@
 #import "TuSDKPFPhotosViewControllerBase.h"
 #import "TuSDKPFStickerLocalControllerBase.h"
 #import "TuSDKPFStickerOnlineControllerBase.h"
+#import "TuSDKPFEditSmudgeControllerBase.h"
 
 #import "TuSDKPFCameraFilterGroupViewBase.h"
 #import "TuSDKPFEditFilterGroupViewBase.h"
@@ -90,6 +91,7 @@
 #import "TuSDKPFStickerBarViewBase.h"
 #import "TuSDKPFStickerLocalGridViewBase.h"
 #import "TuSDKPFStickerView.h"
+#import "TuSDKPFBrushBarViewBase.h"
 
 #import "TuSDKTKThread.h"
 #import "TuSDKVideoCameraInterface.h"
@@ -102,6 +104,7 @@
 #import "TuSDKFilterLocalPackage.h"
 #import "TuSDKFilterManager.h"
 #import "TuSDKPFStickerLocalPackage.h"
+#import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKTKStatistics.h"
 
 /**

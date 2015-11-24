@@ -24,6 +24,25 @@
 + (UIImage *) imageFromColor:(UIColor *)color;
 
 /**
+ *  创建圆形图像
+ *
+ *  @param radius    半径
+ *  @param fillColor 填充色
+ *
+ *  @return 图像
+ */
++ (UIImage *) createOvalImage:(NSUInteger)radius fillColor:(UIColor *)fillColor;
+
+/**
+ *  创建矩形图像
+ *
+ *  @param size      尺寸
+ *  @param fillColor 填充色
+ *
+ *  @return 图像
+ */
++ (UIImage *) createRectImage:(CGSize)size fillColor:(UIColor *)fillColor;
+/**
  *  缩放图片
  *
  *  @param newSize 新的长宽

@@ -13,10 +13,12 @@
 #import "TuSDKPFEditCuterOptions.h"
 #import "TuSDKPFEditSkinController.h"
 #import "TuSDKPFEditStickerOptions.h"
+#import "TuSDKPFEditSmudgeOptions.h"
 #import "TuSDKPFEditAdjustController.h"
 #import "TuSDKPFEditSharpnessController.h"
 #import "TuSDKPFEditApertureController.h"
 #import "TuSDKPFEditVignetteController.h"
+#import "TuSDKPFEditSmudgeController.h"
 
 #pragma mark - TuSDKCPPhotoEditMultipleOptions
 /**
@@ -67,6 +69,11 @@
  *  暗角控制器功能控制器配置选项
  */
 @property (nonatomic, readonly) TuSDKPFEditVignetteOptions *editVignetteOptions;
+
+/**
+ *  笔刷控制器功能控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditSmudgeOptions *editSmudgeOptions;
 @end
 
 
@@ -76,7 +83,7 @@
  */
 @interface TuSDKCPPhotoEditMultipleComponent : TuSDKCPPhotoEditMultipleComponentBase<TuSDKPFEditMultipleControllerDelegate,
 TuSDKPFEditCuterControllerDelegate, TuSDKPFEditFilterControllerDelegate, TuSDKCPFilterResultControllerDelegate,
-TuSDKPFEditStickerControllerDelegate>
+TuSDKPFEditStickerControllerDelegate, TuSDKPFEditSmudgeControllerDelegate>
 /**
  *  多功能图像编辑组件选项
  */

@@ -112,6 +112,15 @@ extern NSString * const lsqInternalFiltersConfig;
  *  @return SDK资源包贴纸文件路径
  */
 + (NSString *)sdkBundleSticker:(NSString *)file;
+
+/**
+ *  SDK资源包笔刷文件路径
+ *
+ *  @param file 文件名称
+ *
+ *  @return SDK资源包笔刷文件路径
+ */
++ (NSString *)sdkBundleBrush:(NSString *)file;
 @end
 
 #pragma mark - ImageBundleExtend

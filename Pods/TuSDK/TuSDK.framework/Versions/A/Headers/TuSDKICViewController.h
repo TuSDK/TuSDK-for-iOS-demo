@@ -321,6 +321,13 @@
 - (void)setStatusBarHidden:(BOOL)hidden withAnimation:(UIStatusBarAnimation)animation;
 
 /**
+ *  设置状态隐藏状态，没有动画
+ *
+ *  @param hidden    是否隐藏
+ */
+- (void)setStatusBarHidden:(BOOL)hidden;
+
+/**
  *  设置导航栏是否隐藏 (不使用动画)
  *
  *  @param isHidden 是否隐藏导航栏

@@ -21,7 +21,7 @@
  *
  *  @return 是否为相同或继承关系的类对象
  */
-+ (BOOL)isKindOfClass:(Class)clazz;
++ (BOOL)lsq_isKindOfClass:(Class)clazz;
 
 /**
  *  抛出异常

@@ -26,8 +26,8 @@
 		DC98F07D1A17668F006B6417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07C1A17668F006B6417 /* main.m */; };
 		DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F07F1A17668F006B6417 /* AppDelegate.m */; };
 		DC98F0971A17668F006B6417 /* TuSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98F0961A17668F006B6417 /* TuSDKDemoTests.m */; };
-		DCE8ABEC1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8ABEB1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m */; settings = {ASSET_TAGS = (); }; };
-		DCF7DFAC1BCCE956002CB757 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */; settings = {ASSET_TAGS = (); }; };
+		DCE8ABEC1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8ABEB1BD8EB4C00190359 /* SimpleAlbumMultipleComponent.m */; };
+		DCF7DFAC1BCCE956002CB757 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCF7DFAB1BCCE956002CB757 /* TuSDK.bundle */; };
 		DCF7DFAE1BCCF397002CB757 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7DFAD1BCCF397002CB757 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 

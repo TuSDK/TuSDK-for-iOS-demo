@@ -78,6 +78,10 @@
              return;
          }
          [result logInfo];
+         
+         // 可在此添加自定义方法，将result结果传出，例如 ：  [self openEditorWithImage:result.image];
+         // 并在外部使用方法接收result结果，例如 ： -(void)openEditorWithImage:(UIImage *)image;
+
      }];
     
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPPhotoEditOptions.html
@@ -139,6 +143,8 @@
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _photoEditComponent.autoDismissWhenCompelted = YES;
     [_photoEditComponent showComponent];
+    
+    
 }
 
 /**

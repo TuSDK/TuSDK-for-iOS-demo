@@ -95,6 +95,9 @@
 /** render filter thumb */
 - (BOOL)renderFilterThumb;
 
+/** 涂抹功能是否开启 */
+- (BOOL)smudgeEnabled;
+
 /**
  *  解密文本
  *
@@ -156,4 +159,25 @@
  *  @return 是否验证成功
  */
 - (BOOL)stickerValidWithKey:(NSString *)key type:(NSUInteger)type stickerId:(uint64_t)stickerId;
+
+/**
+ *  验证笔刷
+ *
+ *  @param stickerId 笔刷ID
+ *  @param type      验证方式
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)brushValidWithID:(uint64_t)brushId type:(NSUInteger)type;
+
+/**
+ *  验证笔刷密钥
+ *
+ *  @param key       笔刷密钥
+ *  @param type      验证方式
+ *  @param stickerId 笔刷ID
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)brushValidWithKey:(NSString *)key type:(NSUInteger)type brushId:(uint64_t)brushId;
 @end

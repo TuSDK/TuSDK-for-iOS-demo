@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKFilterGroup.h"
 #import "TuSDKPFStickerCategory.h"
+#import "TuSDKPFBrushGroup.h"
 
 #pragma mark - TuSDKPermission
 /**
@@ -52,6 +53,11 @@
  *  render filter thumb
  */
 @property (nonatomic) BOOL renderFilterThumb;
+
+/**
+ *  smudge
+ */
+@property (nonatomic) BOOL smudgeEnabled;
 @end
 
 #pragma mark - TuSDKConfig
@@ -73,6 +79,11 @@
  * 贴纸配置列表
  */
 @property (nonatomic, retain) NSArray *stickerGroups;
+
+/**
+ * 笔刷配置列表
+ */
+@property (nonatomic, retain) NSArray *brushGroups;
 
 /**
  *  配置信息

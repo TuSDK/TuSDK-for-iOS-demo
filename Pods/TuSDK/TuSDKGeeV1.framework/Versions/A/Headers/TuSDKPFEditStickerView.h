@@ -93,7 +93,7 @@
 /**
  *  更新布局
  */
-- (void)needUpdateLayout;
+- (void)needUpdateLayout; 
 
 /**
  *  设置图片

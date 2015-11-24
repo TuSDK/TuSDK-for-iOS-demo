@@ -87,6 +87,7 @@
 "lsq_edit_entry_filter" = "滤镜";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "贴纸";
+"lsq_edit_entry_smudge" = "涂抹";
 "lsq_edit_cuter_ratio_orgin" = "原始";
 "lsq_edit_cuter_ratio_1_1" = "1:1";
 "lsq_edit_cuter_ratio_2_3" = "2:3";
@@ -232,6 +233,21 @@
 "lsq_filter_set_excessive" = "边缘";
 "lsq_filter_set_maskAlpha" = "强调";
 "lsq_filter_set_degree" = "角度";
+
+// Brush Definition
+"lsq_brush_Eraser" = "橡皮擦";
+"lsq_brush_Mosaic" = "马赛克";
+"lsq_brush_OilPaint" = "油画";
+"lsq_brush_Gouache" = "水粉";
+"lsq_brush_WaterColor" = "水彩";
+"lsq_brush_ColorLead" = "彩铅";
+"lsq_brush_MapleLeaf" = "叶子";
+
+// Brush Size definition
+"lsq_brush_size_small" = "细";
+"lsq_brush_size_medium" = "中";
+"lsq_brush_size_large" = "粗";
+"lsq_brush_size_label" = "笔尖：%@";
 
 // network
 "lsq_network_request_error" = "服务器请求错误";

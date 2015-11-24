@@ -36,7 +36,7 @@
     _cellIdentifier = [NSString stringWithFormat:@"%@", [self class]];
     
     // 表格视图
-    _tableView = [TuSDKICTableView table];
+    _tableView = [TuSDKICTableView tableWithHeight:self.frame.size.height];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;

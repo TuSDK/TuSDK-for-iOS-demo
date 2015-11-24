@@ -87,6 +87,7 @@
 "lsq_edit_entry_filter" = "Filters";
 "lsq_edit_entry_cuter" = "Crop";
 "lsq_edit_entry_sticker" = "Stickers";
+"lsq_edit_entry_smudge" = "Smudge";
 "lsq_edit_cuter_ratio_orgin" = "Original";
 "lsq_edit_cuter_ratio_1_1" = "1:1";
 "lsq_edit_cuter_ratio_2_3" = "2:3";
@@ -232,6 +233,21 @@
 "lsq_filter_set_excessive" = "Edge";
 "lsq_filter_set_maskAlpha" = "Mask";
 "lsq_filter_set_degree" = "Degree";
+
+// Brush Definition
+"lsq_brush_Eraser" = "Eraser";
+"lsq_brush_Mosaic" = "Mosaic";
+"lsq_brush_OilPaint" = "OilPaint";
+"lsq_brush_Gouache" = "Gouache";
+"lsq_brush_WaterColor" = "WaterColor";
+"lsq_brush_ColorLead" = "ColorPen";
+"lsq_brush_MapleLeaf" = "Leaf";
+
+// Brush Size definition
+"lsq_brush_size_small" = "Small";
+"lsq_brush_size_medium" = "Medium";
+"lsq_brush_size_large" = "Large";
+"lsq_brush_size_label" = "Size:%@";
 
 // network
 "lsq_network_request_error" = "Network request error";

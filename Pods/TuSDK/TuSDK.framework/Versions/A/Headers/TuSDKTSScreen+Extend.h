@@ -38,6 +38,13 @@ extern CGFloat const lsq_TAB_BAR_HEIGHT;
 + (CGSize)size;
 
 /**
+ *  屏幕像素密度
+ *
+ *  @return 屏幕像素密度
+ */
++ (CGFloat)scale;
+
+/**
  *  屏幕宽高
  *
  *  @return 屏幕宽高 (像素单位)

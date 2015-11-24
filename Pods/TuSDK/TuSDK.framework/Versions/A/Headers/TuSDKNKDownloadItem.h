@@ -20,6 +20,10 @@ typedef NS_ENUM(NSInteger, lsqDownloadTaskType)
      * 贴纸
      */
     lsqDownloadTaskTypeSticker,
+    /**
+     * 笔刷
+     */
+    lsqDownloadTaskTypeBrush,
 };
 
 /**

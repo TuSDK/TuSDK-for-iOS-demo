@@ -35,35 +35,6 @@
 - (void)needUpdateLayout;
 @end
 
-#pragma mark - TuSDKPFEditMultipleNavBar
-/**
- *  顶部栏目
- */
-@interface TuSDKPFEditMultipleNavBar : UIView
-{
-    // 取消按钮
-    UIButton *_cancelButton;
-    // 完成按钮
-    UIButton *_doneButton;
-    // 标题
-    UILabel *_titleView;
-}
-/**
- *  前进按钮
- */
-@property (nonatomic, readonly) UIButton *cancelButton;
-
-/**
- *  前进按钮
- */
-@property (nonatomic, readonly) UIButton *doneButton;
-
-/**
- *  前进按钮
- */
-@property (nonatomic, readonly) UILabel *titleView;
-@end
-
 #pragma mark - TuSDKPFEditMultipleOptionBar
 /**
  *  选项栏目
@@ -112,8 +83,10 @@
 {
     // 操作步骤视图
     TuSDKPFEditEntryStepView *_stepView;
-    // 导航条
-    TuSDKPFEditMultipleNavBar *_navBar;
+    // 返回按钮
+    UIButton *_cancelButton;
+    // 完成按钮
+    UIButton *_doneButton;
     // 选项栏目
     TuSDKPFEditMultipleOptionBar *_optionBar;
     // 图片视图
@@ -124,10 +97,17 @@
  *  操作步骤视图
  */
 @property (nonatomic, readonly) TuSDKPFEditEntryStepView *stepView;
+
 /**
- *  导航条
+ *  返回按钮
  */
-@property (nonatomic, readonly) TuSDKPFEditMultipleNavBar *navBar;
+@property (nonatomic, readonly) UIButton *cancelButton;
+
+/**
+ *  完成按钮
+ */
+@property (nonatomic, readonly) UIButton *doneButton;
+
 /**
  *  选项栏目
  */
