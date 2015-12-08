@@ -34,9 +34,17 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
      */
     lsqTuSDKCPEditActionSkin,
     /**
+     * 涂抹动作
+     */
+    lsqTuSDKCPEditActionSmudge,
+    /**
      * 调整动作
      */
     lsqTuSDKCPEditActionAdjust,
+    /**
+     * 模糊涂抹
+     */
+    lsqTuSDKCPEditActionWipeFilter,
     /**
      * 锐化动作
      */
@@ -49,10 +57,6 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
      * 景深动作
      */
     lsqTuSDKCPEditActionAperture,
-    /**
-     * 涂抹动作
-     */
-    lsqTuSDKCPEditActionSmudge,
 };
 
 /**

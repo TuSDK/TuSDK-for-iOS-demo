@@ -21,7 +21,7 @@
 /**
  *  输入的相册图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
  */
-@property (nonatomic, retain) ALAsset *inputAsset;
+@property (nonatomic, retain) id<TuSDKTSAssetInterface> inputAsset;
 
 /**
  *  输入的图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)

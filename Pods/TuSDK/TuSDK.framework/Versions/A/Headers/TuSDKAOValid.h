@@ -98,6 +98,9 @@
 /** 涂抹功能是否开启 */
 - (BOOL)smudgeEnabled;
 
+/** 滤镜涂抹功能是否开启 */
+- (BOOL)wipeFilterEnabled;
+
 /**
  *  解密文本
  *

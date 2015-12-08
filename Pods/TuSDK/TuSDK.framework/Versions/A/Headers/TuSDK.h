@@ -48,6 +48,7 @@
 #import "TuSDKICMessageHubInterface.h"
 
 #import "TuSDKCPAlbumComponentBase.h"
+#import "TuSDKCPAlbumMultipleComponentBase.h"
 #import "TuSDKCPComponent.h"
 #import "TuSDKCPEditActionType.h"
 #import "TuSDKCPFilterOnlineControllerInterface.h"
@@ -84,6 +85,7 @@
 #import "TuSDKPFStickerLocalControllerBase.h"
 #import "TuSDKPFStickerOnlineControllerBase.h"
 #import "TuSDKPFEditSmudgeControllerBase.h"
+#import "TuSDKPFEditWipeAndFilterControllerBase.h"
 
 #import "TuSDKPFCameraFilterGroupViewBase.h"
 #import "TuSDKPFEditFilterGroupViewBase.h"
@@ -91,6 +93,7 @@
 #import "TuSDKPFStickerBarViewBase.h"
 #import "TuSDKPFStickerLocalGridViewBase.h"
 #import "TuSDKPFStickerView.h"
+#import "TuSDKPFSmudgeViewBase.h"
 #import "TuSDKPFBrushBarViewBase.h"
 
 #import "TuSDKTKThread.h"

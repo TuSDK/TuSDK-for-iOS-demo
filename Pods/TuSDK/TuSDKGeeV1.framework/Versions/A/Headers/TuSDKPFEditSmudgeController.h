@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKPFEditSmudgeView.h"
 
-#pragma mark - TuSDKPFEditCuterControllerDelegate
+#pragma mark - TuSDKPFEditSmudgeControllerDelegate
 @class TuSDKPFEditSmudgeController;
 /**
- *  笔刷编辑控制器委托
+ *  涂抹编辑控制器委托
  */
 @protocol TuSDKPFEditSmudgeControllerDelegate <TuSDKCPComponentErrorDelegate>
 /**
@@ -36,7 +36,7 @@
 
 #pragma mark - TuSDKPFEditSmudgeController
 /**
- *  笔刷编辑控制器
+ *  涂抹编辑控制器
  */
 @interface TuSDKPFEditSmudgeController : TuSDKPFEditSmudgeControllerBase<TuSDKPFBrushBarViewDelegate>
 {
@@ -50,7 +50,7 @@
 @property (nonatomic, readonly) TuSDKPFEditSmudgeView *defaultStyleView;
 
 /**
- *  笔刷编辑控制器委托
+ *  涂抹编辑控制器委托
  */
 @property (nonatomic, assign) id<TuSDKPFEditSmudgeControllerDelegate> delegate;
 

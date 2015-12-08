@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKPFBrushBarView.h"
+#import "TuSDKPFEditSmudgeBottomBar.h"
 #import "TuSDKGeeV1Import.h"
 
 #pragma mark - TuSDKPFEditSmudgeView
 /**
  *  图片编辑笔刷选择控制器视图
  */
-@interface TuSDKPFEditSmudgeView : UIView
+@interface TuSDKPFEditSmudgeView : TuSDKPFSmudgeViewBase
 
 /**
  *  涂抹视图

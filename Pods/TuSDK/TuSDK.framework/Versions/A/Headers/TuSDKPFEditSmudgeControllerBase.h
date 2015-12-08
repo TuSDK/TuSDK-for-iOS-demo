@@ -13,7 +13,7 @@
 
 #pragma mark - TuSDKPFEditBrushControllerBase
 /**
- *  笔刷控制器基础类
+ *  涂抹编辑控制器基础类
  */
 @interface TuSDKPFEditSmudgeControllerBase : TuSDKCPImageResultController <TuSDKICSmudgeImageViewDelegate>
 
@@ -68,5 +68,20 @@
  *  @param redoCount 可以重做的次数
  */
 - (void)onRefreshStepStatesWithHistories:(NSUInteger)undoCount redoCount:(NSUInteger)redoCount;
+
+/**
+ *  涂抹动作改变
+ *
+ *  @param point  偏向上的涂抹位置
+ *  @param viewPoint  视图上的涂抹位置
+ *  @param width  画布宽度
+ *  @param height 画布高度
+ */
+- (void)onSmudgeActionChanged:(CGPoint)point viewLocation:(CGPoint)viewPoint canvasWidth:(CGFloat)width canvasHeight:(CGFloat)height;
+
+/**
+ *  涂抹动作结束
+ */
+- (void)onSmudgeActionEnd;
 
 @end

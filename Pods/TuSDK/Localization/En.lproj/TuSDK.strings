@@ -88,6 +88,7 @@
 "lsq_edit_entry_cuter" = "Crop";
 "lsq_edit_entry_sticker" = "Stickers";
 "lsq_edit_entry_smudge" = "Smudge";
+"lsq_edit_entry_smudge_filter" = "Blur";
 "lsq_edit_cuter_ratio_orgin" = "Original";
 "lsq_edit_cuter_ratio_1_1" = "1:1";
 "lsq_edit_cuter_ratio_2_3" = "2:3";
@@ -110,7 +111,7 @@
 "lsq_sticker_total_format%ld" = "%ld stickers";
 "lsq_sticker_empty" = "No stickers yet";
 "lsq_sticker_empty_msg" = "Go get some in the Stickers Shop";
-"lsq_sticker_1_1" = "Arms";
+"lsq_sticker_1_1" = "Monsters 4";
 "lsq_sticker_remove_title" = "Remove Sticker";
 "lsq_sticker_remove_msg%@" = "Are you sure to remove the sticker %@?";
 "lsq_sticker_cate_all" = "All";

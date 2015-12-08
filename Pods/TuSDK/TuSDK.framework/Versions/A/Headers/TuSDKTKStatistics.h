@@ -45,6 +45,16 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_albumListFragment = 0x201000,
     
     /**
+     * 系统相册(带相机)组件
+     */
+    tkc_albumMultipleComponent = 0x200001,
+    
+    /**
+     * 系统相册(带相机)控制器
+     */
+    tkc_albumMultipleListFragment = 0x201001,
+    
+    /**
      * 相册照片列表控制器
      */
     tkc_photoListFragment = 0x202000,
@@ -170,9 +180,14 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editFilterOnlineFragment = 0x409400,
     
     /**
-     * 笔刷控制器
+     * 涂抹控制器
      */
-    tkc_editBrushFragment = 0x409500,
+    tkc_editSmudgeFragment = 0x409500,
+    
+    /**
+     * 滤镜涂抹控制器
+     */
+    tkc_editWipeAndFilterFragment = 0x409600,
     
     /**
      * 相机控制器

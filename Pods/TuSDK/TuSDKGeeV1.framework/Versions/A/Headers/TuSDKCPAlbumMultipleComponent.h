@@ -27,7 +27,7 @@
 /**
  *  多功能相册组件
  */
-@interface TuSDKCPAlbumMultipleComponent : TuSDKCPAlbumComponentBase<TuSDKPFAlbumMultipleDelegate, TuSDKPFCameraDelegate>
+@interface TuSDKCPAlbumMultipleComponent : TuSDKCPAlbumMultipleComponentBase<TuSDKPFAlbumMultipleDelegate, TuSDKPFCameraDelegate>
 /**
  *  自定义系统相册组件配置选项
  */

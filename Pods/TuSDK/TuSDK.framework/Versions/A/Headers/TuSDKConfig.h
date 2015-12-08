@@ -58,6 +58,11 @@
  *  smudge
  */
 @property (nonatomic) BOOL smudgeEnabled;
+
+/**
+ *  smudge and filter
+ */
+@property (nonatomic) BOOL wipeFilterEnabled;
 @end
 
 #pragma mark - TuSDKConfig

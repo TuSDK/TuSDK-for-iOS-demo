@@ -35,6 +35,12 @@ typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIVie
 @property (nonatomic, strong) TuSDKCPComponentBlock callbackBlock;
 
 /**
+ *  当上一个页面是NavigationController时,是否通过 pushViewController 方式打开编辑器视图 (默认：NO，默认以 presentViewController 方式打开）
+ *  SDK 内部组件采用了一致的界面设计，会通过 push 方式打开视图。如果用户开启了该选项，在调用时可能会遇到布局不兼容问题，请谨慎处理。
+ */
+@property (nonatomic) BOOL autoPushViewController;
+
+/**
  *  是否在组件执行完成后自动关闭组件 (默认:NO)
  */
 @property (nonatomic) BOOL autoDismissWhenCompelted;
@@ -79,7 +85,7 @@ typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIVie
 /**
  *  输入的相册图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
  */
-@property (nonatomic, retain) ALAsset *inputAsset;
+@property (nonatomic, retain) id<TuSDKTSAssetInterface> inputAsset;
 
 /**
  *  输入的图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)

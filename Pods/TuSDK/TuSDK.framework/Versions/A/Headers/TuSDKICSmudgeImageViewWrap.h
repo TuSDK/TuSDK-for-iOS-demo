@@ -13,20 +13,6 @@
 #import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKPFSmudgeProcessor.h"
 
-#ifndef SmudgeView_Define
-#define SmudgeView_Define
-
-#define lsq_PIXEL_PER_POINT     [UIScreen scale]
-
-#define lsq_BYTES_PER_PIXEL     4
-#define lsq_BITS_PER_COMPONENT 8
-
-#define lsq_TILE_SIZE 10
-
-#define lsq_rgbaDataIndex(width, x, y)    ((width) * (y) + (x)) * lsq_BYTES_PER_PIXEL
-
-#endif
-
 #pragma mark - TuSDKICSmudgeImageViewDelegate
 
 @protocol TuSDKICSmudgeImageViewDelegate <NSObject>
@@ -39,7 +25,23 @@
  */
 - (void)onRefreshStepStatesWithHistories:(NSUInteger)undoCount redoCount:(NSUInteger)redoCount;
 
+@optional
+
+/**
+ *  涂抹动作改变
+ *
+ *  @param point  偏向上的涂抹位置
+ *  @param viewPoint  视图上的涂抹位置
+ *  @param width  画布宽度
+ *  @param height 画布高度
+ */
+- (void)onSmudgeActionChanged:(CGPoint)point viewLocation:(CGPoint)viewPoint canvasWidth:(CGFloat)width canvasHeight:(CGFloat)height;
+/**
+ *  涂抹动作结束
+ */
+- (void)onSmudgeActionEnd;
 @end
+
 
 #pragma mark - TuSDKICSmudgeImageViewInterface
 /**
@@ -95,11 +97,25 @@
 - (void)needUpdateLayout;
 
 /**
- *  获取最终效果图
+ *  合成最终效果图
  *
  *  @param source 原图
  */
 - (UIImage*)getCanvasImage:(UIImage *)source;
+
+/**
+ *  获取绘制图
+ *
+ *  @return 效果图
+ */
+- (UIImage *)getSmudgeImage;
+
+/**
+ *  获取原始图
+ *
+ *  @return 原始图
+ */
+- (UIImage *)getOriginalImage;
 
 /**
  *  清理内存
@@ -123,6 +139,10 @@
     
     //  默认撤销的最大次数 (默认: 5)
     NSUInteger _mMaxUndoCount;
+    
+    @protected
+    // 涂抹处理器
+    TuSDKPFSimpleProcessor *_smudgeProcessor;
 }
 
 /**
@@ -134,6 +154,7 @@
  *  显示的图片
  */
 - (void)setImage:(UIImage *)image;
+
 
 /**
  *  笔刷对象
@@ -173,11 +194,25 @@
 - (void)needUpdateLayout;
 
 /**
- *  获取最终效果图
+ *  合成最终效果图
  *
  *  @param source 原图
  */
-- (UIImage*)getCanvasImage:(UIImage *)source;
+- (UIImage *)getCanvasImage:(UIImage *)source;
+
+/**
+ *  获取绘制图
+ *
+ *  @return 效果图
+ */
+- (UIImage *)getSmudgeImage;
+
+/**
+ *  获取原始图
+ *
+ *  @return 原始图
+ */
+- (UIImage *)getOriginalImage;
 
 /**
  *  清理内存

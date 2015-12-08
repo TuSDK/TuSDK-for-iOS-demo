@@ -10,55 +10,6 @@
 #import "TuSDKGeeV1Import.h"
 #import "TuSDKPFBrushTableItemCell.h"
 
-#pragma mark - TuSDKPFEditSmudgeBottomBar
-/**
- *  底部动作栏
- */
-@interface TuSDKPFEditSmudgeBottomBar : UIView
-{
-    // 取消按钮
-    UIButton *_cancelButton;
-    // 完成按钮
-    UIButton *_completeButton;
-    // 撤销按钮
-    UIButton *_undoButton;
-    // 重做按钮
-    UIButton *_redoButton;
-    // 查看原图按钮
-    UIButton *_originalButton;
-}
-
-/**
- *  取消按钮
- */
-@property (nonatomic, readonly) UIButton *cancelButton;
-
-/**
- *  完成按钮
- */
-@property (nonatomic, readonly) UIButton *completeButton;
-
-/**
- *  撤销按钮
- */
-@property (nonatomic, readonly) UIButton *undoButton;
-
-/**
- *  重做按钮
- */
-@property (nonatomic, readonly) UIButton *redoButton;
-
-/**
- *  查看原图按钮
- */
-@property (nonatomic, readonly) UIButton *originalButton;
-
-/**
- *  更新布局
- */
-- (void)needUpdateLayout;
-@end
-
 #pragma mark - TuSDKPFBrushTableView
 /**
  *  笔刷列表视图
@@ -96,8 +47,7 @@
 
 @end
 
-#pragma mark - TuSDKPFBrushBarView
-
+#pragma mark - TuSDKPFBrushBarViewDelegate
 
 @class TuSDKPFBrushBarView;
 /**
@@ -118,14 +68,13 @@
 - (void)onBrushSizeButtonClick;
 @end
 
+#pragma mark - TuSDKPFBrushBarView
 
 @interface TuSDKPFBrushBarView : TuSDKPFBrushBarViewBase<TuSDKPFBrushTableViewDelegate>
 {
     @protected
     // 参数配置视图
     UIView *_configView;
-    // 空数据标题
-    UIButton *_emptyTitle;
     // 笔刷列表视图
     TuSDKPFBrushTableView *_tableView;
 }
