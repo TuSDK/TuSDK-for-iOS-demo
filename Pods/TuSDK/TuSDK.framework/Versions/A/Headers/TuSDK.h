@@ -74,6 +74,7 @@
 #import "TuSDKPFEditCuterControllerBase.h"
 #import "TuSDKPFEditEntryControllerBase.h"
 #import "TuSDKPFEditFilterControllerBase.h"
+#import "TuSDKPFEditHolyLightControllerBase.h"
 #import "TuSDKPFEditMultipleControllerBase.h"
 #import "TuSDKPFEditSharpnessControllerBase.h"
 #import "TuSDKPFEditSkinControllerBase.h"

@@ -10,6 +10,7 @@
 "lsq_cancel" = "Cancel";
 "lsq_setting" = "Settings";
 "lsq_loading_image" = "Loading image...";
+"lsq_downloading_image" = "Downloading image from iCloud...";
 "lsq_initing" = "Initializing";
 "lsq_inited" = "Initialized";
 
@@ -97,6 +98,7 @@
 "lsq_edit_title" = "Edit";
 "lsq_edit_multiple_title" = "Edit";
 "lsq_edit_skin_title" = "Beautify";
+"lsq_edit_holy_light" = "Holy Light";
 
 // sticker
 "lsq_sticker_cate_default" = "Stickers";

@@ -27,6 +27,15 @@
 @property (nonatomic) lsqRatioType ratioType;
 
 /**
+ *  视图显示比例类型列表 ( 优先级 ratioTypeList > ratioType, 默认：lsqTuSDKRatioTypes)
+ *
+ *  设置 NSNumber 型数组来控制显示的按钮顺序， 例如:
+ *	@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)]
+ *
+ */
+@property (nonatomic) NSArray<NSNumber *> *ratioTypeList;
+
+/**
  *  是否仅返回裁切参数，不返回处理图片
  */
 @property (nonatomic) BOOL onlyReturnCuter;
@@ -53,6 +62,11 @@
  *  当前裁剪比例
  */
 @property (nonatomic) CGFloat currentRatio;
+
+/**
+ *  获取当前可用比例列表
+ */
+- (NSArray<NSNumber *> *)getRatioTypes;
 
 /**
  *  编辑图片完成按钮动作

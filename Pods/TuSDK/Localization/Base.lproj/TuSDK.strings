@@ -10,6 +10,7 @@
 "lsq_cancel" = "取消";
 "lsq_setting" = "设置";
 "lsq_loading_image" = "读取图片...";
+"lsq_downloading_image" = "正从iCloud下载图片...";
 "lsq_initing" = "正在初始化";
 "lsq_inited" = "初始化完成";
 
@@ -97,6 +98,7 @@
 "lsq_edit_title" = "编辑";
 "lsq_edit_multiple_title" = "美化图片";
 "lsq_edit_skin_title" = "美颜";
+"lsq_edit_holy_light" = "圣光";
 
 // sticker
 "lsq_sticker_cate_default" = "贴纸";

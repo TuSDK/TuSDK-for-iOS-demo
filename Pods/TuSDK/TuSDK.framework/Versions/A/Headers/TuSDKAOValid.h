@@ -101,6 +101,9 @@
 /** 滤镜涂抹功能是否开启 */
 - (BOOL)wipeFilterEnabled;
 
+/** 美颜级别 */
+- (NSUInteger)beautyLevel;
+
 /**
  *  解密文本
  *

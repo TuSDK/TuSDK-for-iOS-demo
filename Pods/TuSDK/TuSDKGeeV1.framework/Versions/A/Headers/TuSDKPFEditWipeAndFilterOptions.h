@@ -20,9 +20,19 @@
 @property (nonatomic, assign) lsqBrushSize defaultBrushSize;
 
 /**
- *  默认撤销的最大次数 (默认: 5)
+ *  撤销的最大次数 (默认: 5)
  */
 @property (nonatomic, assign) NSUInteger maxUndoCount;
+
+/**
+ *  显示放大镜 (默认: true) 
+ */
+@property (nonatomic, assign) BOOL displayMagnifier;
+
+/**
+ *  笔刷效果强度 (默认: 0.2, 范围为0 ~ 1，值为1时强度最高)
+ */
+@property (nonatomic, assign) CGFloat brushStrength;
 
 /**
  *  创建滤镜涂抹控制器对象

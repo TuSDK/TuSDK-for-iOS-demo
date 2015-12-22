@@ -96,7 +96,7 @@
     //    _photoEditComponent.options.editEntryOptions.enableFilter = YES;
     //    // 默认: true, 开启贴纸功能
     //    _photoEditComponent.options.editEntryOptions.enableSticker = YES;
-    //    // 最大输出图片按照设备屏幕 (默认:false, 如果设置了LimitSideSize, 将忽略LimitForScreen)
+    //    // 最大输出图片按照设备屏幕 (默认:true, 如果设置了LimitSideSize, 将忽略LimitForScreen)
     //    _photoEditComponent.options.editEntryOptions.limitForScreen = YES;
     //    // 保存到系统相册
     //    _photoEditComponent.options.editEntryOptions.saveToAlbum = YES;
@@ -130,6 +130,8 @@
     //    _photoEditComponent.options.editCuterOptions.enableMirror = YES;
     //    // 裁剪比例 (默认:lsqRatioAll)
     //    _photoEditComponent.options.editCuterOptions.ratioType = lsqRatioAll;
+    //    // 裁剪比例排序 (例如：@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)])
+    //    _photoEditComponent.options.editCuterOptions.ratioTypeList = @[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3)];
     //    // 是否仅返回裁切参数，不返回处理图片
     //    _photoEditComponent.options.editCuterOptions.onlyReturnCuter = YES;
     //    // 本地贴纸选择控制器配置选项

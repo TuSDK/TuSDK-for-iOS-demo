@@ -7,6 +7,12 @@
 */
 
 "app_name" = "涂图 TuSDK";
+"back" = "返回";
+
+// nav button
+"component_camera" = "特效相机";
+"component_editor" = "照片美化";
+"component_list" = "开发套件";
 
 // simple group
 "simple_group_adv_comp" = "高级组件";

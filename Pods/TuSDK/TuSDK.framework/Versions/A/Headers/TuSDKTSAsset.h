@@ -11,6 +11,16 @@
 @import Photos;
 
 #pragma mark - TuSDKTSAssetInterface
+
+/**
+ *  远程图片下载进度回调
+ *
+ *  @param image    UIImage
+ *  @param progress double
+ *  @param error    NSError
+ */
+typedef void (^TuSDKTSAssetProgressBlock)(UIImage *image, double progress, NSError *error);
+
 /**
  *  媒体资源对象接口
  */
@@ -55,6 +65,19 @@
  *  获取图片原信息
  */
 @property (nonatomic, readonly) NSDictionary *metadata;
+
+/**
+ *  异步获取原始图片对象
+ *
+ *  @param block 回调
+ *
+ */
+- (void)asyncFullResolutionImage:(TuSDKTSAssetProgressBlock)block;
+
+/**
+ *  取消加载相册图片
+ */
+- (void)cancelLoadFullResolutionImage;
 
 /**
  *  加载相册图片

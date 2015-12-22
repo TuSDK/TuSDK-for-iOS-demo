@@ -119,6 +119,15 @@
 - (NSArray *)loadTexturesWithCode:(NSString *)code;
 
 /**
+ *  加载材质列表
+ *
+ *  @param codes 滤镜代号列表
+ *
+ *  @return 材质列表
+ */
+- (NSArray *)loadInternalTextures:(NSArray *)codes;
+
+/**
  *  通过选项配置初始化滤镜
  *
  *  @param option 滤镜选项配置

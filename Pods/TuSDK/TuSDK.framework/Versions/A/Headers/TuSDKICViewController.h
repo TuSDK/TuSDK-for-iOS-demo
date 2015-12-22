@@ -123,6 +123,16 @@
 - (void)showHubWithStatus:(NSString *)status;
 
 /**
+ * 显示进度信息
+ *
+ * @param progress
+ *            进度, 0 ~ 1
+ * @param status
+ *            信息
+ */
+-(void)showHubProgress:(float)progress withStatus:(NSString *)status;
+
+/**
  *  显示进度提示成功信息
  *
  *  @param status 信息

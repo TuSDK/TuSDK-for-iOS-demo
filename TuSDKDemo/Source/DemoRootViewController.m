@@ -7,83 +7,60 @@
 //
 
 #import "DemoRootViewController.h"
-#import "DemoRootView.h"
 
 //Simples
-#import "SimpleAlbumComponent.h"
-#import "SimpleAlbumMultipleComponent.h"
 #import "SimpleCameraComponent.h"
-#import "SimpleEditAdvancedComponent.h"
-#import "SimpleEditAndCutComponent.h"
-#import "SimpleEditAvatarComponent.h"
 #import "SimpleEditMultipleComponent.h"
-
-#import "ExtendEditAndCutComponent.h"
-#import "ExtendCameraBaseComponent.h"
-
-#import "DefineCameraBaseComponent.h"
+#import "DemoComponentListController.h"
 
 #pragma mark - DemoRootViewController
-@interface DemoRootViewController ()<DemoRootViewDelegate, TuSDKFilterManagerDelegate>
-/**
- *  覆盖控制器视图
- */
-@property (nonatomic, retain) DemoRootView *view;
+@interface DemoRootViewController ()<TuSDKFilterManagerDelegate>
+{
+    // 顶部Logo
+    UIButton *mTopLogo;
+    
+    // 相机组件按钮
+    UIButton *mCameraButton;
+    // 编辑器组件按钮
+    UIButton *mEditorButton;
+    // 组件列表按钮
+    UIButton *mComponentListButton;
+    
+    // 相机组件
+    SimpleCameraComponent *simpleCameraComponent;
+    
+    // 多功能编辑组件
+    SimpleEditMultipleComponent *simpleEditMultipleComponent;
+    
+}
 @end
 
 @implementation DemoRootViewController
-@dynamic view;
 
 - (void)loadView;
 {
     [super loadView];
+    
+    // 设置全屏 隐藏状态栏 for IOS6
+    self.wantsFullScreenLayout = YES;
+    [self setNavigationBarHidden:YES animated:NO];
+    [self setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+}
 
-    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, [UIScreen midViewAutoHeight])];
-    self.view.backgroundColor = lsqRGB(255, 255, 255);
-    self.view.delegate = self;
+// 隐藏状态栏 for IOS7
+- (BOOL)prefersStatusBarHidden;
+{
+    return YES;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self initView];
     // 启动GPS
     [[TuSDKTKLocation shared] requireAuthorWithController:self];
-    
-    // sdk统计代码，请不要加入您的应用
-    [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
-    
-    self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqSDKVersion ];
-    
-    /**
-     * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-     * 您可以通过查看 [group appenWithSimple:] 的具体类
-     * - (void)showSimpleWithController:(UIViewController *)controller; 
-     * 方法，学习使用范例。
-     */
-    // 范例分组
-    DemoSimpleGroup *group = [DemoSimpleGroup group];
-    // 相册组件范例
-    [group appenWithSimple:[SimpleAlbumComponent simple]];
-    // 多功能相册组件范例
-    [group appenWithSimple:[SimpleAlbumMultipleComponent simple]];
-    // 相机组件范例
-    [group appenWithSimple:[SimpleCameraComponent simple]];
-    // 图片编辑组件 (裁剪)范例
-    [group appenWithSimple:[SimpleEditAndCutComponent simple]];
-    // 头像设置组件(编辑)范例
-    [group appenWithSimple:[SimpleEditAvatarComponent simple]];
-    // 高级图片编辑组件范例
-    [group appenWithSimple:[SimpleEditAdvancedComponent simple]];
-    // 多功能图片编辑组件范例
-    [group appenWithSimple:[SimpleEditMultipleComponent simple]];
-    // 图片编辑组件范例 (对现有组件进行扩展 - 修改界面)
-    [group appenWithSimple:[ExtendEditAndCutComponent simple]];
-    // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)
-    [group appenWithSimple:[ExtendCameraBaseComponent simple]];
-    // 基础相机自定义 - 底层API
-    [group appenWithSimple:[DefineCameraBaseComponent simple]];
-    
-    // 设置范例分组数据
-    self.view.group = group;
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
@@ -104,12 +81,87 @@
     // 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
     // 需要等待滤镜管理器初始化完成，才能使用所有功能
     [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
+    
     [TuSDK checkManagerWithDelegate:self];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)initView
 {
-    [super viewWillAppear:animated];
+    CGFloat navButtonHeight = 64;
+    
+    CGRect rect = self.view.bounds;
+    
+    mTopLogo = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height - navButtonHeight * 3)];
+    mTopLogo.enabled = NO;
+    mTopLogo.adjustsImageWhenDisabled = NO;
+    mTopLogo.contentMode = UIViewContentModeCenter;
+    [mTopLogo setBackgroundImage:[UIImage imageNamed:@"top_background.jpg"] forState:UIControlStateNormal];
+    [mTopLogo setImage:[UIImage imageNamed:@"top_logo"] forState:UIControlStateNormal];
+    [self.view addSubview:mTopLogo];
+    
+    // 导航按钮
+    mCameraButton = [self buildEntryButton:@"component_camera"
+                                      icon:@"icon_camera"
+                                     frame:CGRectMake(0, [mTopLogo getBottomY], rect.size.width, navButtonHeight)];
+    
+    [mCameraButton setBackgroundImageColor:lsqRGB(255, 85, 52) forState:UIControlStateNormal];
+    [mCameraButton setBackgroundImageColor:lsqRGBA(255, 85, 52, 0.8) forState:UIControlStateHighlighted];
+    [self.view addSubview:mCameraButton];
+    
+    mEditorButton = [self buildEntryButton:@"component_editor"
+                                      icon:@"icon_editor"
+                                     frame:CGRectMake(0, [mCameraButton getBottomY], rect.size.width, navButtonHeight)];
+    
+    [mEditorButton setBackgroundImageColor:lsqRGB(230, 76, 46) forState:UIControlStateNormal];
+    [mEditorButton setBackgroundImageColor:lsqRGBA(230, 76, 46, 0.8) forState:UIControlStateHighlighted];
+    [self.view addSubview:mEditorButton];
+    
+    mComponentListButton = [self buildEntryButton:@"component_list"
+                                             icon:@"icon_component_list"
+                                            frame:CGRectMake(0, [mEditorButton getBottomY], rect.size.width, navButtonHeight)];
+    [mComponentListButton setBackgroundImageColor:lsqRGB(204, 68, 41) forState:UIControlStateNormal];
+    [mComponentListButton setBackgroundImageColor:lsqRGBA(204, 68, 41, 0.8) forState:UIControlStateHighlighted];
+    [self.view addSubview:mComponentListButton];
+}
+
+- (UIButton *)buildEntryButton:(NSString *)localeKey icon:(NSString *)iconName frame:(CGRect)frame
+{
+    UIButton *btn = [[UIButton alloc] initWithFrame:frame];
+    [btn setImage:[UIImage imageNamed:iconName] forState:UIControlStateNormal];
+    [btn setTitle:NSLocalizedString(localeKey, @"") forState:UIControlStateNormal];
+    [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, 16, 0, 0)];
+    [btn setAdjustsImageWhenHighlighted:NO];
+    [btn setBackgroundColor:[UIColor blackColor]];
+    [btn addTouchUpInsideTarget:self action:@selector(onEntryButtonClicked:)];
+    return btn;
+}
+
+#pragma mark - click handler
+- (void)onEntryButtonClicked:(UIButton *)btn
+{
+    if (btn == mCameraButton)
+    {
+        if (simpleCameraComponent == nil)
+        {
+            simpleCameraComponent = [SimpleCameraComponent simple];
+        }
+        [simpleCameraComponent showSimpleWithController:self];
+    }
+    else if(btn == mEditorButton)
+    {
+        if (simpleEditMultipleComponent == nil)
+        {
+            simpleEditMultipleComponent = [SimpleEditMultipleComponent simple];
+        }
+                                     
+        [simpleEditMultipleComponent showSimpleWithController:self];
+    }
+    else if(btn == mComponentListButton)
+    {
+        DemoComponentListController *controller = [[DemoComponentListController alloc] init];
+        
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 #pragma mark - TuSDKFilterManagerDelegate
@@ -122,26 +174,5 @@
 - (void)onTuSDKFilterManagerInited:(TuSDKFilterManager *)manager;
 {
     [self showHubSuccessWithStatus:LSQString(@"lsq_inited", @"初始化完成")];
-}
-#pragma mark - DemoRootViewDelegate
-/**
- *  选中范例
- *
- *  @param view   入口控制器视图
- *  @param simple 范例
- *  @param action 范例列表行点击动作
- */
-- (void)demoRootView:(DemoRootView *)view
-      selectedSimple:(DemoSimpleBase *)simple
-          withAction:(demoListItemAction)action;
-{
-    if (!simple) return;
-    switch (action) {
-        case demoListItemActionSelected:
-            [simple showSimpleWithController:self];
-            break;
-        default:
-            break;
-    }
 }
 @end

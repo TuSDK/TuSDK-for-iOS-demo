@@ -63,6 +63,17 @@
  *  smudge and filter
  */
 @property (nonatomic) BOOL wipeFilterEnabled;
+
+/**
+ *  beauty Level
+ */
+@property (nonatomic) NSInteger beautyLevel;
+
+/**
+ *  userType
+ */
+@property (nonatomic) NSInteger userType;
+
 @end
 
 #pragma mark - TuSDKConfig

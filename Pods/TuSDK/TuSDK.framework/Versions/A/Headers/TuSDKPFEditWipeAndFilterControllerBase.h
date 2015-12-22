@@ -22,6 +22,16 @@
 @property (nonatomic, readonly) UIView<TuSDKICSmudgeImageViewInterface> *smudgeView;
 
 /**
+ *  显示放大镜 (默认: true)
+ */
+@property (nonatomic, assign) BOOL displayMagnifier;
+
+/**
+ *  笔刷效果强度 (默认: 0.2, 范围为0 ~ 1，值为1时强度最高)
+ */
+@property (nonatomic, assign) CGFloat brushStrength;
+
+/**
  *  放大区域预览图
  */
 @property (nonatomic, readonly) UIImageView *zoomInPreviewImage;
@@ -55,9 +65,6 @@
  *  放开显示原图按钮
  */
 - (void)onOriginalActionEnd;
-
-// 设置显示的图片
-- (void)setDisplayImage:(UIImage *)image;
 
 /**
  *  刷新撤销 / 重做 数据

@@ -20,6 +20,7 @@
 #import "TuSDKPFEditVignetteController.h"
 #import "TuSDKPFEditSmudgeController.h"
 #import "TuSDKPFEditWipeAndFilterOptions.h"
+#import "TuSDKPFEditHolyLightController.h"
 
 #pragma mark - TuSDKCPPhotoEditMultipleOptions
 /**
@@ -80,6 +81,11 @@
  *  滤镜涂抹控制器功能控制器配置选项
  */
 @property (nonatomic, readonly) TuSDKPFEditWipeAndFilterOptions *editWipeAndFilterOptions;
+
+/**
+ *  圣光控制器功能控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditHolyLightOptions *editHolyLightOptions;
 @end
 
 

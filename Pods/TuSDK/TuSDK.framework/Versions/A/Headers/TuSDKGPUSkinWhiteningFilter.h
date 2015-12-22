@@ -12,6 +12,6 @@
 /**
  *  基础美白滤镜
  */
-@interface TuSDKGPUSkinWhiteningFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol>
+@interface TuSDKGPUSkinWhiteningFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
 
 @end

@@ -20,9 +20,13 @@
 @property (nonatomic, readonly) NSArray *buttons;
 
 /**
- *  视图显示比例类型 (默认:lsqRatioAll)
+ *  视图显示比例类型列表 (默认：lsqTuSDKRatioTypes)
+ *
+ *  设置 NSNumber 型数组来控制显示的按钮顺序， 例如:
+ *	@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)]
+ *
  */
-@property (nonatomic) lsqRatioType ratioType;
+@property (nonatomic) NSArray<NSNumber *> *ratioTypeList;
 
 /**
  *  当前视图显示比例类型

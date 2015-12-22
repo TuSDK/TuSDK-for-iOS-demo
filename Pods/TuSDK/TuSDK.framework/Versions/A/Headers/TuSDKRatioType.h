@@ -69,6 +69,14 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 + (lsqRatioType)radioType:(float)ratio;
 
 /**
+ * 检测列表中的比例数据是否合法
+ *
+ * @param types
+ * @return
+ */
++ (NSArray<NSNumber *> *)validRatioTypes:(NSArray<NSNumber *> *)types;
+
+/**
  * 获取第一个比例类型
  *
  * @param ratioType

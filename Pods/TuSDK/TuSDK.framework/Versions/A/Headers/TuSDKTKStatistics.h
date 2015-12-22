@@ -190,6 +190,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editWipeAndFilterFragment = 0x409600,
     
     /**
+     * 圣光控制器
+     */
+    tkc_editHolyLightFragment = 0x409700,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,

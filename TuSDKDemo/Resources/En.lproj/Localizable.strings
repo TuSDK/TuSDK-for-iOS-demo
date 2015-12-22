@@ -7,6 +7,12 @@
  */
 
 "app_name" = "TuSDK";
+"back" = "Back";
+
+// nav button
+"component_camera" = "Effect Camera";
+"component_editor" = "Photo Editor";
+"component_list" = "Component Kit";
 
 // simple group
 "simple_group_adv_comp" = "Advanced Components";

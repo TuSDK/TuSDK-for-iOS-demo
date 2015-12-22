@@ -21,6 +21,16 @@
 -(void)setStatus:(NSString *)status;
 
 /**
+ * 显示进度信息
+ *
+ * @param progress
+ *            进度
+ * @param status
+ *            信息
+ */
+-(void)showProgress:(float)progress status:(NSString *)status;
+
+/**
  * 显示成功信息 并自动关闭
  *
  * @param status

@@ -111,6 +111,11 @@
 @property (nonatomic) BOOL isInternal;
 
 /**
+ *  内置滤镜材质列表
+ */
+@property (nonatomic, retain) NSArray *internalTextures;
+
+/**
  * 复制滤镜配置选项
  *
  * @return
