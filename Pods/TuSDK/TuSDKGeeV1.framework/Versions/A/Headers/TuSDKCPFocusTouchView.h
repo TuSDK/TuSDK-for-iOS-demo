@@ -48,4 +48,7 @@
  *  @param point 聚焦点
  */
 - (void)notifyRangeViewWithPoint:(CGPoint)point;
+
+/** 创建脸部定位视图 */
+- (UIView *)buildFaceDetectionView;
 @end

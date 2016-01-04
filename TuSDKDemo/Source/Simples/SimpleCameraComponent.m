@@ -162,6 +162,9 @@
     // 是否显示辅助线 (默认: false)
     opt.displayGuideLine = false;
     
+    // 是否开启脸部追踪
+    opt.enableFaceDetection = YES;
+    
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
     controller.delegate = self;

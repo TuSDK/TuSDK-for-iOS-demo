@@ -53,6 +53,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  开启无效果滤镜 (默认: 开启)
+ */
+@property (nonatomic) BOOL enableNormalFilter;
+
+/**
  *  开启在线滤镜
  */
 @property (nonatomic) BOOL enableOnlineFilter;

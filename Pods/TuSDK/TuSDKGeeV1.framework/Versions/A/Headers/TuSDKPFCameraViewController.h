@@ -110,6 +110,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  开启无效果滤镜 (默认: 开启)
+ */
+@property (nonatomic) BOOL enableNormalFilter;
+
+/**
  *  开启在线滤镜
  */
 @property (nonatomic) BOOL enableOnlineFilter;
@@ -218,6 +223,11 @@
  *  最后选中的滤镜代号
  */
 @property (nonatomic) NSString *lastFilterCode;
+
+/**
+ *  是否开启脸部追踪
+ */
+@property (nonatomic) BOOL enableFaceDetection;
 
 /**
  *  创建滤镜栏视图

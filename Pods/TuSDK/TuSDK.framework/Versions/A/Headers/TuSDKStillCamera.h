@@ -90,6 +90,11 @@
 @property (nonatomic) BOOL disableMirrorFrontFacing;
 
 /**
+ *  是否开启脸部追踪
+ */
+@property (nonatomic) BOOL enableFaceDetection;
+
+/**
  *  初始化相机
  *
  *  @param sessionPreset  相机分辨率类型

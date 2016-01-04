@@ -75,6 +75,11 @@
 @property (nonatomic) BOOL enableFilterHistory;
 
 /**
+ *  开启无效果滤镜 (默认: 开启)
+ */
+@property (nonatomic) BOOL enableNormalFilter;
+
+/**
  *  开启在线滤镜
  */
 @property (nonatomic) BOOL enableOnlineFilter;
@@ -183,6 +188,11 @@
  *  是否显示辅助线 (默认: false)
  */
 @property (nonatomic) BOOL displayGuideLine;
+
+/**
+ *  是否开启脸部追踪
+ */
+@property (nonatomic) BOOL enableFaceDetection;
 
 /**
  *  创建系统相机控制器对象

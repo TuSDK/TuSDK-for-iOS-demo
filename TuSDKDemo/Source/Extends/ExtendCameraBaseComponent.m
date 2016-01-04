@@ -171,6 +171,9 @@
     // 禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
     // opt.disableMirrorFrontFacing = YES;
     
+    // 是否开启脸部追踪
+    opt.enableFaceDetection = YES;
+    
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
     controller.delegate = self;

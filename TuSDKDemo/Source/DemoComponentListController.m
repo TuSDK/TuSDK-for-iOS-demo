@@ -29,6 +29,11 @@
  *  覆盖控制器视图
  */
 @property (nonatomic, retain) DemoRootView *view;
+/**
+ *  添加屏幕边缘轻扫手势返回主界面
+ */
+@property (nonatomic, retain) UIScreenEdgePanGestureRecognizer *screenEdgePanGesture;
+@property (nonatomic, retain) UISwipeGestureRecognizer *swipeGesture;
 @end
 
 @implementation DemoComponentListController
@@ -46,6 +51,32 @@
     self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, [UIScreen midViewAutoHeight])];
     self.view.backgroundColor = lsqRGB(255, 255, 255);
     self.view.delegate = self;
+    
+    // 判断设备版本，添加屏幕边缘滑动手势返回主界面
+    if ([UIDevice systemFloatVersion] < 7.0f) {
+        _swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onSwipeGesture:)];
+        _swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+        [self.view addGestureRecognizer:_swipeGesture];
+    }else if ([UIDevice systemFloatVersion] > 7.0f) {
+        _screenEdgePanGesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(onScreenEdgePanGesture:)];
+        _screenEdgePanGesture.edges = UIRectEdgeLeft;
+        [self.view addGestureRecognizer:_screenEdgePanGesture];
+    }
+}
+
+// 屏幕边缘轻扫动作返回主界面
+-(void)onSwipeGesture:(UISwipeGestureRecognizer *)recognizer;
+{
+    [self popViewControllerAnimated:YES];
+
+    [self.view removeGestureRecognizer:_swipeGesture];
+}
+
+-(void)onScreenEdgePanGesture:(UIScreenEdgePanGestureRecognizer *)recognizer;
+{
+    [self popViewControllerAnimated:YES];
+
+    [self.view removeGestureRecognizer:_screenEdgePanGesture];
 }
 
 // 隐藏状态栏 for IOS7

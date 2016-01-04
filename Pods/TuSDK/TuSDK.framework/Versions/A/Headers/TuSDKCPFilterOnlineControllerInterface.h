@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TuSDKCPGroupFilterItemCellBase.h"
 
 @protocol TuSDKCPFilterOnlineControllerInterface;
 
@@ -35,6 +36,11 @@
  *  在线滤镜选择控制器委托
  */
 @property (nonatomic, assign) id<TuSDKCPFilterOnlineControllerDelegate> delegate;
+
+/**
+ *  滤镜栏类型
+ */
+@property (nonatomic) lsqGroupFilterAction action;
 
 /**
  *  详细数据ID

@@ -46,6 +46,11 @@
 @property (nonatomic) NSTimeInterval longTouchDelay;
 
 /**
+ *  脸部定位采样频率 (默认: 0.2秒)
+ */
+@property (nonatomic) NSTimeInterval faceDetectionRate;
+
+/**
  *  显示区域百分比
  */
 @property (nonatomic) CGRect regionPercent;
@@ -84,4 +89,15 @@
  *  @param point 聚焦点
  */
 - (void)notifyCameraWithFocusPoint:(CGPoint)point;
+
+/**
+ *  通知脸部追踪信息
+ *
+ *  @param faces 脸部追踪信息
+ *  @param size  显示区域长宽
+ */
+- (void)notifyFaceDetection:(NSArray<TuSDKTSFaceFeature *> *)faces size:(CGSize)size;
+
+/** 创建脸部定位视图 */
+- (UIView *)buildFaceDetectionView;
 @end

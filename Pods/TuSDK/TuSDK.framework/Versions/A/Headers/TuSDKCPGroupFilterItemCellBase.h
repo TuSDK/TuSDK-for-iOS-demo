@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
     /**
      * 默认
      */
-    lsqGroupFilterActionNormal,
+    lsqGroupFilterActionNormal = 0,
     /**
      * 编辑
      */

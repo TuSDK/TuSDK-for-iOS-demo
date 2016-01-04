@@ -72,8 +72,7 @@
      {
          _albumComponent = nil;
          
-         // 如果在RootViewController presentViewController,autoDismissWhenCompelted参数将无效
-         // 请使用以下方法关闭
+         // 如果以 pushViewController 方式打开编辑器, autoDismissWhenCompelted参数将无效, 请使用以下方法关闭
          //if (_photoEditMultipleComponent.autoDismissWhenCompelted && controller) {
          //    [controller popViewControllerAnimated:YES];
          //}

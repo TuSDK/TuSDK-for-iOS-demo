@@ -9,6 +9,7 @@
 #import "TuSDKResult.h"
 #import "TuSDKTSMath.h"
 #import "TuSDKCPRegionHandler.h"
+#import "TuSDKTSFaceHelper.h"
 
 /**
  *  视频相机状态
@@ -124,6 +125,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
  */
 @property (nonatomic) BOOL disableMirrorFrontFacing;
+
+/**
+ *  是否开启脸部追踪
+ */
+@property (nonatomic) BOOL enableFaceDetection;
 
 /**
  *  视频相机前置或后置
@@ -306,4 +312,12 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @param filter 滤镜包装对象
  */
 - (void)notifyFilterConfigView:(TuSDKFilterWrap *)filter;
+
+/**
+ *  通知脸部追踪信息
+ *
+ *  @param faces 脸部追踪信息
+ *  @param size  显示区域长宽
+ */
+- (void)notifyFaceDetection:(NSArray<TuSDKTSFaceFeature *> *)faces size:(CGSize)size;
 @end

@@ -52,6 +52,11 @@
 @property (nonatomic, copy) NSString *onlineType;
 
 /**
+ *  url参数
+ */
+@property (nonatomic, copy) NSString *args;
+
+/**
  *  获取页面加载完成写入数据
  *
  *  @return 页面加载完成写入数据
