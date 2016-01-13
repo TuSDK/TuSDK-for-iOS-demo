@@ -13,6 +13,7 @@
 #import "SimpleAlbumComponent.h"
 #import "SimpleAlbumMultipleComponent.h"
 #import "SimpleCameraComponent.h"
+#import "SimpleGifImageViewComponent.h"
 #import "SimpleEditAdvancedComponent.h"
 #import "SimpleEditAndCutComponent.h"
 #import "SimpleEditAvatarComponent.h"
@@ -47,8 +48,9 @@
     self.wantsFullScreenLayout = YES;
     [self setNavigationBarHidden:NO animated:NO];
     [self setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    
-    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, [UIScreen midViewAutoHeight])];
+
+    CGFloat autoHeightForComponentList = ([UIDevice systemFloatVersion] < 7.f) ? [UIScreen height] - lsq_NAV_BAR_HEIGHT : [UIScreen height];
+    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, autoHeightForComponentList)];
     self.view.backgroundColor = lsqRGB(255, 255, 255);
     self.view.delegate = self;
     
@@ -109,6 +111,8 @@
     [group appenWithSimple:[SimpleAlbumMultipleComponent simple]];
     // 相机组件范例
     [group appenWithSimple:[SimpleCameraComponent simple]];
+    // Gif组件范例
+    [group appenWithSimple:[SimpleGifImageViewComponent simple]];
     // 图片编辑组件 (裁剪)范例
     [group appenWithSimple:[SimpleEditAndCutComponent simple]];
     // 头像设置组件(编辑)范例

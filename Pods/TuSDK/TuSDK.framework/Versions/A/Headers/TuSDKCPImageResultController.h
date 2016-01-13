@@ -17,6 +17,8 @@
     @protected
     // 是否在下载图片
     BOOL _downloading;
+    // 原图是否从服务器获取
+    BOOL _downloadedFromServer;
 }
 
 /**

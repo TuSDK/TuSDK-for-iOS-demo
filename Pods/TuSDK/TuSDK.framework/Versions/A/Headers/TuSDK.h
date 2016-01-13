@@ -47,6 +47,7 @@
 #import "TuSDKICTableViewCell.h"
 #import "TuSDKICTouchImageView.h"
 #import "TuSDKICMessageHubInterface.h"
+#import "TuSDKICGifView.h"
 
 #import "TuSDKCPAlbumComponentBase.h"
 #import "TuSDKCPAlbumMultipleComponentBase.h"

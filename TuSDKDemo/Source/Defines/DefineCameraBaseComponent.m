@@ -486,7 +486,7 @@
 {
     // [_camera rotateCamera];
     //  隐藏状态栏 for IOS6
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     [self dismissModalViewControllerAnimated:YES];
 }
 #pragma mark - Autorotate

@@ -28,6 +28,7 @@
 "simple_AlbumComponent" = "相冊組件";
 "simple_MultipleAlbumComponent" = "相冊組件 (帶相機)";
 "simple_CameraComponent" = "相機組件";
+"simple_GifComponent" = "Gif組件";
 "extend_EditComponent" = "圖片編輯組件";
 "extend_CameraBase" = "基礎相機界面修改";
 "define_CameraBase" = "基礎相機自定義";

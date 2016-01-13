@@ -28,6 +28,7 @@
 "simple_AlbumComponent" = "Album Component";
 "simple_MultipleAlbumComponent" = "Multifunctional Album Component";
 "simple_CameraComponent" = "Camera Component";
+"simple_GifComponent" = "Gif Component";
 "extend_EditComponent" = "Extended Edit Component";
 "extend_CameraBase" = "Extended Camera Component";
 "define_CameraBase" = "Customized Camera Component";
