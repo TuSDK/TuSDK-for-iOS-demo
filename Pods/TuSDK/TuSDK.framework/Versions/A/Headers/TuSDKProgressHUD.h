@@ -88,6 +88,13 @@ typedef NS_ENUM(NSUInteger, TuSDKProgressHUDMaskType) {
 + (void)showMainThreadWithStatus:(NSString*)status;
 
 /**
+ *  在主线程中显示信息
+ *
+ *  @param message 信息
+ */
++ (void)showMainThreadWithMessage:(NSString*)message;
+
+/**
  *  在主线程中显示进度和信息
  *
  *  @param progress

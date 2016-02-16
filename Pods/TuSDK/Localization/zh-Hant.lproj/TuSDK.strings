@@ -66,6 +66,8 @@
 "lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相冊訪問失敗.請在'設置->隱私->照片'設置 %@ 爲打開狀態.";
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "無法訪問相冊.請在'設置->隱私->照片'設置 %@ 爲打開狀態.";
 "lsq_album_ALAssets_error_title" = "無法訪問相冊";
+"lsq_album_empty_selection_msg" = "No photos selected";
+"lsq_album_max_selection_msg" = "%d photos have been selected already";
 
 // location
 "lsq_location_error_title" = "無法獲取地理信息";
@@ -85,6 +87,10 @@
 "lsq_edit_filter_processing" = "正在處理...";
 "lsq_edit_processing" = "正在處理...";
 "lsq_edit_processed" = "處理完成";
+"lsq_edit_process_error" = "發生錯誤，請確認設備已聯網";
+"lsq_edit_step_prev" = "撤銷";
+"lsq_edit_step_next" = "重做";
+"lsq_edit_auto_adjust" = "自動校色";
 "lsq_edit_entry_filter" = "濾鏡";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "貼紙";

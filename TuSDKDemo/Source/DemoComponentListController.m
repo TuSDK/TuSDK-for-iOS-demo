@@ -9,18 +9,25 @@
 #import "DemoComponentListController.h"
 #import "DemoRootView.h"
 
-//Simples
-#import "SimpleAlbumComponent.h"
-#import "SimpleAlbumMultipleComponent.h"
-#import "SimpleCameraComponent.h"
-#import "SimpleGifImageViewComponent.h"
-#import "SimpleEditAdvancedComponent.h"
-#import "SimpleEditAndCutComponent.h"
-#import "SimpleEditAvatarComponent.h"
-#import "SimpleEditMultipleComponent.h"
+//Samples
+#import "CameraComponentSample.h"
+#import "EditMultipleComponentSample.h"
+#import "EditAdvancedComponentSample.h"
+#import "EditAndCutComponentSample.h"
+#import "EditAvatarComponentSample.h"
 
-#import "ExtendEditAndCutComponent.h"
-#import "ExtendCameraBaseComponent.h"
+#import "AlbumComponentSample.h"
+#import "AlbumMultipleComponentSample.h"
+#import "GifImageViewController.h"
+
+#import "CustomizedEditAndCutComponent.h"
+#import "CustomizedCameraComponent.h"
+
+#import "CameraAndEditorSample.h"
+#import "SelfishCameraSample.h"
+#import "EditFilterSampleController.h"
+#import "StickerSampleController.h"
+#import "WipeAndFilterSampleController.h"
 
 #import "DefineCameraBaseComponent.h"
 
@@ -100,33 +107,62 @@
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
      * 您可以通过查看 [group appenWithSimple:] 的具体类
-     * - (void)showSimpleWithController:(UIViewController *)controller;
+     * - (void)showSampleWithController:(UIViewController *)controller;
      * 方法，学习使用范例。
      */
     // 范例分组
-    DemoSimpleGroup *group = [DemoSimpleGroup group];
-    // 相册组件范例
-    [group appenWithSimple:[SimpleAlbumComponent simple]];
-    // 多功能相册组件范例
-    [group appenWithSimple:[SimpleAlbumMultipleComponent simple]];
+    SampleGroup *group = [SampleGroup group];
+    
+    // 功能套件
     // 相机组件范例
-    [group appenWithSimple:[SimpleCameraComponent simple]];
-    // Gif组件范例
-    [group appenWithSimple:[SimpleGifImageViewComponent simple]];
-    // 图片编辑组件 (裁剪)范例
-    [group appenWithSimple:[SimpleEditAndCutComponent simple]];
+    [group appenWithSample:[CameraComponentSample sample]];
+    // 照片美化组件范例
+    [group appenWithSample:[EditMultipleComponentSample sample]];
+    // 裁切+滤镜组件范例
+    [group appenWithSample:[EditAndCutComponentSample sample]];
     // 头像设置组件(编辑)范例
-    [group appenWithSimple:[SimpleEditAvatarComponent simple]];
-    // 高级图片编辑组件范例
-    [group appenWithSimple:[SimpleEditAdvancedComponent simple]];
-    // 多功能图片编辑组件范例
-    [group appenWithSimple:[SimpleEditMultipleComponent simple]];
+    [group appenWithSample:[EditAvatarComponentSample sample]];
+    // 裁切 + 滤镜 + 贴纸编辑组件范例
+    [group appenWithSample:[EditAdvancedComponentSample sample]];
+    
+    // 常用组件
+    // 相册组件范例
+    [group appenWithSample:[AlbumComponentSample sample]];
+    // 多选相册组件范例
+    [group appenWithSample:[AlbumMultipleComponentSample sample]];
+    // Gif组件范例
+    [group appenWithTitle:NSLocalizedString(@"sample_GifComponent", @"Gif组件")
+                    group:ComponentSample
+                    clazz:[GifImageViewController class]
+     ];
+    
+    // 组件用法范例
+    // 拍照+编辑示例组件范例
+    [group appenWithSample:[CameraAndEditorSample sample]];
+    // 美颜相机组件示例
+    [group appenWithSample:[SelfishCameraSample sample]];
+    // 滤镜组件示例
+    [group appenWithTitle:NSLocalizedString(@"sample_comp_FilterComponent", @"滤镜组件示例")
+                    group:FeatureSample
+                    clazz:[EditFilterSampleController class]];
+    // 贴纸组件示例
+    [group appenWithTitle:NSLocalizedString(@"sample_comp_StickerComponent", @"贴纸组件示例")
+                    group:FeatureSample
+                    clazz:[StickerSampleController class]];
+    // 模糊组件示例
+    [group appenWithTitle:NSLocalizedString(@"sample_comp_BlurComponent", @"模糊组件示例")
+                    group:FeatureSample
+                    clazz:[WipeAndFilterSampleController class]];
+    
+    // 自定义界面示例
     // 图片编辑组件范例 (对现有组件进行扩展 - 修改界面)
-    [group appenWithSimple:[ExtendEditAndCutComponent simple]];
+    [group appenWithSample:[CustomizedEditAndCutComponent sample]];
     // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)
-    [group appenWithSimple:[ExtendCameraBaseComponent simple]];
+    [group appenWithSample:[CustomizedCameraComponent sample]];
+    
+    // API 使用示例（仅供参考）
     // 基础相机自定义 - 底层API
-    [group appenWithSimple:[DefineCameraBaseComponent simple]];
+    [group appenWithSample:[DefineCameraBaseComponent sample]];
     
     // 设置范例分组数据
     self.view.group = group;    
@@ -137,17 +173,26 @@
  *  选中范例
  *
  *  @param view   入口控制器视图
- *  @param simple 范例
+ *  @param sample 范例
  *  @param action 范例列表行点击动作
  */
 - (void)demoRootView:(DemoRootView *)view
-      selectedSimple:(DemoSimpleBase *)simple
+      selectedSample:(SampleBase *)sample
           withAction:(demoListItemAction)action;
 {
-    if (!simple) return;
+    if (!sample) return;
     switch (action) {
         case demoListItemActionSelected:
-            [simple showSimpleWithController:self];
+            
+            if (sample.controllerClazz)
+            {
+                UIViewController *controller = [[sample.controllerClazz alloc] init];
+                [self pushViewController:controller animated:YES];
+            }
+            else
+            {
+                [sample showSampleWithController:self];
+            }
             break;
         default:
             break;

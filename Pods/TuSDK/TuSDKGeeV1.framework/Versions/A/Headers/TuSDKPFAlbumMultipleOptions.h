@@ -24,6 +24,11 @@
 @property (nonatomic, strong) Class albumPopListClazz;
 
 /**
+ *  相册列表行高度 (默认: 64)
+ */
+@property (nonatomic, assign) CGFloat popListRowHeight;
+
+/**
  *  相册列表行视图类 (默认:TuSDKPFAlbumPopListCell, 需要继承 TuSDKPFAlbumPopListCell)
  */
 @property (nonatomic, strong) Class albumPopListCellClazz;
@@ -32,6 +37,16 @@
  *  相册照片列表视图类 (默认:TuSDKPFPhotosGridView, 需要继承 TuSDKPFPhotosGridView)
  */
 @property (nonatomic, strong) Class photosViewClazz;
+
+/**
+ *  一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
+ */
+@property (nonatomic, assign) NSUInteger maxSelectionNumber;
+
+/**
+ *  允许在多个相册中选择 (默认: 开启)
+ */
+@property (nonatomic, assign) BOOL enabelShareSelection;
 
 /**
  *  相册列表每行显示的照片数量 (默认:0, 程序自动适配设备)

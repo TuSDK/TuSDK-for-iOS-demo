@@ -26,6 +26,13 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 + (instancetype) sharedEngine;
 
 /**
+ *  sdk业务网络引擎
+ *
+ *  @return sdk业务网络引擎
+ */
++ (instancetype) serviceEngine;
+
+/**
  *  开发者ID
  */
 @property (nonatomic, copy) NSString *developerId;
@@ -53,6 +60,8 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 - (TuSDKNetworkOperation *)post:(NSString*)url params:(NSDictionary *)params needAuth:(BOOL)needAuth arg:(TuSDKNKNetworkArg *)arg;
 // 分步请求，需要手动执行操作，为了方便图片上传
 - (TuSDKNetworkOperation *)post:(NSString *)url params:(NSDictionary *)params needAuth:(BOOL)needAuth;
+// Service 请求，需要手动执行操作，为了方便图片上传
+-(TuSDKNetworkOperation *)postService:(NSString *)url params:(NSDictionary *)params;
 // 处理请求 步骤二: 执行操作
 - (void)executeOperation:(TuSDKNetworkOperation *)op arg:(TuSDKNKNetworkArg *)arg;
 @end

@@ -66,6 +66,8 @@
 "lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "Failed to access photos. Please trun %@ on in Settings - Privacy - Photos.";
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "Can’t access photos. Please trun %@ on in Settings - Privacy - Photos.";
 "lsq_album_ALAssets_error_title" = "Can’t access photos";
+"lsq_album_empty_selection_msg" = "No photos selected";
+"lsq_album_max_selection_msg" = "%d photos have been selected already";
 
 // location
 "lsq_location_error_title" = "Can’t get location";
@@ -85,6 +87,10 @@
 "lsq_edit_filter_processing" = "Processing...";
 "lsq_edit_processing" = "Processing...";
 "lsq_edit_processed" = "Process completed";
+"lsq_edit_process_error" = "Fail to process image";
+"lsq_edit_step_prev" = "Undo";
+"lsq_edit_step_next" = "Redo";
+"lsq_edit_auto_adjust" = "Auto";
 "lsq_edit_entry_filter" = "Filters";
 "lsq_edit_entry_cuter" = "Crop";
 "lsq_edit_entry_sticker" = "Stickers";

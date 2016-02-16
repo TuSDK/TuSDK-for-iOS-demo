@@ -8,9 +8,9 @@
 
 #import "DemoRootViewController.h"
 
-//Simples
-#import "SimpleCameraComponent.h"
-#import "SimpleEditMultipleComponent.h"
+//Samples
+#import "CameraComponentSample.h"
+#import "EditMultipleComponentSample.h"
 #import "DemoComponentListController.h"
 
 #pragma mark - DemoRootViewController
@@ -27,10 +27,10 @@
     UIButton *mComponentListButton;
     
     // 相机组件
-    SimpleCameraComponent *simpleCameraComponent;
+    CameraComponentSample *cameraComponentSample;
     
     // 多功能编辑组件
-    SimpleEditMultipleComponent *simpleEditMultipleComponent;
+    EditMultipleComponentSample *editMultipleComponentSample;
     
 }
 @end
@@ -141,20 +141,20 @@
 {
     if (btn == mCameraButton)
     {
-        if (simpleCameraComponent == nil)
+        if (cameraComponentSample == nil)
         {
-            simpleCameraComponent = [SimpleCameraComponent simple];
+            cameraComponentSample = [CameraComponentSample sample];
         }
-        [simpleCameraComponent showSimpleWithController:self];
+        [cameraComponentSample showSampleWithController:self];
     }
     else if(btn == mEditorButton)
     {
-        if (simpleEditMultipleComponent == nil)
+        if (editMultipleComponentSample == nil)
         {
-            simpleEditMultipleComponent = [SimpleEditMultipleComponent simple];
+            editMultipleComponentSample = [EditMultipleComponentSample sample];
         }
                                      
-        [simpleEditMultipleComponent showSimpleWithController:self];
+        [editMultipleComponentSample showSampleWithController:self];
     }
     else if(btn == mComponentListButton)
     {

@@ -66,6 +66,8 @@
 "lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相册访问失败.请在'设置->隐私->照片'设置 %@ 为打开状态.";
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "无法访问相册.请在'设置->隐私->照片'设置 %@ 为打开状态.";
 "lsq_album_ALAssets_error_title" = "无法访问相册";
+"lsq_album_empty_selection_msg" = "请至少选择一张照片";
+"lsq_album_max_selection_msg" = "最多选择 %d 张照片";
 
 // location
 "lsq_location_error_title" = "无法获取地理信息";
@@ -85,6 +87,10 @@
 "lsq_edit_filter_processing" = "正在处理...";
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
+"lsq_edit_process_error" = "发生错误，请确认设备已联网";
+"lsq_edit_step_prev" = "撤销";
+"lsq_edit_step_next" = "重做";
+"lsq_edit_auto_adjust" = "自动校色";
 "lsq_edit_entry_filter" = "滤镜";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "贴纸";

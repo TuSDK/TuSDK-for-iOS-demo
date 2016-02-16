@@ -33,16 +33,29 @@ extern NSString * const lsqGeeVersion;
                                            callbackBlock:(TuSDKCPComponentBlock)block;
 
 /**
- *  自定义多功能相册组件
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumComponent.html
+ *  多功能相册组件，选择一张照片
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumMultipleComponent.html
  *
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 自定义多功能相册组件
+ *  @return 多功能相册组件
  */
 + (TuSDKCPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
                                                            callbackBlock:(TuSDKCPComponentBlock)block;
+/**
+ *  多功能相册组件，选择多张照片
+ *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumMultipleComponent.html
+ *
+ *  @param controller   来源控制器
+ *  @param block        组件回调结果
+ *  @param maxSelection 最大选择数目
+ *
+ *  @return 多功能相册组件
+ */
++ (TuSDKCPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
+                                                           callbackBlock:(TuSDKCPComponentBlock)block
+                                                      maxSelectionNumber:(NSUInteger)maxSelection;
 
 /**
  *  获取头像设置组件

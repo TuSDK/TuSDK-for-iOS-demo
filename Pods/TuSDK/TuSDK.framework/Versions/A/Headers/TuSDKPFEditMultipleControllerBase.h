@@ -105,6 +105,11 @@
 - (void)onStepNextAction;
 
 /**
+ *  自动校色按钮动作
+ */
+- (void)onAutoAdjustAction;
+
+/**
  *  开启响应处理控制器
  *
  *  @param btn 入口按钮

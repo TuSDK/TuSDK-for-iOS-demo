@@ -81,6 +81,11 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 @property (nonatomic, retain)TuSDKCPGroupFilterItem *mode;
 
 /**
+ *  是否显示第一次选择后的图标
+ */
+@property (nonatomic) BOOL displaySelectionIcon;
+
+/**
  *  滤镜任务
  */
 @property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
@@ -204,6 +209,11 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *  滤镜分组元素
  */
 @property (nonatomic, retain)TuSDKCPGroupFilterItem *mode;
+
+/**
+ *  是否显示第一次选择后的图标
+ */
+@property (nonatomic) BOOL displaySelectionIcon;
 
 /**
  *  图片视图

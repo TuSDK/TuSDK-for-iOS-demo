@@ -20,12 +20,26 @@ extern NSString * const CAMERA_PLACEHOLDER;
     
     @protected
     UIImageView *_thumbView;
+    
+    @protected
+    UIButton *_selectedView;
+    
+    @protected
+    BOOL _cellSelected;
 }
+
+/**
+ *  是否为多选模式
+ */
+@property (nonatomic, assign) BOOL enableMultiSelection;
 
 /**
  *  初始化视图
  */
 - (void)initView;
+
+// 重置视图
+- (void)viewNeedRest;
 
 /**
  *  设置单元格显示数据
@@ -33,5 +47,12 @@ extern NSString * const CAMERA_PLACEHOLDER;
  *  @param data 数据
  */
 - (void)setData:(id)data;
+
+/**
+ *  设置选择序
+ *
+ *  @param index 选择序列
+ */
+-(void)setSelectionIndex:(NSInteger)index;
 
 @end

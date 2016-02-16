@@ -45,6 +45,9 @@
  */
 - (void)initView;
 
+/**
+ *  切换视图显示状态
+ */
 - (void)toggleGroupShowState;
 
 /**

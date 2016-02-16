@@ -16,6 +16,8 @@
  */
 @property (nonatomic, retain) NSArray<TuSDKTSAssetsGroupInterface> *groups;
 
+
+
 /**
  *  需要自动跳转到相册组名称
  */

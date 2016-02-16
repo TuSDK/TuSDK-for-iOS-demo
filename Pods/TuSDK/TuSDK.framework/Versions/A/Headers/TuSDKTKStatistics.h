@@ -267,6 +267,16 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * 贴纸编辑控制器
      */
     tkc_editStickerFragment = 0x603000,
+    
+    /*
+     * Gif组件
+     */
+    tkc_gifViewer = 0x700000,
+    
+    /**
+     *  在线图像颜色分析
+     */
+    tkc_imageAnalysis_color = 0x800001,
 };
 
 #pragma mark - TuSDKTKStatistics

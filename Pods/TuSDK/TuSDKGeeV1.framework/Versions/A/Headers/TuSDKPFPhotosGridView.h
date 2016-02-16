@@ -16,11 +16,21 @@
  */
 @protocol TuSDKPFPhotoGridProtocol <NSObject>
 /**
- *  选中一张照片或者拍照
+ *  单元格被选中
  *
- *  @param asset 照片对象
+ *  @param asset     单元格对象
+ *  @param indexPath 单元格索引
  */
-- (void)onTuSDKPFPhotoGridSelectedWithAsset:(id)asset;
+- (void)onTuSDKPFPhotoGridAssetSelected:(id)asset atIndexPath:(NSIndexPath*)indexPath;
+
+/**
+ *  获取单元格
+ *
+ *  @param asset 单元格数据
+ *
+ *  @return 选择索引
+ */
+- (NSInteger)getAssetSelectionIndex:(id)asset;
 @end
 
 /**
@@ -43,6 +53,10 @@
  */
 @property (nonatomic, assign) NSUInteger photoColumnNumber;
 
+/**
+ *  是否为多选模式
+ */
+@property (nonatomic, assign) BOOL enableMultiSelection;
 
 /**
  *  当前选中相册组
@@ -53,4 +67,13 @@
  *  相册照片列表行视图委托
  */
 @property (nonatomic, assign) id<TuSDKPFPhotoGridProtocol> gridProtocol;
+
+#pragma mark - refresh selection item
+/**
+ *  重置单元格视图
+ *
+ *  @param asset 单元格数据对象
+ */
+- (void)reloadItemWithData:(id<TuSDKTSAssetInterface>)asset;
+
 @end

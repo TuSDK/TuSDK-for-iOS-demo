@@ -69,7 +69,7 @@
 @property (nonatomic, strong) Class editImageViewClazz;
 
 /**
- *  滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
+ *  滤镜列表视图类 (默认:TuSDKPFNormalFilterGroupView, 需要继承 TuSDKPFNormalFilterGroupView)
  */
 @property (nonatomic, strong) Class filterViewClazz;
 

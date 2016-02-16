@@ -65,6 +65,11 @@
 @property (nonatomic) BOOL allowsSelection;
 
 /**
+ *  是否显示第一次选择后的图标
+ */
+@property (nonatomic) BOOL displaySelectionIcon;
+
+/**
  *  滤镜分组视图委托
  */
 @property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
@@ -142,6 +147,11 @@
  *  是否允许选择列表
  */
 @property (nonatomic) BOOL allowsSelection;
+
+/**
+ *  是否显示第一次选择后的图标
+ */
+@property (nonatomic) BOOL displaySelectionIcon;
 
 /**
  *  滤镜分组视图委托

@@ -35,12 +35,12 @@
 
 @required
 /**
- *  选中相片
+ *  选中的相片列表
  *
  *  @param controller 系统相册控制器
- *  @param asset      相片
+ *  @param assets     相片数组
  */
-- (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller selectedAsset:(ALAsset *)asset;
+- (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller selectedAssets:(NSArray<TuSDKTSAssetInterface> *)assets;
 
 @end
 
@@ -74,6 +74,10 @@
  */
 @property (nonatomic, strong) Class albumPopListClazz;
 
+/**
+ *  相册列表行高度 (默认: 64)
+ */
+@property (nonatomic, assign) CGFloat popListRowHeight;
 
 /**
  *  相册列表行视图类 (默认:TuSDKPFAlbumPopListCell, 需要继承 TuSDKPFAlbumPopListCell)
@@ -86,6 +90,21 @@
 @property (nonatomic, strong) Class photosViewClazz;
 
 /**
+ * 一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
+ */
+@property (nonatomic, assign) NSUInteger maxSelectionNumber;
+
+/**
+ *  选中的单元列表
+ */
+@property (nonatomic, readonly) NSMutableArray<TuSDKTSAssetInterface> *selectedItems;
+
+/**
+ *  允许在多个相册中选择 (默认: 开启)
+ */
+@property (nonatomic, assign) BOOL enabelShareSelection;
+
+/**
  *  相册列表每行显示的照片数量 (默认:0, 程序自动适配设备)
  */
 @property (nonatomic, assign) NSUInteger photoColumnNumber;
@@ -95,5 +114,11 @@
  */
 @property (nonatomic) BOOL openedByCameraController;
 
+/**
+ *  配置相册列表视图
+ *
+ *  @param view 相册列表视图
+ */
+- (void)configPhotoView:(TuSDKPFPhotosGridView *)view;
 
 @end

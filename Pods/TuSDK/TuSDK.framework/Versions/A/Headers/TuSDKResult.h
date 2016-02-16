@@ -43,6 +43,11 @@
 @property (nonatomic, retain) id<TuSDKTSAssetInterface> imageAsset;
 
 /**
+ *  相册图片列表
+ */
+@property (nonatomic, retain) NSArray<TuSDKTSAssetInterface> *imageAssets;
+
+/**
  *  裁剪区域
  */
 @property (nonatomic) CGRect cutRect;

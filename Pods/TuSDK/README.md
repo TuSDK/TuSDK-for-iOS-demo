@@ -5,6 +5,7 @@
 ## 使用
 
 * [示例项目 App Store](https://itunes.apple.com/cn/app/tusdk/id958053682)
+* [示例项目 TestFlight](http://tusdk.com/center/user/testApply)
 * [示例项目源码](https://github.com/TuSDK/TuSDK-for-iOS-demo)
 * [SDK](https://github.com/TuSDK/TuSDK-for-iOS)
 * [文档索引](http://tusdk.com/doc)

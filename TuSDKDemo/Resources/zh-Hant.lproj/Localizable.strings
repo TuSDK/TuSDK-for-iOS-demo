@@ -14,21 +14,30 @@
 "component_editor" = "照片美化";
 "component_list" = "開發套件";
 
-// simple group
-"simple_group_adv_comp" = "高級組件";
-"simple_group_comp" = "基礎組件";
-"simple_group_extend" = "擴展組件 - 修改界面";
-"simple_group_define" = "自定義組件 - 底層API";
+// sample group
+"sample_group_suite" = "功能套件";
+"sample_group_comp" = "常用組件";
+"sample_group_examples" = "組件用法示例";
+"sample_group_extend" = "自定義界面示例";
+"sample_group_define" = "API 使用示例";
 
-// simple
-"simple_EditAndCutComponent" = "圖片編輯組件 (裁剪)";
-"simple_EditAvatarComponent" = "頭像設置組件 (編輯)";
-"simple_EditAdvancedComponent" = "高級圖片編輯組件";
-"simple_EditMultipleComponent" = "多功能圖片編輯組件";
-"simple_AlbumComponent" = "相冊組件";
-"simple_MultipleAlbumComponent" = "相冊組件 (帶相機)";
-"simple_CameraComponent" = "相機組件";
-"simple_GifComponent" = "Gif組件";
-"extend_EditComponent" = "圖片編輯組件";
-"extend_CameraBase" = "基礎相機界面修改";
-"define_CameraBase" = "基礎相機自定義";
+// samples
+"sample_EditAndCutComponent" = "裁剪 + 滤镜组件";
+"sample_EditAvatarComponent" = "頭像設置組件";
+"sample_EditAdvancedComponent" = "裁切 ＋ 濾鏡 ＋ 貼紙組件";
+"sample_EditMultipleComponent" = "多功能編輯組件";
+"sample_AlbumComponent" = "相冊組件";
+"sample_AlbumMultipleComponent" = "多選相冊組件";
+"sample_CameraComponent" = "相機組件";
+"sample_GifComponent" = "GIF 組件";
+
+"sample_comp_CameraAndEditor" = "拍照 + 編輯例子";
+"sample_comp_SelfishCamera" = "美顏相機";
+"sample_comp_FilterComponent" = "濾鏡組件示例";
+"sample_comp_StickerComponent" = "貼紙組件示例";
+"sample_comp_BlurComponent" = "模糊組件示例";
+
+"extend_EditComponent" = "裁切組件自定義界面";
+"extend_CameraBase" = "相機自定義界面";
+
+"define_CameraBase" = "個性化相機示例 (仅供参考)";

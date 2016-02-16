@@ -14,21 +14,30 @@
 "component_editor" = "Photo Editor";
 "component_list" = "Component Kit";
 
-// simple group
-"simple_group_adv_comp" = "Advanced Components";
-"simple_group_comp" = "Base Components";
-"simple_group_extend" = "Extended Components - Custom UI";
-"simple_group_define" = "Customized Components - Low level API";
+// sample group
+"sample_group_suite" = "Composite Components";
+"sample_group_comp" = "Common Components";
+"sample_group_examples" = "Feature Examples";
+"sample_group_extend" = "Customization UI Examples";
+"sample_group_define" = "API Usage Examples";
 
-// simple
-"simple_EditAndCutComponent" = "Edit Component";
-"simple_EditAvatarComponent" = "Avatar Component";
-"simple_EditAdvancedComponent" = "Advanced Edit Component";
-"simple_EditMultipleComponent" = "Multifunctional Edit Component";
-"simple_AlbumComponent" = "Album Component";
-"simple_MultipleAlbumComponent" = "Multifunctional Album Component";
-"simple_CameraComponent" = "Camera Component";
-"simple_GifComponent" = "Gif Component";
-"extend_EditComponent" = "Extended Edit Component";
-"extend_CameraBase" = "Extended Camera Component";
-"define_CameraBase" = "Customized Camera Component";
+// samples
+"sample_EditAndCutComponent" = "Cut + Filter Component";
+"sample_EditAvatarComponent" = "Avatar Component";
+"sample_EditAdvancedComponent" = "Cut + Filter + Sticker Component";
+"sample_EditMultipleComponent" = "Photo Editor";
+"sample_AlbumComponent" = "Album Component";
+"sample_AlbumMultipleComponent" = "Multi-Select Album Component";
+"sample_CameraComponent" = "Camera Component";
+"sample_GifComponent" = "GIF Component";
+
+"sample_comp_CameraAndEditor" = "Camera And Editor";
+"sample_comp_SelfishCamera" = "Selfish Camera";
+"sample_comp_FilterComponent" = "Filter Editor Example";
+"sample_comp_StickerComponent" = "Sticker Editor Example";
+"sample_comp_BlurComponent" = "Blur Editor Example";
+
+"sample_ui_EditComponent" = "Customization UI for Cut + Filter Component";
+"sample_ui_CameraBase" = "Customization UI for Camera Component";
+
+"sample_api_CameraBase" = "Create Camera with API (For test only)";

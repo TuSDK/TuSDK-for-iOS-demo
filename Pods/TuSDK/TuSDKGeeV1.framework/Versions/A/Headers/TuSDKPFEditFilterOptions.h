@@ -43,7 +43,7 @@
 @property (nonatomic, strong)Class filterBarTableCellClazz;
 
 /**
- *  开启滤镜配置选项
+ *  开启滤镜配置选项 (默认: 开启)
  */
 @property (nonatomic) BOOL enableFilterConfig;
 

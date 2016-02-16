@@ -75,6 +75,11 @@
 @property (nonatomic) BOOL allowsSelection;
 
 /**
+ *  开启滤镜配置选项
+ */
+@property (nonatomic) BOOL enableFilterConfig;
+
+/**
  *  开启无效果滤镜 (默认: 开启)
  */
 @property (nonatomic) BOOL enableNormalFilter;

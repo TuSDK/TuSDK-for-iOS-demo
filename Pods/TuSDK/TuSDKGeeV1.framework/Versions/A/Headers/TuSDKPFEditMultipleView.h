@@ -83,6 +83,8 @@
 {
     // 操作步骤视图
     TuSDKPFEditEntryStepView *_stepView;
+    // 自动校色按钮
+    UIButton *_autoAdjustButton;
     // 返回按钮
     UIButton *_cancelButton;
     // 完成按钮
@@ -97,6 +99,11 @@
  *  操作步骤视图
  */
 @property (nonatomic, readonly) TuSDKPFEditEntryStepView *stepView;
+
+/**
+ *  自动校色按钮
+ */
+@property (nonatomic, readonly) UIButton *autoAdjustButton;
 
 /**
  *  返回按钮

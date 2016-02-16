@@ -77,12 +77,12 @@
 @property (nonatomic, strong)Class filterBarGroupCellClazz;
 
 /**
- *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
+ *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 TuSDKCPGroupFilterItemCell)
  */
 @property (nonatomic, strong)Class filterBarTableCellClazz;
 
 /**
- *  开启滤镜配置选项
+ *  开启滤镜配置选项 (默认: 开启)
  */
 @property (nonatomic) BOOL enableFilterConfig;
 
