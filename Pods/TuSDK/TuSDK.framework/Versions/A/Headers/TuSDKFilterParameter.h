@@ -140,6 +140,15 @@
 - (TuSDKFilterArg *)argWithKey:(NSString *)key;
 
 /**
+ *  获取默认配置参数值
+ *
+ *  @param key 参数键名
+ *
+ *  @return 参数值
+ */
+- (CGFloat)argWithDefaultKey:(NSString *)key;
+
+/**
  *  设置滤镜参数百分比
  *
  *  @param key     参数键名

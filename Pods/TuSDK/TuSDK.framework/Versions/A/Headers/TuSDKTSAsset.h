@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-@import Photos;
+#import <UIKit/UIKit.h>
 
 #pragma mark - TuSDKTSAssetInterface
 

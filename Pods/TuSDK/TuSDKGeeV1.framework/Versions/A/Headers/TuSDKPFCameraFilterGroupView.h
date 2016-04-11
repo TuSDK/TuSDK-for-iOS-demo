@@ -70,4 +70,11 @@
  *  显示滤镜组视图
  */
 - (void)showGroupView;
+
+/**
+ *  加载滤镜，并选中指定滤镜
+ *
+ *  @param option 默认显示的滤镜配置选项
+ */
+- (void)loadFilters:(TuSDKFilterOption *)option;
 @end

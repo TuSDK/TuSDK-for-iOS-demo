@@ -53,7 +53,7 @@
          // if (controller) [controller dismissModalViewControllerAnimated];
          [result logInfo];
      }
-     maxSelectionNumber:3];
+     maxSelectionNumber:9];
     
     // 组件选项配置
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKCPAlbumMultipleOptions.html

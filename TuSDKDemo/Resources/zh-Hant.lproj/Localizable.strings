@@ -41,3 +41,7 @@
 "extend_CameraBase" = "相機自定義界面";
 
 "define_CameraBase" = "個性化相機示例 (仅供参考)";
+
+"sample_api_face_detection_image" = "人臉識別 (圖片)";
+"sample_api_face_detection_camera" = "人臉識別 (視頻)";
+"lsq_face_detection_title" = "人臉識別";

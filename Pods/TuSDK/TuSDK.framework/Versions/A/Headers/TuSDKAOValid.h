@@ -104,6 +104,30 @@
 /** 美颜级别 */
 - (NSUInteger)beautyLevel;
 
+/** 视频录制抹功能是否开启 */
+- (BOOL)videoRecordEnabled;
+
+/** 视频录制时长控制是否开启 */
+- (BOOL)videoDurationEnabled;
+
+/** 视频编辑功能是否开启 */
+- (BOOL)videoEditEnabled;
+
+/** 视频直播功能是否开启 */
+- (BOOL)videoStreamEnabled;
+
+/** 本地人脸检测标点数 */
+- (NSUInteger)faceLocalMarks;
+
+/** 本地人脸检测图片 */
+- (BOOL)faceLocalImageSupport;
+
+/** 本地人脸检测视频 */
+- (BOOL)faceLocalVideoSupport;
+
+/** FilterAPI是否可用 */
+- (BOOL)filterAPIEnabled;
+
 /**
  *  解密文本
  *
@@ -144,6 +168,36 @@
  *  @return 是否验证成功
  */
 - (BOOL)filterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
+
+/**
+ *  验证视频滤镜
+ *
+ *  @param filterId 滤镜ID
+ *  @param type     验证方式
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)videoFilterValidWithID:(uint64_t)filterId type:(NSUInteger)type;
+
+/**
+ *  验证滤镜是否可通过API调用
+ *
+ *  @param filterId 滤镜ID
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)filterAPIValidWithID:(uint64_t)filterId;
+
+/**
+ *  验证视频滤镜密钥
+ *
+ *  @param key      滤镜验证码
+ *  @param type     验证方式
+ *  @param filterId 滤镜ID
+ *
+ *  @return 是否验证成功
+ */
+- (BOOL)videoFilterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
 
 /**
  *  验证贴纸

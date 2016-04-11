@@ -38,6 +38,46 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
     lsqCameraStateCaptured = 4
 };
 
+#pragma mark - TuSDKVideoCameraDelegate
+@protocol TuSDKVideoCameraInterface;
+
+/**
+ *  相机事件委托
+ */
+@protocol TuSDKVideoCameraDelegate <NSObject>
+
+/**
+ *  相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
+ *
+ *  @param camera 相机对象
+ *  @param state  相机运行状态
+ */
+- (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera stateChanged:(lsqCameraState)state;
+
+@optional
+/**
+ *  原始帧采样缓冲数据
+ *
+ *  @param camera       camera对象
+ *  @param sampleBuffer 帧采样缓冲
+ */
+- (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera sampleBuffer:(CMSampleBufferRef)sampleBuffer;
+@end
+
+#pragma mark - TuSDKVideoCameraSampleBufferDelegate
+/**
+ *  相机帧采样缓冲委托
+ */
+@protocol TuSDKVideoCameraSampleBufferDelegate<NSObject>
+/**
+ *  原始帧采样缓冲数据
+ *
+ *  @param sampleBuffer 帧采样缓冲
+ *  @param rotation     原始图像方向
+ */
+- (void)onProcessVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer rotation:(UIImageOrientation)rotation;
+@end
+
 @protocol TuSDKVideoCameraExtendViewInterface;
 @protocol TuSDKStillCameraInterface;
 
@@ -47,9 +87,14 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 @protocol TuSDKVideoCameraInterface <NSObject>
 /**
+ *  相机帧采样缓冲委托
+ */
+@property (nonatomic, assign) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
+
+/**
  *  系统相机对象
  */
-@property(readonly) AVCaptureDevice *inputCamera;
+@property (readonly) AVCaptureDevice *inputCamera;
 
 /**
  *  图像输出方向
@@ -242,7 +287,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 - (void)onStillCamera:(id<TuSDKStillCameraInterface>)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
 @end
-#pragma mark - TuSDKStillCameraInterface
+#pragma mark - TuSDKStillCameraDelegate
 /**
  *  拍照相机接口
  */

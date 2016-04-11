@@ -74,6 +74,51 @@
  */
 @property (nonatomic) NSInteger userType;
 
+/**
+ *  video record
+ */
+@property (nonatomic) BOOL videoRecordEnabled;
+
+/**
+ *  config video duration
+ */
+@property (nonatomic) BOOL videoDurationEnabled;
+
+/**
+ *  video streaming
+ */
+@property (nonatomic) BOOL videoStreamEnabled;
+
+/**
+ *  video edit
+ */
+@property (nonatomic) BOOL videoEditEnabled;
+
+/**
+ *  face Local Marks
+ */
+@property (nonatomic) NSInteger faceLocalMarks;
+
+/**
+ *  face Local Image Support
+ */
+@property (nonatomic) BOOL faceLocalImageSupport;
+
+/**
+ *  face Local Video Support
+ */
+@property (nonatomic) BOOL faceLocalVideoSupport;
+
+/**
+ *  Filter API
+ */
+@property (nonatomic) BOOL filterAPIEnabled;
+
+/**
+ *  Filter list which could be used by FilterAPI
+ */
+@property (nonatomic) NSArray *filterAPIList;
+
 @end
 
 #pragma mark - TuSDKConfig

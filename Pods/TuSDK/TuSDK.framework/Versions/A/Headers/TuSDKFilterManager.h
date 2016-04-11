@@ -66,13 +66,22 @@
 - (void)checkManagerWithDelegate:(id<TuSDKFilterManagerDelegate>)delegate;
 
 /**
- *  获取滤镜包装对象
+ *  滤镜所在组类型
  *
  *  @param code 滤镜代号
  *
- *  @return 滤镜包装对象
+ *  @return 滤镜组类型
  */
-- (TuSDKFilterWrap *)filterWrapWithCode:(NSString *)code;
+- (NSUInteger)groupTypeWithFilterCode:(NSString *)code;
+
+/**
+ *  是否是默认滤镜
+ *
+ *  @param code 滤镜代号
+ *
+ *  @return
+ */
+- (BOOL)isNormalFilter:(NSString *)code;
 
 /**
  *  执行滤镜 并输出图形

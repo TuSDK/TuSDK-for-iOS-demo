@@ -56,6 +56,11 @@
 @property (nonatomic) CGRect regionPercent;
 
 /**
+ *  最后一次检测人脸时间
+ */
+@property (nonatomic, readonly) NSDate *lastFaceDetection;
+
+/**
  *  相机状态改变
  *
  *  @param state 改变
@@ -90,6 +95,8 @@
  */
 - (void)notifyCameraWithFocusPoint:(CGPoint)point;
 
+/** hidden Face Views */
+- (void)hiddenFaceViews;
 /**
  *  通知脸部追踪信息
  *
@@ -97,6 +104,9 @@
  *  @param size  显示区域长宽
  */
 - (void)notifyFaceDetection:(NSArray<TuSDKTSFaceFeature *> *)faces size:(CGSize)size;
+
+/** 按照宽高计算相对于图片的范围 */
+- (CGRect)makeRectRelativeImage:(CGSize)size;
 
 /** 创建脸部定位视图 */
 - (UIView *)buildFaceDetectionView;

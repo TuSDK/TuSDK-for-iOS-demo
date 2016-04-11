@@ -15,6 +15,11 @@
 @interface TuSDKStillCamera : GPUImageStillCamera<TuSDKStillCameraInterface>
 
 /**
+ *  相机帧采样缓冲委托
+ */
+@property (nonatomic, assign) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
+
+/**
  *  相机事件委托
  */
 @property (nonatomic, assign) id<TuSDKStillCameraDelegate> captureDelegate;

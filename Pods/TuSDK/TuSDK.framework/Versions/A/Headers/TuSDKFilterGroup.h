@@ -25,6 +25,11 @@
 @property (nonatomic, retain) NSString *file;
 
 /**
+ *  类型ID
+ */
+@property (nonatomic) NSUInteger categoryId;
+
+/**
  * 验证方式 0：不绑定验证
  */
 @property (nonatomic) NSUInteger validType;

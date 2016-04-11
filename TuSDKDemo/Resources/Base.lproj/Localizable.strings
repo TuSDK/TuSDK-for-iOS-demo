@@ -41,3 +41,7 @@
 "sample_ui_CameraBase" = "相机界面自定义";
 
 "sample_api_CameraBase" = "个性化相机示例 (仅供参考)";
+
+"sample_api_face_detection_image" = "人脸检测 (图片)";
+"sample_api_face_detection_camera" = "人脸检测 (视频)";
+"lsq_face_detection_title" = "人脸检测";

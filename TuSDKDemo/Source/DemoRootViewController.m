@@ -29,7 +29,7 @@
     // 相机组件
     CameraComponentSample *cameraComponentSample;
     
-    // 多功能编辑组件
+    // 照片美化组件
     EditMultipleComponentSample *editMultipleComponentSample;
     
 }

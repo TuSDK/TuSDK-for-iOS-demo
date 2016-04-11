@@ -30,11 +30,16 @@
 @property (nonatomic) int trackingFrameCount;
 
 @property (nonatomic) BOOL hasFaceAngle;
+/*rollAngle*/
 @property (nonatomic) float faceAngle;
+
+@property (nonatomic) BOOL hasFaceYawAngle;
+@property (nonatomic) float faceYawAngle;
 
 @property (nonatomic) BOOL hasSmile;
 @property (nonatomic) BOOL leftEyeClosed;
 @property (nonatomic) BOOL rightEyeClosed;
+@property (nonatomic) CMTime timestamp;
 @end
 #pragma mark - TuSDKTSFaceHelper
 /**
@@ -63,4 +68,25 @@
 + (NSArray<TuSDKTSFaceFeature *> *) transforFaces:(NSArray<CIFaceFeature*> *)faces
                                              rect:(CGRect)rect
                                          rotation:(GPUImageRotationMode)rotation;
+
+/**
+ *  获取人像百分比信息
+ *
+ *  @param faces    脸部信息
+ *  @param rect     图像区域
+ *  @param rotation 旋转方向
+ *
+ *  @return 人像百分比信息
+ */
++ (NSArray<TuSDKTSFaceFeature *> *) transforAVFaces:(NSArray<AVMetadataFaceObject *> *)faces
+                                           rotation:(GPUImageRotationMode)rotation;
+
+/**
+ *  转换方向模式
+ *
+ *  @param rotation GPUImage方向
+ *
+ *  @return 图像方向
+ */
++ (UIImageOrientation)convertGPURotation:(GPUImageRotationMode)rotation;
 @end

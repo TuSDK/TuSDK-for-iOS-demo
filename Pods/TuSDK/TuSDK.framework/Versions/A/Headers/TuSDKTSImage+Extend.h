@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#include <CoreMedia/CoreMedia.h>
 
 #pragma mark - ImageExtend
 /**
@@ -387,4 +388,43 @@
  *  打印图片信息
  */
 - (void)dump;
+@end
+
+#pragma mark - pix sort
+/**
+ *  像素顺序
+ */
+@interface TuSDKTSPixSort : NSObject
+
+@property (nonatomic) NSUInteger red;
+@property (nonatomic) NSUInteger green;
+@property (nonatomic) NSUInteger blue;
+@property (nonatomic) NSUInteger alpha;
+
++ (instancetype) initWithRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(NSUInteger)alpha;
+/** 像素总数 */
+- (NSUInteger) total;
+@end
+
+@interface UIImage(ImagePixSort)
+/**
+ *  获取图像像素顺序
+ */
+- (TuSDKTSPixSort *)pixSort;
+@end
+
+#pragma mark - CMSampleBufferRefExtends
+@interface UIImage(CMSampleBufferRefExtends)
+/**
+ *  从SampleBuffer获取图片
+ *
+ *  @param sampleBuffer CMSampleBufferRef
+ *  @param rotation     旋转方向
+ *  @param rectSize     区域长宽 (输出的图片不允许超过区域)
+ *
+ *  @return 从SampleBuffer获取图片
+ */
++ (UIImage *)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
+                          rotation:(UIImageOrientation)rotation
+                              rectSize:(CGSize)rectSize;
 @end

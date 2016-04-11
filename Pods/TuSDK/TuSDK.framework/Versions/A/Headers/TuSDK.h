@@ -261,6 +261,6 @@ extern NSString * const lsqFilterSampleExtension;
  *  @return 相机对象
  */
 + (id<TuSDKStillCameraInterface>)cameraWithSessionPreset:(NSString *)sessionPreset
-                               cameraPosition:(AVCaptureDevicePosition)cameraPosition
-                                   cameraView:(UIView *)view;
+                                          cameraPosition:(AVCaptureDevicePosition)cameraPosition
+                                              cameraView:(UIView *)view;
 @end

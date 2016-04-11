@@ -8,7 +8,6 @@
 
 
 #import "EditMultipleComponentSample.h"
-#import "CustomApertureViewController.h"
 
 /**
  *  照片美化组件范例
@@ -226,8 +225,6 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editWipeAndFilterOptions.outputCompress = 0.95f;
     //
-    
-    _photoEditMultipleComponent.options.editApertureOptions.componentClazz = [CustomApertureViewController class];
     
     // 设置图片
     _photoEditMultipleComponent.inputImage = result.image;

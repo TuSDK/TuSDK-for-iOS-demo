@@ -41,3 +41,7 @@
 "sample_ui_CameraBase" = "Customization UI for Camera Component";
 
 "sample_api_CameraBase" = "Create Camera with API (For test only)";
+
+"sample_api_face_detection_image" = "Face Detection (Picture)";
+"sample_api_face_detection_camera" = "Face Detection (Video)";
+"lsq_face_detection_title" = "Face Detection";

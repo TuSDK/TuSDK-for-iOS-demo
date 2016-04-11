@@ -63,11 +63,12 @@
 /**
  *  创建动作按钮
  *
- *  @param type 图片编辑动作类型
+ *  @param module 图片编辑动作类型
+ *  @param count  按钮总数
  *
  *  @return 动作按钮
  */
-- (UIButton *)buildButtonWithActionType:(lsqTuSDKCPEditActionType)type;
+- (UIButton *)buildButtonWithActionType:(lsqTuSDKCPEditActionType)type moduleCount:(NSUInteger)count;
 
 /**
  *  更新按钮布局

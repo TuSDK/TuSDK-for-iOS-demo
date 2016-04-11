@@ -62,7 +62,7 @@
 
 #pragma mark - config
 /**
- *  视图类 (默认:TuSDKPFEditEntryView, 需要继承 TuSDKPFEditEntryView)
+ *  视图类 (默认:TuSDKPFEditMultipleView, 需要继承 TuSDKPFEditMultipleView)
  */
 @property (nonatomic, strong) Class viewClazz;
 @end

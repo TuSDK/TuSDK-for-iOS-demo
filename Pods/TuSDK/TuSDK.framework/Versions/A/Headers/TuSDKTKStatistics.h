@@ -277,6 +277,21 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      *  在线图像颜色分析
      */
     tkc_imageAnalysis_color = 0x800001,
+    
+    /**
+     *  视频控制器
+     */
+    tkc_videoFragment = 0x900000,
+    
+    /**
+     * 相机控制器 后置摄像头
+     */
+    tkc_video_action_faceing_back = 0x901021,
+    
+    /**
+     * 相机控制器 前置摄像头
+     */
+    tkc_video_action_faceing_front = 0x901022,
 };
 
 #pragma mark - TuSDKTKStatistics
