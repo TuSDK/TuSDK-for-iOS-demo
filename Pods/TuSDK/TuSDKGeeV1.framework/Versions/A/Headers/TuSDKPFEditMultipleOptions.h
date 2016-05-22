@@ -33,6 +33,11 @@
 @property (nonatomic) BOOL disableStepsSave;
 
 /**
+ *  设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+ */
+@property (nonatomic) TuSDKWaterMarkOption *waterMarkOption;
+
+/**
  *  功能模块列表 lsqTuSDKCPEditActionType (默认全部加载, [TuSDKCPEditActionType multipleActionTypes])
  */
 @property (nonatomic, readonly) NSMutableArray *modules;

@@ -110,6 +110,20 @@ typedef void (^TuSDKTSPHPhotoLibrarySaveWithImageCompletionBlock)(PHAsset *asset
               metadata:(NSDictionary *)metadata
                toAblum:(NSString *)albumName
        completionBlock:(TuSDKTSPHPhotoLibrarySaveWithImageCompletionBlock)completionBlock;
+
+/**
+ *  保存视频到系统相册
+ *
+ *  @param videoURL             图片数据
+ *  @param albumName            相册名称
+ *  @param completionBlock      保存图片数据到系统相册回调
+ *
+ *  @return 是否允许操作系统相册
+ */
++ (BOOL) saveWithVideo:(NSURL *)videoURL
+               toAblum:(NSString *)albumName
+       completionBlock:(TuSDKTSPHPhotoLibrarySaveWithImageCompletionBlock)completionBlock;
+
 @end
 #pragma mark - TuSDKTSPHAsset
 /**

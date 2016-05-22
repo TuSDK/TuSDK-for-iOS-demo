@@ -104,6 +104,8 @@
     //    _photoEditMultipleComponent.options.editMultipleOptions.saveToAlbum = YES;
     //    // 控制器关闭后是否自动删除临时文件
     //    _photoEditMultipleComponent.options.editMultipleOptions.isAutoRemoveTemp = YES;
+    // 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+    _photoEditMultipleComponent.options.editMultipleOptions.waterMarkOption = [self waterMarkOption];
     //
     //    // 图片编辑滤镜控制器配置选项
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditFilterOptions.html
@@ -236,5 +238,45 @@
     // SDK 内部组件采用了一致的界面设计，会通过 push 方式打开视图。如果用户开启了该选项，在调用时可能会遇到布局不兼容问题，请谨慎处理。
     _photoEditMultipleComponent.autoPushViewController = YES;
     [_photoEditMultipleComponent showComponent];
+}
+
+/**
+ *  编辑器水印
+ *
+ *  @return
+ */
+- (TuSDKWaterMarkOption *)waterMarkOption;
+{
+    TuSDKWaterMarkOption *option = [[TuSDKWaterMarkOption alloc] init];
+    
+    // 水印文字或者图片需要至少设置一个
+    // 设置水印文字
+    option.markText = @"";
+    
+    // 设置水印文字颜色
+    option.markTextColor = [UIColor whiteColor];
+    
+    // 文字大小 (默认: 24 SP)
+    option.markTextSize = 24;
+    
+    // 文字阴影颜色 (默认:[UIColor grayColor])
+    option.markTextShadowColor = [UIColor grayColor];
+    
+    // 设置水印图片
+    option.markImage = [UIImage imageNamed:@"sample_watermark.png"];
+    
+    // 文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
+    option.markTextPosition = lsqMarkTextPositionRight;
+    
+    // 设置水印位置 (默认: lsqWaterMarkBottomRight)
+    option.markPosition = lsqWaterMarkBottomRight;
+    
+    // 设置水印距离图片边距 (默认: 6dp)
+    option.markMargin = 6;
+    
+    // 文字和图片间距 (默认: 2dp)
+    option.markTextPadding = 5;
+    
+    return option;
 }
 @end

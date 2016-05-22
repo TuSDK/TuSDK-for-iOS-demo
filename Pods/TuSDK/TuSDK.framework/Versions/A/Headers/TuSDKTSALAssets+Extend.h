@@ -279,6 +279,21 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
 ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
 
 /**
+ *  保存视频到系统相册
+ *
+ *  @param videoURL             视频文件
+ *  @param albumName            相册名称
+ *  @param completionBlock      保存完成
+ *  @param ablumCompletionBlock 保存视频到指定相册
+ *
+ *  @return 是否允许操作系统相册
+ */
++ (BOOL) saveVideo:(NSURL *)videoURL
+           toAblum:(NSString *)albumName
+   completionBlock:(SaveImageCompletion)completionBlock
+ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
+
+/**
  *  添加照片对象到指定相册
  *
  *  @param asset     照片对象

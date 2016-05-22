@@ -257,4 +257,19 @@ typedef void (^TuSDKTSAssetsManagerSaveImageAblumCompletion)(id<TuSDKTSAssetsGro
                toAblum:(NSString *)albumName
        completionBlock:(TuSDKTSAssetsManagerSaveImageCompletion)completionBlock
   ablumCompletionBlock:(TuSDKTSAssetsManagerSaveImageAblumCompletion)ablumCompletionBlock;
+
+/**
+ *  保存视频到系统相册
+ *
+ *  @param videoURL             视频文件
+ *  @param albumName            相册名称
+ *  @param completionBlock      相册名称
+ *  @param ablumCompletionBlock 保存相片到指定相册
+ *
+ *  @return 是否允许操作系统相册
+ */
++ (BOOL) saveWithVideo:(NSURL *)videoURL
+               toAblum:(NSString *)albumName
+       completionBlock:(TuSDKTSAssetsManagerSaveImageCompletion)completionBlock
+  ablumCompletionBlock:(TuSDKTSAssetsManagerSaveImageAblumCompletion)ablumCompletionBlock;
 @end

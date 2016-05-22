@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKCPImageResultController.h"
 #import "TuSdkCPEditActionType.h"
+#import "TuSDKWaterMarkOption.h"
 
 /**
  *  多功能图像编辑控制器基础类

@@ -1,0 +1,47 @@
+/*
+ TuSDKDemo.strings
+ TuSDKDemo
+
+ Created by idealhack on 15/7/7.
+ Copyright (c) 2015 tusdk.com. All rights reserved.
+ */
+
+"app_name" = "塗圖 TuSDK";
+"back" = "返回";
+
+// nav button
+"component_camera" = "特效相機";
+"component_editor" = "照片美化";
+"component_list" = "開發套件";
+
+// sample group
+"sample_group_suite" = "功能套件";
+"sample_group_comp" = "常用組件";
+"sample_group_examples" = "組件用法示例";
+"sample_group_extend" = "自定義界面示例";
+"sample_group_define" = "API 使用示例";
+
+// samples
+"sample_EditAndCutComponent" = "裁剪 + 滤镜组件";
+"sample_EditAvatarComponent" = "頭像設置組件";
+"sample_EditAdvancedComponent" = "裁切 ＋ 濾鏡 ＋ 貼紙組件";
+"sample_EditMultipleComponent" = "多功能編輯組件";
+"sample_AlbumComponent" = "相冊組件";
+"sample_AlbumMultipleComponent" = "多選相冊組件";
+"sample_CameraComponent" = "相機組件";
+"sample_GifComponent" = "GIF 組件";
+
+"sample_comp_CameraAndEditor" = "拍照 + 編輯例子";
+"sample_comp_SelfishCamera" = "美顏相機";
+"sample_comp_FilterComponent" = "濾鏡組件示例";
+"sample_comp_StickerComponent" = "貼紙組件示例";
+"sample_comp_BlurComponent" = "模糊組件示例";
+
+"extend_EditComponent" = "裁切組件自定義界面";
+"extend_CameraBase" = "相機自定義界面";
+
+"define_CameraBase" = "個性化相機示例 (仅供参考)";
+
+"sample_api_face_detection_image" = "人臉識別 (圖片)";
+"sample_api_face_detection_camera" = "人臉識別 (視頻)";
+"lsq_face_detection_title" = "人臉識別";

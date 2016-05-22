@@ -8,6 +8,7 @@
 
 #import "TuSDKCPViewController.h"
 #import "TuSDKResult.h"
+#import "TuSDKWaterMarkOption.h"
 
 /**
  *  处理结果视图控制器
@@ -32,6 +33,11 @@
  *  照片输出压缩率 0-1 如果设置为0 将保存为PNG格式  (默认: 0.95)
  */
 @property (nonatomic) CGFloat outputCompress;
+
+/**
+ *  设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+ */
+@property (nonatomic) TuSDKWaterMarkOption *waterMarkOption;
 
 /**
  *  是否有访问系统相册权限
@@ -83,4 +89,13 @@
  *  @param selector 结束后执行方法
  */
 - (void)saveToAlbumWithResult:(TuSDKResult *)result;
+
+/**
+ *  添加水印
+ *
+ *  @param image 目标图片
+ *
+ *  @return
+ */
+- (UIImage *)addWaterMarkToImage:(UIImage *)image;
 @end

@@ -195,6 +195,11 @@
 @property (nonatomic) BOOL enableFaceDetection;
 
 /**
+ *  设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+ */
+@property (nonatomic) TuSDKWaterMarkOption *waterMarkOption;
+
+/**
  *  创建系统相机控制器对象
  *
  *  @return 系统相机控制器对象

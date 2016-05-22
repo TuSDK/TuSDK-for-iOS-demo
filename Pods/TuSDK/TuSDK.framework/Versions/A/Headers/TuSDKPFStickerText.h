@@ -82,6 +82,11 @@ typedef NS_ENUM(NSInteger, lsqStickerTextType)
 @property (nonatomic, retain) UIColor *color;
 
 /**
+ * 文字阴影颜色
+ */
+@property (nonatomic, retain) UIColor *shadowColor;
+
+/**
  * 文字大小 (单位:SP)
  */
 @property (nonatomic) CGFloat size;

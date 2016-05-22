@@ -62,6 +62,11 @@
 @property (nonatomic, strong) Class photosViewClazz;
 
 /**
+ *  照片列表单元格视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
+ */
+@property (nonatomic, strong) Class gridCellViewClazz;
+
+/**
  *  相册列表视图
  */
 @property (nonatomic, strong) TuSDKPFAlbumPopList *albumPopList;

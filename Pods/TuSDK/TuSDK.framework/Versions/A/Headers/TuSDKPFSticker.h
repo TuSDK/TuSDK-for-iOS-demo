@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
 /**
  *  贴纸文字列表
  */
-@property (nonatomic, readonly) NSArray *texts;
+@property (nonatomic, retain) NSArray *texts;
 
 /**
  *  贴纸数据对象

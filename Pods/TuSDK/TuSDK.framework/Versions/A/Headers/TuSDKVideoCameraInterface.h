@@ -10,6 +10,7 @@
 #import "TuSDKTSMath.h"
 #import "TuSDKCPRegionHandler.h"
 #import "TuSDKTSFaceHelper.h"
+#import "TuSDKFilterAdapter.h"
 
 /**
  *  视频相机状态
@@ -55,6 +56,14 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera stateChanged:(lsqCameraState)state;
 
 @optional
+/**
+ *  相机滤镜改变 (如需操作UI线程， 请检查当前线程是否为主线程)
+ *
+ *  @param camera    相机对象
+ *  @param newFilter 新的滤镜对象
+ */
+- (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera filterChanged:(TuSDKFilterWrap *)newFilter;
+
 /**
  *  原始帧采样缓冲数据
  *

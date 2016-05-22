@@ -8,6 +8,7 @@
 
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "TuSDKGeeV1Import.h"
+#import "TuSDKPFAlbumPopListCell.h"
 
 /**
  *  列表样式视图委托

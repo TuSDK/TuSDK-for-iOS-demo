@@ -39,14 +39,9 @@
 @interface TuSDKPFPhotosGridView : TuSDKICGridView<UICollectionViewDataSource, UICollectionViewDelegate>
 
 /**
- *  表格行视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
+ *  表格单元格视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
  */
 @property (nonatomic, strong) Class cellViewClazz;
-
-/**
- *  表格单元格视图类 (默认:TuSDKPFPhotosGrid, 需要继承 TuSDKPFPhotosGrid)
- */
-@property (nonatomic, strong) Class gridViewClazz;
 
 /**
  *  相册列表每行显示的照片数量 (默认:0, 程序自动适配设备)

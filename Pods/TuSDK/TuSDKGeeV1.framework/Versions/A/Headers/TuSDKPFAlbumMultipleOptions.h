@@ -39,6 +39,11 @@
 @property (nonatomic, strong) Class photosViewClazz;
 
 /**
+ *  照片列表单元格视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
+ */
+@property (nonatomic, strong) Class gridCellViewClazz;
+
+/**
  *  一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
  */
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
