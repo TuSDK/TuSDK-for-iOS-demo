@@ -230,6 +230,11 @@
 @property (nonatomic) BOOL enableFaceDetection;
 
 /**
+ *  是否允许音量键拍照 (默认关闭)
+ */
+@property (nonatomic) BOOL enableCaptureWithVolumeKeys;
+
+/**
  *  创建滤镜栏视图
  *
  *  @param view 默认样式视图 (如需创建自定义视图，请覆盖该方法，并配置自己的视图类)

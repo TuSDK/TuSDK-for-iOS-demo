@@ -62,6 +62,9 @@
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFAlbumMultipleOptions.html
     // _albumComponent.options.albumOptions
     
+    // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFCameraOptions.html
+    // _albumComponent.options.cameraOptions
+    
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _albumComponent.autoDismissWhenCompelted = YES;
     [_albumComponent showComponent];

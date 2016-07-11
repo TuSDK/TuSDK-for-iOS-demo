@@ -1,0 +1,268 @@
+/*
+ TuSDK.strings
+ TuSDKDemo
+ 
+ Created by Clear Hu on 14/10/28.
+ Copyright (c) 2014年 tusdk.com. All rights reserved.
+ */
+
+"lsq_reset" = "重置";
+"lsq_cancel" = "取消";
+"lsq_setting" = "設置";
+"lsq_loading_image" = "讀取圖片...";
+"lsq_downloading_image" = "正從iCloud下載圖片...";
+"lsq_initing" = "正在初始化";
+"lsq_inited" = "初始化完成";
+
+// refreshListView
+"lsq_refresh_list_view_state_visible" = "下拉刷新";
+"lsq_refresh_list_view_state_hidden" = "加載完成";
+"lsq_refresh_list_view_state_triggered" = "釋放開始刷新";
+"lsq_refresh_list_view_state_loading" = "正在加載...";
+"lsq_refresh_list_view_state_lasttime" = "上次刷新時間：";
+"lsq_refresh_list_view_state_load_more" = "正在加載更多...";
+
+// Date
+"lsq_date_seconds_ago" = "秒前";
+"lsq_date_minutes_ago" = "分鐘前";
+"lsq_date_hours_ago" = "小時前";
+"lsq_date_month" = "月";
+"lsq_date_year" = "年";
+"lsq_date_today" = "今天";
+"lsq_date_formater" = "yyyy年M月d日";
+
+// nav
+"lsq_nav_cancel" = "取消";
+"lsq_nav_back" = "返回";
+"lsq_nav_more" = "更多";
+"lsq_nav_remove" = "刪除";
+"lsq_nav_complete" = "完成";
+
+// button
+"lsq_button_done" = "我知道了";
+"lsq_button_close" = "關閉";
+"lsq_button_switch_camera" = "切換鏡頭";
+"lsq_button_flash" = "閃光燈:";
+"lsq_button_flash_model_off" = "禁用";
+"lsq_button_flash_model_auto" = "自動";
+"lsq_button_flash_model_open" = "開啓";
+
+// avatar
+"lsq_avatar_actionsheet_title" = "設置頭像";
+"lsq_avatar_actionsheet_cancel" = "取消";
+"lsq_avatar_actionsheet_camera" = "拍照";
+"lsq_avatar_actionsheet_album" = "從相冊選擇";
+
+// camera
+"lsq_carema_no_device" = "您的設備沒有相機功能！";
+"lsq_carema_access_error%@" = "無法訪問系統相機.請在'設置->隱私->相機'設置 %@ 爲打開狀態.";
+"lsq_carema_access_error_title" = "無法訪問系統相機";
+
+// album
+"lsq_album_title" = "相簿";
+"lsq_album_empty" = "還沒有照片";
+"lsq_album_total_format%ld" = "%ld 張照片";
+"lsq_album_ALAssetsLibraryAccessDefaultError%@" = "相冊訪問失敗(%@)";
+"lsq_album_ALAssetsLibraryAccessUserDeniedError%@" = "相冊訪問失敗.請在'設置->隱私->照片'設置 %@ 爲打開狀態.";
+"lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "無法訪問相冊.請在'設置->隱私->照片'設置 %@ 爲打開狀態.";
+"lsq_album_ALAssets_error_title" = "無法訪問相冊";
+"lsq_album_empty_selection_msg" = "No photos selected";
+"lsq_album_max_selection_msg" = "%d photos have been selected already";
+
+// location
+"lsq_location_error_title" = "無法獲取地理信息";
+"lsq_location_AccessUserDeniedError%@" = "無法獲取地理信息.請在'設置->隱私->定位服務'設置 定位服務以及 %@ 爲打開狀態.";
+
+// save
+"lsq_save_saveToTemp" = "正在處理...";
+"lsq_save_saveToTemp_completed" = "處理完成";
+"lsq_save_saveToTemp_failed" = "處理失敗";
+"lsq_save_saveToAlbum" = "正在保存到相冊...";
+"lsq_save_saveToAlbum_succeed" = "保存成功";
+"lsq_save_saveToAlbum_failed" = "保存到相冊失敗";
+
+// edit
+"lsq_edit_button_complete" = "完成";
+"lsq_edit_loading" = "正在讀取...";
+"lsq_edit_filter_processing" = "正在處理...";
+"lsq_edit_processing" = "正在處理...";
+"lsq_edit_processed" = "處理完成";
+"lsq_edit_process_error" = "發生錯誤，請確認設備已聯網";
+"lsq_edit_step_prev" = "撤銷";
+"lsq_edit_step_next" = "重做";
+"lsq_edit_auto_adjust" = "自動校色";
+"lsq_edit_entry_filter" = "濾鏡";
+"lsq_edit_entry_cuter" = "裁切";
+"lsq_edit_entry_sticker" = "貼紙";
+"lsq_edit_entry_smudge" = "塗抹";
+"lsq_edit_entry_smudge_filter" = "模糊";
+"lsq_edit_cuter_ratio_orgin" = "原始";
+"lsq_edit_cuter_ratio_1_1" = "1:1";
+"lsq_edit_cuter_ratio_2_3" = "2:3";
+"lsq_edit_cuter_ratio_3_4" = "3:4";
+"lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_title" = "編輯";
+"lsq_edit_multiple_title" = "美化圖片";
+"lsq_edit_skin_title" = "美顏";
+"lsq_edit_holy_light" = "聖光";
+
+// sticker
+"lsq_sticker_cate_default" = "貼紙";
+"lsq_sticker_cate_watermark" = "水印";
+"lsq_sticker_cate_mood" = "心情";
+"lsq_sticker_cate_frame" = "相框";
+"lsq_sticker_loading" = "正在加載貼紙...";
+"lsq_sticker_load_unexsit" = "貼紙不存在，請換一個試試";
+"lsq_sticker_over_limit%ld" = "OMG, 同時僅允許使用 %ld 張貼紙";
+"lsq_sticker_title" = "貼紙";
+"lsq_sticker_online_title" = "貼紙商店";
+"lsq_sticker_total_format%ld" = "%ld 張貼紙";
+"lsq_sticker_empty" = "還沒有貼紙";
+"lsq_sticker_empty_msg" = "快去貼紙商店挑選海量貼紙";
+"lsq_sticker_1_1" = "怪咖營地4";
+"lsq_sticker_remove_title" = "刪除貼紙";
+"lsq_sticker_remove_msg%@" = "您是否需要刪除貼紙「%@」？";
+"lsq_sticker_cate_all" = "全部";
+"lsq_sticker_cate_history" = "常用";
+
+// format
+"las_date_format" = "yyyy年M月d日";
+
+// Week
+"las_week_Sun" = "週日";
+"las_week_Mon" = "週一";
+"las_week_Tue" = "週二";
+"las_week_Wed" = "週三";
+"las_week_Thu" = "週四";
+"las_week_Fri" = "週五";
+"las_week_Sat" = "週六";
+
+// FilterGroup
+"lsq_filter_group_Leica" = "萊卡";
+"lsq_filter_group_Lomo" = "LOMO";
+"lsq_filter_group_Food" = "美食";
+"lsq_filter_group_Enhance" = "增強";
+"lsq_filter_group_Glare" = "光效";
+"lsq_filter_group_Beauty" = "人像";
+"lsq_filter_group_Magic" = "魔法色";
+
+// Filters
+"lsq_filter_online_title" = "在線濾鏡";
+"lsq_filter_remove_title" = "刪除濾鏡";
+"lsq_filter_remove_msg%@" = "您是否需要刪除濾鏡「%@」？";
+"lsq_filter_Normal" = "無效果";
+"lsq_filter_Lomo" = "LOMO";
+"lsq_filter_Noir" = "黑白";
+"lsq_filter_Abao" = "阿寶";
+"lsq_filter_Instant" = "鮮豔";
+"lsq_filter_Nostalgic" = "懷舊";
+"lsq_filter_Newborn" = "新生";
+"lsq_filter_Morning" = "清晨";
+"lsq_filter_Cheerful" = "愉悅";
+"lsq_filter_Lightup" = "明亮";
+"lsq_filter_Vintage" = "復古";
+"lsq_filter_Thick" = "濃郁";
+"lsq_filter_Fade" = "褪色";
+"lsq_filter_Clear" = "清澈";
+"lsq_filter_Artistic" = "藝術";
+"lsq_filter_Brilliant" = "燦爛";
+"lsq_filter_Harmony" = "和諧";
+"lsq_filter_Gloss" = "光澤";
+"lsq_filter_Forest" = "森林";
+"lsq_filter_Relaxed" = "輕鬆";
+"lsq_filter_Rough" = "粗獷";
+"lsq_filter_Leica" = "萊卡";
+
+// Beauty
+"lsq_filter_SkinNature" = "自然";
+"lsq_filter_SkinPink" = "粉嫩";
+"lsq_filter_SkinJelly" = "果凍";
+"lsq_filter_SkinNoir" = "黑白";
+"lsq_filter_SkinRuddy" = "紅潤";
+"lsq_filter_SkinPowder" = "蜜粉";
+"lsq_filter_SkinSugar" = "糖水色";
+
+// Magic
+"lsq_filter_MagicRed" = "妃紅";
+"lsq_filter_MagicYellow" = "檸檬";
+"lsq_filter_MagicBlue" = "深竹月";
+"lsq_filter_MagicGreen" = "沙綠";
+"lsq_filter_MagicPurple" = "雪紫";
+
+// Filters Definition
+"lsq_filter_SkinWhitening" = "美白";
+"lsq_filter_SkinTwiceMixed" = "雙混美膚";
+"lsq_filter_SkinTwiceMixedSigma" = "雙混加強";
+"lsq_filter_SkinWhiteMixed" = "雙混美白";
+"lsq_filter_SkinRGBSpace" = "空間美膚";
+"lsq_filter_SkinColorMixed" = "色混美膚";
+"lsq_filter_BokehBlur" = "模糊";
+"lsq_filter_SenseOfAutumn" = "秋意濃";
+"lsq_filter_Coloration" = "着色";
+"lsq_filter_Fluorescent" = "熒光";
+"lsq_filter_Freshmorning" = "清晨";
+"lsq_filter_Holidaysunshine" = "假日";
+"lsq_filter_Purplemoon" = "紫月亮";
+"lsq_filter_Summersunshine" = "夏日";
+"lsq_filter_Wintersunshine" = "冬日";
+
+// Filters Definition skin
+"lsq_filter_set_smoothing" = "潤滑";
+"lsq_filter_set_whitening" = "白皙";
+"lsq_filter_set_blurSize" = "強度";
+"lsq_filter_set_blurWeight" = "權重";
+"lsq_filter_set_skinColorThreshold" = "膚色";
+"lsq_filter_set_skinColorThresholdQuadraticMixture" = "矩陣";
+"lsq_filter_set_distanceNormalizationFactor" = "邊緣";
+"lsq_filter_set_blurSigma" = "西格瑪";
+"lsq_filter_set_mixied" = "效果";
+"lsq_filter_set_saturation" = "飽和度";
+"lsq_filter_set_contrast" = "對比度";
+"lsq_filter_set_sharpness" = "銳化";
+"lsq_filter_set_highlights" = "高光";
+"lsq_filter_set_shadows" = "陰影";
+"lsq_filter_set_temperature" = "色溫";
+"lsq_filter_set_skinColor" = "膚色";
+"lsq_filter_set_autumnColorThreshold" = "秋意";
+"lsq_filter_set_hue" = "色相";
+"lsq_filter_set_hueSpace" = "範圍";
+"lsq_filter_set_brightness" = "亮度";
+"lsq_filter_set_exposure" = "曝光度";
+"lsq_filter_set_vignette" = "暗角";
+"lsq_filter_set_aperture" = "光圈";
+"lsq_filter_set_adjustment" = "調整";
+"lsq_filter_set_selective" = "選區";
+"lsq_filter_set_linear" = "線性";
+"lsq_filter_set_radial" = "徑向";
+
+// Filters Definition Bokeh
+"lsq_filter_set_radius" = "內半徑";
+"lsq_filter_set_centerX" = "中心X";
+"lsq_filter_set_centerY" = "中心Y";
+"lsq_filter_set_excessive" = "邊緣";
+"lsq_filter_set_maskAlpha" = "強調";
+"lsq_filter_set_degree" = "角度";
+
+// Brush Definition
+"lsq_brush_Eraser" = "橡皮擦";
+"lsq_brush_Mosaic" = "馬賽克";
+"lsq_brush_OilPaint" = "油畫";
+"lsq_brush_Gouache" = "水粉";
+"lsq_brush_WaterColor" = "水彩";
+"lsq_brush_ColorLead" = "彩鉛";
+"lsq_brush_MapleLeaf" = "葉子";
+
+// Brush Size definition
+"lsq_brush_size_small" = "细";
+"lsq_brush_size_medium" = "中";
+"lsq_brush_size_large" = "粗";
+"lsq_brush_size_label" = "笔尖：%@";
+
+// network
+"lsq_network_request_error" = "服務器請求錯誤";
+"lsq_network_request_return_error" = "服務器返回錯誤";
+"lsq_network_connection_without" = "設備無網絡";
+"lsq_network_connection_interruption" = "網絡連接中斷，請檢查網絡設置";
+"lsq_network_connection_failed" = "網絡連接失敗";
+"lsq_network_connection_timeout" = "服務器連接超時";
+"lsq_network_paser_data_failed" = "數據處理失敗";

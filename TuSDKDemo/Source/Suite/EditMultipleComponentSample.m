@@ -104,8 +104,8 @@
     //    _photoEditMultipleComponent.options.editMultipleOptions.saveToAlbum = YES;
     //    // 控制器关闭后是否自动删除临时文件
     //    _photoEditMultipleComponent.options.editMultipleOptions.isAutoRemoveTemp = YES;
-    // 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
-    _photoEditMultipleComponent.options.editMultipleOptions.waterMarkOption = [self waterMarkOption];
+    //    // 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
+    //    _photoEditMultipleComponent.options.editMultipleOptions.waterMarkOption = [self waterMarkOption];
     //
     //    // 图片编辑滤镜控制器配置选项
     // @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFEditFilterOptions.html

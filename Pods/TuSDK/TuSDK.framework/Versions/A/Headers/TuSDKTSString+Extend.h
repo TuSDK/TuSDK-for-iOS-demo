@@ -19,7 +19,7 @@
  *
  *  @return 本地化字符串
  */
-+ (NSString*)localizedString:(NSString*)key;
++ (NSString*)lsqLocalizedString:(NSString*)key;
 
 /**
  *  base64编码
@@ -51,7 +51,7 @@
  *
  *  @return UUID
  */
-+ (NSString*)UUID;
++ (NSString*)lsqUUID;
 
 /**
  *  返回对应容量单位数
@@ -120,14 +120,14 @@
  *
  *  @return 反转字符串
  */
-- (NSString *)reverse;
+- (NSString *)lsqReverse;
 
 /**
  *  获取字符串的hex
  *
  *  @return 字符串的hex
  */
-- (NSString *)hexString;
+- (NSString *)lsqHexString;
 
 /**
  *  Hex转10进制数字

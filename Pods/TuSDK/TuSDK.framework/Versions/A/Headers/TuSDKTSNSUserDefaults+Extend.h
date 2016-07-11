@@ -19,7 +19,7 @@
  *  @param key   缓存键
  *  @param value 缓存值 如果为空将删除缓存
  */
-+ (void)saveKey:(NSString *)key value:(id)value;
++ (void)lsqSaveKey:(NSString *)key value:(id)value;
 
 /**
  *  加载缓存数据
@@ -28,5 +28,5 @@
  *
  *  @return 缓存数据
  */
-+ (id)loadForKey:(NSString *)key;
++ (id)lsqLoadForKey:(NSString *)key;
 @end

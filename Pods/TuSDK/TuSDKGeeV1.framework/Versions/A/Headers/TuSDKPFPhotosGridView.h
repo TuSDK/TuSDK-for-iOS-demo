@@ -54,6 +54,11 @@
 @property (nonatomic, assign) BOOL enableMultiSelection;
 
 /**
+ *  显示相机单元格，点击后请求打开相机 (默认: true)
+ */
+@property (nonatomic) BOOL displayCameraCell;
+
+/**
  *  当前选中相册组
  */
 @property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;

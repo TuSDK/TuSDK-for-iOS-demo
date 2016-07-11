@@ -49,6 +49,11 @@
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 
 /**
+ *  显示相机单元格，点击后请求打开相机 (默认: true)
+ */
+@property (nonatomic) BOOL displayCameraCell;
+
+/**
  *  允许在多个相册中选择 (默认: 开启)
  */
 @property (nonatomic, assign) BOOL enabelShareSelection;

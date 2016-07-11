@@ -87,7 +87,19 @@
 - (void)setGuideLineViewState:(BOOL)isShow;
 
 /**
+ *  是音量键拍摄
+ *
+ *  @param isEnableCaptureWithVolumeKeys 是否开启音量键拍摄
+ */
+- (void)setEnableCaptureWithVolumeKeys:(BOOL)isEnableCaptureWithVolumeKeys;
+
+/**
  *  获取辅助线显示状态
  */
 - (BOOL)getGuideLineViewState;
+
+/**
+ *  按音量键拍摄
+ */
+- (void)onCapturePhotoWithVolume;
 @end

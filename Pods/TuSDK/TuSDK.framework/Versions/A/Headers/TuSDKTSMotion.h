@@ -35,6 +35,11 @@
 @property (nonatomic, readonly) UIDeviceOrientation deviceOrientation;
 
 /**
+ * 物理感应器角度
+ */
+@property (nonatomic, readonly) float deviceAngle;
+
+/**
  *  根据物理方向转变为图片方向
  */
 @property (nonatomic, readonly) UIImageOrientation imageOrientation;

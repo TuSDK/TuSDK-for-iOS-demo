@@ -205,6 +205,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_camera_action_take_picture = 0x501010,
     
     /**
+     * 相机控制器 拍照动作
+     */
+    tkc_camera_action_capture_with_volume = 0x501011,
+    
+    /**
      * 相机控制器 后置摄像头
      */
     tkc_camera_action_faceing_back = 0x501021,
@@ -279,9 +284,24 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_imageAnalysis_color = 0x800001,
     
     /**
-     *  视频控制器
+     *  直播相机启动
      */
-    tkc_videoFragment = 0x900000,
+    tkc_liveVideoCamera_start = 0x900000,
+    
+    /**
+     *  直播相机停止
+     */
+    tkc_liveVideoCamera_stop = 0x900001,
+    
+    /**
+     *  录制相机启动
+     */
+    tkc_recordVideoCamera_start = 0x900002,
+    
+    /**
+     *  录制相机启动
+     */
+    tkc_recordVideoCamera_stop = 0x900003,
     
     /**
      * 相机控制器 后置摄像头

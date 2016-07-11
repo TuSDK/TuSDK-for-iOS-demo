@@ -84,7 +84,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @param sampleBuffer 帧采样缓冲
  *  @param rotation     原始图像方向
  */
-- (void)onProcessVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer rotation:(UIImageOrientation)rotation;
+- (void)onProcessVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer rotation:(UIImageOrientation)rotation angle:(float)angle;
 @end
 
 @protocol TuSDKVideoCameraExtendViewInterface;
@@ -119,6 +119,21 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  是否为后置摄像头
  */
 @property (readonly, getter = isBackFacingCameraPresent) BOOL backFacingCameraPresent;
+
+/**
+ *  水平镜像前置摄像头
+ */
+@property(readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera;
+
+/**
+ *  水平镜像后置摄像头
+ */
+@property(readwrite, nonatomic) BOOL horizontallyMirrorRearFacingCamera;
+
+/**
+ *  禁用前置摄像头水平镜像 (默认: NO，前置摄像头输出画面进行水平镜像)
+ */
+@property (nonatomic) BOOL disableMirrorFrontFacing;
 
 /**
  *  相机状态
@@ -174,11 +189,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  照片输出分辨率
  */
 @property (nonatomic) CGSize outputSize;
-
-/**
- *  禁用前置摄像头自动水平镜像 (默认: NO，前置摄像头拍摄结果自动进行水平镜像)
- */
-@property (nonatomic) BOOL disableMirrorFrontFacing;
 
 /**
  *  是否开启脸部追踪

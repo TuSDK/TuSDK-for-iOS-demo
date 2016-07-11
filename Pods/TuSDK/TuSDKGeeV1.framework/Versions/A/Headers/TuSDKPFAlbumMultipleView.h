@@ -102,6 +102,11 @@
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 
 /**
+ *  显示相机单元格，点击后请求打开相机 (默认: true)
+ */
+@property (nonatomic) BOOL displayCameraCell;
+
+/**
  *  列表样式视图委托
  */
 @property (nonatomic, assign) id<TuSDKPFAlbumMultipleViewProtocol> selectedProtocol;

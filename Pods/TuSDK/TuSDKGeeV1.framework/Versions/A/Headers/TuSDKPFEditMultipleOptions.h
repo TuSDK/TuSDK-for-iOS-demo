@@ -40,7 +40,7 @@
 /**
  *  功能模块列表 lsqTuSDKCPEditActionType (默认全部加载, [TuSDKCPEditActionType multipleActionTypes])
  */
-@property (nonatomic, readonly) NSMutableArray *modules;
+@property (nonatomic) NSMutableArray *modules;
 
 /**
  *  禁用功能模块

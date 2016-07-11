@@ -200,6 +200,11 @@
 @property (nonatomic) TuSDKWaterMarkOption *waterMarkOption;
 
 /**
+ *  是否允许音量键拍照 (默认关闭)
+ */
+@property (nonatomic) BOOL enableCaptureWithVolumeKeys;
+
+/**
  *  创建系统相机控制器对象
  *
  *  @return 系统相机控制器对象

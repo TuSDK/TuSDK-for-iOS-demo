@@ -122,6 +122,9 @@
 /** 本地人脸检测图片 */
 - (BOOL)faceLocalImageSupport;
 
+/** 基于本地人脸检测的美颜 */
+- (BOOL)faceLocalBeautySupport;
+
 /** 本地人脸检测视频 */
 - (BOOL)faceLocalVideoSupport;
 

@@ -21,14 +21,14 @@ extern NSString * const lsqHttpHeader_Content_Type;
  *
  *  @return 附件信息
  */
-- (NSString *)contentDisposition;
+- (NSString *)lsqContentDisposition;
 
 /**
  *  获取附件文件名
  *
  *  @return 附件文件名
  */
-- (NSString *)attachmentFileName;
+- (NSString *)lsqAttachmentFileName;
 @end
 
 /**
@@ -40,12 +40,12 @@ extern NSString * const lsqHttpHeader_Content_Type;
  *
  *  @return JSON数据对象
  */
-- (NSData *)jsonData;
+- (NSData *)lsqJsonData;
 
 /**
  *  转换为Json字符串
  *
  *  @return Json字符串
  */
-- (NSString *)jsonString;
+- (NSString *)lsqJsonString;
 @end

@@ -110,6 +110,11 @@
 @property (nonatomic) BOOL faceLocalVideoSupport;
 
 /**
+ *  face Local Beauty support
+ */
+@property (nonatomic) BOOL faceLocalBeautySupport;
+
+/**
  *  Filter API
  */
 @property (nonatomic) BOOL filterAPIEnabled;

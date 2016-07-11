@@ -100,6 +100,11 @@
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 
 /**
+ *  显示相机单元格，点击后请求打开相机 (默认: true)
+ */
+@property (nonatomic) BOOL displayCameraCell;
+
+/**
  *  选中的单元列表
  */
 @property (nonatomic, readonly) NSMutableArray<TuSDKTSAssetInterface> *selectedItems;

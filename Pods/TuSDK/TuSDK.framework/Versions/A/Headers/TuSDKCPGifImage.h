@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "TuSDKCPGifDecoder.h"
 
-#define BUFFER_SIZE (10 * 1024 * 1024) // 10MB (minimum memory buffer size)
+#define LSQ_BUFFER_SIZE (10 * 1024 * 1024) // 10MB (minimum memory buffer size)
 
-#define LOCK(...) OSSpinLockLock(&self->_lock); \
+#define LSQ_LOCK(...) OSSpinLockLock(&self->_lock); \
 __VA_ARGS__; \
 OSSpinLockUnlock(&self->_lock);
 
-#define LOCK_VIEW(...) OSSpinLockLock(&view->_lock); \
+#define LSQ_LOCK_VIEW(...) OSSpinLockLock(&view->_lock); \
 __VA_ARGS__; \
 OSSpinLockUnlock(&view->_lock);
 

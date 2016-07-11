@@ -25,7 +25,7 @@
 @property (nonatomic, retain) NSString *file;
 
 /**
- *  类型ID
+ *  类型ID 0: 普通滤镜 1: 直播滤镜
  */
 @property (nonatomic) NSUInteger categoryId;
 

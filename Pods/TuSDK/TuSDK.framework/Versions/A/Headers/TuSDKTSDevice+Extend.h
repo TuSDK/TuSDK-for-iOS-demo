@@ -122,7 +122,7 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 应用 Bundle Identifier
  */
-+ (NSString *)appIdentifier;
++ (NSString *)lsqAppIdentifier;
 
 /**
  *  开启应用设置页面

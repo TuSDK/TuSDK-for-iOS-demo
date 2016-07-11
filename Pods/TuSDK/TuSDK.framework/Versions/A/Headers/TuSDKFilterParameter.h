@@ -41,6 +41,19 @@
 @end
 
 
+#pragma mark - TuSDKFilterFacePositionProtocol
+/**
+ *  材质协议
+ */
+@protocol TuSDKFilterFacePositionProtocol <NSObject>
+/**
+ *  更新位置
+ *
+ *  @param points  特征点坐标
+ */
+- (void)setFaceFeatures:(NSArray<NSValue *> *)points;
+@end
+
 #pragma mark - TuSDKFilterArg
 /**
  *  滤镜参数

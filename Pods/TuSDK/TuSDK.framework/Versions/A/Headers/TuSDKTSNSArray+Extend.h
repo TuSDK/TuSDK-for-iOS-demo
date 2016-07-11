@@ -19,13 +19,13 @@
  *
  *  @return 返回分组数组
  */
-- (NSArray *)splitForGroupsize:(NSUInteger)groupSize;
+- (NSArray *)lsqSplitForGroupsize:(NSUInteger)groupSize;
 
 /**
  *  数组元素顺序反转
  *
  *  @return 倒序的数组
  */
-- (NSArray *)lsq_reverse;
+- (NSArray *)lsqReverse;
 
 @end

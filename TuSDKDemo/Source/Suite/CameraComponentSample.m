@@ -166,7 +166,10 @@
     opt.enableFaceDetection = YES;
     
     // 设置水印选项 (默认为空，如果设置不为空，则输出的图片上将带有水印)
-    opt.waterMarkOption = [self waterMarkOption];
+    // opt.waterMarkOption = [self waterMarkOption];
+    
+    // 是否允许音量键拍照 (默认关闭)
+    opt.enableCaptureWithVolumeKeys = YES;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托

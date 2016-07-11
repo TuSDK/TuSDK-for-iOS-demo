@@ -10,8 +10,8 @@
 #import "TuSDKPFBrush.h"
 #import "TuSDKTSScreen+Extend.h"
 
-#ifndef SmudgProcessor_Define
-#define SmudgProcessor_Define
+#ifndef lsqSmudgProcessor_Define
+#define lsqSmudgProcessor_Define
 
 #define lsq_PIXEL_PER_POINT     [UIScreen scale]
 
