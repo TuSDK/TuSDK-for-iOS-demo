@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TuSDKCircularProgressView.h"
+#import "TuSDKGeeV1Import.h"
 
 /**
  * 相册图标在列表中的占位符
@@ -34,9 +36,30 @@ extern NSString * const CAMERA_PLACEHOLDER;
 @property (nonatomic, assign) BOOL enableMultiSelection;
 
 /**
+ *  下载进度背景view
+ */
+@property (nonatomic, retain) UIView *progressBgView;
+/**
+ *  下载进度view
+ */
+@property (nonatomic, retain) TuSDKCircularProgressView *progressView;
+
+/**
+ *  是否正在下载数据
+ */
+@property (nonatomic, assign)BOOL downloading;
+
+/**
+ *  媒体资源图片
+ */
+@property (nonatomic, retain) id<TuSDKTSAssetInterface> asset;
+
+
+
+/**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 // 重置视图
 - (void)viewNeedRest;

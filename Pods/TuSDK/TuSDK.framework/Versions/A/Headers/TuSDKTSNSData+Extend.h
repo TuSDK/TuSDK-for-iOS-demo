@@ -17,7 +17,7 @@
  *
  *  @return 获取MD5
  */
-- (NSString *)md5;
+- (NSString *)lsqMd5;
 
 /**
  *  获取指定位置的数据
@@ -26,7 +26,7 @@
  *
  *  @return 数据
  */
-- (Byte)getByteWithPostion:(NSUInteger)postion;
+- (Byte)lsqGetByteWithPostion:(NSUInteger)postion;
 
 /**
  *  使用AES/CBC/PKCS7Padding 256位加密
@@ -35,7 +35,7 @@
  *
  *  @return 解密数据
  */
-- (NSData *)encryptAES256CBCPKCS7PaddingWithKey:(NSString *)key;
+- (NSData *)lsqEncryptAES256CBCPKCS7PaddingWithKey:(NSString *)key;
 
 /**
  *  使用AES/CBC/PKCS7Padding 256位解密
@@ -44,7 +44,7 @@
  *
  *  @return 解密数据
  */
-- (NSData *)decryptAES256CBCPKCS7PaddingWithKey:(NSString *)key;
+- (NSData *)lsqDecryptAES256CBCPKCS7PaddingWithKey:(NSString *)key;
 
 /**
  *  解析base64字符串
@@ -53,7 +53,7 @@
  *
  *  @return 解析base64数据
  */
-+ (NSData *)dataFromBase64String:(NSString*)str;
++ (NSData *)lsqDataFromBase64String:(NSString*)str;
 
 /**
  *  base64编码
@@ -62,5 +62,5 @@
  *
  *  @return base64编码
  */
-- (NSString* )base64encode;
+- (NSString* )lsqBase64encode;
 @end

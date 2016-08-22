@@ -171,7 +171,7 @@ typedef void (^TuSDKNKImageAnalysisBlock)(TuSDKNKImageAnalysisResult* result, ls
  *
  *  @param block Image Analysis Block
  */
-- (void)analysisFaceWithBlock:(TuSDKNKImageAnalysisBlock)block;
+- (void)analysisFaceWithBlock:(TuSDKNKImageAnalysisBlock)block params:(id)param;
 /**
  *  cancel analysis
  */

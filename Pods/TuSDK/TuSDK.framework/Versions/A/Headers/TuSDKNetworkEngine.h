@@ -36,6 +36,11 @@ extern NSString *const kTuSDKNetworkEngineOperationCountChanged;
 
 @interface TuSDKNetworkEngine : NSObject
 
+/**
+ *  使用 SSL 发送网络请求 (默认: YES)
+ */
+@property (nonatomic) BOOL useSSL;
+
 @property (nonatomic, copy) NSString * cacheDirectory;
 @property (nonatomic) NSUInteger cacheCost;
 

@@ -17,6 +17,6 @@
  *
  *  @return 返回图片对象
  */
-- (UIImage *)decodedToImage;
+- (UIImage *)lsqDecodedToImage;
 
 @end

@@ -114,7 +114,7 @@
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  显示指定相册的照片

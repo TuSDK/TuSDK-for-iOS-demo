@@ -22,7 +22,7 @@
  *
  *  @return Image对象
  */
-+ (UIImage *) imageFromColor:(UIColor *)color;
++ (UIImage *) lsqImageFromColor:(UIColor *)color;
 
 /**
  *  创建圆形图像
@@ -32,7 +32,7 @@
  *
  *  @return 图像
  */
-+ (UIImage *) createOvalImage:(NSUInteger)radius fillColor:(UIColor *)fillColor;
++ (UIImage *) lsqCreateOvalImage:(NSUInteger)radius fillColor:(UIColor *)fillColor;
 
 /**
  *  创建矩形图像
@@ -42,7 +42,7 @@
  *
  *  @return 图像
  */
-+ (UIImage *) createRectImage:(CGSize)size fillColor:(UIColor *)fillColor;
++ (UIImage *) lsqCreateRectImage:(CGSize)size fillColor:(UIColor *)fillColor;
 /**
  *  缩放图片
  *
@@ -50,7 +50,7 @@
  *
  *  @return 缩放过的图片
  */
-- (UIImage *) scaleImage:(CGSize)newSize;
+- (UIImage *) lsqScaleImage:(CGSize)newSize;
 
 /**
  *  等比旋转缩放 (不得小于 newSize)
@@ -59,7 +59,7 @@
  *
  *  @return 等比旋转缩放
  */
-- (UIImage *) scaleGeometricAndRotate:(CGSize)newSize;
+- (UIImage *) lsqScaleGeometricAndRotate:(CGSize)newSize;
 
 /**
  *  获取限制最大边长图片
@@ -68,7 +68,7 @@
  *
  *  @return 修改限制后的图片
  */
-- (UIImage *) imageLimit:(CGFloat)limit;
+- (UIImage *) lsqImageLimit:(CGFloat)limit;
 
 /**
  *  缩放图片
@@ -77,14 +77,14 @@
  *
  *  @return 缩放后的图片
  */
-- (UIImage *) imageScale:(CGFloat)scale;
+- (UIImage *) lsqImageScale:(CGFloat)scale;
 
 /**
  *  旋转图像到UP角度
  *
  *  @return 旋转图像到UP角度
  */
-- (UIImage *) imageRotatedToUp;
+- (UIImage *) lsqImageRotatedToUp;
 
 /**
  *  按比例裁剪图片
@@ -93,28 +93,28 @@
  *
  *  @return 裁剪后的图片
  */
-- (UIImage *) imageCorpWithRatio:(CGFloat)ratio;
+- (UIImage *) lsqImageCorpWithRatio:(CGFloat)ratio;
 
 /**
  *  获取全屏大小图片
  *
  *  @return 全屏大小图片
  */
-- (UIImage *) fullScreenImage;
+- (UIImage *) lsqFullScreenImage;
 
 /**
  *  获取全屏大小图片 (保持图片原始方向)
  *
  *  @return 全屏大小图片
  */
-- (UIImage *) fullScreenImageKeepOrientation;
+- (UIImage *) lsqFullScreenImageKeepOrientation;
 
 /**
  *  改变图片方向属性
  *
  *  @return 图片对象
  */
-- (UIImage *) changeOrientation: (UIImageOrientation)orientation;
+- (UIImage *) lsqChangeOrientation: (UIImageOrientation)orientation;
 
 /**
  *  将输入图片拼合到自身上层
@@ -123,7 +123,7 @@
  *
  *  @return 拼合的图片
  */
-- (UIImage *) mergeAboveImage:(UIImage *)inputImage;
+- (UIImage *) lsqMergeAboveImage:(UIImage *)inputImage;
 /**
  *  转换为JPEG数据
  *
@@ -132,14 +132,14 @@
  *
  *  @return JPEG数据
  */
-- (NSData *) jpegDataWithCompress:(CGFloat)compress meta:(NSDictionary *)meta;
+- (NSData *) lsqJpegDataWithCompress:(CGFloat)compress meta:(NSDictionary *)meta;
 
 /**
  *  是否需要长宽换位
  *
  *  @return 是否换位
  */
-- (BOOL) sizeTransposed;
+- (BOOL) lsqSizeTransposed;
 
 /**
  *  重新解析图片
@@ -148,7 +148,7 @@
  *
  *  @return 图片对象
  */
-+ (UIImage *)decodedImageWithImage:(UIImage *)image;
++ (UIImage *)lsqDecodedImageWithImage:(UIImage *)image;
 
 /**
  *  根据图片文件名按屏幕DPI进行缩放
@@ -157,7 +157,7 @@
  *
  *  @return 按屏幕DPI进行缩放后的图片
  */
-- (UIImage *)scaledImageForKey:(NSString *)key;
+- (UIImage *)lsqScaledImageForKey:(NSString *)key;
 @end
 
 #pragma mark - ResizeAndRotate
@@ -174,7 +174,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize baseLongSide:(BOOL)baseLongSide;
+- (UIImage *)lsqImageResize:(CGSize)resize baseLongSide:(BOOL)baseLongSide;
 
 /**
  *  等比缩放并旋转图片
@@ -185,7 +185,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize
+- (UIImage *)lsqImageResize:(CGSize)resize
              orientation:(UIImageOrientation)orientation
             baseLongSide:(BOOL)baseLongSide;
 
@@ -198,7 +198,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize
+- (UIImage *)lsqImageResize:(CGSize)resize
             baseLongSide:(BOOL)baseLongSide
     interpolationQuality:(CGInterpolationQuality)quality;
 /**
@@ -210,7 +210,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize baseLongSide:(BOOL)baseLongSide ratio:(CGFloat)ratio;
+- (UIImage *)lsqImageResize:(CGSize)resize baseLongSide:(BOOL)baseLongSide ratio:(CGFloat)ratio;
 
 /**
  *  等比缩放并旋转图片
@@ -222,7 +222,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize
+- (UIImage *)lsqImageResize:(CGSize)resize
              orientation:(UIImageOrientation)orientation
             baseLongSide:(BOOL)baseLongSide
                    ratio:(CGFloat)ratio;
@@ -238,7 +238,7 @@
  *
  *  @return 处理后的图片
  */
-- (UIImage *)imageResize:(CGSize)resize
+- (UIImage *)lsqImageResize:(CGSize)resize
              orientation:(UIImageOrientation)orientation
             baseLongSide:(BOOL)baseLongSide
     interpolationQuality:(CGInterpolationQuality)quality
@@ -255,28 +255,28 @@
  *
  *  @return 重设属性后的图片对象
  */
-- (UIImage *)changeTurnLeft;
+- (UIImage *)lsqChangeTurnLeft;
 
 /**
  *  设置图片属性向右旋转图片90度
  *
  *  @return 重设属性后的图片对象
  */
-- (UIImage *)changeTurnRight;
+- (UIImage *)lsqChangeTurnRight;
 
 /**
  *  设置图片属性水平镜像
  *
  *  @return 重设属性后的图片对象
  */
-- (UIImage *)changeMirrorHorizontal;
+- (UIImage *)lsqChangeMirrorHorizontal;
 
 /**
  *  设置图片属性垂直镜像
  *
  *  @return 重设属性后的图片对象
  */
-- (UIImage *)changeMirrorVertical;
+- (UIImage *)lsqChangeMirrorVertical;
 
 /**
  *  计算正确的的图片方向
@@ -286,7 +286,7 @@
  *
  *  @return 正确的的图片方向
  */
-+ (UIImageOrientation)orientation:(UIImageOrientation)orientation isMirror:(BOOL)isMirror;
++ (UIImageOrientation)lsqOrientation:(UIImageOrientation)orientation isMirror:(BOOL)isMirror;
 
 /**
  *  获取图片EXIF的方向
@@ -295,7 +295,7 @@
  *
  *  @return 图片的方向
  */
-+ (UIImageOrientation)orientationWithExif:(NSUInteger)exifOrientation;
++ (UIImageOrientation)lsqOrientationWithExif:(NSUInteger)exifOrientation;
 @end
 
 #pragma mark - ImageCorp
@@ -310,7 +310,7 @@
  *
  *  @return 指定长宽图片
  */
-- (UIImage *) imageCorpResizeWithSize:(CGSize)size;
+- (UIImage *) lsqImageCorpResizeWithSize:(CGSize)size;
 
 /**
  *  裁剪图片 (需要先旋转到正确的方向)
@@ -319,7 +319,7 @@
  *
  *  @return 裁剪后的图片
  */
-- (UIImage *)imageCorpWithPrecentRect:(CGRect)rect;
+- (UIImage *)lsqImageCorpWithPrecentRect:(CGRect)rect;
 
 /**
  *  裁剪图片 (需要先旋转到正确的方向)
@@ -329,7 +329,7 @@
  *
  *  @return 裁剪后的图片
  */
-- (UIImage *)imageCorpWithPrecentRect:(CGRect)rect outputSize:(CGSize)outputSize;
+- (UIImage *)lsqImageCorpWithPrecentRect:(CGRect)rect outputSize:(CGSize)outputSize;
 
 /**
  *  裁剪图片
@@ -342,7 +342,7 @@
  *
  *  @return 裁剪后的图片
  */
-- (UIImage *)imageCorpWithSize:(CGSize)size
+- (UIImage *)lsqImageCorpWithSize:(CGSize)size
                           rect:(CGRect)rect
                     outputSize:(CGSize)outputSize
                    orientation:(UIImageOrientation)orientation
@@ -361,7 +361,7 @@
  *
  *  @return 改变颜色的图片
  */
-- (UIImage *) imageWithTintColor:(UIColor *)tintColor;
+- (UIImage *) lsqImageWithTintColor:(UIColor *)tintColor;
 /**
  *  改变图片颜色 (使用灰度信息)
  *
@@ -369,7 +369,7 @@
  *
  *  @return 改变颜色的图片
  */
-- (UIImage *) imageWithGradientTintColor:(UIColor *)tintColor;
+- (UIImage *) lsqImageWithGradientTintColor:(UIColor *)tintColor;
 
 /**
  *  改变图片颜色
@@ -379,7 +379,7 @@
  *
  *  @return 改变颜色的图片
  */
-- (UIImage *) imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
+- (UIImage *) lsqImageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
 @end
 
 #pragma mark - ImageDump
@@ -387,7 +387,7 @@
 /**
  *  打印图片信息
  */
-- (void)dump;
+- (void)lsqDump;
 @end
 
 #pragma mark - pix sort
@@ -410,7 +410,7 @@
 /**
  *  获取图像像素顺序
  */
-- (TuSDKTSPixSort *)pixSort;
+- (TuSDKTSPixSort *)lsqPixSort;
 @end
 
 #pragma mark - CMSampleBufferRefExtends
@@ -424,7 +424,20 @@
  *
  *  @return 从SampleBuffer获取图片
  */
-+ (UIImage *)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
++ (UIImage *)lsqImageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
                           rotation:(UIImageOrientation)rotation
                               rectSize:(CGSize)rectSize;
+@end
+
+#pragma mark - PlanarPixelBufferRefExtends
+@interface UIImage(PlanarPixelBufferRefExtends)
+
+/**
+ *  从 PlanarPixelBuffer 获取图片 (420f)
+ *
+ *  @param pixelBuffer CVPixelBufferRef
+ *
+ *  @return 从Plane PixelBuffer获取图片
+ */
++ (UIImage *)lsqImageFromPlanarPixelBuffer:(CVPixelBufferRef)pixelBuffer;
 @end

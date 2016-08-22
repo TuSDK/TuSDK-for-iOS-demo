@@ -18,5 +18,5 @@
  *
  *  @return 音频播放对象
  */
-+ (instancetype)playerWithFilePath:(NSString *)path;
++ (instancetype)lsqPlayerWithFilePath:(NSString *)path;
 @end

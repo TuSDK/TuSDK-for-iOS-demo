@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		023C308F1C4636FA00BDBA36 /* sample_gif_editor.gif in Resources */ = {isa = PBXBuildFile; fileRef = 023C308E1C4636FA00BDBA36 /* sample_gif_editor.gif */; };
-		027DA9FD1D33AA0400BA198F /* DefineCameraBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9D21D33AA0400BA198F /* DefineCameraBaseComponent.m */; };
-		027DA9FE1D33AA0400BA198F /* AlbumComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9D51D33AA0400BA198F /* AlbumComponentSample.m */; };
-		027DA9FF1D33AA0400BA198F /* AlbumMultipleComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9D71D33AA0400BA198F /* AlbumMultipleComponentSample.m */; };
-		027DAA001D33AA0400BA198F /* GifImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9D91D33AA0400BA198F /* GifImageViewController.m */; };
-		027DAA011D33AA0400BA198F /* CustomizedCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9DC1D33AA0400BA198F /* CustomizedCameraComponent.m */; };
-		027DAA021D33AA0400BA198F /* CustomizedEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9DE1D33AA0400BA198F /* CustomizedEditAndCutComponent.m */; };
-		027DAA031D33AA0400BA198F /* DemoComponentListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9E01D33AA0400BA198F /* DemoComponentListController.m */; };
-		027DAA041D33AA0400BA198F /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9E21D33AA0400BA198F /* DemoRootView.m */; };
-		027DAA051D33AA0400BA198F /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9E41D33AA0400BA198F /* DemoRootViewController.m */; };
-		027DAA061D33AA0400BA198F /* CameraAndEditorSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9E71D33AA0400BA198F /* CameraAndEditorSample.m */; };
-		027DAA071D33AA0400BA198F /* EditFilterSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9E91D33AA0400BA198F /* EditFilterSampleController.m */; };
-		027DAA081D33AA0400BA198F /* SelfishCameraSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9EB1D33AA0400BA198F /* SelfishCameraSample.m */; };
-		027DAA091D33AA0400BA198F /* StickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9ED1D33AA0400BA198F /* StickerSampleController.m */; };
-		027DAA0A1D33AA0400BA198F /* WipeAndFilterSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9EF1D33AA0400BA198F /* WipeAndFilterSampleController.m */; };
-		027DAA0B1D33AA0400BA198F /* SampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9F11D33AA0400BA198F /* SampleBase.m */; };
-		027DAA0C1D33AA0400BA198F /* CameraComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9F41D33AA0400BA198F /* CameraComponentSample.m */; };
-		027DAA0D1D33AA0400BA198F /* EditAdvancedComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9F61D33AA0400BA198F /* EditAdvancedComponentSample.m */; };
-		027DAA0E1D33AA0400BA198F /* EditAndCutComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9F81D33AA0400BA198F /* EditAndCutComponentSample.m */; };
-		027DAA0F1D33AA0400BA198F /* EditAvatarComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9FA1D33AA0400BA198F /* EditAvatarComponentSample.m */; };
-		027DAA101D33AA0400BA198F /* EditMultipleComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 027DA9FC1D33AA0400BA198F /* EditMultipleComponentSample.m */; };
 		02D1ABC91CF1911B00C8497D /* sample_watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D1ABC81CF1911B00C8497D /* sample_watermark.png */; };
-		02DEE1481CBBABD400703164 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02DEE1471CBBABD400703164 /* TuSDK.bundle */; };
+		02F56EC41D6ACC39004FB9D2 /* DefineCameraBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E901D6ACC39004FB9D2 /* DefineCameraBaseComponent.m */; };
+		02F56EC51D6ACC39004FB9D2 /* AlbumComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E931D6ACC39004FB9D2 /* AlbumComponentSample.m */; };
+		02F56EC61D6ACC39004FB9D2 /* AlbumMultipleComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E951D6ACC39004FB9D2 /* AlbumMultipleComponentSample.m */; };
+		02F56EC71D6ACC39004FB9D2 /* GifImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E971D6ACC39004FB9D2 /* GifImageViewController.m */; };
+		02F56EC81D6ACC39004FB9D2 /* CustomizedCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E9A1D6ACC39004FB9D2 /* CustomizedCameraComponent.m */; };
+		02F56EC91D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E9C1D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.m */; };
+		02F56ECA1D6ACC39004FB9D2 /* DemoComponentListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56E9E1D6ACC39004FB9D2 /* DemoComponentListController.m */; };
+		02F56ECB1D6ACC39004FB9D2 /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EA01D6ACC39004FB9D2 /* DemoRootView.m */; };
+		02F56ECC1D6ACC39004FB9D2 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EA21D6ACC39004FB9D2 /* DemoRootViewController.m */; };
+		02F56ED11D6ACC39004FB9D2 /* CameraAndEditorSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EAE1D6ACC39004FB9D2 /* CameraAndEditorSample.m */; };
+		02F56ED21D6ACC39004FB9D2 /* EditFilterSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EB01D6ACC39004FB9D2 /* EditFilterSampleController.m */; };
+		02F56ED31D6ACC39004FB9D2 /* SelfishCameraSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EB21D6ACC39004FB9D2 /* SelfishCameraSample.m */; };
+		02F56ED41D6ACC39004FB9D2 /* StickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EB41D6ACC39004FB9D2 /* StickerSampleController.m */; };
+		02F56ED51D6ACC39004FB9D2 /* WipeAndFilterSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EB61D6ACC39004FB9D2 /* WipeAndFilterSampleController.m */; };
+		02F56ED61D6ACC39004FB9D2 /* SampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EB81D6ACC39004FB9D2 /* SampleBase.m */; };
+		02F56ED71D6ACC39004FB9D2 /* CameraComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EBB1D6ACC39004FB9D2 /* CameraComponentSample.m */; };
+		02F56ED81D6ACC39004FB9D2 /* EditAdvancedComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EBD1D6ACC39004FB9D2 /* EditAdvancedComponentSample.m */; };
+		02F56ED91D6ACC39004FB9D2 /* EditAndCutComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EBF1D6ACC39004FB9D2 /* EditAndCutComponentSample.m */; };
+		02F56EDA1D6ACC39004FB9D2 /* EditAvatarComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EC11D6ACC39004FB9D2 /* EditAvatarComponentSample.m */; };
+		02F56EDB1D6ACC39004FB9D2 /* EditMultipleComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F56EC31D6ACC39004FB9D2 /* EditMultipleComponentSample.m */; };
+		02F56EDD1D6ACC7F004FB9D2 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02F56EDC1D6ACC7F004FB9D2 /* TuSDK.bundle */; };
 		0F8F180FECDD476085C5E9A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBCC545807A3B0CA100644B /* libPods.a */; };
 		DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */; };
 		DC8851B11A45221000839674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8851AF1A45221000839674 /* Images.xcassets */; };
@@ -61,48 +61,48 @@
 
 /* Begin PBXFileReference section */
 		023C308E1C4636FA00BDBA36 /* sample_gif_editor.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sample_gif_editor.gif; sourceTree = "<group>"; };
-		027DA9D11D33AA0400BA198F /* DefineCameraBaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineCameraBaseComponent.h; sourceTree = "<group>"; };
-		027DA9D21D33AA0400BA198F /* DefineCameraBaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineCameraBaseComponent.m; sourceTree = "<group>"; };
-		027DA9D41D33AA0400BA198F /* AlbumComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumComponentSample.h; sourceTree = "<group>"; };
-		027DA9D51D33AA0400BA198F /* AlbumComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumComponentSample.m; sourceTree = "<group>"; };
-		027DA9D61D33AA0400BA198F /* AlbumMultipleComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumMultipleComponentSample.h; sourceTree = "<group>"; };
-		027DA9D71D33AA0400BA198F /* AlbumMultipleComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumMultipleComponentSample.m; sourceTree = "<group>"; };
-		027DA9D81D33AA0400BA198F /* GifImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifImageViewController.h; sourceTree = "<group>"; };
-		027DA9D91D33AA0400BA198F /* GifImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifImageViewController.m; sourceTree = "<group>"; };
-		027DA9DB1D33AA0400BA198F /* CustomizedCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedCameraComponent.h; sourceTree = "<group>"; };
-		027DA9DC1D33AA0400BA198F /* CustomizedCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedCameraComponent.m; sourceTree = "<group>"; };
-		027DA9DD1D33AA0400BA198F /* CustomizedEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedEditAndCutComponent.h; sourceTree = "<group>"; };
-		027DA9DE1D33AA0400BA198F /* CustomizedEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedEditAndCutComponent.m; sourceTree = "<group>"; };
-		027DA9DF1D33AA0400BA198F /* DemoComponentListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoComponentListController.h; sourceTree = "<group>"; };
-		027DA9E01D33AA0400BA198F /* DemoComponentListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoComponentListController.m; sourceTree = "<group>"; };
-		027DA9E11D33AA0400BA198F /* DemoRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootView.h; sourceTree = "<group>"; };
-		027DA9E21D33AA0400BA198F /* DemoRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootView.m; sourceTree = "<group>"; };
-		027DA9E31D33AA0400BA198F /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
-		027DA9E41D33AA0400BA198F /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
-		027DA9E61D33AA0400BA198F /* CameraAndEditorSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraAndEditorSample.h; sourceTree = "<group>"; };
-		027DA9E71D33AA0400BA198F /* CameraAndEditorSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraAndEditorSample.m; sourceTree = "<group>"; };
-		027DA9E81D33AA0400BA198F /* EditFilterSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFilterSampleController.h; sourceTree = "<group>"; };
-		027DA9E91D33AA0400BA198F /* EditFilterSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFilterSampleController.m; sourceTree = "<group>"; };
-		027DA9EA1D33AA0400BA198F /* SelfishCameraSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfishCameraSample.h; sourceTree = "<group>"; };
-		027DA9EB1D33AA0400BA198F /* SelfishCameraSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfishCameraSample.m; sourceTree = "<group>"; };
-		027DA9EC1D33AA0400BA198F /* StickerSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerSampleController.h; sourceTree = "<group>"; };
-		027DA9ED1D33AA0400BA198F /* StickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerSampleController.m; sourceTree = "<group>"; };
-		027DA9EE1D33AA0400BA198F /* WipeAndFilterSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeAndFilterSampleController.h; sourceTree = "<group>"; };
-		027DA9EF1D33AA0400BA198F /* WipeAndFilterSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeAndFilterSampleController.m; sourceTree = "<group>"; };
-		027DA9F01D33AA0400BA198F /* SampleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleBase.h; sourceTree = "<group>"; };
-		027DA9F11D33AA0400BA198F /* SampleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleBase.m; sourceTree = "<group>"; };
-		027DA9F31D33AA0400BA198F /* CameraComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraComponentSample.h; sourceTree = "<group>"; };
-		027DA9F41D33AA0400BA198F /* CameraComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraComponentSample.m; sourceTree = "<group>"; };
-		027DA9F51D33AA0400BA198F /* EditAdvancedComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAdvancedComponentSample.h; sourceTree = "<group>"; };
-		027DA9F61D33AA0400BA198F /* EditAdvancedComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAdvancedComponentSample.m; sourceTree = "<group>"; };
-		027DA9F71D33AA0400BA198F /* EditAndCutComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAndCutComponentSample.h; sourceTree = "<group>"; };
-		027DA9F81D33AA0400BA198F /* EditAndCutComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAndCutComponentSample.m; sourceTree = "<group>"; };
-		027DA9F91D33AA0400BA198F /* EditAvatarComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAvatarComponentSample.h; sourceTree = "<group>"; };
-		027DA9FA1D33AA0400BA198F /* EditAvatarComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAvatarComponentSample.m; sourceTree = "<group>"; };
-		027DA9FB1D33AA0400BA198F /* EditMultipleComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMultipleComponentSample.h; sourceTree = "<group>"; };
-		027DA9FC1D33AA0400BA198F /* EditMultipleComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMultipleComponentSample.m; sourceTree = "<group>"; };
 		02D1ABC81CF1911B00C8497D /* sample_watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_watermark.png; sourceTree = "<group>"; };
-		02DEE1471CBBABD400703164 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
+		02F56E8F1D6ACC39004FB9D2 /* DefineCameraBaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineCameraBaseComponent.h; sourceTree = "<group>"; };
+		02F56E901D6ACC39004FB9D2 /* DefineCameraBaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineCameraBaseComponent.m; sourceTree = "<group>"; };
+		02F56E921D6ACC39004FB9D2 /* AlbumComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumComponentSample.h; sourceTree = "<group>"; };
+		02F56E931D6ACC39004FB9D2 /* AlbumComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumComponentSample.m; sourceTree = "<group>"; };
+		02F56E941D6ACC39004FB9D2 /* AlbumMultipleComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumMultipleComponentSample.h; sourceTree = "<group>"; };
+		02F56E951D6ACC39004FB9D2 /* AlbumMultipleComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumMultipleComponentSample.m; sourceTree = "<group>"; };
+		02F56E961D6ACC39004FB9D2 /* GifImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifImageViewController.h; sourceTree = "<group>"; };
+		02F56E971D6ACC39004FB9D2 /* GifImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifImageViewController.m; sourceTree = "<group>"; };
+		02F56E991D6ACC39004FB9D2 /* CustomizedCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedCameraComponent.h; sourceTree = "<group>"; };
+		02F56E9A1D6ACC39004FB9D2 /* CustomizedCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedCameraComponent.m; sourceTree = "<group>"; };
+		02F56E9B1D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedEditAndCutComponent.h; sourceTree = "<group>"; };
+		02F56E9C1D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedEditAndCutComponent.m; sourceTree = "<group>"; };
+		02F56E9D1D6ACC39004FB9D2 /* DemoComponentListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoComponentListController.h; sourceTree = "<group>"; };
+		02F56E9E1D6ACC39004FB9D2 /* DemoComponentListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoComponentListController.m; sourceTree = "<group>"; };
+		02F56E9F1D6ACC39004FB9D2 /* DemoRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootView.h; sourceTree = "<group>"; };
+		02F56EA01D6ACC39004FB9D2 /* DemoRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootView.m; sourceTree = "<group>"; };
+		02F56EA11D6ACC39004FB9D2 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
+		02F56EA21D6ACC39004FB9D2 /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
+		02F56EAD1D6ACC39004FB9D2 /* CameraAndEditorSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraAndEditorSample.h; sourceTree = "<group>"; };
+		02F56EAE1D6ACC39004FB9D2 /* CameraAndEditorSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraAndEditorSample.m; sourceTree = "<group>"; };
+		02F56EAF1D6ACC39004FB9D2 /* EditFilterSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFilterSampleController.h; sourceTree = "<group>"; };
+		02F56EB01D6ACC39004FB9D2 /* EditFilterSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFilterSampleController.m; sourceTree = "<group>"; };
+		02F56EB11D6ACC39004FB9D2 /* SelfishCameraSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfishCameraSample.h; sourceTree = "<group>"; };
+		02F56EB21D6ACC39004FB9D2 /* SelfishCameraSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfishCameraSample.m; sourceTree = "<group>"; };
+		02F56EB31D6ACC39004FB9D2 /* StickerSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerSampleController.h; sourceTree = "<group>"; };
+		02F56EB41D6ACC39004FB9D2 /* StickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerSampleController.m; sourceTree = "<group>"; };
+		02F56EB51D6ACC39004FB9D2 /* WipeAndFilterSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WipeAndFilterSampleController.h; sourceTree = "<group>"; };
+		02F56EB61D6ACC39004FB9D2 /* WipeAndFilterSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WipeAndFilterSampleController.m; sourceTree = "<group>"; };
+		02F56EB71D6ACC39004FB9D2 /* SampleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleBase.h; sourceTree = "<group>"; };
+		02F56EB81D6ACC39004FB9D2 /* SampleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleBase.m; sourceTree = "<group>"; };
+		02F56EBA1D6ACC39004FB9D2 /* CameraComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraComponentSample.h; sourceTree = "<group>"; };
+		02F56EBB1D6ACC39004FB9D2 /* CameraComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraComponentSample.m; sourceTree = "<group>"; };
+		02F56EBC1D6ACC39004FB9D2 /* EditAdvancedComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAdvancedComponentSample.h; sourceTree = "<group>"; };
+		02F56EBD1D6ACC39004FB9D2 /* EditAdvancedComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAdvancedComponentSample.m; sourceTree = "<group>"; };
+		02F56EBE1D6ACC39004FB9D2 /* EditAndCutComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAndCutComponentSample.h; sourceTree = "<group>"; };
+		02F56EBF1D6ACC39004FB9D2 /* EditAndCutComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAndCutComponentSample.m; sourceTree = "<group>"; };
+		02F56EC01D6ACC39004FB9D2 /* EditAvatarComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAvatarComponentSample.h; sourceTree = "<group>"; };
+		02F56EC11D6ACC39004FB9D2 /* EditAvatarComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAvatarComponentSample.m; sourceTree = "<group>"; };
+		02F56EC21D6ACC39004FB9D2 /* EditMultipleComponentSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMultipleComponentSample.h; sourceTree = "<group>"; };
+		02F56EC31D6ACC39004FB9D2 /* EditMultipleComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMultipleComponentSample.m; sourceTree = "<group>"; };
+		02F56EDC1D6ACC7F004FB9D2 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
 		228CA7148CD6AE112449EEB6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBCC545807A3B0CA100644B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1260401B4C17A000E69B3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -152,89 +152,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		027DA9CF1D33AA0400BA198F /* Source */ = {
+		02F56E8D1D6ACC39004FB9D2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9F01D33AA0400BA198F /* SampleBase.h */,
-				027DA9F11D33AA0400BA198F /* SampleBase.m */,
-				027DA9DF1D33AA0400BA198F /* DemoComponentListController.h */,
-				027DA9E01D33AA0400BA198F /* DemoComponentListController.m */,
-				027DA9E11D33AA0400BA198F /* DemoRootView.h */,
-				027DA9E21D33AA0400BA198F /* DemoRootView.m */,
-				027DA9E31D33AA0400BA198F /* DemoRootViewController.h */,
-				027DA9E41D33AA0400BA198F /* DemoRootViewController.m */,
-				027DA9D01D33AA0400BA198F /* API */,
-				027DA9D31D33AA0400BA198F /* Component */,
-				027DA9DA1D33AA0400BA198F /* CustomUI */,
-				027DA9E51D33AA0400BA198F /* Feature */,
-				027DA9F21D33AA0400BA198F /* Suite */,
+				02F56EB71D6ACC39004FB9D2 /* SampleBase.h */,
+				02F56EB81D6ACC39004FB9D2 /* SampleBase.m */,
+				02F56E9D1D6ACC39004FB9D2 /* DemoComponentListController.h */,
+				02F56E9E1D6ACC39004FB9D2 /* DemoComponentListController.m */,
+				02F56E9F1D6ACC39004FB9D2 /* DemoRootView.h */,
+				02F56EA01D6ACC39004FB9D2 /* DemoRootView.m */,
+				02F56EA11D6ACC39004FB9D2 /* DemoRootViewController.h */,
+				02F56EA21D6ACC39004FB9D2 /* DemoRootViewController.m */,
+				02F56E8E1D6ACC39004FB9D2 /* API */,
+				02F56E911D6ACC39004FB9D2 /* Component */,
+				02F56E981D6ACC39004FB9D2 /* CustomUI */,
+				02F56EAC1D6ACC39004FB9D2 /* Feature */,
+				02F56EB91D6ACC39004FB9D2 /* Suite */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		027DA9D01D33AA0400BA198F /* API */ = {
+		02F56E8E1D6ACC39004FB9D2 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9D11D33AA0400BA198F /* DefineCameraBaseComponent.h */,
-				027DA9D21D33AA0400BA198F /* DefineCameraBaseComponent.m */,
+				02F56E8F1D6ACC39004FB9D2 /* DefineCameraBaseComponent.h */,
+				02F56E901D6ACC39004FB9D2 /* DefineCameraBaseComponent.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		027DA9D31D33AA0400BA198F /* Component */ = {
+		02F56E911D6ACC39004FB9D2 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9D41D33AA0400BA198F /* AlbumComponentSample.h */,
-				027DA9D51D33AA0400BA198F /* AlbumComponentSample.m */,
-				027DA9D61D33AA0400BA198F /* AlbumMultipleComponentSample.h */,
-				027DA9D71D33AA0400BA198F /* AlbumMultipleComponentSample.m */,
-				027DA9D81D33AA0400BA198F /* GifImageViewController.h */,
-				027DA9D91D33AA0400BA198F /* GifImageViewController.m */,
+				02F56E921D6ACC39004FB9D2 /* AlbumComponentSample.h */,
+				02F56E931D6ACC39004FB9D2 /* AlbumComponentSample.m */,
+				02F56E941D6ACC39004FB9D2 /* AlbumMultipleComponentSample.h */,
+				02F56E951D6ACC39004FB9D2 /* AlbumMultipleComponentSample.m */,
+				02F56E961D6ACC39004FB9D2 /* GifImageViewController.h */,
+				02F56E971D6ACC39004FB9D2 /* GifImageViewController.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		027DA9DA1D33AA0400BA198F /* CustomUI */ = {
+		02F56E981D6ACC39004FB9D2 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9DB1D33AA0400BA198F /* CustomizedCameraComponent.h */,
-				027DA9DC1D33AA0400BA198F /* CustomizedCameraComponent.m */,
-				027DA9DD1D33AA0400BA198F /* CustomizedEditAndCutComponent.h */,
-				027DA9DE1D33AA0400BA198F /* CustomizedEditAndCutComponent.m */,
+				02F56E991D6ACC39004FB9D2 /* CustomizedCameraComponent.h */,
+				02F56E9A1D6ACC39004FB9D2 /* CustomizedCameraComponent.m */,
+				02F56E9B1D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.h */,
+				02F56E9C1D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.m */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
 		};
-		027DA9E51D33AA0400BA198F /* Feature */ = {
+		02F56EAC1D6ACC39004FB9D2 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9E61D33AA0400BA198F /* CameraAndEditorSample.h */,
-				027DA9E71D33AA0400BA198F /* CameraAndEditorSample.m */,
-				027DA9E81D33AA0400BA198F /* EditFilterSampleController.h */,
-				027DA9E91D33AA0400BA198F /* EditFilterSampleController.m */,
-				027DA9EA1D33AA0400BA198F /* SelfishCameraSample.h */,
-				027DA9EB1D33AA0400BA198F /* SelfishCameraSample.m */,
-				027DA9EC1D33AA0400BA198F /* StickerSampleController.h */,
-				027DA9ED1D33AA0400BA198F /* StickerSampleController.m */,
-				027DA9EE1D33AA0400BA198F /* WipeAndFilterSampleController.h */,
-				027DA9EF1D33AA0400BA198F /* WipeAndFilterSampleController.m */,
+				02F56EAD1D6ACC39004FB9D2 /* CameraAndEditorSample.h */,
+				02F56EAE1D6ACC39004FB9D2 /* CameraAndEditorSample.m */,
+				02F56EAF1D6ACC39004FB9D2 /* EditFilterSampleController.h */,
+				02F56EB01D6ACC39004FB9D2 /* EditFilterSampleController.m */,
+				02F56EB11D6ACC39004FB9D2 /* SelfishCameraSample.h */,
+				02F56EB21D6ACC39004FB9D2 /* SelfishCameraSample.m */,
+				02F56EB31D6ACC39004FB9D2 /* StickerSampleController.h */,
+				02F56EB41D6ACC39004FB9D2 /* StickerSampleController.m */,
+				02F56EB51D6ACC39004FB9D2 /* WipeAndFilterSampleController.h */,
+				02F56EB61D6ACC39004FB9D2 /* WipeAndFilterSampleController.m */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		027DA9F21D33AA0400BA198F /* Suite */ = {
+		02F56EB91D6ACC39004FB9D2 /* Suite */ = {
 			isa = PBXGroup;
 			children = (
-				027DA9F31D33AA0400BA198F /* CameraComponentSample.h */,
-				027DA9F41D33AA0400BA198F /* CameraComponentSample.m */,
-				027DA9F51D33AA0400BA198F /* EditAdvancedComponentSample.h */,
-				027DA9F61D33AA0400BA198F /* EditAdvancedComponentSample.m */,
-				027DA9F71D33AA0400BA198F /* EditAndCutComponentSample.h */,
-				027DA9F81D33AA0400BA198F /* EditAndCutComponentSample.m */,
-				027DA9F91D33AA0400BA198F /* EditAvatarComponentSample.h */,
-				027DA9FA1D33AA0400BA198F /* EditAvatarComponentSample.m */,
-				027DA9FB1D33AA0400BA198F /* EditMultipleComponentSample.h */,
-				027DA9FC1D33AA0400BA198F /* EditMultipleComponentSample.m */,
+				02F56EBA1D6ACC39004FB9D2 /* CameraComponentSample.h */,
+				02F56EBB1D6ACC39004FB9D2 /* CameraComponentSample.m */,
+				02F56EBC1D6ACC39004FB9D2 /* EditAdvancedComponentSample.h */,
+				02F56EBD1D6ACC39004FB9D2 /* EditAdvancedComponentSample.m */,
+				02F56EBE1D6ACC39004FB9D2 /* EditAndCutComponentSample.h */,
+				02F56EBF1D6ACC39004FB9D2 /* EditAndCutComponentSample.m */,
+				02F56EC01D6ACC39004FB9D2 /* EditAvatarComponentSample.h */,
+				02F56EC11D6ACC39004FB9D2 /* EditAvatarComponentSample.m */,
+				02F56EC21D6ACC39004FB9D2 /* EditMultipleComponentSample.h */,
+				02F56EC31D6ACC39004FB9D2 /* EditMultipleComponentSample.m */,
 			);
 			path = Suite;
 			sourceTree = "<group>";
@@ -251,9 +251,9 @@
 		DC8851AE1A45221000839674 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				02F56EDC1D6ACC7F004FB9D2 /* TuSDK.bundle */,
 				DC7B2B781AF21D9D00EBA4FD /* Localizable.strings */,
 				DCB3947E1C28F6C700B1174E /* Images */,
-				02DEE1471CBBABD400703164 /* TuSDK.bundle */,
 				02D1ABC81CF1911B00C8497D /* sample_watermark.png */,
 				023C308E1C4636FA00BDBA36 /* sample_gif_editor.gif */,
 				DC8851AF1A45221000839674 /* Images.xcassets */,
@@ -287,7 +287,7 @@
 			children = (
 				DC98F07E1A17668F006B6417 /* AppDelegate.h */,
 				DC98F07F1A17668F006B6417 /* AppDelegate.m */,
-				027DA9CF1D33AA0400BA198F /* Source */,
+				02F56E8D1D6ACC39004FB9D2 /* Source */,
 				DC8851AE1A45221000839674 /* Resources */,
 				DC98F07A1A17668F006B6417 /* Supporting Files */,
 			);
@@ -430,12 +430,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC8851B11A45221000839674 /* Images.xcassets in Resources */,
-				02DEE1481CBBABD400703164 /* TuSDK.bundle in Resources */,
 				DC7B2B761AF21D9D00EBA4FD /* Localizable.strings in Resources */,
 				DC8851B21A45221000839674 /* sample_photo.jpg in Resources */,
 				02D1ABC91CF1911B00C8497D /* sample_watermark.png in Resources */,
 				DCB3948A1C28F6C700B1174E /* icon_component_list@2x.png in Resources */,
 				DCB3948D1C28F6C700B1174E /* icon_editor@3x.png in Resources */,
+				02F56EDD1D6ACC7F004FB9D2 /* TuSDK.bundle in Resources */,
 				DCB3948E1C28F6C700B1174E /* top_background.jpg in Resources */,
 				DCB394901C28F6C700B1174E /* top_logo@3x.png in Resources */,
 				DCB3948F1C28F6C700B1174E /* top_logo@2x.png in Resources */,
@@ -494,28 +494,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027DAA0C1D33AA0400BA198F /* CameraComponentSample.m in Sources */,
-				027DAA091D33AA0400BA198F /* StickerSampleController.m in Sources */,
-				027DA9FD1D33AA0400BA198F /* DefineCameraBaseComponent.m in Sources */,
-				027DAA021D33AA0400BA198F /* CustomizedEditAndCutComponent.m in Sources */,
-				027DAA0E1D33AA0400BA198F /* EditAndCutComponentSample.m in Sources */,
-				027DAA0D1D33AA0400BA198F /* EditAdvancedComponentSample.m in Sources */,
+				02F56EC41D6ACC39004FB9D2 /* DefineCameraBaseComponent.m in Sources */,
+				02F56EC91D6ACC39004FB9D2 /* CustomizedEditAndCutComponent.m in Sources */,
+				02F56ED51D6ACC39004FB9D2 /* WipeAndFilterSampleController.m in Sources */,
+				02F56ED61D6ACC39004FB9D2 /* SampleBase.m in Sources */,
 				DC98F0801A17668F006B6417 /* AppDelegate.m in Sources */,
-				027DAA011D33AA0400BA198F /* CustomizedCameraComponent.m in Sources */,
-				027DAA0F1D33AA0400BA198F /* EditAvatarComponentSample.m in Sources */,
-				027DAA101D33AA0400BA198F /* EditMultipleComponentSample.m in Sources */,
-				027DAA071D33AA0400BA198F /* EditFilterSampleController.m in Sources */,
-				027DAA081D33AA0400BA198F /* SelfishCameraSample.m in Sources */,
-				027DAA051D33AA0400BA198F /* DemoRootViewController.m in Sources */,
+				02F56EC81D6ACC39004FB9D2 /* CustomizedCameraComponent.m in Sources */,
+				02F56ECC1D6ACC39004FB9D2 /* DemoRootViewController.m in Sources */,
+				02F56ED91D6ACC39004FB9D2 /* EditAndCutComponentSample.m in Sources */,
 				DC98F07D1A17668F006B6417 /* main.m in Sources */,
-				027DAA0B1D33AA0400BA198F /* SampleBase.m in Sources */,
-				027DA9FF1D33AA0400BA198F /* AlbumMultipleComponentSample.m in Sources */,
-				027DAA061D33AA0400BA198F /* CameraAndEditorSample.m in Sources */,
-				027DAA031D33AA0400BA198F /* DemoComponentListController.m in Sources */,
-				027DA9FE1D33AA0400BA198F /* AlbumComponentSample.m in Sources */,
-				027DAA001D33AA0400BA198F /* GifImageViewController.m in Sources */,
-				027DAA0A1D33AA0400BA198F /* WipeAndFilterSampleController.m in Sources */,
-				027DAA041D33AA0400BA198F /* DemoRootView.m in Sources */,
+				02F56ED11D6ACC39004FB9D2 /* CameraAndEditorSample.m in Sources */,
+				02F56EC61D6ACC39004FB9D2 /* AlbumMultipleComponentSample.m in Sources */,
+				02F56ED31D6ACC39004FB9D2 /* SelfishCameraSample.m in Sources */,
+				02F56EDB1D6ACC39004FB9D2 /* EditMultipleComponentSample.m in Sources */,
+				02F56ED41D6ACC39004FB9D2 /* StickerSampleController.m in Sources */,
+				02F56ECA1D6ACC39004FB9D2 /* DemoComponentListController.m in Sources */,
+				02F56EC51D6ACC39004FB9D2 /* AlbumComponentSample.m in Sources */,
+				02F56ED81D6ACC39004FB9D2 /* EditAdvancedComponentSample.m in Sources */,
+				02F56EC71D6ACC39004FB9D2 /* GifImageViewController.m in Sources */,
+				02F56ECB1D6ACC39004FB9D2 /* DemoRootView.m in Sources */,
+				02F56EDA1D6ACC39004FB9D2 /* EditAvatarComponentSample.m in Sources */,
+				02F56ED71D6ACC39004FB9D2 /* CameraComponentSample.m in Sources */,
+				02F56ED21D6ACC39004FB9D2 /* EditFilterSampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

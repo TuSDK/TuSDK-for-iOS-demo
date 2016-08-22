@@ -52,7 +52,7 @@
 
 #pragma mark - TuSDKPFEditAdjustView
 /**
- *  颜色调整控制器视图
+ *  调整控制器视图
  */
 @interface TuSDKPFEditAdjustView : TuSDKCPFilterResultView
 {
@@ -77,7 +77,7 @@
 @property (nonatomic, readonly) UIButton *configCompleteButton;
 
 /**
- *  参数配置视图完成按钮
+ *  参数配置视图取消按钮
  */
 @property (nonatomic, readonly) UIButton *configCancalButton;
 
@@ -87,4 +87,5 @@
  *  @param isHidden 是否隐藏
  */
 - (void)setConfigViewHiddenState:(BOOL)isHidden;
+
 @end

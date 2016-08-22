@@ -41,15 +41,15 @@
  */
 - (id)initFromAssetURL:(NSURL*)assetURL;
 
-- (void)setUserComment:(NSString*)comment;
-- (void)setDateOriginal:(NSDate *)date;
-- (void)setDateDigitized:(NSDate *)date;
-- (void)setMake:(NSString*)make model:(NSString*)model software:(NSString*)software;
-- (void)setDescription:(NSString*)description;
-- (void)setKeywords:(NSString*)keywords;
-- (void)setImageOrientation:(UIImageOrientation)orientation;
-- (void)setDigitalZoom:(CGFloat)zoom;
-- (void)setHeading:(CLHeading*)heading;
+- (void)lsqSetUserComment:(NSString*)comment;
+- (void)lsqSetDateOriginal:(NSDate *)date;
+- (void)lsqSetDateDigitized:(NSDate *)date;
+- (void)lsqSetMake:(NSString*)make model:(NSString*)model software:(NSString*)software;
+- (void)lsqSetDescription:(NSString*)description;
+- (void)lsqSetKeywords:(NSString*)keywords;
+- (void)lsqSetImageOrientation:(UIImageOrientation)orientation;
+- (void)lsqSetDigitalZoom:(CGFloat)zoom;
+- (void)lsqSetHeading:(CLHeading*)heading;
 
 @property (nonatomic, retain) CLLocation *location;
 @property (nonatomic, assign) CLLocationDirection trueHeading;

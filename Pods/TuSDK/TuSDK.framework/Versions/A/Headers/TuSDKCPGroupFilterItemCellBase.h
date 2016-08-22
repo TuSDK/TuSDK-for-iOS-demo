@@ -233,7 +233,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  初始化视图 (空方法, 默认当使用+(id)initWithFrame:(CGRect)frame;初始化视图时调用)
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  设置选中图标

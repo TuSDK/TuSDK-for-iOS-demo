@@ -34,7 +34,7 @@
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  重置位置大小

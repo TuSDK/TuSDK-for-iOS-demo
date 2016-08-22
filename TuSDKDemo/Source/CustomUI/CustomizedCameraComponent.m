@@ -280,9 +280,9 @@
  */
 @implementation CustomizedCameraView
 // 初始化视图
-- (void)initView;
+- (void)lsqInitView;
 {
-    [super initView];
+    [super lsqInitView];
     
     // 默认相机控制栏视图
     [_configBar setSizeHeight:44];
@@ -299,9 +299,9 @@
  *  基础相机组件范例视图 滤镜行视图
  */
 @implementation CustomizedCameraFilterItemCell
-- (void)initView;
+- (void)lsqInitView;
 {
-    [super initView];
+    [super lsqInitView];
 
     // 标题视图
     _titleView.hidden = YES;

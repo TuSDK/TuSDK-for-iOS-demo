@@ -49,5 +49,5 @@
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 @end

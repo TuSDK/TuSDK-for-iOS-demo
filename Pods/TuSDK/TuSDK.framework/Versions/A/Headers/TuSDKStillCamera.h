@@ -17,7 +17,7 @@
 /**
  *  相机帧采样缓冲委托
  */
-@property (nonatomic, assign) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
+@property (nonatomic, weak) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
 
 /**
  *  相机事件委托

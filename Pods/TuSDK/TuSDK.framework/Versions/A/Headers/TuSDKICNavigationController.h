@@ -22,5 +22,5 @@
  */
 @interface UINavigationController(TuSDKICNavigationControllerExtend)
 // 删除所有子控制器
--(void)removeAllControllers;
+-(void)lsqRemoveAllControllers;
 @end

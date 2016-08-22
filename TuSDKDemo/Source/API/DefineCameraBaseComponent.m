@@ -99,9 +99,17 @@
     // 如果从编辑图片回来，需要隐藏状态栏和导航栏  隐藏状态栏 for IOS6
     [self.navigationController setNavigationBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    
-    
-    [self startCamera];
+    // 开启访问相机权限
+    [TuSDKTSDeviceSettings checkAllowWithController:self
+                                               type:lsqDeviceSettingsCamera
+                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+     {
+         if (openSetting) {
+             lsqLError(@"Can not open camera");
+             return;
+         }
+         [self startCamera];
+     }];
 }
 
 // 开始启动相机
@@ -110,7 +118,7 @@
     [self destoryCamera];
     
     _camera = [TuSDK cameraWithSessionPreset:AVCaptureSessionPresetHigh
-                              cameraPosition:[AVCaptureDevice firstBackCameraPosition] // AVCaptureDevicePositionBack
+                              cameraPosition:[AVCaptureDevice lsqFirstBackCameraPosition] // AVCaptureDevicePositionBack
                                   cameraView:_cameraView];
     // 设置拍摄委托
     _camera.captureDelegate = self;
@@ -316,7 +324,7 @@
     imgView.backgroundColor = lsqRGB(60, 60, 60);
     imgView.contentMode = UIViewContentModeScaleAspectFit;
     
-    UIImage *image = [result.image imageCorpWithRatio:0.75];
+    UIImage *image = [result.image lsqImageCorpWithRatio:0.75];
     lsqLDebug(@"image: %@", NSStringFromCGSize(image.size));
     
     imgView.image = image;
@@ -382,7 +390,7 @@
     [_configBar addSubview:_switchCameraButton];
     
     // 如果仅有一个摄像头
-    _switchCameraButton.hidden = ([AVCaptureDevice cameraCounts] == 0);
+    _switchCameraButton.hidden = ([AVCaptureDevice lsqCameraCounts] == 0);
     
     // 闪光灯设置视图
     _flashBar = [UIView initWithFrame:CGRectMake(_cancelButton.getRightX, 0, _switchCameraButton.getOriginX - _cancelButton.getRightX, _configBar.getSizeHeight)];

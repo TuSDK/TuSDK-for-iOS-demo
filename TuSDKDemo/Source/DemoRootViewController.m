@@ -58,7 +58,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self initView];
+    [self lsqInitView];
     // 启动GPS
     [[TuSDKTKLocation shared] requireAuthorWithController:self];
     
@@ -85,7 +85,7 @@
     [TuSDK checkManagerWithDelegate:self];
 }
 
-- (void)initView
+- (void)lsqInitView
 {
     CGFloat navButtonHeight = 64;
     

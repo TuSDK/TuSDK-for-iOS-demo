@@ -6,31 +6,33 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
+#import "TuSDKPFEditSkinView.h"
 #import "TuSDKGeeV1Import.h"
-#import "TuSDKCPFilterResultView.h"
 
-#pragma mark - TuSDKPFEditSkinController
 /**
- *  美颜控制器
+ *  多功能美肤控制器
  */
 @interface TuSDKPFEditSkinController : TuSDKPFEditSkinControllerBase
-
+/**
+ *  视图类 (默认:TuSDKPFEditSkinView, 需要继承 TuSDKPFEditSkinView)
+ */
+@property (nonatomic, strong) Class viewClazz;
 @end
 
-#pragma mark - TuSDKPFEditSkinOptions
+#pragma mark - TuSDKPFEditSkinMultipleOptions
 /**
- *  美颜控制器视图配置选项
+ *  多功能美肤控制器配置选项
  */
 @interface TuSDKPFEditSkinOptions : TuSDKCPImageResultOptions
 /**
- *  视图类 (默认:TuSDKCPFilterResultView, 需要继承 TuSDKCPFilterResultView)
+ *  视图类 (默认:TuSDKPFEditSkinView, 需要继承 TuSDKPFEditSkinView)
  */
 @property (nonatomic, strong) Class viewClazz;
 
 /**
- *  创建图片编辑滤镜控制器对象
+ *  创建颜色调整控制器对象
  *
- *  @return 图片编辑滤镜控制器对象
+ *  @return 颜色调整控制器对象
  */
 - (TuSDKPFEditSkinController *)viewController;
 @end

@@ -32,6 +32,14 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  */
 + (instancetype) serviceEngine;
 
+
+/**
+ *  获取服务器地址
+ *
+ *  @return NSString
+ */
+- (NSString *) serviceDomain;
+
 /**
  *  开发者ID
  */

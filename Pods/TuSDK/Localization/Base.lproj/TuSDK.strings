@@ -88,6 +88,10 @@
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
 "lsq_edit_process_error" = "发生错误，请确认设备已联网";
+"lsq_edit_process_face_error_undetected" = "未检测到人脸";
+"lsq_edit_process_face_error_noAccess" = "人脸检测请求失败";
+"lsq_edit_process_face_error_moreThanOne" = "检测到多张人脸";
+
 "lsq_edit_step_prev" = "撤销";
 "lsq_edit_step_next" = "重做";
 "lsq_edit_auto_adjust" = "自动校色";
@@ -207,8 +211,15 @@
 "lsq_filter_Wintersunshine" = "冬日";
 
 // Filters Definition skin
+"lsq_filter_set_skinMultiple" = "多功能美肤";
+
 "lsq_filter_set_smoothing" = "润滑";
 "lsq_filter_set_whitening" = "白皙";
+"lsq_filter_set_skinColor" = "肤色";
+"lsq_filter_set_retouch" = "一键美颜";
+"lsq_filter_set_chinSize" = "瘦脸";
+"lsq_filter_set_eyeSize" = "大眼";
+
 "lsq_filter_set_blurSize" = "强度";
 "lsq_filter_set_blurWeight" = "权重";
 "lsq_filter_set_skinColorThreshold" = "肤色";
@@ -222,7 +233,6 @@
 "lsq_filter_set_highlights" = "高光";
 "lsq_filter_set_shadows" = "阴影";
 "lsq_filter_set_temperature" = "色温";
-"lsq_filter_set_skinColor" = "肤色";
 "lsq_filter_set_autumnColorThreshold" = "秋意";
 "lsq_filter_set_hue" = "色相";
 "lsq_filter_set_hueSpace" = "范围";

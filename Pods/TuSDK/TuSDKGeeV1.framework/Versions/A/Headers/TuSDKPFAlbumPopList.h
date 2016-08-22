@@ -44,7 +44,7 @@
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  切换视图显示状态

@@ -28,14 +28,14 @@
  *
  *  @return base64编码
  */
-+ (NSString*)base64encode:(NSString*)str;
++ (NSString*)lsqBase64encode:(NSString*)str;
 
 /**
  *  base64编码
  *
  *  @return base64编码
  */
-- (NSString*)base64encode;
+- (NSString*)lsqBase64encode;
 
 /**
  *  判断字符串是否为空
@@ -44,7 +44,7 @@
  *
  *  @return 判断字符串是否为空
  */
-+(Boolean) isEmptyOrNull:(NSString *) str;
++(Boolean) lsqIsEmptyOrNull:(NSString *) str;
 
 /**
  *  UUID
@@ -60,35 +60,35 @@
  *
  *  @return 对应容量单位数
  */
-+ (NSString *)stringForByte:(unsigned long long)byte;
++ (NSString *)lsqStringForByte:(unsigned long long)byte;
 
 /**
  *  编码URL
  *
  *  @return 编码URL
  */
-- (NSString*)encodeAsURIComponent;
+- (NSString*)lsqEncodeAsURIComponent;
 
 /**
  *  编码HTML
  *
  *  @return 编码HTML
  */
-- (NSString*)escapeHTML;
+- (NSString*)lsqEscapeHTML;
 
 /**
  *  解码HTML
  *
  *  @return 解码HTML
  */
-- (NSString*)unescapeHTML;
+- (NSString*)lsqUnescapeHTML;
 
 /**
  *  MD5编码
  *
  *  @return MD5编码
  */
-- (NSString *) md5;
+- (NSString *) lsqMd5;
 
 /**
  *  添加字符串省略号
@@ -97,14 +97,14 @@
  *
  *  @return 添加字符串省略号
  */
-- (NSString*)substringLinefeed:(NSUInteger)length;
+- (NSString*)lsqSubstringLinefeed:(NSUInteger)length;
 
 /**
  *  删除字符串头尾空格
  *
  *  @return 删除字符串头尾空格
  */
-- (NSString *)trim;
+- (NSString *)lsqTrim;
 
 /**
  *  使用正则匹配子字符串
@@ -113,7 +113,7 @@
  *
  *  @return 子字符串集合
  */
-- (NSMutableArray *)substringByRegular:(NSString *)regular;
+- (NSMutableArray *)lsqSubstringByRegular:(NSString *)regular;
 
 /**
  *  反转字符串
@@ -134,26 +134,26 @@
  *
  *  @return 10进制数字
  */
-- (NSUInteger)hexToDecimal;
+- (NSUInteger)lsqHexToDecimal;
 
 /**
  *  转换为Json对象
  *
  *  @return Json对象
  */
-- (id)toJson;
+- (id)lsqToJson;
 
 /**
  *  转换为 unsigned long long
  *
  *  @return unsigned long long
  */
-- (unsigned long long)unsignedLongLongValue;
+- (unsigned long long)lsqUnsignedLongLongValue;
 
 /**
  *  转换为 NSUInteger
  *
  *  @return NSUInteger
  */
-- (NSUInteger)unsignedIntegerValue;
+- (NSUInteger)lsqUnsignedIntegerValue;
 @end

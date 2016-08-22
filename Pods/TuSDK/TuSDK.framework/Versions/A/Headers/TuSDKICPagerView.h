@@ -52,7 +52,7 @@
 /**
  *  初始化
  */
-- (void)initView;
+- (void)lsqInitView;
 /**
  *  还原缩放
  */

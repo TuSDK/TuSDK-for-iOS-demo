@@ -150,7 +150,7 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editMultipleFragment = 0x407000,
     
     /**
-     * 美肤控制器
+     * 美肤控制器 增加 一键美颜，大眼瘦脸
      */
     tkc_editSkinFragment = 0x408000,
     
@@ -312,6 +312,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * 相机控制器 前置摄像头
      */
     tkc_video_action_faceing_front = 0x901022,
+    
+    
+    /**
+     * 0x91 - 0x93 已被TuSDKFaceID占用 详见TuSDKFaceID -> Secrets -> TuSDKPFStatistics.h
+     */
 };
 
 #pragma mark - TuSDKTKStatistics

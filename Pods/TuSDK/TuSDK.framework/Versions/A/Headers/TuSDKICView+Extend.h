@@ -87,12 +87,12 @@
  *
  *  @return 相对传入视图底部CGRect
  */
-+ (CGRect)getRectOnBottomWithView:(UIView *)view space:(CGFloat)space size:(CGSize)size;
++ (CGRect)lsqGetRectOnBottomWithView:(UIView *)view space:(CGFloat)space size:(CGSize)size;
 
 /**
  *  初始化视图 (空方法, 默认当使用+(id)initWithFrame:(CGRect)frame;初始化视图时调用)
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  设置放置在目标视图下面
@@ -100,7 +100,7 @@
  *  @param target 目标视图
  *  @param space  距离
  */
-- (void) setToBottomWithTarget:(UIView *)target space:(CGFloat)space;
+- (void) lsqSetToBottomWithTarget:(UIView *)target space:(CGFloat)space;
 /**
  *  设置长宽
  *

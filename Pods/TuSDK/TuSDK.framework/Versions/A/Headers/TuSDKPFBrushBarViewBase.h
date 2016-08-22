@@ -65,7 +65,7 @@ typedef NS_ENUM(NSInteger, lsqBrushAction)
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  滤镜分组元素视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)
@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger, lsqBrushAction)
 /**
  *  初始化视图
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  加载笔刷列表

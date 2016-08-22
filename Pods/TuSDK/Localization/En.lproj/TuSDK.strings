@@ -88,6 +88,10 @@
 "lsq_edit_processing" = "Processing...";
 "lsq_edit_processed" = "Process completed";
 "lsq_edit_process_error" = "Fail to process image";
+"lsq_edit_process_face_error_undetected" = "No face is detected";
+"lsq_edit_process_face_error_noAccess" = "Face detection failed";
+"lsq_edit_process_face_error_moreThanOne" = "Detects more than one face";
+
 "lsq_edit_step_prev" = "Undo";
 "lsq_edit_step_next" = "Redo";
 "lsq_edit_auto_adjust" = "Auto";
@@ -207,8 +211,15 @@
 "lsq_filter_Wintersunshine" = "Winter";
 
 // Filters Definition skin
+"lsq_filter_set_skinMultiple" = "SkinMultiple";
+
 "lsq_filter_set_smoothing" = "Smoothing";
 "lsq_filter_set_whitening" = "Whitening";
+"lsq_filter_set_skinColor" = "Skin";
+"lsq_filter_set_retouch" = "Retouch";
+"lsq_filter_set_chinSize" = "ChinSize";
+"lsq_filter_set_eyeSize" = "EyeSize";
+
 "lsq_filter_set_blurSize" = "Blur Size";
 "lsq_filter_set_blurWeight" = "Blur Weight";
 "lsq_filter_set_skinColorThreshold" = "Skin Color";
@@ -222,7 +233,6 @@
 "lsq_filter_set_highlights" = "Highlights";
 "lsq_filter_set_shadows" = "Shadows";
 "lsq_filter_set_temperature" = "Tone";
-"lsq_filter_set_skinColor" = "Skin";
 "lsq_filter_set_autumnColorThreshold" = "Autumn";
 "lsq_filter_set_hue" = "Hue";
 "lsq_filter_set_hueSpace" = "Hue Space";

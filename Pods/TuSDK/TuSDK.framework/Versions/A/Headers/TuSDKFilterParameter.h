@@ -43,7 +43,7 @@
 
 #pragma mark - TuSDKFilterFacePositionProtocol
 /**
- *  材质协议
+ *  人脸特征点协议
  */
 @protocol TuSDKFilterFacePositionProtocol <NSObject>
 /**

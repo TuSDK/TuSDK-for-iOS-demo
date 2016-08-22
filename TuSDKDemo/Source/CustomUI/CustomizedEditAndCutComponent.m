@@ -21,11 +21,11 @@
 
 @implementation CustomizedEditTurnAndCutView
 /**
- *  每个视图都会执行initView，自定义视图在这里开始
+ *  每个视图都会执行lsqInitView，自定义视图在这里开始
  */
--(void)initView;
+-(void)lsqInitView;
 {
-    [super initView];
+    [super lsqInitView];
     
     // 修改底部工具栏背景
     self.bottomBar.backgroundColor = lsqRGB(255,123,44);

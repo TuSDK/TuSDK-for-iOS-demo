@@ -19,14 +19,14 @@
  *
  *  @return 系统摄像头是否授权
  */
-+ (BOOL)hasVideoAuthor;
++ (BOOL)lsqHasVideoAuthor;
 
 /**
  *  相机设备总数
  *
  *  @return 相机设备总数
  */
-+ (int)cameraCounts;
++ (int)lsqCameraCounts;
 
 /**
  *  如果不支持摄像头显示警告信息
@@ -35,28 +35,28 @@
  *
  *  @return 是否显示警告
  */
-+ (BOOL)showAlertIfNotSupportCameraWithController:(UIViewController *)controller;
++ (BOOL)lsqShowAlertIfNotSupportCameraWithController:(UIViewController *)controller;
 
 /**
  *  获取相机设备标识（前置或后置） 后置优先
  *
  *  @return 相机设备标识
  */
-+ (AVCaptureDevicePosition)firstBackCameraPosition;
++ (AVCaptureDevicePosition)lsqFirstBackCameraPosition;
 
 /**
  *  获取相机设备标识（前置或后置） 前置优先
  *
  *  @return 相机设备标识
  */
-+ (AVCaptureDevicePosition)firstFrontCameraPosition;
++ (AVCaptureDevicePosition)lsqFirstFrontCameraPosition;
 
 /**
  *  获取相机设备（前置或后置） 后置优先
  *
  *  @return 相机设备
  */
-+ (AVCaptureDevice *)getBackOrFrontCamera;
++ (AVCaptureDevice *)lsqGetBackOrFrontCamera;
 
 /**
  *  获取相机设备
@@ -65,7 +65,7 @@
  *
  *  @return 相机设备
  */
-+ (AVCaptureDevice *)getCameraWithType:(AVCaptureDevicePosition)type;
++ (AVCaptureDevice *)lsqGetCameraWithType:(AVCaptureDevicePosition)type;
 
 /**
  *  转换触摸点为相机聚焦点坐标
@@ -76,7 +76,7 @@
  *
  *  @return 相机聚焦点坐标
  */
-+ (CGPoint)convertPoint:(CGPoint)point
++ (CGPoint)lsqConvertPoint:(CGPoint)point
            withPosition:(AVCaptureDevicePosition)position
  outputImageOrientation:(UIInterfaceOrientation)orient;
 @end

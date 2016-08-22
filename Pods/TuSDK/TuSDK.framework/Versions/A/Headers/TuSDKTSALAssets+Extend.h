@@ -41,35 +41,35 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return 是否用户已授权访问系统相册
  */
-+ (BOOL)hasAuthor;
++ (BOOL)lsqHasAuthor;
 
 /**
  *  获取系统相册对象
  *
  *  @return 系统相册对象
  */
-+ (ALAssetsLibrary *)defaultLibrary;
++ (ALAssetsLibrary *)lsqDefaultLibrary;
 
 /**
  *  测试系统相册授权状态
  *
  *  @param authorBlock 系统相册授权回调
  */
-+ (void)testLibraryAuthor:(ALAssetsLibraryAuthorBlock)authorBlock;
++ (void)lsqTestLibraryAuthor:(ALAssetsLibraryAuthorBlock)authorBlock;
 
 /**
  *  获取系统相册分组
  *
  *  @param groupsBlock 获取系统相册列表回调
  */
-- (void)getGroupsWithBlock:(ALAssetsLibraryGroupsBlock)groupsBlock;
+- (void)lsqGetGroupsWithBlock:(ALAssetsLibraryGroupsBlock)groupsBlock;
 
 /**
  *  获取相册封面
  *
  *  @param posterBlock 获取相册封面回调
  */
-- (void)getLibraryPosterWithBlock:(ALAssetsLibraryPosterBlock)posterBlock;
+- (void)lsqGetLibraryPosterWithBlock:(ALAssetsLibraryPosterBlock)posterBlock;
 @end
 
 #pragma mark - ALAssetsGroupExtend
@@ -79,14 +79,14 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return 该组所有相片信息
  */
--(NSArray *)getAssetsAllphotos;
+-(NSArray *)lsqGetAssetsAllphotos;
 
 /**
  *  获取相册名称
  *
  *  @return 相册名称
  */
--(NSString *)name;
+-(NSString *)lsqName;
 @end
 
 #pragma mark - ALAssetsGroupExtend
@@ -96,21 +96,21 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return 路径
  */
-- (NSURL *)url;
+- (NSURL *)lsqUrl;
 
 /**
  *  获取方向
  *
  *  @return 方向
  */
-- (ALAssetOrientation)orientation;
+- (ALAssetOrientation)lsqOrientation;
 
 /**
  *  获取相片方向
  *
  *  @return 相片方向
  */
-- (UIImageOrientation)imageOrientation;
+- (UIImageOrientation)lsqImageOrientation;
 
 /**
  *  判断两个ALAsset路径是否相等
@@ -119,7 +119,7 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return ALAsset路径是否相等
  */
-- (BOOL)isEqualNSURLWith:(ALAsset *)asset;
+- (BOOL)lsqIsEqualNSURLWith:(ALAsset *)asset;
 
 /**
  *  根据路径获取元素在数组中的索引
@@ -128,14 +128,14 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return 元素在数组中的索引
  */
-- (NSInteger)getIndexByNSURLInArray:(NSArray *)assets;
+- (NSInteger)lsqGetIndexByNSURLInArray:(NSArray *)assets;
 
 /**
  *  获取缩略图 图片
  *
  *  @return 缩略图 图片
  */
-- (UIImage *)getThumbnailImage;
+- (UIImage *)lsqGetThumbnailImage;
 
 /**
  *  获取缩略图 图片视图
@@ -144,35 +144,35 @@ typedef void (^ALAssetsLibraryPosterBlock)(CGImageRef image);
  *
  *  @return 缩略图 图片视图
  */
-- (UIImageView *)getThumbnailViewWithFrame:(CGRect)frame;
+- (UIImageView *)lsqGetThumbnailViewWithFrame:(CGRect)frame;
 
 /**
  *  获取原始图片对象
  *
  *  @return 原始图片对象
  */
-- (UIImage *)fullResolutionImage;
+- (UIImage *)lsqFullResolutionImage;
 
 /**
  *  获取屏幕大小图片对象
  *
  *  @return 屏幕大小图片对象
  */
-- (UIImage *)fullScreenImage;
+- (UIImage *)lsqFullScreenImage;
 
 /**
  *  照片原始宽高
  *
  *  @return 宽高
  */
-- (CGSize)fullResolutionImageSize;
+- (CGSize)lsqFullResolutionImageSize;
 
 /**
  *  获取图片原信息
  *
  *  @return 图片原信息
  */
-- (NSDictionary *)metadata;
+- (NSDictionary *)lsqMetadata;
 @end
 
 #pragma mark - CustomPhotoAlbum
@@ -205,7 +205,7 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImageData:(NSData *)data
++ (BOOL)lsqSaveImageData:(NSData *)data
        completionBlock:(SaveImageCompletion)completionBlock;
 
 /**
@@ -217,7 +217,7 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImageData:(NSData *)data metadata:(NSDictionary *)metadata
++ (BOOL)lsqSaveImageData:(NSData *)data metadata:(NSDictionary *)metadata
        completionBlock:(SaveImageCompletion)completionBlock;
 
 /**
@@ -229,7 +229,7 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImageData:(NSData *)data toAblum:(NSString *)albumName
++ (BOOL)lsqSaveImageData:(NSData *)data toAblum:(NSString *)albumName
        completionBlock:(SaveImageCompletion)completionBlock;
 
 /**
@@ -242,7 +242,7 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImageData:(NSData *)data toAblum:(NSString *)albumName
++ (BOOL)lsqSaveImageData:(NSData *)data toAblum:(NSString *)albumName
        completionBlock:(SaveImageCompletion)completionBlock
   ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
 
@@ -257,7 +257,7 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImageData:(NSData *)data metadata:(NSDictionary *)metadata
++ (BOOL)lsqSaveImageData:(NSData *)data metadata:(NSDictionary *)metadata
                toAblum:(NSString *)albumName
        completionBlock:(SaveImageCompletion)completionBlock
   ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
@@ -268,12 +268,12 @@ typedef void(^SaveImageAblumCompletion)(ALAssetsGroup *group, ALAsset *asset, NS
  *  @param image                图片对象
  *  @param metadata             照片meta信息
  *  @param albumName            相册名称
- *  @param completionBlock      相册名称
+ *  @param completionBlock      保存相片到系统相册回掉
  *  @param ablumCompletionBlock 保存相片到指定相册
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveImage:(UIImage *)image metadata:(NSDictionary *)metadata
++ (BOOL)lsqSaveImage:(UIImage *)image metadata:(NSDictionary *)metadata
            toAblum:(NSString *)albumName
    completionBlock:(SaveImageCompletion)completionBlock
 ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
@@ -288,7 +288,7 @@ ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
  *
  *  @return 是否允许操作系统相册
  */
-+ (BOOL) saveVideo:(NSURL *)videoURL
++ (BOOL)lsqSaveVideo:(NSURL *)videoURL
            toAblum:(NSString *)albumName
    completionBlock:(SaveImageCompletion)completionBlock
 ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
@@ -300,7 +300,7 @@ ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
  *  @param albumName 相册名称
  *  @param ablumCompletionBlock 保存相片到指定相册
  */
-- (void) addALAsset:(ALAsset *)asset toAblum:(NSString *)albumName ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
+- (void)lsqAddALAsset:(ALAsset *)asset toAblum:(NSString *)albumName ablumCompletionBlock:(SaveImageAblumCompletion)ablumCompletionBlock;
 @end
 
 #pragma mark - TuSDKTSALAsset

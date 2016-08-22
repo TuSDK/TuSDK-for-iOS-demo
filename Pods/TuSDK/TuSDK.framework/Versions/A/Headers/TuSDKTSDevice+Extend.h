@@ -59,63 +59,63 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 设备名称 e.g. "My iPhone"
  */
-+ (NSString *)name;
++ (NSString *)lsqName;
 
 /**
  *  系统名称
  *
  *  @return 系统名称 e.g. @"iOS"
  */
-+ (NSString *)systemName;
++ (NSString *)lsqSystemName;
 
 /**
  *  系统版本号
  *
  *  @return 系统版本号 e.g. @"4.0"
  */
-+ (CGFloat)systemFloatVersion;
++ (CGFloat)lsqSystemFloatVersion;
 
 /**
  *  系统版本号
  *
  *  @return 系统版本号 e.g. @"4.0.2"
  */
-+ (NSString *)systemVersion;
++ (NSString *)lsqSystemVersion;
 
 /**
  *  硬件型号
  *
  *  @return 硬件型号 e.g. @"iPhone", @"iPod touch"
  */
-+ (NSString *)model;
++ (NSString *)lsqModel;
 
 /**
  *  本地化硬件型号
  *
  *  @return 本地化硬件型号
  */
-+ (NSString *)localizedModel;
++ (NSString *)lsqLocalizedModel;
 
 /**
  *  获取应用名称
  *
  *  @return 应用名称
  */
-+ (NSString *)appName;
++ (NSString *)lsqAppName;
 
 /**
  *  获取应用版本
  *
  *  @return 应用版本
  */
-+ (NSString *)appVersion;
++ (NSString *)lsqAppVersion;
 
 /**
  *  应用编译版本
  *
  *  @return 应用编译版本
  */
-+ (NSString *)appBuild;
++ (NSString *)lsqAppBuild;
 
 /**
  *  应用 Bundle Identifier
@@ -127,14 +127,14 @@ extern NSString * const kDeviceiPad4G;
 /**
  *  开启应用设置页面
  */
-+ (void)openAppSettings  NS_AVAILABLE_IOS(8_0);
++ (void)lsqOpenAppSettings  NS_AVAILABLE_IOS(8_0);
 
 /**
  *  获取WIFI IP地址
  *
  *  @return WIFI IP地址
  */
-+ (NSString *) getWifiIpAddress;
++ (NSString *)lsqGetWifiIpAddress;
 
 /**
  *  获取文件大小 BYTE
@@ -143,49 +143,49 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 文件大小 BYTE
  */
-+ (long long) fileSizeAtPath:(NSString *)filePath;
++ (long long)lsqFileSizeAtPath:(NSString *)filePath;
 
 /**
  *  获取当前应用可用内存(单位：MB）
  *
  *  @return 当前应用可用内存(单位：MB）
  */
-+ (double)spaceMemory;
++ (double)lsqSpaceMemory;
 
 /**
  *  获取当前应用所占用的内存（单位：MB）
  *
  *  @return 当前应用所占用的内存（单位：MB）
  */
-+ (double)usedMemory;
++ (double)lsqUsedMemory;
 
 /**
  *  打印内存使用情况
  *
  *  @param tag 标签
  */
-+ (void) logMemory:(NSString *)tag;
++ (void)lsqLogMemory:(NSString *)tag;
 
 /**
  *  硬件性能
  *
  *  @return 2-5
  */
-+ (NSUInteger) performance;
++ (NSUInteger)lsqPerformance;
 
 /**
  *  Universally Unique Identifier 通用唯一识别码
  *
  *  @return 通用唯一识别码
  */
-+ (NSString*) uuid;
++ (NSString*)lsqUuid;
 
 /**
  *  硬件名称
  *
  *  @return 硬件名称
  */
-- (NSString *) platform;
+- (NSString *)lsqPlatform;
 
 /**
  *  是否为指定设备
@@ -194,77 +194,77 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 是否为指定设备
  */
-- (BOOL) isDevice:(NSString *)device;
+- (BOOL)lsqIsDevice:(NSString *)device;
 
 /**
  *  硬件类型
  *
  *  @return 硬件类型
  */
-- (NSString *) hwmodel;
+- (NSString *)lsqHwmodel;
 
 /**
  *  CPU频率
  *
  *  @return CPU频率
  */
-- (NSUInteger) cpuFrequency;
+- (NSUInteger)lsqCpuFrequency;
 
 /**
  *  系统总线频率
  *
  *  @return 系统总线频率
  */
-- (NSUInteger) busFrequency;
+- (NSUInteger)lsqBusFrequency;
 
 /**
  *  CPU核心数
  *
  *  @return CPU核心数
  */
-- (NSUInteger) cpuCount;
+- (NSUInteger)lsqCpuCount;
 
 /**
  *  合计内存
  *
  *  @return 合计内存
  */
-- (NSUInteger) totalMemory;
+- (NSUInteger)lsqTotalMemory;
 
 /**
  *  已使用内存
  *
  *  @return 已使用内存
  */
-- (NSUInteger) userMemory;
+- (NSUInteger)lsqUserMemory;
 
 /**
  *  空闲内存
  *
  *  @return 空闲内存
  */
-- (NSUInteger) sapceMemory;
+- (NSUInteger)lsqSapceMemory;
 
 /**
  *  总存储空间
  *
  *  @return 总存储空间
  */
-- (NSNumber *) totalDiskSpace;
+- (NSNumber *)lsqTotalDiskSpace;
 
 /**
  *  可使用存储空间
  *
  *  @return 可使用存储空间
  */
-- (NSNumber *) freeDiskSpace;
+- (NSNumber *)lsqFreeDiskSpace;
 
 /**
  *  网络Mac地址
  *
  *  @return 网络Mac地址
  */
-- (NSString *) macaddress;
+- (NSString *)lsqMacaddress;
 
 /**
  *  根据设备方向获取旋转角度
@@ -273,5 +273,5 @@ extern NSString * const kDeviceiPad4G;
  *
  *  @return 旋转角度
  */
-+ (CGFloat)getRotationByOrient:(UIDeviceOrientation)orient;
++ (CGFloat)lsqGetRotationByOrient:(UIDeviceOrientation)orient;
 @end

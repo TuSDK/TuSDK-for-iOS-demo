@@ -28,8 +28,17 @@
 {
     if (!controller) return;
     self.controller = controller;
-    
-    [self showCamera];
+    // 开启访问相机权限
+    [TuSDKTSDeviceSettings checkAllowWithController:controller
+                                               type:lsqDeviceSettingsCamera
+                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+     {
+         if (openSetting) {
+             lsqLError(@"Can not open camera");
+             return;
+         }
+         [self showCamera];
+     }];
 }
 
 #pragma mark - showCamera

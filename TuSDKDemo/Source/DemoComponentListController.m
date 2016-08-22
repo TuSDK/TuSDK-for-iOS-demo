@@ -56,17 +56,17 @@
     [self setNavigationBarHidden:NO animated:NO];
     [self setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 
-    CGFloat autoHeightForComponentList = ([UIDevice systemFloatVersion] < 7.f) ? [UIScreen height] - lsq_NAV_BAR_HEIGHT : [UIScreen height];
+    CGFloat autoHeightForComponentList = ([UIDevice lsqSystemFloatVersion] < 7.f) ? [UIScreen height] - lsq_NAV_BAR_HEIGHT : [UIScreen height];
     self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, autoHeightForComponentList)];
     self.view.backgroundColor = lsqRGB(255, 255, 255);
     self.view.delegate = self;
     
     // 判断设备版本，添加屏幕边缘滑动手势返回主界面
-    if ([UIDevice systemFloatVersion] < 7.0f) {
+    if ([UIDevice lsqSystemFloatVersion] < 7.0f) {
         _swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onSwipeGesture:)];
         _swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
         [self.view addGestureRecognizer:_swipeGesture];
-    }else if ([UIDevice systemFloatVersion] > 7.0f) {
+    }else if ([UIDevice lsqSystemFloatVersion] > 7.0f) {
         _screenEdgePanGesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(onScreenEdgePanGesture:)];
         _screenEdgePanGesture.edges = UIRectEdgeLeft;
         [self.view addGestureRecognizer:_screenEdgePanGesture];

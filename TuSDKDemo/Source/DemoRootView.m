@@ -26,11 +26,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initView];
+        [self lsqInitView];
     }
     return self;
 }
-- (void)initView;
+- (void)lsqInitView;
 {
     // 缓存标记
     _cellIdentifier = [NSString stringWithFormat:@"%@", [self class]];

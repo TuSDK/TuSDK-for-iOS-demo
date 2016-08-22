@@ -30,7 +30,7 @@
  *
  *  @return 选择索引
  */
-- (NSInteger)getAssetSelectionIndex:(id)asset;
+- (NSDictionary *)getAssetSelectionIndex:(id)asset;
 @end
 
 /**

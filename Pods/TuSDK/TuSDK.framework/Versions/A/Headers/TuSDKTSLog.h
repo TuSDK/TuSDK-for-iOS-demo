@@ -28,7 +28,7 @@
  *
  *  @param msg 异常信息
  */
-- (void)throwWithReason:(NSString *)reason;
+- (void)lsqThrowWithReason:(NSString *)reason;
 
 /**
  *  抛出异常
@@ -36,7 +36,7 @@
  *  @param reason   原因
  *  @param userInfo 详细信息
  */
-- (void)throwWithReason:(NSString *)reason userInfo:(NSDictionary *)userInfo;
+- (void)lsqThrowWithReason:(NSString *)reason userInfo:(NSDictionary *)userInfo;
 
 /**
  *  执行主线程方法
@@ -46,7 +46,7 @@
  *  @param arg2      参数2
  *  @param wait      是否等待执行完毕
  */
-- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg1  withObject:(id)arg2 waitUntilDone:(BOOL)wait;
+- (void)lsqPerformSelectorOnMainThread:(SEL)aSelector withObject:(id)arg1  withObject:(id)arg2 waitUntilDone:(BOOL)wait;
 @end
 
 #pragma mark - TuSDKTSLog

@@ -67,7 +67,7 @@
 /**
  *  初始化视图 (空方法, 默认当使用+(id)initWithFrame:(CGRect)frame;初始化视图时调用)
  */
-- (void)initView;
+- (void)lsqInitView;
 
 /**
  *  是否隐藏删除标识

@@ -39,7 +39,7 @@
 
 - (void)setCurrentlyReceivingMonochromeInput:(BOOL)newValue;
 
-- (void)initView;
+- (void)lsqInitView;
 
 - (void)recalculateViewGeometry;
 @end

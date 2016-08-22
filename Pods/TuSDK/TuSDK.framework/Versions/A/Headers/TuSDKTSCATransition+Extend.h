@@ -45,39 +45,39 @@
  *
  *  @return 场景Push方式切换动画
  */
-+ (TuSDKTSCControllerTrans *)sencePushTrans;
++ (TuSDKTSCControllerTrans *)lsqSencePushTrans;
 
 /**
  *  获取场景淡入淡出动画
  *
  *  @return 场景淡入淡出动画
  */
-+ (TuSDKTSCControllerTrans *)senceFadeTrans;
++ (TuSDKTSCControllerTrans *)lsqSenceFadeTrans;
 /**
  *  获取场景Push方式切换向左移动动画
  *
  *  @return 获取场景Push方式切换向左移动动画
  */
-+(id)sencePushIn;
++(id)lsqSencePushIn;
 
 /**
  *  获取场景Pop切换向右移动动画
  *
  *  @return 获取场景Pop切换向右移动动画
  */
-+(id)sencePushOut;
++(id)lsqSencePushOut;
 
 /**
  *  场景淡入淡出动画
  *
  *  @return 场景淡入淡出动画
  */
-+(id)senceFade;
++(id)lsqSenceFade;
 
 /**
  *  获取场景Push方式翻转动画
  *
  *  @return 获取场景Push方式翻转动画
  */
-+(id)senceOglFlip;
++(id)lsqSenceOglFlip;
 @end

@@ -98,7 +98,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 /**
  *  相机帧采样缓冲委托
  */
-@property (nonatomic, assign) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
+@property (nonatomic, weak) id<TuSDKVideoCameraSampleBufferDelegate> sampleBufferDelegate;
 
 /**
  *  系统相机对象
