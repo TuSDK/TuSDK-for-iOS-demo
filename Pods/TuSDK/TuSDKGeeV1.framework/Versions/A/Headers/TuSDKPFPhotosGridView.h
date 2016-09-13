@@ -24,13 +24,19 @@
 - (void)onTuSDKPFPhotoGridAssetSelected:(id)asset atIndexPath:(NSIndexPath*)indexPath;
 
 /**
- *  获取单元格
+ *  单元格被点击，跳转到预览视图
  *
- *  @param asset 单元格数据
- *
- *  @return 选择索引
+ *  @param asset     单元格对象
+ *  @param indexPath 单元格索引
  */
-- (NSDictionary *)getAssetSelectionIndex:(id)asset;
+- (void)onTuSDKPFPhotoGridAssetClicked:(id)asset atIndexPath:(NSIndexPath*)indexPath;
+
+/**
+ *  获取选中的单元格列表
+ *
+ *  @return
+ */
+- (NSMutableArray<TuSDKTSPhotosGridCellData *> *)getSelectedItem;
 @end
 
 /**

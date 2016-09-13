@@ -70,6 +70,7 @@
 
 #import "TuSDKPFAlbumViewControllerBase.h"
 #import "TuSDKPFAlbumMultipleViewControllerBase.h"
+#import "TuSDKPFPhotoPreviewControllerBase.h"
 #import "TuSDKPFCameraViewControllerBase.h"
 #import "TuSDKPFEditAdjustControllerBase.h"
 #import "TuSDKPFEditApertureControllerBase.h"

@@ -128,8 +128,8 @@
     //    _photoEditComponent.options.editCuterOptions.enableTrun = YES;
     //    // 是否开启图片镜像(默认: false)
     //    _photoEditComponent.options.editCuterOptions.enableMirror = YES;
-    //    // 裁剪比例 (默认:lsqRatioAll)
-    //    _photoEditComponent.options.editCuterOptions.ratioType = lsqRatioAll;
+    //    // 裁剪比例 (默认:lsqRatioDefault)
+    //    _photoEditComponent.options.editCuterOptions.ratioType = lsqRatioDefault;
     //    // 裁剪比例排序 (例如：@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)])
     //    _photoEditComponent.options.editCuterOptions.ratioTypeList = @[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3)];
     //    // 是否仅返回裁切参数，不返回处理图片

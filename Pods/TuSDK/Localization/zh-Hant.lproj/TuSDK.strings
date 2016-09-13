@@ -8,6 +8,7 @@
 
 "lsq_reset" = "重置";
 "lsq_cancel" = "取消";
+"lsq_selected" = "選擇";
 "lsq_setting" = "設置";
 "lsq_loading_image" = "讀取圖片...";
 "lsq_downloading_image" = "正從iCloud下載圖片...";
@@ -67,7 +68,9 @@
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "無法訪問相冊.請在'設置->隱私->照片'設置 %@ 爲打開狀態.";
 "lsq_album_ALAssets_error_title" = "無法訪問相冊";
 "lsq_album_empty_selection_msg" = "No photos selected";
+"lsq_album_preview_selection_msg" = "請等待下載完成";
 "lsq_album_max_selection_msg" = "%d photos have been selected already";
+"lsq_album_preview_complete" = "完成(%lu/%lu)";
 
 // location
 "lsq_location_error_title" = "無法獲取地理信息";
@@ -105,6 +108,9 @@
 "lsq_edit_cuter_ratio_2_3" = "2:3";
 "lsq_edit_cuter_ratio_3_4" = "3:4";
 "lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_cuter_ratio_3_2" = "3:2";
+"lsq_edit_cuter_ratio_4_3" = "4:3";
+"lsq_edit_cuter_ratio_16_9" = "16:9";
 "lsq_edit_title" = "編輯";
 "lsq_edit_multiple_title" = "美化圖片";
 "lsq_edit_skin_title" = "美顏";

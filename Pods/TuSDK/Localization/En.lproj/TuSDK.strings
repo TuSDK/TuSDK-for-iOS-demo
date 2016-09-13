@@ -8,6 +8,7 @@
 
 "lsq_reset" = "Reset";
 "lsq_cancel" = "Cancel";
+"lsq_selected" = "Selected";
 "lsq_setting" = "Settings";
 "lsq_loading_image" = "Loading image...";
 "lsq_downloading_image" = "Downloading image from iCloud...";
@@ -67,7 +68,9 @@
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "Can’t access photos. Please trun %@ on in Settings - Privacy - Photos.";
 "lsq_album_ALAssets_error_title" = "Can’t access photos";
 "lsq_album_empty_selection_msg" = "No photos selected";
+"lsq_album_preview_selection_msg" = "Please wait for downloading completed";
 "lsq_album_max_selection_msg" = "%d photos have been selected already";
+"lsq_album_preview_complete" = "Done(%lu/%lu)";
 
 // location
 "lsq_location_error_title" = "Can’t get location";
@@ -105,6 +108,9 @@
 "lsq_edit_cuter_ratio_2_3" = "2:3";
 "lsq_edit_cuter_ratio_3_4" = "3:4";
 "lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_cuter_ratio_3_2" = "3:2";
+"lsq_edit_cuter_ratio_4_3" = "4:3";
+"lsq_edit_cuter_ratio_16_9" = "16:9";
 "lsq_edit_title" = "Edit";
 "lsq_edit_multiple_title" = "Edit";
 "lsq_edit_skin_title" = "Beautify";

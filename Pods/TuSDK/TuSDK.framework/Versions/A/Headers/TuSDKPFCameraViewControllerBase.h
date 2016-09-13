@@ -15,7 +15,7 @@
  */
 @interface TuSDKPFCameraViewControllerBase : TuSDKCPResultViewController<TuSDKStillCameraDelegate>
 /**
- *  视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+ *  视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
  */
 @property (nonatomic) lsqRatioType ratioType;
 /**

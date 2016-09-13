@@ -19,4 +19,12 @@
  *  @return 颜色对象 (为空或者错误返回透明)
  */
 + (UIColor *)lsqClorWithHex:(NSString *)hexString;
+/**
+ *  十六进制转为颜色对象带alpha通道
+ *
+ *  @param hexString 十六进制字符串 @"#FF5534"
+ *
+ *  @return 颜色对象 (为空或者错误返回透明)
+ */
++ (UIColor *)lsqClorWithHex:(NSString *)hexString alpha:(CGFloat)alpha;
 @end

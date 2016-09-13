@@ -88,8 +88,8 @@
     // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
     
-    // 视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
-    opt.ratioType = lsqRatioAll;
+    // 视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+    opt.ratioType = lsqRatioDefault;
     
     // 是否开启长按拍摄 (默认: NO)
     opt.enableLongTouchCapture = YES;

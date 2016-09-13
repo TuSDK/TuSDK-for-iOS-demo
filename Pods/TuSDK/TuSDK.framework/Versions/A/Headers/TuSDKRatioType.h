@@ -37,9 +37,28 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
     lsqRatio_9_16 = 1 << 4,
     
     /**
+     * 3:2比例
+     */
+    lsqRatio_3_2 = 1 << 5,
+    
+    /**
+     * 4:3比例
+     */
+    lsqRatio_4_3 = 1 << 6,
+
+    /**
+     * 16:9比例
+     */
+    lsqRatio_16_9 = 1 << 7,
+    
+    /**
      * 所有比例
      */
-    lsqRatioAll = lsqRatioOrgin | lsqRatio_1_1 | lsqRatio_2_3 | lsqRatio_3_4 | lsqRatio_9_16,
+    lsqRatioAll = lsqRatioOrgin | lsqRatio_1_1 | lsqRatio_2_3 | lsqRatio_3_4 | lsqRatio_9_16 | lsqRatio_3_2 | lsqRatio_4_3 | lsqRatio_16_9,
+    /**
+     * 默认比例
+     */
+    lsqRatioDefault = lsqRatioOrgin | lsqRatio_1_1 | lsqRatio_2_3 | lsqRatio_3_4 | lsqRatio_9_16,
 };
 
 /**
@@ -47,9 +66,14 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
  */
 @interface TuSDKRatioType : NSObject
 /**
- *  比例类型列表
+ *  比例类型默认5列表
  */
-+ (NSArray *)lsqTuSDKRatioTypes;
++ (NSArray *)lsqTuSDKRatioDefaultTypes;
+
+/**
+ *  比例类型列表全部
+ */
++ (NSArray *)lsqTuSDKRatioAllTypes;
 
 /**
  * 获取比例

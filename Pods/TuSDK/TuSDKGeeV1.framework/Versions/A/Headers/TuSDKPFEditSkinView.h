@@ -12,7 +12,11 @@
  */
 @interface TuSDKPFEditSkinView : TuSDKPFEditAdjustView
 
-/** 检测不到人脸信息禁用大眼、瘦脸按钮 */
-- (void)disableFaceButtons;
+/**
+ *  人脸检测结果, 检测不到人脸信息禁用大眼、瘦脸按钮
+ *
+ *  @param found 是否监测到人脸
+ */
+- (void)onFaceDetectionResult:(BOOL)found;
 
 @end

@@ -86,8 +86,8 @@
     // @see-http://tusdk.com/docs/ios/self-customize-filter
     opt.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];
 
-    // 视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
-    opt.ratioType = lsqRatioAll;
+    // 视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+    opt.ratioType = lsqRatioDefault;
 
     // 是否开启长按拍摄 (默认: NO)
     opt.enableLongTouchCapture = YES;

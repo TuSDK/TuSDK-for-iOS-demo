@@ -32,6 +32,10 @@
  */
 - (void)setConfigViewHiddenState:(BOOL)isHidden;
 
-/** 检测不到人脸信息禁用大眼、瘦脸按钮 */
-- (void)disableFaceButtons;
+/**
+ *  人脸检测结果回调
+ *
+ *  @param found 是否检测到人脸
+ */
+- (void)onFaceDetectionResult:(BOOL)found;
 @end

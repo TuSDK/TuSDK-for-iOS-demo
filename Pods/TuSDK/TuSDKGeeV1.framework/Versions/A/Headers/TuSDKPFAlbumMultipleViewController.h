@@ -11,7 +11,7 @@
 #import "TuSDKGeeV1Import.h"
 
 @class TuSDKPFAlbumMultipleViewController;
-
+@class TuSDKPFPhotoPreviewBarViewWrap;
 /**
  *  系统相册委托
  */
@@ -95,6 +95,11 @@
 @property (nonatomic, strong) Class gridCellViewClazz;
 
 /**
+ *  视图类 (默认:TuSDKPFPhotoPreviewBarViewWrap, 需要继承 TuSDKPFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
+ */
+@property (nonatomic, strong) Class previewBarViewClazz;
+
+/**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
  */
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
@@ -105,9 +110,9 @@
 @property (nonatomic) BOOL displayCameraCell;
 
 /**
- *  选中的单元列表
+ *  初始化视图控制器，已选择的资源数据
  */
-@property (nonatomic, readonly) NSMutableArray<TuSDKTSAssetInterface> *selectedItems;
+@property (nonatomic, retain) NSMutableArray<TuSDKTSAssetInterface> *selectedAssets;
 
 /**
  *  允许在多个相册中选择 (默认: 开启)

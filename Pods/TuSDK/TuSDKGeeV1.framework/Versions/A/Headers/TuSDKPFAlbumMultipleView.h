@@ -34,6 +34,13 @@
  */
 - (void)onTuSDKPFPhotosCellSelectedWithAsset:(id)asset;
 
+/**
+ *  选中相片预览
+ *
+ *  @param asset 相片
+ */
+- (void)onTuSDKPFPhotosCellClickedWithAsset:(id)asset currentIndex:(NSInteger)currentIndex;
+
 @end
 
 /**
@@ -92,9 +99,9 @@
 @property (nonatomic, assign) BOOL enabelShareSelection;
 
 /**
- *  选中的单元列表
+ *  选中的单元格列表
  */
-@property (nonatomic, readonly) NSMutableArray<TuSDKTSAssetInterface> *selectedItems;
+@property (nonatomic, readonly) NSMutableArray<TuSDKTSPhotosGridCellData *> *selectedItems;
 
 /**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
@@ -134,5 +141,13 @@
  *  @return 相册列表当前的显示状态
  */
 - (BOOL)getAlbumListViewState;
+
+/**
+ *  选中一张照片
+ *
+ *  @param asset     照片对象
+ *  @param indexPath 单元格索引
+ */
+- (void)onTuSDKPFPhotoGridAssetSelected:(id)asset atIndexPath:(NSIndexPath*)indexPath;
 
 @end

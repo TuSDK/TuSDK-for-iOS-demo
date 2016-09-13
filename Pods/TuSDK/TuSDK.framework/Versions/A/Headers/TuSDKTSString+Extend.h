@@ -63,6 +63,15 @@
 + (NSString *)lsqStringForByte:(unsigned long long)byte;
 
 /**
+ *  返回 OSType 对应的4位字符串
+ *
+ *  @param type OSType
+ *
+ *  @return 对应的字符串
+ */
++ (NSString *)lsqStringFromOSType:(OSType)type;
+
+/**
  *  编码URL
  *
  *  @return 编码URL

@@ -7,6 +7,7 @@
 //
 
 #import "TuSDKPFAlbumMultipleViewController.h"
+#import "TuSDKPFPhotoPreviewController.h"
 
 /**
  *  系统相册控制器配置选项
@@ -44,6 +45,11 @@
 @property (nonatomic, strong) Class gridCellViewClazz;
 
 /**
+ *  视图类 (默认:TuSDKPFPhotoPreviewBarViewWrap, 需要继承 TuSDKPFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
+ */
+@property (nonatomic, strong) Class previewBarViewClazz;
+
+/**
  *  一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
  */
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
@@ -67,6 +73,11 @@
  *  需要自动跳转到相册组名称
  */
 @property (nonatomic, copy) NSString *skipAlbumName;
+
+/**
+ *  选中的媒体资源对象
+ */
+@property (nonatomic, readonly) NSMutableArray<TuSDKTSAssetInterface> *selectedAssets;
 
 /**
  *  创建系统相册列表控制器对象

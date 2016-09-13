@@ -138,8 +138,8 @@
     //    _photoEditMultipleComponent.options.editCuterOptions.enableTrun = YES;
     //    // 是否开启图片镜像(默认: false)
     //    _photoEditMultipleComponent.options.editCuterOptions.enableMirror = YES;
-    //    // 裁剪比例 (默认:lsqRatioAll)
-    //    _photoEditMultipleComponent.options.editCuterOptions.ratioType = lsqRatioAll;
+    //    // 裁剪比例 (默认:lsqRatioDefault)
+    //    _photoEditMultipleComponent.options.editCuterOptions.ratioType = lsqRatioDefault;
     //    // 裁剪比例排序 (例如：@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)])
     //    _photoEditMultipleComponent.options.editCuterOptions.ratioTypeList = @[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3)];
     //    // 保存到临时文件

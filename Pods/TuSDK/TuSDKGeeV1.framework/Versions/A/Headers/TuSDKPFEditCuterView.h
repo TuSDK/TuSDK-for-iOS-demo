@@ -14,13 +14,19 @@
  *  选项栏目
  */
 @interface TuSDKPFEditCuterOptionBar : UIView
+
+/**
+ *  横向滚动视图
+ */
+@property (nonatomic, readonly) UIScrollView *wrapView;
+
 /**
  *  按钮列表
  */
 @property (nonatomic, readonly) NSArray *buttons;
 
 /**
- *  视图显示比例类型列表 (默认：lsqTuSDKRatioTypes)
+ *  视图显示比例类型列表 (默认：lsqTuSDKRatioDefaultTypes)
  *
  *  设置 NSNumber 型数组来控制显示的按钮顺序， 例如:
  *	@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)]

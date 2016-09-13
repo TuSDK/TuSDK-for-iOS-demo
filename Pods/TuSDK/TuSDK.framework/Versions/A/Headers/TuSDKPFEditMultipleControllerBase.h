@@ -26,12 +26,12 @@
 @property (nonatomic) BOOL limitForScreen;
 
 /**
- *  视频视图显示比例类型 (默认:lsqRatioAll, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+ *  视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
  */
 @property (nonatomic) lsqRatioType ratioType;
 
 /**
- *  视图显示比例类型列表 ( 优先级 ratioTypeList > ratioType, 默认：lsqTuSDKRatioTypes)
+ *  视图显示比例类型列表 ( 优先级 ratioTypeList > ratioType, 默认：lsqTuSDKRatioDefaultTypes)
  *
  *  设置 NSNumber 型数组来控制显示的按钮顺序， 例如:
  *	@[@(lsqRatioOrgin), @(lsqRatio_1_1), @(lsqRatio_2_3), @(lsqRatio_3_4)]
@@ -80,6 +80,13 @@
  *            丢弃的记录数
  */
 - (void)onRefreshStepStatesWithHistories:(NSUInteger)histories brushies:(NSUInteger)brushies;
+
+/**
+ *  刷新自动较色按钮状态
+ *
+ *  @param enable 是否可用
+ */
+- (void)onRefreshAutoAdjustButtonEnable:(BOOL)enable;
 
 /**
  *  获取最后执行的步骤
