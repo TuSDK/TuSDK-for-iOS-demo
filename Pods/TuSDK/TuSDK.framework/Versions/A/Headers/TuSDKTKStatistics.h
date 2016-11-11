@@ -215,9 +215,19 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editHolyLightFragment = 0x409700,
     
     /**
+     * 编辑控制器
+     */
+    tkc_multipleEditFragment = 0x409800,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,
+    
+    /**
+     * 相机预览控制器
+     */
+    tkc_cameraPreviewFragment = 0x500010,
     
     /**
      * 相机控制器 拍照动作

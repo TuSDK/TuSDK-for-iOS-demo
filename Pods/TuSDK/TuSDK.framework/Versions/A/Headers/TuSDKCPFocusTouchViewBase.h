@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "TuSDKVideoCameraInterface.h"
+#import "TuSDKTSScreen+Extend.h"
 
 /**
  *  相机聚焦触摸视图

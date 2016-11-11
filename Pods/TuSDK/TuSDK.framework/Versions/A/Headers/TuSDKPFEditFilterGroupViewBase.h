@@ -14,6 +14,7 @@
  *  图片编辑滤镜控制器滤镜栏视图基础类
  */
 @interface TuSDKPFEditFilterGroupViewBase : TuSDKCPGroupFilterBaseView
+
 /**
  *  设置配置视图参数
  *

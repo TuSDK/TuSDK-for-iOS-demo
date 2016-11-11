@@ -156,6 +156,10 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *  是否为动作状态
  */
 @property (nonatomic) BOOL isInActingType;
+/**
+ *  是否为选中状态
+ */
+@property (nonatomic) BOOL isSelected;
 
 /**
  *  初始化
@@ -309,6 +313,17 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *  @param cell 滤镜分组视图
  */
 - (void)onFilterGroupCellRemove:(TuSDKCPGroupFilterGroupCellBase *)cell;
+
+/**
+ *  折叠视图点击事件
+ *
+ *  @param stackView  折叠视图对象
+ *  @param mode       滤镜分组元素
+ *  @param enableStack  是否允许展开的折叠
+ *
+ */
+- (void)onFilterGroupViewClick:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)stackView mode:(TuSDKCPGroupFilterItem *)mode enableStack:(BOOL)enableStack;
+
 @end
 
 

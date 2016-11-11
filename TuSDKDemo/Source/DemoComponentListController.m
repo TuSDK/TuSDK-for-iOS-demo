@@ -10,6 +10,8 @@
 #import "DemoRootView.h"
 
 //Samples
+#import "GeeV2Sample.h"
+
 #import "CameraComponentSample.h"
 #import "EditMultipleComponentSample.h"
 #import "EditAdvancedComponentSample.h"
@@ -112,6 +114,9 @@
      */
     // 范例分组
     SampleGroup *group = [SampleGroup group];
+    // 功能套件
+    // 相机组件范例
+    [group appenWithSample:[GeeV2Sample sample]];
     
     // 功能套件
     // 相机组件范例
@@ -164,6 +169,7 @@
     // 基础相机自定义 - 底层API
     [group appenWithSample:[DefineCameraBaseComponent sample]];
     
+
     // 设置范例分组数据
     self.view.group = group;    
 }

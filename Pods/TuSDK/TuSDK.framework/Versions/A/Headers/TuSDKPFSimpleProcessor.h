@@ -157,5 +157,8 @@
  *  销毁数据
  */
 - (void)destroy;
-
+/**
+ *  销毁历史记录
+ */
+- (void)destroyHistory;
 @end

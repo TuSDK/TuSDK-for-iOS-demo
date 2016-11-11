@@ -55,6 +55,11 @@
 @property (nonatomic)CGFloat cellWidth;
 
 /**
+ *  折叠区视图宽度
+ */
+@property (nonatomic)CGFloat stackViewWidth;
+
+/**
  *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCellBase, 需要继承 TuSDKCPGroupFilterGroupCellBase)
  */
 @property (nonatomic, strong)Class groupTableCellClazz;

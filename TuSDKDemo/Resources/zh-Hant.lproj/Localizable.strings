@@ -15,6 +15,7 @@
 "component_list" = "開發套件";
 
 // sample group
+"sample_group_recommend" = "官方推荐";
 "sample_group_suite" = "功能套件";
 "sample_group_comp" = "常用組件";
 "sample_group_examples" = "組件用法示例";
@@ -22,6 +23,8 @@
 "sample_group_define" = "API 使用示例";
 
 // samples
+"sample_GeeV2ThemeComponent" = "GeeV2主题套件";
+
 "sample_EditAndCutComponent" = "裁剪 + 滤镜组件";
 "sample_EditAvatarComponent" = "頭像設置組件";
 "sample_EditAdvancedComponent" = "裁切 ＋ 濾鏡 ＋ 貼紙組件";

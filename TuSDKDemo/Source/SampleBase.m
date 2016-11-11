@@ -103,6 +103,7 @@
     self = [super init];
     if (self) {
         self.headers = @[
+                         [GroupHeader headerWithGroupId:RecommendSample title:NSLocalizedString(@"sample_group_recommend", @"官方推荐")],
                          [GroupHeader headerWithGroupId:SuiteSample title:NSLocalizedString(@"sample_group_suite", @"功能套件")],
                          [GroupHeader headerWithGroupId:ComponentSample title:NSLocalizedString(@"sample_group_comp", @"常用组件")],
                          [GroupHeader headerWithGroupId:FeatureSample title:NSLocalizedString(@"sample_group_examples", @"组件用法示例")],

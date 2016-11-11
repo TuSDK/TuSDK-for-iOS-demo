@@ -429,8 +429,21 @@
                               rectSize:(CGSize)rectSize;
 @end
 
-#pragma mark - PlanarPixelBufferRefExtends
-@interface UIImage(PlanarPixelBufferRefExtends)
+#pragma mark - PixelBufferRefExtends
+@interface UIImage(lsqPixelBufferRefExtends)
+
+/**
+ *  从PixelBuffer获取图片
+ *
+ *  @param pixelBuffer CVPixelBufferRef
+ *  @param rotation    旋转方向
+ *  @param rectSize    区域长宽 (输出的图片不允许超过区域)
+ *
+ *  @return 从PixelBuffer获取图片
+ */
++ (UIImage *)lsqImageFromPixelBuffer:(CVPixelBufferRef)pixelBuffer
+                            rotation:(UIImageOrientation)rotation
+                            rectSize:(CGSize)rectSize;
 
 /**
  *  从 PlanarPixelBuffer 获取图片 (420f)

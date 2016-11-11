@@ -50,7 +50,7 @@
 @property (nonatomic, strong) Class previewBarViewClazz;
 
 /**
- *  一次选择的最大照片数量 (默认: 3, 0 < n <= 10)
+ *  一次选择的最大照片数量 (默认: 3, 0 < n <= 9)
  */
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 

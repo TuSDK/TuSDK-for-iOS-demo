@@ -70,6 +70,11 @@
 - (void)setBrushSize:(lsqBrushSize)brushSize;
 
 /**
+ *  橡皮粗细  0.05 < mBrushCustomSize < 0.25
+ */
+- (void)setBrushCustomSize:(CGFloat)mBrushCustomSize;
+
+/**
  *  默认撤销的最大次数 (默认: 5)
  */
 - (void)setMaxUndoCount:(NSUInteger)mMaxUndoCount;
@@ -121,6 +126,10 @@
  *  清理内存
  */
 - (void)destroy;
+/**
+ *  销毁历史记录
+ */
+- (void)destroyHistory;
 @end
 
 
@@ -130,7 +139,10 @@
 {
     // 笔刷粗细
     lsqBrushSize _mBrushSize;
-    
+   
+    // 橡皮粗细
+    CGFloat _mBrushCustomSize;
+
     // 笔刷透明度度
     CGFloat _mBrushAlpha;
     
@@ -165,6 +177,11 @@
  *  笔刷粗细， 0 < brushSize <= 1
  */
 - (void)setBrushSize:(lsqBrushSize)mBrushSize;
+
+/**
+ *  橡皮粗细  0.05 < mBrushCustomSize < 0.25
+ */
+- (void)setBrushCustomSize:(CGFloat)mBrushCustomSize;
 
 /**
  *  默认撤销的最大次数 (默认: 5)

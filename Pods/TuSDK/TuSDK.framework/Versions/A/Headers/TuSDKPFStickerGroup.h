@@ -44,7 +44,7 @@
 @property (nonatomic, copy) NSString *name;
 
 /**
- * 滤镜列表
+ * 贴纸列表
  */
 @property (nonatomic, retain) NSArray *stickers;
 

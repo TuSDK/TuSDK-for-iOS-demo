@@ -9,6 +9,7 @@
 "lsq_reset" = "重置";
 "lsq_cancel" = "取消";
 "lsq_selected" = "選擇";
+"lsq_complete" = "完成";
 "lsq_setting" = "設置";
 "lsq_loading_image" = "讀取圖片...";
 "lsq_downloading_image" = "正從iCloud下載圖片...";
@@ -38,6 +39,7 @@
 "lsq_nav_more" = "更多";
 "lsq_nav_remove" = "刪除";
 "lsq_nav_complete" = "完成";
+"lsq_nav_continue" = "繼續";
 
 // button
 "lsq_button_done" = "我知道了";
@@ -45,6 +47,7 @@
 "lsq_button_switch_camera" = "切換鏡頭";
 "lsq_button_flash" = "閃光燈:";
 "lsq_button_flash_model_off" = "禁用";
+"lsq_button_flash_model_close" = "關閉";
 "lsq_button_flash_model_auto" = "自動";
 "lsq_button_flash_model_open" = "開啓";
 
@@ -58,6 +61,8 @@
 "lsq_carema_no_device" = "您的設備沒有相機功能！";
 "lsq_carema_access_error%@" = "無法訪問系統相機.請在'設置->隱私->相機'設置 %@ 爲打開狀態.";
 "lsq_carema_access_error_title" = "無法訪問系統相機";
+"lsq_carema_remake" = "重拍";
+"lsq_carema_gotoEdit" = "去美化";
 
 // album
 "lsq_album_title" = "相簿";
@@ -90,7 +95,9 @@
 "lsq_edit_filter_processing" = "正在處理...";
 "lsq_edit_processing" = "正在處理...";
 "lsq_edit_processed" = "處理完成";
-"lsq_edit_process_error" = "發生錯誤，請確認設備已聯網";
+"lsq_edit_processing_index" = "正在處理第%d/%d張";
+"lsq_edit_process_error_autoColorAnalysis" = "設備未聯網，無法使用自動校色功能";
+"lsq_edit_process_error_analysisFace" = "設備未聯網，無法使用一鍵美顏所有功能";
 "lsq_edit_process_face_error_undetected" = "未檢測到人臉";
 "lsq_edit_process_face_error_noAccess" = "人臉檢測請求失敗";
 "lsq_edit_process_face_error_moreThanOne" = "檢測到多張人臉";
@@ -115,6 +122,21 @@
 "lsq_edit_multiple_title" = "美化圖片";
 "lsq_edit_skin_title" = "美顏";
 "lsq_edit_holy_light" = "聖光";
+"lsq_edit_smudge_brush" = "筆觸";
+"lsq_edit_smudge_eraser" = "橡皮";
+
+"lsq_edit_fragment_turn_left" = "左轉";
+"lsq_edit_fragment_turn_right" = "右轉";
+"lsq_edit_fragment_vertical_mirror" = "垂直";
+"lsq_edit_fragment_horizontal_mirror" = "水平";
+"lsq_edit_fragment_undo" = "撤銷";
+"lsq_edit_fragment_redo" = "重做";
+"lsq_edit_fragment_dim_small" = "小號";
+"lsq_edit_fragment_dim_middle" = "中號";
+"lsq_edit_fragment_dim_large" = "大號";
+"lsq_edit_fragment_aperture_close" = "關閉";
+"lsq_edit_fragment_aperture_radial" = "徑向";
+"lsq_edit_fragment_aperture_linear" = "線性";
 
 // sticker
 "lsq_sticker_cate_default" = "貼紙";
@@ -127,6 +149,8 @@
 "lsq_sticker_title" = "貼紙";
 "lsq_sticker_online_title" = "貼紙商店";
 "lsq_sticker_total_format%ld" = "%ld 張貼紙";
+"lsq_sticker_empty_title_msg" = "點擊“  ”，下載更多貼紙";
+"lsq_sticker_empty_title" = "暫無“最新下載”的貼紙";
 "lsq_sticker_empty" = "還沒有貼紙";
 "lsq_sticker_empty_msg" = "快去貼紙商店挑選海量貼紙";
 "lsq_sticker_1_1" = "怪咖營地4";
@@ -134,6 +158,8 @@
 "lsq_sticker_remove_msg%@" = "您是否需要刪除貼紙「%@」？";
 "lsq_sticker_cate_all" = "全部";
 "lsq_sticker_cate_history" = "常用";
+"lsq_sticker_cate_new" = "最新下載";
+"lsq_sticker_show_list" = "添加";
 
 // format
 "las_date_format" = "yyyy年M月d日";
@@ -182,6 +208,8 @@
 "lsq_filter_Relaxed" = "輕鬆";
 "lsq_filter_Rough" = "粗獷";
 "lsq_filter_Leica" = "萊卡";
+"lsq_filter_Recent" = "最近";
+"lsq_filter_Download" = "下載";
 
 // Beauty
 "lsq_filter_SkinNature" = "自然";
@@ -246,8 +274,10 @@
 "lsq_filter_set_exposure" = "曝光度";
 "lsq_filter_set_vignette" = "暗角";
 "lsq_filter_set_aperture" = "光圈";
+"lsq_filter_set_holy_light" = "聖光";
 "lsq_filter_set_adjustment" = "調整";
 "lsq_filter_set_selective" = "選區";
+"lsq_filter_set_rotate" = "旋轉";
 "lsq_filter_set_linear" = "線性";
 "lsq_filter_set_radial" = "徑向";
 

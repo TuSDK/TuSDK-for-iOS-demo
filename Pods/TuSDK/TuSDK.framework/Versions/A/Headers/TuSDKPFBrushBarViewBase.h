@@ -152,7 +152,10 @@ typedef NS_ENUM(NSInteger, lsqBrushAction)
  *  加载笔刷列表
  */
 - (void)loadBrushes;
-
+/**
+ *  加载最后使用的笔刷
+ */
+- (TuSDKPFBrush *)loadLastBrush;
 /**
  *  选中笔刷
  *

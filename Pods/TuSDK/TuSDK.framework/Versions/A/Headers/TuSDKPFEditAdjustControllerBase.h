@@ -13,6 +13,12 @@
  *  颜色调整控制器基础类
  */
 @interface TuSDKPFEditAdjustControllerBase : TuSDKCPFilterResultController
+{
+    @protected
+    // 是否显示多功能调整
+    BOOL _isMultiAdjust;
+}
+
 /**
  *  选中一个参数动作
  *

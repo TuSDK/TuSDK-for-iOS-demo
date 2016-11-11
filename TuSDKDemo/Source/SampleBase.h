@@ -13,6 +13,10 @@ typedef NS_ENUM(NSUInteger, SampleType)
     /**
      * 套件
      */
+    RecommendSample,
+    /**
+     * 套件
+     */
     SuiteSample,
     /**
      * 视图控件类

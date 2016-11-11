@@ -32,13 +32,12 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  */
 + (instancetype) serviceEngine;
 
-
 /**
- *  获取服务器地址
+ *  sdk下载资源业务网络引擎
  *
- *  @return NSString
+ *  @return sdk下载资源业务网络引擎
  */
-- (NSString *) serviceDomain;
++ (instancetype) webEngine;
 
 /**
  *  开发者ID
@@ -49,6 +48,13 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  *  用户标识
  */
 @property (nonatomic, copy) NSString *userIdentify;
+
+/**
+ *  获取服务器地址
+ *
+ *  @return NSString
+ */
+- (NSString *) serviceDomain;
 
 /**
  * 获取在线链接

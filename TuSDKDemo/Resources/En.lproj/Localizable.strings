@@ -15,6 +15,7 @@
 "component_list" = "Component Kit";
 
 // sample group
+"sample_group_recommend" = "Recommend";
 "sample_group_suite" = "Composite Components";
 "sample_group_comp" = "Common Components";
 "sample_group_examples" = "Feature Examples";
@@ -22,6 +23,8 @@
 "sample_group_define" = "API Usage Examples";
 
 // samples
+"sample_GeeV2ThemeComponent" = "GeeV2 Theme";
+
 "sample_EditAndCutComponent" = "Cut + Filter Component";
 "sample_EditAvatarComponent" = "Avatar Component";
 "sample_EditAdvancedComponent" = "Cut + Filter + Sticker Component";

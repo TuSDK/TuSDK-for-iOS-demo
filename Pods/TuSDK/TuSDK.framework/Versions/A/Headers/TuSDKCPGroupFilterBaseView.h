@@ -14,6 +14,12 @@
  *  滤镜分组视图基类
  */
 @interface TuSDKCPGroupFilterBaseView : UIView<TuSDKCPGroupFilterBarDelegate>
+{
+@protected
+    // 是否显示活动状态
+    BOOL _enableShowActive;
+}
+
 /**
  *  滤镜分组元素类型
  */
@@ -30,6 +36,11 @@
 @property (nonatomic)CGFloat cellWidth;
 
 /**
+ *  折叠视图宽度
+ */
+@property (nonatomic)CGFloat stackViewWidth;
+
+/**
  *  滤镜组选择栏高度
  */
 @property (nonatomic)CGFloat filterBarHeight;
@@ -38,6 +49,11 @@
  *  滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
  */
 @property (nonatomic, strong)Class groupTableCellClazz;
+
+/**
+ *  滤镜列表折叠视图类 (默认:TuSDKCPGroupFilterGroupCellBase, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)
+ */
+@property (nonatomic, strong) Class stackViewClazz;
 
 /**
  *  滤镜列表行视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuSDKCPGroupFilterItemCellInterface>)

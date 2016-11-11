@@ -29,6 +29,21 @@ typedef NS_ENUM(NSInteger, lsqStickerCategoryExtendType)
 };
 
 /**
+ *  贴纸分类类型
+ */
+typedef NS_ENUM(NSInteger, lsqStickerCategoryType)
+{
+    /**
+     * 智能贴纸
+     */
+    lsqStickerCategorySmart = 0,
+    /**
+     * 普通贴纸
+     */
+    lsqStickerCategoryOther = 1,
+};
+
+/**
  *  贴纸分类
  */
 @interface TuSDKPFStickerCategory : TuSDKDataJson

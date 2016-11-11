@@ -61,6 +61,14 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
      * 圣光动作
      */
     lsqTuSDKCPEditActionHolyLight,
+    /**
+     * 编辑动作
+     */
+    lsqTuSDKCPEditActionMultipleEdit,
+    /**
+     * 旋转和镜像动作
+     */
+    lsqTuSDKCPEditActionTurnAndMirror,
 };
 
 /**

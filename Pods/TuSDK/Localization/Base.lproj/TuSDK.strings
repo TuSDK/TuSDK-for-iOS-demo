@@ -10,6 +10,7 @@
 "lsq_cancel" = "取消";
 "lsq_setting" = "设置";
 "lsq_selected" = "选择";
+"lsq_complete" = "完成";
 "lsq_loading_image" = "读取图片...";
 "lsq_downloading_image" = "正从iCloud下载图片...";
 "lsq_initing" = "正在初始化";
@@ -38,6 +39,7 @@
 "lsq_nav_more" = "更多";
 "lsq_nav_remove" = "删除";
 "lsq_nav_complete" = "完成";
+"lsq_nav_continue" = "继续";
 
 // button
 "lsq_button_done" = "我知道了";
@@ -45,6 +47,7 @@
 "lsq_button_switch_camera" = "切换镜头";
 "lsq_button_flash" = "闪光灯:";
 "lsq_button_flash_model_off" = "禁用";
+"lsq_button_flash_model_close" = "关闭";
 "lsq_button_flash_model_auto" = "自动";
 "lsq_button_flash_model_open" = "开启";
 
@@ -58,6 +61,8 @@
 "lsq_carema_no_device" = "您的设备没有相机功能！";
 "lsq_carema_access_error%@" = "无法访问系统相机.请在'设置->隐私->相机'设置 %@ 为打开状态.";
 "lsq_carema_access_error_title" = "无法访问系统相机";
+"lsq_carema_remake" = "重拍";
+"lsq_carema_gotoEdit" = "去美化";
 
 // album
 "lsq_album_title" = "相簿";
@@ -90,7 +95,9 @@
 "lsq_edit_filter_processing" = "正在处理...";
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
-"lsq_edit_process_error" = "发生错误，请确认设备已联网";
+"lsq_edit_processing_index" = "正在处理第%d/%d张";
+"lsq_edit_process_error_autoColorAnalysis" = "设备未联网，无法使用自动校色功能";
+"lsq_edit_process_error_analysisFace" = "设备未联网，无法使用一键美颜所有功能";
 "lsq_edit_process_face_error_undetected" = "未检测到人脸";
 "lsq_edit_process_face_error_noAccess" = "人脸检测请求失败";
 "lsq_edit_process_face_error_moreThanOne" = "检测到多张人脸";
@@ -115,6 +122,21 @@
 "lsq_edit_multiple_title" = "美化图片";
 "lsq_edit_skin_title" = "美颜";
 "lsq_edit_holy_light" = "圣光";
+"lsq_edit_smudge_brush" = "笔触";
+"lsq_edit_smudge_eraser" = "橡皮";
+
+"lsq_edit_fragment_turn_left" = "左转";
+"lsq_edit_fragment_turn_right" = "右转";
+"lsq_edit_fragment_vertical_mirror" = "垂直";
+"lsq_edit_fragment_horizontal_mirror" = "水平";
+"lsq_edit_fragment_undo" = "撤销";
+"lsq_edit_fragment_redo" = "重做";
+"lsq_edit_fragment_dim_small" = "小号";
+"lsq_edit_fragment_dim_middle" = "中号";
+"lsq_edit_fragment_dim_large" = "大号";
+"lsq_edit_fragment_aperture_close" = "关闭";
+"lsq_edit_fragment_aperture_radial" = "径向";
+"lsq_edit_fragment_aperture_linear" = "线性";
 
 // sticker
 "lsq_sticker_cate_default" = "贴纸";
@@ -127,6 +149,8 @@
 "lsq_sticker_title" = "贴纸";
 "lsq_sticker_online_title" = "贴纸商店";
 "lsq_sticker_total_format%ld" = "%ld 张贴纸";
+"lsq_sticker_empty_title_msg" = "点击“  ”，下载更多贴纸";
+"lsq_sticker_empty_title" = "暂无“最新下载”的贴纸";
 "lsq_sticker_empty" = "还没有贴纸";
 "lsq_sticker_empty_msg" = "快去贴纸商店挑选海量贴纸";
 "lsq_sticker_1_1" = "怪咖营地4";
@@ -134,6 +158,8 @@
 "lsq_sticker_remove_msg%@" = "您是否需要删除贴纸「%@」？";
 "lsq_sticker_cate_all" = "全部";
 "lsq_sticker_cate_history" = "常用";
+"lsq_sticker_cate_new" = "最新下载";
+"lsq_sticker_show_list" = "添加";
 
 // format
 "las_date_format" = "yyyy年M月d日";
@@ -182,6 +208,8 @@
 "lsq_filter_Relaxed" = "轻松";
 "lsq_filter_Rough" = "粗犷";
 "lsq_filter_Leica" = "莱卡";
+"lsq_filter_Recent" = "最近";
+"lsq_filter_Download" = "下载";
 
 // Beauty
 "lsq_filter_SkinNature" = "自然";
@@ -245,9 +273,11 @@
 "lsq_filter_set_brightness" = "亮度";
 "lsq_filter_set_exposure" = "曝光度";
 "lsq_filter_set_vignette" = "暗角";
+"lsq_filter_set_holy_light" = "圣光";
 "lsq_filter_set_aperture" = "光圈";
 "lsq_filter_set_adjustment" = "调整";
 "lsq_filter_set_selective" = "选区";
+"lsq_filter_set_rotate" = "旋转";
 "lsq_filter_set_linear" = "线性";
 "lsq_filter_set_radial" = "径向";
 
