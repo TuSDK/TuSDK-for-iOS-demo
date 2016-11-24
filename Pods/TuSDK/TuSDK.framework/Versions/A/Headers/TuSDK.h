@@ -32,6 +32,7 @@
 #import "TuSDKTSScreen+Extend.h"
 #import "TuSDKTSString+Extend.h"
 #import "TuSDKTSUIColor+Extend.h"
+#import "TuSDKImageCache.h"
 
 #import "TuSDKICAlertView.h"
 #import "TuSDKICEmptyView.h"

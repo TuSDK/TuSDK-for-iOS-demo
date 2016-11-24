@@ -42,6 +42,14 @@
  */
 - (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller selectedAssets:(NSArray<TuSDKTSAssetInterface> *)assets;
 
+/**
+ *  相册读取错误信息
+ *
+ *  @param controller 系统相册控制器
+ *  @param error      相册读取错误信息
+ */
+- (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller error:(NSError *)error;
+
 @end
 
 /**
@@ -95,9 +103,19 @@
 @property (nonatomic, strong) Class gridCellViewClazz;
 
 /**
- *  视图类 (默认:TuSDKPFPhotoPreviewBarViewWrap, 需要继承 TuSDKPFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
+ *  预览视图控制器默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
  */
-@property (nonatomic, strong) Class previewBarViewClazz;
+@property (nonatomic, strong) Class previewClazz;
+
+/**
+ *  预览视图控制器相册照片列表视图类 (默认:TuSDKPFPhotosGridPreview, 需要继承 TuSDKPFPhotosGridPreview)
+ */
+@property (nonatomic, strong) Class previewPhotosViewClazz;
+
+/**
+ *  预览视图控制器照片列表单元格视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
+ */
+@property (nonatomic, strong) Class previewCellViewClazz;
 
 /**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 9)
@@ -118,6 +136,11 @@
  *  允许在多个相册中选择 (默认: 开启)
  */
 @property (nonatomic, assign) BOOL enabelShareSelection;
+
+/**
+ *  是否开启大图预览 (默认: true)
+ */
+@property (nonatomic) BOOL enabelPreview;
 
 /**
  *  相册列表每行显示的照片数量 (默认:0, 程序自动适配设备)

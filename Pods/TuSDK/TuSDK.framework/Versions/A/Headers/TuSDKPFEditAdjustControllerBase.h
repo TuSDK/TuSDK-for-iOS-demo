@@ -39,4 +39,11 @@
  *  @param isHidden 是否隐藏
  */
 - (void)setConfigViewHiddenState:(BOOL)isHidden;
+
+/**
+ *  配置返回无保存
+ *
+ *  @param view     参数配置视图
+ */
+- (void)onTuSDKCPParameterConfigBackNotSave:(UIView<TuSDKCPParameterConfigViewInterface> *)view;
 @end

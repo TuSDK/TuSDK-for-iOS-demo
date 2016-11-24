@@ -34,4 +34,16 @@
  *  @param group 相册组
  */
 - (void)notifySelectedGroup:(id<TuSDKTSAssetsGroupInterface>)group;
+
+/**
+ *  创建相册默认样式视图 (如需创建自定义视图，请覆盖该方法，并创建自己的视图类)
+ */
+- (void)buildAlbumView;
+
+/**
+ *  通知相册读取错误信息
+ *
+ *  @param error 错误信息
+ */
+- (void)notifyError:(NSError *)error;
 @end

@@ -7,9 +7,7 @@
 //
 
 #import "GeeV2Sample.h"
-/**
- *  相机组件范例
- */
+
 @interface GeeV2Sample()<GeeV2PFCameraDelegate>{
     // 照片美化编辑组件
     GeeV2CPPhotoEditMultipleComponent *_photoEditMultipleComponent;

@@ -6,9 +6,7 @@
 //  Copyright © 2016年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKGeeV1Import.h"
-#import "TuSDKPFPhotosGridVPreview.h"
-#import "TuSDKPFPhotoPreviewBarViewWrap.h"
+#import "TuSDKPFPhotoPreview.h"
 
 @class TuSDKPFPhotoPreviewController;
 
@@ -28,17 +26,24 @@
 /**
  *  相册预览控制器
  */
-@interface TuSDKPFPhotoPreviewController : TuSDKPFPhotoPreviewControllerBase
+@interface TuSDKPFPhotoPreviewController : TuSDKPFPhotoPreviewControllerBase<TuSDKPFPhotosGridPreviewProtocol>
+{
+@protected
+/**
+ *  默认样式视图
+ */
+TuSDKPFPhotoPreview *_defaultStyleView;
+}
 
 /**
- *  默认预览视图
+ *  默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
  */
-@property (nonatomic, readonly) TuSDKPFPhotosGridVPreview *defaultPreview;
+@property (nonatomic, readonly) TuSDKPFPhotoPreview *defaultStyleView;
 
 /**
- *  视图类 (默认:TuSDKPhotosGridVPreview, 需要继承 TuSDKPhotosGridVPreview)
+ *  视图类 (默认:TuSDKPFPhotoPreview, 需要继承 TuSDKPFPhotoPreview)
  */
-@property (nonatomic, strong) Class previewClazz;
+@property (nonatomic, strong) Class viewClazz;
 
 /**
  *  照片列表单元格视图类 (默认:TuSDKPFPhotosGridCell, 需要继承 TuSDKPFPhotosGridCell)
@@ -46,14 +51,9 @@
 @property (nonatomic, strong) Class cellViewClazz;
 
 /**
- *  预览视图工具视图
+ *  相册照片列表视图类 (默认:TuSDKPFPhotosGridPreview, 需要继承 TuSDKPFPhotosGridPreview)
  */
-@property (nonatomic, strong) TuSDKPFPhotoPreviewBarViewWrap *barViewWrap;
-
-/**
- *  视图类 (默认:TuSDKPFPhotoPreviewBarViewWrap, 需要继承 TuSDKPFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
- */
-@property (nonatomic, strong) Class previewBarViewClazz;
+@property (nonatomic, strong) Class photosViewClazz;
 
 /**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 9)

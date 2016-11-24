@@ -68,8 +68,6 @@
     UIButton *_closeButton;
     // 闪光灯按钮
     UIButton *_flashButton;
-    // 闪光灯不可用视图
-    UIButton *_flashDisableView;
     // 前后摄像头切换按钮
     UIButton *_switchButton;
     // 辅助线按钮
@@ -84,11 +82,6 @@
  *  闪光灯按钮
  */
 @property (nonatomic, readonly) UIButton *flashButton;
-
-/**
- *  闪光灯不可用视图
- */
-@property (nonatomic, readonly) UIButton *flashDisableView;
 
 /**
  *  前后摄像头切换按钮

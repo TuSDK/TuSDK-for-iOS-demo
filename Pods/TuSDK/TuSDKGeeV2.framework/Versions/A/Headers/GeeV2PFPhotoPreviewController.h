@@ -6,9 +6,7 @@
 //  Copyright © 2016年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKGeeV2Import.h"
-#import "GeeV2PFPhotosGridVPreview.h"
-#import "GeeV2PFPhotoPreviewBarViewWrap.h"
+#import "GeeV2PFPhotoPreview.h"
 
 @class GeeV2PFPhotoPreviewController;
 
@@ -28,32 +26,32 @@
 /**
  *  相册预览控制器
  */
-@interface GeeV2PFPhotoPreviewController : TuSDKPFPhotoPreviewControllerBase
+@interface GeeV2PFPhotoPreviewController : TuSDKPFPhotoPreviewControllerBase<GeeV2PFPhotoGridPreviewProtocol>{
+@protected
+    /**
+     *  默认样式视图
+     */
+    GeeV2PFPhotoPreview *_defaultStyleView;
+}
+/**
+ *  默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
+ */
+@property (nonatomic, readonly) GeeV2PFPhotoPreview *defaultStyleView;
 
 /**
- *  默认预览视图
+ *  视图类 (默认:GeeV2PFPhotoPreview, 需要继承 GeeV2PFPhotoPreview)
  */
-@property (nonatomic, readonly) GeeV2PFPhotosGridVPreview *defaultPreview;
+@property (nonatomic, strong) Class viewClazz;
 
 /**
- *  视图类 (默认:GeeV2PhotosGridVPreview, 需要继承 GeeV2PhotosGridVPreview)
+ *  相册照片列表视图类 (默认:GeeV2PFPhotosGridPreview, 需要继承 GeeV2PFPhotosGridPreview)
  */
-@property (nonatomic, strong) Class previewClazz;
+@property (nonatomic, strong) Class photosViewClazz;
 
 /**
  *  照片列表单元格视图类 (默认:GeeV2PFPhotosGridCell, 需要继承 GeeV2PFPhotosGridCell)
  */
 @property (nonatomic, strong) Class cellViewClazz;
-
-/**
- *  预览视图工具视图
- */
-@property (nonatomic, strong) GeeV2PFPhotoPreviewBarViewWrap *barViewWrap;
-
-/**
- *  视图类 (默认:GeeV2PFPhotoPreviewBarViewWrap, 需要继承 GeeV2PFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
- */
-@property (nonatomic, strong) Class previewBarViewClazz;
 
 /**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 9)

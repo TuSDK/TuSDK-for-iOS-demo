@@ -17,11 +17,23 @@
 /**
  *  单元格数据
  */
+@property (nonatomic) BOOL isShowThumbnail;
+
+/**
+ *  图片边距
+ */
+@property (nonatomic) NSInteger innerWarpSpace;
+
+/**
+ *  单元格数据
+ */
 @property (nonatomic, retain) TuSDKResult *mode;
+
 /**
  *  单元格选中覆盖
  */
 @property (nonatomic, retain) UIView *selectedMask;
+
 /**
  *  单元格展示图片
  */
@@ -30,6 +42,8 @@
 @end
 #pragma mark - GeeV2PFEditImageSelectTableView
 @protocol GeeV2PFEditImageSelectTableViewDelegate <NSObject>
+@optional
+
 /**
  *  选中一个行视图
  *
@@ -37,12 +51,20 @@
  *
  */
 - (void)onTuSDKPFEditImageSelectTableViewDidSelectIndex:(NSInteger)index;
+
+/**
+ *  滑动到一个单元格
+ *
+ *  @param index 索引
+ *
+ */
+- (void)imageSelectTableViewDidScrollIndex:(NSInteger)index;
 @end
 
 /**
  *  滤镜分组列表
  */
-@interface GeeV2PFEditImageSelectTableView : UIView<UITableViewDataSource, UITableViewDelegate>
+@interface GeeV2PFDisplayImageWrap : UIView<UITableViewDataSource, UITableViewDelegate>
 
 /**
  *  列表视图
@@ -50,13 +72,35 @@
 @property (nonatomic, readonly) TuSDKICTableView *tableView;
 
 /**
- *  行视图宽度
+ *  单元格高度
  */
-@property (nonatomic) CGFloat cellWidth;
+@property (nonatomic) NSUInteger gridHeight;
+
+/**
+ *  单元格间距
+ */
+@property (nonatomic) NSInteger gridPadding;
+
+/**
+ *  是否显示选中覆盖，默认显示
+ */
+@property (nonatomic) BOOL enableShowSelectedMask;
+
+/**
+ *  单元格数据
+ */
+@property (nonatomic) BOOL isShowThumbnail;
+
 /**
  *  行视图宽度
  */
+@property (nonatomic) CGFloat cellWidth;
+
+/**
+ *  单元格视图类
+ */
 @property (nonatomic, strong) Class cellViewClazz;
+
 /**
  *  列表资源数组
  */
@@ -174,16 +218,17 @@
 /**
  *  图片选择视图
  */
-@property (nonatomic, readonly) GeeV2PFEditImageSelectTableView *imageSelectTableView;
+@property (nonatomic, readonly) GeeV2PFDisplayImageWrap *imageSelectTableView;
 
 /**
  *  选项栏目
  */
 @property (nonatomic, readonly) GeeV2PFEditMultipleOptionBar *optionBar;
+
 /**
  *  图片视图
  */
-@property (nonatomic, readonly) UIImageView *imageView;
+@property (nonatomic, readonly) GeeV2PFDisplayImageWrap *imageViewWrap;
 /**
  *  更新布局
  */

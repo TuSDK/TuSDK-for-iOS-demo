@@ -77,6 +77,11 @@
 @property (nonatomic) BOOL enableAlwaysSaveEditResult;
 
 /**
+ *  是否禁用滑动切换显示图片 (默认:不禁用)
+ */
+@property (nonatomic) BOOL disableSlideSwitch;
+
+/**
  *  输入资源对象列表
  */
 @property (nonatomic, retain) NSArray<TuSDKResult *> *inputResources;

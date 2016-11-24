@@ -38,4 +38,11 @@
  *  @param found 是否检测到人脸
  */
 - (void)onFaceDetectionResult:(BOOL)found;
+
+/**
+ *  配置返回无保存
+ *
+ *  @param view     参数配置视图
+ */
+- (void)onTuSDKCPParameterConfigBackNotSave:(UIView<TuSDKCPParameterConfigViewInterface> *)view;
 @end

@@ -42,6 +42,13 @@
  */
 - (void)onGeeV2PFPhotos:(GeeV2PFAlbumMultipleViewController *)controller selectedAssets:(NSArray<TuSDKTSAssetInterface> *)assets;
 
+/**
+ *  相册读取错误信息
+ *
+ *  @param controller 系统相册控制器
+ *  @param error      相册读取错误信息
+ */
+- (void)onTuSDKPFPhotos:(GeeV2PFAlbumMultipleViewController *)controller error:(NSError *)error;
 @end
 
 /**
@@ -95,9 +102,19 @@
 @property (nonatomic, strong) Class gridCellViewClazz;
 
 /**
- *  视图类 (默认:GeeV2PFPhotoPreviewBarViewWrap, 需要继承 GeeV2PFPhotoPreviewBarViewWrap 重写LSQInitView，可以改变工具栏样式)
+ *  预览视图控制器默认样式视图 (如果覆盖 buildDefaultStyleView 方法，实现了自己的视图，defaultStyleView == nil)
  */
-@property (nonatomic, strong) Class previewBarViewClazz;
+@property (nonatomic, strong) Class previewClazz;
+
+/**
+ *  预览视图控制器相册照片列表视图类 (默认:GeeV2PFPhotosGridPreview, 需要继承 GeeV2PFPhotosGridPreview)
+ */
+@property (nonatomic, strong) Class previewPhotosViewClazz;
+
+/**
+ *  预览视图控制器照片列表单元格视图类 (默认:GeeV2PFPhotosGridCell, 需要继承 GeeV2PFPhotosGridCell)
+ */
+@property (nonatomic, strong) Class previewCellViewClazz;
 
 /**
  * 一次选择的最大照片数量 (默认: 3, 0 < n <= 9)
@@ -108,6 +125,11 @@
  *  显示相机单元格，点击后请求打开相机 (默认: true)
  */
 @property (nonatomic) BOOL displayCameraCell;
+
+/**
+ *  是否开启大图预览 (默认: true)
+ */
+@property (nonatomic) BOOL enabelPreview;
 
 /**
  *  初始化视图控制器，已选择的资源数据

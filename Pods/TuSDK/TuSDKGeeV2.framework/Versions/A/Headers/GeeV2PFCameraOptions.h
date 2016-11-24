@@ -14,22 +14,22 @@
  */
 @interface GeeV2PFCameraOptions : TuSDKCPResultOptions
 /**
- *  视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)
+ *  视图类 (默认:GeeV2PFCameraView, 需要继承 GeeV2PFCameraView)
  */
 @property (nonatomic, strong) Class viewClazz;
 
 /**
- *  默认相机控制栏视图类 (默认:TuSDKPFCameraConfigView, 需要继承 TuSDKPFCameraConfigView)
+ *  默认相机控制栏视图类 (默认:GeeV2PFCameraConfigView, 需要继承 GeeV2PFCameraConfigView)
  */
 @property (nonatomic, strong) Class configBarViewClazz;
 
 /**
- *  默认相机底部栏视图类 (默认:TuSDKPFCameraBottomView, 需要继承 TuSDKPFCameraBottomView)
+ *  默认相机底部栏视图类 (默认:GeeV2PFCameraBottomView, 需要继承 GeeV2PFCameraBottomView)
  */
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
+ *  闪光灯视图类 (默认:GeeV2PFCameraFlashView, 需要继承 GeeV2PFCameraFlashView)
  */
 @property (nonatomic, strong) Class flashViewClazz;
 
@@ -39,7 +39,7 @@
 @property (nonatomic, strong) Class filterViewClazz;
 
 /**
- *  聚焦触摸视图类 (默认:TuSDKCPFocusTouchView, 需要继承 TuSDKCPFocusTouchView)
+ *  聚焦触摸视图类 (默认:GeeV2CPFocusTouchView, 需要继承 GeeV2CPFocusTouchView)
  */
 @property (nonatomic, strong) Class focusTouchViewClazz;
 

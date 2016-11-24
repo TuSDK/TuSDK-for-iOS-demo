@@ -24,6 +24,11 @@
 @property (nonatomic) NSUInteger limitSideSize;
 
 /**
+ *  是否禁用滑动切换显示图片 (默认:不禁用)
+ */
+@property (nonatomic) BOOL disableSlideSwitch;
+
+/**
  *  最大输出图片按照设备屏幕 (默认:true, 如果设置了LimitSideSize, 将忽略LimitForScreen)
  */
 @property (nonatomic) BOOL limitForScreen;

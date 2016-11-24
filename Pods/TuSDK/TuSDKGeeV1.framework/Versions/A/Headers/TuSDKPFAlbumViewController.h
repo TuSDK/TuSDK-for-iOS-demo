@@ -22,6 +22,15 @@
  *  @param group 相册组
  */
 - (void)onTuSDKPFAlbum:(TuSDKPFAlbumViewController *)controller selectedGroup:(id<TuSDKTSAssetsGroupInterface>)group;
+
+/**
+ *  相册读取错误信息
+ *
+ *  @param controller 系统相册控制器
+ *  @param error      相册读取错误信息
+ */
+- (void)onTuSDKPFPhotos:(TuSDKPFAlbumViewController *)controller error:(NSError *)error;
+
 @end
 
 /**

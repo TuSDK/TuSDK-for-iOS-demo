@@ -99,4 +99,8 @@
  *  @param mBrushSize 笔刷粗细
  */
 - (void)setBrushSize:(lsqGeeV2BrushSize)mBrushSize;
+/**
+ *  点击笔刷按钮切换笔刷粗细
+ */
+- (void)switchBrushSize:(lsqGeeV2BrushSize)mBrushSize;
 @end
