@@ -16,7 +16,7 @@
  *
  *  @param X 字号
  *
- *  @return 返回字体对象
+ *  @return font 返回字体对象
  */
 #define lsqFontSize(X)                 [UIFont systemFontOfSize:X]
 
@@ -25,7 +25,7 @@
  *
  *  @param X 字号
  *
- *  @return 返回字体对象
+ *  @return font 返回字体对象
  */
 #define lsqBoldFontSize(X)             [UIFont boldSystemFontOfSize:X]
 
@@ -37,7 +37,7 @@
  *  @param b
  *  @param a
  *
- *  @return 系统颜色
+ *  @return color 系统颜色
  */
 #define lsqRGBA(r, g, b, a)        [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
@@ -48,7 +48,7 @@
  *  @param g
  *  @param b
  *
- *  @return
+ *  @return color
  */
 #define lsqRGB(r, g, b)            lsqRGBA(r, g, b, 1)
 
@@ -58,7 +58,7 @@
  *  @param key     语言键名
  *  @param comment 注释
  *
- *  @return 语言字符串
+ *  @return string 语言字符串
  */
 #define LSQString(key, comment) \
 [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:@"TuSDK"]
@@ -74,7 +74,7 @@
  *
  *  @param frame 坐标长宽
  *
- *  @return 视图
+ *  @return frame 视图
  */
 + (instancetype)initWithFrame:(CGRect)frame;
 
@@ -85,7 +85,7 @@
  *  @param space 底部距离
  *  @param size  视图大小
  *
- *  @return 相对传入视图底部CGRect
+ *  @return frame 相对传入视图底部CGRect
  */
 + (CGRect)lsqGetRectOnBottomWithView:(UIView *)view space:(CGFloat)space size:(CGSize)size;
 
@@ -106,21 +106,21 @@
  *
  *  @param size 长宽
  *
- *  @return 视图对象
+ *  @return size 视图对象
  */
 - (id)setSize:(CGSize)size;
 
 /**
  *  获取长宽
  *
- *  @return 长宽
+ *  @return getSize 长宽
  */
 - (CGSize)getSize;
 
 /**
  *  获取像素长宽
  *
- *  @return 长宽
+ *  @return getSize 长宽
  */
 - (CGSize)getPixiesSize;
 
@@ -129,14 +129,14 @@
  *
  *  @param width 宽度
  *
- *  @return 视图对象
+ *  @return width 视图对象
  */
 - (id)setSizeWidth:(CGFloat)width;
 
 /**
  *  获取宽度
  *
- *  @return 宽度
+ *  @return getSizeWidth 宽度
  */
 - (CGFloat)getSizeWidth;
 
@@ -145,14 +145,14 @@
  *
  *  @param height 高度
  *
- *  @return 视图对象
+ *  @return height 视图对象
  */
 - (id)setSizeHeight:(CGFloat)height;
 
 /**
  *  获取高度
  *
- *  @return 高度
+ *  @return getSizeHeight 高度
  */
 - (CGFloat)getSizeHeight;
 
@@ -161,14 +161,14 @@
  *
  *  @param origin 坐标
  *
- *  @return 视图对象
+ *  @return origin 视图对象
  */
 - (id)setOrigin:(CGPoint)origin;
 
 /**
  *  获取坐标
  *
- *  @return 坐标
+ *  @return getOrigin 坐标
  */
 - (CGPoint)getOrigin;
 
@@ -177,14 +177,14 @@
  *
  *  @param originX x坐标
  *
- *  @return 视图对象
+ *  @return originX 视图对象
  */
 - (id)setOriginX:(CGFloat)originX;
 
 /**
  *  获取x坐标
  *
- *  @return x坐标
+ *  @return x 坐标
  */
 - (CGFloat)getOriginX;
 
@@ -193,35 +193,35 @@
  *
  *  @param originY y坐标
  *
- *  @return 视图对象
+ *  @return originY 视图对象
  */
 - (id)setOriginY:(CGFloat)originY;
 
 /**
  *  获取y坐标
  *
- *  @return y坐标
+ *  @return y 坐标
  */
 - (CGFloat)getOriginY;
 
 /**
  *  获取右边X坐标
  *
- *  @return 右边X坐标
+ *  @return getRightX 右边X坐标
  */
 - (CGFloat)getRightX;
 
 /**
  *  获取下边Y坐标
  *
- *  @return 下边Y坐标
+ *  @return getBottomY 下边Y坐标
  */
 - (CGFloat)getBottomY;
 
 /**
  *  获取右下角坐标
  *
- *  @return 右下角坐标
+ *  @return getRightBottomXY 右下角坐标
  */
 - (CGPoint)getRightBottomXY;
 
@@ -230,7 +230,7 @@
  *
  *  @param targetWidth 目标视图宽度
  *
- *  @return 目标相对于自己中心的X坐标
+ *  @return centerX 目标相对于自己中心的X坐标
  */
 - (CGFloat)getCenterX:(float)targetWidth;
 
@@ -239,7 +239,7 @@
  *
  *  @param targetHeight 目标视图高度
  *
- *  @return 目标相对于自己中心的Y坐标
+ *  @return centerYCenterY 目标相对于自己中心的Y坐标
  */
 - (CGFloat)getCenterY:(float)targetHeight;
 
@@ -248,7 +248,7 @@
  *
  *  @param size 目标长宽
  *
- *  @return 目标相对于自己中心的坐标
+ *  @return size 目标相对于自己中心的坐标
  */
 - (CGPoint)getCenterWithSize:(CGSize)size;
 
@@ -302,7 +302,7 @@
  *
  *  @param tag 视图Tag
  *
- *  @return 视图(没有找到返回nil)
+ *  @return view 视图(没有找到返回nil)
  */
 - (UIView *) findViewByTag:(NSInteger)tag;
 
@@ -312,7 +312,7 @@
  *  @param tag       视图Tag
  *  @param needChild 是否查找子视图
  *
- *  @return 视图(没有找到返回nil)
+ *  @return view 视图(没有找到返回nil)
  */
 - (UIView *) findViewByTag:(NSInteger)tag needChild:(BOOL)needChild;
 
@@ -321,7 +321,7 @@
  *
  *  @param ratio 长宽比例
  *
- *  @return 实际位置长宽  (contents scaled to fit with fixed aspect. remainder is transparent)
+ *  @return ratio 实际位置长宽  (contents scaled to fit with fixed aspect. remainder is transparent)
  */
 - (CGRect)convertScaleAspectFitWithRatio:(float)ratio;
 
@@ -330,7 +330,7 @@
  *
  *  @param size 长宽
  *
- *  @return 实际位置长宽 (contents scaled to fit with fixed aspect. remainder is transparent)
+ *  @return size 实际位置长宽 (contents scaled to fit with fixed aspect. remainder is transparent)
  */
 - (CGRect)convertScaleAspectFitWithSize:(CGSize)size;
 
@@ -340,7 +340,7 @@
  *  @param viewSize 视图位置
  *  @param size     长宽
  *
- *  @return 实际位置长宽 (contents scaled to fit with fixed aspect. remainder is transparent)
+ *  @return size 实际位置长宽 (contents scaled to fit with fixed aspect. remainder is transparent)
  */
 + (CGRect)convertViewSize:(CGSize)viewSize scaleAspectFitWithSize:(CGSize)size;
 
@@ -349,7 +349,7 @@
  *
  *  @param size 长宽
  *
- *  @return 实际位置长宽 (contents scaled to fill with fixed aspect. some portion of content may be clipped.)
+ *  @return size 实际位置长宽 (contents scaled to fill with fixed aspect. some portion of content may be clipped.)
  */
 - (CGRect)convertScaleAspectFillWithSize:(CGSize)size;
 
@@ -359,7 +359,7 @@
  *  @param viewSize 视图位置
  *  @param size     长宽
  *
- *  @return 实际位置长宽 (contents scaled to fill with fixed aspect. some portion of content may be clipped.)
+ *  @return size 实际位置长宽 (contents scaled to fill with fixed aspect. some portion of content may be clipped.)
  */
 + (CGRect)convertViewSize:(CGSize)viewSize scaleAspectFillWithSize:(CGSize)size;
 @end
@@ -475,7 +475,7 @@
  *  @param font 字体
  *  @param size 希望的大小
  *
- *  @return 最佳字体大小
+ *  @return size 最佳字体大小
  */
 - (CGFloat)fontSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
 @end
@@ -491,7 +491,7 @@
  *  @param frame      坐标长宽
  *  @param imageNamed 图片名称
  *
- *  @return 图片对象
+ *  @return image 图片对象
  */
 + (instancetype)initWithFrame:(CGRect)frame imageNamed:(NSString *)imageNamed;
 @end
@@ -518,7 +518,7 @@
  *  @param frame     坐标长宽
  *  @param imageName 图片名称
  *
- *  @return 按钮对象
+ *  @return button 按钮对象
  */
 + (instancetype)buttonWithFrame:(CGRect)frame imageName:(NSString *)imageName;
 
@@ -528,7 +528,7 @@
  *  @param frame     坐标长宽
  *  @param imageName 背景图片名称
  *
- *  @return 按钮对象
+ *  @return button 按钮对象
  */
 + (instancetype)buttonWithFrame:(CGRect)frame backgroundImageName:(NSString *)imageName;
 
@@ -541,7 +541,7 @@
  *  @param capInsets 图片拉伸区域
  *  @param font      字体
  *
- *  @return 按钮对象
+ *  @return button 按钮对象
  */
 + (instancetype)buttonWithFrame:(CGRect)frame
             backgroundImageName:(NSString *)imageName
@@ -557,7 +557,7 @@
  *  @param font  字体
  *  @param color 颜色
  *
- *  @return 按钮对象
+ *  @return button 按钮对象
  */
 + (instancetype)buttonWithFrame:(CGRect)frame
                           title:(NSString *)title
@@ -676,14 +676,14 @@
 /**
  *  获取缩放后的中心点
  *
- *  @return 中心点
+ *  @return getScaleCenter 中心点
  */
 - (CGPoint)getScaleCenter;
 
 /**
  *  是否正在动作
  *
- *  @return 是否正在动作
+ *  @return BOOL 是否正在动作
  */
 - (BOOL)inActioning;
 @end

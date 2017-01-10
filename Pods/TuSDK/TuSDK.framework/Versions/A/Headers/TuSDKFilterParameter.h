@@ -49,11 +49,26 @@
 /**
  *  更新位置
  *
- *  @param points  特征点坐标
+ *  @param points 特征点坐标
+ *  @param angle  设备角度
  */
-- (void)setFaceFeatures:(NSArray<NSValue *> *)points;
+- (void)updateFaceFeatures:(NSArray<NSValue *> *)points angle:(float)angle;
 @end
 
+
+#pragma mark - TuSDKFilterStickerProtocol
+/**
+ *  滤镜贴纸协议
+ */
+@protocol TuSDKFilterStickerProtocol <NSObject>
+/**
+ *  更新贴纸数据
+ *
+ *  @param stickers 要显示的贴纸数据
+ */
+- (void)setLiveStickers:(NSArray *)stickers;
+
+@end
 #pragma mark - TuSDKFilterArg
 /**
  *  滤镜参数
@@ -108,7 +123,7 @@
 /**
  *  滤镜配置选项
  *
- *  @return 滤镜配置选项
+ *  @return parameter 滤镜配置选项
  */
 + (instancetype)parameter;
 
@@ -117,7 +132,7 @@
  *
  *  @param args 自定义参数
  *
- *  @return 滤镜配置选项
+ *  @return args 滤镜配置选项
  */
 + (instancetype)parameterWithArgs:(NSDictionary *)args;
 
@@ -148,7 +163,7 @@
  *
  *  @param key 参数键名
  *
- *  @return 滤镜参数
+ *  @return key 滤镜参数
  */
 - (TuSDKFilterArg *)argWithKey:(NSString *)key;
 
@@ -157,7 +172,7 @@
  *
  *  @param key 参数键名
  *
- *  @return 参数值
+ *  @return key 参数值
  */
 - (CGFloat)argWithDefaultKey:(NSString *)key;
 

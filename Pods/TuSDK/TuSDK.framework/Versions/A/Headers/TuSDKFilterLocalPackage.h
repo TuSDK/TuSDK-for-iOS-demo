@@ -78,14 +78,14 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param config Sdk配置
  *
- *  @return 原生滤镜配置
+ *  @return config 原生滤镜配置
  */
 + (instancetype)initWithConfig:(TuSDKConfig *)config;
 
 /**
  *  原生滤镜配置
  *
- *  @return 原生滤镜配置
+ *  @return package 原生滤镜配置
  */
 + (instancetype)package;
 
@@ -106,7 +106,7 @@ extern NSString * const lsqNormalFilterCode;
 /**
  *  默认滤镜选项
  *
- *  @return 默认滤镜选项
+ *  @return normalOption 默认滤镜选项
  */
 - (TuSDKFilterOption *)normalOption;
 
@@ -115,7 +115,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param code 滤镜代号
  *
- *  @return 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
+ *  @return option 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
  */
 - (TuSDKFilterOption *)optionWithCode:(NSString *)code;
 
@@ -124,7 +124,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param filterCodes 滤镜代号列表
  *
- *  @return 滤镜名称
+ *  @return codes 滤镜名称
  */
 - (NSArray *)verifyCodes:(NSArray *)codes;
 
@@ -133,7 +133,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param codes 滤镜代号列表
  *
- *  @return 滤镜列表
+ *  @return codes 滤镜列表
  */
 - (NSArray *)optionsWithCodes:(NSArray *)codes;
 
@@ -142,7 +142,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param group 滤镜分组
  *
- *  @return 滤镜列表
+ *  @return group 滤镜列表
  */
 - (NSArray *)optionsWithGroup:(TuSDKFilterGroup *)group;
 
@@ -151,7 +151,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param groupID 滤镜组ID
  *
- *  @return 滤镜组名称键
+ *  @return groupID 滤镜组名称键
  */
 - (NSString *)groupNameKeyWithGroupID:(uint64_t)groupID;
 
@@ -160,7 +160,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param groupID 滤镜组ID
  *
- *  @return 滤镜组类型
+ *  @return groupID 滤镜组类型
  */
 - (NSUInteger)groupTypeWithGroupID:(uint64_t)groupID;
 
@@ -169,7 +169,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param group 滤镜分组
  *
- *  @return 滤镜组默认滤镜代号
+ *  @return group 滤镜组默认滤镜代号
  */
 - (NSString *)defaultFilterCodeWithGroup:(TuSDKFilterGroup *)group;
 
@@ -178,7 +178,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param code 滤镜代号
  *
- *  @return 材质列表
+ *  @return code 材质列表
  */
 - (NSArray *)loadTexturesWithCode:(NSString *)code;
 
@@ -187,7 +187,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param codes 滤镜代号列表
  *
- *  @return 材质列表
+ *  @return codes 材质列表
  */
 - (NSArray *)loadInternalTextures:(NSArray *)codes;
 
@@ -196,7 +196,7 @@ extern NSString * const lsqNormalFilterCode;
  *
  *  @param option 滤镜选项配置
  *
- *  @return 获取滤镜实例
+ *  @return option 获取滤镜实例
  */
 - (GPUImageOutput <GPUImageInput> *)filterWithOption:(TuSDKFilterOption *)option;
 #pragma mark - imageLoad
@@ -257,7 +257,7 @@ extern NSString * const lsqNormalFilterCode;
 /**
  *  获取所有json数据
  *
- *  @return json数据
+ *  @return json 数据
  */
 - (NSString *)jsonAllData;
 @end

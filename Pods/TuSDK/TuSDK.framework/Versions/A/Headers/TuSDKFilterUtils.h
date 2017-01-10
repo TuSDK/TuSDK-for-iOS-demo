@@ -19,7 +19,7 @@
  *
  *  @param name 材质名称
  *
- *  @return 获取材质
+ *  @return image 获取材质
  */
 + (UIImage *)textureBundleWithName:(NSString *)name;
 @end

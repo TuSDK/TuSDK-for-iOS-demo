@@ -46,11 +46,11 @@
 /**
  * 计算两个点之间的距离
  *
- * @param ePoint
+ * @param endPoint
  *            结束点
- * @param sPoint
+ * @param startPoint
  *            开始点
- * @return
+ * @return distanceOfEndPoint
  */
 + (CGFloat)distanceOfEndPoint:(CGPoint)ePoint startPoint:(CGPoint)sPoint;
 
@@ -61,7 +61,7 @@
  * @param y1
  * @param x2
  * @param y2
- * @return
+ * @return distanceOfPoint
  */
 + (CGFloat)distanceOfPointX1:(CGFloat)x1 y1:(CGFloat)y1 pointX2:(CGFloat)x2 y2:(CGFloat)y2;
 

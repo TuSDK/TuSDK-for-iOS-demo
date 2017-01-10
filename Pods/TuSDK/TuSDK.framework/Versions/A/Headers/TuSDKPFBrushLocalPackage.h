@@ -45,7 +45,7 @@ extern NSString * const lsqEraserBrushCode;
 /**
  *  本地笔刷包
  *
- *  @return 本地笔刷包
+ *  @return package 本地笔刷包
  */
 + (instancetype)package;
 
@@ -54,7 +54,7 @@ extern NSString * const lsqEraserBrushCode;
  *
  *  @param config Sdk配置
  *
- *  @return 本地笔刷包
+ *  @return config 本地笔刷包
  */
 + (instancetype)initWithConfig:(TuSDKConfig *)config;
 

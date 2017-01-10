@@ -31,7 +31,7 @@
  *  @param view  参数配置视图
  *  @param index 参数索引
  *
- *  @return 参数值
+ *  @return parameterConfig 参数值
  */
 - (CGFloat)onTuSDKCPParameterConfig:(UIView<TuSDKCPParameterConfigViewInterface> *)view
                      valueWithIndex:(NSUInteger)index;

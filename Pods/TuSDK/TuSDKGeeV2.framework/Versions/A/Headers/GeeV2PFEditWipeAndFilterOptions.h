@@ -37,7 +37,7 @@
 /**
  *  创建滤镜涂抹控制器对象
  *
- *  @return 滤镜涂抹控制器对象
+ *  @return controller 滤镜涂抹控制器对象
  */
 - (GeeV2PFEditWipeAndFilterController *)viewController;
 @end

@@ -162,7 +162,7 @@ typedef NS_ENUM(NSUInteger, lasqueImageBlendOperation)
 /**
  *  根据当前设备获取合适的DPI缩放级别序列
  *
- *  @return DPI序列数组
+ *  @return DPI 序列数组
  */
 + (NSArray *)getBundlePreferredScales;
 
@@ -172,7 +172,7 @@ typedef NS_ENUM(NSUInteger, lasqueImageBlendOperation)
  *  @param string 文件前缀
  *  @param scale  DPI缩放级别
  *
- *  @return 文件全名
+ *  @return filename 文件全名
  */
 + (NSString *)getResFilename:(NSString *)string byScale:(CGFloat) scale;
 
@@ -181,7 +181,7 @@ typedef NS_ENUM(NSUInteger, lasqueImageBlendOperation)
  *
  *  @param string 文件名
  *
- *  @return DPI缩放级别
+ *  @return DPI 缩放级别
  */
 + (CGFloat)getScaleFromFilename:(NSString *)string;
 

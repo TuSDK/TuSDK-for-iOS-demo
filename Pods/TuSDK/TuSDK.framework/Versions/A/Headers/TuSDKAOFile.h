@@ -28,7 +28,7 @@
  *
  *  @param file 文件路径
  *
- *  @return SDK文件
+ *  @return file SDK文件
  */
 + (instancetype)initWithFile:(NSString *)file;
 
@@ -37,16 +37,16 @@
  *
  *  @param file 文件路径
  *
- *  @return SDK文件
+ *  @return file SDK文件
  */
 - (instancetype)initWithFile:(NSString *)file;
 
 /**
  * 获取文本
  *
- * @param name
- *            文本名称
- * @return
+ * @param name 名称文本
+ *
+ * @return name
  */
 - (NSString *)getTextWithName:(NSString *)name;
 
@@ -55,7 +55,7 @@
  *
  * @param name
  *            图片名称
- * @return
+ * @return name
  */
 - (UIImage *)getImageWithName:(NSString *)name;
 @end

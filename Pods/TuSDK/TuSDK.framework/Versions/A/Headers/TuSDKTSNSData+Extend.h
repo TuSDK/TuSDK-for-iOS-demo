@@ -22,7 +22,7 @@
 /**
  *  获取指定位置的数据
  *
- *  @param range 范围
+ *  @param postion 范围
  *
  *  @return 数据
  */
@@ -49,7 +49,7 @@
 /**
  *  解析base64字符串
  *
- *  @param str base64编码字符串
+ *  @param string base64编码字符串
  *
  *  @return 解析base64数据
  */

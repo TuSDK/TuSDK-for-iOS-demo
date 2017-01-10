@@ -20,7 +20,7 @@
  *  @param view 裁剪与缩放控制器滤镜视图
  *  @param item 滤镜分组元素
  *
- *  @return 是否允许继续执行
+ *  @return BOOL 是否允许继续执行
  */
 - (BOOL)onTuSDKPFNormalFilterGroup:(TuSDKPFNormalFilterGroupView *)view
                          selectedItem:(TuSDKCPGroupFilterItem *)item;

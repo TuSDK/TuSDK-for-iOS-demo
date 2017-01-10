@@ -31,7 +31,7 @@
 /**
  *  创建旋转视图控制器对象
  *
- *  @return 旋转视图控制器对象
+ *  @return controller 旋转视图控制器对象
  */
 - (GeeV2PFEditTurnAndMirrorViewController *)viewController;
 @end

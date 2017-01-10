@@ -115,14 +115,14 @@ typedef NS_ENUM(NSInteger, lsqImageChange)
 /**
  *  计算图片裁剪区域百分比
  *
- *  @return 图片裁剪区域百分比
+ *  @return countImageCutRect 图片裁剪区域百分比
  */
 - (CGRect)countImageCutRect;
 
 /**
  *  是否正在动作
  *
- *  @return 是否正在动作
+ *  @return BOOL 是否正在动作
  */
 - (BOOL)inActioning;
 

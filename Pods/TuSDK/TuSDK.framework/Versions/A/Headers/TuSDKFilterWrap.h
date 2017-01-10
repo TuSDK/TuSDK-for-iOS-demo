@@ -41,7 +41,7 @@
  *
  *  @param opt 滤镜配置选项
  *
- *  @return 滤镜对象包装
+ *  @return opt 滤镜对象包装
  */
 + (nullable instancetype) initWithOpt:(nullable TuSDKFilterOption *)opt;
 
@@ -74,7 +74,7 @@
  *
  *  @param image 输入图像
  *
- *  @return 滤镜处理过的图像 (默认使用图像自身的方向属性)
+ *  @return image 滤镜处理过的图像 (默认使用图像自身的方向属性)
  */
 - (nullable UIImage *)processWithImage:(nullable UIImage *)image;
 
@@ -84,7 +84,7 @@
  *  @param image            输入图像
  *  @param imageOrientation 图像方向
  *
- *  @return 滤镜处理过的图像
+ *  @return image 滤镜处理过的图像
  */
 - (nullable UIImage *)processWithImage:(nullable UIImage *)image orientation:(UIImageOrientation)imageOrientation;
 
@@ -96,7 +96,7 @@
 /**
  *  克隆滤镜对象包装
  *
- *  @return 滤镜对象包装
+ *  @return clone 滤镜对象包装
  */
 - (nullable instancetype)clone;
 
@@ -105,7 +105,7 @@
  *
  *  @param code 滤镜代号
  *
- *  @return 是否为同一个滤镜代号
+ *  @return BOOL 是否为同一个滤镜代号
  */
 - (BOOL) isEqualCode:(nullable NSString *)code;
 @end

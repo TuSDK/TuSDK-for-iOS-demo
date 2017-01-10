@@ -52,7 +52,7 @@
  *
  *  @param regionRatio 范围比例
  *
- *  @return 确定的选取方位
+ *  @return regionRatio 确定的选取方位
  */
 - (CGRect)changeRegionRatio:(CGFloat)regionRatio;
 

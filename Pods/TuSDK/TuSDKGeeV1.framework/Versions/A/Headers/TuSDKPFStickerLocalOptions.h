@@ -45,7 +45,7 @@
 /**
  *  创建本地贴纸选择控制器对象
  *
- *  @return 本地贴纸选择控制器对象
+ *  @return controller 本地贴纸选择控制器对象
  */
 - (TuSDKPFStickerLocalController *)viewController;
 @end

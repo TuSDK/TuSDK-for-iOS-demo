@@ -78,25 +78,25 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 获取比例
  *
- * @param ratioType
- *            比例类型 RatioType
- * @return
+ * @param ratio 比例类型 RatioType
+ *
+ * @return ratioType
  */
 + (float)ratio:(lsqRatioType)ratioType;
 
 /**
  * 通过比例获取相近比例类型
  *
- * @param ratio
- * @return
+ * @param radioType
+ * @return ratio
  */
 + (lsqRatioType)radioType:(float)ratio;
 
 /**
  * 检测列表中的比例数据是否合法
  *
- * @param types
- * @return
+ * @param ratioTypes
+ * @return types
  */
 + (NSArray<NSNumber *> *)validRatioTypes:(NSArray<NSNumber *> *)types;
 
@@ -104,23 +104,23 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
  * 获取第一个比例类型
  *
  * @param ratioType
- * @return
+ * @return ratioType
  */
 + (lsqRatioType)firstRatioType:(lsqRatioType)ratioType;
 
 /**
  * 获取第一个比例
  *
- * @param ratioType
- * @return
+ * @param firstRatio
+ * @return ratioType
  */
 + (float) firstRatio:(lsqRatioType) ratioType;
 
 /**
  * 获取比例总数
  *
- * @param ratioType
- * @return
+ * @param ratioCount
+ * @return ratioType
  */
 + (NSInteger) ratioCount:(lsqRatioType)ratioType;
 
@@ -129,18 +129,18 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
  *
  *  @param ratioType 比例类型
  *
- *  @return 比例类型列表
+ *  @return ratioTypes 比例类型列表
  */
 + (NSArray *)ratioTypes:(lsqRatioType)ratioType;
 
 /**
  * 下一个比例类型
  *
- * @param ratioType
- *            比例类型集合
- * @param currentType
- *            当前比例类型
- * @return
+ * @param ratioType 比例类型集合
+ *
+ * @param currentType 当前比例类型
+ *
+ * @return currentType
  */
 + (lsqRatioType) nextRatioType:(lsqRatioType)ratioType
                    currentType:(lsqRatioType) currentType;
@@ -148,13 +148,13 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 下一个比例类型
  *
- * @param ratioType
- *            比例类型集合
- * @param currentType
- *            当前比例类型
- * @param ignoreType
- *            需要忽略的比例类型
- * @return
+ * @param ratioType 比例类型集合
+ *
+ * @param currentType 当前比例类型
+ *
+ * @param ignoreType 需要忽略的比例类型
+ *
+ * @return nextType
  */
 + (lsqRatioType) nextRatioType:(lsqRatioType)ratioType
                    currentType:(lsqRatioType) currentType
@@ -165,7 +165,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
  *
  *  @param ratioType 比例类型
  *
- *  @return 比例动作类型
+ *  @return ratioType 比例动作类型
  */
 + (NSInteger) componentTypeWithRatioType:(lsqRatioType)ratioType;
 @end

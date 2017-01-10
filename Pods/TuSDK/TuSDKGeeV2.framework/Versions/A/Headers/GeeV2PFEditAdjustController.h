@@ -32,7 +32,7 @@
 /**
  *  创建颜色调整控制器对象
  *
- *  @return 颜色调整控制器对象
+ *  @return controller 颜色调整控制器对象
  */
 - (GeeV2PFEditAdjustController *)viewController;
 @end

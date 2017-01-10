@@ -34,7 +34,7 @@
 /**
  *  获取选中的单元格列表
  *
- *  @return
+ *  @return gridCellData
  */
 - (NSMutableArray<GeeV2TSPhotosGridCellData *> *)getSelectedItem;
 @end

@@ -29,6 +29,10 @@
  */
 - (void)showSampleWithController:(UIViewController *)controller;
 {
+    
+    // 组件使用文档教程
+    // @see-https://tusdk.com/docs/ios/camera-usage
+    
     if (!controller) return;
     self.controller = controller;
     

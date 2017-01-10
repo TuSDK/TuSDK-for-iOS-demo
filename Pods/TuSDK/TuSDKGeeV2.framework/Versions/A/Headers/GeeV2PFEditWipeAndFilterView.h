@@ -149,7 +149,7 @@
 /**
  *  获取笔刷像素尺寸
  *
- *  @return 尺寸
+ *  @return size 尺寸
  */
 - (NSUInteger)getBrushSizeInPoint;
 

@@ -256,7 +256,7 @@ typedef NS_ENUM(NSInteger, lsqStickerSectionHeaderAction)
  *  @param left  左边距离
  *  @param title 按钮标题
  *
- *  @return 分类按钮
+ *  @return button 分类按钮
  */
 - (UIButton *)buildCategoryButtonWithIndex:(NSUInteger)index left:(NSUInteger)left title:(NSString *)title;
 @end

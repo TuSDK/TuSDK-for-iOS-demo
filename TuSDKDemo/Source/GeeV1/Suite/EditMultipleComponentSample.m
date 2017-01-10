@@ -64,6 +64,9 @@
 - (void)openEditMultipleWithController:(UIViewController *)controller
                                 result:(TuSDKResult *)result;
 {
+    // 组件使用文档教程
+    // @see-https://tusdk.com/docs/ios/editor-usage
+    
     if (!controller || !result) return;
     
     // 组件选项配置

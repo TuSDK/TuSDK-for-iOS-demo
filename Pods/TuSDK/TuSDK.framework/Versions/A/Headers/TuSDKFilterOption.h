@@ -118,28 +118,28 @@
 /**
  * 复制滤镜配置选项
  *
- * @return
+ * @return copy
  */
 - (TuSDKFilterOption *)copy;
 
 /**
  * 获取滤镜实例
  *
- * @return
+ * @return getFilter
  */
 - (GPUImageOutput <GPUImageInput> *)getFilter;
 
 /**
  *  获取语言资源名称
  *
- *  @return 获取语言资源名称
+ *
  */
 - (NSString *)nameKey;
 
 /**
  *  获取预览图名称
  *
- *  @return 获取预览图名称
+ *  
  */
 - (NSString *)thumbKey;
 @end

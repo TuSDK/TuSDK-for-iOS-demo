@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, lsqCPErrorType)
  *  @param type   组件错误类型
  *  @param object 来源对象
  *
- *  @return 错误信息
+ *  @return error 错误信息
  */
 + (TuSDKCPError *)errorWithType:(lsqCPErrorType)type from:(id)object;
 @end

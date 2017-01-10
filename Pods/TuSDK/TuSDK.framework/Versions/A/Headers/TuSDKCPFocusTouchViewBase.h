@@ -80,7 +80,7 @@
  *
  *  @param point 聚焦点
  *
- *  @return 是否允许聚焦
+ *  @return BOOL 是否允许聚焦
  */
 - (BOOL)onFocusWithPoint:(CGPoint)point;
 

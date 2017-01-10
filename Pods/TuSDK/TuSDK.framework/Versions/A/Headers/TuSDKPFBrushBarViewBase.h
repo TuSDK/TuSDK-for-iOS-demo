@@ -159,7 +159,7 @@ typedef NS_ENUM(NSInteger, lsqBrushAction)
 /**
  *  选中笔刷
  *
- *  @param code 笔刷
+ *  @param brush 笔刷
  */
 - (void)selectBrush:(TuSDKPFBrush *)brush;
 

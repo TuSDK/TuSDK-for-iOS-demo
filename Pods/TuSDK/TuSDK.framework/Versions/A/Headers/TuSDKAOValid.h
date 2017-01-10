@@ -18,7 +18,7 @@
 /**
  *  SDK用户验证
  *
- *  @return SDK用户验证
+ *  @return shared SDK用户验证
  */
 + (instancetype) shared;
 
@@ -48,35 +48,35 @@
  *  @param key 开发者ID
  *  @param devType 开发模式(需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段)
  *
- *  @return 是否通过验证
+ *  @return BOOL 是否通过验证
  */
 - (BOOL)sdkValidWithKey:(NSString *)key devType:(NSString *)devType;
 
 /**
  *  验证开发者ID
  *
- *  @return 是否通过验证
+ *  @return BOOL 是否通过验证
  */
 - (BOOL)sdkValid;
 
 /**
  *  是否允许该级别
  *
- *  @return 级别
+ *  @return BOOL 级别
  */
 - (BOOL)allowLevel:(NSUInteger)level;
 
 /**
  *  图片最大允许处理的边长
  *
- *  @return 边长
+ *  @return maxImageSide 边长
  */
 - (CGFloat)maxImageSide;
 
 /**
  *  允许最多使用贴纸数量
  *
- *  @return 最多使用贴纸数量
+ *  @return maxStickers 最多使用贴纸数量
  */
 - (NSUInteger)maxStickers;
 
@@ -136,7 +136,7 @@
  *
  *  @param txt 加密文本
  *
- *  @return 解密文本
+ *  @return txt 解密文本
  */
 - (NSString *)sdkDecodeWithString:(NSString *)txt;
 
@@ -147,7 +147,7 @@
  *  @param key  key
  *  @param type type
  *
- *  @return 解密文本
+ *  @return data 解密文本
  */
 - (NSString *)sdkDecodeWithData:(NSData *)data key:(NSString *)key type:(NSUInteger)type;
 
@@ -157,7 +157,7 @@
  *  @param filterId 滤镜ID
  *  @param type     验证方式
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)filterValidWithID:(uint64_t)filterId type:(NSUInteger)type;
 
@@ -168,7 +168,7 @@
  *  @param type     验证方式
  *  @param filterId 滤镜ID
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)filterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
 
@@ -178,7 +178,7 @@
  *  @param filterId 滤镜ID
  *  @param type     验证方式
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)videoFilterValidWithID:(uint64_t)filterId type:(NSUInteger)type;
 
@@ -187,7 +187,7 @@
  *
  *  @param filterId 滤镜ID
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)filterAPIValidWithID:(uint64_t)filterId;
 
@@ -198,7 +198,7 @@
  *  @param type     验证方式
  *  @param filterId 滤镜ID
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)videoFilterValidWithKey:(NSString *)key type:(NSUInteger)type filterId:(uint64_t)filterId;
 
@@ -208,7 +208,7 @@
  *  @param stickerId 贴纸ID
  *  @param type      验证方式
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)stickerValidWithID:(uint64_t)stickerId type:(NSUInteger)type;
 
@@ -219,7 +219,7 @@
  *  @param type      验证方式
  *  @param stickerId 贴纸ID
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)stickerValidWithKey:(NSString *)key type:(NSUInteger)type stickerId:(uint64_t)stickerId;
 
@@ -229,7 +229,7 @@
  *  @param stickerId 笔刷ID
  *  @param type      验证方式
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)brushValidWithID:(uint64_t)brushId type:(NSUInteger)type;
 
@@ -240,7 +240,7 @@
  *  @param type      验证方式
  *  @param stickerId 笔刷ID
  *
- *  @return 是否验证成功
+ *  @return BOOL 是否验证成功
  */
 - (BOOL)brushValidWithKey:(NSString *)key type:(NSUInteger)type brushId:(uint64_t)brushId;
 @end

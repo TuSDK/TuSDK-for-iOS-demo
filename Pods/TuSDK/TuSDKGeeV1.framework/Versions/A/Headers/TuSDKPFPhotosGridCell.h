@@ -34,7 +34,7 @@
 /**
  *  初始化方法
  *
- *  @param dic 字典数据
+ *  @param asset 字典数据
  *
  */
 + (instancetype)dataWithAsset:(id<TuSDKTSAssetInterface>)asset;

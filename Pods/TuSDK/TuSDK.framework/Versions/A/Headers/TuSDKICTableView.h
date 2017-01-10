@@ -25,7 +25,7 @@
 /**
  *  初始化(使用全屏大小)
  *
- *  @return 表格视图 (默认以屏幕高宽 style = UITableViewStylePlain 初始化)
+ *  @return table 表格视图 (默认以屏幕高宽 style = UITableViewStylePlain 初始化)
  */
 + (instancetype)table;
 
@@ -34,7 +34,7 @@
  *
  *  @param height 高度
  *
- *  @return 表格视图
+ *  @return table 表格视图
  */
 + (instancetype)tableWithHeight:(float)height;
 
@@ -43,7 +43,7 @@
  *
  *  @param frame 坐标长宽
  *
- *  @return 表格视图 默认以style = UITableViewStylePlain 初始化
+ *  @return frame 表格视图 默认以style = UITableViewStylePlain 初始化
  */
 + (instancetype)initWithFrame:(CGRect)frame;
 
@@ -53,7 +53,7 @@
  *  @param frame 坐标长宽
  *  @param style 表格样式
  *
- *  @return 表格视图
+ *  @return frame 表格视图
  */
 + (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style;
 

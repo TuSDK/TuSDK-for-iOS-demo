@@ -96,7 +96,7 @@
 /**
  *  创建系统相册列表控制器对象
  *
- *  @return 系统相册列表控制器对象
+ *  @return controller 系统相册列表控制器对象
  */
 - (GeeV2PFAlbumMultipleViewController *)viewController;
 @end

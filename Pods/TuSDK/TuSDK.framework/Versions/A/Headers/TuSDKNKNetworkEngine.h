@@ -21,21 +21,21 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 /**
  *  sdk应用层网络引擎
  *
- *  @return sdk应用层网络引擎
+ *  @return sdk 应用层网络引擎
  */
 + (instancetype) sharedEngine;
 
 /**
  *  sdk业务网络引擎
  *
- *  @return sdk业务网络引擎
+ *  @return sdk 业务网络引擎
  */
 + (instancetype) serviceEngine;
 
 /**
  *  sdk下载资源业务网络引擎
  *
- *  @return sdk下载资源业务网络引擎
+ *  @return sdk 下载资源业务网络引擎
  */
 + (instancetype) webEngine;
 
@@ -62,7 +62,7 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  * @param url
  * @param needAuth
  *            是否需要验证
- * @return
+ * @return url
  */
 - (NSString *)webUrlWithUrl:(NSString *)url needAuth:(BOOL)needAuth;
 #pragma mark - Http

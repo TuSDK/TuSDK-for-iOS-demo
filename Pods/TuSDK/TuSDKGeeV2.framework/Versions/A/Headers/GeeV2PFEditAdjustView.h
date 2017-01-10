@@ -44,7 +44,7 @@
  *  @param module 图片编辑动作类型
  *  @param count  按钮总数
  *
- *  @return 动作按钮
+ *  @return button 动作按钮
  */
 - (UIButton *)buildButtonWithActionType:(NSString *)module moduleCount:(NSUInteger)count;
 

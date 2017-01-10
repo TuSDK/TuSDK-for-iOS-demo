@@ -55,7 +55,7 @@ typedef void (^GeeV2CPAlbumMultipleOpenCameraBlock)(GeeV2PFAlbumMultipleViewCont
  *  @param callbackBlock      组件回调结果
  *  @param openCameraCallback 打开相机回调结果
  *
- *  @return 组件
+ *  @return  controller 组件
  */
 + (instancetype)initWithSourceController:(UIViewController *)controller callbackBlock:(TuSDKCPComponentBlock)callbackBlock openCameraCallback:(GeeV2CPAlbumMultipleOpenCameraBlock)openCameraCallback;
 

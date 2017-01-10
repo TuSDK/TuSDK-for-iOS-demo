@@ -68,7 +68,7 @@
 /**
  *  多功能图像编辑控制器对象
  *
- *  @return 多功能图像编辑控制器对象
+ *  @return controller 多功能图像编辑控制器对象
  */
 - (GeeV2PFEditMultipleController *)viewController;
 @end

@@ -138,7 +138,7 @@
 /**
  *  获取相册列表当前的显示状态
  *
- *  @return 相册列表当前的显示状态
+ *  @return BOOL 相册列表当前的显示状态
  */
 - (BOOL)getAlbumListViewState;
 

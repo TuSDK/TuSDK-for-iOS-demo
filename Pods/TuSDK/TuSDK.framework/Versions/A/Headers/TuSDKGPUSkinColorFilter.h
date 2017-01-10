@@ -12,6 +12,6 @@
 /**
  *  美白颜色滤镜
  */
-@interface TuSDKGPUSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
+@interface TuSDKGPUSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol, TuSDKFilterFacePositionProtocol, TuSDKFilterStickerProtocol>
 
 @end

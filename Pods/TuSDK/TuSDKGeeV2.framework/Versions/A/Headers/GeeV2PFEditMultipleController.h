@@ -37,7 +37,7 @@
 /**
  *  是否自己实现打开多选相册
  *
- *  @return （默认为：false， 设置为True时使用自定义处理逻辑）
+ *  @return BOOL（默认为：false， 设置为True时使用自定义处理逻辑）
  */
 - (BOOL)onGeeV2PFEditMultipleOpenAlumMutipleSourceController:(GeeV2PFEditMultipleController *)sourceController;
 

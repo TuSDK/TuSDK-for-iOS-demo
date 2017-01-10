@@ -93,7 +93,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  是否为相机动作
  *
- *  @return 是否为相机动作
+ *  @return BOOL 是否为相机动作
  */
 - (BOOL)isCameraAction;
 
@@ -130,7 +130,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  滤镜分组元素颜色
  *
- *  @return 滤镜分组元素颜色
+ *  @return shared 滤镜分组元素颜色
  */
 + (instancetype)shared;
 @end
@@ -166,7 +166,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *
  *  @param type 滤镜分组元素类型
  *
- *  @return 滤镜分组元素
+ *  @return type 滤镜分组元素
  */
 + (instancetype)initWithType:(lsqGroupFilterItemType)type;
 
@@ -175,7 +175,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *
  *  @param option 滤镜配置选项
  *
- *  @return 滤镜分组元素
+ *  @return option 滤镜分组元素
  */
 + (instancetype)initWithOption:(TuSDKFilterOption *)option;
 
@@ -184,14 +184,14 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *
  *  @param group 滤镜分组
  *
- *  @return 滤镜分组元素
+ *  @return group 滤镜分组元素
  */
 + (instancetype)initWithGroup:(TuSDKFilterGroup *)group;
 
 /**
  *  获取滤镜代号
  *
- *  @return 滤镜代号
+ *  @return filterCode 滤镜代号
  */
 - (NSString *)filterCode;
 @end
@@ -339,14 +339,14 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  是否隐藏删除标识
  *
- *  @return 是否隐藏删除标识
+ *  @return BOOL 是否隐藏删除标识
  */
 - (BOOL)canHiddenRemoveFlag;
 
 /**
  *  是否为动作状态
  *
- *  @return 是否为动作状态
+ *  @return BOOL 是否为动作状态
  */
 - (BOOL)isInActingType;
 @end

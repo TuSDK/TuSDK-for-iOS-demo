@@ -22,7 +22,7 @@
  *  @param mode      滤镜分组元素
  *  @param indexPath 索引
  *
- *  @return 是否允许选中
+ *  @return BOOL 是否允许选中
  */
 - (BOOL)onTuSDKCPGroupFilterTableView:(UIView<TuSDKCPStackFilterTableViewInterface> *)tableView
                          selectedCell:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)cell

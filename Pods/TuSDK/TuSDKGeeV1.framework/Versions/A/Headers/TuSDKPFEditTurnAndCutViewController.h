@@ -29,7 +29,7 @@
  *
  *  @param controller 旋转和裁剪视图控制器
  *  @param result 旋转和裁剪视图控制器处理结果
- *  @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
+ *  @return BOOL 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
  */
 - (BOOL)onAsyncTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
 @end

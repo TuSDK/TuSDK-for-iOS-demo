@@ -158,7 +158,7 @@ typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
 /**
  *  状态改变数据
  *
- *  @return 状态改变数据
+ *  @return jsonStatusChangeData 状态改变数据
  */
 - (NSString *)jsonStatusChangeData;
 
@@ -167,7 +167,7 @@ typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
  *
  *  @param type 下载类型动作
  *
- *  @return 下载类型动作标识
+ *  @return type 下载类型动作标识
  */
 + (NSString *)typeActWithType:(lsqDownloadTaskType)type;
 @end

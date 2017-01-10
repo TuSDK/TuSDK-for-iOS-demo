@@ -29,7 +29,7 @@
  *
  *  @param controller 图片编辑裁切旋转控制器
  *  @param result 处理结果
- *  @return 是否截断默认处理逻辑 (默认: NO, 设置为YES时使用自定义处理逻辑)
+ *  @return BOOL 是否截断默认处理逻辑 (默认: NO, 设置为YES时使用自定义处理逻辑)
  */
 - (BOOL)onAsyncGeeV2PFEditCuter:(GeeV2PFEditCuterController *)controller result:(TuSDKResult *)result;
 @end

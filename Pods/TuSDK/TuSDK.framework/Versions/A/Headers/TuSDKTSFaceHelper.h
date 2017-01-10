@@ -73,7 +73,6 @@
  *  获取人像百分比信息
  *
  *  @param faces    脸部信息
- *  @param rect     图像区域
  *  @param rotation 旋转方向
  *
  *  @return 人像百分比信息

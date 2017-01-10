@@ -28,7 +28,7 @@
  *  选中一个滤镜
  *
  *  @param filterName 滤镜名称
- *  @return 是否成功切换滤镜
+ *  @return BOOL 是否成功切换滤镜
  */
 - (BOOL)onSelectedFilterCode:(NSString *)code;
 

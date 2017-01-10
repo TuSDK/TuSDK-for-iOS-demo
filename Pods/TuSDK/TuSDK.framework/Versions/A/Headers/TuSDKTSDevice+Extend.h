@@ -274,4 +274,15 @@ extern NSString * const kDeviceiPad4G;
  *  @return 旋转角度
  */
 + (CGFloat)lsqGetRotationByOrient:(UIDeviceOrientation)orient;
+
+/**
+ * 获取设备当前语言
+ */
++(NSString *)lsqCurrentLanguage;
+
+/**
+ * 判断当前是否为中文环境
+ */
++(Boolean) lsqCNLanguage;
+
 @end

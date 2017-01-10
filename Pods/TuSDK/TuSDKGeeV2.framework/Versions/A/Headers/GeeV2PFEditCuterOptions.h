@@ -20,7 +20,7 @@
 /**
  *  创建图片编辑裁切旋转控制器对象
  *
- *  @return 图片编辑裁切旋转控制器对象
+ *  @return controller 图片编辑裁切旋转控制器对象
  */
 - (GeeV2PFEditCuterController *)viewController;
 @end

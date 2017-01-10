@@ -40,7 +40,7 @@
  *  @param size   期望的宽高
  *  @param space  期望的间距
  *
- *  @return 网格视图算法
+ *  @return self 网格视图算法
  */
 + (instancetype)initWithViewWidth:(CGFloat)width desireSize:(CGFloat)size space:(CGFloat)space;
 @end

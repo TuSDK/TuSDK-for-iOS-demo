@@ -30,7 +30,7 @@
 /**
  *  创建锐化功能控制器对象
  *
- *  @return 锐化功能控制器对象
+ *  @return controller 锐化功能控制器对象
  */
 - (TuSDKPFEditSharpnessController *)viewController;
 @end

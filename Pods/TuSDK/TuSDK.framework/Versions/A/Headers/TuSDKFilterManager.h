@@ -35,7 +35,7 @@
 /**
  *  滤镜控管理器
  *
- *  @return 滤镜控管理器
+ *  @return manager 滤镜控管理器
  */
 + (instancetype) manager;
 
@@ -44,7 +44,7 @@
  *
  *  @param config Sdk配置
  *
- *  @return 滤镜控管理器
+ *  @return config 滤镜控管理器
  */
 + (instancetype)initWithConfig:(TuSDKConfig *)config;
 
@@ -70,7 +70,7 @@
  *
  *  @param code 滤镜代号
  *
- *  @return 滤镜组类型
+ *  @return  code 滤镜组类型
  */
 - (NSUInteger)groupTypeWithFilterCode:(NSString *)code;
 
@@ -79,7 +79,7 @@
  *
  *  @param code 滤镜代号
  *
- *  @return
+ *  @return BOOL
  */
 - (BOOL)isNormalFilter:(NSString *)code;
 
@@ -89,7 +89,7 @@
  *  @param image image 输入图像
  *  @param code  滤镜代号
  *
- *  @return 滤镜处理过的图像 (默认使用图像自身的方向属性)
+ *  @return image 滤镜处理过的图像 (默认使用图像自身的方向属性)
  */
 - (UIImage *)processWithImage:(UIImage *)image byFilterCode:(NSString *)code;
 

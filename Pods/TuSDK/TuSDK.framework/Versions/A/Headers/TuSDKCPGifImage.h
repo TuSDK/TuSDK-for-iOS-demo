@@ -38,7 +38,7 @@ OSSpinLockUnlock(&view->_lock);
  *
  *  @param index 帧索引
  *
- *  @return 图片
+ *  @return image 图片
  */
 - (UIImage *)imageFrameAtIndex:(NSUInteger)index;
 
@@ -47,7 +47,7 @@ OSSpinLockUnlock(&view->_lock);
  *
  *  @param index 帧索引
  *
- *  @return 帧时长
+ *  @return NSTimeInterval 对象 帧时长
  */
 - (NSTimeInterval)durationAtIndex:(NSUInteger)index;
 
@@ -83,7 +83,7 @@ OSSpinLockUnlock(&view->_lock);
 /**
  *  根据文件路径创建GifImage对象
  *
- *  @param name 绝对路径
+ *  @param file path 绝对路径
  *  @return GifImage对象
  */
 + (TuSDKCPGifImage *)imageWithContentsOfFile:(NSString *)path;
@@ -91,8 +91,8 @@ OSSpinLockUnlock(&view->_lock);
 /**
  *  从NSData对象创建GifImage对象
  *
- *  @param name 资源文件名
- *  @return GifImage对象
+ *  @param data 资源文件名
+ *  @return data GifImage对象
  */
 + (TuSDKCPGifImage *)imageWithData:(NSData *)data;
 

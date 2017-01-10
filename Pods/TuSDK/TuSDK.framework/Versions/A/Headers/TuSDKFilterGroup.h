@@ -92,7 +92,7 @@
 /**
  * 复制滤镜分组
  *
- * @return
+ * @return copy
  */
 - (TuSDKFilterGroup *)copy;
 
@@ -101,35 +101,35 @@
  *
  *  @param filterID 滤镜ID
  *
- *  @return 滤镜配置选项
+ *  @return filterOption 滤镜配置选项
  */
 - (TuSDKFilterOption *)filterOptionWithFilterID:(uint64_t)filterID;
 
 /**
  *  默认选中的滤镜
  *
- *  @return 默认选中的滤镜
+ *  @return defaultFilter 默认选中的滤镜
  */
 - (TuSDKFilterOption *)defaultFilter;
 
 /**
  *  获取语言资源名称
  *
- *  @return 获取语言资源名称
+ *  @return nameKey 获取语言资源名称
  */
 - (NSString *)nameKey;
 
 /**
  *  获取预览图名称
  *
- *  @return 获取预览图名称
+ *  @return thumbKey 获取预览图名称
  */
 - (NSString *)thumbKey;
 
 /**
  *  获取默认选中的滤镜预览图名称
  *
- *  @return 获取默认选中的滤镜预览图名称
+ *  @return defaultFilterThumbKey 获取默认选中的滤镜预览图名称
  */
 - (NSString *)defaultFilterThumbKey;
 @end

@@ -111,14 +111,14 @@
 /**
  *  获取绘制图
  *
- *  @return 效果图
+ *  @return image 效果图
  */
 - (UIImage *)getSmudgeImage;
 
 /**
  *  获取原始图
  *
- *  @return 原始图
+ *  @return image 原始图
  */
 - (UIImage *)getOriginalImage;
 
@@ -220,14 +220,14 @@
 /**
  *  获取绘制图
  *
- *  @return 效果图
+ *  @return image 效果图
  */
 - (UIImage *)getSmudgeImage;
 
 /**
  *  获取原始图
  *
- *  @return 原始图
+ *  @return image 原始图
  */
 - (UIImage *)getOriginalImage;
 

@@ -30,7 +30,7 @@
 /**
  *  创建大光圈控制器对象
  *
- *  @return 大光圈控制器对象
+ *  @return controller 大光圈控制器对象
  */
 - (TuSDKPFEditApertureController *)viewController;
 @end

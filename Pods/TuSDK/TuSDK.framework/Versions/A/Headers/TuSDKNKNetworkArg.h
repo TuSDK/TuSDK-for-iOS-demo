@@ -47,14 +47,14 @@ typedef void (^TuSDKNKNetworkArgFinishBlock)(TuSDKNKNetworkArg* arg);
  *  @param target 委托对象
  *  @param action 对象方法
  *
- *  @return 网络连接参数
+ *  @return target 网络连接参数
  */
 + (instancetype)initWithTarget:(id)target action:(SEL)action;
 
 /**
  *  获取字典数据
  *
- *  @return 字典数据
+ *  @return getDictionaryData 字典数据
  */
 - (NSDictionary *)getDictionaryData;
 
@@ -63,7 +63,7 @@ typedef void (^TuSDKNKNetworkArgFinishBlock)(TuSDKNKNetworkArg* arg);
  *
  *  @param key 子数据键名
  *
- *  @return 子数据
+ *  @return key 子数据
  */
 - (NSDictionary *)getSubDataWithKey:(NSString *)key;
 

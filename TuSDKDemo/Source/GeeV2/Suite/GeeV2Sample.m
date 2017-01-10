@@ -34,8 +34,14 @@
  */
 - (void)showSampleWithController:(UIViewController *)controller;
 {
+    // 组件使用文档教程
+    // @see-https://tusdk.com/docs/ios/multiple-editor-usage
+    
     if (!controller) return;
+    
+    // 指定主题包的 style
     [TuSDK shared].style = @"ui_geeV2";
+    
     self.controller = controller;
     _albumComponent =
     [TuSDKGeeV2 albumMultipleCommponentWithController:controller

@@ -23,7 +23,7 @@
  *  @param cell 滤镜分组元素视图
  *  @param mode 滤镜分组元素
  *
- *  @return 是否允许继续执行
+ *  @return BOOL 是否允许继续执行
  */
 - (BOOL)onTuSDKCPGroupFilterBar:(UIView<TuSDKCPStackFilterBarInterface> *)bar
                    selectedCell:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)cell

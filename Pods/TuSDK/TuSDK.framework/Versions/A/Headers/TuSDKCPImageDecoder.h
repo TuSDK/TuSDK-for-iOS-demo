@@ -98,14 +98,14 @@ CG_EXTERN CGImageRef lasqueCGImageCreateDecodedCopy(CGImageRef imageRef, BOOL de
  *
  *  @param bytes 文件字节指针
  *
- *  @return 图片类型
+ *  @return imageType 图片类型
  */
 - (lasqueImageType)getImageType:(const char *)bytes;
 
 /**
  *  图片解析器支持的格式列表
  *
- *  @return 格式数组
+ *  @return supportedTypes 格式数组
  */
 - (NSArray<NSNumber *> *)supportedTypes;
 

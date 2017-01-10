@@ -66,7 +66,15 @@
  *  @param sticker   贴纸数据
  *  @param imageView 图片视图
  */
-- (void)loadThumbWtihSticker:(TuSDKPFSticker *)sticker imageView:(UIImageView *)imageView;
+- (void)loadThumbWithSticker:(TuSDKPFSticker *)sticker imageView:(UIImageView *)imageView;
+
+/**
+ *  加载贴纸组预览图片
+ *
+ *  @param stickerGroup   贴纸数据
+ *  @param imageView      图片视图
+ */
+- (void)loadThumbWithStickerGroup:(TuSDKPFStickerGroup *)stickerGroup imageView:(UIImageView *)imageView;
 
 /**
  *  取消加载图片
@@ -83,6 +91,16 @@
  *  @return  是否加载贴纸数据对象
  */
 - (BOOL)loadStickerData:(TuSDKPFSticker *)sticker;
+
+/**
+ *  加载智能贴纸中包含的素材
+ *
+ *  @param sticker  贴纸数据对象
+ *  @param resName  元素名
+ *
+ *  @return  是否加载贴纸数据对象
+ */
+- (UIImage *)loadSmartSticker:(TuSDKPFSticker *)sticker withResName:(NSString *)resName;
 
 /**
  *  添加本地贴纸包委托

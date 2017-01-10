@@ -108,7 +108,7 @@ typedef NS_ENUM(NSInteger, lsqMarkTextPosition)
 /**
  *  水印是否可用
  *
- *  @return
+ *  @return BOOL
  */
 - (BOOL)isValid;
 

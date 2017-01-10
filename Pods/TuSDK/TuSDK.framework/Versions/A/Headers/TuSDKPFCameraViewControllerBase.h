@@ -68,7 +68,7 @@
 /**
  *  获取当前比例
  *
- *  @return 当前比例
+ *  @return currentRatio 当前比例
  */
 - (CGFloat)getCurrentRatio;
 

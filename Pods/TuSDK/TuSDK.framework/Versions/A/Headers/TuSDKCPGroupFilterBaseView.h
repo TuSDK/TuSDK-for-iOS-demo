@@ -143,7 +143,7 @@
  *  @param cell 滤镜分组元素视图
  *  @param mode 滤镜分组元素
  *
- *  @return 是否通知
+ *  @return BOOL  是否通知
  */
 - (BOOL)notifyTitleWithCell:(UITableViewCell<TuSDKCPGroupFilterItemCellInterface> *)cell
                        mode:(TuSDKCPGroupFilterItem *)mode;

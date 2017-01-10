@@ -30,7 +30,7 @@
 /**
  *  创建暗角控制器功能控制器对象
  *
- *  @return 暗角控制器TuSDKCPFilterResultView功能控制器对象
+ *  @return controller 暗角控制器TuSDKCPFilterResultView功能控制器对象
  */
 - (TuSDKPFEditVignetteController *)viewController;
 @end

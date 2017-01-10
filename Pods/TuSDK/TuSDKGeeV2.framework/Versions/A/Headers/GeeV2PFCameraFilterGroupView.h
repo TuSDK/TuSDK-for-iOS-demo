@@ -21,7 +21,7 @@
  *  @param item    滤镜分组元素
  *  @param capture 是否允许拍摄
  *
- *  @return 是否允许继续执行
+ *  @return BOOL 是否允许继续执行
  */
 - (BOOL)onTuSDKPFCameraFilterGroup:(GeeV2PFCameraFilterGroupView *)view
                       selectedItem:(TuSDKCPGroupFilterItem *)item

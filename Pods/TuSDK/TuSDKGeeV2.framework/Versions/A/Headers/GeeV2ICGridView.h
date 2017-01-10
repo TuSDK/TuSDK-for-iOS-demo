@@ -29,7 +29,7 @@
 /**
  *  初始化(使用全屏大小)
  *
- *  @return 表格视图 (默认以屏幕高宽 style = UITableViewStylePlain 初始化)
+ *  @return grid 表格视图 (默认以屏幕高宽 style = UITableViewStylePlain 初始化)
  */
 + (instancetype)grid;
 
@@ -38,7 +38,7 @@
  *
  *  @param height 高度
  *
- *  @return 表格视图
+ *  @return height 表格视图
  */
 + (instancetype)gridWithHeight:(float)height;
 

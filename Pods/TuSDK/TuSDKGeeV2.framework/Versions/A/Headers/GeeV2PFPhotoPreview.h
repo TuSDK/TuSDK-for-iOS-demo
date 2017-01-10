@@ -35,7 +35,7 @@
 /**
  *  刷新选择按钮
  *
- *  @param asset 当前相片资源
+ *  @param isSelected 是否选择相片资源
  */
 - (void)reloadSelectButtonSelected:(BOOL)isSelected;
 /**

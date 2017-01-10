@@ -35,7 +35,7 @@
  *
  *  @param groupId 包ID
  *
- *  @return 是否存在包ID
+ *  @return BOOL 是否存在包ID
  */
 - (BOOL)containsWithGroupId:(uint64_t)groupId;
 
@@ -91,21 +91,21 @@
  *
  * @param item
  *            下载对象
- * @return 是否已加载
+ * @return BOOL 是否已加载
  */
 - (BOOL)appenDownloaded:(TuSDKNKDownloadItem *)item;
 
 /**
  *  获取所有包ID列表
  *
- *  @return 所有包ID列表
+ *  @return allGroupID 所有包ID列表
  */
 - (NSArray *)allGroupID;
 
 /**
  *  获取所有json数据
  *
- *  @return json数据
+ *  @return json 数据
  */
 - (NSString *)jsonAllData;
 @end

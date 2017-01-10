@@ -103,7 +103,7 @@
 /**
  *  设置图片
  *
- *  @param image           图片
+ *  @param image  图片
  */
 - (void)setImage:(UIImage *)image;
 

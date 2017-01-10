@@ -161,7 +161,7 @@
 /**
  *  初始化控制器
  *
- *  @return 控制器
+ *  @return controller 控制器
  */
 + (instancetype)controller;
 
@@ -230,7 +230,7 @@
  *
  *  @param animated 是否使用动画
  *
- *  @return 返回退出的视图控制器
+ *  @return controller 返回退出的视图控制器
  */
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated;
 
@@ -239,7 +239,7 @@
  *
  *  @param anim 自定义动画
  *
- *  @return 返回退出的视图控制器
+ *  @return controller 返回退出的视图控制器
  */
 - (UIViewController *)popViewControllerWithAnim:(CAAnimation *)anim;
 
@@ -249,7 +249,7 @@
  *  @param viewController 指定的控制器视图
  *  @param animated       是否使用动画
  *
- *  @return 返回退出的视图控制器列表
+ *  @return controller 返回退出的视图控制器列表
  */
 - (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
@@ -259,7 +259,7 @@
  *  @param viewController 指定的控制器视图
  *  @param anim       自定义动画
  *
- *  @return 返回退出的视图控制器列表
+ *  @return controller 返回退出的视图控制器列表
  */
 - (NSArray *)popToViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
 
@@ -268,7 +268,7 @@
  *
  *  @param animated 是否使用动画
  *
- *  @return 返回退出的视图控制器列表
+ *  @return controller 返回退出的视图控制器列表
  */
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated;
 
@@ -277,7 +277,7 @@
  *
  *  @param anim 自定义动画
  *
- *  @return 返回退出的视图控制器列表
+ *  @return controller 返回退出的视图控制器列表
  */
 - (NSArray *)popToRootViewControllerWithAnim:(CAAnimation *)anim;
 

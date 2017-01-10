@@ -33,7 +33,7 @@
  *  @param ratio   比例
  *  @param changer 切换动作
  *
- *  @return 确定的选区范围百分比
+ *  @return rectPercent 确定的选区范围百分比
  */
 - (CGRect)changeWithRatio:(CGFloat)ratio changer:(void (^)(CGRect rectPercent))changer;
 @end

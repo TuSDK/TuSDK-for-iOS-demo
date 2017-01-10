@@ -50,7 +50,7 @@
 /**
  *  图片编辑入口控制器对象
  *
- *  @return 图片编辑入口控制器对象
+ *  @return controller 图片编辑入口控制器对象
  */
 - (TuSDKPFEditEntryController *)viewController;
 @end

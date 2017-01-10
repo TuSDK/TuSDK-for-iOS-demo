@@ -18,7 +18,7 @@
  *
  *  @param sJson json字符串
  *
- *  @return Json数据
+ *  @return Json 数据
  */
 + (id)initWithString:(NSString *)sJson;
 

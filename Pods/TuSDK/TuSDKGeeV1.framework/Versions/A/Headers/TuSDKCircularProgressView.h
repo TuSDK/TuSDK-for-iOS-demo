@@ -22,7 +22,7 @@
  *  @param progressColor 进度颜色
  *  @param lineWidth     环的宽度
  *
- *  @return
+ *  
  */
 - (id)initWithFrame:(CGRect)frame
           backColor:(UIColor *)backColor

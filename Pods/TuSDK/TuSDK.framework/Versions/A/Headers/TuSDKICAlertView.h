@@ -61,7 +61,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param title   标题
  *  @param handler 提示信息动作委托
  *
- *  @return 提示信息动作
+ *  @return action 提示信息动作
  */
 + (instancetype)actionWithTitle:(nullable NSString *)title
                         handler:(nullable TuSDKICAlertActionHandler)handler;
@@ -72,7 +72,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param title   标题
  *  @param handler 提示信息动作委托
  *
- *  @return 提示信息动作
+ *  @return action 提示信息动作
  */
 + (instancetype)actionCancelWithTitle:(nullable NSString *)title
                               handler:(nullable TuSDKICAlertActionHandler)handler;
@@ -83,7 +83,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param title   标题
  *  @param handler 提示信息动作委托
  *
- *  @return 提示信息动作
+ *  @return action 提示信息动作
  */
 + (instancetype)actionDestructiveWithTitle:(nullable NSString *)title
                                    handler:(nullable TuSDKICAlertActionHandler)handler;
@@ -95,7 +95,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param style   提示信息动作样式
  *  @param handler 提示信息动作委托
  *
- *  @return 提示信息动作
+ *  @return action 提示信息动作
  */
 + (instancetype)actionWithTitle:(nullable NSString *)title
                           style:(TuSDKICAlertActionStyle)style
@@ -181,7 +181,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param title      标题
  *  @param message    信息
  *
- *  @return 提示信息视图
+ *  @return message 提示信息视图
  */
 + (instancetype)alertWithController:(nullable UIViewController *)controller
                               title:(nullable NSString *)title
@@ -194,7 +194,7 @@ typedef void(^TuSDKICAlertActionHandler)(TuSDKICAlertAction *action);
  *  @param title      标题
  *  @param message    信息
  *
- *  @return 提示信息视图
+ *  @return message 提示信息视图
  */
 + (instancetype)actionSheetWithController:(nullable UIViewController *)controller
                                     title:(nullable NSString *)title

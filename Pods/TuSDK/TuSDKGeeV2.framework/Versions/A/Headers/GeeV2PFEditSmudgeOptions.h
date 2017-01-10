@@ -53,7 +53,7 @@
 /**
  *  创建笔刷编辑控制器对象
  *
- *  @return 笔刷编辑控制器对象
+ *  @return controller 笔刷编辑控制器对象
  */
 - (GeeV2PFEditSmudgeController *)viewController;
 

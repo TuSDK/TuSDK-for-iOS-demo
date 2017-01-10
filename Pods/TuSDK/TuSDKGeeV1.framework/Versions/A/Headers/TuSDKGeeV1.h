@@ -27,7 +27,7 @@ extern NSString * const lsqGeeVersion;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 自定义系统相册组件
+ *  @return commponent 自定义系统相册组件
  */
 + (TuSDKCPAlbumComponent *)albumCommponentWithController:(UIViewController *)controller
                                            callbackBlock:(TuSDKCPComponentBlock)block;
@@ -39,7 +39,7 @@ extern NSString * const lsqGeeVersion;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 多功能相册组件
+ *  @return commponent 多功能相册组件
  */
 + (TuSDKCPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
                                                            callbackBlock:(TuSDKCPComponentBlock)block;
@@ -51,7 +51,7 @@ extern NSString * const lsqGeeVersion;
  *  @param block        组件回调结果
  *  @param maxSelection 最大选择数目
  *
- *  @return 多功能相册组件
+ *  @return commponent 多功能相册组件
  */
 + (TuSDKCPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
                                                            callbackBlock:(TuSDKCPComponentBlock)block
@@ -64,7 +64,7 @@ extern NSString * const lsqGeeVersion;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 头像设置组件
+ *  @return commponent 头像设置组件
  */
 + (TuSDKCPAvatarComponent *)avatarCommponentWithController:(UIViewController *)controller
                                              callbackBlock:(TuSDKCPComponentBlock)block;
@@ -76,7 +76,7 @@ extern NSString * const lsqGeeVersion;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 图片编辑组件
+ *  @return commponent 图片编辑组件
  */
 + (TuSDKCPPhotoEditComponent *)photoEditCommponentWithController:(UIViewController *)controller
                                                    callbackBlock:(TuSDKCPComponentBlock)block;
@@ -88,7 +88,7 @@ extern NSString * const lsqGeeVersion;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 多功能图像编辑组件
+ *  @return commponent 多功能图像编辑组件
  */
 + (TuSDKCPPhotoEditMultipleComponent *)photoEditMultipleWithController:(UIViewController *)controller
                                                          callbackBlock:(TuSDKCPComponentBlock)block;

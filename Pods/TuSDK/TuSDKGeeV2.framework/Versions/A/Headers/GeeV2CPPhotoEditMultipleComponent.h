@@ -95,7 +95,7 @@ GeeV2PFEditStickerControllerDelegate, GeeV2PFEditSmudgeControllerDelegate,GeeV2P
  *  @param controller    来源控制器
  *  @param callbackBlock 组件回调结果
  *
- *  @return 组件
+ *  @return controller 组件
  */
 + (instancetype)initWithSourceController:(UIViewController *)controller callbackBlock:(GeeV2CPComponentBlock)callbackBlock;
 /**

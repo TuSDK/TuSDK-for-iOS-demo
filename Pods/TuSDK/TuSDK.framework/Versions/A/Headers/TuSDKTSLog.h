@@ -26,7 +26,7 @@
 /**
  *  抛出异常
  *
- *  @param msg 异常信息
+ *  @param reason 异常信息
  */
 - (void)lsqThrowWithReason:(NSString *)reason;
 

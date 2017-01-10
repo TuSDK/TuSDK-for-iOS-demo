@@ -43,7 +43,7 @@
  *
  *  @param config Sdk配置
  *
- *  @return 原生滤镜配置
+ *  @return config 原生滤镜配置
  */
 + (instancetype)initWithConfig:(TuSDKConfig *)config;
 
@@ -51,7 +51,7 @@
 /**
  *  默认滤镜选项
  *
- *  @return 默认滤镜选项
+ *  @return normalOption 默认滤镜选项
  */
 - (TuSDKFilterOption *)normalOption;
 
@@ -60,7 +60,7 @@
  *
  *  @param code 滤镜代号
  *
- *  @return 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
+ *  @return filterOption 滤镜选项配置 (如果未找到对应选项，返回默认滤镜)
  */
 - (TuSDKFilterOption *)optionWithCode:(NSString *)code;
 
@@ -69,7 +69,7 @@
  *
  *  @param filterCodes 滤镜代号列表
  *
- *  @return 滤镜名称
+ *  @return  codes 滤镜名称
  */
 - (NSArray *)verifyCodes:(NSArray *)codes;
 
@@ -78,7 +78,7 @@
  *
  *  @param codes 滤镜代号列表
  *
- *  @return 滤镜列表
+ *  @return codes 滤镜列表
  */
 - (NSArray *)optionsWithCodes:(NSArray *)codes;
 
@@ -87,7 +87,7 @@
  *
  *  @param group 滤镜分组
  *
- *  @return 滤镜列表
+ *  @return group 滤镜列表
  */
 - (NSArray *)optionsWithGroup:(TuSDKFilterGroup *)group;
 
@@ -96,7 +96,7 @@
  *
  *  @param groupID 滤镜组ID
  *
- *  @return 滤镜组名称键
+ *  @return groupNameKey 滤镜组名称键
  */
 - (NSString *)groupNameKeyWithGroupID:(uint64_t)groupID;
 
@@ -105,7 +105,7 @@
  *
  *  @param groupID 滤镜组ID
  *
- *  @return 滤镜组类型
+ *  @return groupType 滤镜组类型
  */
 - (NSUInteger)groupTypeWithGroupID:(uint64_t)groupID;
 
@@ -114,7 +114,7 @@
  *
  *  @param group 滤镜分组
  *
- *  @return 滤镜组默认滤镜代号
+ *  @return defaultFilterCode 滤镜组默认滤镜代号
  */
 - (NSString *)defaultFilterCodeWithGroup:(TuSDKFilterGroup *)group;
 
@@ -123,7 +123,7 @@
  *
  *  @param code 滤镜代号
  *
- *  @return 材质列表
+ *  @return textures 材质列表
  */
 - (NSArray *)loadTexturesWithCode:(NSString *)code;
 
@@ -132,7 +132,7 @@
  *
  *  @param codes 滤镜代号列表
  *
- *  @return 材质列表
+ *  @return codes  材质列表
  */
 - (NSArray *)loadInternalTextures:(NSArray *)codes;
 
@@ -141,7 +141,7 @@
  *
  *  @param option 滤镜选项配置
  *
- *  @return 获取滤镜实例
+ *  @return filterOption 获取滤镜实例
  */
 - (GPUImageOutput <GPUImageInput> *)filterWithOption:(TuSDKFilterOption *)option;
 #pragma mark - imageLoad

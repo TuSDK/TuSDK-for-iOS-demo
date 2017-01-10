@@ -50,7 +50,7 @@
 /**
  *  创建图片编辑滤镜控制器对象
  *
- *  @return 图片编辑滤镜控制器对象
+ *  @return controller 图片编辑滤镜控制器对象
  */
 - (GeeV2PFEditStickerController *)viewController;
 @end

@@ -28,7 +28,7 @@
  *
  *  @param controller 默认相机视图控制器
  *  @param result     拍摄结果
- *  @return 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
+ *  @return BOOL 是否截断默认处理逻辑 (默认: false, 设置为True时使用自定义处理逻辑)
  */
 - (BOOL)onAsyncTuSDKPFCamera:(TuSDKPFCameraViewController *)controller captureResult:(TuSDKResult *)result;
 
@@ -252,7 +252,7 @@
  *  选中一个滤镜
  *
  *  @param filterName 滤镜名称
- *  @return 是否成功切换滤镜
+ *  @return BOOL 是否成功切换滤镜
  */
 - (BOOL)onSelectedFilterCode:(NSString *)code;
 

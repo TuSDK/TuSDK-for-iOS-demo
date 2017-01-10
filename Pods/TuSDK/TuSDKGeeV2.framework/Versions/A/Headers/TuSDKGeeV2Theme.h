@@ -13,7 +13,7 @@
 /**
  *  TuSDKGeeV2 导航条样色
  *
- *  @return 界面颜色主题
+ *  @return shared 界面颜色主题
  */
 + (instancetype)shared;
 

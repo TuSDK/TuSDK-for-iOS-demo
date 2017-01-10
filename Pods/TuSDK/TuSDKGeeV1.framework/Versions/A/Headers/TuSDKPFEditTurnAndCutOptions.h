@@ -96,7 +96,7 @@
 /**
  *  创建旋转和裁剪视图控制器对象
  *
- *  @return 旋转和裁剪视图控制器对象
+ *  @return controller 旋转和裁剪视图控制器对象
  */
 - (TuSDKPFEditTurnAndCutViewController *)viewController;
 @end

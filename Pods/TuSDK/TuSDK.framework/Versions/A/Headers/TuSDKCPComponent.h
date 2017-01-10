@@ -51,7 +51,7 @@ typedef void (^TuSDKCPComponentBlock)(TuSDKResult *result, NSError *error, UIVie
  *  @param controller    来源控制器
  *  @param callbackBlock 组件回调结果
  *
- *  @return 组件
+ *  @return controller 组件
  */
 + (instancetype)initWithSourceController:(UIViewController *)controller callbackBlock:(TuSDKCPComponentBlock)callbackBlock;
 

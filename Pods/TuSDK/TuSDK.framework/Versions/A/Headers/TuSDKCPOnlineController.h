@@ -59,7 +59,7 @@
 /**
  *  获取页面加载完成写入数据
  *
- *  @return 页面加载完成写入数据
+ *  @return pageFinishedData 页面加载完成写入数据
  */
 - (NSString *)pageFinishedData;
 

@@ -78,14 +78,14 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
 /**
  *  高级编辑功能模块列表
  *
- *  @return 高级编辑功能模块列表
+ *  @return entryActionTypes 高级编辑功能模块列表
  */
 + (NSArray *)entryActionTypes;
 
 /**
  *  多功能编辑功能模块列表
  *
- *  @return 多功能编辑功能模块列表
+ *  @return multipleActionTypes 多功能编辑功能模块列表
  */
 + (NSArray *)multipleActionTypes;
 @end

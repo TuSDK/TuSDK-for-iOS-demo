@@ -53,7 +53,7 @@
 /**
  *  获取贴纸处理结果
  *
- *  @return 贴纸处理结果
+ *  @return stickerResults 贴纸处理结果
  */
 - (NSArray *)stickerResults;
 @end

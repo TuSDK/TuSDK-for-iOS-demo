@@ -54,8 +54,52 @@ typedef NS_ENUM(NSUInteger, lsqStickerPostionType)
     /**
      * 唇膏
      */
-    lsqStickerPosLip = 9
+    lsqStickerPosLip = 9,
     
+    /**
+     * 全屏显示
+     */
+    lsqStickerPosFullScreen = 100,
+    
+    /**
+     * 左上角
+     */
+    lsqStickerPosScreenLeftTop = 101,
+    /**
+     * 右上角
+     */
+    lsqStickerPosScreenRightTop = 102,
+    /**
+     * 左下角
+     */
+    lsqStickerPosScreenLeftBottom = 103,
+    /**
+     * 右下角
+     */
+    lsqStickerPosScreenRightBottom = 104,
+    /**
+     * 中心
+     */
+    lsqStickerPosScreenCenter = 105
+};
+
+/**
+ *  动画播放模式
+ */
+typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
+{
+    /**
+     * 正向循环
+     */
+    lsqStickerLoop = 1,
+    /**
+     * 反向循环
+     */
+    lsqStickerLoopReverse = 2,
+    /**
+     * 随机循环
+     */
+    lsqStickerLoopRandom = 3
 };
 
 
@@ -100,6 +144,26 @@ typedef NS_ENUM(NSUInteger, lsqStickerPostionType)
  *  旋转系数
  */
 @property (nonatomic, readonly) CGFloat rotation;
+
+/**
+ *  每帧持续时间
+ */
+@property (nonatomic, readonly) NSUInteger frameInterval;
+
+/**
+ *  播放模式
+ */
+@property (nonatomic, readonly) lsqStickerLoopMode loopMode;
+
+/**
+ *  动画循环起始帧索
+ */
+@property (nonatomic, readonly) NSUInteger loopStartIndex;
+
+/**
+ *  素材列表
+ */
+@property (nonatomic) NSArray *resourceList;
 
 /**
  *  初始化

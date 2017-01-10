@@ -36,7 +36,7 @@
 /**
  *  下载管理器
  *
- *  @return 下载管理器
+ *  @return manager 下载管理器
  */
 + (instancetype)manager;
 
@@ -70,7 +70,7 @@
  *  @param type 下载类型
  *  @param idt  下载对象ID
  *
- *  @return 是否取消任务
+ *  @return BOOL 是否取消任务
  */
 - (BOOL)cancelTaskWithType:(lsqDownloadTaskType)type idt:(uint64_t)idt;
 

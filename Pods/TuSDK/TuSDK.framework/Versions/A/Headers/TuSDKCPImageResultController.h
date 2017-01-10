@@ -54,7 +54,7 @@
 /**
  *  加载来源图片
  *
- *  @return 来源图片
+ *  @return image 来源图片
  */
 - (UIImage *)loadOrginImage;
 
@@ -65,7 +65,7 @@
  *  @param cutRect          裁剪百分区域
  *  @param imageOrientation 图片方向
  *
- *  @return 裁剪图片
+ *  @return image 裁剪图片
  */
 - (UIImage *)cuterImage:(UIImage *)image
                 cutRect:(CGRect)cutRect
@@ -79,7 +79,7 @@
  *  @param imageOrientation 图片方向
  *  @param cutRatio         裁切比例 (当CGRectIsEmpty(cutRect) 生效)
  *
- *  @return 裁剪图片
+ *  @return image 裁剪图片
  */
 - (UIImage *)cuterImage:(UIImage *)image
                 cutRect:(CGRect)cutRect
@@ -119,7 +119,7 @@
  * 显示测试预览视图
  *
  * @param result
- * @return 是否显示测试预览视图
+ * @return BOOL 是否显示测试预览视图
  */
 - (BOOL)showResultPreview:(TuSDKResult *)result;
 @end

@@ -30,7 +30,7 @@ extern NSString * const lsqGeeV2Version;
  *  @param openCameraCallback 打开相机回调结果
  *  @param maxSelection 最大选择数目
  *
- *  @return 多功能相册组件
+ *  @return component 多功能相册组件
  */
 + (GeeV2CPAlbumMultipleComponent *)albumMultipleCommponentWithController:(UIViewController *)controller
                                                            callbackBlock:(TuSDKCPComponentBlock)block
@@ -44,7 +44,7 @@ extern NSString * const lsqGeeV2Version;
  *  @param controller 来源控制器
  *  @param block      组件回调结果
  *
- *  @return 多功能图像编辑组件
+ *  @return component 多功能图像编辑组件
  */
 + (GeeV2CPPhotoEditMultipleComponent *)photoEditMultipleWithController:(UIViewController *)controller
                                                          callbackBlock:(GeeV2CPComponentBlock)block;

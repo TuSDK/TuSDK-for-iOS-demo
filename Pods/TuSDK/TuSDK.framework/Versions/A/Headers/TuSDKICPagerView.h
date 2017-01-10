@@ -31,7 +31,7 @@
 /**
  *  是否允许缩放
  *
- *  @return 是否允许缩放
+ *  @return BOOL 是否允许缩放
  */
 - (BOOL)canZoom;
 @end
@@ -78,7 +78,7 @@
  *
  *  @param pagerView 横向分页视图
  *
- *  @return 总页数
+ *  @return  pagerView 总页数
  */
 - (NSUInteger)numberOfPagesInPagerView:(TuSDKICPagerView *)pagerView;
 
@@ -140,7 +140,7 @@
  *  @param frame       坐标大小
  *  @param pagePadding 分页边距 默认为10
  *
- *  @return 照片查看器
+ *  @return self 照片查看器
  */
 + (id)initWithFrame:(CGRect)frame pagePadding:(CGFloat)pagePadding;
 

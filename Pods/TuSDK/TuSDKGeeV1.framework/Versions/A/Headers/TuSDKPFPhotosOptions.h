@@ -40,7 +40,7 @@
 /**
  *  创建系统相册照片列表控制器对象
  *
- *  @return 相册照片列表控制器对象
+ *  @return controller 相册照片列表控制器对象
  */
 - (TuSDKPFPhotosViewController *)viewController;
 @end

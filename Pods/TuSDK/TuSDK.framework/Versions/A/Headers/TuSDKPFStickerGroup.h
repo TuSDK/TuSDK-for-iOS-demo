@@ -44,6 +44,21 @@
 @property (nonatomic, copy) NSString *name;
 
 /**
+ * 贴纸包英文名称
+ */
+@property (nonatomic, copy) NSString *name_en;
+
+/**
+ * 贴纸包名称 会根据当前语言判断
+ */
+@property (nonatomic, copy) NSString *name_language;
+
+/**
+ * 预览视图文件名
+ */
+@property (nonatomic, copy) NSString *preivewName;
+
+/**
  * 贴纸列表
  */
 @property (nonatomic, retain) NSArray *stickers;
@@ -73,4 +88,7 @@
  *  @return 贴纸数据
  */
 - (TuSDKPFSticker *)stickerWithId:(uint64_t)stickerId;
+
+
+
 @end
