@@ -46,6 +46,9 @@
          [self openEditAndCutWithController:controller result:result];
      }];
     
+    // 设置选择照片的最大尺寸 默认：8000*8000
+    // _albumComponent.options.photosOptions.maxSelectionImageSize = CGSizeMake(8000, 8000);
+    
     [_albumComponent showComponent];
 }
 

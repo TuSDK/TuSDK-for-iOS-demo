@@ -8,6 +8,7 @@
 
 #import "TuSDKPFPhotosViewController.h"
 
+
 /**
  *  相册照片列表控制器配置选项
  */
@@ -36,6 +37,11 @@
  *  空数据视图类 (默认:TuSDKICEmptyView, 需要继承 TuSDKICEmptyView)
  */
 @property (nonatomic, strong) Class emptyViewClazz;
+
+/**
+ *  选择图片的尺寸限制 默认：CGSize(8000,8000)
+ */
+@property (nonatomic,assign) CGSize maxSelectionImageSize;
 
 /**
  *  创建系统相册照片列表控制器对象

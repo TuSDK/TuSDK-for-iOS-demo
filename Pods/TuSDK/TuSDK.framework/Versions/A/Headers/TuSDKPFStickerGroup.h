@@ -56,7 +56,7 @@
 /**
  * 预览视图文件名
  */
-@property (nonatomic, copy) NSString *preivewName;
+@property (nonatomic, copy) NSString *previewName;
 
 /**
  * 贴纸列表

@@ -75,6 +75,15 @@ typedef void (^TuSDKTSPHAssetCollectionGroupsBlock)(NSArray<PHAssetCollection *>
 - (PHFetchResult<PHAsset *> *)images;
 
 /**
+ *  根据NSSortDescriptor获取照片数据列表
+ *
+ *  @param sortDescriptors 排序描述数组
+ *
+ *  @return 照片数据列表
+ */
+- (PHFetchResult<PHAsset *> *)imagesWithSortDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors;
+
+/**
  *  图片总数
  *
  *  @return 图片总数
@@ -143,6 +152,7 @@ typedef void (^TuSDKTSPHPhotoLibrarySaveWithImageCompletionBlock)(PHAsset *asset
  *  媒体资源对象
  */
 @property (nonatomic, readonly)PHAsset *asset;
+
 @end
 
 #pragma mark - TuSDKTSPHAssetsGroup

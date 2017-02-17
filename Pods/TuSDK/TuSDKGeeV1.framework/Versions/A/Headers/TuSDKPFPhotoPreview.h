@@ -9,6 +9,11 @@
 #import "TuSDKPFPhotosGridPreview.h"
 
 @interface TuSDKPFPhotoPreview : UIView
+{
+    UIButton *_backButton;
+    UIButton *_selectButton;
+    UIButton *_completeButton;
+}
 /**
  *  相册照片列表视图类 (默认:TuSDKPFPhotosGridPreview, 需要继承 TuSDKPFPhotosGridPreview)
  */
@@ -31,5 +36,20 @@
  *  刷新视图状态
  */
 - (void)reloadViewDownloading:(BOOL)downloading;
+
+/**
+ *  设置返回按钮文本
+ */
+-(void) setBackButtonTitle:(NSString *) title;
+
+/**
+ *  设置完成按钮文本
+ */
+-(void) setCompleteButtonTitle:(NSString *)title;
+
+/**
+ *  设置选择按钮文本
+ */
+-(void) setSelectButtonTitle:(NSString *) title;
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TuSDKFilterAdapter.h"
+#import "TuSDKLiveStickerImage.h"
 
 #pragma mark - TuSDKLiveStickerManager
 
@@ -15,13 +16,6 @@
  * 动态贴纸数据管理
  */
 @interface TuSDKLiveStickerManager : NSObject
-
-/**
- 获取 TuSDKLiveStickerManager 实例
-
- @return TuSDKLiveStickerManager 对象
- */
-+ (TuSDKLiveStickerManager *)shared;
 
 /**
  *  显示贴纸

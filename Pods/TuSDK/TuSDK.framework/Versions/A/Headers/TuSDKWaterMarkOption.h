@@ -24,17 +24,17 @@ typedef NS_ENUM(NSInteger, lsqWaterMarkPosition)
     lsqWaterMarkTopRight = 1 << 1,
     
     /**
-     * 左下角
+     *  左下角
      */
     lsqWaterMarkBottomLeft = 1 << 2,
     
     /**
-     * 右下角
+     *  右下角
      */
     lsqWaterMarkBottomRight = 1 << 3,
     
     /**
-     * 居中
+     *  居中
      */
     lsqWaterMarkCenter = 1 << 4,
 };

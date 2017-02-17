@@ -21,6 +21,7 @@
  */
 typedef void (^TuSDKTSAssetProgressBlock)(UIImage *image, double progress, NSError *error);
 
+
 /**
  *  媒体资源对象接口
  */
@@ -93,9 +94,26 @@ typedef void (^TuSDKTSAssetProgressBlock)(UIImage *image, double progress, NSErr
  *  @param size      希望输出地相片长宽
  */
 - (void)cancelLoadImageWithPixelSize:(CGSize)size;
+
+
 @end
 
 #pragma mark - TuSDKTSAssetsGroupInterface
+/**
+ *  排序字段
+ */
+typedef NS_ENUM(NSInteger, lsqAssetSortKeyType)
+{
+    /**
+     * 根据创建时间排序
+     */
+    lsqAssetSortKeyCreateDate = 0,
+    /**
+     * 根据修改时间排序（iOS8.0及以上可用）
+     */
+    lsqAssetSortKeyModificationDate = 1
+};
+
 /**
  *  媒体资源组对象接口
  */
@@ -110,10 +128,10 @@ typedef void (^TuSDKTSAssetProgressBlock)(UIImage *image, double progress, NSErr
  */
 @property (nonatomic, readonly) NSString *title;
 
-/**
- *  获取该组所有相片信息
- */
-@property (nonatomic, readonly) NSArray<TuSDKTSAssetInterface> *allPhotos;
+///**
+// *  获取该组所有相片信息
+// */
+//@property (nonatomic, readonly) NSArray<TuSDKTSAssetInterface> *allPhotos;
 
 /**
  *  包含相片总数
@@ -124,6 +142,23 @@ typedef void (^TuSDKTSAssetProgressBlock)(UIImage *image, double progress, NSErr
  *  相册封面图片
  */
 @property (nonatomic, readonly) UIImage *posterImage;
+
+/**
+ * 根据指定的排序字段 获取该组所有相片信息
+ *
+ *  @param sortKeyType 排序类型
+ *  @param ascending 排序方式（升序/降序）
+ *  @return 该组所有相片信息
+ */
+-(NSArray<TuSDKTSAssetInterface> *) allPhotosWithSortKeyType:(lsqAssetSortKeyType) sortKeyType ascending:(BOOL) ascending;
+
+/**
+ *  获取该组所有相片信息 （默认根据创建时间排序）
+ *
+ *  @return 该组所有相片信息
+ */
+-(NSArray<TuSDKTSAssetInterface> *) allPhotos;
+
 @end
 
 #pragma mark - TuSDKTSAssetsManager

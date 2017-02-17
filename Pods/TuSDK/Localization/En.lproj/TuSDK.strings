@@ -76,6 +76,7 @@
 "lsq_album_preview_selection_msg" = "Please wait for downloading completed";
 "lsq_album_max_selection_msg" = "%d photos have been selected already";
 "lsq_album_preview_complete" = "Done(%lu/%lu)";
+"lsq_album_image_size_limited" = "More than %.0f*%.0f pictures are not supported";
 
 // location
 "lsq_location_error_title" = "Can’t get location";

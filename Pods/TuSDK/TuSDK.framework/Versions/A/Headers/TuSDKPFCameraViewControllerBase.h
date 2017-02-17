@@ -85,11 +85,12 @@
 - (void)setCurrentRatioType:(lsqRatioType)ratioType;
 
 /**
- *  闪光灯模式
+ *  设置闪光灯模式
  *
  *  @param flashMode 闪光灯模式
  */
 -(void)setFlashMode:(AVCaptureFlashMode)flashMode;
+
 
 /**
  *  手动设置相机比例

@@ -45,6 +45,11 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 
 /**
+ *  照片排序字段 默认根据创建时间排序 ( lsqAssetSortKeyModificationDate 类型 iOS8以上可用)
+ */
+@property (nonatomic,assign) lsqAssetSortKeyType photosSortKeyType;
+
+/**
  *  相册照片列表行视图委托
  */
 @property (nonatomic, assign) id<TuSDKPFPhotosGridPreviewProtocol> gridProtocol;

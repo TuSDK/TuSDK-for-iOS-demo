@@ -66,6 +66,11 @@
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _albumComponent.autoDismissWhenCompelted = YES;
+    
+    // 设置选择照片的最大尺寸 默认:8000*8000
+    //  _albumComponent.options.photosOptions.maxSelectionImageSize  = CGSizeMake(8000, 8000);
+
+    
     [_albumComponent showComponent];
 }
 @end

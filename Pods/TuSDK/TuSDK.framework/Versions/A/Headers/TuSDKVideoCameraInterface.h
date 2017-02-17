@@ -255,6 +255,13 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (void)flashWithMode:(AVCaptureFlashMode)flashMode;
 
 /**
+ *  获取闪光灯模式
+ *
+ *  @return AVCaptureFlashMode
+ */
+- (AVCaptureFlashMode) getFlashModel;
+
+/**
  *  改变视频视图显示比例 (使用动画)
  *
  *  @param regionRatio 范围比例

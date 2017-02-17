@@ -76,6 +76,7 @@
 "lsq_album_preview_selection_msg" = "請等待下載完成";
 "lsq_album_max_selection_msg" = "%d photos have been selected already";
 "lsq_album_preview_complete" = "完成(%lu/%lu)";
+"lsq_album_image_size_limited" = "暫不支持大於 %.0f*%.0f 的圖片";
 
 // location
 "lsq_location_error_title" = "無法獲取地理信息";

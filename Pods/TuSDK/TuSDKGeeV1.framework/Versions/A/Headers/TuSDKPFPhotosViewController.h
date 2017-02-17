@@ -72,6 +72,11 @@
 @property (nonatomic, strong) Class emptyViewClazz;
 
 /**
+ *  选择图片的尺寸限制 默认：CGSize(8000,8000)
+ */
+@property (nonatomic,assign) CGSize maxSelectionImageSize;
+
+/**
  *  系统相册组
  */
 @property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;

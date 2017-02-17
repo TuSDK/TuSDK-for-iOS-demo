@@ -167,13 +167,6 @@
 - (NSArray *)categoriesWithCategories:(NSArray *)categories;
 
 /**
- *  获取智能贴纸列表
- *
- *  @return 贴纸列表
- */
-- (NSArray<TuSDKPFSticker *> *)getSmartStickers;
-
-/**
  *  获取智能贴纸组列表
  *
  *  @return 贴纸组列表

@@ -68,6 +68,8 @@
     // _avatarComponent.options.editTurnAndCutOptions
     
     
+    // 设置选择照片的最大尺寸 默认：8000*8000
+    // _avatarComponent.options.photosOptions.maxSelectionImageSize = CGSizeMake(8000, 8000);
     
     // 需要显示的滤镜名称列表 (如果为空将显示所有自定义滤镜)
     _avatarComponent.options.cameraOptions.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];

@@ -59,6 +59,16 @@
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 
 /**
+ *  选择图片的尺寸限制 默认：CGSize(8000,8000)
+ */
+@property (nonatomic,assign) CGSize maxSelectionImageSize;
+
+/**
+ *  照片排序字段 默认根据创建时间排序 ( lsqAssetSortKeyModificationDate 类型 iOS8以上可用)
+ */
+@property (nonatomic,assign) lsqAssetSortKeyType photosSortKeyType;
+
+/**
  *  用户点击的图片的索引
  */
 @property (nonatomic, assign) NSUInteger currentIndex;

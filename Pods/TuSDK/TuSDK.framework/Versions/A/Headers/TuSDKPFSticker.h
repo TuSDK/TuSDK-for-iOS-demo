@@ -17,7 +17,7 @@
 /**
  *  智能贴纸类型
  */
-typedef NS_ENUM(NSUInteger, lsqStickerPostionType)
+typedef NS_ENUM(NSUInteger, lsqStickerPositionType)
 {
     /**
      * 眉毛
@@ -118,7 +118,7 @@ typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
 /**
  *  贴纸定位类型
  */
-@property (nonatomic, readonly) lsqStickerPostionType posType;
+@property (nonatomic, readonly) lsqStickerPositionType posType;
 
 /**
  *  宽高比
@@ -172,6 +172,12 @@ typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
  */
 - (instancetype)initWithJson:(NSDictionary *)json;
 
+/**
+ * 是否支持动画
+ *
+ * @return
+ */
+- (BOOL)hasAnimationSupported;
 @end
 
 #pragma mark - TuSDKPFSticker
@@ -192,7 +198,7 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
     /**
      * 智能贴纸
      */
-    lsqStickerFace = 3,
+    lsqStickerDynamic = 3,
 };
 
 /**
@@ -222,7 +228,7 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
 /**
  * 预览视图文件名
  */
-@property (nonatomic, copy) NSString *preivewName;
+@property (nonatomic, copy) NSString *previewName;
 
 /**
  * 贴纸文件名

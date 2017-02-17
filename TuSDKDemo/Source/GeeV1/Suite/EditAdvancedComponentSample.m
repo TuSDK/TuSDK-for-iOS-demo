@@ -51,6 +51,11 @@
          [self openEditAdvancedWithController:controller result:result];
      }];
     
+    // 照片排序字段 默认:lsqAssetSortKeyCreateDate ( lsqAssetSortKeyModificationDate 类型 iOS8以上可用)
+    // _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyModificationDate;
+    // 设置选择照片的最大尺寸 默认：8000*8000
+    // _albumComponent.options.albumOptions.maxSelectionImageSize = CGSizeMake(8000, 8000);
+    
     [_albumComponent showComponent];
 }
 
