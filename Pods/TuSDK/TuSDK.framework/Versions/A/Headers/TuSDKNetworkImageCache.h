@@ -194,7 +194,7 @@ typedef void(^TuSDKWebImageNoParamsBlock)();
 /**
  * Get the size used by the disk cache
  */
-- (NSUInteger)getSize;
+- (NSUInteger)lsqGetSize;
 
 /**
  * Get the number of images in the disk cache

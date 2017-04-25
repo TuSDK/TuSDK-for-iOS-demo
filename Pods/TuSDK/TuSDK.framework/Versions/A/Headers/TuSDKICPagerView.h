@@ -48,7 +48,7 @@
 /**
  *  页视图点击委托
  */
-@property (nonatomic, assign) id<TuSDKICPagerHolderDelegate> tapDelegate;
+@property (nonatomic, weak) id<TuSDKICPagerHolderDelegate> tapDelegate;
 /**
  *  初始化
  */

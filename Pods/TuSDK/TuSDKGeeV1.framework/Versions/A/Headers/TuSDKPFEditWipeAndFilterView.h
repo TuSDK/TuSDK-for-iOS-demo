@@ -40,7 +40,7 @@
 /**
  *  笔刷尺寸配置栏视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditWipeAndFilterConfigBarDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditWipeAndFilterConfigBarDelegate> delegate;
 
 /**
  *  小尺寸按钮

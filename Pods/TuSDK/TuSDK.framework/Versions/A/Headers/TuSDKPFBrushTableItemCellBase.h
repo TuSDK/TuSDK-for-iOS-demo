@@ -62,7 +62,7 @@
 /**
  *  滤镜分组视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFBrushTableItemCellDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFBrushTableItemCellDelegate> delegate;
 
 /**
  *  初始化视图 (空方法, 默认当使用+(id)initWithFrame:(CGRect)frame;初始化视图时调用)

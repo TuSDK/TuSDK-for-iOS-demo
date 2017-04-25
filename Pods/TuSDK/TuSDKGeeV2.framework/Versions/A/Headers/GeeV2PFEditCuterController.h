@@ -52,7 +52,7 @@
 /**
  *  图片编辑裁切旋转控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditCuterControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditCuterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditCuterView, 需要继承 GeeV2PFEditCuterView)

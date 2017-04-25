@@ -34,7 +34,7 @@
 /**
  *  Web视图委托
  */
-@property (nonatomic, assign) id <TuSDKICWebViewDelegate> delegate;
+@property (nonatomic, weak) id <TuSDKICWebViewDelegate> delegate;
 
 /**
  *  进度栏

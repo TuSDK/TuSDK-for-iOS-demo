@@ -45,7 +45,7 @@
 /**
  *  贴纸视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+@property (nonatomic, weak) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
 
 /**
  *  创建图片编辑滤镜控制器对象

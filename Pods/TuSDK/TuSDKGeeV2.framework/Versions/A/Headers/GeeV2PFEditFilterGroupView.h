@@ -51,7 +51,7 @@
 /**
  *  图片编辑滤镜控制器滤镜栏视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditFilterGroupDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditFilterGroupDelegate> delegate;
 
 /**
  *  参数配置视图

@@ -26,7 +26,7 @@
 /**
  *  参数配置视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPParameterConfigDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPParameterConfigDelegate> delegate;
 
 /**
  *  参数选项视图

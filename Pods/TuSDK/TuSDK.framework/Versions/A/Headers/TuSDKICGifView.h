@@ -48,7 +48,7 @@ typedef NS_ENUM(NSUInteger, lasqueGifImageType)
 /**
  *  动画播放事件委托
  */
-@property (nonatomic, assign) id<TuSDKPFGifViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFGifViewDelegate> delegate;
 
 /**
  *  自动播放动画 (默认: true)

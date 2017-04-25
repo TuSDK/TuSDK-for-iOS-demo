@@ -44,7 +44,7 @@
 /**
  *  相册照片列表控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFPhotosDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFPhotosDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFPhotosView, 需要继承 TuSDKPFPhotosView)

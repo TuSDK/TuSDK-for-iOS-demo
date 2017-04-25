@@ -11,6 +11,11 @@
 /**
  *  美颜自拍相机
  */
+
+@interface SelfishCameraSample()<TuSDKPFCameraDelegate>
+
+@end
+
 @implementation SelfishCameraSample
 
 - (instancetype)init;
@@ -130,7 +135,7 @@
 
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
-    // controller.delegate = self;
+     controller.delegate = self;
     [self.controller presentModalNavigationController:controller animated:YES];
 }
 

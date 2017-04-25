@@ -109,7 +109,7 @@
 /**
  *  滤镜分组视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditImageSelectTableViewDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditImageSelectTableViewDelegate> delegate;
 
 @end
 #pragma mark - GeeV2PFEditEntryStepView

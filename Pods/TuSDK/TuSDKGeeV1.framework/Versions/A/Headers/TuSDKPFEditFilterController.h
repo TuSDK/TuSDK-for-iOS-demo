@@ -49,7 +49,7 @@
 /**
  *  图片编辑滤镜控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditFilterControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditFilterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditFilterView, 需要继承 TuSDKPFEditFilterView)

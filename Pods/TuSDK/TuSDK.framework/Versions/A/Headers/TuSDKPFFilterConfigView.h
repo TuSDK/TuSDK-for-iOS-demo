@@ -33,7 +33,7 @@
 /**
  *  滤镜配置拖动栏委托
  */
-@property (nonatomic, assign) id<TuSDKPFFilterSeekbarDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFFilterSeekbarDelegate> delegate;
 
 /**
  *  百分比控制条
@@ -84,7 +84,7 @@
 /**
  *  滤镜配置视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFFilterConfigViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFFilterConfigViewDelegate> delegate;
 
 /**
  *  重置按钮

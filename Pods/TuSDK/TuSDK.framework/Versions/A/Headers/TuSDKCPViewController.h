@@ -32,7 +32,7 @@
 /**
  *  组件控制器错误信息委托
  */
-@property (nonatomic, assign) id<TuSDKCPComponentErrorDelegate> errorDelegate;
+@property (nonatomic, weak) id<TuSDKCPComponentErrorDelegate> errorDelegate;
 
 /**
  *  通知错误信息

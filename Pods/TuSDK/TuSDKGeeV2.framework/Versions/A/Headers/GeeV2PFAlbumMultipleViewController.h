@@ -69,7 +69,7 @@
 /**
  *  系统相册委托
  */
-@property (nonatomic, assign) id<GeeV2PFAlbumMultipleDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFAlbumMultipleDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFAlbumMultipleView, 需要继承 GeeV2PFAlbumMultipleView)

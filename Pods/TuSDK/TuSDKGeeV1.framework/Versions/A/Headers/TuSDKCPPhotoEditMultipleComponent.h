@@ -21,6 +21,7 @@
 #import "TuSDKPFEditSmudgeController.h"
 #import "TuSDKPFEditWipeAndFilterOptions.h"
 #import "TuSDKPFEditHolyLightController.h"
+#import "TuSDKPFEditHDRController.h"
 
 #pragma mark - TuSDKCPPhotoEditMultipleOptions
 /**
@@ -86,6 +87,11 @@
  *  圣光控制器功能控制器配置选项
  */
 @property (nonatomic, readonly) TuSDKPFEditHolyLightOptions *editHolyLightOptions;
+
+/**
+ *  HDR 控制器功能控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditHDROptions *editHDROptions;
 @end
 
 

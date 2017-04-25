@@ -88,7 +88,7 @@ TuSDKPFPhotoPreview *_defaultStyleView;
 /**
  *  预览视图控制器代理
  */
-@property (nonatomic, assign) id<TuSDKPFPhotoPreviewControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFPhotoPreviewControllerDelegate> delegate;
 
 
 

@@ -73,5 +73,5 @@
 /**
  *  图片编辑裁切旋转控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditTabBarControllerDelegate> fragmentDelegate;
+@property (nonatomic, weak) id<GeeV2PFEditTabBarControllerDelegate> fragmentDelegate;
 @end

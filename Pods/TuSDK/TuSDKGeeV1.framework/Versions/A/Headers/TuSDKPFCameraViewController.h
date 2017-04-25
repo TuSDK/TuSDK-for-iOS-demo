@@ -57,7 +57,7 @@
 /**
  *  默认相机视图控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFCameraDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFCameraDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)
@@ -233,6 +233,18 @@
  *  是否允许音量键拍照 (默认关闭)
  */
 @property (nonatomic) BOOL enableCaptureWithVolumeKeys;
+
+/**
+ *  是否开启焦距调节 (默认关闭)
+ */
+@property (nonatomic, assign) BOOL enableFocalDistance;
+
+/**
+ *  相机显示焦距 (默认为 1，最大不可超过硬件最大值，当小于 1 时，取 1)
+ */
+@property (nonatomic, assign) CGFloat focalDistanceScale;
+
+
 
 /**
  *  创建滤镜栏视图

@@ -49,7 +49,7 @@
 /**
  *  图片编辑滤镜控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditFilterControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditFilterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditFilterView, 需要继承 GeeV2PFEditFilterView)

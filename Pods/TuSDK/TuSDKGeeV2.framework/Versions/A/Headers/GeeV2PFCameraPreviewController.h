@@ -83,7 +83,7 @@
 /**
  *  相机预览视图控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFCameraPreviewControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFCameraPreviewControllerDelegate> delegate;
 
 @end
 

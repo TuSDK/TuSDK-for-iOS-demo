@@ -53,7 +53,7 @@ TuSDKPFStickerOnlineControllerDelegate, TuSDKPFStickerLocalControllerDelegate>
 /**
  *  美颜控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditStickerControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditStickerControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditStickerView, 需要继承 TuSDKPFEditStickerView)
@@ -88,7 +88,7 @@ TuSDKPFStickerOnlineControllerDelegate, TuSDKPFStickerLocalControllerDelegate>
 /**
  *  贴纸视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+@property (nonatomic, weak) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
 
 /**
  *  开启详细列表动作按钮动作

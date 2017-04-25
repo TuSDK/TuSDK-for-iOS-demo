@@ -39,7 +39,7 @@
 /**
  *  默认相机闪光灯视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFCameraFlashDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFCameraFlashDelegate> delegate;
 
 /**
  *  设置闪光灯按钮坐标
@@ -240,7 +240,7 @@
 /**
  *  滤镜视图
  */
-@property (nonatomic, assign) id<TuSDKPFCameraViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFCameraViewDelegate> delegate;
 
 /**
  *  更新布局

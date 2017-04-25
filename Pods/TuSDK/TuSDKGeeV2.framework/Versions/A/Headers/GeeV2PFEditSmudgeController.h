@@ -52,7 +52,7 @@
 /**
  *  涂抹编辑控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditSmudgeControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditSmudgeControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditSmudgeView, 需要继承 GeeV2PFEditSmudgeView)

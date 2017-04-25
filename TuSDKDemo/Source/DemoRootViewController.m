@@ -83,6 +83,10 @@
     [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
     
     [TuSDK checkManagerWithDelegate:self];
+    
+    NSLog(@"TuSDK.framework 的版本号 : %@",lsqSDKVersion);
+    NSLog(@"TuSDKGeeV1.framework 的版本号 : %@",lsqGeeVersion);
+    NSLog(@"TuSDKGeeV2.framework 的版本号 : %@",lsqGeeV2Version);
 }
 
 - (void)lsqInitView
@@ -102,7 +106,7 @@
     // 导航按钮
     mCameraButton = [self buildEntryButton:@"component_camera"
                                       icon:@"icon_camera"
-                                     frame:CGRectMake(0, [mTopLogo getBottomY], rect.size.width, navButtonHeight)];
+                                     frame:CGRectMake(0, [mTopLogo lsqGetBottomY], rect.size.width, navButtonHeight)];
     
     [mCameraButton setBackgroundImageColor:lsqRGB(255, 85, 52) forState:UIControlStateNormal];
     [mCameraButton setBackgroundImageColor:lsqRGBA(255, 85, 52, 0.8) forState:UIControlStateHighlighted];
@@ -110,7 +114,7 @@
     
     mEditorButton = [self buildEntryButton:@"component_editor"
                                       icon:@"icon_editor"
-                                     frame:CGRectMake(0, [mCameraButton getBottomY], rect.size.width, navButtonHeight)];
+                                     frame:CGRectMake(0, [mCameraButton lsqGetBottomY], rect.size.width, navButtonHeight)];
     
     [mEditorButton setBackgroundImageColor:lsqRGB(230, 76, 46) forState:UIControlStateNormal];
     [mEditorButton setBackgroundImageColor:lsqRGBA(230, 76, 46, 0.8) forState:UIControlStateHighlighted];
@@ -118,7 +122,7 @@
     
     mComponentListButton = [self buildEntryButton:@"component_list"
                                              icon:@"icon_component_list"
-                                            frame:CGRectMake(0, [mEditorButton getBottomY], rect.size.width, navButtonHeight)];
+                                            frame:CGRectMake(0, [mEditorButton lsqGetBottomY], rect.size.width, navButtonHeight)];
     [mComponentListButton setBackgroundImageColor:lsqRGB(204, 68, 41) forState:UIControlStateNormal];
     [mComponentListButton setBackgroundImageColor:lsqRGBA(204, 68, 41, 0.8) forState:UIControlStateHighlighted];
     [self.view addSubview:mComponentListButton];

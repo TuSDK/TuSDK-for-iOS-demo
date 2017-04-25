@@ -54,13 +54,16 @@ extern NSString * const CAMERA_GeeV2_PLACEHOLDER;
 @interface GeeV2PFPhotosGridCell : UICollectionViewCell
 {
     
-@protected
+    @protected
     UIImageView *_thumbView;
     
-@protected
+    @protected
     UIButton *_selectedView;
     
-@protected
+    @protected
+    UIButton *_selectButton;
+    
+    @protected
     BOOL _cellSelected;
 }
 
@@ -87,7 +90,7 @@ extern NSString * const CAMERA_GeeV2_PLACEHOLDER;
 /**
  * 相册照片表单元格协议
  */
-@property (nonatomic, assign) id<GeeV2PFPhotosGridCellDelegate> photosGridCellDelegate;
+@property (nonatomic, weak) id<GeeV2PFPhotosGridCellDelegate> photosGridCellDelegate;
 
 /**
  *  初始化视图

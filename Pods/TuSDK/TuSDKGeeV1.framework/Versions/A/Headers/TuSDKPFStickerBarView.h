@@ -68,7 +68,7 @@
 /**
  *  贴纸列表视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerTableViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFStickerTableViewDelegate> delegate;
 
 /**
  *  数据列表
@@ -132,7 +132,7 @@
 /**
  *  贴纸栏视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerBarViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFStickerBarViewDelegate> delegate;
 /**
  *  参数选项视图
  */

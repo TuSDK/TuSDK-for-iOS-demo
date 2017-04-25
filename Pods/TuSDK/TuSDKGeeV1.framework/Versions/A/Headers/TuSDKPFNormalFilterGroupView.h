@@ -39,7 +39,7 @@
 /**
  *  裁剪与缩放控制器滤镜视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFNormalFilterGroupDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFNormalFilterGroupDelegate> delegate;
 
 /**
  *  开关视图

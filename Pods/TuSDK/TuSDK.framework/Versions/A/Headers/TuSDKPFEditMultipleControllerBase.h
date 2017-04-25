@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKCPImageResultController.h"
-#import "TuSdkCPEditActionType.h"
+#import "TuSDKCPEditActionType.h"
 #import "TuSDKWaterMarkOption.h"
 
 /**

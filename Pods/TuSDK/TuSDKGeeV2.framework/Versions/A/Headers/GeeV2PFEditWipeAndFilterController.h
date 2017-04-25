@@ -53,7 +53,7 @@
 /**
  *  滤镜涂抹控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditWipeAndFilterControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditWipeAndFilterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditWipeAndFilterView, 需要继承 GeeV2PFEditWipeAndFilterView)

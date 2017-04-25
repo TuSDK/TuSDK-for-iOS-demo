@@ -86,6 +86,6 @@
 /**
  *  预览视图控制器代理
  */
-@property (nonatomic, assign) id<GeeV2PFPhotoPreviewControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFPhotoPreviewControllerDelegate> delegate;
 
 @end

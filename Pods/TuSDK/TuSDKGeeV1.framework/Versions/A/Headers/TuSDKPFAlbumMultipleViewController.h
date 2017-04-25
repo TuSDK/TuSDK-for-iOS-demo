@@ -33,6 +33,14 @@
  */
 - (void)onTuSDKCameraDemand:(TuSDKPFAlbumMultipleViewController *)controller;
 
+/**
+ *  相册读取错误信息
+ *
+ *  @param controller 系统相册控制器
+ *  @param error      相册读取错误信息
+ */
+- (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller error:(NSError *)error;
+
 @required
 /**
  *  选中的相片列表
@@ -41,14 +49,6 @@
  *  @param assets     相片数组
  */
 - (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller selectedAssets:(NSArray<TuSDKTSAssetInterface> *)assets;
-
-/**
- *  相册读取错误信息
- *
- *  @param controller 系统相册控制器
- *  @param error      相册读取错误信息
- */
-- (void)onTuSDKPFPhotos:(TuSDKPFAlbumMultipleViewController *)controller error:(NSError *)error;
 
 @end
 
@@ -70,7 +70,7 @@
 /**
  *  系统相册委托
  */
-@property (nonatomic, assign) id<TuSDKPFAlbumMultipleDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFAlbumMultipleDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFAlbumMultipleView, 需要继承 TuSDKPFAlbumMultipleView)

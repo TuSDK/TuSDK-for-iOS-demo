@@ -55,7 +55,7 @@
 /**
  *  相机滤镜视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFCameraFilterGroupViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFCameraFilterGroupViewDelegate> delegate;
 
 /**
  *  底部栏目

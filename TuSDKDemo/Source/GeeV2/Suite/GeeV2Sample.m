@@ -93,6 +93,11 @@
     // 设置选择照片的最大尺寸 默认：8000*8000
    // _albumComponent.options.albumOptions.maxSelectionImageSize = CGSizeMake(8000, 8000);
     
+    // 设置是否开启焦距调节， 设置 focalDistanceScale 之前请确保开启了焦距调节
+    _albumComponent.options.cameraOptions.enableFocalDistance = YES;
+    // 相机显示焦距 (默认为 1，最大不超过硬件支持的最大值，当小于 1 时，取 1，若不需要太高的倍数，用户可自行控制)
+    _albumComponent.options.cameraOptions.focalDistanceScale = 1.0;
+    
     [_albumComponent showComponent];
 }
 #pragma mark - 开启照片美化组件

@@ -14,29 +14,37 @@
  */
 typedef NS_ENUM(NSInteger, lsqWaterMarkPosition)
 {
-    /**
-     *  左上角
-     */
-    lsqWaterMarkTopLeft = 1,
-    /**
-     *  右上角
-     */
-    lsqWaterMarkTopRight = 1 << 1,
+    
+    // 注：修改该枚举时，请注意，保证1~4之间为逆时针方向，改枚举的数值尽量不要修改，在 TuSDKVideoDataOutputBase 类 setWaterMarkPosition 方法中调整水印位置用到，通过数值和 视频方向进行了转换计算；若有修改 请注意需对应修改改计算
     
     /**
      *  左下角
      */
-    lsqWaterMarkBottomLeft = 1 << 2,
+    lsqWaterMarkBottomLeft = 1,
     
     /**
      *  右下角
      */
-    lsqWaterMarkBottomRight = 1 << 3,
+    lsqWaterMarkBottomRight = 2,
     
+    /**
+     *  右上角
+     */
+    lsqWaterMarkTopRight = 3,
+
+    /**
+     *  左上角
+     */
+    lsqWaterMarkTopLeft = 4,
+    
+
     /**
      *  居中
      */
-    lsqWaterMarkCenter = 1 << 4,
+    lsqWaterMarkCenter = 5,
+
+    
+    
 };
 
 /**

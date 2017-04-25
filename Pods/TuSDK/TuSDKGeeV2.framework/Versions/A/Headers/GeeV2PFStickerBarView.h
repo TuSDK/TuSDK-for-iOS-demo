@@ -70,7 +70,7 @@
 /**
  *  贴纸列表视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFStickerTableViewDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFStickerTableViewDelegate> delegate;
 
 /**
  *  数据列表
@@ -130,7 +130,7 @@
 /**
  *  贴纸栏视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFStickerBarViewDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFStickerBarViewDelegate> delegate;
 
 /**
  *  贴纸列表视图

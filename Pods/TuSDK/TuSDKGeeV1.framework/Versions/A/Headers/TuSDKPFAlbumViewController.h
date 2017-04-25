@@ -51,7 +51,7 @@
 /**
  *  系统相册委托
  */
-@property (nonatomic, assign) id<TuSDKPFAlbumDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFAlbumDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFAlbumView, 需要继承 TuSDKPFAlbumView)

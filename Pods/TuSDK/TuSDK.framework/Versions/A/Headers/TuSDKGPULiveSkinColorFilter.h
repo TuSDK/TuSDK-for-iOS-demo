@@ -12,6 +12,6 @@
 /**
  *  美白颜色滤镜，大眼瘦脸
  */
-@interface TuSDKGPULiveSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol, TuSDKFilterFacePositionProtocol, TuSDKFilterStickerProtocol>
+@interface TuSDKGPULiveSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol, TuSDKFilterStickerProtocol>
 
 @end

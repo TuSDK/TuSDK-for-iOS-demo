@@ -94,6 +94,7 @@
 #import "TuSDKPFEditSmudgeControllerBase.h"
 #import "TuSDKPFEditWipeAndFilterControllerBase.h"
 #import "TuSDKPFEditTabBarControllerBase.h"
+#import "TuSDKPFEditHDRControllerBase.h"
 
 #import "TuSDKPFCameraFilterGroupViewBase.h"
 #import "TuSDKPFEditFilterGroupViewBase.h"

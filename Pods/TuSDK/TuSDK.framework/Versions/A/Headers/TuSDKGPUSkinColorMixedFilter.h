@@ -1,5 +1,5 @@
 //
-//  TuSDKGPUSkinAndLiveStickerFilter.h
+//  TuSDKGPUSkinColorMixedFilter.h
 //  TuSDKVideo
 //
 //  Created by Yanlin Qiu on 24/11/2016.
@@ -8,12 +8,12 @@
 
 
 #import "TuSDKFilterParameter.h"
-#import "TuSDKFilterAdapter.h"
+#import "TuSDKGPUImageThreeInputFilter.h"
 
 /**
- *  肤色 + 动态贴纸，提升性能
+ *  肤色调整，在美颜滤镜中使用
  */
-@interface TuSDKGPUSkinAndLiveStickerFilter : TuSDKThreeInputFilter <TuSDKFilterFacePositionProtocol, TuSDKFilterStickerProtocol>
+@interface TuSDKGPUSkinColorMixedFilter : TuSDKGPUImageThreeInputFilter <TuSDKFilterStickerProtocol>
 
 /** The strength of the sharpening, from 0.0 on up, with a default of 1.0 */
 @property(readwrite, nonatomic) CGFloat intensity;

@@ -41,7 +41,7 @@
 /**
  *  默认相机闪光灯视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFCameraFlashDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFCameraFlashDelegate> delegate;
 
 /**
  *  设置闪光灯按钮坐标
@@ -271,7 +271,7 @@
 /**
  *  滤镜视图
  */
-@property (nonatomic, assign) id<GeeV2PFCameraViewDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFCameraViewDelegate> delegate;
 
 /**
  *  更新布局

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class TuSDKTSMotion;
 
@@ -35,6 +36,16 @@
 @property (nonatomic, readonly) UIDeviceOrientation deviceOrientation;
 
 /**
+ *  物理感应器方向所对应的视频方向
+ */
+@property (nonatomic, readonly) AVCaptureVideoOrientation videoOrientation;
+
+/**
+ *  物理感应器方向所对应的视频transform （主要针对录制时的 AVAssetWriterInput 的 transform）
+ */
+@property (nonatomic, readonly) CGAffineTransform videoInputTransform;
+
+/**
  * 物理感应器角度
  */
 @property (nonatomic, readonly) float deviceAngle;
@@ -52,7 +63,7 @@
 /**
  *  物理感应器方向委托
  */
-@property (nonatomic, assign) id<TuSDKTSMotionDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKTSMotionDelegate> delegate;
 
 /**
  *  物理感应器方向

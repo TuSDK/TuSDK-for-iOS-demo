@@ -8,10 +8,11 @@
 
 #import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
+#import "TuSDKGPUImageTwoInputFilter.h"
 
 /**
  *  LOMO滤镜
  */
-@interface TuSDKGPUColorLomoFilter : TuSDKTwoInputFilter<TuSDKFilterParameterProtocol>
+@interface TuSDKGPUColorLomoFilter : TuSDKGPUImageTwoInputFilter<TuSDKFilterParameterProtocol, TuSDKFilterStickerProtocol>
 
 @end

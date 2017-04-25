@@ -35,7 +35,7 @@
 /**
  *  在线滤镜选择控制器委托
  */
-@property (nonatomic, assign) id<TuSDKCPFilterOnlineControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPFilterOnlineControllerDelegate> delegate;
 
 /**
  *  滤镜栏类型

@@ -42,5 +42,5 @@
 /**
  *  在线贴纸选择控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFStickerOnlineControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFStickerOnlineControllerDelegate> delegate;
 @end

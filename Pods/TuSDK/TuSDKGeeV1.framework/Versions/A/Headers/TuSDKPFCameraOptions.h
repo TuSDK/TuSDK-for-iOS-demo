@@ -205,6 +205,21 @@
 @property (nonatomic) BOOL enableCaptureWithVolumeKeys;
 
 /**
+ *  是否开启焦距调节 (默认关闭)
+ */
+@property (nonatomic, assign) BOOL enableFocalDistance;
+
+/**
+ *  相机显示焦距 (默认为 1，最大不可超过硬件最大值，当小于 1 时，取 1)
+ */
+@property (nonatomic, assign) CGFloat focalDistanceScale;
+
+
+
+
+
+
+/**
  *  创建系统相机控制器对象
  *
  *  @return 系统相机控制器对象

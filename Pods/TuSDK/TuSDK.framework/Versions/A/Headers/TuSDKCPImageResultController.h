@@ -109,6 +109,21 @@
 - (BOOL)checkImageValid:(UIImage *)image handler:(TuSDKTSAssetProgressBlock)block;
 
 /**
+ 是否需要预处理图片
+ 
+ @param image 要显示的图片
+ @return
+ */
+- (BOOL)preProcessWithImage:(UIImage *)image;
+
+/**
+ 图片加载并显示后，是否需要继续处理
+ 
+ @param image 要显示的图片
+ */
+- (void)postProcessWithImage:(UIImage *)image;
+
+/**
  *  异步加载输入图片完成
  *
  *  @param image 输入图片

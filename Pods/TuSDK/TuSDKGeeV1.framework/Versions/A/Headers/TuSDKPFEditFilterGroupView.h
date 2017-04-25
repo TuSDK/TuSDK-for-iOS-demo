@@ -55,7 +55,7 @@
 /**
  *  图片编辑滤镜控制器滤镜栏视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditFilterGroupDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditFilterGroupDelegate> delegate;
 
 /**
  *  参数配置视图

@@ -38,7 +38,7 @@
 /**
  *  滤镜组选择栏委托
  */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterBarDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPGroupFilterBarDelegate> delegate;
 /**
  *  滤镜分组元素类型
  */
@@ -168,7 +168,7 @@
 /**
  *  滤镜组选择栏委托
  */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterBarDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPGroupFilterBarDelegate> delegate;
 
 /**
  *  滤镜分组元素类型

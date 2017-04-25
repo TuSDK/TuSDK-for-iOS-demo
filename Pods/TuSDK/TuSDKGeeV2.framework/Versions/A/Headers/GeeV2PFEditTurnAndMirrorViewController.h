@@ -52,7 +52,7 @@
 /**
  *  旋转视图控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditTurnAndMirrorDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditTurnAndMirrorDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditTurnAndMirrorView, 需要继承 GeeV2PFEditTurnAndMirrorView)

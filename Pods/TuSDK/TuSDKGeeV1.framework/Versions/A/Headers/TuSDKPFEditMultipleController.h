@@ -58,7 +58,7 @@
 /**
  *  多功能图像编辑控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditMultipleControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditMultipleControllerDelegate> delegate;
 
 #pragma mark - config
 /**

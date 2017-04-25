@@ -29,15 +29,6 @@
  *  地理位置
  */
 @interface TuSDKTKLocation : NSObject
-/**
- *  是否请求GPS权限
- */
-@property (nonatomic) BOOL requireAuthor;
-
-/**
- *  是否允许使用GPS
- */
-@property (nonatomic, readonly) BOOL canGps;
 
 /**
  *  最后获取的地理信息
@@ -47,7 +38,7 @@
 /**
  *  地理位置委托
  */
-@property (nonatomic, assign) id<TuSDKTKLocationDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKTKLocationDelegate> delegate;
 
 /**
  *  请求请求GPS权限

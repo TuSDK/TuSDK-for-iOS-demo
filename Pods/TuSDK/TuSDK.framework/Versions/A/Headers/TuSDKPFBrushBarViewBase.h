@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, lsqBrushAction)
 /**
  *  笔刷分组列表行视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFBrushTableViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFBrushTableViewDelegate> delegate;
 
 /**
  *  笔刷使用类型

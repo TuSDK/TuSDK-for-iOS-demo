@@ -10,6 +10,17 @@
 #import <GPUImage/GPUImage.h>
 #import "TuSDKDataJson.h"
 
+#pragma mark - RuntimeTextureDelegate
+
+@protocol RuntimeTextureDelegate<NSObject>
+
+/**
+ 运行时材质委托
+ */
+-(NSArray<GPUImagePicture *> *)getRunTimeTextures;
+
+@end
+
 /**
  *  滤镜配置选项
  */
@@ -114,6 +125,11 @@
  *  内置滤镜材质列表
  */
 @property (nonatomic, retain) NSArray *internalTextures;
+
+/**
+ 运行时材质委托
+ */
+@property (nonatomic, weak) id<RuntimeTextureDelegate> runtimeTextureDelegate;
 
 /**
  * 复制滤镜配置选项

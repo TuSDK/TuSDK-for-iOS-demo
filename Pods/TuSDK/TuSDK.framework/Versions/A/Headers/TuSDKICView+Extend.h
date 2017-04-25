@@ -61,7 +61,7 @@
  *  @return string 语言字符串
  */
 #define LSQString(key, comment) \
-[[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:@"TuSDK"]
+[[NSBundle mainBundle] localizedStringForKey:(key) value:comment table:@"TuSDK"]
 #endif
 
 #pragma mark - UIViewExtend
@@ -108,21 +108,21 @@
  *
  *  @return size 视图对象
  */
-- (id)setSize:(CGSize)size;
+- (id)lsqSetSize:(CGSize)size;
 
 /**
  *  获取长宽
  *
- *  @return getSize 长宽
+ *  @return lsqGetSize 长宽
  */
-- (CGSize)getSize;
+- (CGSize)lsqGetSize;
 
 /**
  *  获取像素长宽
  *
- *  @return getSize 长宽
+ *  @return lsqGetSize 长宽
  */
-- (CGSize)getPixiesSize;
+- (CGSize)lsqGetPixiesSize;
 
 /**
  *  设置宽度
@@ -131,14 +131,14 @@
  *
  *  @return width 视图对象
  */
-- (id)setSizeWidth:(CGFloat)width;
+- (id)lsqSetSizeWidth:(CGFloat)width;
 
 /**
  *  获取宽度
  *
- *  @return getSizeWidth 宽度
+ *  @return lsqGetSizeWidth 宽度
  */
-- (CGFloat)getSizeWidth;
+- (CGFloat)lsqGetSizeWidth;
 
 /**
  *  设置高度
@@ -147,14 +147,14 @@
  *
  *  @return height 视图对象
  */
-- (id)setSizeHeight:(CGFloat)height;
+- (id)lsqSetSizeHeight:(CGFloat)height;
 
 /**
  *  获取高度
  *
- *  @return getSizeHeight 高度
+ *  @return lsqGetSizeHeight 高度
  */
-- (CGFloat)getSizeHeight;
+- (CGFloat)lsqGetSizeHeight;
 
 /**
  *  设置坐标
@@ -163,14 +163,14 @@
  *
  *  @return origin 视图对象
  */
-- (id)setOrigin:(CGPoint)origin;
+- (id)lsqSetOrigin:(CGPoint)origin;
 
 /**
  *  获取坐标
  *
- *  @return getOrigin 坐标
+ *  @return lsqGetOrigin 坐标
  */
-- (CGPoint)getOrigin;
+- (CGPoint)lsqGetOrigin;
 
 /**
  *  设置x坐标
@@ -179,14 +179,14 @@
  *
  *  @return originX 视图对象
  */
-- (id)setOriginX:(CGFloat)originX;
+- (id)lsqSetOriginX:(CGFloat)originX;
 
 /**
  *  获取x坐标
  *
  *  @return x 坐标
  */
-- (CGFloat)getOriginX;
+- (CGFloat)lsqGetOriginX;
 
 /**
  *  设置y坐标
@@ -195,35 +195,35 @@
  *
  *  @return originY 视图对象
  */
-- (id)setOriginY:(CGFloat)originY;
+- (id)lsqSetOriginY:(CGFloat)originY;
 
 /**
  *  获取y坐标
  *
  *  @return y 坐标
  */
-- (CGFloat)getOriginY;
+- (CGFloat)lsqGetOriginY;
 
 /**
  *  获取右边X坐标
  *
- *  @return getRightX 右边X坐标
+ *  @return lsqGetRightX 右边X坐标
  */
-- (CGFloat)getRightX;
+- (CGFloat)lsqGetRightX;
 
 /**
  *  获取下边Y坐标
  *
- *  @return getBottomY 下边Y坐标
+ *  @return lsqGetBottomY 下边Y坐标
  */
-- (CGFloat)getBottomY;
+- (CGFloat)lsqGetBottomY;
 
 /**
  *  获取右下角坐标
  *
- *  @return getRightBottomXY 右下角坐标
+ *  @return lsqGetRightBottomXY 右下角坐标
  */
-- (CGPoint)getRightBottomXY;
+- (CGPoint)lsqGetRightBottomXY;
 
 /**
  *  获取目标相对于自己中心的X坐标
@@ -232,7 +232,7 @@
  *
  *  @return centerX 目标相对于自己中心的X坐标
  */
-- (CGFloat)getCenterX:(float)targetWidth;
+- (CGFloat)lsqGetCenterX:(float)targetWidth;
 
 /**
  *  获取目标相对于自己中心的Y坐标
@@ -241,7 +241,7 @@
  *
  *  @return centerYCenterY 目标相对于自己中心的Y坐标
  */
-- (CGFloat)getCenterY:(float)targetHeight;
+- (CGFloat)lsqGetCenterY:(float)targetHeight;
 
 /**
  *  获取目标相对于自己中心的坐标
@@ -250,7 +250,7 @@
  *
  *  @return size 目标相对于自己中心的坐标
  */
-- (CGPoint)getCenterWithSize:(CGSize)size;
+- (CGPoint)lsqGetCenterWithSize:(CGSize)size;
 
 /**
  *  删除所有子元素
@@ -263,14 +263,14 @@
  *  @param width 边框宽度
  *  @param color 颜色
  */
-- (void)setBorderWidth:(CGFloat)width color:(UIColor *)color;
+- (void)lsqSetBorderWidth:(CGFloat)width color:(UIColor *)color;
 
 /**
  *  设置圆角
  *
  *  @param radius 角度
  */
-- (void)setCornerRadius:(CGFloat)radius;
+- (void)lsqSetCornerRadius:(CGFloat)radius;
 
 /**
  *  旋转视图

@@ -62,7 +62,7 @@
 /**
  *  多功能图像编辑控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditMultipleControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditMultipleControllerDelegate> delegate;
 
 /**
  *  一次编辑的最大照片数量 (默认: 9, 0 < n <= 9)

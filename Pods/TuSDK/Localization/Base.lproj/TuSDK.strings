@@ -139,6 +139,8 @@
 "lsq_edit_fragment_aperture_radial" = "径向";
 "lsq_edit_fragment_aperture_linear" = "线性";
 
+"lsq_edit_entry_hdr" = "HDR";
+
 // sticker
 "lsq_sticker_cate_default" = "贴纸";
 "lsq_sticker_cate_watermark" = "水印";
@@ -177,7 +179,7 @@
 // FilterGroup
 "lsq_filter_group_Leica" = "莱卡";
 "lsq_filter_group_Lomo" = "LOMO";
-"lsq_filter_group_Food" = "美食";
+"lsq_filter_group_Food" = "Retro";
 "lsq_filter_group_Enhance" = "增强";
 "lsq_filter_group_Glare" = "光效";
 "lsq_filter_group_Beauty" = "人像";

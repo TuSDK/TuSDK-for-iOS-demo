@@ -60,6 +60,11 @@
 - (BOOL)sdkValid;
 
 /**
+ * 获取在线配置信息
+ */
+- (void)fetchConfigFromService;
+
+/**
  *  是否允许该级别
  *
  *  @return BOOL 级别
@@ -100,6 +105,9 @@
 
 /** 滤镜涂抹功能是否开启 */
 - (BOOL)wipeFilterEnabled;
+
+/** HDR 功能是否开启 */
+- (BOOL)hdrFilterEnabled;
 
 /** 美颜级别 */
 - (NSUInteger)beautyLevel;

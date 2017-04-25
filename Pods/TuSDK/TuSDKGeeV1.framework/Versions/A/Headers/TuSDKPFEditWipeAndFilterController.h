@@ -52,7 +52,7 @@
 /**
  *  滤镜涂抹控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditWipeAndFilterControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditWipeAndFilterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditWipeAndFilterView, 需要继承 TuSDKPFEditWipeAndFilterView)

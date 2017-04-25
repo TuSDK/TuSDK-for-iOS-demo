@@ -7,9 +7,11 @@
 //
 
 #import <GPUImage/GPUImage.h>
+#import "TuSDKGPUImageFilter.h"
+
 /**
  *  默认滤镜
  */
-@interface TuSDKNormalFilter : GPUImageFilter
+@interface TuSDKNormalFilter : TuSDKGPUImageFilter <TuSDKFilterStickerProtocol>
 
 @end

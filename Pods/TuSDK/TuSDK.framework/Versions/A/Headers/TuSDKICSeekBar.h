@@ -46,7 +46,7 @@
 /**
  *  百分比控制条委托
  */
-@property (nonatomic, assign) id<TuSDKICSeekBarDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKICSeekBarDelegate> delegate;
 
 /**
  *  百分比

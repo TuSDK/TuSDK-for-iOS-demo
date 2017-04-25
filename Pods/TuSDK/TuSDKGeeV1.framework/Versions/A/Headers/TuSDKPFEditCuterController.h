@@ -50,7 +50,7 @@
 /**
  *  图片编辑裁切旋转控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditCuterControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditCuterControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditCuterView, 需要继承 TuSDKPFEditCuterView)

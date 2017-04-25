@@ -36,7 +36,7 @@
 /**
  *  原生滤镜配置委托
  */
-@property (nonatomic, assign) id<TuSDKFilterConfigDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKFilterConfigDelegate> delegate;
 
 /**
  *  原生滤镜配置

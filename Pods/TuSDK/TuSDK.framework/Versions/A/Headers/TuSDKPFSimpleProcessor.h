@@ -78,6 +78,12 @@
 @property (nonatomic, assign) NSUInteger maxUndoCount;
 
 /**
+ *  该图所在的imageView的 size，用来计算对应到图片上的相对位置
+ */
+@property (nonatomic, assign) CGSize  originIVSize;
+
+
+/**
  *  设置绘制底图
  *
  *  @return scaledImage

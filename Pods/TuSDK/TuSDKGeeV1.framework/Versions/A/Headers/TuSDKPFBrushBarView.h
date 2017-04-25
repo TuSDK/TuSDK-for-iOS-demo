@@ -33,7 +33,7 @@
 /**
  *  笔刷列表视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFBrushTableViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFBrushTableViewDelegate> delegate;
 
 /**
  *  数据列表
@@ -82,7 +82,7 @@
 /**
  *  笔刷栏视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFBrushBarViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFBrushBarViewDelegate> delegate;
 
 /**
  *  参数配置视图

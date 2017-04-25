@@ -53,7 +53,7 @@ GeeV2PFStickerOnlineControllerDelegate, GeeV2PFStickerLocalControllerDelegate>
 /**
  *  美颜控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditStickerControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditStickerControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFEditStickerView, 需要继承 GeeV2PFEditStickerView)
@@ -89,7 +89,7 @@ GeeV2PFStickerOnlineControllerDelegate, GeeV2PFStickerLocalControllerDelegate>
 /**
  *  贴纸视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+@property (nonatomic, weak) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
 
 /**
  *  开启详细列表动作按钮动作

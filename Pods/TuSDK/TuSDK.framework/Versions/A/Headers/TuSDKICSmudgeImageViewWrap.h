@@ -52,7 +52,7 @@
 /**
  *  画布操作事件委托
  */
-@property (nonatomic, assign) id<TuSDKICSmudgeImageViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKICSmudgeImageViewDelegate> delegate;
 
 /**
  *  显示的图片
@@ -160,7 +160,7 @@
 /**
  *  画布操作事件委托
  */
-@property (nonatomic, assign) id<TuSDKICSmudgeImageViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKICSmudgeImageViewDelegate> delegate;
 
 /**
  *  显示的图片

@@ -61,6 +61,9 @@ extern NSString * const CAMERA_PLACEHOLDER;
     UIButton *_selectedView;
     
     @protected
+    UIButton *_selectButton;
+    
+    @protected
     BOOL _cellSelected;
 }
 
@@ -87,7 +90,7 @@ extern NSString * const CAMERA_PLACEHOLDER;
 /**
  * 相册照片表单元格协议
  */
-@property (nonatomic, assign) id<TuSDKPFPhotosGridCellDelegate> photosGridCellDelegate;
+@property (nonatomic, weak) id<TuSDKPFPhotosGridCellDelegate> photosGridCellDelegate;
 
 /**
  *  初始化视图

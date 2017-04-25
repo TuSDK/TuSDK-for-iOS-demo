@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, demoListItemAction)
 /**
  *  范例列表视图委托
  */
-@property (nonatomic, assign) id<DemoRootViewDelegate> delegate;
+@property (nonatomic, weak) id<DemoRootViewDelegate> delegate;
 
 /**
  *  范例分组

@@ -223,7 +223,7 @@
     if (!view) return;
     [super configDefaultStyleView:view];
     
-    UIButton *closeButton = [UIButton buttonWithFrame:CGRectMake(20, [view.bottomBar getCenterY:60] + 8, 60, 60)
+    UIButton *closeButton = [UIButton buttonWithFrame:CGRectMake(20, [view.bottomBar lsqGetCenterY:60] + 8, 60, 60)
                                                 title:LSQString(@"lsq_cancel", @"取消") font:lsqFontSize(16)
                                                 color:[UIColor whiteColor]];
     // 关闭摄像头按钮
@@ -239,7 +239,7 @@
 - (void)buildFilterBar:(TuSDKPFCameraView *)view;
 {
     // 滤镜栏视图
-    _filterBar = [TuSDKPFNormalFilterGroupView initWithFrame:CGRectMake(0, 0, view.getSizeWidth, view.bottomBar.getOriginY)];
+    _filterBar = [TuSDKPFNormalFilterGroupView initWithFrame:CGRectMake(0, 0, view.lsqGetSizeWidth, view.bottomBar.lsqGetOriginY)];
     _filterBar.filterBar.backgroundColor = [UIColor clearColor];
     
     // 配置滤镜栏视图
@@ -285,9 +285,9 @@
     [super lsqInitView];
     
     // 默认相机控制栏视图
-    [_configBar setSizeHeight:44];
+    [_configBar lsqSetSizeHeight:44];
     _configBar.closeButton.hidden = YES;
-    [_configBar.flashButton setOriginX:10];
+    [_configBar.flashButton lsqSetOriginX:10];
     
     // 闪光灯视图
     [_flashView setFlashFrame:_configBar.flashButton.frame];
@@ -307,9 +307,9 @@
     _titleView.hidden = YES;
 }
 
--(id)setSize:(CGSize)size;
+-(id)lsqSetSize:(CGSize)size;
 {
-    [super setSize:size];
+    [super lsqSetSize:size];
     
     // 图片视图
     _thumbView.frame = _wrapView.bounds;

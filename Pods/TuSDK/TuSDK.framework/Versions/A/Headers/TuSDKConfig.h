@@ -65,6 +65,11 @@
 @property (nonatomic) BOOL wipeFilterEnabled;
 
 /**
+ *  hdr
+ */
+@property (nonatomic) BOOL hdrFilterEnabled;
+
+/**
  *  beauty Level
  */
 @property (nonatomic) NSInteger beautyLevel;

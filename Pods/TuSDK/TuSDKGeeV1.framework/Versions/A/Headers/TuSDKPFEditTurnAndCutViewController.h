@@ -51,7 +51,7 @@
 /**
  *  旋转和裁剪视图控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditTurnAndCutDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditTurnAndCutDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)

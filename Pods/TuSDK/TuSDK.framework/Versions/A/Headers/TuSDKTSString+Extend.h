@@ -165,4 +165,12 @@
  *  @return NSUInteger
  */
 - (NSUInteger)lsqUnsignedIntegerValue;
+
+/**
+ *  根据给定的限制内容，获得该字符串对应的最优Size
+ *
+ *  @return NSUInteger
+ */
+- (CGSize)lsqColculateTextSizeWithFont:(UIFont *)textFont maxWidth:(CGFloat)maxWidth maxHeihgt:(CGFloat)maxHeight;
+
 @end

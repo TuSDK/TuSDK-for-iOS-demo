@@ -15,7 +15,7 @@
  */
 @interface TuSDKCPGroupFilterBaseView : UIView<TuSDKCPGroupFilterBarDelegate>
 {
-@protected
+    @protected
     // 是否显示活动状态
     BOOL _enableShowActive;
 }

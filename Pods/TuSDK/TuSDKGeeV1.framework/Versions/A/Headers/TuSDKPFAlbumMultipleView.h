@@ -109,6 +109,12 @@
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
 
 /**
+ *  选择图片的尺寸限制 默认：CGSize(8000,8000)
+ */
+@property (nonatomic,assign) CGSize maxSelectionImageSize;
+
+
+/**
  *  显示相机单元格，点击后请求打开相机 (默认: true)
  */
 @property (nonatomic) BOOL displayCameraCell;

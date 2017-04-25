@@ -205,5 +205,5 @@
  *
  *  @param file 文件的MD5
  */
-+ md5File:(NSString *)file;
++ (NSString *)md5File:(NSString *)file;
 @end

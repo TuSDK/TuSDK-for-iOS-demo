@@ -48,7 +48,7 @@
     TuSDKCPGifImage *image = [TuSDKCPGifImage imageNamed:@"sample_gif_editor"];
     
     // 这里可以通过 image.size 获取Gif文件显示尺寸
-    _gifView = [[TuSDKICGifView alloc] initWithFrame:CGRectMake([self.view getCenterX:image.size.width], [self.view getCenterY:image.size.height], image.size.width, image.size.height)];
+    _gifView = [[TuSDKICGifView alloc] initWithFrame:CGRectMake([self.view lsqGetCenterX:image.size.width], [self.view lsqGetCenterY:image.size.height], image.size.width, image.size.height)];
     /**
      *  自动播放动画 (默认: true)
      */

@@ -33,10 +33,16 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
      * 正在拍摄
      */
     lsqCameraStateCapturing = 3,
+    
+    /**
+     * 录制暂停
+     */
+    lsqCameraStatePaused = 4,
+    
     /**
      * 拍摄完成
      */
-    lsqCameraStateCaptured = 4
+    lsqCameraStateCaptured = 5
 };
 
 #pragma mark - TuSDKVideoCameraDelegate
@@ -47,6 +53,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 @protocol TuSDKVideoCameraDelegate <NSObject>
 
+@optional
 /**
  *  相机状态改变 (如需操作UI线程， 请检查当前线程是否为主线程)
  *
@@ -55,7 +62,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 - (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera stateChanged:(lsqCameraState)state;
 
-@optional
 /**
  *  相机滤镜改变 (如需操作UI线程， 请检查当前线程是否为主线程)
  *
@@ -208,6 +214,24 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic) BOOL enableFaceDetection;
 
 /**
+ *  是否开启焦距调节 (默认关闭)
+ */
+@property (nonatomic, assign) BOOL enableFocalDistance;
+
+/**
+ *  相机显示焦距 (默认为 1，最大不可超过硬件最大值，当小于 1 时，取 1)
+ */
+@property (nonatomic, assign) CGFloat focalDistanceScale;
+
+/**
+ *  相机支持的最大值 (只读属性)
+ */
+@property (nonatomic, readonly, assign) CGFloat supportMaxFocalDistanceScale;
+
+
+
+
+/**
  *  视频相机前置或后置
  *
  *  @return cameraPosition 视频相机前置或后置
@@ -279,6 +303,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (void)resumeCameraCapture;
 
 /**
+ *  暂停拍摄
+ */
+- (void)pauseCameraCapture;
+
+/**
  *  停止拍摄
  */
 - (void)stopCameraCapture;
@@ -338,7 +367,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 /**
  *  相机事件委托
  */
-@property (nonatomic, assign) id<TuSDKStillCameraDelegate> captureDelegate;
+@property (nonatomic, weak) id<TuSDKStillCameraDelegate> captureDelegate;
 @end
 
 #pragma mark - TuSDKVideoCameraExtendViewInterface
@@ -379,6 +408,9 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  是否显示辅助线 (默认: false)
  */
 @property (nonatomic) BOOL displayGuideLine;
+
+
+
 
 /**
  *  相机状态改变

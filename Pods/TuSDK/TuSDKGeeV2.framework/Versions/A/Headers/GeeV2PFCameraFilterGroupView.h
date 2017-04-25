@@ -55,7 +55,7 @@
 /**
  *  相机滤镜视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFCameraFilterGroupViewDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFCameraFilterGroupViewDelegate> delegate;
 
 /**
  *  底部栏目

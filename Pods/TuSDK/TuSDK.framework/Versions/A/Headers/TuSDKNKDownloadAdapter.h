@@ -28,7 +28,7 @@
 /**
  *  下载状态委托
  */
-@property (nonatomic, assign) id<TuSDKNKDownloadMangerDelegate> downloadDelegate;
+@property (nonatomic, weak) id<TuSDKNKDownloadMangerDelegate> downloadDelegate;
 
 /**
  *  是否存在包ID

@@ -100,7 +100,7 @@ typedef NS_ENUM(NSInteger, lsqGeeV2StickerSectionHeaderAction)
 /**
  *  本地贴纸列表行标题视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFStickerLocalSectionHeaderProtocol> delegate;
+@property (nonatomic, weak) id<GeeV2PFStickerLocalSectionHeaderProtocol> delegate;
 @end
 
 #pragma mark - GeeV2PFStickerLocalGridView

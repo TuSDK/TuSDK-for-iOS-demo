@@ -220,6 +220,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_multipleEditFragment = 0x409800,
     
     /**
+     * HDR编辑控制器 
+     */
+    tkc_editHDRFragment = 0x409900,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,
@@ -327,39 +332,40 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      *  在线图像颜色分析
      */
     tkc_imageAnalysis_color = 0x800001,
+
     
-    /**
-     *  直播相机启动
+    // 在线验证相关
+    
+    /*
+     * 获取更新验证信息
      */
-    tkc_liveVideoCamera_start = 0x900000,
+    tck_getUpdatedAppAuthAction = 0x810000,
     
-    /**
-     *  直播相机停止
+    /*
+     * 成功获取验证信息
      */
-    tkc_liveVideoCamera_stop = 0x900001,
+    tck_getAppAuthActionSuccess = 0x810002,
     
-    /**
-     *  录制相机启动
+    /*
+     * 获取验证信息时出错
      */
-    tkc_recordVideoCamera_start = 0x900002,
+    tck_getAppAuthActionFail = 0x810004,
     
-    /**
-     *  录制相机启动
+    /*
+     *  成功更新验证信息
      */
-    tkc_recordVideoCamera_stop = 0x900003,
+    tck_updateAppAuthActionSuccess = 0x810006,
     
-    /**
-     * 相机控制器 后置摄像头
+    /*
+     * 更新验证信息无效
      */
-    tkc_video_action_faceing_back = 0x901021,
-    
-    /**
-     * 相机控制器 前置摄像头
-     */
-    tkc_video_action_faceing_front = 0x901022,
+    tck_updateAppAuthActionFail = 0x810008,
     
     
     /**
+     *
+     * 0x90 视频库占用
+     *
      * 0x91 - 0x93 已被TuSDKFaceID占用 详见TuSDKFaceID -> Secrets -> TuSDKPFStatistics.h
      */
 };

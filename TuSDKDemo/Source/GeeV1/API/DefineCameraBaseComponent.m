@@ -368,22 +368,22 @@
     [self.view addSubview:_cameraView];
     
     // 相机配置栏目
-    _configBar = [UIView initWithFrame:CGRectMake(0, 0, self.view.getSizeWidth, 44)];
+    _configBar = [UIView initWithFrame:CGRectMake(0, 0, self.view.lsqGetSizeWidth, 44)];
     [self.view addSubview:_configBar];
     
     // 下边栏
-    _bottomBar = [UIView initWithFrame:CGRectMake(0, self.view.getSizeHeight - 80, self.view.getSizeWidth, 80)];
+    _bottomBar = [UIView initWithFrame:CGRectMake(0, self.view.lsqGetSizeHeight - 80, self.view.lsqGetSizeWidth, 80)];
     [self.view addSubview:_bottomBar];
     
     // 取消按钮
-    _cancelButton = [UIButton buttonWithFrame:CGRectMake(0, 0, 60, _configBar.getSizeHeight)
+    _cancelButton = [UIButton buttonWithFrame:CGRectMake(0, 0, 60, _configBar.lsqGetSizeHeight)
                                         title:LSQString(@"lsq_button_close", @"Close") font:lsqFontSize(12) color:[UIColor whiteColor]];
     
     [_cancelButton addTouchUpInsideTarget:self action:@selector(onWindowExit:)];
     [_configBar addSubview:_cancelButton];
     
     // 前后摄像头切换按钮
-    _switchCameraButton = [UIButton buttonWithFrame:CGRectMake(_configBar.getSizeWidth - 60, 0, 60, _configBar.getSizeHeight)
+    _switchCameraButton = [UIButton buttonWithFrame:CGRectMake(_configBar.lsqGetSizeWidth - 60, 0, 60, _configBar.lsqGetSizeHeight)
                                               title:LSQString(@"lsq_button_switch_camera", @"Switch") font:lsqFontSize(12) color:[UIColor whiteColor]];
     
     [_switchCameraButton addTouchUpInsideTarget:self action:@selector(onSwitchCamera:)];
@@ -393,11 +393,11 @@
     _switchCameraButton.hidden = ([AVCaptureDevice lsqCameraCounts] == 0);
     
     // 闪光灯设置视图
-    _flashBar = [UIView initWithFrame:CGRectMake(_cancelButton.getRightX, 0, _switchCameraButton.getOriginX - _cancelButton.getRightX, _configBar.getSizeHeight)];
+    _flashBar = [UIView initWithFrame:CGRectMake(_cancelButton.lsqGetRightX, 0, _switchCameraButton.lsqGetOriginX - _cancelButton.lsqGetRightX, _configBar.lsqGetSizeHeight)];
     [_configBar addSubview:_flashBar];
     
     // 闪光灯标题
-    UIButton *_flashTitle = [UIButton buttonWithFrame:CGRectMake(0, 0, 40, _configBar.getSizeHeight)
+    UIButton *_flashTitle = [UIButton buttonWithFrame:CGRectMake(0, 0, 40, _configBar.lsqGetSizeHeight)
                                                 title:LSQString(@"lsq_button_flash", @"Flash") font:lsqFontSize(12) color:[UIColor whiteColor]];
     [_flashBar addSubview:_flashTitle];
     
@@ -405,12 +405,12 @@
     _flashButtons = [NSMutableArray arrayWithCapacity:3];
     // 闪光灯模式
     _flashMode = AVCaptureFlashModeOff;
-    CGFloat left = _flashTitle.getRightX;
-    CGFloat btnWidth = floor((_flashBar.getSizeWidth - left)/3.f);
+    CGFloat left = _flashTitle.lsqGetRightX;
+    CGFloat btnWidth = floor((_flashBar.lsqGetSizeWidth - left)/3.f);
     for (int i = 0; i < 3; i++) {
-        UIButton *btn = [UIButton buttonWithFrame:CGRectMake(left, 0, btnWidth, _configBar.getSizeHeight)
+        UIButton *btn = [UIButton buttonWithFrame:CGRectMake(left, 0, btnWidth, _configBar.lsqGetSizeHeight)
                                             title:@"" font:lsqFontSize(12) color:[UIColor whiteColor]];
-        left = btn.getRightX;
+        left = btn.lsqGetRightX;
         
         switch (i) {
             case 0:
@@ -439,8 +439,8 @@
     }
     
     // 拍摄按钮
-    CGFloat capBtnSize = _bottomBar.getSizeHeight - 20;
-    _captureButton = [UIButton initWithFrame:CGRectMake([_bottomBar getCenterX:capBtnSize], [_bottomBar getCenterY:capBtnSize], capBtnSize, capBtnSize)];
+    CGFloat capBtnSize = _bottomBar.lsqGetSizeHeight - 20;
+    _captureButton = [UIButton initWithFrame:CGRectMake([_bottomBar lsqGetCenterX:capBtnSize], [_bottomBar lsqGetCenterY:capBtnSize], capBtnSize, capBtnSize)];
     [_captureButton setStateNormalBackgroundImageColor:lsqRGB(255, 85, 52)];
     _captureButton.layer.cornerRadius = capBtnSize * 0.5f;
     _captureButton.layer.masksToBounds = YES;
@@ -470,7 +470,7 @@
     [_filterBar loadFilters];
     
     // 滤镜开关
-    _filterButton = [UIButton buttonWithFrame:CGRectMake(_bottomBar.getSizeWidth - 100, [_bottomBar getCenterY:30], 100, 30)
+    _filterButton = [UIButton buttonWithFrame:CGRectMake(_bottomBar.lsqGetSizeWidth - 100, [_bottomBar lsqGetCenterY:30], 100, 30)
                                         title:LSQString(@"lsq_edit_entry_filter", @"Filters") font:lsqFontSize(14)
                                         color:[UIColor whiteColor]];
     [_filterButton addTouchUpInsideTarget:self action:@selector(onFilterWindowToggle)];

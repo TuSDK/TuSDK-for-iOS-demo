@@ -71,7 +71,7 @@ extern NSString * const lsqNormalFilterCode;
 /**
  *  原生滤镜配置委托
  */
-@property (nonatomic, assign) id<TuSDKFilterConfigDelegate> initDelegate;
+@property (nonatomic, weak) id<TuSDKFilterConfigDelegate> initDelegate;
 
 /**
  *  原生滤镜配置

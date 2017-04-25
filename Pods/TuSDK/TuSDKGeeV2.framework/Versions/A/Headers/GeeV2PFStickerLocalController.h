@@ -65,7 +65,7 @@
 /**
  *  本地贴纸选择控制器委托
  */
-@property (nonatomic, assign) id<GeeV2PFStickerLocalControllerDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFStickerLocalControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:GeeV2PFStickerLocalView, 需要继承 GeeV2PFStickerLocalView)

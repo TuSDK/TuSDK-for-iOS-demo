@@ -158,6 +158,18 @@
  *  @return 按屏幕DPI进行缩放后的图片
  */
 - (UIImage *)lsqScaledImageForKey:(NSString *)key;
+
+/**
+ Get adaptive histogram equalization
+ 
+ @param iClipXNum 水平切片数目
+ @param iClipYNum 垂直切片数目
+ @param fLimit 调节系数
+ @return
+ */
+- (uint8_t *)lsqGetBitmapClipHistListWithClipX:(NSUInteger)iClipXNum
+                                         ClipY:(NSUInteger)iClipYNum
+                                        fLimit:(CGFloat)fLimit;
 @end
 
 #pragma mark - ResizeAndRotate
@@ -296,6 +308,15 @@
  *  @return 图片的方向
  */
 + (UIImageOrientation)lsqOrientationWithExif:(NSUInteger)exifOrientation;
+
+/**
+ 根据传入的弧度值，旋转图片(绕图片中心旋转)
+ 
+ @param rotate 需要旋转的弧度值
+ @return 返回旋转后的UIImage对象
+ */
+- (UIImage *)lsqTransformRotateWithRotateRadian:(CGFloat)rotate;
+
 @end
 
 #pragma mark - ImageCorp

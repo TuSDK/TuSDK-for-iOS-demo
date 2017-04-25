@@ -37,7 +37,7 @@
 /**
  *  滤镜分组列表行视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPStackFilterTableViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPStackFilterTableViewDelegate> delegate;
 
 /**
  *  滤镜分组元素类型
@@ -97,7 +97,7 @@
 /**
  *  滤镜分组视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
+@property (nonatomic, weak) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
 
 /**
  *  滤镜任务
@@ -147,7 +147,7 @@
 /**
  *  滤镜分组列表行视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPStackFilterTableViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPStackFilterTableViewDelegate> delegate;
 
 /**
  *  行视图宽度
@@ -197,7 +197,7 @@
 /**
  *  滤镜分组视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
+@property (nonatomic, weak) id<TuSDKCPGroupFilterGroupCellDelegate> groupDelegate;
 
 /**
  *  滤镜任务

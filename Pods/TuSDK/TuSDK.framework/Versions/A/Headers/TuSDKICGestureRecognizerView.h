@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, lsqGestureTouchType)
 /**
  *  触摸视图委托
  */
-@property (nonatomic, assign) id<TuSDKICGestureRecognizerViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKICGestureRecognizerViewDelegate> delegate;
 
 /**
  *  旋转角度相对百分比
@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, lsqGestureTouchType)
 /**
  *  触摸视图委托
  */
-@property (nonatomic, assign) id<TuSDKICGestureRecognizerViewDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKICGestureRecognizerViewDelegate> delegate;
 
 /**
  *  旋转角度相对百分比

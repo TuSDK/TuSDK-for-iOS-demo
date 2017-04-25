@@ -139,6 +139,8 @@
 "lsq_edit_fragment_aperture_radial" = "Radial";
 "lsq_edit_fragment_aperture_linear" = "Linear";
 
+"lsq_edit_entry_hdr" = "HDR";
+
 // sticker
 "lsq_sticker_cate_default" = "Stickers";
 "lsq_sticker_cate_watermark" = "Wmk";
@@ -177,7 +179,7 @@
 // FilterGroup
 "lsq_filter_group_Leica" = "Leica";
 "lsq_filter_group_Lomo" = "LOMO";
-"lsq_filter_group_Food" = "Food";
+"lsq_filter_group_Food" = "Retro";
 "lsq_filter_group_Enhance" = "Enhance";
 "lsq_filter_group_Glare" = "Lights";
 "lsq_filter_group_Beauty" = "Portrait";

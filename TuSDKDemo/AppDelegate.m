@@ -38,7 +38,7 @@
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
     
     // 初始化SDK (请前往 http://tusdk.com 申请秘钥)
-    [TuSDK initSdkWithAppKey:@"7e546bd3a7889a98-04-ewdjn1"];
+    [TuSDK initSdkWithAppKey:@"3922c8d612450e54-04-ewdjn1"];
     // 需要指定开发模式 需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
     // [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1" devType:@"debug"];
     

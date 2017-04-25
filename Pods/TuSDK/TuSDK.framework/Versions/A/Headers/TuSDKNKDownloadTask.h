@@ -36,7 +36,7 @@
 /**
  *  下载任务委托
  */
-@property (nonatomic, assign) id<TuSDKNKDownloadTaskDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKNKDownloadTaskDelegate> delegate;
 /**
  *  初始化 下载任务
  *

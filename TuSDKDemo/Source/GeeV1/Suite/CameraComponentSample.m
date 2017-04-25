@@ -146,7 +146,8 @@
     opt.saveToAlbum = YES;
     
     // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
-    // opt.saveToTemp = NO;
+    opt.enableFilterHistory = YES;
+//    saveToTemp = NO;
     
     // 保存到系统相册的相册名称
     // opt.saveToAlbumName = @"TuSdk";
@@ -174,11 +175,20 @@
     
     // 是否允许音量键拍照 (默认关闭)
     opt.enableCaptureWithVolumeKeys = YES;
+
+    // 设置是否开启焦距调节， 设置 focalDistanceScale 之前请确保开启了焦距调节
+    opt.enableFocalDistance = YES;
+    
+    // 相机显示焦距 (默认为 1，最大不超过硬件支持的最大值，当小于 1 时，取 1，若不需要太高的倍数，用户可自行控制)
+    opt.focalDistanceScale = 1.0;
+
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
     controller.delegate = self;
     [self.controller presentModalNavigationController:controller animated:YES];
+    
+
 }
 
 /**

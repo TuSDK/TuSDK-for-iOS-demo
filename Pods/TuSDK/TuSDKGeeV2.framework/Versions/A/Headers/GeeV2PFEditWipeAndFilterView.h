@@ -60,7 +60,7 @@
 /**
  *  笔刷尺寸配置栏视图委托
  */
-@property (nonatomic, assign) id<GeeV2PFEditWipeAndFilterConfigBarDelegate> delegate;
+@property (nonatomic, weak) id<GeeV2PFEditWipeAndFilterConfigBarDelegate> delegate;
 
 /**
  *  小尺寸按钮

@@ -60,7 +60,7 @@
 /**
  *  滤镜贴纸协议
  */
-@protocol TuSDKFilterStickerProtocol <NSObject>
+@protocol TuSDKFilterStickerProtocol <TuSDKFilterFacePositionProtocol>
 /**
  *  更新贴纸数据
  *

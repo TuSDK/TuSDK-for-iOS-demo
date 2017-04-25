@@ -58,12 +58,12 @@
 /**
  *  图片编辑入口控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditEntryControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditEntryControllerDelegate> delegate;
 
 /**
  *  贴纸视图委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
+@property (nonatomic, weak) id<TuSDKPFStickerViewDelegate> stickerViewDelegate;
 
 #pragma mark - config
 /**

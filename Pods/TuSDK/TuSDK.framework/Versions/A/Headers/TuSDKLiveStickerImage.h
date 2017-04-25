@@ -8,6 +8,15 @@
 
 #import "TuSDKPFSticker.h"
 
+@interface TuSDKStickerAnimationItem : NSObject
+
+- (instancetype)initWithTextueID:(GLuint)textureID imageWidth:(NSUInteger)imageWidth;
+
+@property (nonatomic, readonly) NSUInteger imageWidth;
+
+@property (nonatomic, readonly) GLuint textureID;
+@end
+
 /**
  *  处理智能贴纸素材，转为 GL Texture
  */
@@ -53,6 +62,11 @@
  *  获取当前 Texture ID
  */
 - (GLuint)getCurrentTextureID;
+
+/**
+ *  获取当前 Texture
+ */
+- (TuSDKStickerAnimationItem *)getCurrentTexture;
 
 /**
  *  重置

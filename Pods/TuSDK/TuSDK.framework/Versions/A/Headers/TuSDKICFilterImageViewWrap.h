@@ -59,3 +59,14 @@
  */
 @property (nonatomic, readonly) TuSDKGPUSmartView *view;
 @end
+
+#pragma mark - TuSDKICFilterMovieViewWrap
+/**
+ *  视频显示视图包装
+ */
+@interface TuSDKICFilterMovieViewWrap : UIView
+/**
+ *  GPU视图
+ */
+@property (nonatomic, readonly) GPUImageView *view;
+@end

@@ -42,5 +42,5 @@
 /**
  *  在线贴纸选择控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerOnlineControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFStickerOnlineControllerDelegate> delegate;
 @end

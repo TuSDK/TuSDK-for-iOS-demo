@@ -60,7 +60,7 @@
 /**
  *  本地贴纸选择控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFStickerLocalControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFStickerLocalControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFStickerLocalView, 需要继承 TuSDKPFStickerLocalView)

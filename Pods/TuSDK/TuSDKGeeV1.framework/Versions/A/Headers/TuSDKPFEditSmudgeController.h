@@ -52,7 +52,7 @@
 /**
  *  涂抹编辑控制器委托
  */
-@property (nonatomic, assign) id<TuSDKPFEditSmudgeControllerDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKPFEditSmudgeControllerDelegate> delegate;
 
 /**
  *  视图类 (默认:TuSDKPFEditSmudgeView, 需要继承 TuSDKPFEditSmudgeView)

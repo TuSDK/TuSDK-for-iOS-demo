@@ -334,7 +334,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  滤镜分组视图委托
  */
-@property (nonatomic, assign) id<TuSDKCPGroupFilterGroupCellDelegate> delegate;
+@property (nonatomic, weak) id<TuSDKCPGroupFilterGroupCellDelegate> delegate;
 
 /**
  *  是否隐藏删除标识

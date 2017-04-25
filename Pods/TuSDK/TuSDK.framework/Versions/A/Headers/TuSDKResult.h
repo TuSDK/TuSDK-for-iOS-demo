@@ -88,6 +88,11 @@
 @property (nonatomic, retain) NSArray *stickers;
 
 /**
+ *  输出排序索引
+ */
+@property (nonatomic,assign) NSInteger outIndex;
+
+/**
  *  SDK处理结果
  *
  *  @return SDK处理结果
@@ -117,4 +122,6 @@
  *  @return 临时文件路径
  */
 - (NSString *)buildTempFile;
+
+
 @end
