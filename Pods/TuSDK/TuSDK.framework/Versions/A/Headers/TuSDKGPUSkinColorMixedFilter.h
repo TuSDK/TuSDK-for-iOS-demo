@@ -21,6 +21,6 @@
 /** 混合 (设值范围0.0-1.0，原图默认值为0.0，越大越亮白) */
 @property(readwrite, nonatomic) CGFloat mix;
 
-- (void)setEnableSkinColorDetectionUniform:(CGFloat)newValue;
+- (void)setEnableSkinColorDetection:(CGFloat)newValue;
 
 @end

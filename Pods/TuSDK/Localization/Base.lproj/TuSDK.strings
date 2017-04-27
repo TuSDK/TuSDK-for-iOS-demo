@@ -178,8 +178,8 @@
 
 // FilterGroup
 "lsq_filter_group_Leica" = "莱卡";
-"lsq_filter_group_Lomo" = "LOMO";
-"lsq_filter_group_Food" = "Retro";
+"lsq_filter_group_Lomo" = "鲜艳";
+"lsq_filter_group_Food" = "叙旧";
 "lsq_filter_group_Enhance" = "增强";
 "lsq_filter_group_Glare" = "光效";
 "lsq_filter_group_Beauty" = "人像";
@@ -190,7 +190,7 @@
 "lsq_filter_remove_title" = "删除滤镜";
 "lsq_filter_remove_msg%@" = "您是否需要删除滤镜「%@」？";
 "lsq_filter_Normal" = "无效果";
-"lsq_filter_Lomo" = "LOMO";
+"lsq_filter_Lomo" = "鲜艳";
 "lsq_filter_Noir" = "黑白";
 "lsq_filter_Abao" = "阿宝";
 "lsq_filter_Instant" = "鲜艳";
