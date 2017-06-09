@@ -71,6 +71,15 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera filterChanged:(TuSDKFilterWrap *)newFilter;
 
 /**
+ *  获取拍摄图片 (如需操作UI线程， 请检查当前线程是否为主线程)
+ *
+ *  @param camera 相机对象
+ *  @param result 获取的结果
+ *  @param error  错误信息
+ */
+- (void)onVideoCamera:(id<TuSDKVideoCameraInterface>)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
+
+/**
  *  原始帧采样缓冲数据
  *
  *  @param camera       camera对象
@@ -227,9 +236,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  相机支持的最大值 (只读属性)
  */
 @property (nonatomic, readonly, assign) CGFloat supportMaxFocalDistanceScale;
-
-
-
 
 /**
  *  视频相机前置或后置
@@ -408,9 +414,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  是否显示辅助线 (默认: false)
  */
 @property (nonatomic) BOOL displayGuideLine;
-
-
-
 
 /**
  *  相机状态改变

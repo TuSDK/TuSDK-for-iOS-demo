@@ -45,13 +45,13 @@
             ]
         },
         {
-            "file":"lsq_filter_Lomo_2.gfilter",
-            "name":"lsq_filter_group_Lomo",
+            "file":"lsq_filter_GailyColoured_2.gfilter",
+            "name":"lsq_filter_group_GailyColoured",
             "default_filter_id":24,
             "filters":[
                 {
                     "id":21,
-                    "name":"lsq_filter_Lomo",
+                    "name":"lsq_filter_Brightly",
                     "color":"#0091FF",
                     "args":{
                         "mixied":0.6
@@ -92,8 +92,8 @@
             ]
         },
         {
-            "file":"lsq_filter_Food_3.gfilter",
-            "name":"lsq_filter_group_Food",
+            "file":"lsq_filter_Oldtimes_3.gfilter",
+            "name":"lsq_filter_group_Oldtimes",
             "default_filter_id":32,
             "filters":[
                 {
@@ -258,7 +258,8 @@
                     "name":"lsq_filter_SkinNature",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.3
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -266,8 +267,8 @@
                     "name":"lsq_filter_SkinPink",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.5,
-                        "mixied":0.3
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -276,7 +277,7 @@
                     "color":"#E9807E",
                     "args":{
                         "smoothing":0.6,
-                        "mixied":0.4
+                        "mixied":0.8
                     }
                 },
                 {
@@ -284,8 +285,8 @@
                     "name":"lsq_filter_SkinNoir",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.5,
-                        "mixied":1
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -293,8 +294,8 @@
                     "name":"lsq_filter_SkinRuddy",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.45,
-                        "mixied":0.25
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 },
                 {
@@ -303,7 +304,7 @@
                     "color":"#E9807E",
                     "args":{
                         "smoothing":0.6,
-                        "mixied":0.3
+                        "mixied":0.8
                     }
                 },
                 {
@@ -311,8 +312,8 @@
                     "name":"lsq_filter_SkinPowder",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.45,
-                        "mixied":0.4
+                        "smoothing":0.6,
+                        "mixied":0.8
                     }
                 }
             ]
@@ -532,5 +533,5 @@
             ]
         }
     ],
-    "master":"v367QubsRWoI3ZS7PgQ3h4YNxijIS7gKE5dva4Be7G76d9i0Uyq7RxwNv+3Zd+u+MsqaT26XsPRaiWNESOW5NHnSfDq\/6XfKxtBWg+7C\/J0XoRB8mnt\/gwc3lUV2fStyN7\/1VsbgjJwVOH+7Bc3Zvp6lVeCmqLJm\/LfHMXXsq2N+kMlrhj96kG+GsbkjL1636NYavNoZtdK1VSk9YTlMj+PWDMe97TmkKFUsi3ilNgRlhZGFEFnAR5JBMCVXPRzi5ECf3E2XrD4CgG4dd4Rhm5HhBNAHNIOIC5joOWRxwl1oXcGA6rIkGPn9Gy998yPZJEBCgC7CZHSpaAWIpCB+wp65ylgnW8fozhe74JPVl36m\/GtX3AHi5KV2ZxOwlczqMmUOnuV47O3f+JS6\/fzVLjeuuzMT\/g5Ka8o1Mz4HOEIZDxg9PjN\/R9CR6NETcUoRJNxyARCPntJ3OoI3Xb2epzF3FhfFe7ict9EsveHy+yFJMckmjvrPPRe\/hLqw1VZiuf2sd\/b0\/sVFMg4LtU0Xrb550Q\/8xYhXc06xRsxG\/D6VszLUNKDAsOFVKROkftDGXNVdLZAIOIRlc+rG346lYDa2pdGLt\/TVSxnJgLWu4QAFPl\/vAVt0gmzsWuWDge3ivRbVGr5yPkrA1+\/sR\/cPHHRGc1vqgict3V9P74Bpf5m0HENDM3kWdWg7y3bExX2ZfxYvjFgsKIy5spi72nJi2hLRcmE+lQ3\/Xzw52EfSyqsGDv2nGnFFLlHeJxzNxYPtfJrPo3CJx3j8KlQVF2wlUAr+AL25RGsDshfPQs4yJzRydNWQKpMf1p6qY9EznaZJwJik4fGh4Z055ihBcolQ9JnVotbfMdi32RoDV5zALbfdc5IFJn73SJq2QKsgPe9EpNsUePW0agyZL4MqIgaqi522nW50jHpAI0\/JZMabD7EVZwOrPykPUBqnkFU1mE4jRwADcm\/h0QknQxNiM7uJDQWNKpNo3IqN26VllQYuc3EyOcGJpJHggBwhQDMgKoNncZz+KKGK9smQOP29xLQ25l5EU9oB\/lvCPyVcTjPNCe5S1+hkXgPjWwfxupsowAMoDe3J7wMcv6ZWn7iaRz7wMgWpEDnhogQuP\/nfy+SsXpNMBMYeaYKwAyNAD5YiKSW304N1lOP5DQVFCxQHAw1ETPhVy1I4qpYZpmGhPq5OAKm1Dz53pZSNUNlB3BO4RpwnM0B1uWPTaDWbVuhLyDHbYw==7D2BE42B2E"
+    "master":"AIfHfI2UE9kro+M+qLZUfpEMFXcTZGojg3YYET4mRddxMrSh7x0MO9V8kMx+AMeNaXCKyr67fhlZjAUDs+CFCrNpkgRzh+yzEcn2JLB8t3QyKj0xWiHmq0JQCPKI+EnHamDrd3pSkrs8hIRTdQPk\/Kba41k4SOemcWCLVop\/PARhIirFkns7VckZnWi3BaqcCju2wmNhr+rmI6qpLhICgVQWVGMy5PSZ99Mn975c0dZip3tFAQBvTYUpOpOy\/ezHZkHN1+8ys2a2docjJ2+EtsWatIsGN8NUs0bKZdH+NnFsW6VLiYNtvwvWuu4w+CvBwhME6\/Gy5I6yjDBhFQJSy\/11ufqkwEhbTxQTq0lqcJmup1y7jqVp5+Wi6q70OcX7Ak\/hCngrztKQcInnBntHnjCddF\/Hwqd1Rt6g51hK51XNipcfrtB3P\/siYgJT0gfWvsNH6HQwcA0HckP3hu931+r8WmRGQhhxvp2\/MI9wYoYTCHBpZ8lT2EYYMpI5h46Vm0DHIvN8UI\/pv3lKbtDY5g8e5Xf9GxAss79N9\/qyc+ePjuhvAdjXn2YKyxrEw7gSA0JEDwkAL5GM51yOa+ze8SXXyGnALhOiJOyHE3JkRoUffgSFKSf7D8K+PTpKXvVnZulMWuEhqcUhD05vlf58yuTGU0f3D2G+jUIlyloxvrUk4a6qaUOesJYwW3yN6gE3LzQgaJMqgQX01eeL0kbR2LsWK9lLWXQWIto\/OU\/PhqBvHbqny3+gEcojRFvg5Qa3lb3fEsDPjdRgV2FZ9aM6iBS\/y9IDxM0i0GMOGH3pMh0UlM3uwjr3oA0mdPuXeCtFfe5GSbbL5+MvXFZ0oGAR35OyjF8jf52w27F7oy83t+Wsyh5NsYaddncj2+u7kUNfAZNbaZ+kF5LOUrWLU+DeH5XtXvWrRpFbVcatj45ewOBh8j7cIIFC\/ftD+Hoavwq3hA6MzQv+Qx+Dt2eukYtweeLg\/uLKbsp71m58y+e7YhCWHUC8fwuQ7pnjbFgFmPupRrU3lOE\/wmgFB+iUqcDk+VyduKEC4qBdXqg0xcO94K0ZfU0R8fE\/8sih92OWI9iECNOSMbmPGKcvO6C8snMBwL6oZMkNg4xV9cBqq4n9uG2fvvvBod3LEDgHz3IuPVv5Wg4E5pcGCxZY0Pmt2Pk7UTbT7pjDrjLQOZ1Lu6ixmoDNTz2cJIraB0TJtEf1QKwxnWDoBW6GFexyi8WHj4Z\/hQ==0BD284A32F"
 }

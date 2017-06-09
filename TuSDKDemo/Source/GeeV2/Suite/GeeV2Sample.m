@@ -95,6 +95,8 @@
     
     // 设置是否开启焦距调节， 设置 focalDistanceScale 之前请确保开启了焦距调节
     _albumComponent.options.cameraOptions.enableFocalDistance = YES;
+    // 开启滤镜配置选项
+    _albumComponent.options.cameraOptions.enableFilterConfig = YES;
     // 相机显示焦距 (默认为 1，最大不超过硬件支持的最大值，当小于 1 时，取 1，若不需要太高的倍数，用户可自行控制)
     _albumComponent.options.cameraOptions.focalDistanceScale = 1.0;
     

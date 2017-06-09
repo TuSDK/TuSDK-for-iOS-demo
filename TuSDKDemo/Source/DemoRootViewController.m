@@ -16,22 +16,11 @@
 #pragma mark - DemoRootViewController
 @interface DemoRootViewController ()<TuSDKFilterManagerDelegate>
 {
-    // 顶部Logo
-    UIButton *mTopLogo;
-    
-    // 相机组件按钮
-    UIButton *mCameraButton;
-    // 编辑器组件按钮
-    UIButton *mEditorButton;
-    // 组件列表按钮
-    UIButton *mComponentListButton;
-    
     // 相机组件
     CameraComponentSample *cameraComponentSample;
     
     // 照片美化组件
     GeeV2Sample *geeV2Sample;
-    
 }
 @end
 
@@ -85,87 +74,135 @@
     [TuSDK checkManagerWithDelegate:self];
     
     NSLog(@"TuSDK.framework 的版本号 : %@",lsqSDKVersion);
+    
     NSLog(@"TuSDKGeeV1.framework 的版本号 : %@",lsqGeeVersion);
+    
     NSLog(@"TuSDKGeeV2.framework 的版本号 : %@",lsqGeeV2Version);
 }
 
 - (void)lsqInitView
 {
-    CGFloat navButtonHeight = 64;
-    
     CGRect rect = self.view.bounds;
     
-    mTopLogo = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height - navButtonHeight * 3)];
-    mTopLogo.enabled = NO;
-    mTopLogo.adjustsImageWhenDisabled = NO;
-    mTopLogo.contentMode = UIViewContentModeCenter;
-    [mTopLogo setBackgroundImage:[UIImage imageNamed:@"top_background.jpg"] forState:UIControlStateNormal];
-    [mTopLogo setImage:[UIImage imageNamed:@"top_logo"] forState:UIControlStateNormal];
-    [self.view addSubview:mTopLogo];
+    // 背景图
+    UIImageView *backgroundImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, rect.size.width, 1334.0/750.0*rect.size.width)];
+    backgroundImage.center = self.view.center;
+    backgroundImage.image = [UIImage imageNamed:@"homepage_bg"];
+    backgroundImage.userInteractionEnabled = YES;
+    [self.view addSubview:backgroundImage];
     
-    // 导航按钮
-    mCameraButton = [self buildEntryButton:@"component_camera"
-                                      icon:@"icon_camera"
-                                     frame:CGRectMake(0, [mTopLogo lsqGetBottomY], rect.size.width, navButtonHeight)];
+    CGFloat btnInterval = 8;
+    CGFloat btnHeight = 68;
+    CGFloat btnWidth = backgroundImage.lsqGetSizeWidth - 32;
+    CGFloat centerY = self.view.lsqGetSizeHeight - 32 - 2.5*btnHeight - 2*btnInterval;
     
-    [mCameraButton setBackgroundImageColor:lsqRGB(255, 85, 52) forState:UIControlStateNormal];
-    [mCameraButton setBackgroundImageColor:lsqRGBA(255, 85, 52, 0.8) forState:UIControlStateHighlighted];
-    [self.view addSubview:mCameraButton];
+    // 相机
+    UIButton *cameraButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, btnWidth, btnHeight)];
+    cameraButton.center = CGPointMake(self.view.lsqGetSizeWidth/2 , centerY);
+    [cameraButton setImage:[UIImage imageNamed:@"homepage_button_normal"] forState:UIControlStateNormal];
+    [cameraButton addTouchUpInsideTarget:self action:@selector(openEffectCamera)];
+    cameraButton.adjustsImageWhenHighlighted = NO;
+    [self.view addSubview:cameraButton];
     
-    mEditorButton = [self buildEntryButton:@"component_editor"
-                                      icon:@"icon_editor"
-                                     frame:CGRectMake(0, [mCameraButton lsqGetBottomY], rect.size.width, navButtonHeight)];
+    UIImageView *cameraButtonIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
+    cameraButtonIcon.center = CGPointMake(36, btnHeight/2);
+    cameraButtonIcon.image = [UIImage imageNamed:@"homepage_icon_camera"];
+    cameraButtonIcon.contentMode = UIViewContentModeScaleAspectFit;
+    [cameraButton addSubview:cameraButtonIcon];
     
-    [mEditorButton setBackgroundImageColor:lsqRGB(230, 76, 46) forState:UIControlStateNormal];
-    [mEditorButton setBackgroundImageColor:lsqRGBA(230, 76, 46, 0.8) forState:UIControlStateHighlighted];
-    [self.view addSubview:mEditorButton];
+    UIImageView *cameraButtonLabel = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    cameraButtonLabel.center = CGPointMake(btnWidth - 24, btnHeight/2);
+    cameraButtonLabel.image = [UIImage imageNamed:@"homepage_icon_next"];
+    [cameraButton addSubview:cameraButtonLabel];
     
-    mComponentListButton = [self buildEntryButton:@"component_list"
-                                             icon:@"icon_component_list"
-                                            frame:CGRectMake(0, [mEditorButton lsqGetBottomY], rect.size.width, navButtonHeight)];
-    [mComponentListButton setBackgroundImageColor:lsqRGB(204, 68, 41) forState:UIControlStateNormal];
-    [mComponentListButton setBackgroundImageColor:lsqRGBA(204, 68, 41, 0.8) forState:UIControlStateHighlighted];
-    [self.view addSubview:mComponentListButton];
+    UILabel *cameraButtonText = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 150, 30)];
+    cameraButtonText.center = CGPointMake(68+75, btnHeight/2);
+    cameraButtonText.text = NSLocalizedString(@"demo_component_camera", @"特效相机");
+    cameraButtonText.textColor = [UIColor lsqClorWithHex:@"#553213"];
+    cameraButtonText.font = [UIFont systemFontOfSize:19];
+    [cameraButton addSubview:cameraButtonText];
+    
+    centerY = centerY + btnHeight + btnInterval;
+    
+    // 图片编辑
+    UIButton *editorButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, btnWidth, btnHeight)];
+    editorButton.center = CGPointMake(self.view.lsqGetSizeWidth/2, centerY);
+    [editorButton setImage:[UIImage imageNamed:@"homepage_button_normal"] forState:UIControlStateNormal];
+    editorButton.adjustsImageWhenHighlighted = NO;
+    [editorButton addTouchUpInsideTarget:self action:@selector(openImageEditor)];
+    editorButton.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:editorButton];
+    
+    UIImageView *editorButtonIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
+    editorButtonIcon.center = CGPointMake(36, btnHeight/2);
+    editorButtonIcon.image = [UIImage imageNamed:@"homepage_icon_beauty"];
+    [editorButton addSubview:editorButtonIcon];
+    
+    UIImageView *editorButtonLabel = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    editorButtonLabel.center = CGPointMake(btnWidth - 24, btnHeight/2);
+    editorButtonLabel.image = [UIImage imageNamed:@"homepage_icon_next"];
+    [editorButton addSubview:editorButtonLabel];
+    
+    UILabel *editorButtonText = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 150, 30)];
+    editorButtonText.center = CGPointMake(68+75, btnHeight/2);
+    editorButtonText.text = NSLocalizedString(@"demo_component_editor" , @"图片编辑");
+    editorButtonText.textColor = [UIColor lsqClorWithHex:@"#553213"];
+    editorButtonText.font = [UIFont systemFontOfSize:19];
+    [editorButton addSubview:editorButtonText];
+    
+    centerY = centerY + btnHeight + btnInterval;
+    
+    // 功能列表
+    UIButton *componentListButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, btnWidth, btnHeight)];
+    componentListButton.center = CGPointMake(self.view.lsqGetSizeWidth/2, centerY);
+    [componentListButton setImage:[UIImage imageNamed:@"homepage_button_normal"] forState:UIControlStateNormal];
+    componentListButton.adjustsImageWhenHighlighted = NO;
+    [componentListButton addTouchUpInsideTarget: self action:@selector(openComponentList)];
+    componentListButton.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:componentListButton];
+    
+    UIImageView *ComponentListButtonIcon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
+    ComponentListButtonIcon.center = CGPointMake(36, btnHeight/2);
+    ComponentListButtonIcon.image = [UIImage imageNamed:@"homepage_icon_tools"];
+    [componentListButton addSubview:ComponentListButtonIcon];
+    
+    UIImageView *ComponentListButtonLabel = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    ComponentListButtonLabel.center = CGPointMake(btnWidth - 24, btnHeight/2);
+    ComponentListButtonLabel.image = [UIImage imageNamed:@"homepage_icon_next"];
+    [componentListButton addSubview:ComponentListButtonLabel];
+    
+    UILabel *ComponentListButtonText = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 150, 30)];
+    ComponentListButtonText.center = CGPointMake(68+75, btnHeight/2);
+    ComponentListButtonText.text = NSLocalizedString(@"demo_component_list" , @"功能列表");
+    ComponentListButtonText.textColor = [UIColor lsqClorWithHex:@"#553213"];
+    ComponentListButtonText.font = [UIFont systemFontOfSize:19];
+    [componentListButton addSubview:ComponentListButtonText];
 }
 
-- (UIButton *)buildEntryButton:(NSString *)localeKey icon:(NSString *)iconName frame:(CGRect)frame
+#pragma mark - 点击事件
+-(void)openEffectCamera;
 {
-    UIButton *btn = [[UIButton alloc] initWithFrame:frame];
-    [btn setImage:[UIImage imageNamed:iconName] forState:UIControlStateNormal];
-    [btn setTitle:NSLocalizedString(localeKey, @"") forState:UIControlStateNormal];
-    [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, 16, 0, 0)];
-    [btn setAdjustsImageWhenHighlighted:NO];
-    [btn setBackgroundColor:[UIColor blackColor]];
-    [btn addTouchUpInsideTarget:self action:@selector(onEntryButtonClicked:)];
-    return btn;
+    if (cameraComponentSample == nil)
+    {
+        cameraComponentSample = [CameraComponentSample sample];
+    }
+    [cameraComponentSample showSampleWithController:self];
 }
 
-#pragma mark - click handler
-- (void)onEntryButtonClicked:(UIButton *)btn
+-(void)openImageEditor;
 {
-    if (btn == mCameraButton)
+    if (geeV2Sample == nil)
     {
-        if (cameraComponentSample == nil)
-        {
-            cameraComponentSample = [CameraComponentSample sample];
-        }
-        [cameraComponentSample showSampleWithController:self];
+        geeV2Sample = [GeeV2Sample sample];
     }
-    else if(btn == mEditorButton)
-    {
-        if (geeV2Sample == nil)
-        {
-            geeV2Sample = [GeeV2Sample sample];
-        }
-                                     
-        [geeV2Sample showSampleWithController:self];
-    }
-    else if(btn == mComponentListButton)
-    {
-        DemoComponentListController *controller = [[DemoComponentListController alloc] init];
-        
-        [self.navigationController pushViewController:controller animated:YES];
-    }
+    [geeV2Sample showSampleWithController:self];
+}
+
+-(void)openComponentList;
+{
+    DemoComponentListController *controller = [[DemoComponentListController alloc] init];
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 #pragma mark - TuSDKFilterManagerDelegate

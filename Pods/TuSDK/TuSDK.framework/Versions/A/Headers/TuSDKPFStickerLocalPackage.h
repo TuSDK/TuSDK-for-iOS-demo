@@ -167,11 +167,19 @@
 - (NSArray *)categoriesWithCategories:(NSArray *)categories;
 
 /**
- *  获取智能贴纸组列表
- *
- *  @return 贴纸组列表
+ 获取所有的动态贴纸组列表
+
+ @return 贴纸组列表
  */
 - (NSArray<TuSDKPFStickerGroup *> *)getSmartStickerGroups;
+
+/**
+ 获取动态贴纸组列表
+
+ @param requireFaceFeature 是否包含依赖人脸特征的贴纸
+ @return 贴纸组列表
+ */
+- (NSArray<TuSDKPFStickerGroup *> *)getSmartStickerGroupsWithFaceFeature:(BOOL)requireFaceFeature;
 
 /**
  *  获取所有json数据

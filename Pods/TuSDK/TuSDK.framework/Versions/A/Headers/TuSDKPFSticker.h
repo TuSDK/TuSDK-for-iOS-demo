@@ -80,7 +80,23 @@ typedef NS_ENUM(NSUInteger, lsqStickerPositionType)
     /**
      * 中心
      */
-    lsqStickerPosScreenCenter = 105
+    lsqStickerPosScreenCenter = 105,
+    /**
+     * 右对齐居中
+     */
+    lsqStickerPosScreenRightCenter = 106,
+    /**
+     * 左对齐居中
+     */
+    lsqStickerPosScreenLeftCenter = 107,
+    /**
+     * 顶部对齐居中
+     */
+    lsqStickerPosScreenTopCenter = 108,
+    /**
+     * 右下角对齐居中
+     */
+    lsqStickerPosScreenBottomCenter = 109,
 };
 
 /**
@@ -109,6 +125,11 @@ typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
  *  贴纸模型尺寸
  */
 @property (nonatomic, readonly) CGSize modelSize;
+
+/**
+ 设计屏幕尺寸
+ */
+@property (nonatomic, readonly) CGSize designScreenSize;
 
 /**
  *  贴纸模型类型
@@ -289,4 +310,11 @@ typedef NS_ENUM(NSInteger, lsqStickerType)
  *  @return 贴纸文字
  */
 - (TuSDKPFStickerText *)stickerTextWithId:(uint64_t)textId;
+
+/**
+ 动态贴纸是否依赖人脸特征
+ 
+ @return
+ */
+- (BOOL)requireFaceFeature;
 @end

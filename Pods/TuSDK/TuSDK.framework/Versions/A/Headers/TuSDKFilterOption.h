@@ -159,3 +159,14 @@
  */
 - (NSString *)thumbKey;
 @end
+
+
+
+#pragma mark - TuSDKSkinFilterOption
+
+/**
+ *  美颜滤镜选项
+ */
+@interface TuSDKSkinFilterOption : TuSDKFilterOption
+
+@end

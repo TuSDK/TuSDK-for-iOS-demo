@@ -61,6 +61,10 @@
  */
 - (void)removeAllStickers;
 
+/**
+ *  从贴纸的第一帧开始贴纸动画
+ */
+- (void)startStickersFromFirstFrame;
 
 /**
  获取当前使用的贴纸数据

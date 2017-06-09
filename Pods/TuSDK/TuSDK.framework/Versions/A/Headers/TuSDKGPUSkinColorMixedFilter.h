@@ -8,19 +8,23 @@
 
 
 #import "TuSDKFilterParameter.h"
-#import "TuSDKGPUImageThreeInputFilter.h"
+#import "TuSDKGPUImageTwoInputFilter.h"
 
 /**
  *  肤色调整，在美颜滤镜中使用
  */
-@interface TuSDKGPUSkinColorMixedFilter : TuSDKGPUImageThreeInputFilter <TuSDKFilterStickerProtocol>
+@interface TuSDKGPUSkinColorMixedFilter : TuSDKGPUImageTwoInputFilter <TuSDKFilterStickerProtocol>
 
 /** The strength of the sharpening, from 0.0 on up, with a default of 1.0 */
 @property(readwrite, nonatomic) CGFloat intensity;
 
-/** 混合 (设值范围0.0-1.0，原图默认值为0.0，越大越亮白) */
-@property(readwrite, nonatomic) CGFloat mix;
+/** 亮部细节 取值范围 [0-1] 值越大细节越少 默认0.5 */
+@property (nonatomic) CGFloat lightLevel;
 
+/** 细节保留 取值范围 [0-1] 值越大细节越多 默认0.5 */
+@property (nonatomic) CGFloat detailLevel;
+
+/** 开启皮肤检测 0关闭， 大于0开启*/
 - (void)setEnableSkinColorDetection:(CGFloat)newValue;
 
 @end

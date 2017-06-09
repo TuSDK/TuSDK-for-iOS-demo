@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreMedia/CoreMedia.h>
 
 @class TuSDKFilterParameter;
 
@@ -61,6 +62,7 @@
  *  滤镜贴纸协议
  */
 @protocol TuSDKFilterStickerProtocol <TuSDKFilterFacePositionProtocol>
+
 /**
  *  更新贴纸数据
  *
@@ -68,7 +70,34 @@
  */
 - (void)setLiveStickers:(NSArray *)stickers;
 
+/**
+ 设置显示区域和视图比例
+ 
+ @param displayRect 显示区域
+ @param ratio 画面比例
+ */
+- (void)setDisplayRect:(CGRect)displayRect withRatio:(CGFloat)ratio;
+
+/**
+ 设置是否显示贴纸
+
+ @param isVisibility 是否显示贴纸，YES：显示贴纸   NO：不显示
+ */
+- (void)setStickerVisibility:(BOOL)isVisibility;
+
+/**
+ 设置是否根据计时时间自动播放贴纸  注：视频剪辑中贴纸时间使用视频帧时间设置贴纸帧的index，录制中贴纸时间根据定时器时间自动播放
+
+ @param isAutoplay 是否根据计时时间自动播放贴纸，若不调用该方法，默认值为 YES
+ */
+- (void)setAutoplayStickers:(BOOL)isAutoplay;
+
+/**
+ 设置贴纸显示时间，当选择了某一段视频时，需要传入此参数进行贴纸帧和视频帧时间的校对
+ */
+- (void)setStickerShowTime:(CMTime)stickerShowTime;
 @end
+
 #pragma mark - TuSDKFilterArg
 /**
  *  滤镜参数

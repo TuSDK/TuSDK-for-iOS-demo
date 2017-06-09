@@ -114,7 +114,6 @@
  */
 @property (nonatomic, readonly, assign) CGFloat supportMaxFocalDistanceScale;
 
-
 /**
  *  初始化相机
  *

@@ -32,7 +32,15 @@
 - (void)appendSticker:(TuSDKPFSticker *)sticker;
 
 /**
+ *  添加贴纸
+ *
+ *  @param stickerImage 贴纸图片 (PNG格式)
+ */
+- (void)appendStickerImage:(UIImage *) stickerImage;
+
+/**
  *  编辑图片完成按钮动作
  */
 - (void)onImageCompleteAtion;
+
 @end

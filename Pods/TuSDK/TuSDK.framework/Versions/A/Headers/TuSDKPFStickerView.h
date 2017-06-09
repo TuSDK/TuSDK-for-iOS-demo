@@ -181,6 +181,14 @@
 - (void)appenSticker:(TuSDKPFSticker *)sticker;
 
 /**
+ *  添加贴纸
+ *
+ *  @param stickerImage 贴纸图片 (PNG格式)
+ */
+- (void)appendStickerImage:(UIImage *) stickerImage;
+
+
+/**
  *  获取贴纸处理结果
  *
  *  @param regionRect 图片选区范围

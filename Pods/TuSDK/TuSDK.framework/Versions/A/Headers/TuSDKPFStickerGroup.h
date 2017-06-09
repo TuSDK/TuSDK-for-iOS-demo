@@ -89,6 +89,11 @@
  */
 - (TuSDKPFSticker *)stickerWithId:(uint64_t)stickerId;
 
+/**
+ 动态贴纸是否依赖人脸特征
 
+ @return
+ */
+- (BOOL)requireFaceFeature;
 
 @end

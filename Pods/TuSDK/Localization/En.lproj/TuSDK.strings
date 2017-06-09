@@ -184,7 +184,8 @@
 "lsq_filter_group_Glare" = "Lights";
 "lsq_filter_group_Beauty" = "Portrait";
 "lsq_filter_group_Magic" = "Magic";
-
+"lsq_filter_group_GailyColoured" = "Brightly";
+"lsq_filter_group_Oldtimes" = "Oldtimes";
 // Filters
 "lsq_filter_online_title" = "Online Filters";
 "lsq_filter_remove_title" = "Remove Filter";
@@ -203,6 +204,7 @@
 "lsq_filter_Thick" = "Thick";
 "lsq_filter_Fade" = "Fade";
 "lsq_filter_Clear" = "Clear";
+"lsq_filter_Brightly" = "Brightly";
 "lsq_filter_Artistic" = "Artistic";
 "lsq_filter_Brilliant" = "Brilliant";
 "lsq_filter_Harmony" = "Harmony";

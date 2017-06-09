@@ -122,7 +122,7 @@
     opt.autoSelectGroupDefaultFilter = YES;
     
     // 开启滤镜配置选项
-    opt.enableFilterConfig = NO;
+    opt.enableFilterConfig = YES;
     
     // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
     // opt.cameraViewRatio = 0.75f;
@@ -146,8 +146,7 @@
     opt.saveToAlbum = YES;
     
     // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
-    opt.enableFilterHistory = YES;
-//    saveToTemp = NO;
+    // opt.saveToTemp = NO;
     
     // 保存到系统相册的相册名称
     // opt.saveToAlbumName = @"TuSdk";
