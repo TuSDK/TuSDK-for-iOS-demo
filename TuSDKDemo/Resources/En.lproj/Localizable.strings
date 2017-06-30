@@ -10,9 +10,9 @@
 "back" = "Back";
 
 // nav button
-"component_camera" = "Effect Camera";
-"component_editor" = "Photo Editor";
-"component_list" = "Component Kit";
+"demo_component_camera" = "Effect Camera";
+"demo_component_editor" = "Photo Editor";
+"demo_component_list" = "Component Kit";
 
 // sample group
 "sample_group_recommend" = "Recommend";

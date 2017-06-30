@@ -179,14 +179,21 @@
 // FilterGroup
 "lsq_filter_group_Leica" = "萊卡";
 "lsq_filter_group_Lomo" = "LOMO";
-"lsq_filter_group_Food" = "Retro";
+"lsq_filter_group_Food" = "美食";
 "lsq_filter_group_Enhance" = "增強";
 "lsq_filter_group_Glare" = "光效";
 "lsq_filter_group_Beauty" = "人像";
 "lsq_filter_group_Magic" = "魔法色";
 "lsq_filter_group_GailyColoured" = "鲜艳";
 "lsq_filter_group_Oldtimes" = "叙旧";
+"lsq_filter_group_Lip001" = "唇魅";
+"lsq_filter_group_Mottle" = "斑驳";
+"lsq_filter_group_LipGloss" = "唇魅";
 // Filters
+"lsq_filter_Sweet002" = "甜蜜";
+"lsq_filter_Coffee" = "咖啡";
+"lsq_filter_Gold" = "金黄";
+"lsq_filter_Rum" = "朗姆";
 "lsq_filter_online_title" = "在線濾鏡";
 "lsq_filter_remove_title" = "刪除濾鏡";
 "lsq_filter_remove_msg%@" = "您是否需要刪除濾鏡「%@」？";
@@ -248,6 +255,21 @@
 "lsq_filter_Purplemoon" = "紫月亮";
 "lsq_filter_Summersunshine" = "夏日";
 "lsq_filter_Wintersunshine" = "冬日";
+
+// 唇魅，斑驳
+"lsq_filter_group_SnapSeed" = "斑驳";
+"lsq_filter_Time" = "流年";
+"lsq_filter_Recall" = "追忆";
+"lsq_filter_Yellowing" = "泛黄";
+"lsq_filter_Years" = "经年";
+"lsq_filter_Age" = "岁月";
+"lsq_filter_group_Lip001" = "唇魅";
+"lsq_filter_Missing" = "想你色";
+"lsq_filter_Grapefruit" = "西柚色";
+"lsq_filter_RoseCarmine" = "玫红色";
+"lsq_filter_Nude" = "裸色";
+"lsq_filter_Orange" = "橘色";
+"lsq_filter_BabyPink" = "粉色";
 
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "多功能美肤";

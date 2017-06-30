@@ -120,6 +120,7 @@
 #import "TuSDKPFStickerLocalPackage.h"
 #import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKLiveStickerManager.h"
+#import "TuSDKFilterProcessorBase.h"
 #import "TuSDKTKStatistics.h"
 
 #import "TuSDKNKNetworkEngine.h"

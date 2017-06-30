@@ -27,7 +27,8 @@
  根据图片进行初始化
 
  @param image 图片
- @return 
+ 
+ @return TuSDKLiveStickerImage 实例
  */
 + (instancetype)initWithImage:(UIImage *)image;
 
@@ -88,8 +89,6 @@
  *  开始
  */
 - (void)startStickerAnimation;
-
-- (void)onStickerFrameImage;
 
 /**
  从贴纸的某一帧开始播放动画

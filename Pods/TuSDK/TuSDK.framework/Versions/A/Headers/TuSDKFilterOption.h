@@ -148,9 +148,9 @@
 /**
  *  获取语言资源名称
  *
- *
+ *  @return 获取语言资源名称
  */
-- (NSString *)nameKey;
+- (NSString *)getFilterName;
 
 /**
  *  获取预览图名称

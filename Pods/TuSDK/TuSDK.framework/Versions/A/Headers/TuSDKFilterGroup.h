@@ -120,6 +120,13 @@
 - (NSString *)nameKey;
 
 /**
+ *  获取语言资源名称
+ *
+ *  @return 获取语言资源名称
+ */
+- (NSString *)getGroupName;
+
+/**
  *  获取预览图名称
  *
  *  @return thumbKey 获取预览图名称

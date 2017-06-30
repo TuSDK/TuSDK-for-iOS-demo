@@ -179,14 +179,22 @@
 // FilterGroup
 "lsq_filter_group_Leica" = "Leica";
 "lsq_filter_group_Lomo" = "LOMO";
-"lsq_filter_group_Food" = "Retro";
+"lsq_filter_group_Food" = "Food";
 "lsq_filter_group_Enhance" = "Enhance";
 "lsq_filter_group_Glare" = "Lights";
 "lsq_filter_group_Beauty" = "Portrait";
 "lsq_filter_group_Magic" = "Magic";
 "lsq_filter_group_GailyColoured" = "Brightly";
 "lsq_filter_group_Oldtimes" = "Oldtimes";
+"lsq_filter_group_Lip001" = "Lip";
+"lsq_filter_group_Mottle" = "Mottle";
+"lsq_filter_group_LipGloss" = "Lips";
+
 // Filters
+"lsq_filter_Sweet002" = "Sweet";
+"lsq_filter_Coffee" = "Coffee";
+"lsq_filter_Gold" = "Gold";
+"lsq_filter_Rum" = "Rum";
 "lsq_filter_online_title" = "Online Filters";
 "lsq_filter_remove_title" = "Remove Filter";
 "lsq_filter_remove_msg%@" = "Are you sure to remove the filter %@?";
@@ -215,6 +223,21 @@
 "lsq_filter_Leica" = "Leica";
 "lsq_filter_Recent" = "Recent";
 "lsq_filter_Download" = "Download";
+
+// 唇魅，斑驳
+"lsq_filter_group_SnapSeed" = "Mottled";
+"lsq_filter_Time" = "Time";
+"lsq_filter_Recall" = "Recall";
+"lsq_filter_Yellowing" = "Yellowing";
+"lsq_filter_Years" = "Years";
+"lsq_filter_Age" = "Age";
+"lsq_filter_group_Lip001" = "Lips";
+"lsq_filter_Missing" = "Missing";
+"lsq_filter_Grapefruit" = "Grapefruit";
+"lsq_filter_RoseCarmine" = "RoseCarmine";
+"lsq_filter_Nude" = "Nude";
+"lsq_filter_Orange" = "Orange";
+"lsq_filter_BabyPink" = "BabyPink";
 
 // Beauty
 "lsq_filter_SkinNature" = "Nature";
