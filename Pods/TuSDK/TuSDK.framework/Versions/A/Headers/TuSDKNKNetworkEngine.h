@@ -40,6 +40,13 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 + (instancetype) webEngine;
 
 /**
+ * 唯一设备ID
+ *
+ *  @return 唯一设备ID
+ */
++ (NSString *)uniqueDeviceID;
+
+/**
  *  开发者ID
  */
 @property (nonatomic, copy) NSString *developerId;

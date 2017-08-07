@@ -263,7 +263,7 @@
                     "name":"lsq_filter_SkinNature",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -272,7 +272,7 @@
                     "name":"lsq_filter_SkinPink",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -281,7 +281,7 @@
                     "name":"lsq_filter_SkinJelly",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -290,7 +290,7 @@
                     "name":"lsq_filter_SkinNoir",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -299,7 +299,7 @@
                     "name":"lsq_filter_SkinRuddy",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -308,7 +308,7 @@
                     "name":"lsq_filter_SkinSugar",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 },
@@ -317,7 +317,7 @@
                     "name":"lsq_filter_SkinPowder",
                     "color":"#E9807E",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.7,
                         "mixied":0.8
                     }
                 }
@@ -442,7 +442,7 @@
                     "name":"lsq_filter_Missing",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 },
@@ -451,7 +451,7 @@
                     "name":"lsq_filter_Grapefruit",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 },
@@ -460,7 +460,7 @@
                     "name":"lsq_filter_RoseCarmine",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 },
@@ -469,7 +469,7 @@
                     "name":"lsq_filter_Nude",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 },
@@ -478,7 +478,7 @@
                     "name":"lsq_filter_Orange",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 },
@@ -487,7 +487,7 @@
                     "name":"lsq_filter_BabyPink",
                     "color":"#fe7d99",
                     "args":{
-                        "smoothing":0.6,
+                        "smoothing":0.8,
                         "mixied":1
                     }
                 }
@@ -509,6 +509,36 @@
         }
     ],
     "stickerGroups":[
+        {
+            "file":"lsq_sticker_3_250.gsce",
+            "name":"\u5fc3\u60c5\u5370\u8c61",
+            "stickers":[
+                {
+                    "id":1566
+                },
+                {
+                    "id":1567
+                },
+                {
+                    "id":1568
+                },
+                {
+                    "id":1569
+                },
+                {
+                    "id":1570
+                },
+                {
+                    "id":1571
+                },
+                {
+                    "id":1572
+                },
+                {
+                    "id":1573
+                }
+            ]
+        },
         {
             "file":"lsq_sticker_1_538.gsce",
             "name":"\u602a\u5496\u8425\u57304",
@@ -536,36 +566,6 @@
                 },
                 {
                     "id":3706
-                }
-            ]
-        },
-        {
-            "file":"lsq_sticker_3_487.gsce",
-            "name":"\u5012\u5f71\u5e74\u534e",
-            "stickers":[
-                {
-                    "id":3362
-                },
-                {
-                    "id":8419
-                },
-                {
-                    "id":8420
-                },
-                {
-                    "id":8421
-                },
-                {
-                    "id":8422
-                },
-                {
-                    "id":8423
-                },
-                {
-                    "id":8424
-                },
-                {
-                    "id":8425
                 }
             ]
         },
@@ -658,40 +658,40 @@
             "name":"\u6d82\u56fe",
             "stickers":[
                 {
-                    "id":10100
-                },
-                {
-                    "id":10101
-                },
-                {
-                    "id":10102
-                },
-                {
                     "id":10103
-                },
-                {
-                    "id":10104
                 },
                 {
                     "id":10105
                 },
                 {
-                    "id":10106
+                    "id":10526
                 },
                 {
-                    "id":10107
+                    "id":10527
                 },
                 {
-                    "id":10144
+                    "id":10528
                 },
                 {
-                    "id":10145
+                    "id":10529
                 },
                 {
-                    "id":10146
+                    "id":10530
                 },
                 {
-                    "id":10147
+                    "id":10531
+                },
+                {
+                    "id":10532
+                },
+                {
+                    "id":10533
+                },
+                {
+                    "id":10534
+                },
+                {
+                    "id":10535
                 }
             ]
         },
@@ -770,5 +770,5 @@
             ]
         }
     ],
-    "master":"+318UwfN1hyh010drxRiFnj9uyGC5KMhgJ2h2vUSYHmm8FAZLA1yeU6GLyAhHNH+vhr18kD8c95oULDGRG6fJ5fXFVXoEn2p7LWOWnPka2MaeB1AJtQACpVmOdwR2IvMrVTce2QWmu\/vCeZeAkgUdii1Is1rdDiw\/HjS9Jx7BLk5qjY+50owqeBkJeGDjVUh4QRC5b5k5B2yWGw3xFWWALEk7yxZs+EW2HcKm1mzIH+aw1j7W4MbsFc5s\/pzfBsUnr19aB4Oz6SCcOTIFW4qAHP2SvRVcPhSp5j35oNV8+kS\/Rkmowly+72Ssxzn7+RDlz5Y0X3c\/bQ2KU1WRqYIArJ\/DOVf2KPOlzWJzQH3oiLPlRY0U8YfC2dpVG0FZGAUWtWlHyoRQiYsTDs430xVMrjEx2aML3wylkhikRTXDAlBn0uasH8r88r\/dCGwgcYvW\/qWVfnNj1euisq91dHtSJKM\/LGLXoyt72V8734vhb5tBnqgoV4WMBYblnNK2pr6nD8ZiU7CR4VYJ49Fs0AAVdprgmk1rVLteUAwQ4v59cx\/FeDIPhxSKZUXN9AvuxXS7qeb\/3EJarJgquPXk51yt\/tLelQtw5b4Y9lWpLVhHCimUbOpwCiYlvhDjcibD\/yJ3GypafiImJRHIpGbzdRBYMRUWVW7\/6cOstyTlCojG8DUELmKSZ1DHzMgXch5Swe5phQvM4EOzWnnlHCQup8AU9qnwu+FTnijpwxXo90SSGE7ueZ5bYVz+wbSZAVwyWPqAk\/H01tu6TriBJJ+9atusDfdSgxGBmDFepMpaaXmoScTR5AHhfWpdtmGpkQWEjuY3NjiWfH5rjxEurckN3kllYe2Rh+O\/131AWNNsgntd7LWutTviYAoEgXGbVA2A0wzZpbFHFPIpHf5+MhDgkwkNrs2v7ehe6JFIs1GF124ReLn+qNOI\/JsxJ0BidMVKatVMLwb3CdKeWnqQDohjcKBaLvCoRj\/75WgI3Oxq1QJSwNj4Q4mxuMCDOhRulHcOCEVt8aGq8GHRfXg8St3mwvbL8XpzudZyv\/fd+szEthBmZblok8UaZYi9\/PkNOv0mUofy1CKSqAqNMCTa1D6JYCIWozikrC5ThAPHkBONh5F570aIFaIG\/JiDr5yhvnXVVfYMuCJEt7w2m1yzBM6w0ysGACorYhdxbXrPNv\/BJKfVgG2smMgjyPpB80PYy8L7uduumUnYFAJ3qhmNCNPq\/0spv5x2wRl7csXaz4LjRt8QK+NqAZnzLfdFoFxc7hrwtKOzU3UD8TtjNnFc17KttswEKAZgVFJti3IS4+9fn8HlCd0QsxJ7E08nZaYy3EqIUEtvQyEPxH1dynp9rKGB9sXGbeIJD1uxqDr8Zt16w4uqyCMv7WGD7vXqUjyk9FnectUdLim2SoruS+f0pMWpmEVmpcTkKLP+HTPL2iMBuSm+4g4vzAUPBeuXyjcJmbt3pM5ybuelMNLn3X8BCWl+8hRFQb0uZCZ9cvLojRZ5DddU1Q=6A8A932323"
+    "master":"d\/DntCiqzJx\/qsKsCmHcDPc5Ht1rHXkMzmHc7snbjC0vQ3LPFdhaSGVqCwkHJfNXpFaVAWO4q8N7ueotn2i7YRlZk7+iinPhSlVsBN0t2r4JvtmfhKSzcrsd5SgPW\/wbwvvDO9tT9ZkTnOZWG+YDstecVzYJDKFakCzgcfzWonEzGOTHSfbXKa8QPzcVkE1btwvgyDOwzDlSrvPJ83emcq0dWQQqpvbe2ZktYU+7QIuVBln\/7hLn\/WbVp1\/62\/r8hXXB+\/p5ILeEMmS4ruJWd2NhnhYURzG+db6zq+Z7iYctPXRqzkV3wM4hKUoKVeZctsFi0ntHp5r\/x5gWsG4ceU8IBkrO6\/8zXJYn6QqmRFRfZblD4NEUxvmjAw\/txq8jlA8ds8ERoJJJr\/kABH9rfYJCsm76L8Fek29Je2swZgn+nEkLWH3IL4Jt\/KWggVXsV3HLcZz2ghnxA+SP+8UXcXJx7N4T6SiUBkWy67cQB9rLg5dHv55XAcOgKSbVpWRFKEEbw1rEi0\/GdWvOeS5Wb38AvMF2xyQvkmwOXHYbtV2oofozoF7uGI41iNTRocd6iWY95firDy0mWPfdUUg4CJiak4LpnsQhFiBhVOxsGteKE2yutACtv+HIEVPNaSyjLgsyY89Xv3eZqRkqzKeVdwdFrFWcis6+dygTRW8nqDe7k4X7\/OmRAdnWADtHGdSET\/7ntMAyX83mlSuFy8tSsHDpho+kh50pyevnc2OqwuLqFyt9yt7kOwRQg6GyI\/2CvFGe6JYQG2o6BVuzs8H3lqU71bRFZIHyZxfMvn7+Hutx8SZK5h9RDgi7ICCQGdcqkHAJoYlCAV1sUGGC\/ybk3XGKa1304xeNF0DwPtmwfwILkLsOr0mA+oCRz7zh5uOcqx1x9lZS\/eEncSMW369tqFjXRf0hgRkzA1kPdrIlvX38MGO0P5JpZSAr1O4h6xIXg4S9dg2wdKB8ZBPmrhbCxGCxiBvHW6cvOVhL+q7QybvKD3Mg8pdZB20tGuUI2HgvHPM7A4gFFloQRzMzcJ9Jz8gWW+lcO32X67IrobMU0cfySDg750VIJaXqP9XgSaSf9\/fRuwe6M3OHUtQ33K1CMcBcva5vaqHCcORptkPibi5Po6efyu9kFoHuksFaJPW7NRwOlIlGr8Aa2asosPiTvBZs9tv+33gzpneR1ojxL8QAmYIRxT\/VNtX88j8KESTlZHWHnKVl4DLn4L2tsC3qW8s4u6rTOVdLPqCEt5cQdbrTVzrsrDY30vcjW\/cKhAgtyVn+fdkQbwFq7r1XdZY+lDvPO7gMuPj+wFIueFucBtK19LRKHHu39DMLW6zV9lOf8P7C3URro\/y55u8FAdNvJfUl41fgsy9bE4J3x0amiXk1D4HFPA4CwzPktPuDFhGo45EP2kYUHmhJNjwxonHGMchplsH4eBqo3qEhPV1tQjE7abVb1JKZ+Z4H2Of72dyW8PlgPtsBr59c5lTkn1Bt0p+qLL8q6X6s8wD\/lqGZRFo=7E669A4213"
 }

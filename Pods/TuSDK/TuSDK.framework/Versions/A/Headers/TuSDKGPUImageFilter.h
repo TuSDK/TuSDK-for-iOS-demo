@@ -28,6 +28,13 @@
  */
 - (void)inputFramebufferUnlock;
 
+/**
+ 根据某个时间设置贴纸 index
+ 
+ @param time 时间参数
+ */
+- (void)seekToStickerIndexByTime:(CMTime)time;
+
 #pragma mark - TuSDKFilterStickerProtocol
 /**
  *  更新贴纸数据

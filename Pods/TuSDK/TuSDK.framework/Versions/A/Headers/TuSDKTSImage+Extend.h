@@ -170,6 +170,13 @@
 - (uint8_t *)lsqGetBitmapClipHistListWithClipX:(NSUInteger)iClipXNum
                                          ClipY:(NSUInteger)iClipYNum
                                         fLimit:(CGFloat)fLimit;
+
+/**
+ Get histogram range
+ 
+ @return
+ */
+- (NSDictionary *)lsqGetBitmapHistRange;
 @end
 
 #pragma mark - ResizeAndRotate

@@ -109,6 +109,7 @@
 "lsq_edit_entry_filter" = "滤镜";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "贴纸";
+"lsq_edit_entry_text" = "文字";
 "lsq_edit_entry_smudge" = "涂抹";
 "lsq_edit_entry_smudge_filter" = "模糊";
 "lsq_edit_cuter_ratio_orgin" = "原始";
@@ -125,6 +126,17 @@
 "lsq_edit_holy_light" = "圣光";
 "lsq_edit_smudge_brush" = "笔触";
 "lsq_edit_smudge_eraser" = "橡皮";
+
+"lsq_edit_text_input_tip" = "点击输入内容";
+"lsq_edit_text_color_text" = "字体颜色";
+"lsq_edit_text_color_backgroud" = "背景颜色";
+"lsq_edit_text_color_stroke" = "线条颜色";
+"lsq_edit_text_style_leftToRight" = "从左到右";
+"lsq_edit_text_style_rightToLeft" = "从右到左";
+"lsq_edit_text_style_underline" = "下划线";
+"lsq_edit_text_style_alignmentLeft" = "左对齐";
+"lsq_edit_text_style_alignmentRight" = "右对齐";
+"lsq_edit_text_style_alignmentCenter" = "居中";
 
 "lsq_edit_fragment_turn_left" = "左转";
 "lsq_edit_fragment_turn_right" = "右转";
@@ -315,6 +327,11 @@
 "lsq_filter_set_excessive" = "边缘";
 "lsq_filter_set_maskAlpha" = "强调";
 "lsq_filter_set_degree" = "角度";
+
+// text Definition option
+"lsq_filter_set_text_addText" = "添加";
+"lsq_filter_set_text_color" = "颜色";
+"lsq_filter_set_text_style" = "样式";
 
 // Brush Definition
 "lsq_brush_Eraser" = "橡皮擦";

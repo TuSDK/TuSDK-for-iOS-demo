@@ -172,16 +172,24 @@
 
 #pragma mark - TuSDKFilter
 @interface TuSDKFilter: GPUImageFilter
+/** 缩放大小 (默认为1.0，数值越小性能越高) */
+@property (nonatomic) CGFloat scale;
 @end
 
 #pragma mark - TuSDKTwoInputFilter
 @interface TuSDKTwoInputFilter: GPUImageTwoInputFilter
+/** 缩放大小 (默认为1.0，数值越小性能越高) */
+@property (nonatomic) CGFloat scale;
 @end
 
 #pragma mark - TuSDKThreeInputFilter
 @interface TuSDKThreeInputFilter: GPUImageThreeInputFilter
+/** 缩放大小 (默认为1.0，数值越小性能越高) */
+@property (nonatomic) CGFloat scale;
 @end
 
 #pragma mark - TuSDKTwoPassTextureSamplingFilter
 @interface TuSDKTwoPassTextureSamplingFilter : GPUImageTwoPassTextureSamplingFilter
+/** 缩放大小 (默认为1.0，数值越小性能越高) */
+@property (nonatomic) CGFloat scale;
 @end

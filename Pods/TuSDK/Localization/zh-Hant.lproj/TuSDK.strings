@@ -109,6 +109,7 @@
 "lsq_edit_entry_filter" = "濾鏡";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "貼紙";
+"lsq_edit_entry_text" = "文字";
 "lsq_edit_entry_smudge" = "塗抹";
 "lsq_edit_entry_smudge_filter" = "模糊";
 "lsq_edit_cuter_ratio_orgin" = "原始";
@@ -125,6 +126,17 @@
 "lsq_edit_holy_light" = "聖光";
 "lsq_edit_smudge_brush" = "筆觸";
 "lsq_edit_smudge_eraser" = "橡皮";
+
+"lsq_edit_text_input_tip" = "點擊輸入內容";
+"lsq_edit_text_color_text" = "字體顏色";
+"lsq_edit_text_color_backgroud" = "背景顏色";
+"lsq_edit_text_color_stroke" = "線條顏色";
+"lsq_edit_text_style_leftToRight" = "從左往右";
+"lsq_edit_text_style_rightToLeft" = "從右往左";
+"lsq_edit_text_style_underline" = "下劃線";
+"lsq_edit_text_style_alignmentLeft" = "左對齊";
+"lsq_edit_text_style_alignmentRight" = "右對齊";
+"lsq_edit_text_style_alignmentCenter" = "居中";
 
 "lsq_edit_fragment_turn_left" = "左轉";
 "lsq_edit_fragment_turn_right" = "右轉";
@@ -307,6 +319,11 @@
 "lsq_filter_set_rotate" = "旋轉";
 "lsq_filter_set_linear" = "線性";
 "lsq_filter_set_radial" = "徑向";
+
+// text Definition option
+"lsq_filter_set_text_addText" = "添加";
+"lsq_filter_set_text_color" = "顏色";
+"lsq_filter_set_text_style" = "樣式";
 
 // Filters Definition Bokeh
 "lsq_filter_set_radius" = "內半徑";

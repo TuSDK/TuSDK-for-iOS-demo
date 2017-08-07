@@ -189,6 +189,15 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editStickerOptions.outputCompress = 0.95f;
     //
+    //    // 图片编辑文字添加控制器配置选项
+    //    _photoEditMultipleComponent.options.editTextOptions;
+    //    // 保存到临时文件
+    //    _photoEditMultipleComponent.options.editTextOptions.saveToTemp = YES;
+    //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
+    //    _photoEditMultipleComponent.options.editTextOptions.outputCompress = 0.95f;
+    //    // 文字初始化创建样式
+    //    _photoEditMultipleComponent.options.editTextOptions.textOptions = [TuSDKPFEditTextViewOptions defaultOptions];
+    //
     //    // 颜色调整模块控制器配置选项
     // _photoEditMultipleComponent.options.editAdjustOptions
     // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditAdjustOptions.html

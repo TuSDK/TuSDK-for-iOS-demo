@@ -24,4 +24,9 @@
  */
 @property(readwrite, nonatomic) CGFloat mixed;
 
+/**
+ 是否开启大眼瘦脸 (默认: NO)
+ */
+@property (nonatomic, readonly) BOOL enableFaceBeauty;
+
 @end

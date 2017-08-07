@@ -109,6 +109,7 @@
 "lsq_edit_entry_filter" = "Filters";
 "lsq_edit_entry_cuter" = "Crop";
 "lsq_edit_entry_sticker" = "Stickers";
+"lsq_edit_entry_text" = "Text";
 "lsq_edit_entry_smudge" = "Smudge";
 "lsq_edit_entry_smudge_filter" = "Blur";
 "lsq_edit_cuter_ratio_orgin" = "Original";
@@ -125,6 +126,17 @@
 "lsq_edit_holy_light" = "Holy Light";
 "lsq_edit_smudge_brush" = "Brush";
 "lsq_edit_smudge_eraser" = "Eraser";
+
+"lsq_edit_text_input_tip" = "Click to edit";
+"lsq_edit_text_color_text" = "text color";
+"lsq_edit_text_color_backgroud" = "backgroud color";
+"lsq_edit_text_color_stroke" = "stroke color";
+"lsq_edit_text_style_leftToRight" = "LeftToRight";
+"lsq_edit_text_style_rightToLeft" = "RightToLeft";
+"lsq_edit_text_style_underline" = "Underline";
+"lsq_edit_text_style_alignmentLeft" = "AlignmentLeft";
+"lsq_edit_text_style_alignmentRight" = "AlignmentRight";
+"lsq_edit_text_style_alignmentCenter" = "AlignmentCenter";
 
 "lsq_edit_fragment_turn_left" = "TurnLeft";
 "lsq_edit_fragment_turn_right" = "TurnRight";
@@ -308,6 +320,11 @@
 "lsq_filter_set_linear" = "Linear";
 "lsq_filter_set_rotate" = "Rotate";
 "lsq_filter_set_radial" = "Radial";
+
+// text Definition option
+"lsq_filter_set_text_addText" = "add";
+"lsq_filter_set_text_color" = "color";
+"lsq_filter_set_text_style" = "style";
 
 // Filters Definition Bokeh
 "lsq_filter_set_radius" = "Radius";

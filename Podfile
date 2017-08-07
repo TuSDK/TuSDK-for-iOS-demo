@@ -1,4 +1,4 @@
 platform :ios, '6.0'
 target "TuSDKDemo" do
-pod 'TuSDK', '~> 2.8.1'
+pod 'TuSDK', '~> 2.8.2'
 end

@@ -95,6 +95,7 @@
 #import "TuSDKPFEditWipeAndFilterControllerBase.h"
 #import "TuSDKPFEditTabBarControllerBase.h"
 #import "TuSDKPFEditHDRControllerBase.h"
+#import "TuSDKPFEditTextControllerBase.h"
 
 #import "TuSDKPFCameraFilterGroupViewBase.h"
 #import "TuSDKPFEditFilterGroupViewBase.h"
@@ -102,6 +103,7 @@
 #import "TuSDKPFStickerBarViewBase.h"
 #import "TuSDKPFStickerLocalGridViewBase.h"
 #import "TuSDKPFStickerView.h"
+#import "TuSDKPFTextView.h"
 #import "TuSDKPFStickerGroup.h"
 #import "TuSDKPFSmudgeViewBase.h"
 #import "TuSDKPFBrushBarViewBase.h"
@@ -122,6 +124,9 @@
 #import "TuSDKLiveStickerManager.h"
 #import "TuSDKFilterProcessorBase.h"
 #import "TuSDKTKStatistics.h"
+
+#import "TuSDKOnlineStickerFetcher.h"
+#import "TuSDKOnlineStickerDownloader.h"
 
 #import "TuSDKNKNetworkEngine.h"
 #import "UIImageView+TuSDKNetworkAdditions.h"

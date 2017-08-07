@@ -118,6 +118,25 @@ typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
     lsqStickerLoopRandom = 3
 };
 
+/**
+ *  渲染模式
+ */
+typedef NS_ENUM(NSInteger, lsqStickerRenderType)
+{
+    /**
+     * Alpha 混合
+     */
+    lsqStickerRenderAlphaBlend = 1,
+    /**
+     * 正片叠底
+     */
+    lsqStickerRenderBlendMultiply = 2,
+    /**
+     * Light
+     */
+    lsqStickerRenderLightGlare = 3
+};
+
 
 @interface TuSDKStickerPositionInfo : NSObject
 
@@ -140,6 +159,11 @@ typedef NS_ENUM(NSInteger, lsqStickerLoopMode)
  *  贴纸定位类型
  */
 @property (nonatomic, readonly) lsqStickerPositionType posType;
+
+/**
+ *  贴纸渲染类型
+ */
+@property (nonatomic, readonly) lsqStickerRenderType renderType;
 
 /**
  *  宽高比

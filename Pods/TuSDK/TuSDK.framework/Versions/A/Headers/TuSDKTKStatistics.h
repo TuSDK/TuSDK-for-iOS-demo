@@ -225,6 +225,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editHDRFragment = 0x409900,
     
     /**
+     * 文字贴纸编辑控制器
+     */
+    tkc_editTextFragment = 0x410000,
+    
+    /**
      * 相机控制器
      */
     tkc_cameraFragment = 0x500000,

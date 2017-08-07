@@ -182,6 +182,15 @@
 - (NSArray<TuSDKPFStickerGroup *> *)getSmartStickerGroupsWithFaceFeature:(BOOL)requireFaceFeature;
 
 /**
+ *  是否存在包ID
+ *
+ *  @param groupId 包ID
+ *
+ *  @return 是否存在包ID
+ */
+- (BOOL)containsWithGroupId:(uint64_t)groupId;
+
+/**
  *  获取所有json数据
  *
  *  @return json数据

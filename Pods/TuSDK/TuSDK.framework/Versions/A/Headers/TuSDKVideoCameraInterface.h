@@ -396,6 +396,11 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 @property (nonatomic) BOOL disableContinueFoucs;
 
 /**
+ *  是否禁止触摸聚焦 (默认: YES)
+ */
+@property (nonatomic) BOOL disableTapFocus;
+
+/**
  *  自动聚焦延时 (默认: 5秒)
  */
 @property (nonatomic) NSTimeInterval autoFoucsDelay;

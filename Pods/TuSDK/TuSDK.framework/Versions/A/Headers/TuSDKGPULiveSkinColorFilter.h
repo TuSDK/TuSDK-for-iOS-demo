@@ -7,11 +7,11 @@
 //
 
 #import "TuSDKFilterAdapter.h"
-#import "TuSDKFilterParameter.h"
+#import "TuSDKGPUSkinColorFilter.h"
 
 /**
  *  美白颜色滤镜，大眼瘦脸
  */
-@interface TuSDKGPULiveSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol, TuSDKFilterStickerProtocol>
+@interface TuSDKGPULiveSkinColorFilter : TuSDKGPUSkinColorFilter
 
 @end

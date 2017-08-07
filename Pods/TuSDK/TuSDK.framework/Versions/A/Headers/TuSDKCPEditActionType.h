@@ -29,6 +29,12 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
      * 贴纸动作
      */
     lsqTuSDKCPEditActionSticker,
+    
+    /**
+     * 文字动作
+     */
+    lsqTuSDKCPEditActionText,
+
     /**
      * 美颜动作
      */

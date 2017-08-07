@@ -77,6 +77,11 @@ typedef NS_ENUM(NSInteger, lsqStickerTextType)
 @property (nonatomic, copy) NSString *text;
 
 /**
+ * 文字样式
+ */
+@property (nonatomic, copy) NSDictionary *textStyleDic;
+
+/**
  * 文字颜色
  */
 @property (nonatomic, retain) UIColor *color;
@@ -97,9 +102,19 @@ typedef NS_ENUM(NSInteger, lsqStickerTextType)
 @property (nonatomic) CGRect rect;
 
 /**
+ * 文字区域长宽信息
+ */
+@property (nonatomic) CGSize rectSize;
+
+/**
  * 文字对齐方式 (0:左对齐, 1:居中对齐, 2:右对齐)
  */
 @property (nonatomic) NSTextAlignment alignment;
+
+/**
+ * 文字区域生成的图片，优先使用图片，为nil 时，使用参数进行绘制
+ */
+@property (nonatomic) UIImage *textImage;
 
 /**
  *  贴纸文字对象

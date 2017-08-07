@@ -17,6 +17,8 @@
  */
 @interface TuSDKLiveStickerManager : NSObject
 
++ (dispatch_queue_t)sharedLoadQueue;
+
 /**
  *  显示贴纸
  *

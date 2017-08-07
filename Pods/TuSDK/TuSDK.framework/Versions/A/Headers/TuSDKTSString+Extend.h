@@ -169,8 +169,15 @@
 /**
  *  根据给定的限制内容，获得该字符串对应的最优Size
  *
- *  @return NSUInteger
+ *  @return CGSize
  */
 - (CGSize)lsqColculateTextSizeWithFont:(UIFont *)textFont maxWidth:(CGFloat)maxWidth maxHeihgt:(CGFloat)maxHeight;
+
+/**
+ *  根据给定的限制内容，以及文本样式，获得该字符串对应的最优Size
+ *
+ *  @return CGSize
+ */
+- (CGSize)lsqColculateTextSizeWithAttributs:(NSDictionary *)Attribute maxWidth:(CGFloat)maxWidth maxHeihgt:(CGFloat)maxHeight;
 
 @end
