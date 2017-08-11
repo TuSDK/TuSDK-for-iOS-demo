@@ -31,16 +31,6 @@
 @property(readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera, horizontallyMirrorRearFacingCamera;
 
 /**
- *  是否为前置摄像头
- */
-@property (readonly, getter = isFrontFacingCameraPresent) BOOL frontFacingCameraPresent;
-
-/**
- *  是否为后置摄像头
- */
-@property (readonly, getter = isBackFacingCameraPresent) BOOL backFacingCameraPresent;
-
-/**
  *  初始化
  *
  *  支持： kCVPixelFormatType_420YpCbCr8BiPlanarFullRange | kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange kCVPixelFormatType_32BGRA

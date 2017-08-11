@@ -301,6 +301,7 @@
 "lsq_filter_set_distanceNormalizationFactor" = "Edge";
 "lsq_filter_set_blurSigma" = "Blur Sigma";
 "lsq_filter_set_mixied" = "Mixed";
+"lsq_filter_set_texture" = "Texture";
 "lsq_filter_set_saturation" = "Saturation";
 "lsq_filter_set_contrast" = "Contrast";
 "lsq_filter_set_sharpness" = "Sharpness";

@@ -300,6 +300,7 @@
 "lsq_filter_set_distanceNormalizationFactor" = "邊緣";
 "lsq_filter_set_blurSigma" = "西格瑪";
 "lsq_filter_set_mixied" = "效果";
+"lsq_filter_set_texture" = "紋理";
 "lsq_filter_set_saturation" = "飽和度";
 "lsq_filter_set_contrast" = "對比度";
 "lsq_filter_set_sharpness" = "銳化";

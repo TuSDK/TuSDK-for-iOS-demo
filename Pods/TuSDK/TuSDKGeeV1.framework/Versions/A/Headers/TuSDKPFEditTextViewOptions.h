@@ -33,7 +33,7 @@
 /**
  *  书写方向 参考 NSWritingDirectionAttributeName
  */
-@property (nonatomic, strong) NSArray<NSNumber *> *writingDerection;
+@property (nonatomic, strong) NSArray<NSNumber *> *writingDirection;
 /**
  *  初始化时 文字对齐方式
  */

@@ -90,7 +90,7 @@
 /**
  *  书写方向 参考 NSWritingDirectionAttributeName
  */
-@property (nonatomic, strong) NSArray<NSNumber *> *writingDerection;
+@property (nonatomic, strong) NSArray<NSNumber *> *writingDirection;
 
 /**
  *  文字对齐方式
@@ -222,7 +222,7 @@
 /**
  *  书写方向 参考 NSWritingDirectionAttributeName
  */
-@property (nonatomic, strong) NSArray<NSNumber *> *writingDerection;
+@property (nonatomic, strong) NSArray<NSNumber *> *writingDirection;
 
 /**
  *  文字对齐方式
@@ -388,9 +388,9 @@
 /**
  *  改变书写方向 参考 NSWritingDirectionAttributeName
  *
- *  @param writingDerection 书写方向
+ *  @param writingDirection 书写方向
  */
-- (void)changeWritingDerection:(NSArray<NSNumber *> *)writingDerection;
+- (void)changeWritingDirection:(NSArray<NSNumber *> *)writingDirection;
 
 /**
  *  改变文字对齐方式
