@@ -16,8 +16,13 @@
  */
 @interface TuSDKFilterProcessorBase : GPUImageOutput
 {
-    GPUImageRotationMode outputRotation, internalRotation;
+    GPUImageRotationMode outputRotation, internalRotation , bufferRotation;
 }
+
+/**
+   传入图像的方向是否为原始朝向，SDK 将依据该属性来调整人脸检测时图片的角度。如果没有对图片进行旋转，则为 YES
+ */
+@property (nonatomic, readonly) BOOL isOriginalOrientation;
 
 /// This enables the benchmarking mode, which logs out instantaneous and average frame times to the console
 @property(readwrite, nonatomic) BOOL runBenchmark;
@@ -36,11 +41,11 @@
  *  支持： kCVPixelFormatType_420YpCbCr8BiPlanarFullRange | kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange kCVPixelFormatType_32BGRA
  *
  *  @param pixelFormatType          原始采样的pixelFormat Type
- *  @param adjustByVideoOrientation 原始采样已做过朝向处理
+ *  @param isOriginalOrientation    传入图像的方向是否为原始朝向，SDK 将依据该属性来调整人脸检测时图片的角度。如果没有对图片进行旋转，则为 YES
  *
  *  @return instance
  */
-- (id)initWithFormatType:(OSType)pixelFormatType adjustByVideoOrientation:(BOOL)adjustByVideoOrientation;
+- (id)initWithFormatType:(OSType)pixelFormatType isOriginalOrientation:(BOOL)isOriginalOrientation;
 
 /**
  *  初始化

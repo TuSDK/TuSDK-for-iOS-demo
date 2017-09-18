@@ -36,7 +36,7 @@
 /*
  * 贴纸下载委托对象
  */
-@property (nonatomic,assign) id<TuSDKOnlineStickerDownloaderDelegate> delegate;
+@property (nonatomic,weak) id<TuSDKOnlineStickerDownloaderDelegate> delegate;
 
 
 /**
@@ -46,7 +46,16 @@
  *
  *  @return true：已下载到本地
  */
-- (BOOL)containsWithGroupId:(uint64_t)groupId;
+- (BOOL)isDownloadedWithGroupId:(uint64_t)groupId;
+
+/**
+ * 判断贴纸是否正在下载中
+ *
+ * @param groupId 贴纸组ID
+ *
+ * @return  true：下载中
+ */
+- (BOOL)isDownloadingWithGroupId:(uint64_t)groupId;
 
 /**
  *  下载贴纸组数据
@@ -56,11 +65,18 @@
 - (void)downloadStickerGroup:(TuSDKPFStickerGroup *)stickerGroup;
 
 /**
+ *  下载贴纸组数据
+ *
+ *  @param groupId 贴纸组ID
+ */
+- (void)downloadWithGroupId:(uint64_t)groupId;
+
+/**
  *  取消下载贴纸
  *
  *  @param idt 贴纸组ID
  */
-- (void)cancelDownloadWithStickerGroupId:(uint64_t)groupId;
+- (void)cancelDownloadWithGroupId:(uint64_t)groupId;
 
 
 @end

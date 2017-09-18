@@ -72,11 +72,11 @@
 
 #pragma mark - TuSDKFilterFacePositionProtocol
 /**
- *  更新位置
+ *  更新信息
  *
- *  @param points 特征点坐标
+ *  @param faces  特征点数据
  *  @param angle  设备角度
  */
-- (void)updateFaceFeatures:(NSArray<NSValue *> *)points angle:(float)angle;
+- (void)updateFaceFeatures:(NSArray<TuSDKFaceAligment *> *)faces angle:(CGFloat)angle;
 
 @end

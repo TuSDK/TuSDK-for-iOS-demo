@@ -23,15 +23,15 @@
 "sample_group_define" = "API 使用示例";
 
 // samples
-"sample_GeeV2ThemeComponent" = "GeeV2主题套件";
+"sample_GeeV2ThemeComponent" = "GeeV2主题套件（多圖編輯）";
 
 "sample_EditAndCutComponent" = "裁剪 + 滤镜组件";
 "sample_EditAvatarComponent" = "頭像設置組件";
 "sample_EditAdvancedComponent" = "裁切 ＋ 濾鏡 ＋ 貼紙組件";
-"sample_EditMultipleComponent" = "多功能編輯組件";
+"sample_EditMultipleComponent" = "照片美化（單圖編輯，新增文字編輯功能）";
 "sample_AlbumComponent" = "相冊組件";
 "sample_AlbumMultipleComponent" = "多選相冊組件";
-"sample_CameraComponent" = "相機組件";
+"sample_CameraComponent" = "相機組件（新的濾鏡，新的 UI）";
 "sample_GifComponent" = "GIF 組件";
 
 "sample_comp_CameraAndEditor" = "拍照 + 編輯例子";

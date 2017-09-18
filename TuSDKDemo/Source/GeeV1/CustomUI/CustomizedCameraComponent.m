@@ -73,8 +73,11 @@
     // 默认相机底部栏视图类 (默认:TuSDKPFCameraBottomView, 需要继承 TuSDKPFCameraBottomView)
     // opt.bottomBarViewClazz = [TuSDKPFCameraBottomView class];
     
-    // 闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
-    // opt.flashViewClazz = [TuSDKPFCameraFlashView class];
+    // 设置视图类 (默认:TuSDKPFCameraSettingView, 需要继承 TuSDKPFCameraSettingView)
+    // opt.settingViewClazz = [TuSDKPFCameraSettingView class];
+    
+    // 结果预览视图类 (默认:TuSDKPFCameraPreviewView, 需要继承 TuSDKPFCameraPreviewView)
+    //opt.previewViewClazz = [TuSDKPFCameraPreviewView class];
     
     // 滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
     // opt.filterViewClazz = [TuSDKPFCameraFilterGroupView class];
@@ -93,6 +96,9 @@
     
     // 是否开启滤镜支持 (默认: 关闭)
     opt.enableFilters = YES;
+    
+    // 是否预览拍照结果 (默认: NO 不预览)
+    opt.enablePreview = YES;
     
     // 默认是否显示滤镜视图 (默认: 不显示, 如果enableFilters = NO, showFilterDefault将失效)
     // opt.showFilterDefault = YES;
@@ -287,10 +293,6 @@
     // 默认相机控制栏视图
     [_configBar lsqSetSizeHeight:44];
     _configBar.closeButton.hidden = YES;
-    [_configBar.flashButton lsqSetOriginX:10];
-    
-    // 闪光灯视图
-    [_flashView setFlashFrame:_configBar.flashButton.frame];
 }
 @end
 

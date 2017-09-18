@@ -29,9 +29,14 @@
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
+ *  设置视图类 (默认:TuSDKPFCameraSettingView, 需要继承 TuSDKPFCameraSettingView)
  */
-@property (nonatomic, strong) Class flashViewClazz;
+@property (nonatomic, strong) Class settingViewClazz;
+
+/**
+ *  结果预览视图类 (默认:TuSDKPFCameraPreviewView, 需要继承 TuSDKPFCameraPreviewView)
+ */
+@property (nonatomic, strong) Class previewViewClazz;
 
 /**
  *  滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
@@ -83,6 +88,11 @@
  *  开启在线滤镜
  */
 @property (nonatomic) BOOL enableOnlineFilter;
+
+/**
+ *  是否预览拍照结果 (默认: NO 不预览)
+ */
+@property (nonatomic) BOOL enablePreview;
 
 /**
  *  在线滤镜控制器类型 (需要继承 UIViewController,以及实现TuSDKCPFilterOnlineControllerInterface接口)

@@ -194,13 +194,40 @@
 "lsq_filter_group_Food" = "Food";
 "lsq_filter_group_Enhance" = "Enhance";
 "lsq_filter_group_Glare" = "Lights";
-"lsq_filter_group_Beauty" = "Portrait";
 "lsq_filter_group_Magic" = "Magic";
 "lsq_filter_group_GailyColoured" = "Brightly";
 "lsq_filter_group_Oldtimes" = "Oldtimes";
 "lsq_filter_group_Lip001" = "Lip";
 "lsq_filter_group_Mottle" = "Mottle";
 "lsq_filter_group_LipGloss" = "Lips";
+
+
+"lsq_filter_group_Beauty" = "NaturalBeauty";
+"lsq_filter_group_MeituBeauty" = "SoftBeauty";
+"lsq_filter_group_EdgeEffects" = "Thermodynamic";
+"lsq_filter_group_EdgeEffects001" = "EdgeEffects";
+
+"lsq_filter_Multicolor" = "Multicolor";
+"lsq_filter_Azure" = "Azure";
+"lsq_filter_Infrared" = "Infrared";
+"lsq_filter_Fluorescence" = "Fluorescence";
+"lsq_filter_Starshine" = "Starshine";
+
+"lsq_filter_Flame" = "Flame";
+"lsq_filter_Polychrome" = "Polychrome";
+"lsq_filter_Angulation" = "Angulation";
+"lsq_filter_Hallucination" = "Hallucination";
+"lsq_filter_Nighttime" = "Nighttime";
+"lsq_filter_Splendid" = "Splendid";
+
+"lsq_filter_Nature" = "Nature";
+"lsq_filter_Blusher" = "Blusher";
+"lsq_filter_Jelly" = "Jelly";
+"lsq_filter_Jam" = "Jam";
+"lsq_filter_Ruddy" = "Ruddy";
+"lsq_filter_Sugar" = "Sugar";
+"lsq_filter_Powder" = "Powder";
+"lsq_filter_Whitening" = "Whitening";
 
 // Filters
 "lsq_filter_Sweet002" = "Sweet";
@@ -322,6 +349,11 @@
 "lsq_filter_set_rotate" = "Rotate";
 "lsq_filter_set_radial" = "Radial";
 
+"lsq_filter_set_edgeStrength" = "Strength";
+"lsq_filter_set_thresholdLevel" = "Location";
+"lsq_filter_set_speed" = "Speed";
+"lsq_filter_set_showType" = "Type";
+
 // text Definition option
 "lsq_filter_set_text_addText" = "add";
 "lsq_filter_set_text_color" = "color";
@@ -358,3 +390,18 @@
 "lsq_network_connection_failed" = "Failed to connect to network";
 "lsq_network_connection_timeout" = "Network request timeout";
 "lsq_network_paser_data_failed" = "Failed to process data";
+
+// camera
+"lsq_camera_Grid_on" = "Grid on";
+"lsq_camera_Grid_off" = "Grid off";
+"lsq_camera_ratio_9_16" = "9:16";
+"lsq_camera_ratio_3_4" = " 3:4";
+"lsq_camera_ratio_2_3" = " 2:3";
+"lsq_camera_ratio_1_1" = " 1:1";
+"lsq_camera_ratio_3_2" = " 3:2";
+"lsq_camera_ratio_4_3" = " 4:3";
+"lsq_camera_ratio_16_9" = "16:9";
+"lsq_camera_ratio_origin" = "Full";
+"lsq_camera_flash_mode_on" = "Flash on";
+"lsq_camera_flash_mode_off" = "Flash off";
+"lsq_camera_flash_mode_auto" = "Flash auto";

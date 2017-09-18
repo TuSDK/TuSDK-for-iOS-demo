@@ -96,6 +96,15 @@
 - (BOOL)appenDownloaded:(TuSDKNKDownloadItem *)item;
 
 /**
+ *  是否正在下载某个资源
+ 
+ *  @param idt  下载对象ID
+ *
+ *  @return true: 下载中
+ */
+- (BOOL)isDownloadingWithIdt:(uint64_t)idt;
+
+/**
  *  获取所有包ID列表
  *
  *  @return allGroupID 所有包ID列表

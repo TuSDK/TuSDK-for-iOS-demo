@@ -139,6 +139,34 @@
 /** FilterAPI是否可用 */
 - (BOOL)filterAPIEnabled;
 
+// video record continuous support 断点续拍
+- (BOOL)videoRecordContinuousSupport;
+
+// video camera shot support 拍照
+- (BOOL)videoCameraShotSupport;
+
+// video camera sticker support 相机贴纸
+- (BOOL)videoCameraStickerSupport;
+
+// video camera bitrate support 相机 自定义码率
+- (BOOL)videoCameraBitrateSupport;
+
+// video editor music support 编辑视频 添加音乐
+- (BOOL)videoEditorMusicSupport;
+
+// video editor sticker support 编辑视频 添加贴纸
+- (BOOL)videoEditorStickerSupport;
+
+// video editor filter support 编辑视频 使用滤镜
+- (BOOL)videoEditorFilterSupport;
+
+// video editor bitrate support 编辑视频 自定义码率
+- (BOOL)videoEditorBitrateSupport;
+
+// video editor resolution support 编辑视频 自定义分辨率
+- (BOOL)videoEditorResolutionSupport;
+
+
 /**
  *  解密文本
  *

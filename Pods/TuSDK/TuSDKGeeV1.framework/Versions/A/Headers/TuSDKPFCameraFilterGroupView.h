@@ -48,8 +48,6 @@
     UIView<TuSDKCPSubtitlesViewInterface> *_titleView;
     // 底部栏目
     UIView *_bottomView;
-    // 关闭按钮
-    UIButton *_closeButton;
 }
 
 /**
@@ -77,4 +75,10 @@
  *  @param option 默认显示的滤镜配置选项
  */
 - (void)loadFilters:(TuSDKFilterOption *)option;
+
+/**
+ *  滤镜包装对象
+ */
+@property (nonatomic, retain) TuSDKFilterWrap *filterWrap;
+
 @end

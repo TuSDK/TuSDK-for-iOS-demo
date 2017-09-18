@@ -1,5 +1,5 @@
 //
-//  TuSDKSkinFilterManager.h
+//  TuSDKSkinFilterAPI.h
 //  TuSDK
 //
 //  Created by wen on 06/06/2017.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TuSDKSkinFilterManager : NSObject
+@interface TuSDKSkinFilterAPI : NSObject
 
 /**
  *  创建美颜滤镜 可调节参数：一键美颜、磨皮、美白、肤色、大眼、瘦脸

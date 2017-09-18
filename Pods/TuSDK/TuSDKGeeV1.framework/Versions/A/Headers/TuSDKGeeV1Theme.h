@@ -42,6 +42,11 @@
 @property (nonatomic, retain) UIColor *bottomBarBackgroundColor;
 
 /**
+ *  底部工具栏背景颜色 带有alpha值
+ */
+@property (nonatomic, retain) UIColor *bottomBarAlphaColor;
+
+/**
  *  编辑器中部背景颜色
  */
 @property (nonatomic, retain) UIColor *editorBackgroundColor;

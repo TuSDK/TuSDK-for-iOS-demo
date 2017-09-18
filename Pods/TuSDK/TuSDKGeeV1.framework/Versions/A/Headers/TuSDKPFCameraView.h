@@ -10,51 +10,91 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TuSDKPFCameraFilterGroupView.h"
 
-#pragma mark - TuSDKPFCameraFlashView
-@class TuSDKPFCameraFlashView;
-/**
- *  默认相机闪光灯视图委托
+
+#pragma mark - TuSDKPFCameraSettingView
+
+/*
+ * 设置View按钮类型枚举
  */
-@protocol TuSDKPFCameraFlashDelegate <NSObject>
+typedef enum : NSUInteger {
+    lsqCameraSettingBtnTypeDefault = 201, // 默认类型
+    lsqCameraSettingBtnTypeRatio,         // 相机比例按钮
+    lsqCameraSettingBtnTypeGrid,          // 网格辅助线按钮
+    lsqCameraSettingBtnTypeFlash,         // 闪光灯按钮
+} lsqCameraSettingBtnType;
+
+
+@class TuSDKPFCameraSettingView;
+
+#pragma mark - TuSDKPFCameraSettingDelegate
+
 /**
- *  选中闪光灯模式
+ 设置视图View代理
+ */
+@protocol TuSDKPFCameraSettingDelegate <NSObject>
+
+/**
+ *  设置视图View选中回调
  *
  *  @param view 默认相机闪光灯视图
  *  @param mode 闪光灯模式
  */
-- (void)onTuSDKPFCameraFlashView:(TuSDKPFCameraFlashView *)view selectedMode:(AVCaptureFlashMode)mode;
+- (void)onTuSDKPFCameraSettingView:(TuSDKPFCameraSettingView *)view selectedIndex:(lsqCameraSettingBtnType)type;
+
 @end
 
-/**
- *  默认相机闪光灯视图
- */
-@interface TuSDKPFCameraFlashView : UIButton{
-    @protected
-    // 闪光灯包装视图
-    UIImageView *_flashWrapView;
-    // 闪光灯选项按钮列表
-    NSMutableArray *_buttons;
-}
+#pragma mark - TuSDKPFCameraSettingView
 
 /**
- *  默认相机闪光灯视图委托
+ 设置视图View
  */
-@property (nonatomic, weak) id<TuSDKPFCameraFlashDelegate> delegate;
+@interface TuSDKPFCameraSettingView : UIView
 
 /**
- *  设置闪光灯按钮坐标
- *
- *  @param frame 坐标
+ 默认相机闪光灯视图委托
  */
-- (void)setFlashFrame:(CGRect)frame;
+@property (nonatomic, weak) id<TuSDKPFCameraSettingDelegate> delegate;
 
 /**
- *  显示视图
- *
- *  @param isShow 是否显示视图
+ 按钮类型数组
+ */
+@property (nonatomic, strong) NSArray<NSNumber *> *btnTypes;
+
+/**
+ 绑定按钮视图
+ 
+ @param imageNames 按钮图片名数组
+ @param titles 按钮title数组
+ */
+- (void)bindButtonWithImages:(NSArray<NSString *> *)imageNames titles:(NSArray<NSString *> *)titles;
+
+/**
+ 更新按钮显示
+
+ @param type 按钮类型
+ @param imageName 新的按钮图片
+ @param title 新的按钮title
+ */
+- (void)updateButtonAtIndex:(lsqCameraSettingBtnType)type image:(NSString *)imageName  title:(NSString *)title;
+
+/**
+ 删除按钮
+
+ @param type 按钮类型
+ */
+- (void)removeButtonWithType:(lsqCameraSettingBtnType)type;
+
+/**
+ 显示视图
+ 
+ @param isShow 是否显示视图
  */
 - (void)showView:(BOOL)isShow;
+
 @end
+
+
+
 
 #pragma mark - TuSDKPFCameraConfigView
 /**
@@ -64,24 +104,16 @@
     @protected
     // 关闭按钮
     UIButton *_closeButton;
-    // 闪光灯按钮
-    UIButton *_flashButton;
     // 前后摄像头切换按钮
     UIButton *_switchButton;
-    // 屏幕比例按钮
-    UIButton *_ratioButton;
-    // 辅助线按钮
-    UIButton *_guideLineButton;
+    // 设置按钮
+    UIButton *_settingButton;
 }
+
 /**
  *  关闭按钮
  */
 @property (nonatomic, readonly) UIButton *closeButton;
-
-/**
- *  闪光灯按钮
- */
-@property (nonatomic, readonly) UIButton *flashButton;
 
 /**
  *  前后摄像头切换按钮
@@ -89,38 +121,15 @@
 @property (nonatomic, readonly) UIButton *switchButton;
 
 /**
- *  屏幕比例按钮
+ *  设置按钮
  */
-@property (nonatomic, readonly) UIButton *ratioButton;
-
-/**
- *  辅助线按钮
- */
-@property (nonatomic, readonly) UIButton *guideLineButton;
-
-/**
- *  闪光灯模式
- */
-@property (nonatomic) AVCaptureFlashMode flashMode;
+@property (nonatomic, readonly) UIButton *settingButton;
 
 /**
  *  更新布局
  */
 - (void)needUpdateLayout;
 
-/**
- *  改变相机比例
- *
- *  @param ratioType 相机比例类型
- */
-- (void)changeRatioType:(lsqRatioType)ratioType;
-
-/**
- *  设置辅助线显示状态
- *
- *  @param isShow 是否显示辅助线
- */
-- (void)setGuideLineViewState:(BOOL)isShow;
 @end
 
 #pragma mark - TuSDKPFCameraConfigView
@@ -162,7 +171,9 @@
 - (void)buildAlbumButton;
 @end
 
+
 #pragma mark - TuSDKPFCameraView
+
 @class TuSDKPFCameraView;
 /**
  *  默认相机视图委托
@@ -174,12 +185,25 @@
  *  @param mode 闪光灯模式
  */
 - (void)onTuSDKPFCameraSelectedFlashMode:(AVCaptureFlashMode)mode;
+
+/**
+ *  改变网格辅助线显示
+ */
+- (void)onTuSDKPFCameraChangeGuideLineViewState;
+
+/**
+ *  改变屏幕比例
+ *
+ *  @param newRatio 屏幕比例
+ */
+- (void)onTuSDKPFCameraChangeCameraRatioWithRatio:(lsqRatioType)newRatio;
+
 @end
 
 /**
  *  默认相机视图
  */
-@interface TuSDKPFCameraView : UIView<TuSDKPFCameraFlashDelegate>{
+@interface TuSDKPFCameraView : UIView<TuSDKPFCameraSettingDelegate>{
     @protected
     // 显示图像视图
     UIImageView *_displayView;
@@ -187,8 +211,6 @@
     TuSDKPFCameraConfigView *_configBar;
     // 默认相机底部栏视图
     TuSDKPFCameraBottomView *_bottomBar;
-    // 闪光灯视图
-    TuSDKPFCameraFlashView *_flashView;
     // 滤镜视图
     TuSDKPFCameraFilterGroupView *_filterView;
 }
@@ -203,9 +225,9 @@
 @property (nonatomic, strong) Class bottomBarViewClazz;
 
 /**
- *  闪光灯视图类 (默认:TuSDKPFCameraFlashView, 需要继承 TuSDKPFCameraFlashView)
+ *  设置视图类 (默认:TuSDKPFCameraSettingView, 需要继承 TuSDKPFCameraSettingView)
  */
-@property (nonatomic, strong) Class flashViewClazz;
+@property (nonatomic, strong) Class settingViewClazz;
 
 /**
  *  滤镜视图类 (默认:TuSDKPFCameraFilterGroupView, 需要继承 TuSDKPFCameraFilterGroupView)
@@ -228,9 +250,9 @@
 @property (nonatomic, readonly) TuSDKPFCameraBottomView *bottomBar;
 
 /**
- *  闪光灯视图
+ *  设置视图
  */
-@property (nonatomic, readonly) TuSDKPFCameraFlashView *flashView;
+@property (nonatomic, readonly) TuSDKPFCameraSettingView *settingView;
 
 /**
  *  滤镜列表视图
@@ -270,4 +292,19 @@
  *  显示底部栏
  */
 - (void)showBottomBar;
+
+/**
+ 初始化辅助线状态
+
+ @param isShowGuideLine 是否显示辅助线
+ */
+- (void)setGuideLineViewState:(BOOL)isShowGuideLine;
+
+/**
+ 初始化闪光灯状态
+
+ @param flashMode 闪光灯状态
+ */
+- (void)setDefaultFlashMode:(AVCaptureFlashMode)flashMode;
+
 @end

@@ -194,13 +194,39 @@
 "lsq_filter_group_Food" = "美食";
 "lsq_filter_group_Enhance" = "增強";
 "lsq_filter_group_Glare" = "光效";
-"lsq_filter_group_Beauty" = "人像";
 "lsq_filter_group_Magic" = "魔法色";
 "lsq_filter_group_GailyColoured" = "鲜艳";
 "lsq_filter_group_Oldtimes" = "叙旧";
 "lsq_filter_group_Lip001" = "唇魅";
 "lsq_filter_group_Mottle" = "斑驳";
 "lsq_filter_group_LipGloss" = "唇魅";
+
+"lsq_filter_group_Beauty" = "自然美顏";
+"lsq_filter_group_MeituBeauty" = "柔光美顏";
+"lsq_filter_group_EdgeEffects" = "熱力圖";
+"lsq_filter_group_EdgeEffects001" = "邊緣特效";
+"lsq_filter_Multicolor" = "多彩";
+"lsq_filter_Azure" = "科幻蓝";
+"lsq_filter_Infrared" = "红外线";
+"lsq_filter_Fluorescence" = "荧光绿";
+"lsq_filter_Starshine" = "星尘";
+
+"lsq_filter_Flame" = "紅外";
+"lsq_filter_Polychrome" = "熱力";
+"lsq_filter_Angulation" = "科幻";
+"lsq_filter_Hallucination" = "迷幻";
+"lsq_filter_Nighttime" = "夜視";
+"lsq_filter_Splendid" = "多普勒";
+
+"lsq_filter_Nature" = "柔和";
+"lsq_filter_Blusher" = "粉色";
+"lsq_filter_Jelly" = "果醬";
+"lsq_filter_Jam" = "黑白";
+"lsq_filter_Ruddy" = "日出";
+"lsq_filter_Sugar" = "甜蜜";
+"lsq_filter_Powder" = "暮光";
+"lsq_filter_Whitening" = "唯美";
+
 // Filters
 "lsq_filter_Sweet002" = "甜蜜";
 "lsq_filter_Coffee" = "咖啡";
@@ -321,6 +347,11 @@
 "lsq_filter_set_linear" = "線性";
 "lsq_filter_set_radial" = "徑向";
 
+"lsq_filter_set_edgeStrength" = "強度";
+"lsq_filter_set_thresholdLevel" = "位置";
+"lsq_filter_set_speed" = "速度";
+"lsq_filter_set_showType" = "模式";
+
 // text Definition option
 "lsq_filter_set_text_addText" = "添加";
 "lsq_filter_set_text_color" = "顏色";
@@ -357,3 +388,19 @@
 "lsq_network_connection_failed" = "網絡連接失敗";
 "lsq_network_connection_timeout" = "服務器連接超時";
 "lsq_network_paser_data_failed" = "數據處理失敗";
+
+
+// camera
+"lsq_camera_Grid_on" = "網格開";
+"lsq_camera_Grid_off" = "網格關";
+"lsq_camera_ratio_9_16" = "9:16";
+"lsq_camera_ratio_3_4" = " 3:4";
+"lsq_camera_ratio_2_3" = " 2:3";
+"lsq_camera_ratio_1_1" = " 1:1";
+"lsq_camera_ratio_3_2" = " 3:2";
+"lsq_camera_ratio_4_3" = " 4:3";
+"lsq_camera_ratio_16_9" = "16:9";
+"lsq_camera_ratio_origin" = "全屏";
+"lsq_camera_flash_mode_on" = "閃光燈開啟";
+"lsq_camera_flash_mode_off" = "閃光燈關閉";
+"lsq_camera_flash_mode_auto" = "閃光燈自動";

@@ -116,12 +116,13 @@
 #import "TuSDKResult.h"
 #import "TuSDKAOValid.h"
 
+#import "TuSDKFaceAligment.h"
 #import "TuSDKFilterLocalPackage.h"
 #import "TuSDKFilterManager.h"
-#import "TuSDKSkinFilterManager.h"
 #import "TuSDKPFStickerLocalPackage.h"
 #import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKLiveStickerManager.h"
+#import "TuSDKSkinFilterAPI.h"
 #import "TuSDKFilterProcessorBase.h"
 #import "TuSDKTKStatistics.h"
 

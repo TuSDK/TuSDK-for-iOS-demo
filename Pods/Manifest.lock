@@ -1,23 +1,23 @@
 PODS:
   - GPUImage (0.1.7)
-  - TuSDK (2.8.3):
-    - TuSDK/Core (= 2.8.3)
-    - TuSDK/GPUImage (= 2.8.3)
-    - TuSDK/ImageGeeV1 (= 2.8.3)
-    - TuSDK/ImageGeeV2 (= 2.8.3)
-  - TuSDK/Core (2.8.3)
-  - TuSDK/GPUImage (2.8.3):
+  - TuSDK (2.8.4):
+    - TuSDK/Core (= 2.8.4)
+    - TuSDK/GPUImage (= 2.8.4)
+    - TuSDK/ImageGeeV1 (= 2.8.4)
+    - TuSDK/ImageGeeV2 (= 2.8.4)
+  - TuSDK/Core (2.8.4)
+  - TuSDK/GPUImage (2.8.4):
     - GPUImage (~> 0.1.7)
-  - TuSDK/ImageGeeV1 (2.8.3)
-  - TuSDK/ImageGeeV2 (2.8.3)
+  - TuSDK/ImageGeeV1 (2.8.4)
+  - TuSDK/ImageGeeV2 (2.8.4)
 
 DEPENDENCIES:
-  - TuSDK (~> 2.8.3)
+  - TuSDK (~> 2.8.4)
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  TuSDK: c53c8d50ceddc56b53e3d91f17a209ebe5b4fcb4
+  TuSDK: 68fd8dcf57f6d888ac4123a85085ad457a9f2790
 
-PODFILE CHECKSUM: 22b477ba87b23e7f9a8433f60eb93b00f9daabf2
+PODFILE CHECKSUM: 4746640d74c10f7b1b86b3f6994d228388df7d42
 
 COCOAPODS: 1.2.1

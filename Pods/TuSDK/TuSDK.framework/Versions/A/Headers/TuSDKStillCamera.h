@@ -156,16 +156,6 @@
 - (BOOL)exposureWithMode:(AVCaptureExposureMode)exposureMode;
 
 /**
- *  设置曝光模式
- *
- *  @param focusMode 曝光模式
- *  @param point     曝光坐标
- *
- *  @return 是否支持曝光模式
- */
-- (BOOL)exposureWithMode:(AVCaptureExposureMode)exposureMode point:(CGPoint)point;
-
-/**
  *  当前聚焦状态
  *
  *  @param isFocusing 是否正在聚焦

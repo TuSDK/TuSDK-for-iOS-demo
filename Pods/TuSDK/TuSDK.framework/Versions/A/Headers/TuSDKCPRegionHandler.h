@@ -23,6 +23,11 @@
 @property (nonatomic) CGSize wrapSize;
 
 /**
+ *  顶部偏移百分比 0~1 默认 -1  即居中显示
+ */
+@property (nonatomic) CGFloat offsetPercentTop;
+
+/**
  *  选区范围百分比
  */
 @property (nonatomic, readonly) CGRect rectPercent;

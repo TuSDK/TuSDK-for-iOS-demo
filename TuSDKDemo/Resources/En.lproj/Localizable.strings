@@ -23,15 +23,15 @@
 "sample_group_define" = "API Usage Examples";
 
 // samples
-"sample_GeeV2ThemeComponent" = "GeeV2 Theme";
+"sample_GeeV2ThemeComponent" = "GeeV2 Theme（Muti-Pic Edit）";
 
 "sample_EditAndCutComponent" = "Cut + Filter Component";
 "sample_EditAvatarComponent" = "Avatar Component";
 "sample_EditAdvancedComponent" = "Cut + Filter + Sticker Component";
-"sample_EditMultipleComponent" = "Photo Editor";
+"sample_EditMultipleComponent" = "Photo Editor(NewAdd:Text-Edit)";
 "sample_AlbumComponent" = "Album Component";
 "sample_AlbumMultipleComponent" = "Multi-Select Album Component";
-"sample_CameraComponent" = "Camera Component";
+"sample_CameraComponent" = "Camera Component(New Filter,New UI)";
 "sample_GifComponent" = "GIF Component";
 
 "sample_comp_CameraAndEditor" = "Camera And Editor";

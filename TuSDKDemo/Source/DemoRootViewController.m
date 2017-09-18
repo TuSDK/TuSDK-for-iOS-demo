@@ -11,6 +11,7 @@
 //Samples
 #import "CameraComponentSample.h"
 #import "GeeV2Sample.h"
+#import "EditMultipleComponentSample.h"
 #import "DemoComponentListController.h"
 
 #pragma mark - DemoRootViewController
@@ -20,7 +21,7 @@
     CameraComponentSample *cameraComponentSample;
     
     // 照片美化组件
-    GeeV2Sample *geeV2Sample;
+    EditMultipleComponentSample *editMultipleComponentSample;
 }
 @end
 
@@ -191,11 +192,11 @@
 
 -(void)openImageEditor;
 {
-    if (geeV2Sample == nil)
+    if (editMultipleComponentSample == nil)
     {
-        geeV2Sample = [GeeV2Sample sample];
+        editMultipleComponentSample = [EditMultipleComponentSample sample];
     }
-    [geeV2Sample showSampleWithController:self];
+    [editMultipleComponentSample showSampleWithController:self];
 }
 
 -(void)openComponentList;

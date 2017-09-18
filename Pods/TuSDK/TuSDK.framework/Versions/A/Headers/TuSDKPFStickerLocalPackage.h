@@ -140,6 +140,15 @@
 - (void)removeDownloadWithIdt:(uint64_t)idt;
 
 /**
+ *  是否正在下载某个资源
+ 
+ *  @param idt  下载对象ID
+ *
+ *  @return true: 下载中
+ */
+- (BOOL)isDownloadingWithIdt:(uint64_t)idt;
+
+/**
  *  获取分类数据
  *
  *  @param idt 分类ID
