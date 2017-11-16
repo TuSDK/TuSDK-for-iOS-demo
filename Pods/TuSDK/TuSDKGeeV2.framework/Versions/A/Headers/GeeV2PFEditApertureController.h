@@ -8,7 +8,6 @@
 
 #import "GeeV2PFEditApertureView.h"
 #import "GeeV2PFEditTabBarSubControllerInterface.h"
-
 #pragma mark - GeeV2PFEditApertureController
 /**
  *  大光圈控制器

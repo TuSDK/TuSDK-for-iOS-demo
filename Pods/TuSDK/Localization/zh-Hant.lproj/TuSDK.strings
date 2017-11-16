@@ -229,6 +229,7 @@
 
 // Filters
 "lsq_filter_Sweet002" = "甜蜜";
+"lsq_filter_Sweet" = "甜蜜";
 "lsq_filter_Coffee" = "咖啡";
 "lsq_filter_Gold" = "金黄";
 "lsq_filter_Rum" = "朗姆";
@@ -293,6 +294,8 @@
 "lsq_filter_Purplemoon" = "紫月亮";
 "lsq_filter_Summersunshine" = "夏日";
 "lsq_filter_Wintersunshine" = "冬日";
+"lsq_filter_Summer" = "夏日";
+"lsq_filter_Winter" = "冬日";
 
 // 唇魅，斑驳
 "lsq_filter_group_SnapSeed" = "斑驳";

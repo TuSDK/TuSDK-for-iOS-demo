@@ -7,7 +7,7 @@
 //
 
 
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 
 @interface TuSDKGPUImagePicture : GPUImagePicture
 

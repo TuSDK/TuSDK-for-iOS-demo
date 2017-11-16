@@ -231,6 +231,7 @@
 
 // Filters
 "lsq_filter_Sweet002" = "Sweet";
+"lsq_filter_Sweet" = "Sweet";
 "lsq_filter_Coffee" = "Coffee";
 "lsq_filter_Gold" = "Gold";
 "lsq_filter_Rum" = "Rum";
@@ -310,6 +311,8 @@
 "lsq_filter_Purplemoon" = "Purple";
 "lsq_filter_Summersunshine" = "Summer";
 "lsq_filter_Wintersunshine" = "Winter";
+"lsq_filter_Summer" = "Summer";
+"lsq_filter_Winter" = "Winter";
 
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "SkinMultiple";

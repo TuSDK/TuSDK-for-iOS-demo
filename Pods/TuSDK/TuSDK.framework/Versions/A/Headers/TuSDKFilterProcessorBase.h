@@ -6,7 +6,7 @@
 //  Copyright © 2016 TuSDK. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreMedia/CoreMedia.h>

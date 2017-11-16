@@ -38,7 +38,7 @@
 /**
  *  覆盖控制器视图
  */
-@property (nonatomic, retain) DemoRootView *view;
+@property (nonatomic, retain) DemoRootView *listView;
 /**
  *  添加屏幕边缘轻扫手势返回主界面
  */
@@ -49,29 +49,37 @@
 @implementation DemoComponentListController
 @dynamic view;
 
+- (void)viewWillAppear:(BOOL)animated;
+{
+    [self setNavigationBarHidden:NO animated:NO];
+}
+
 - (void)loadView;
 {
     [super loadView];
-    
-    // 设置全屏 隐藏状态栏 for IOS6
-    self.wantsFullScreenLayout = YES;
-    [self setNavigationBarHidden:NO animated:NO];
-    [self setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 
     CGFloat autoHeightForComponentList = ([UIDevice lsqSystemFloatVersion] < 7.f) ? [UIScreen height] - lsq_NAV_BAR_HEIGHT : [UIScreen height];
-    self.view = [DemoRootView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, autoHeightForComponentList)];
+    CGFloat topY = 0;
+    if ([UIDevice lsqIsDeviceiPhoneX]) { // iPhone X
+        autoHeightForComponentList = self.view.bounds.size.height - 122;
+        topY = 88;
+    }
+    
+    self.listView = [DemoRootView initWithFrame:CGRectMake(0, topY, lsqScreenWidth, autoHeightForComponentList)];
     self.view.backgroundColor = lsqRGB(255, 255, 255);
-    self.view.delegate = self;
+    self.listView.backgroundColor = lsqRGB(255, 255, 255);
+    self.listView.delegate = self;
+    [self.view addSubview:self.listView];
     
     // 判断设备版本，添加屏幕边缘滑动手势返回主界面
     if ([UIDevice lsqSystemFloatVersion] < 7.0f) {
         _swipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(onSwipeGesture:)];
         _swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
-        [self.view addGestureRecognizer:_swipeGesture];
+        [self.listView addGestureRecognizer:_swipeGesture];
     }else if ([UIDevice lsqSystemFloatVersion] > 7.0f) {
         _screenEdgePanGesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(onScreenEdgePanGesture:)];
         _screenEdgePanGesture.edges = UIRectEdgeLeft;
-        [self.view addGestureRecognizer:_screenEdgePanGesture];
+        [self.listView addGestureRecognizer:_screenEdgePanGesture];
     }
 }
 
@@ -88,12 +96,6 @@
     [self popViewControllerAnimated:YES];
 
     [self.view removeGestureRecognizer:_screenEdgePanGesture];
-}
-
-// 隐藏状态栏 for IOS7
-- (BOOL)prefersStatusBarHidden;
-{
-    return YES;
 }
 
 - (void)viewDidLoad {
@@ -170,7 +172,7 @@
     [group appenWithSample:[DefineCameraBaseComponent sample]];
     
     // 设置范例分组数据
-    self.view.group = group;    
+    self.listView.group = group;
 }
 
 #pragma mark - DemoRootViewDelegate

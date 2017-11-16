@@ -365,6 +365,7 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  */
 - (void)onStillCamera:(id<TuSDKStillCameraInterface>)camera takedResult:(TuSDKResult *)result error:(NSError *)error;
 
+@optional
 /**
  *  切换滤镜完成
  *

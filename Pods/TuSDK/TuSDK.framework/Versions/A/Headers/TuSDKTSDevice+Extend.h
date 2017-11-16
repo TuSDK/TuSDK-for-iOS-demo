@@ -49,7 +49,45 @@ extern NSString * const kDeviceiPad3G;
 // iPad 4G
 extern NSString * const kDeviceiPad4G;
 
+
+/*
+ 手机型号枚举
+*/
+typedef enum : NSUInteger {
+    // simulator
+    TuSDKDevicePlatform_Simulator,
+    // iPhone
+    TuSDKDevicePlatform_iPhone2G,
+    TuSDKDevicePlatform_iPhone3G,
+    TuSDKDevicePlatform_iPhone3GS,
+    TuSDKDevicePlatform_iPhone4,
+    TuSDKDevicePlatform_iPhone4s,
+    TuSDKDevicePlatform_iPhone5,
+    TuSDKDevicePlatform_iPhone5s,
+    TuSDKDevicePlatform_iPhone5c,
+    TuSDKDevicePlatform_iPhone6,
+    TuSDKDevicePlatform_iPhone6p,
+    TuSDKDevicePlatform_iPhone6s,
+    TuSDKDevicePlatform_iPhone6sp,
+    TuSDKDevicePlatform_iPhoneSE,
+    TuSDKDevicePlatform_iPhone7,
+    TuSDKDevicePlatform_iPhone7p,
+    TuSDKDevicePlatform_iPhone8,
+    TuSDKDevicePlatform_iPhone8p,
+    TuSDKDevicePlatform_iPhoneX,
+    // iPod touch
+    TuSDKDevicePlatform_iPod1G,
+    TuSDKDevicePlatform_iPod2G,
+    TuSDKDevicePlatform_iPod3G,
+    TuSDKDevicePlatform_iPod4G,
+    TuSDKDevicePlatform_iPod5G,
+    // other
+    TuSDKDevicePlatform_other,
+} TuSDKDevicePlatform;
+
+
 #pragma mark - TuSDKTSDeviceExtend
+
 /**
  *  硬件设备扩展
  */
@@ -172,6 +210,18 @@ extern NSString * const kDeviceiPad4G;
  *  @return 2-5
  */
 + (NSUInteger)lsqPerformance;
+
+/**
+ *  获取手机型号
+ *
+ *  @return TuSDKDevicePlatform 手机型号枚举
+ */
++ (TuSDKDevicePlatform)lsqDevicePlatform;
+
+/**
+ *  判断当前手机是否为iPhoneX
+ */
++ (BOOL)lsqIsDeviceiPhoneX;
 
 /**
  *  Universally Unique Identifier 通用唯一识别码

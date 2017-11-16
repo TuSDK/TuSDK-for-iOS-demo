@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterParameter.h"
 

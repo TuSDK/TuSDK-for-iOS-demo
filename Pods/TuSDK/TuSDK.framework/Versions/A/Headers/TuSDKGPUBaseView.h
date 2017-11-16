@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 
 /**
  *  GPU Base View 

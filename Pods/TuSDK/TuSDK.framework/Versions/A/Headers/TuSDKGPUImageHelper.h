@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 /**
  *  GPUImage帮助类
  */

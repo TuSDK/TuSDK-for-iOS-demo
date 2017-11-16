@@ -19,22 +19,6 @@
      *  页面是否已经返回 | 通过这个标记可以在viewDidDisappear里面确认销毁该控制器
      */
     BOOL _isBacked;
-    /**
-     *  来源控制器导航栏是否隐藏
-     */
-    BOOL _isOrginNavHidden;
-    /**
-     *  当前导航栏是否隐藏
-     */
-    BOOL _isNavHidden;
-    /**
-     *  来源控制器状态栏是否隐藏
-     */
-    BOOL _isOrginStatusHidden;
-    /**
-     *  当前状态栏是否隐藏
-     */
-    BOOL _isStatusHidden;
 }
 
 /**

@@ -33,6 +33,11 @@
 @property (nonatomic, readonly) CGRect rectPercent;
 
 /**
+ *  计算 rectPercent 选区的居中范围百分比
+ */
+@property (nonatomic, readonly) CGRect centerRectPercent;
+
+/**
  *  切换比例动画
  *
  *  @param ratio   比例

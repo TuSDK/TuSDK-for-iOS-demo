@@ -6,7 +6,7 @@
 //  Copyright © 2016年 tusdk.com. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 #import "TuSDKFilterParameter.h"
 /**
  *  ArtBrush

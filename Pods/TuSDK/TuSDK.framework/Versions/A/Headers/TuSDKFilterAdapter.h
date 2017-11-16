@@ -10,7 +10,7 @@
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterGroup.h"
 #import "TuSDKConfig.h"
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 
 @protocol TuSDKFilterConfigDelegate;
 

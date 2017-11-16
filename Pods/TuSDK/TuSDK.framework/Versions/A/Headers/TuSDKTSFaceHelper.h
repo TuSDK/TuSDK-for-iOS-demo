@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
-#import <GPUImage/GPUImage.h>
+#import "GPUImageImport.h"
 
 #pragma mark - TuSDKTSFaceFeature
 /**
