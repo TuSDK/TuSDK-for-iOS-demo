@@ -4,7 +4,7 @@
 //
 //  Created by Clear Hu on 14/10/25.
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
-//  http://tusdk.com/docs/ios/api/
+//  https://tutucloud.com/docs/ios/api/
 //
 
 #import <Foundation/Foundation.h>
@@ -32,6 +32,7 @@
 #import "TuSDKTSScreen+Extend.h"
 #import "TuSDKTSString+Extend.h"
 #import "TuSDKTSUIColor+Extend.h"
+#import "TuSDKGPURotateShotOutput.h"
 
 #import "TuSDKICAlertView.h"
 #import "TuSDKICEmptyView.h"
@@ -169,7 +170,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  TuSDK 核心
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDK.html
+ *  @see-https://tutucloud.com/docs/ios/api/Classes/TuSDK.html
  *
  *  内部集成滤镜列表(17):
  *  Normal, Artistic, Brilliant, Cheerful, Clear, Fade, Forest, Gloss,
@@ -210,14 +211,14 @@ extern NSString * const lsqFilterSampleExtension;
 /**
  *  初始化SDK
  *
- *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+ *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
  */
 + (void)initSdkWithAppKey:(NSString *)appkey;
 
 /**
  *  初始化SDK
  *
- *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+ *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
  *  @param devType 开发模式(需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段)
  */
 + (void)initSdkWithAppKey:(NSString *)appkey devType:(NSString *)devType;
@@ -252,7 +253,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  滤镜管理器
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKFilterManager.html
+ *  @see-https://tutucloud.com/docs/ios/api/Classes/TuSDKFilterManager.html
  *
  *  @return filterManager 滤镜管理器
  */
@@ -260,7 +261,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  贴纸管理器
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKPFStickerLocalPackage.html
+ *  @see-https://tutucloud.com/docs/ios/api/Classes/TuSDKPFStickerLocalPackage.html
  *
  *  @return stickerManager 贴纸管理器
  */
@@ -275,7 +276,7 @@ extern NSString * const lsqFilterSampleExtension;
 
 /**
  *  相机对象
- *  @see-http://tusdk.com/docs/ios/api/Classes/TuSDKStillCamera.html
+ *  @see-https://tutucloud.com/docs/ios/api/Classes/TuSDKStillCamera.html
  *
  *  @param sessionPreset  相机分辨率类型 
  *  @see AVCaptureSessionPresetPhoto

@@ -110,6 +110,15 @@
 - (NSUInteger)groupTypeWithGroupID:(uint64_t)groupID;
 
 /**
+ *  分组中的滤镜类型
+ *
+ *  @param groupID 滤镜组ID
+ *
+ *  @return 滤镜类型
+ */
+- (NSUInteger)groupFilterTypeWithGroupID:(uint64_t)groupID;
+
+/**
  *  获取滤镜组默认滤镜代号
  *
  *  @param group 滤镜分组
@@ -169,7 +178,10 @@
  */
 - (void)loadFilterThumbWithImageView:(UIImageView *)view option:(TuSDKFilterOption *)option;
 @end
-
+#pragma mark - TuSDKFilterExtend
+@interface GPUImageFilter(TuSDKFilterExtend)
+- (void)setMatrix4fArray:(GLfloat *)matrix forUniform:(GLint)uniform program:(GLProgram *)shaderProgram;
+@end
 #pragma mark - TuSDKFilter
 @interface TuSDKFilter: GPUImageFilter
 /** 缩放大小 (默认为1.0，数值越小性能越高) */

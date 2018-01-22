@@ -7,6 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+
+/** 颜色代码 */
+struct LSQColor {
+    GLfloat red;
+    GLfloat green;
+    GLfloat blue;
+    GLfloat alpha;
+};
+typedef struct LSQColor LSQColor;
+
 /**
  *  颜色扩展
  */

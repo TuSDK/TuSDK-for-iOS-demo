@@ -8,12 +8,11 @@
 
 #import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
-#import "TuSDKGPUImageTwoInputFilter.h"
 
 /**
  *  眩光混合
  */
-@interface TuSDKGPULightGlareFilter : TuSDKGPUImageTwoInputFilter<TuSDKFilterParameterProtocol, TuSDKFilterStickerProtocol>
+@interface TuSDKGPULightGlareFilter : TuSDKTwoInputFilter<TuSDKFilterParameterProtocol>
 /**
  *  混合 (设值范围0.0-1.0)
  */

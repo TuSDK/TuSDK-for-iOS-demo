@@ -77,7 +77,7 @@
     self.controller = controller;
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)
@@ -138,7 +138,7 @@
     // 控制器关闭后是否自动删除临时文件
     // opt.isAutoRemoveTemp = YES;
     
-    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TUTUCLOUD.com控制台)
     // opt.isRenderFilterThumb = YES;
     
     TuSDKPFEditTurnAndCutViewController *tcController = opt.viewController;

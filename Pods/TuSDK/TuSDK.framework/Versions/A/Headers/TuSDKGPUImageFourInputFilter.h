@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 Lasque. All rights reserved.
 //
 
-#import <GPUImage/GPUImageThreeInputFilter.h>
+#import "TuSDKFilterAdapter.h"
 
 extern NSString *const kTuSDKGPUImageFourInputTextureVertexShaderString;
 
 @interface
-TuSDKGPUImageFourInputFilter : GPUImageThreeInputFilter
+TuSDKGPUImageFourInputFilter : TuSDKThreeInputFilter
 {
     GPUImageFramebuffer *fourthInputFramebuffer;
 

@@ -46,9 +46,9 @@
 @property (nonatomic, readonly) CGAffineTransform videoInputTransform;
 
 /**
- * 物理感应器角度
+ * 物理感应器弧度
  */
-@property (nonatomic, readonly) float deviceAngle;
+@property (nonatomic, readonly) float deviceRadian;
 
 /**
  *  根据物理方向转变为图片方向

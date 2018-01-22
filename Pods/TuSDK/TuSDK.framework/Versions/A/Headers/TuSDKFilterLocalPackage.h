@@ -165,6 +165,15 @@ extern NSString * const lsqNormalFilterCode;
 - (NSUInteger)groupTypeWithGroupID:(uint64_t)groupID;
 
 /**
+ *  分组中的滤镜类型
+ *
+ *  @param groupID 滤镜组ID
+ *
+ *  @return 滤镜类型
+ */
+- (NSUInteger)groupFilterTypeWithGroupID:(uint64_t)groupID;
+
+/**
  *  获取滤镜组默认滤镜代号
  *
  *  @param group 滤镜分组

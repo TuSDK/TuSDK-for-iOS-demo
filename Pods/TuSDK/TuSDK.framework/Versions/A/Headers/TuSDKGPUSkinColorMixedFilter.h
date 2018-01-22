@@ -7,13 +7,12 @@
 //
 
 
-#import "TuSDKFilterParameter.h"
-#import "TuSDKGPUImageThreeInputFilter.h"
+#import "TuSDKFilterAdapter.h"
 
 /**
  *  肤色调整，在美颜滤镜中使用
  */
-@interface TuSDKGPUSkinColorMixedFilter : TuSDKGPUImageThreeInputFilter <TuSDKFilterStickerProtocol>
+@interface TuSDKGPUSkinColorMixedFilter : TuSDKThreeInputFilter
 
 /** The strength of the sharpening, from 0.0 on up, with a default of 1.0 */
 @property(readwrite, nonatomic) CGFloat intensity;

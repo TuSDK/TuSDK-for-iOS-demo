@@ -65,12 +65,12 @@
                                 result:(TuSDKResult *)result;
 {
     // 组件使用文档教程
-    // @see-https://tusdk.com/docs/ios/editor-usage
+    // @see-https://tutucloud.com/docs/ios/editor-usage
     
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV1 photoEditMultipleWithController:controller
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -114,11 +114,11 @@
          //
      }];
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleOptions.html
     // _photoEditMultipleComponent.options
     
     //    // 照片美化组件入口控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditMultipleOptions.html
     // _photoEditMultipleComponent.options.editMultipleOptions
     //    // 禁用功能模块 默认：加载全部模块
     //    [_photoEditMultipleComponent.options.editMultipleOptions disableModule:lsqTuSDKCPEditActionCuter];
@@ -132,7 +132,7 @@
     //    _photoEditMultipleComponent.options.editMultipleOptions.waterMarkOption = [self waterMarkOption];
     //
     //    // 滤镜模块控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditFilterOptions.html
     // _photoEditMultipleComponent.options.editFilterOptions
     //    // 默认: true, 开启滤镜配置选项
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterConfig = YES;
@@ -152,11 +152,11 @@
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterHistory = YES;
     //    // 显示滤镜标题视图
     //    _photoEditMultipleComponent.options.editFilterOptions.displayFilterSubtitles = YES;
-    //    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    //    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TUTUCLOUD.com控制台)
     //    _photoEditMultipleComponent.options.editFilterOptions.isRenderFilterThumb = YES;
     //
     //    // 裁切模块旋转控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditCuterOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditCuterOptions.html
     // _photoEditMultipleComponent.options.editCuterOptions
     //    // 是否开启图片旋转(默认: false)
     //    _photoEditMultipleComponent.options.editCuterOptions.enableTrun = YES;
@@ -172,7 +172,7 @@
     //    _photoEditMultipleComponent.options.editCuterOptions.outputCompress = 0.95f;
     //
     //    // 美颜模块控制器视图配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditSkinOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditSkinOptions.html
     // _photoEditMultipleComponent.options.editSkinOptions
     //    // 保存到临时文件
     //    _photoEditMultipleComponent.options.editSkinOptions.saveToTemp = YES;
@@ -181,7 +181,7 @@
     //
     //    // 贴纸模块选择控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditStickerOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditStickerOptions.html
     //    // 单元格间距 (单位：DP)
     //    _photoEditMultipleComponent.options.editStickerOptions.gridPadding = 2;
     //    // 保存到临时文
@@ -200,7 +200,7 @@
     //
     //    // 颜色调整模块控制器配置选项
     // _photoEditMultipleComponent.options.editAdjustOptions
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditAdjustOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditAdjustOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editAdjustOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -208,7 +208,7 @@
     //
     //    // 锐化模块控制器配置选项
     // _photoEditMultipleComponent.options.editSharpnessOptions
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditSharpnessOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditSharpnessOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editSharpnessOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -216,7 +216,7 @@
     //
     //    // 大光圈模块控制器配置选项
     // _photoEditMultipleComponent.options.editApertureOptions
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditApertureOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditApertureOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editApertureOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -224,14 +224,14 @@
     //
     //    // 暗角模块控制器配置选项
     // _photoEditMultipleComponent.options.editVignetteOptions
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditVignetteOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditVignetteOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editVignetteOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editVignetteOptions.outputCompress = 0.95f;
     //
     //    // 涂抹模块控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditSmudgeOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditSmudgeOptions.html
     // _photoEditMultipleComponent.options.editSmudgeOptions
     //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
     //    _photoEditMultipleComponent.options.editSmudgeOptions.defaultBrushSize = lsqMediumBrush;
@@ -245,7 +245,7 @@
     //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
     //    // 模糊模块控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditWipeAndFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditWipeAndFilterOptions.html
     // _photoEditMultipleComponent.options.editWipeAndFilterOptions
     //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
     //    _photoEditMultipleComponent.options.editWipeAndFilterOptions.defaultBrushSize = lsqMediumBrush;

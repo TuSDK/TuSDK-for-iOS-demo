@@ -10,6 +10,11 @@
 #import "TuSDKAOFile.h"
 #import "TuSDKFilterOption.h"
 
+// 分组滤镜类型ID
+const static int lsqGroupFilterTypeGeneral = 0;  // 普通滤镜
+const static int lsqGroupFilterTypeMagic   = 1;  // 特效滤镜
+
+
 /**
  *  滤镜分组
  */
@@ -28,6 +33,11 @@
  *  类型ID 0: 普通滤镜 1: 直播滤镜
  */
 @property (nonatomic) NSUInteger categoryId;
+
+/**
+ *  分组中滤镜类型 0: 普通滤镜 1: 特效滤镜
+ */
+@property (nonatomic) NSUInteger groupFilterType;
 
 /**
  * 验证方式 0：不绑定验证

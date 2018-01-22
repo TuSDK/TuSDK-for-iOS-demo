@@ -64,7 +64,7 @@
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 是否开启滤镜支持 (默认: 关闭)
@@ -85,7 +85,7 @@
     // 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
     opt.showResultPreview = NO;
     
-    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+    // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TUTUCLOUD.com控制台)
     // opt.isRenderFilterThumb = YES;
     
     // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)

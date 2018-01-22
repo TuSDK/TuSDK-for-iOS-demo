@@ -17,16 +17,20 @@
     GLProgram *displayProgram;
     CGSize inputImageSize;
     GPUImageRotationMode inputRotation;
+    // 线程同步时使用的全局变量 (避免在分线程中使用bounds引起log警告)
+    CGRect viewBounds;
 }
 
 /** This calculates the current display size, in pixels, taking into account Retina scaling factors
  */
 @property(readonly, nonatomic) CGSize sizeInPixels;
-
 @property(nonatomic) BOOL enabled;
 
++ (const GLfloat *)textureCoordinatesForRotation:(GPUImageRotationMode)rotationMode;
 - (void)setFragmentShader:(NSString *)fragmentShader;
 - (void)setVertexShader:(NSString *)vertexShader fragmentShader:(NSString *)fragmentShader;
+
+- (void)renderToDisplayWithVertices:(const GLfloat *)vertices textureCoordinates:(const GLfloat *)textureCoordinates;
 
 /** Handling fill mode
  
@@ -42,4 +46,5 @@
 - (void)lsqInitView;
 
 - (void)recalculateViewGeometry;
+- (void)createDisplayFramebuffer;
 @end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import "GPUImageImport.h"
+#import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
 /**

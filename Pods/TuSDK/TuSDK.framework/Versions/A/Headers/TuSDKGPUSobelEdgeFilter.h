@@ -6,10 +6,10 @@
 //  Copyright © 2017年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKGPUImageTwoInputFilter.h"
+#import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
 /** 边缘光效*/
-@interface TuSDKGPUSobelEdgeFilter : TuSDKGPUImageTwoInputFilter<TuSDKFilterParameterProtocol, TuSDKFilterStickerProtocol>
+@interface TuSDKGPUSobelEdgeFilter : TuSDKTwoInputFilter<TuSDKFilterParameterProtocol>
 
 @end

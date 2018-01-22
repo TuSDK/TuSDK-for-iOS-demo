@@ -23,7 +23,7 @@ extern NSString * const lsqGeeV2Version;
 
 /**
  *  多功能相册组件，选择多张照片
- *  @see-https://tusdk.com/docs/ios/api-geev2/Classes/GeeV2CPAlbumMultipleComponent.html
+ *  @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2CPAlbumMultipleComponent.html
  *
  *  @param controller   来源控制器
  *  @param block        组件回调结果
@@ -39,7 +39,7 @@ extern NSString * const lsqGeeV2Version;
 
 /**
  *  获取多功能图像编辑组件
- *  @see-https://tusdk.com/docs/ios/api-geev2/Classes/GeeV2CPPhotoEditMultipleComponent.html
+ *  @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2CPPhotoEditMultipleComponent.html
  *
  *  @param controller 来源控制器
  *  @param block      组件回调结果

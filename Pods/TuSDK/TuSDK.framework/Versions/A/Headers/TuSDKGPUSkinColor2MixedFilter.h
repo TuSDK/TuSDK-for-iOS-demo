@@ -6,11 +6,10 @@
 //  Copyright © 2017年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKFilterParameter.h"
-#import "TuSDKGPUImageThreeInputFilter.h"
+#import "TuSDKFilterAdapter.h"
 
 /** 美图磨皮算法*/
-@interface TuSDKGPUSkinColor2MixedFilter : TuSDKGPUImageThreeInputFilter <TuSDKFilterStickerProtocol>
+@interface TuSDKGPUSkinColor2MixedFilter : TuSDKThreeInputFilter
 /** 混合 (设值范围0.0-1.0，原图默认值为0.0，越大效果越强) */
 @property(readwrite, nonatomic) CGFloat mixed;
 /** The strength of the sharpening, from 0.0 on up, with a default of 1.0 */

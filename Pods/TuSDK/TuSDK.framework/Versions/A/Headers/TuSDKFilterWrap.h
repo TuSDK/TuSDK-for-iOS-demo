@@ -11,29 +11,25 @@
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterParameter.h"
 
-/**
- *  滤镜对象包装
- */
-@interface TuSDKFilterWrap : NSObject
+/** 滤镜对象包装*/
+@interface TuSDKFilterWrap : NSObject{
+    GPUImageOutput <GPUImageInput> *_filter;
+    GPUImageOutput <GPUImageInput> *_lastFilter;
+}
 
-/**
- *  滤镜配置选项
- */
+/** 滤镜配置选项*/
 @property (nonatomic, readonly, nullable) TuSDKFilterOption *opt;
 
-/**
- *  滤镜代号
- */
+/** 滤镜代号*/
 @property (nonatomic, readonly, nullable) NSString *code;
 
-/**
- *  滤镜对象
- */
+/** 滤镜对象*/
 @property (nonatomic, readonly, nullable) GPUImageOutput <GPUImageInput> *filter;
 
-/**
- *  滤镜配置选项
- */
+/** 最后一个滤镜*/
+@property (nonatomic, readonly, nullable) GPUImageOutput <GPUImageInput> *lastFilter;
+
+/** 滤镜配置选项*/
 @property (nonatomic, readwrite, nullable) TuSDKFilterParameter *filterParameter;
 
 /**
@@ -46,20 +42,49 @@
 + (nullable instancetype) initWithOpt:(nullable TuSDKFilterOption *)opt;
 
 /**
+ *  初始化滤镜对象包装
+ *
+ *  @param opt 滤镜配置选项
+ *
+ *  @return opt 滤镜对象包装
+ */
+- (nullable instancetype)initWithOpt:(nullable TuSDKFilterOption *)opt;
+
+/** 提交滤镜配置选项*/
+- (void)submitParameter;
+
+/**
+ 切换滤镜
+ @param filterCode 滤镜代号
+ */
+- (void)changeFilter:(nullable NSString *)filterCode;
+
+/**
+ 改变option
+ @param opt 滤镜配置选项
+ */
+- (void)changeOption:(nullable TuSDKFilterOption *)opt;
+
+/** 添加输出*/
+- (void)addTarget:(nullable id<GPUImageInput>)newTarget atTextureLocation:(NSInteger)textureLocation;
+
+/** 删除输出*/
+- (void)removeTarget:(nullable id<GPUImageInput>)targetToRemove;
+
+/**
  *  绑定视频视图
  *
  *  @param view 视频视图
  */
 - (void)bindWithCameraView:(nullable UIView <GPUImageInput> *)view;
 
-/**
- *  提交滤镜配置选项
- */
-- (void)submitParameter;
+/** 添加输入*/
+- (void)addOrgin:(nullable GPUImageOutput *)newOrgin;
 
-/**
- *  处理材质
- */
+/** 删除输入*/
+- (void)removeOrgin:(nullable GPUImageOutput *)newOrgin;
+
+/** 处理材质*/
 - (void)processImage;
 
 /**
@@ -88,9 +113,7 @@
  */
 - (nullable UIImage *)processWithImage:(nullable UIImage *)image orientation:(UIImageOrientation)imageOrientation;
 
-/**
- *  销毁
- */
+/** 销毁*/
 - (void)destroy;
 
 /**

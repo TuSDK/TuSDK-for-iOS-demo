@@ -481,4 +481,14 @@
  *  @return 从Plane PixelBuffer获取图片
  */
 + (UIImage *)lsqImageFromPlanarPixelBuffer:(CVPixelBufferRef)pixelBuffer;
+
+
+/**
+ 从像素缓存获取图片
+
+ @param pixelBuffer 像素缓存
+ @param size 图片宽高
+ @return 图像对象
+ */
++ (UIImage *)lsqImageFromPixelBuffer:(const GLubyte *)pixelBuffer size:(CGSize)size;
 @end

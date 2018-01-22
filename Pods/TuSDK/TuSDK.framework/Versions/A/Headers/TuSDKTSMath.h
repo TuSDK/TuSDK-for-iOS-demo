@@ -22,16 +22,16 @@
  *
  *  @return 弧度
  */
-+ (CGFloat)angleOfDegrees:(CGFloat)degrees;
++ (CGFloat)radianFromDegrees:(CGFloat)degrees;
 
 /**
  *  弧度转换为角度
  *
- *  @param angle 弧度
+ *  @param radian 弧度
  *
  *  @return 角度
  */
-+ (CGFloat)degreesOfAngle:(CGFloat)angle;
++ (CGFloat)degreesFromRadian:(CGFloat)radian;
 
 /**
  *  浮点数取模

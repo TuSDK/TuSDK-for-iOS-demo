@@ -84,6 +84,15 @@
 - (BOOL)isNormalFilter:(NSString *)code;
 
 /**
+ *  是否是特效滤镜
+ *
+ *  @param code 滤镜代号
+ *
+ *  @return
+ */
+- (BOOL)isMagicFilter:(NSString *)code;
+
+/**
  *  执行滤镜 并输出图形
  *
  *  @param image image 输入图像

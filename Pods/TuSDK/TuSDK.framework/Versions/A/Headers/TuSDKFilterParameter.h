@@ -52,9 +52,9 @@
  *  更新信息
  *
  *  @param faces  脸
- *  @param angle  设备角度
+ *  @param radian 设备弧度
  */
-- (void)updateFaceFeatures:(NSArray<TuSDKFaceAligment *> *)faces angle:(CGFloat)angle;
+- (void)updateFaceFeatures:(NSArray<TuSDKFaceAligment *> *)faces radian:(CGFloat)radian;
 @end
 
 
@@ -80,13 +80,6 @@
 - (void)setDisplayRect:(CGRect)displayRect withRatio:(CGFloat)ratio;
 
 /**
- 设置是否显示贴纸
-
- @param isVisibility 是否显示贴纸，YES：显示贴纸   NO：不显示
- */
-- (void)setStickerVisibility:(BOOL)isVisibility;
-
-/**
  设置是否根据计时时间自动播放贴纸  注：视频剪辑中贴纸时间使用视频帧时间设置贴纸帧的index，录制中贴纸时间根据定时器时间自动播放
 
  @param isAutoplay 是否根据计时时间自动播放贴纸，若不调用该方法，默认值为 YES
@@ -94,60 +87,54 @@
 - (void)setAutoplayStickers:(BOOL)isAutoplay;
 
 /**
+ 根据某个时间设置贴纸 index
+ 
+ @param time 时间参数
+ */
+- (void)seekToStickerIndexByTime:(CMTime)time;
+
+/**
  设置贴纸显示时间，当选择了某一段视频时，需要传入此参数进行贴纸帧和视频帧时间的校对
  */
 - (void)setStickerShowTime:(CMTime)stickerShowTime;
+
+/**
+ 设置是否显示贴纸
+ 
+ @param isVisibility 是否显示贴纸，YES：显示贴纸   NO：不显示
+ */
+- (void)setStickerVisibility:(BOOL)isVisibility;
 @end
 
 #pragma mark - TuSDKFilterArg
-/**
- *  滤镜参数
- */
+/** 滤镜参数*/
 @interface TuSDKFilterArg : NSObject
-/**
- *  设置百分比 0 - 1
- */
+/** 设置百分比 0 - 1*/
 @property (nonatomic) CGFloat precent;
 
-/**
- *  获取值
- */
+/** 获取值*/
 @property (nonatomic, readonly) CGFloat value;
 
-/**
- *  参数键名
- */
+/** 参数键名*/
 @property (nonatomic, readonly) NSString *key;
 
-/**
- *  默认值
- */
+/** 默认值*/
 - (void)reset;
 @end
 
 #pragma mark - TuSDKFilterParameter
-/**
- *  滤镜配置选项
- */
+/** 滤镜配置选项*/
 @interface TuSDKFilterParameter : NSObject
-/**
- *  参数列表
- */
+/** 参数列表*/
 @property (nonatomic, readonly) NSArray *args;
 
-/**
- *  参数键名列表
- */
+/** 参数键名列表*/
 @property (nonatomic, readonly) NSArray *argKeys;
 
-/**
- *  配置参数总数
- */
+/** 配置参数总数*/
 @property (nonatomic, readonly) NSUInteger count;
 
-/**
- *  是否已初始化
- */
+/** 是否已初始化*/
 @property (nonatomic, readonly) BOOL isInited;
 
 /**
@@ -238,4 +225,18 @@
                         value:(CGFloat)value
                      minValue:(CGFloat)minValue
                      maxValue:(CGFloat)maxValue;
+
+/**
+ 合并滤镜参数
+
+ @param other 其他滤镜参数
+ */
+- (void)merge:(TuSDKFilterParameter *)other;
+
+/**
+ 同步滤镜参数
+
+ @param other 其他滤镜参数
+ */
+- (void)syncArgs:(TuSDKFilterParameter *)other;
 @end

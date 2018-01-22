@@ -58,7 +58,7 @@
 - (void)showCameraController;
 {
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 控制器类

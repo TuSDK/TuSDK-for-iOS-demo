@@ -54,7 +54,7 @@
 - (void)showCamera;
 {
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 使用前置摄像头
@@ -88,7 +88,7 @@
     // opt.cameraViewRatio = 0.75f;
     
     // 自定义滤镜列表，输入本地已有的滤镜编码即可
-    // @see-http://tusdk.com/docs/ios/self-customize-filter
+    // @see-https://tutucloud.com/docs/ios/self-customize-filter
     opt.filterGroup = @[@"SkinNature", @"SkinPink", @"SkinJelly", @"SkinNoir", @"SkinRuddy", @"SkinPowder", @"SkinSugar"];
 
     // 视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)

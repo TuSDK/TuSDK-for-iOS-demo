@@ -37,7 +37,7 @@
     lsqLDebug(@"albumComponentHandler");
 
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleComponent.html
 
     _albumComponent =
     [TuSDKGeeV1 albumMultipleCommponentWithController:controller
@@ -56,13 +56,13 @@
      maxSelectionNumber:9];
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleOptions.html
     // _albumComponent.options
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFAlbumMultipleOptions.html
     // _albumComponent.options.albumOptions
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
     // _albumComponent.options.cameraOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)

@@ -37,7 +37,7 @@
     lsqLDebug(@"avatarComponentHandler");
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPAvatarComponent.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAvatarComponent.html
     _avatarComponent =
     [TuSDKGeeV1 avatarCommponentWithController:controller
                             callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -52,19 +52,19 @@
      }];
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPAvatarOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAvatarOptions.html
     // _avatarComponent.options
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFAlbumOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFAlbumOptions.html
     // _avatarComponent.options.albumOptions
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFPhotosOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFPhotosOptions.html
     // _avatarComponent.options.photosOptions
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
     // _avatarComponent.options.cameraOptions
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditTurnAndCutOptions.html
     // _avatarComponent.options.editTurnAndCutOptions
     
     

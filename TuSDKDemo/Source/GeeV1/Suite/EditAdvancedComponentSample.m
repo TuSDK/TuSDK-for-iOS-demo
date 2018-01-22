@@ -71,7 +71,7 @@
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditComponent.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditComponent.html
     _photoEditComponent =
     [TuSDKGeeV1 photoEditCommponentWithController:controller
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -89,11 +89,11 @@
 
      }];
     
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditOptions.html
     // _photoEditComponent.options
     
     //    // 图片编辑入口控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditEntryOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditEntryOptions.html
     // _photoEditComponent.options.editEntryOptions
     //    // 默认: true, 开启裁剪旋转功能
     //    _photoEditComponent.options.editEntryOptions.enableCuter = YES;
@@ -109,7 +109,7 @@
     //    _photoEditComponent.options.editEntryOptions.isAutoRemoveTemp = YES;
     //
     //    // 图片编辑滤镜控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditFilterOptions.html
     // _photoEditComponent.options.editFilterOptions
     //    // 默认: true, 开启滤镜配置选项
     //    _photoEditComponent.options.editFilterOptions.enableFilterConfig = YES;
@@ -127,7 +127,7 @@
     //    _photoEditComponent.options.editFilterOptions.enableFilterHistory = YES;
     //
     //    // 图片编辑裁切旋转控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFEditCuterOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditCuterOptions.html
     // _photoEditComponent.options.editCuterOptions
     //    // 是否开启图片旋转(默认: false)
     //    _photoEditComponent.options.editCuterOptions.enableTrun = YES;
@@ -140,7 +140,7 @@
     //    // 是否仅返回裁切参数，不返回处理图片
     //    _photoEditComponent.options.editCuterOptions.onlyReturnCuter = YES;
     //    // 本地贴纸选择控制器配置选项
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFStickerLocalOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFStickerLocalOptions.html
     // _photoEditComponent.options.stickerLocalOptions
     
     // 设置图片

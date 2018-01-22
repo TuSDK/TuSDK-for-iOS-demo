@@ -14,14 +14,16 @@
 /** 人脸区域 */
 @property (nonatomic) CGRect rect;
 /** 对齐信息 */
-@property (nonatomic, retain) NSArray<NSValue *> *marks;
+@property (nonatomic, readonly, retain) NSArray<NSValue *> *marks;
+/** 原始对齐信息 */
+@property (nonatomic, retain) NSArray<NSValue *> *orginMarks;
 
-// 仰角／俯角
-@property (nonatomic) CGFloat yaw;
-
-// 左右旋转角度
+/** 仰角／俯角 */
 @property (nonatomic) CGFloat pitch;
 
-// 翻滚角
+/** 左右旋转角度 */
+@property (nonatomic) CGFloat yaw;
+
+/** 翻滚角 */
 @property (nonatomic) CGFloat roll;
 @end

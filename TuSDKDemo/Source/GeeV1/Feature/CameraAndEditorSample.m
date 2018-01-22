@@ -58,7 +58,7 @@
 - (void)showCamera;
 {
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 是否开启滤镜支持 (默认: 关闭)
@@ -176,7 +176,7 @@
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tusdk.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV1 photoEditMultipleWithController:controller
                                   callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)

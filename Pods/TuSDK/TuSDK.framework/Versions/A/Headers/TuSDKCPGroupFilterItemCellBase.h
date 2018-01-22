@@ -230,7 +230,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 @property (nonatomic, assign) id<TuSDKTKFiltersTaskInterface> filterTask;
 
 /**
- *  是否渲染封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TuSDK.com控制台)
+ *  是否渲染封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TUTUCLOUD.com控制台)
  */
 @property (nonatomic, readonly) BOOL isRenderFilterThumb;
 
