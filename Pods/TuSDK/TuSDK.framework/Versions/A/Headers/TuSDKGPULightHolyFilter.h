@@ -6,11 +6,11 @@
 //  Copyright © 2015年 tusdk.com. All rights reserved.
 //
 
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 #import "TuSDKFilterParameter.h"
 /**
  *  Light Holy Filter
  */
-@interface TuSDKGPULightHolyFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
+@interface TuSDKGPULightHolyFilter : SLGPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
 
 @end

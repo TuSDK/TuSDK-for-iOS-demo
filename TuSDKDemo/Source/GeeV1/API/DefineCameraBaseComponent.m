@@ -81,8 +81,7 @@
 -(void)loadView
 {
     [super loadView];
-    // 设置全屏 隐藏状态栏 for IOS6
-    self.wantsFullScreenLayout = YES;
+
     [self.navigationController setNavigationBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 }
@@ -495,24 +494,7 @@
     // [_camera rotateCamera];
     //  隐藏状态栏 for IOS6
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    [self dismissModalViewControllerAnimated:YES];
-}
-#pragma mark - Autorotate
-// 是否允许旋转 IOS5
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    return NO;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-// 是否允许旋转 IOS6
--(BOOL)shouldAutorotate
-{
-    return NO;
-}
-
-// 支持的旋转模式 IOS6
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait;
-}
 @end

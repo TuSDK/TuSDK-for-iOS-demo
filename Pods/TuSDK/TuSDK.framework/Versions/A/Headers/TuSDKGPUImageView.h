@@ -15,6 +15,6 @@
 
 /** The fill mode dictates how images are fit in the view, with the default being kGPUImageFillModePreserveAspectRatio
  */
-@property(readwrite, nonatomic) GPUImageFillModeType fillMode;
+@property(readwrite, nonatomic) LSQGPUImageFillModeType fillMode;
 @end
 

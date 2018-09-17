@@ -12,8 +12,16 @@
 
 // 分组滤镜类型ID
 const static int lsqGroupFilterTypeGeneral = 0;  // 普通滤镜
-const static int lsqGroupFilterTypeMagic   = 1;  // 特效滤镜
+const static int lsqGroupFilterTypeSceneEffect   = 1;  // 场景特效滤镜
+const static int lsqGroupFilterTypeParticleEffect   = 2;  // 粒子特效滤镜
 
+// 所属SDK类型
+typedef NS_ENUM(NSUInteger,lsqAtionScenSDKType)
+{
+    lsqAtionScenSDKTypeImage = 1,
+    lsqAtionScenSDKTypeLive = 2,
+    lsqAtionScenSDKTypeShortVideo = 4,
+};
 
 /**
  *  滤镜分组
@@ -35,9 +43,14 @@ const static int lsqGroupFilterTypeMagic   = 1;  // 特效滤镜
 @property (nonatomic) NSUInteger categoryId;
 
 /**
- *  分组中滤镜类型 0: 普通滤镜 1: 特效滤镜
+ *  分组中滤镜类型 0: 普通滤镜 1: 特效滤镜 2: 魔法特效
  */
 @property (nonatomic) NSUInteger groupFilterType;
+
+/**
+ * 该资源所属 SDK 类型  lsqAtionScenSDKTypeImage , lsqAtionScenSDKTypeLive , lsqAtionScenSDKTypeShortVideo
+ */
+@property (nonatomic) lsqAtionScenSDKType ation_scen;
 
 /**
  * 验证方式 0：不绑定验证
@@ -123,6 +136,13 @@ const static int lsqGroupFilterTypeMagic   = 1;  // 特效滤镜
 - (TuSDKFilterOption *)defaultFilter;
 
 /**
+ * 验证当前资源是否可以在指定的 sdk 中使用
+ * @param ation_scen sdk 类型
+ * @return true/false
+ */
+- (BOOL)canUseForAtionScenType:(lsqAtionScenSDKType)ationScen;
+
+/**
  *  获取语言资源名称
  *
  *  @return nameKey 获取语言资源名称
@@ -149,4 +169,6 @@ const static int lsqGroupFilterTypeMagic   = 1;  // 特效滤镜
  *  @return defaultFilterThumbKey 获取默认选中的滤镜预览图名称
  */
 - (NSString *)defaultFilterThumbKey;
+
+
 @end

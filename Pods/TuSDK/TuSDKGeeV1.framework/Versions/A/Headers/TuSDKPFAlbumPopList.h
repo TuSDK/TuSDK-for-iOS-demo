@@ -32,7 +32,7 @@
 /**
  *  系统相册列表
  */
-@property (nonatomic, retain) NSArray *groups;
+@property (nonatomic, strong) NSArray<id<TuSDKTSAssetsGroupInterface>> *groups;
 
 /**
  *  是否为隐藏状态

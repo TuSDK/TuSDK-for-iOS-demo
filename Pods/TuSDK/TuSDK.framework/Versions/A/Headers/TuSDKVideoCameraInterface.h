@@ -7,7 +7,6 @@
 //
 
 #import "TuSDKResult.h"
-#import "TuSDKTSMath.h"
 #import "TuSDKCPRegionHandler.h"
 #import "TuSDKTSFaceHelper.h"
 #import "TuSDKFilterAdapter.h"

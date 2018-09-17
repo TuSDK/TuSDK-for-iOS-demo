@@ -275,6 +275,9 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
+    // 设置一键美颜默认值（默认：0，范围：0 ~ 1）
+    _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5;
+    
     _photoEditMultipleComponent.inputResources = inputResults;
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _photoEditMultipleComponent.autoDismissWhenCompelted = YES;

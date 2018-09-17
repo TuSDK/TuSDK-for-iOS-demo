@@ -12,4 +12,7 @@
 /** Point Draw Filter*/
 @interface TuSDKGPUPointDrawFilter : TuSDKFilter<TuSDKFilterFacePositionProtocol>
 
+- (void)updateElemIndex:(NSArray<NSNumber *>*) mElemIndexTmp mVerticesTmp:(GLfloat*)mVerticesTmp;
+
+
 @end

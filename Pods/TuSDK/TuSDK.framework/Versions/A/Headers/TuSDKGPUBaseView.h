@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 
 /**
  *  GPU Base View 
  */
-@interface TuSDKGPUBaseView : UIView<GPUImageInput>
+@interface TuSDKGPUBaseView : UIView<SLGPUImageInput>
 {
-    GLProgram *displayProgram;
+    SLGLProgram *displayProgram;
     CGSize inputImageSize;
-    GPUImageRotationMode inputRotation;
+    LSQGPUImageRotationMode inputRotation;
     // 线程同步时使用的全局变量 (避免在分线程中使用bounds引起log警告)
     CGRect viewBounds;
 }
@@ -26,7 +26,7 @@
 @property(readonly, nonatomic) CGSize sizeInPixels;
 @property(nonatomic) BOOL enabled;
 
-+ (const GLfloat *)textureCoordinatesForRotation:(GPUImageRotationMode)rotationMode;
++ (const GLfloat *)textureCoordinatesForRotation:(LSQGPUImageRotationMode)rotationMode;
 - (void)setFragmentShader:(NSString *)fragmentShader;
 - (void)setVertexShader:(NSString *)vertexShader fragmentShader:(NSString *)fragmentShader;
 

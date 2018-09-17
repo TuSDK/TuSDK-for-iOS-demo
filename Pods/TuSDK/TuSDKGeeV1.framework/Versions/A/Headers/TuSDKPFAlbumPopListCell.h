@@ -13,20 +13,20 @@
  *  默认相册列表样式行视图
  */
 @interface TuSDKPFAlbumPopListCell : TuSDKICTableViewCell
-{
-@protected
-    /**
-     *  封面
-     */
-    UIImageView *_posterImage;
-    /**
-     *  标题
-     */
-    UILabel *_title;
-}
 
 /**
  *  相册组数据
  */
 @property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;
+
+/**
+ *  封面
+ */
+@property (nonatomic, strong, readonly) UIImageView *posterImage;
+
+/**
+ *  标题
+ */
+@property (nonatomic, strong) UILabel *title;
+
 @end

@@ -244,7 +244,7 @@
  */
 - (void)onTuSDKPFCamera:(TuSDKPFCameraViewController *)controller captureResult:(TuSDKResult *)result;
 {
-    [controller dismissModalViewControllerAnimated:YES];
+    [controller dismissViewControllerAnimated:YES completion:nil];
     lsqLDebug(@"onTuSDKPFCamera: %@", result);
 }
 

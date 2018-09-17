@@ -12,6 +12,7 @@
 "lsq_complete" = "Done";
 "lsq_setting" = "Settings";
 "lsq_loading_image" = "Loading image...";
+"lsq_filterGIF_image" = "GIF file type is not supported to photo edit";
 "lsq_downloading_image" = "Downloading image from iCloud...";
 "lsq_initing" = "Initializing";
 "lsq_inited" = "Initialized";

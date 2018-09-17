@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 #import "TuSDKDataJson.h"
 
 #pragma mark - RuntimeTextureDelegate
@@ -17,7 +17,7 @@
 /**
  运行时材质委托
  */
--(NSArray<GPUImagePicture *> *)getRunTimeTextures;
+-(NSArray<SLGPUImagePicture *> *)getRunTimeTextures;
 
 @end
 
@@ -94,7 +94,7 @@
 /**
  *  滤镜参数列表
  */
-@property (nonatomic, copy) NSString *argList;
+@property (nonatomic, strong) NSDictionary *argList;
 
 /**
  *  vertex
@@ -143,7 +143,7 @@
  *
  * @return getFilter
  */
-- (GPUImageOutput <GPUImageInput> *)getFilter;
+- (SLGPUImageOutput <SLGPUImageInput> *)getFilter;
 
 /**
  *  获取语言资源名称

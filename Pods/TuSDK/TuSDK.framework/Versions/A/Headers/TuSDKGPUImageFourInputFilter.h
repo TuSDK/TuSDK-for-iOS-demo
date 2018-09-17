@@ -13,11 +13,11 @@ extern NSString *const kTuSDKGPUImageFourInputTextureVertexShaderString;
 @interface
 TuSDKGPUImageFourInputFilter : TuSDKThreeInputFilter
 {
-    GPUImageFramebuffer *fourthInputFramebuffer;
+    SLGPUImageFramebuffer *fourthInputFramebuffer;
 
     GLint filterFourthTextureCoordinateAttribute;
     GLint filterInputTextureUniform4;
-    GPUImageRotationMode inputRotation4;
+    LSQGPUImageRotationMode inputRotation4;
     GLuint filterSourceTexture4;
     CMTime fourthFrameTime;
 
@@ -31,7 +31,7 @@ TuSDKGPUImageFourInputFilter : TuSDKThreeInputFilter
 // glActiveTexture -> glBindTexture -> glUniform1i
 -(void)renderToTextureglABUHook;
 -(void)renderToTextureglVertexAttribPointerHook;
--(GPUImageRotationMode)rotatedSizeHook:(NSInteger)textureIndex;
+-(LSQGPUImageRotationMode)rotatedSizeHook:(NSInteger)textureIndex;
 -(BOOL)newFrameReadyAtTimeHasReceivedHook;
 
 -(BOOL)newFrameReadyAtTimeHook:(NSInteger)textureIndex frameTime:(CMTime)frameTime;

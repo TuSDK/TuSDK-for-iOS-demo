@@ -7,10 +7,10 @@
 //
 
 #import "TuSDKNKDownloadAdapter.h"
+#import "SLGPUImage.h"
 #import "TuSDKFilterOption.h"
 #import "TuSDKFilterGroup.h"
 #import "TuSDKConfig.h"
-#import "GPUImageImport.h"
 
 @protocol TuSDKFilterConfigDelegate;
 
@@ -118,6 +118,23 @@
  */
 - (NSUInteger)groupFilterTypeWithGroupID:(uint64_t)groupID;
 
+
+/**
+ 根据滤镜组id获取滤镜分组
+
+ @param groupID 滤镜组id
+ @return TuSDKFilterGroup
+ */
+- (TuSDKFilterGroup *)groupWithGroupID:(uint64_t)groupID;
+
+/**
+ 根据 SDK 类型获取滤镜分组
+
+ @param ationScen SDK 类型获取滤镜分组
+ @return 分组列表
+ */
+- (NSArray<TuSDKFilterGroup *> *)groupsByAtionScen:(lsqAtionScenSDKType)ationScen;
+
 /**
  *  获取滤镜组默认滤镜代号
  *
@@ -152,7 +169,7 @@
  *
  *  @return filterOption 获取滤镜实例
  */
-- (GPUImageOutput <GPUImageInput> *)filterWithOption:(TuSDKFilterOption *)option;
+- (SLGPUImageOutput <SLGPUImageInput> *)filterWithOption:(TuSDKFilterOption *)option;
 #pragma mark - imageLoad
 /**
  *  加载滤镜组预览图
@@ -179,29 +196,65 @@
 - (void)loadFilterThumbWithImageView:(UIImageView *)view option:(TuSDKFilterOption *)option;
 @end
 #pragma mark - TuSDKFilterExtend
-@interface GPUImageFilter(TuSDKFilterExtend)
-- (void)setMatrix4fArray:(GLfloat *)matrix forUniform:(GLint)uniform program:(GLProgram *)shaderProgram;
+@interface SLGPUImageFilter(TuSDKFilterExtend)
+- (void)setMatrix4fArray:(GLfloat *)matrix forUniform:(GLint)uniform program:(SLGLProgram *)shaderProgram;
 @end
 #pragma mark - TuSDKFilter
-@interface TuSDKFilter: GPUImageFilter
+@interface TuSDKFilter: SLGPUImageFilter
 /** 缩放大小 (默认为1.0，数值越小性能越高) */
 @property (nonatomic) CGFloat scale;
+
+/**
+ *  初始化
+ *
+ *  @param option TuSDKFilterOption
+ *
+ *  @return instancetype
+ */
+- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end
 
 #pragma mark - TuSDKTwoInputFilter
-@interface TuSDKTwoInputFilter: GPUImageTwoInputFilter
+@interface TuSDKTwoInputFilter: SLGPUImageTwoInputFilter
 /** 缩放大小 (默认为1.0，数值越小性能越高) */
 @property (nonatomic) CGFloat scale;
+
+/**
+ *  初始化
+ *
+ *  @param option TuSDKFilterOption
+ *
+ *  @return instancetype
+ */
+- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end
 
 #pragma mark - TuSDKThreeInputFilter
-@interface TuSDKThreeInputFilter: GPUImageThreeInputFilter
+@interface TuSDKThreeInputFilter: SLGPUImageThreeInputFilter
 /** 缩放大小 (默认为1.0，数值越小性能越高) */
 @property (nonatomic) CGFloat scale;
+
+/**
+ *  初始化
+ *
+ *  @param option TuSDKFilterOption
+ *
+ *  @return instancetype
+ */
+- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end
 
 #pragma mark - TuSDKTwoPassTextureSamplingFilter
-@interface TuSDKTwoPassTextureSamplingFilter : GPUImageTwoPassTextureSamplingFilter
+@interface TuSDKTwoPassTextureSamplingFilter : SLGPUImageTwoPassTextureSamplingFilter
 /** 缩放大小 (默认为1.0，数值越小性能越高) */
 @property (nonatomic) CGFloat scale;
+
+/**
+ *  初始化
+ *
+ *  @param option TuSDKFilterOption
+ *
+ *  @return instancetype
+ */
+- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end

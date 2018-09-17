@@ -8,6 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SLGPUImage.h"
 
 #import "TuSDKTSALAssets+Extend.h"
 #import "TuSDKTSALAssetsGrouped+CreateTimeDesc.h"
@@ -49,6 +50,7 @@
 #import "TuSDKICTouchImageView.h"
 #import "TuSDKICMessageHubInterface.h"
 #import "TuSDKICGifView.h"
+#import "TuSDKICGuideRegionView.h"
 
 #import "TuSDKCPAlbumComponentBase.h"
 #import "TuSDKCPAlbumMultipleComponentBase.h"
@@ -124,11 +126,15 @@
 #import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKLiveStickerManager.h"
 #import "TuSDKSkinFilterAPI.h"
+#import "TuSDKFilterWrap.h"
 #import "TuSDKFilterProcessorBase.h"
 #import "TuSDKTKStatistics.h"
 
 #import "TuSDKOnlineStickerFetcher.h"
 #import "TuSDKOnlineStickerDownloader.h"
+
+#import "TuSDKTextStickerImage.h"
+
 
 #import "TuSDKNKNetworkEngine.h"
 #import "UIImageView+TuSDKNetworkAdditions.h"

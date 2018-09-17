@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 
 
 typedef NS_ENUM(NSUInteger, TuSDKICGPUImageFillModeType) {
@@ -16,14 +16,14 @@ typedef NS_ENUM(NSUInteger, TuSDKICGPUImageFillModeType) {
     kTuSDKICGPUImageFillModePreserveAspectRatioAndFill     // Maintains the aspect ratio of the source image, zooming in on its center to fill the view
 };
 
-@interface TuSDKICGPUImageView : UIView <GPUImageInput>{
-    GPUImageRotationMode inputRotation;
+@interface TuSDKICGPUImageView : UIView <SLGPUImageInput>{
+    LSQGPUImageRotationMode inputRotation;
 }
 
 
 /** The fill mode dictates how images are fit in the view, with the default being kGPUImageFillModePreserveAspectRatio
  */
-@property(readwrite, nonatomic) GPUImageFillModeType fillMode;
+@property(readwrite, nonatomic) LSQGPUImageFillModeType fillMode;
 
 /** This calculates the current display size, in pixels, taking into account Retina scaling factors
  */

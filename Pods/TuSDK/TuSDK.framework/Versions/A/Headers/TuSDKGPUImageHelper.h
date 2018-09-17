@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 /**
  *  GPUImage帮助类
  */
@@ -19,7 +19,7 @@
  *
  *  @return GPUImage方向
  */
-+ (GPUImageRotationMode)rotationModeWithImageOrientation:(UIImageOrientation)imageOrientation;
++ (LSQGPUImageRotationMode)rotationModeWithImageOrientation:(UIImageOrientation)imageOrientation;
 
 /**
  通过GPUImage方向旋转归一化区域
@@ -27,7 +27,7 @@
  @param rotation GPUImage方向
  @return 旋转归一化区域
  */
-+ (CGRect)rotationWithRect:(CGRect)rect rotation:(GPUImageRotationMode)rotation;
++ (CGRect)rotationWithRect:(CGRect)rect rotation:(LSQGPUImageRotationMode)rotation;
 
 /**
  计算材质旋转坐标
@@ -35,7 +35,7 @@
  @param rect 归一化区域
  @param coordinates 顶点
  */
-+ (void)textureWithRotation:(GPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
++ (void)textureWithRotation:(LSQGPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
 
 /**
  计算显示画面旋转坐标
@@ -43,5 +43,5 @@
  @param rect 归一化区域
  @param coordinates 顶点
  */
-+ (void)displayWithRotation:(GPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
++ (void)displayWithRotation:(LSQGPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
 @end

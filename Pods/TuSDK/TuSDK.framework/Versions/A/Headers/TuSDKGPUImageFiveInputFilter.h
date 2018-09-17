@@ -12,11 +12,11 @@ extern NSString *const kTuSDKGPUImageFiveInputTextureVertexShaderString;
 
 @interface TuSDKGPUImageFiveInputFilter : TuSDKGPUImageFourInputFilter
 {
-    GPUImageFramebuffer *fiveInputFramebuffer;
+    SLGPUImageFramebuffer *fiveInputFramebuffer;
 
     GLint filterFifthTextureCoordinateAttribute;
     GLint filterInputTextureUniform5;
-    GPUImageRotationMode inputRotation5;
+    LSQGPUImageRotationMode inputRotation5;
     GLuint filterSourceTexture5;
     CMTime fifthFrameTime;
 

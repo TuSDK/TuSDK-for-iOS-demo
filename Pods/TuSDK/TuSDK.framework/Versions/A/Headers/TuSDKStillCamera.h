@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 #import "TuSDKVideoCameraInterface.h"
 
 /**
  *  相机对象
  */
-@interface TuSDKStillCamera : GPUImageStillCamera<TuSDKStillCameraInterface>
+@interface TuSDKStillCamera : SLGPUImageStillCamera<TuSDKStillCameraInterface>
 
 /**
  *  相机帧采样缓冲委托

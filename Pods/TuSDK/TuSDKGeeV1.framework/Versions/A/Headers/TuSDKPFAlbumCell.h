@@ -12,24 +12,25 @@
  *  默认相册列表样式行视图
  */
 @interface TuSDKPFAlbumCell : TuSDKICTableViewCell
-{
-@protected
-    /**
-     *  封面
-     */
-    UIImageView *_posterImage;
-    /**
-     *  进入箭头
-     */
-    UIImageView *_arrow;
-    /**
-     *  标题
-     */
-    UILabel *_title;
-}
 
 /**
  *  相册组数据
  */
-@property (nonatomic, retain) id<TuSDKTSAssetsGroupInterface> group;
+@property (nonatomic, strong) id<TuSDKTSAssetsGroupInterface> group;
+
+/**
+ *  封面
+ */
+@property (nonatomic, strong, readonly) UIImageView *posterImage;
+
+/**
+ *  进入箭头
+ */
+@property (nonatomic, strong, readonly) UIImageView *arrow;
+
+/**
+ *  标题
+ */
+@property (nonatomic, strong, readonly) UILabel *title;
+
 @end

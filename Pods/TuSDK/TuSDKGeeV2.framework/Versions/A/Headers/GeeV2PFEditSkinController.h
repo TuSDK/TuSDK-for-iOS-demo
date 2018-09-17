@@ -30,6 +30,13 @@
 @property (nonatomic, strong) Class viewClazz;
 
 /**
+ 一键美颜 0 - 1.0，默认 0
+ 
+ @since v3.0.0
+ */
+@property (nonatomic, assign) CGFloat retouchSize;
+
+/**
  *  创建颜色调整控制器对象
  *
  *  @return controller 颜色调整控制器对象

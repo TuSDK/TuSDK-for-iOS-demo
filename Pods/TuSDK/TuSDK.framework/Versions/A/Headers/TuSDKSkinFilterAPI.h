@@ -8,6 +8,37 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  TuSDKSkinFilterAPI Face Mark Result type
+ */
+typedef NS_ENUM(NSInteger, lsqSkinFilterFaceMarkResultType)
+{
+    /**
+     * Succeed
+     */
+    lsqSkinFilterFaceMarkResultTypeSucceed,
+    /**
+     * Failed
+     */
+    lsqSkinFilterFaceMarkResultTypeFailed,
+    
+    /**
+     * Failed : Multiple faces detected
+     */
+    lsqSkinFilterFaceMarkResultTypeFailedMultipleFacesDetected,
+    
+    /**
+     * No face is detected
+     */
+    lsqSkinFilterFaceMarkResultTypeNoFaceDetected,
+};
+
+/**
+ * lsqSkinFilterResultCompleteHandler
+ */
+typedef void(^lsqSkinFilterFaceMarkBlock)(lsqSkinFilterFaceMarkResultType);
+
+
 @interface TuSDKSkinFilterAPI : NSObject
 
 /**
@@ -34,9 +65,21 @@
  @param skinColor 肤色 0~1  肤色0.5为正常原图色
  @param eyeSize 大眼 0~1
  @param chinSize 瘦脸 0~1
- @param complete 完成大脸瘦眼后的回调
+ @param completeHandler 完成大脸瘦眼后的回调
  */
-- (void)submitSkinFilterParameterWithImage:(nullable UIImage *)originImage smoothing:(CGFloat)smoothing whitening:(CGFloat)whitening skinColor:(CGFloat)skinColor eyeSize:(CGFloat)eyeSize chinSize:(CGFloat)chinSize completeHandler:(void(^_Nullable)(void))complete;
+- (void)submitSkinFilterParameterWithImage:(nullable UIImage *)originImage smoothing:(CGFloat)smoothing whitening:(CGFloat)whitening skinColor:(CGFloat)skinColor eyeSize:(CGFloat)eyeSize chinSize:(CGFloat)chinSize faceMarkResultHandler:(lsqSkinFilterFaceMarkBlock _Nullable ) completeHandler;
+
+/**
+ 更改美颜中的参数值 非美颜滤镜次方法的调节不生效
+ 
+ @param smoothing 润滑 0~1
+ @param whitening 白皙 0~1
+ @param skinColor 肤色 0~1  肤色0.5为正常原图色
+ @param eyeSize 大眼 0~1
+ @param chinSize 瘦脸 0~1
+ @param completeHandler 完成大脸瘦眼后的回调
+ */
+- (void)submitSkinFilterParameterWithSmoothing:(CGFloat)smoothing whitening:(CGFloat)whitening skinColor:(CGFloat)skinColor eyeSize:(CGFloat)eyeSize chinSize:(CGFloat)chinSize;
 
 /**
  *  执行滤镜 并输出图形
@@ -56,6 +99,11 @@
  *  @return image 滤镜处理过的图像
  */
 - (nullable UIImage *)processWithImage:(nullable UIImage *)image orientation:(UIImageOrientation)imageOrientation;
+
+/**
+ 取消处理
+ */
+- (void)cancelProcess;
 
 /**
  *  销毁

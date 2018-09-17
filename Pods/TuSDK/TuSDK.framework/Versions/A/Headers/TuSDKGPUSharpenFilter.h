@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 #import "TuSDKFilterParameter.h"
 
 /**
  *  锐化滤镜
  */
-@interface TuSDKGPUSharpenFilter : GPUImageSharpenFilter<TuSDKFilterParameterProtocol>
+@interface TuSDKGPUSharpenFilter : SLGPUImageSharpenFilter<TuSDKFilterParameterProtocol>
 
 @end

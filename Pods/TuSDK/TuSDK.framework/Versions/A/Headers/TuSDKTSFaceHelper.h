@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 
 #pragma mark - TuSDKTSFaceFeature
 /**
@@ -67,7 +67,7 @@
  */
 + (NSArray<TuSDKTSFaceFeature *> *) transforFaces:(NSArray<CIFaceFeature*> *)faces
                                              rect:(CGRect)rect
-                                         rotation:(GPUImageRotationMode)rotation;
+                                         rotation:(LSQGPUImageRotationMode)rotation;
 
 /**
  *  获取人像百分比信息
@@ -78,7 +78,7 @@
  *  @return 人像百分比信息
  */
 + (NSArray<TuSDKTSFaceFeature *> *) transforAVFaces:(NSArray<AVMetadataFaceObject *> *)faces
-                                           rotation:(GPUImageRotationMode)rotation;
+                                           rotation:(LSQGPUImageRotationMode)rotation;
 
 /**
  *  转换方向模式
@@ -87,7 +87,7 @@
  *
  *  @return 图像方向
  */
-+ (UIImageOrientation)convertGPURotation:(GPUImageRotationMode)rotation;
++ (UIImageOrientation)convertGPURotation:(LSQGPUImageRotationMode)rotation;
 
 /**
  Get real orientation without mirror
@@ -95,5 +95,5 @@
  @param rotation
  @return
  */
-+ (int)getOriByGPURotation:(GPUImageRotationMode)rotation;
++ (int)getOriByGPURotation:(LSQGPUImageRotationMode)rotation;
 @end

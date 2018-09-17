@@ -10,11 +10,20 @@
 #import "TuSDKFilterParameter.h"
 
 /** 美白颜色滤镜*/
-@interface TuSDKGPUSkinColorFilter : GPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
+@interface TuSDKGPUSkinColorFilter : SLGPUImageFilterGroup<TuSDKFilterParameterProtocol, TuSDKFilterTexturesProtocol>
 
 /** 皮肤平滑度（默认0.5， 0 - 1, 越大越平滑）*/
 @property (nonatomic) CGFloat smoothing;
 
 /** 混合 (设值范围0.0-1.0，原图默认值为0.0，越大效果越强)*/
 @property(readwrite, nonatomic) CGFloat mixed;
+
+/**
+ *  初始化
+ *
+ *  @param option TuSDKFilterOption
+ *
+ *  @return instancetype
+ */
+- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end

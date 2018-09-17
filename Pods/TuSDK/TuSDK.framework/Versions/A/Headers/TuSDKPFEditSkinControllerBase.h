@@ -11,6 +11,12 @@
  *  多功能美肤基类
  */
 @interface TuSDKPFEditSkinControllerBase : TuSDKCPFilterResultController
+
+/**
+ 一键美颜 0 - 1.0，默认 0
+ */
+@property (nonatomic, assign) CGFloat retouchSize;
+
 /**
  *  选中一个参数动作
  *

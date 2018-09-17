@@ -7,9 +7,9 @@
 //
 
 
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 
-@interface TuSDKGPUImagePicture : GPUImagePicture
+@interface TuSDKGPUImagePicture : SLGPUImagePicture
 
 /**
  init single channal texture

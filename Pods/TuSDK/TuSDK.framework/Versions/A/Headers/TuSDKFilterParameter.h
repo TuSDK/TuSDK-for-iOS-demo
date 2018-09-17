@@ -126,7 +126,7 @@
 /** 滤镜配置选项*/
 @interface TuSDKFilterParameter : NSObject
 /** 参数列表*/
-@property (nonatomic, readonly) NSArray *args;
+@property (nonatomic, readonly) NSArray<TuSDKFilterArg *> *args;
 
 /** 参数键名列表*/
 @property (nonatomic, readonly) NSArray *argKeys;

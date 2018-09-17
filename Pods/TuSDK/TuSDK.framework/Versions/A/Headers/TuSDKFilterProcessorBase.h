@@ -6,7 +6,7 @@
 //  Copyright © 2016 TuSDK. All rights reserved.
 //
 
-#import "GPUImageImport.h"
+#import "SLGPUImage.h"
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreMedia/CoreMedia.h>
@@ -14,9 +14,9 @@
 /**
  A GPU Output that provides frames from external source
  */
-@interface TuSDKFilterProcessorBase : GPUImageOutput
+@interface TuSDKFilterProcessorBase : SLGPUImageOutput
 {
-    GPUImageRotationMode outputRotation, internalRotation , bufferRotation;
+    LSQGPUImageRotationMode internalRotation , bufferRotation;
 }
 
 /**
@@ -35,6 +35,7 @@
 /// These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.
 @property(readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera, horizontallyMirrorRearFacingCamera;
 
+@property (nonatomic) LSQGPUImageRotationMode outputRotation;
 /**
  *  初始化
  *

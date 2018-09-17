@@ -30,9 +30,7 @@
 - (void)loadView;
 {
     [super loadView];
-    
-    // 设置全屏 隐藏状态栏 for IOS6
-    self.wantsFullScreenLayout = YES;
+
     [self setNavigationBarHidden:YES animated:NO];
     [self setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 }

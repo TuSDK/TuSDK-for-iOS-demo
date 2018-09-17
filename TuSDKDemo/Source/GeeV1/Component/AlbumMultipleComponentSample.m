@@ -69,7 +69,7 @@
     _albumComponent.autoDismissWhenCompelted = YES;
     
     // 设置照片排序方式
-    // _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyCreateDate;
+     _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyModificationDate;
     // 设置选择照片的最大尺寸 默认:8000*8000
      // _albumComponent.options.albumOptions.maxSelectionImageSize  = CGSizeMake(8000, 8000);
     
