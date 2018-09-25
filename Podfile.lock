@@ -1,22 +1,22 @@
 PODS:
-  - TuSDK (3.0.0):
-    - TuSDK/Core (= 3.0.0)
-    - TuSDK/ImageGeeV1 (= 3.0.0)
-    - TuSDK/ImageGeeV2 (= 3.0.0)
-  - TuSDK/Core (3.0.0)
-  - TuSDK/ImageGeeV1 (3.0.0)
-  - TuSDK/ImageGeeV2 (3.0.0)
+  - TuSDK (3.0.1):
+    - TuSDK/Core (= 3.0.1)
+    - TuSDK/ImageGeeV1 (= 3.0.1)
+    - TuSDK/ImageGeeV2 (= 3.0.1)
+  - TuSDK/Core (3.0.1)
+  - TuSDK/ImageGeeV1 (3.0.1)
+  - TuSDK/ImageGeeV2 (3.0.1)
 
 DEPENDENCIES:
-  - TuSDK (~> 3.0.0)
+  - TuSDK (~> 3.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - TuSDK
 
 SPEC CHECKSUMS:
-  TuSDK: fa386afe64e0f4ea159a1f24a60697db2670431b
+  TuSDK: fcb35507328545afc79a1d8719b0941685052bb4
 
-PODFILE CHECKSUM: c2fe14d04ced0924ff7936d0a356f3dc8438febf
+PODFILE CHECKSUM: 01e9862f8d74a0d54d0a39228d89ef1d2258d83f
 
 COCOAPODS: 1.5.2

@@ -30,7 +30,7 @@
 @property (nonatomic, strong) Class viewClazz;
 
 /**
- 一键美颜 0 - 1.0，默认 0
+ 一键美颜 0 - 1.0，默认 1.0
  
  @since v3.0.0
  */

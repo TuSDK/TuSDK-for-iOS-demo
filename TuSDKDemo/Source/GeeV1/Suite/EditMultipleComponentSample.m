@@ -42,7 +42,7 @@
     
     _albumComponent =
     [TuSDKGeeV1 albumCommponentWithController:controller
-                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          // 获取图片错误
          if (error) {
@@ -73,7 +73,7 @@
     // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV1 photoEditMultipleWithController:controller
-                               callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                                  callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
          
@@ -179,8 +179,8 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSkinOptions.outputCompress = 0.95f;
     //    // 一键美颜选项参数设置 0 - 1，默认为 1（该功能需要联网）
-    //    _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5f;
-    //
+    _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5f;
+    
     //    // 贴纸模块选择控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions
     // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFEditStickerOptions.html
@@ -262,8 +262,6 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editWipeAndFilterOptions.outputCompress = 0.95f;
     //
-    // 设置一键美颜默认值（默认：0，范围：0 ~ 1）
-    _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5;
     
     // 设置图片
     _photoEditMultipleComponent.inputImage = result.image;

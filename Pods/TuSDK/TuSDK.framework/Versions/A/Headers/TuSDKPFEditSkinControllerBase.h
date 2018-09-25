@@ -13,7 +13,7 @@
 @interface TuSDKPFEditSkinControllerBase : TuSDKCPFilterResultController
 
 /**
- 一键美颜 0 - 1.0，默认 0
+ 一键美颜 0 - 1.0，默认 1.0
  */
 @property (nonatomic, assign) CGFloat retouchSize;
 

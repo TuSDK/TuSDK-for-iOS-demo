@@ -38,6 +38,14 @@
 + (void)textureWithRotation:(LSQGPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
 
 /**
+ 计算材质旋转坐标，针对liveFaultFilter
+ @param rotation GPUImage方向
+ @param rect 归一化区域
+ @param coordinates 顶点
+ */
++ (void)liveFaultTextureWithRotation:(LSQGPUImageRotationMode)rotation rect:(CGRect)rect coordinates:(GLfloat *)coordinates;
+
+/**
  计算显示画面旋转坐标
  @param rotation GPUImage方向
  @param rect 归一化区域
