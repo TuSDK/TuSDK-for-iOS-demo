@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TuSDKGeeV2Import.h"
+
 /**
  *  环状进度条
  */

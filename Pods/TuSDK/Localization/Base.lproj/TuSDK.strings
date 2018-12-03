@@ -206,6 +206,14 @@
 "lsq_filter_group_MeituBeauty" = "柔光美颜";
 "lsq_filter_group_EdgeEffects" = "热力图";
 "lsq_filter_group_EdgeEffects001" = "边缘特效";
+"lsq_filter_group_Cartoon_image" = "漫画";
+"lsq_filter_CHComics_Image" = "国漫";
+
+"lsq_filter_JPComics_Image" = "日漫";
+"lsq_filter_Monochrome_Image" = "单色";
+"lsq_filter_Ink_Image" = "墨水";
+"lsq_filter_USComics_Image" = "美漫";
+"lsq_filter_Lightcolor_Image" = "淡彩";
 
 "lsq_filter_Multicolor" = "多彩";
 "lsq_filter_Azure" = "科幻蓝";

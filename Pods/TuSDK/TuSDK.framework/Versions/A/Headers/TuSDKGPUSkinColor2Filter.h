@@ -16,12 +16,4 @@
 /** 混合 (设值范围0.0-1.0，原图默认值为0.0，越大效果越强) */
 @property(readwrite, nonatomic) CGFloat mixed;
 
-/**
- *  初始化
- *
- *  @param option TuSDKFilterOption
- *
- *  @return instancetype
- */
-- (instancetype)initWithOption:(TuSDKFilterOption *)option;
 @end

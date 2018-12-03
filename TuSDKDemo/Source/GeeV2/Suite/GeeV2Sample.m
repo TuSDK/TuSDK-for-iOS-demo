@@ -76,13 +76,13 @@
      }                                    maxSelectionNumber:_maxSelection];
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2CPAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2CPAlbumMultipleOptions.html
     // _albumComponent.options
     
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFAlbumMultipleOptions.html
     // _albumComponent.options.albumOptions
     
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFCameraOptions.html
     // _albumComponent.options.cameraOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
@@ -114,7 +114,7 @@
 {
     if (!controller || !inputResults) return;
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2CPPhotoEditMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2CPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV2 photoEditMultipleWithController:controller
                                   callbackBlock:^(NSArray<TuSDKResult *> *outputResults, NSError *error, UIViewController *controller)
@@ -167,11 +167,11 @@
 
      }];
     
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2CPPhotoEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2CPPhotoEditMultipleOptions.html
     // _photoEditMultipleComponent.options
     
     //    // 照片美化入口控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditMultipleOptions.html
     // _photoEditMultipleComponent.options.editMultipleOptions
     //    // 禁用功能模块 默认：加载全部模块
     //  [_photoEditMultipleComponent.options.editMultipleOptions disableModule:lsqTuSDKCPEditActionSticker];
@@ -189,7 +189,7 @@
     //    _photoEditMultipleComponent.options.editMultipleOptions.enableAlwaysSaveEditResult = YES;
     //
     //    // 图片编辑组件配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditTabBarOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditTabBarOptions.html
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editTabBarOptions.outputCompress = 0.95f;
     //    // 保存到临时文件
@@ -198,7 +198,7 @@
     //   [_photoEditMultipleComponent.options.editTabBarOptions disableModule:lsqTuSDKCPEditActionWipeFilter];
     //
     //    // 编辑模块模糊功能控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditWipeAndFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditWipeAndFilterOptions.html
     // _photoEditMultipleComponent.options.editTabBarOptions.editWipeAndFilterOptions
     //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
     //    _photoEditMultipleComponent.options.editTabBarOptions.editWipeAndFilterOptions.defaultBrushSize = lsqMediumBrush;
@@ -212,7 +212,7 @@
     //    _photoEditMultipleComponent.options.editTabBarOptions.editWipeAndFilterOptions.brushStrength = 0.2f;
     //
     //    // 滤镜模块控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditFilterOptions.html
     // _photoEditMultipleComponent.options.editFilterOptions
     //    // 默认: true, 开启滤镜配置选项
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterConfig = YES;
@@ -236,16 +236,18 @@
     //    _photoEditMultipleComponent.options.editFilterOptions.isRenderFilterThumb = YES;
     //
     //    // 美颜模块控制器视图配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditSkinOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditSkinOptions.html
     // _photoEditMultipleComponent.options.editSkinOptions
     //    // 保存到临时文件
     //    _photoEditMultipleComponent.options.editSkinOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSkinOptions.outputCompress = 0.95f;
-    //
+    //    // 一键美颜选项参数设置 0 - 1，默认为 1（该功能需要联网）
+        _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5f;
+    
     //    // 贴纸模块控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditStickerOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditStickerOptions.html
     //    // 单元格间距 (单位：DP)
     //    _photoEditMultipleComponent.options.editStickerOptions.gridPadding = 2;
     //    // 保存到临时文
@@ -255,14 +257,14 @@
     //
     //    // 颜色调整模块控制器配置选项
     // _photoEditMultipleComponent.options.editAdjustOptions
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditAdjustOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditAdjustOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editAdjustOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editAdjustOptions.outputCompress = 0.95f;
     //
     //    // 涂抹模块控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFEditSmudgeOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFEditSmudgeOptions.html
     // _photoEditMultipleComponent.options.editSmudgeOptions
     //    // 默认的笔刷大小 (默认: lsqGeeV2MediumBrush，中等粗细)
     //    _photoEditMultipleComponent.options.editSmudgeOptions.defaultBrushSize = lsqGeeV2MediumBrush;
@@ -275,8 +277,6 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
-    // 设置一键美颜默认值（默认：0，范围：0 ~ 1）
-    _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5;
     
     _photoEditMultipleComponent.inputResources = inputResults;
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
@@ -297,7 +297,7 @@
 - (void)showCamera:(GeeV2PFAlbumMultipleViewController *)controller;
 {
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/api-geev2/Classes/GeeV2PFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev2/Classes/GeeV2PFCameraOptions.html
     GeeV2PFCameraViewController *cameraController = _albumComponent.options.cameraOptions.viewController;
     // 添加委托
     cameraController.delegate = self;

@@ -8,6 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
+#import "TuSDKGeeV1Import.h"
 /**
  自定义视图 环状进度条
  

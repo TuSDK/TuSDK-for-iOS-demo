@@ -49,6 +49,14 @@
 - (id)initWithFormatType:(OSType)pixelFormatType isOriginalOrientation:(BOOL)isOriginalOrientation;
 
 /**
+ *  初始化 处理textureID时使用此方法初始化
+ *
+ *  @param sharegroup 共享组
+ *  @return instance
+ */
+- (id)initWithSharegroup:(EAGLSharegroup *)sharegroup;
+
+/**
  *  初始化
  *
  *  @param videoOutput 视频源
@@ -70,6 +78,13 @@
  *  @param cameraFrame pixelBuffer to process
  */
 - (void)processPixelBuffer:(CVPixelBufferRef)cameraFrame frameTime:(CMTime)currentTime;
+
+/**
+ *  Process a pixelBuffer
+ *
+ *  @param texture textureID to process
+ */
+- (void)processTexture:(GLuint)texture textureSize:(CGSize)size;
 
 /// @name Benchmarking
 

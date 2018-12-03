@@ -207,8 +207,17 @@
 "lsq_filter_group_MeituBeauty" = "SoftBeauty";
 "lsq_filter_group_EdgeEffects" = "Thermodynamic";
 "lsq_filter_group_EdgeEffects001" = "EdgeEffects";
+"lsq_filter_group_Cartoon_image" = "Cartoon";
 
+
+"lsq_filter_JPComics_Image" = "JPComics";
+"lsq_filter_Monochrome_Image" = "Monochrome";
+"lsq_filter_Ink_Image" = "Ink";
+"lsq_filter_USComics_Image" = "USComics";
+"lsq_filter_Lightcolor_Image" = "Lightcolor";
 "lsq_filter_Multicolor" = "Multicolor";
+"lsq_filter_CHComics_Image" = "CHComics";
+
 "lsq_filter_Azure" = "Azure";
 "lsq_filter_Infrared" = "Infrared";
 "lsq_filter_Fluorescence" = "Fluorescence";

@@ -186,6 +186,24 @@
 @property (nonatomic) BOOL videoEditorTextEffectsSupport;
 
 /**
+ video editor comic effect support 漫画
+ @since v3.0.1
+ */
+@property (nonatomic) BOOL videoEditorComicEffectsSupport;
+
+/**
+ 音频变声权限
+ @since v3.0.1
+ */
+@property (nonatomic) BOOL audioPitchEffectsSupport;
+
+/**
+ 音频重采样权限
+ @since v3.0.1
+ */
+@property (nonatomic) BOOL audioResampleEffectsSupport;
+
+/**
  *  Filter list which could be used by FilterAPI
  */
 @property (nonatomic) NSArray *filterAPIList;

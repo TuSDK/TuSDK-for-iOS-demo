@@ -112,6 +112,13 @@
 /** 设置百分比 0 - 1*/
 @property (nonatomic) CGFloat precent;
 
+/** 参数默认值*/
+@property (nonatomic) CGFloat defaultValue;
+/** 参数最小值*/
+@property (nonatomic) CGFloat minFloatValue;
+/** 参数最大值*/
+@property (nonatomic) CGFloat maxFloatValue;
+
 /** 获取值*/
 @property (nonatomic, readonly) CGFloat value;
 
@@ -127,6 +134,9 @@
 @interface TuSDKFilterParameter : NSObject
 /** 参数列表*/
 @property (nonatomic, readonly) NSArray<TuSDKFilterArg *> *args;
+
+/** 参数字典*/
+@property (nonatomic, readonly) NSDictionary<NSString *, NSString *> *defaultArgsDict;
 
 /** 参数键名列表*/
 @property (nonatomic, readonly) NSArray *argKeys;

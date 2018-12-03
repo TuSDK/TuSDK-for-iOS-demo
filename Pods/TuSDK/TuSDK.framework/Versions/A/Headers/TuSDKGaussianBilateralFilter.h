@@ -13,9 +13,6 @@
 /** A normalization factor for the distance between central color and sample color. */
 @property(nonatomic, readwrite) CGFloat distanceNormalizationFactor;
 
-/** 权重类别 [0.0 为原始双边，1.0 为仿花椒版美颜 */
-@property(nonatomic, readwrite) CGFloat bilateralWeightType;
-
 /**init On Performance*/
 - (id)initOnPerformance;
 @end

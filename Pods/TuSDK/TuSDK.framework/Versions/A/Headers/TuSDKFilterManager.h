@@ -84,11 +84,20 @@
 - (BOOL)isNormalFilter:(NSString *)code;
 
 /**
+ *  是否普通滤镜特效
+ *
+ *  @param code 滤镜代号
+ *
+ *  @return BOOL
+ */
+- (BOOL)isFilterEffect:(NSString *)code;
+
+/**
  *  是否是场景特效滤镜
  *
  *  @param code 滤镜代号
  *
- *  @return
+ *  @return BOOL
  */
 - (BOOL)isSceneEffectFilter:(NSString *)code;
 
@@ -97,9 +106,18 @@
  *
  *  @param code 滤镜代号
  *
- *  @return
+ *  @return BOOL
  */
 - (BOOL)isParticleEffectFilter:(NSString *)code;
+
+/**
+ *  是否是漫画特效滤镜
+ *
+ *  @param code 漫画代号
+ *
+ *  @return BOOL
+ */
+- (BOOL)isConmicEffectFilter:(NSString *)code;
 
 /**
  *  执行滤镜 并输出图形

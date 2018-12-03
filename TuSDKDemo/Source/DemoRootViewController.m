@@ -63,7 +63,7 @@
      * 其中每种CPU编译结果还包含Debug以及Realse两种子结果；
      * 当集成某个Framework（假如TuSDK.Framework物理文件大小为30MB），编译成APP发布后，实际大小约为不到2MB
      *
-     * 开发文档:https://tutucloud.com/docs/ios/api/
+     * 开发文档:https://tutucloud.com/docs/ios/api-docs
      */
     
     // 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "TuSDKPFCameraFilterGroupView.h"
+#import "TuSDKGeeV1Import.h"
 
 
 #pragma mark - TuSDKPFCameraSettingView

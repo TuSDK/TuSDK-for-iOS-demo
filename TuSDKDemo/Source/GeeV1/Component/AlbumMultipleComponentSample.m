@@ -37,7 +37,7 @@
     lsqLDebug(@"albumComponentHandler");
 
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPAlbumMultipleComponent.html
 
     _albumComponent =
     [TuSDKGeeV1 albumMultipleCommponentWithController:controller
@@ -56,20 +56,20 @@
      maxSelectionNumber:9];
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKCPAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPAlbumMultipleOptions.html
     // _albumComponent.options
     
-    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFAlbumMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFAlbumMultipleOptions.html
     // _albumComponent.options.albumOptions
     
-    // @see-https://tutucloud.com/docs/ios/api-gee/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFCameraOptions.html
     // _albumComponent.options.cameraOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
     _albumComponent.autoDismissWhenCompelted = YES;
     
     // 设置照片排序方式
-     _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyModificationDate;
+    // _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyCreateDate;
     // 设置选择照片的最大尺寸 默认:8000*8000
      // _albumComponent.options.albumOptions.maxSelectionImageSize  = CGSizeMake(8000, 8000);
     

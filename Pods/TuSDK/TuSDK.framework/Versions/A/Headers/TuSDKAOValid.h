@@ -172,6 +172,12 @@
 //  video editor particle effects filter support 编辑视频 是否支持粒子特效滤镜
 - (BOOL)videoEditorParticleEffectsFilterSupport;
 
+// audioPitchEffectsSupport 音频变声
+- (BOOL)audioPitchEffectsSupport;
+
+// audioResampleEffectsSupport 音频重采样
+- (BOOL)audioResampleEffectsSupport;
+
 /**
   video editor text effects support 编辑视频 是否支持文字特效
 
@@ -179,6 +185,14 @@
  @sinace 2.2.0
  */
 - (BOOL)videoEditorTextEffectsSupport;
+
+/**
+ video editor text effects support 编辑视频 是否支持漫画特效
+ 
+ @return true/false
+ @sinace v3.0.1
+ */
+- (BOOL)videoEditorComicEffectsSupport;
 
 /**
  *  解密文本

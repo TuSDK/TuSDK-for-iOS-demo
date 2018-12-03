@@ -14,6 +14,8 @@
 const static int lsqGroupFilterTypeGeneral = 0;  // 普通滤镜
 const static int lsqGroupFilterTypeSceneEffect   = 1;  // 场景特效滤镜
 const static int lsqGroupFilterTypeParticleEffect   = 2;  // 粒子特效滤镜
+const static int lsqGroupFilterTypeComicEffect   = 3;  // 漫画特效滤镜
+
 
 // 所属SDK类型
 typedef NS_ENUM(NSUInteger,lsqAtionScenSDKType)
@@ -43,7 +45,7 @@ typedef NS_ENUM(NSUInteger,lsqAtionScenSDKType)
 @property (nonatomic) NSUInteger categoryId;
 
 /**
- *  分组中滤镜类型 0: 普通滤镜 1: 特效滤镜 2: 魔法特效
+ *  分组中滤镜类型 0: 普通滤镜 1: 特效滤镜 2: 魔法特效 3: 漫画特效滤镜
  */
 @property (nonatomic) NSUInteger groupFilterType;
 
