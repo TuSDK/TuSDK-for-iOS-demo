@@ -49,7 +49,7 @@
             <td >滤镜</td>
             <td >改变图片色值，以美化图片</td>
 			<td >2.0.0(+)</td>
-        </tr
+        </tr>
 		<tr >
             <td >摄像头切换</td>
             <td >录制时，可切换前后摄像头</td>
@@ -180,7 +180,7 @@
       <tr>
         <th  width="140">功能点</th>
         <th  width="440">功能介绍</th>
-		<th  width="100">版本</th>
+		   <th  width="100">版本</th>
       </tr>
     </thead>
     <tbody>
@@ -203,8 +203,8 @@
             <td >去除 TuSDK 品牌</td>
             <td >在图片输出时，完全去除带有 TuSDK 的品牌信息</td>
 			<td >2.0.0(+)</td>
-        
-    </tbody>
+			</tr>
+     </tbody>
 </table>
 
 
