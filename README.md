@@ -5,13 +5,6 @@
 ## 1. 功能介绍
 
 ### 1.1 界面
-<style>
-td,th {border: 1px solid #ccc;text-align: center;}
-td {font-size: 12px;color: #7c8286;}
-tr:nth-child(2n+2){background: #F8F8F8;}
-th {background: #00A0EA;color: #ffffff;font-size: 14px;}
-tr {height: 40px;}
-</style>
 
 <table cellpadding="0" cellspacing="0"  style="width:720px;border-collapse: collapse;">
 	<thead>
