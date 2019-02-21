@@ -61,6 +61,11 @@
 - (void)startCamera;
 
 /**
+ *  暂停相机
+ */
+- (void)pauseCamera;
+
+/**
  *  销毁相机
  */
 - (void)destoryCamera;

@@ -37,7 +37,7 @@
     lsqLDebug(@"albumComponentHandler");
 
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPAlbumComponent.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPAlbumComponent.html
 
     _albumComponent =
     [TuSDKGeeV1 albumCommponentWithController:controller
@@ -55,13 +55,13 @@
      }];
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPAlbumComponent.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPAlbumComponent.html
     // _albumComponent.options
     
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFAlbumOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFAlbumOptions.html
     // _albumComponent.options.albumOptions
     
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFPhotosOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFPhotosOptions.html
     // _albumComponent.options.photosOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)

@@ -9,5 +9,10 @@
 #import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
+/**
+ 大鼻子哈哈镜
+ */
 @interface TuSDKGPUMonsterNoseFallFace : TuSDKFilter<TuSDKFilterFacePositionProtocol>
+
+
 @end

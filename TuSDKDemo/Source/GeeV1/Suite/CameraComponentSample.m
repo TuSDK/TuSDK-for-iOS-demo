@@ -31,7 +31,7 @@
 {
     
     // 组件使用文档教程
-    // @see-https://tutucloud.com/docs/ios/camera-usage
+    // @see-https://tutucloud.com/docs/ios/image/camera-usage
     
     if (!controller) return;
     self.controller = controller;
@@ -53,7 +53,7 @@
 - (void)showCameraController;
 {
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFCameraOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFCameraOptions.html
     TuSDKPFCameraOptions *opt = [TuSDKPFCameraOptions build];
     
     // 视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)

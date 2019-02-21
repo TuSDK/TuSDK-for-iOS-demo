@@ -65,12 +65,12 @@
                                 result:(TuSDKResult *)result;
 {
     // 组件使用文档教程
-    // @see-https://tutucloud.com/docs/ios/editor-usage
+    // @see-https://tutucloud.com/docs/ios/image/editor-usage
     
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPPhotoEditMultipleComponent.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV1 photoEditMultipleWithController:controller
                                callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
@@ -114,16 +114,16 @@
          //
      }];
     
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKCPPhotoEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPPhotoEditMultipleOptions.html
     // _photoEditMultipleComponent.options
     
     //    // 照片美化组件入口控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditMultipleOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditMultipleOptions.html
     // _photoEditMultipleComponent.options.editMultipleOptions
     //    // 禁用功能模块 默认：加载全部模块
     //    [_photoEditMultipleComponent.options.editMultipleOptions disableModule:lsqTuSDKCPEditActionCuter];
-    //    // 最大输出图片按照设备屏幕 (默认:true, 如果设置了LimitSideSize, 将忽略LimitForScreen)
-    //    _photoEditMultipleComponent.options.editMultipleOptions.limitForScreen = YES;
+    //    // 最大输出图片尺寸，如果输入图片尺寸过大，设备将会自动按照硬件可支持的最大尺寸进行输出
+        _photoEditMultipleComponent.options.editMultipleOptions.limitSideSize = NSUIntegerMax;
     //    // 保存到系统相册
     //    _photoEditMultipleComponent.options.editMultipleOptions.saveToAlbum = YES;
     //    // 控制器关闭后是否自动删除临时文件
@@ -132,7 +132,7 @@
     //    _photoEditMultipleComponent.options.editMultipleOptions.waterMarkOption = [self waterMarkOption];
     //
     //    // 滤镜模块控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditFilterOptions.html
     // _photoEditMultipleComponent.options.editFilterOptions
     //    // 默认: true, 开启滤镜配置选项
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterConfig = YES;
@@ -156,7 +156,7 @@
     //    _photoEditMultipleComponent.options.editFilterOptions.isRenderFilterThumb = YES;
     //
     //    // 裁切模块旋转控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditCuterOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditCuterOptions.html
     // _photoEditMultipleComponent.options.editCuterOptions
     //    // 是否开启图片旋转(默认: false)
     //    _photoEditMultipleComponent.options.editCuterOptions.enableTrun = YES;
@@ -172,7 +172,7 @@
     //    _photoEditMultipleComponent.options.editCuterOptions.outputCompress = 0.95f;
     //
     //    // 美颜模块控制器视图配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditSkinOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditSkinOptions.html
     // _photoEditMultipleComponent.options.editSkinOptions
     //    // 保存到临时文件
     //    _photoEditMultipleComponent.options.editSkinOptions.saveToTemp = YES;
@@ -183,7 +183,7 @@
 
     //    // 贴纸模块选择控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditStickerOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditStickerOptions.html
     //    // 单元格间距 (单位：DP)
     //    _photoEditMultipleComponent.options.editStickerOptions.gridPadding = 2;
     //    // 保存到临时文
@@ -202,7 +202,7 @@
     //
     //    // 颜色调整模块控制器配置选项
     // _photoEditMultipleComponent.options.editAdjustOptions
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditAdjustOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditAdjustOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editAdjustOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -210,7 +210,7 @@
     //
     //    // 锐化模块控制器配置选项
     // _photoEditMultipleComponent.options.editSharpnessOptions
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditSharpnessOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditSharpnessOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editSharpnessOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -218,7 +218,7 @@
     //
     //    // 大光圈模块控制器配置选项
     // _photoEditMultipleComponent.options.editApertureOptions
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditApertureOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditApertureOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editApertureOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
@@ -226,14 +226,14 @@
     //
     //    // 暗角模块控制器配置选项
     // _photoEditMultipleComponent.options.editVignetteOptions
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditVignetteOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditVignetteOptions.html
     //    // 保存到临时文
     //    _photoEditMultipleComponent.options.editVignetteOptions.saveToTemp = YES;
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editVignetteOptions.outputCompress = 0.95f;
     //
     //    // 涂抹模块控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditSmudgeOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditSmudgeOptions.html
     // _photoEditMultipleComponent.options.editSmudgeOptions
     //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
     //    _photoEditMultipleComponent.options.editSmudgeOptions.defaultBrushSize = lsqMediumBrush;
@@ -247,7 +247,7 @@
     //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
     //    // 模糊模块控制器配置选项
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditWipeAndFilterOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditWipeAndFilterOptions.html
     // _photoEditMultipleComponent.options.editWipeAndFilterOptions
     //    // 默认的笔刷大小 (默认: lsqBrushMedium，中等粗细)
     //    _photoEditMultipleComponent.options.editWipeAndFilterOptions.defaultBrushSize = lsqMediumBrush;

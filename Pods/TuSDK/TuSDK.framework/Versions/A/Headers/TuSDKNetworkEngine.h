@@ -43,6 +43,7 @@ extern NSString *const kTuSDKNetworkEngineOperationCountChanged;
 
 @property (nonatomic, copy) NSString * cacheDirectory;
 @property (nonatomic) NSUInteger cacheCost;
+@property (strong, nonatomic,readonly) TuSDKNetworkReachability *reachability;
 
 /*!
  *  @abstract Initializes your network engine with a hostname

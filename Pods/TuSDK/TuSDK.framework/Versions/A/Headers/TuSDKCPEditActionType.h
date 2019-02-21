@@ -44,6 +44,10 @@ typedef NS_ENUM(NSInteger, lsqTuSDKCPEditActionType)
      */
     lsqTuSDKCPEditActionSmudge,
     /**
+     * 涂鸭动作
+     */
+    lsqTuSDKCPEditActionPaint,
+    /**
      * 调整动作
      */
     lsqTuSDKCPEditActionAdjust,

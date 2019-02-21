@@ -35,7 +35,9 @@
 /// These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.
 @property(readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera, horizontallyMirrorRearFacingCamera;
 
+// 视频的输出方向
 @property (nonatomic) LSQGPUImageRotationMode outputRotation;
+
 /**
  *  初始化
  *

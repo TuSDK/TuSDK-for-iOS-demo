@@ -205,4 +205,21 @@
  *  @return json数据
  */
 - (NSString *)jsonAllData;
+
+@end
+
+#pragma mark 本地贴纸组
+
+@interface TuSDKPFStickerLocalPackage (LocalSticker)
+
+/**
+ 将本地贴纸添加到 Package
+
+ @param filePath 本地贴纸组文件
+ @param master master
+ @return true/false
+ @since 3.0
+ */
+- (BOOL)addStickerGroupFile:(NSString *)filePath master:(NSString *)master;
+
 @end

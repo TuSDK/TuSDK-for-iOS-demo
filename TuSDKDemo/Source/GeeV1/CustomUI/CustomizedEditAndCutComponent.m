@@ -77,7 +77,7 @@
     self.controller = controller;
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 视图类 (默认:TuSDKPFEditTurnAndCutView, 需要继承 TuSDKPFEditTurnAndCutView)

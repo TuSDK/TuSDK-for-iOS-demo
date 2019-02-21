@@ -166,6 +166,13 @@ typedef enum : NSUInteger {
 + (NSString *)lsqAppIdentifier;
 
 /**
+ ad AdIdentifier;
+
+ @return 应用
+ */
++ (NSString *)lsqAdIdentifier;
+
+/**
  *  开启应用设置页面
  */
 + (void)lsqOpenAppSettings  NS_AVAILABLE_IOS(8_0);

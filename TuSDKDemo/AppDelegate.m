@@ -49,7 +49,7 @@
      *
      *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
      */
-    [TuSDK initSdkWithAppKey:@"3922c8d612450e54-04-ewdjn1"];
+    [TuSDK initSdkWithAppKey:@"25e7b404b4cf62af-04-ewdjn1"];
     
     /**
      *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
@@ -72,7 +72,7 @@
  */
 - (void) startBugly;
 {
-    [Bugly startWithAppId:@"0ecff3da22"];
+    [Bugly startWithAppId:@"292786cf8b"];
 }
 
 -(void)applicationDidReceiveMemoryWarning:(UIApplication *)application;

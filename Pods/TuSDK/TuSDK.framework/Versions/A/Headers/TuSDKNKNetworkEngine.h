@@ -14,6 +14,9 @@
  */
 extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 
+extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeImage;
+
+
 /**
  *  sdk应用层网络引擎
  */
@@ -40,6 +43,13 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 + (instancetype) webEngine;
 
 /**
+ *  sdk在线权限验证引擎
+ *
+ *  @return sdk在线权限验证引擎
+ */
++ (instancetype) authEngine;
+
+/**
  * 唯一设备ID
  *
  *  @return 唯一设备ID
@@ -55,6 +65,12 @@ extern BOOL const lsqTuSDKNKNetworkEngineDebug;
  *  用户标识
  */
 @property (nonatomic, copy) NSString *userIdentify;
+
+/**
+ 设置 SDK
+ 类型 1. 图像
+ */
++ (void)setSDKType:(NSString *)sdkType;
 
 /**
  *  获取服务器地址

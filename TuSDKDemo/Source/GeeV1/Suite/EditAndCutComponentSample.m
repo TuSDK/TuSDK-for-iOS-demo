@@ -64,7 +64,7 @@
     if (!controller || !result) return;
     
     // 组件选项配置
-    // @see-https://tutucloud.com/docs/ios/image/api-geev1/Classes/TuSDKPFEditTurnAndCutOptions.html
+    // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditTurnAndCutOptions.html
     TuSDKPFEditTurnAndCutOptions *opt = [TuSDKPFEditTurnAndCutOptions build];
     
     // 是否开启滤镜支持 (默认: 关闭)

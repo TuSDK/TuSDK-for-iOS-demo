@@ -9,6 +9,15 @@
 #import "TuSDKFilterAdapter.h"
 #import "TuSDKFilterParameter.h"
 
+#define TuSDKGPUMonsterFaceThickLipsType 1
+#define TuSDKGPUMonsterPapayaFaceType 2
+#define TuSDKGPUMonsterSmallEyesType 3
+
 @interface TuSDKGPUMonsterFace : TuSDKFilter<TuSDKFilterFacePositionProtocol>
+
+/**
+ 设置类型（TuSDKGPUMonsterFaceThickLipsType、TuSDKGPUMonsterPapayaFaceType、TuSDKGPUMonsterSmallEyesType），默认 TuSDKGPUMonsterFaceThickLipsType
+ */
+@property (nonatomic) NSUInteger monsterFaceType;
 
 @end
