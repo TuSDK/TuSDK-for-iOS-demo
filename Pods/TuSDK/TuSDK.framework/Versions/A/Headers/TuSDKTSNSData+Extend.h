@@ -49,18 +49,16 @@
 /**
  *  解析base64字符串
  *
- *  @param string base64编码字符串
+ *  @param str base64编码字符串
  *
  *  @return 解析base64数据
  */
 + (NSData *)lsqDataFromBase64String:(NSString*)str;
 
 /**
- *  base64编码
- *
- *  @param str 输入字符串
- *
- *  @return base64编码
+ base64编码
+
+ @return base64编码
  */
 - (NSString* )lsqBase64encode;
 @end

@@ -30,8 +30,10 @@
 #import "EditFilterSampleController.h"
 #import "StickerSampleController.h"
 #import "WipeAndFilterSampleController.h"
+#import "EditPaintDrawComponentSample.h"
 
 #import "DefineCameraBaseComponent.h"
+
 
 #pragma mark - DemoComponentListController
 @interface DemoComponentListController ()<DemoRootViewDelegate>
@@ -133,6 +135,8 @@
     // 裁切 + 滤镜 + 贴纸编辑组件范例
     [group appenWithSample:[EditAdvancedComponentSample sample]];
     
+    // 涂鸦组件
+    [group appenWithSample:[EditPaintDrawComponentSample sample]];
     // 常用组件
     // 相册组件范例
     [group appenWithSample:[AlbumComponentSample sample]];
@@ -171,7 +175,7 @@
     // API 使用示例（仅供参考）
     // 基础相机自定义 - 底层API
     [group appenWithSample:[DefineCameraBaseComponent sample]];
-        
+    
     // 设置范例分组数据
     self.listView.group = group;
 }

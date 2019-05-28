@@ -99,6 +99,13 @@ NS_ASSUME_NONNULL_BEGIN
 /** 将持久化的数据恢复 */
 + (TuSDKLocalAuthInfo *)recovery;
 
+/**
+ 本地缓存的key
+ 
+ @return NSString*
+ */
++ (NSString *)persistenceKey;
+
 @end
 
 

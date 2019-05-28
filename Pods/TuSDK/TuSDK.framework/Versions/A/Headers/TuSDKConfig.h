@@ -60,6 +60,11 @@
 @property (nonatomic) BOOL smudgeEnabled;
 
 /**
+ *  画笔涂抹
+ */
+@property (nonatomic) BOOL paintEnabled;
+
+/**
  *  smudge and filter
  */
 @property (nonatomic) BOOL wipeFilterEnabled;
@@ -214,6 +219,12 @@
  @since v3.0.1
  */
 @property (nonatomic) BOOL audioResampleEffectsSupport;
+
+/**
+ video editor image sticker effect support 哈哈镜
+ @since v3.0.7
+ */
+@property (nonatomic) BOOL videoEditorImageStickerSupport;
 
 /**
  *  Filter list which could be used by FilterAPI

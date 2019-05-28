@@ -139,7 +139,7 @@ typedef NS_ENUM(NSUInteger,lsqAtionScenSDKType)
 
 /**
  * 验证当前资源是否可以在指定的 sdk 中使用
- * @param ation_scen sdk 类型
+ * @param ationScen sdk 类型
  * @return true/false
  */
 - (BOOL)canUseForAtionScenType:(lsqAtionScenSDKType)ationScen;

@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 获取比例
  *
- * @param ratio 比例类型 RatioType
+ * @param ratioType 比例类型 lsqRatioType
  *
  * @return ratioType
  */
@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 通过比例获取相近比例类型
  *
- * @param radioType
+ * @param ratio
  * @return ratio
  */
 + (lsqRatioType)radioType:(float)ratio;
@@ -95,7 +95,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 检测列表中的比例数据是否合法
  *
- * @param ratioTypes
+ * @param types
  * @return types
  */
 + (NSArray<NSNumber *> *)validRatioTypes:(NSArray<NSNumber *> *)types;
@@ -103,7 +103,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 获取第一个比例类型
  *
- * @param ratioType
+ * @param firstRatioType
  * @return ratioType
  */
 + (lsqRatioType)firstRatioType:(lsqRatioType)ratioType;
@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 获取第一个比例
  *
- * @param firstRatio
+ * @param ratioType
  * @return ratioType
  */
 + (float) firstRatio:(lsqRatioType) ratioType;
@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, lsqRatioType)
 /**
  * 获取比例总数
  *
- * @param ratioCount
+ * @param ratioType
  * @return ratioType
  */
 + (NSInteger) ratioCount:(lsqRatioType)ratioType;

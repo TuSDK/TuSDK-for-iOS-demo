@@ -67,7 +67,7 @@
 /**
  *  验证滤镜代号
  *
- *  @param filterCodes 滤镜代号列表
+ *  @param codes 滤镜代号列表
  *
  *  @return  codes 滤镜名称
  */

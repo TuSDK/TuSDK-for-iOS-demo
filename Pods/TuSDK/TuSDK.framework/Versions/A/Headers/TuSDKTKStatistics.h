@@ -205,6 +205,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editSmudgeFragment = 0x409500,
     
     /**
+     * 笔触涂鸦控制器
+     */
+    tkc_editPaintFragment = 0x409501,
+    
+    /**
      * 滤镜涂抹控制器
      */
     tkc_editWipeAndFilterFragment = 0x409600,
@@ -385,7 +390,7 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
  *
  *  @param path 数据位置
  *
- *  @return 数据统计对象
+ *  @return path
  */
 + (void)initWithDataPath:(NSString *)path;
 

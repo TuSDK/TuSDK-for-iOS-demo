@@ -82,11 +82,10 @@
  */
 @property (nonatomic, assign) CGSize  originIVSize;
 
-
 /**
- *  设置绘制底图
- *
- *  @return scaledImage
+ 设置绘制底图
+
+ @param scaledImage scaledImage
  */
 -(void)setImage: (UIImage *)scaledImage;
 

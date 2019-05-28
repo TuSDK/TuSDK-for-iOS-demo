@@ -110,6 +110,13 @@
 #import "TuSDKPFStickerGroup.h"
 #import "TuSDKPFSmudgeViewBase.h"
 #import "TuSDKPFBrushBarViewBase.h"
+#import "TuSDKPaintDrawViewBase.h"
+#import "TuSDKPFPaintBezierPath.h"
+
+#import "TuSDKOpenGLAssistant.h"
+#import "TuSDKTextureCoordinateCropBuilder.h"
+#import "TuSDKVerticeCoordinateBuilder.h"
+#import "SLGL2DTextureProgram.h"
 
 #import "TuSDKTKThread.h"
 #import "TuSDKVideoCameraInterface.h"
@@ -133,7 +140,7 @@
 #import "TuSDKOnlineStickerFetcher.h"
 #import "TuSDKOnlineStickerDownloader.h"
 
-#import "TuSDKTextStickerImage.h"
+#import "TuSDKGPU2DImageFilter.h"
 
 
 #import "TuSDKNKNetworkEngine.h"
@@ -287,7 +294,7 @@ extern NSString * const lsqFilterSampleExtension;
  *  @param sessionPreset  相机分辨率类型 
  *  @see AVCaptureSessionPresetPhoto
  *  @param cameraPosition 相机设备标识 （前置或后置）
- *  @param cameraView     相机显示容器视图
+ *  @param view     相机显示容器视图
  *
  *  @return 相机对象
  */

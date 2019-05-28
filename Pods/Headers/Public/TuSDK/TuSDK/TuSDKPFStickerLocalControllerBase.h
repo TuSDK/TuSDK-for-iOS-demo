@@ -1,1 +1,0 @@
-../../../../TuSDK/TuSDK.framework/Versions/A/Headers/TuSDKPFStickerLocalControllerBase.h

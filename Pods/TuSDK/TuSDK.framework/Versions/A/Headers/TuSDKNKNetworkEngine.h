@@ -83,8 +83,7 @@ extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeImage;
  * 获取在线链接
  *
  * @param url
- * @param needAuth
- *            是否需要验证
+ * @param needAuth 是否需要验证
  * @return url
  */
 - (NSString *)webUrlWithUrl:(NSString *)url needAuth:(BOOL)needAuth;

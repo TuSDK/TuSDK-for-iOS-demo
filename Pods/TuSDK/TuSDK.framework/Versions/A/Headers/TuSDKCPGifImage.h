@@ -65,10 +65,9 @@ OSSpinLockUnlock(&view->_lock);
 
 #pragma mark - TuSDKCPGifImage
 
+
 /**
- *  GifImage对象
- *
- *  @return GifImage对象
+ GifImage对象
  */
 @interface TuSDKCPGifImage : TuSDKCPImage <TuSDKCPAnimationImage>
 

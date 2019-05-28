@@ -15,6 +15,7 @@
 #import "TuSDKPFEditStickerOptions.h"
 #import "TuSDKPFEditTextOptions.h"
 #import "TuSDKPFEditSmudgeOptions.h"
+#import "TuSDKPFEditPaintOptions.h"
 #import "TuSDKPFEditAdjustController.h"
 #import "TuSDKPFEditSharpnessController.h"
 #import "TuSDKPFEditApertureController.h"
@@ -86,6 +87,11 @@
 @property (nonatomic, readonly) TuSDKPFEditSmudgeOptions *editSmudgeOptions;
 
 /**
+ *  涂鸭控制器功能控制器配置选项
+ */
+@property (nonatomic, readonly) TuSDKPFEditPaintOptions *editPaintOptions;
+
+/**
  *  滤镜涂抹控制器功能控制器配置选项
  */
 @property (nonatomic, readonly) TuSDKPFEditWipeAndFilterOptions *editWipeAndFilterOptions;
@@ -108,7 +114,7 @@
  */
 @interface TuSDKCPPhotoEditMultipleComponent : TuSDKCPPhotoEditMultipleComponentBase<TuSDKPFEditMultipleControllerDelegate,
 TuSDKPFEditCuterControllerDelegate, TuSDKPFEditFilterControllerDelegate, TuSDKCPFilterResultControllerDelegate,
-TuSDKPFEditStickerControllerDelegate, TuSDKPFEditSmudgeControllerDelegate, TuSDKPFEditWipeAndFilterControllerDelegate, TuSDKPFEditTextControllerDelegate>
+TuSDKPFEditStickerControllerDelegate, TuSDKPFEditSmudgeControllerDelegate, TuSDKPFEditWipeAndFilterControllerDelegate, TuSDKPFEditTextControllerDelegate, TuSDKPFEditPaintViewControllerDelegate>
 /**
  *  多功能图像编辑组件选项
  */

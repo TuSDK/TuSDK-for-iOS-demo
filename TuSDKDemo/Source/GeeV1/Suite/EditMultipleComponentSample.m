@@ -121,7 +121,7 @@
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditMultipleOptions.html
     // _photoEditMultipleComponent.options.editMultipleOptions
     //    // 禁用功能模块 默认：加载全部模块
-    //    [_photoEditMultipleComponent.options.editMultipleOptions disableModule:lsqTuSDKCPEditActionCuter];
+//        [_photoEditMultipleComponent.options.editMultipleOptions disableModule:lsqTuSDKCPEditActionCuter];
     //    // 最大输出图片尺寸，如果输入图片尺寸过大，设备将会自动按照硬件可支持的最大尺寸进行输出
         _photoEditMultipleComponent.options.editMultipleOptions.limitSideSize = NSUIntegerMax;
     //    // 保存到系统相册
@@ -246,6 +246,25 @@
     //    // 照片输出压缩率 0-100 如果设置为0 将保存为PNG格式
     //    _photoEditMultipleComponent.options.editSmudgeOptions.outputCompress = 0.95f;
     //
+    
+    // 涂鸦模块说明
+//    _photoEditMultipleComponent.options.editPaintOptions;
+    // 可设置最大撤销步骤，默认5
+//    _photoEditMultipleComponent.options.editPaintOptions.maxUndoCount = 5;
+    // 是否保存上一次使用的笔刷 (默认: YES)
+//    _photoEditMultipleComponent.options.editPaintOptions.saveLastBrush = YES;
+    // 保存到临时文件(默认: YES)
+//    _photoEditMultipleComponent.options.editPaintOptions.saveToTemp = YES;
+    // 笔刷大小等级设置（默认: 中等----细、中、粗三个等级）（1, 2, 4）
+//    _photoEditMultipleComponent.options.editPaintOptions.defaultBrushSize = lsqLargeBrush;
+    // 笔刷大小比例设置（默认: 1.5----1-3的范围，小于1或大于3都将被限制在1或3）
+    // 真正涂鸦是笔刷的大小就是 defaultBrushSize*brushScaleSize
+//    _photoEditMultipleComponent.options.editPaintOptions.brushScaleSize = 3;
+    // 两点间的最小距离，绘制时距离大于此值才开始绘制，默认10
+//    _photoEditMultipleComponent.options.editPaintOptions.minDistance = 10;
+    // 笔刷的颜色选择---- 默认 @[@"#f9f9f9", @"#2b2b2b", @"#ff1d12", @"#fbf606", @"#14e213", @"#199bff", @"#8c06ff"]
+//    _photoEditMultipleComponent.options.editPaintOptions.brushGroup = @[@"#f9f9f9", @"#2b2b2b", @"#ff1d12", @"#fbf606", @"#14e213", @"#199bff", @"#8c06ff"];
+//    _photoEditMultipleComponent.options.editPaintOptions.brushGroup = @[@"#14e213", @"#199bff", @"#8c06ff"];
     //    // 模糊模块控制器配置选项
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKPFEditWipeAndFilterOptions.html
     // _photoEditMultipleComponent.options.editWipeAndFilterOptions

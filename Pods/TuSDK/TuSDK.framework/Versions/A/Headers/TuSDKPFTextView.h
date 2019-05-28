@@ -350,10 +350,9 @@
  */
 - (instancetype)initWithFrame:(CGRect)frame textFont:(UIFont *)textFont textColor:(UIColor *)textColor;
 
+
 /**
- *  添加一个文字
- *
- *  @param sticker 文字元素
+ 添加一个文字
  */
 - (void)appendText;
 

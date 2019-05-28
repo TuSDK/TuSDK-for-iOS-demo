@@ -16,7 +16,8 @@
  */
 @interface TuSDKFilterProcessorBase : SLGPUImageOutput
 {
-    LSQGPUImageRotationMode internalRotation , bufferRotation;
+    LSQGPUImageRotationMode bufferRotation;
+    CGSize _outputSize;
 }
 
 /**
@@ -35,8 +36,35 @@
 /// These properties determine whether or not the two camera orientations should be mirrored. By default, both are NO.
 @property(readwrite, nonatomic) BOOL horizontallyMirrorFrontFacingCamera, horizontallyMirrorRearFacingCamera;
 
-// 视频的输出方向
+/**
+ 画布背景色
+ 
+ @since 3.0.8
+ */
+@property (nonatomic) UIColor *canvasColor;
+
+/**
+ 设置输出方向
+ */
 @property (nonatomic) LSQGPUImageRotationMode outputRotation;
+
+/**
+ 自定义输入方向
+ @since 3.0.8
+ */
+@property (nonatomic) LSQGPUImageRotationMode internalRotation;
+
+/**
+ 输入的视频宽高
+ @since 3.0.8
+ */
+@property (nonatomic,readonly) CGSize inputSize;
+
+/**
+ 输出宽高
+ @since 3.0.8
+ */
+@property (nonatomic) CGSize outputSize;
 
 /**
  *  初始化
@@ -95,5 +123,13 @@
 - (CGFloat)averageFrameDurationDuringCapture;
 
 - (void)resetBenchmarkAverage;
+
+/**
+ 设置输出尺寸
+
+ @param outputSize 输出尺寸
+ @param aspectOutputRatioInSideCanvas 输出比例与原视频比例不一致时是否自适应画布大小
+ */
+- (void)setOutputSize:(CGSize)outputSize aspectOutputRatioInSideCanvas:(BOOL)aspectOutputRatioInSideCanvas;
 
 @end

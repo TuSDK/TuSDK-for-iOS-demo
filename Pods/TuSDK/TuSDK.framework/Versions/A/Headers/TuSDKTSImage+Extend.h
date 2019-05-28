@@ -165,7 +165,7 @@
  @param iClipXNum 水平切片数目
  @param iClipYNum 垂直切片数目
  @param fLimit 调节系数
- @return
+ @return uint8_t
  */
 - (uint8_t *)lsqGetBitmapClipHistListWithClipX:(NSUInteger)iClipXNum
                                          ClipY:(NSUInteger)iClipYNum
@@ -174,7 +174,7 @@
 /**
  Get histogram range
  
- @return
+ @return NSDictionary
  */
 - (NSDictionary *)lsqGetBitmapHistRange;
 @end
@@ -220,6 +220,16 @@
 - (UIImage *)lsqImageResize:(CGSize)resize
             baseLongSide:(BOOL)baseLongSide
     interpolationQuality:(CGInterpolationQuality)quality;
+
+/**
+ *  旋转图片
+ *
+ *  @param orientation 输出图片方向
+ *
+ *  @return 旋转后的图片
+ */
+- (UIImage *)lsqImageRotate:(UIImageOrientation)orientation;
+
 /**
  *  等比缩放并旋转图片
  *

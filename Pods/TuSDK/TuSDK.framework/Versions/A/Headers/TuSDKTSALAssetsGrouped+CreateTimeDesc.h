@@ -47,7 +47,7 @@
 /**
  *  创建相片时间分组
  *
- *  @param assetsGroup 相册组
+ *  @param group 相册组
  *
  *  @return 相册组相片时间分组
  */

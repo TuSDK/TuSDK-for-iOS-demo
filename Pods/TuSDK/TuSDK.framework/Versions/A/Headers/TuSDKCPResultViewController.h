@@ -84,7 +84,7 @@
  *  保存图片到临时文件
  *
  *  @param result 相机拍摄结果
- *  @param selector 结束后执行方法
+ *  @param result 结束后执行方法
  */
 - (void)saveToTempWithResult:(TuSDKResult *)result;
 
@@ -92,7 +92,7 @@
  *  保存图片到系统相册
  *
  *  @param result 相机拍摄结果
- *  @param selector 结束后执行方法
+ *  @param result 结束后执行方法
  */
 - (void)saveToAlbumWithResult:(TuSDKResult *)result;
 
@@ -101,7 +101,7 @@
  *
  *  @param image 目标图片
  *
- *  @return
+ *  @return result
  */
-- (UIImage *)addWaterMarkToImage:(UIImage *)image;
+- (UIImage *)addWaterMarkToImage:(UIImage *)result;
 @end

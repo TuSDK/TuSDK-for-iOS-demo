@@ -15,10 +15,11 @@
  */
 @protocol TuSDKICPagerHolderDelegate <NSObject>
 @optional
+
 /**
- *  分页占位视图点击事件
- *
- *  @param holder
+ 分页占位视图点击事件
+
+ @param holder holder
  */
 - (void)onPagerHolderTaped:(TuSDKICPagerHolder *)holder;
 @end

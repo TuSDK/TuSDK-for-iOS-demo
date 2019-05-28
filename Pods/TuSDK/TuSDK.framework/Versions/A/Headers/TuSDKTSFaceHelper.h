@@ -91,9 +91,9 @@
 
 /**
  Get real orientation without mirror
- 
- @param rotation
- @return
+
+ @param rotation rotation
+ @return return value description
  */
 + (int)getOriByGPURotation:(LSQGPUImageRotationMode)rotation;
 @end

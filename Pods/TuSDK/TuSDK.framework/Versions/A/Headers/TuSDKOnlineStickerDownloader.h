@@ -74,7 +74,7 @@
 /**
  *  取消下载贴纸
  *
- *  @param idt 贴纸组ID
+ *  @param groupId 贴纸组ID
  */
 - (void)cancelDownloadWithGroupId:(uint64_t)groupId;
 
