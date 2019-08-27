@@ -19,13 +19,19 @@
 @property (nonatomic) CGSize outputSize;
 
 /**
- 设置输出 outputSize, 如果输出比例和原视频比例不一致时，自动缩放视频大小，视频不会被裁剪
-
- @param outputSize 输出尺寸
- @param aspectOutputRatioInSideCanvas 比例不一致时是否将视频自适应画布大小 默认：NO
+ 设置比例不一致时是否自适应画布
+ 比例不一致时是否将视频自适应画布大小 默认：NO
  */
-- (void)setOutputSize:(CGSize)outputSize aspectOutputRatioInSideCanvas:(BOOL)aspectOutputRatioInSideCanvas;
+@property (nonatomic) BOOL aspectOutputRatioInSideCanvas;
 
-- (BOOL)calculate:(CGSize) size orientation:(LSQGPUImageRotationMode) orientation verticesCoordinates:(GLfloat[]) verticesCoordinates textureCoorinates:(GLfloat[])textureBuffer;
+/**
+ 设置画面显示区域 默认：（CGRectMake(0,0,1,1) 完整画面）相对于 textureSize/inputSize
+ aspectOutputRatioInSideCanvas 为 NO 时可用
+ */
+@property (nonatomic) CGRect textureRect;
+
+
+
+- (BOOL)calculate:(CGSize) textureSize orientation:(LSQGPUImageRotationMode) orientation verticesCoordinates:(GLfloat[]) verticesCoordinates textureCoorinates:(GLfloat[])textureBuffer;
 
 @end

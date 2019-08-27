@@ -200,6 +200,22 @@
 - (BOOL)audioResampleEffectsSupport;
 
 /**
+ video composition support 合成视频 是否视频合成
+
+ @return 是否支持
+ @since 3.4.1
+ */
+- (BOOL)videoCompositionSupport;
+
+/**
+ video editor transition support 编辑视频 是否支持转场特效
+ 
+ @return 是否支持
+ @since 3.4.1
+ */
+- (BOOL)videoEditorTransitionSupport;
+
+/**
   video editor text effects support 编辑视频 是否支持文字特效
 
  @return true/false
@@ -222,6 +238,47 @@
  @sinace v3.0.1
  */
 - (BOOL)videoEditorImageStickerSupport;
+
+/**
+  EVA 支持替换文字
+ */
+- (BOOL)evaEditorReplaceTxtSupport;
+
+/**
+  EVA 支持图片文字
+ */
+- (BOOL)evaEditorReplaceImgSupport;
+
+/**
+  EVA 支持替换视频
+ */
+- (BOOL)evaEditorReplaceVideoSupport;
+
+/**
+  EVA 支持替换音频
+ */
+- (BOOL)evaEditorReplaceAudioSupport;
+
+/**
+ EVA 去除版权声明
+ */
+- (BOOL)evaEditorWipeCopyRightSupport;
+
+/**
+ EVA 自定义码率
+ */
+- (BOOL)evaEditorBitrateSupport;
+
+/**
+ EVA 自定义分辨率
+ */
+- (BOOL)evaEditorResolutionSupport;
+
+/**
+ EVA 导出时添加水印
+ */
+- (BOOL)evaEditorAddMarkImageSupport;
+
 
 /**
  *  解密文本

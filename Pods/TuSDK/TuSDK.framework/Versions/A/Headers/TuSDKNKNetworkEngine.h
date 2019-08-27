@@ -15,6 +15,9 @@
 extern BOOL const lsqTuSDKNKNetworkEngineDebug;
 
 extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeImage;
+extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeVideo;
+extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeEva;
+extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeFaceFuse;
 
 
 /**
@@ -55,6 +58,9 @@ extern NSString* const lsqTuSDKNKNetworkEngineHeadrSDKTypeImage;
  *  @return 唯一设备ID
  */
 + (NSString *)uniqueDeviceID;
+
+// 全局唯一id
++ (NSString *)globalDeviceID;
 
 /**
  *  开发者ID

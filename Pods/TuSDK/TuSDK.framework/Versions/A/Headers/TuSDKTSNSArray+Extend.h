@@ -29,3 +29,10 @@
 - (NSArray *)lsqReverse;
 
 @end
+
+
+@interface NSArray(JSON)
+
+- (NSString *)jsonString;
+
+@end

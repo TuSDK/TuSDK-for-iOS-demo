@@ -26,6 +26,19 @@
  */
 @property (nonatomic) AVCaptureFocusMode focusMode;
 
+
+/**
+ * 禁用手动曝光(默认: NO)
+ * @since v3.1.1
+ */
+@property (nonatomic, assign) BOOL disableTapExposure;
+
+/**
+ * 曝光模式
+ * @since v3.1.1
+ */
+@property (nonatomic, assign) AVCaptureExposureMode exposureMode;
+
 /**
  *  是否开启长按拍摄 (默认: NO)
  */
@@ -95,6 +108,15 @@
  *  @param point 聚焦点
  */
 - (void)notifyCameraWithFocusPoint:(CGPoint)point;
+
+/**
+ *  通知相机聚焦点
+ *
+ *  @param point 聚焦点
+ *  @param isTap 是否是点击调起
+ *  @since v3.1.1
+ */
+- (void)notifyCameraWithFocusPoint:(CGPoint)point withoutTap:(BOOL)isTap;
 
 /** hidden Face Views */
 - (void)hiddenFaceViews;

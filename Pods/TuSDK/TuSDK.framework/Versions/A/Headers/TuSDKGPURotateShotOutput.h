@@ -26,14 +26,20 @@
 /**
  旋转截屏
  用于目标检测旋转追踪数据获取
+ @since 3.4.1
  */
+
 @interface TuSDKGPURotateShotOutput : TuSDKFilter
+
 /** 同步截取屏幕协议 */
 @property (nonatomic, assign) id<TuSDKGPURotateShotOutputDelegate> shotDelegate;
+
 /** 设备角度 */
 @property (nonatomic) CGFloat deviceAngle;
+
 /** 设备弧度 */
 @property (nonatomic) CGFloat deviceRadian;
+
 /** 准备渲染 只能在委托回调中执行*/
 - (void)rendered;
 

@@ -227,6 +227,49 @@
 @property (nonatomic) BOOL videoEditorImageStickerSupport;
 
 /**
+ video composition support 合成视频 是否视频合成
+ 
+ @return 是否支持
+ @since 3.4.1
+ */
+@property (nonatomic) BOOL videoCompositionSupport;
+
+/**
+ video editor transition support 编辑视频 是否支持转场特效
+ 
+ @return 是否支持
+ @since 3.4.1
+ */
+@property (nonatomic) BOOL videoEditorTransitionSupport;
+
+#pragma mark Eva
+
+/** 替换占位文字 */
+@property (nonatomic) BOOL evaEditorReplaceTxtSupport;
+
+/** 替换占位图片 */
+@property (nonatomic) BOOL evaEditorReplaceImgSupport;
+
+/** 替换占位视频 */
+@property (nonatomic) BOOL evaEditorReplaceVideoSupport;
+
+/** 替换占位音频 */
+@property (nonatomic) BOOL evaEditorReplaceAudioSupport;
+
+/** 去除版权声明 */
+@property (nonatomic) BOOL evaEditorWipeCopyRightSupport;
+
+/** 自定义码率 */
+@property (nonatomic) BOOL evaEditorBitrateSupport;
+
+/** 自定义分辨率 */
+@property (nonatomic) BOOL evaEditorResolutionSupport;
+
+/** 导出时添加水印 */
+@property (nonatomic) BOOL evaEditorAddMarkImageSupport;
+
+
+/**
  *  Filter list which could be used by FilterAPI
  */
 @property (nonatomic) NSArray *filterAPIList;

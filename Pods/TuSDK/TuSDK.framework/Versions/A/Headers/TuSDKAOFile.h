@@ -58,4 +58,14 @@
  * @return name
  */
 - (UIImage *)getImageWithName:(NSString *)name;
+
+
+/**
+ 获取二进制流信息
+
+ @param name 文件名称
+ @return 文件二进制流数据
+ */
+- (NSData *)getBinaryDataWithName:(NSString *)name;
+
 @end

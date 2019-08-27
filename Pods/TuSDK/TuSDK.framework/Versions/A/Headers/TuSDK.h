@@ -116,7 +116,7 @@
 #import "TuSDKOpenGLAssistant.h"
 #import "TuSDKTextureCoordinateCropBuilder.h"
 #import "TuSDKVerticeCoordinateBuilder.h"
-#import "SLGL2DTextureProgram.h"
+
 
 #import "TuSDKTKThread.h"
 #import "TuSDKVideoCameraInterface.h"
@@ -141,10 +141,14 @@
 #import "TuSDKOnlineStickerDownloader.h"
 
 #import "TuSDKGPU2DImageFilter.h"
+#import "TuSDKGPULiveTransitionFilterProtocol.h"
 
 
 #import "TuSDKNKNetworkEngine.h"
 #import "UIImageView+TuSDKNetworkAdditions.h"
+
+#import "SLGL2DTextureProgram.h"
+#import "SLGLYUVTextureProgram.h"
 
 /**
  *  SDK版本
@@ -214,6 +218,12 @@ extern NSString * const lsqFilterSampleExtension;
  */
 @property (nonatomic) BOOL useSSL;
 
+
+/**
+ * udid
+ * @since v1.0.0
+ */
+@property (nonatomic, strong, readonly) NSString *openid;
 /**
  *  TuSDK 核心
  *

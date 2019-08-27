@@ -59,6 +59,7 @@ void lsqReportAvailableMemoryForGPUImage(NSString *tag);
 @property(nonatomic, copy) void(^frameProcessingCompletionBlock)(SLGPUImageOutput*, CMTime);
 @property(nonatomic) BOOL enabled;
 @property(readwrite, nonatomic) LSQGPUTextureOptions outputTextureOptions;
+- (void)runSynchronouslyOnVideoProcessingQueue:(void(^)(void))block;
 
 /// @name Managing targets
 - (void)setInputFramebufferForTarget:(id<SLGPUImageInput>)target atIndex:(NSInteger)inputTextureIndex;

@@ -27,6 +27,7 @@ typedef struct LSQGPUTextureOptions {
 @property(readonly) CGSize size;
 @property(readonly) LSQGPUTextureOptions textureOptions;
 @property(readonly) GLuint texture;
+@property(readonly) GLuint framebuffer;
 @property(readonly) BOOL missingFramebuffer;
 
 // Initialization and teardown

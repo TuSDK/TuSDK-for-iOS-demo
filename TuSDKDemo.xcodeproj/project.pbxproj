@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		02B1DCC4B14CBC08AEA93089 /* libPods-TuSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29EF45AC7B4F4A0A900E682 /* libPods-TuSDKDemo.a */; };
-		D7A440AD22B9E08B00AC6A3A /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7A440AB22B9E08B00AC6A3A /* sample_photo.jpg */; };
-		D7A440AE22B9E08B00AC6A3A /* sample_watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A440AC22B9E08B00AC6A3A /* sample_watermark.png */; };
+		D70DADFD231559B0006376E0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D70DADFC231559B0006376E0 /* libresolv.tbd */; };
+		D70DAE0023155A5B006376E0 /* sample_watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = D70DADFE23155A5B006376E0 /* sample_watermark.png */; };
+		D70DAE0123155A5B006376E0 /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D70DADFF23155A5B006376E0 /* sample_photo.jpg */; };
 		D7BCA5B8229D1A6D001E4480 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D7BCA55B229D1A6C001E4480 /* TuSDK.bundle */; };
 		D7BCA5B9229D1A6D001E4480 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BCA55C229D1A6C001E4480 /* Bugly.framework */; };
 		D7BCA5BA229D1A6D001E4480 /* iphonex_homepage_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7BCA55E229D1A6C001E4480 /* iphonex_homepage_bg@3x.png */; };
@@ -73,8 +74,9 @@
 		4B512CD286AD0B85A6401C62 /* Pods-TuSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuSDKDemo/Pods-TuSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A29EF45AC7B4F4A0A900E682 /* libPods-TuSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C96084C1E5DA5E8983D9CE /* Pods-TuSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuSDKDemo/Pods-TuSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D7A440AB22B9E08B00AC6A3A /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
-		D7A440AC22B9E08B00AC6A3A /* sample_watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_watermark.png; sourceTree = "<group>"; };
+		D70DADFC231559B0006376E0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		D70DADFE23155A5B006376E0 /* sample_watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample_watermark.png; path = TuSDKDemo/sample_watermark.png; sourceTree = SOURCE_ROOT; };
+		D70DADFF23155A5B006376E0 /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample_photo.jpg; path = TuSDKDemo/sample_photo.jpg; sourceTree = SOURCE_ROOT; };
 		D7BCA55B229D1A6C001E4480 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
 		D7BCA55C229D1A6C001E4480 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		D7BCA55E229D1A6C001E4480 /* iphonex_homepage_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphonex_homepage_bg@3x.png"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70DADFD231559B0006376E0 /* libresolv.tbd in Frameworks */,
 				F86082181F0691AE0009C8E9 /* Bugly.framework in Frameworks */,
 				DCF7DFAE1BCCF397002CB757 /* Photos.framework in Frameworks */,
 				D7BCA5B9229D1A6D001E4480 /* Bugly.framework in Frameworks */,
@@ -197,8 +200,8 @@
 				D7BCA55D229D1A6C001E4480 /* Images */,
 				D7BCA56B229D1A6C001E4480 /* Localized */,
 				D7BCA578229D1A6C001E4480 /* sample_gif_editor.gif */,
-				D7A440AB22B9E08B00AC6A3A /* sample_photo.jpg */,
-				D7A440AC22B9E08B00AC6A3A /* sample_watermark.png */,
+				D70DADFF23155A5B006376E0 /* sample_photo.jpg */,
+				D70DADFE23155A5B006376E0 /* sample_watermark.png */,
 				D7BCA579229D1A6C001E4480 /* Images.xcassets */,
 			);
 			path = Resources;
@@ -411,6 +414,7 @@
 		DD26EFB9BE3EABB13D356AAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D70DADFC231559B0006376E0 /* libresolv.tbd */,
 				F86082171F0691AE0009C8E9 /* Bugly.framework */,
 				DCF7DFAD1BCCF397002CB757 /* Photos.framework */,
 				A29EF45AC7B4F4A0A900E682 /* libPods-TuSDKDemo.a */,
@@ -509,7 +513,6 @@
 				D7BCA5C6229D1A6D001E4480 /* homepage_icon_tools@2x.png in Resources */,
 				D7BCA5C2229D1A6D001E4480 /* homepage_icon_beauty@2x.png in Resources */,
 				D7BCA5C5229D1A6D001E4480 /* homepage_icon_beauty@3x.png in Resources */,
-				D7A440AE22B9E08B00AC6A3A /* sample_watermark.png in Resources */,
 				D7BCA5C4229D1A6D001E4480 /* homepage_icon_camera@2x.png in Resources */,
 				D7BCA5C9229D1A6D001E4480 /* InfoPlist.strings in Resources */,
 				D7BCA5BB229D1A6D001E4480 /* homepage_button_normal@2x.png in Resources */,
@@ -518,9 +521,10 @@
 				D7BCA5BD229D1A6D001E4480 /* homepage_icon_next@2x.png in Resources */,
 				D7BCA5C0229D1A6D001E4480 /* homepage_button_normal@3x.png in Resources */,
 				D7BCA5C3229D1A6D001E4480 /* homepage_icon_camera@3x.png in Resources */,
+				D70DAE0123155A5B006376E0 /* sample_photo.jpg in Resources */,
 				D7BCA5CA229D1A6D001E4480 /* sample_gif_editor.gif in Resources */,
+				D70DAE0023155A5B006376E0 /* sample_watermark.png in Resources */,
 				D7BCA5BA229D1A6D001E4480 /* iphonex_homepage_bg@3x.png in Resources */,
-				D7A440AD22B9E08B00AC6A3A /* sample_photo.jpg in Resources */,
 				D7BCA5C7229D1A6D001E4480 /* TuSDK.strings in Resources */,
 				D7BCA5CB229D1A6D001E4480 /* Images.xcassets in Resources */,
 				D7BCA5C8229D1A6D001E4480 /* Localizable.strings in Resources */,

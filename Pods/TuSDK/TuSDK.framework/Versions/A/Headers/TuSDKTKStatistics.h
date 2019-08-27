@@ -377,6 +377,9 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * 0x90 视频库占用
      *
      * 0x91 - 0x93 已被TuSDKFaceID占用 详见TuSDKFaceID -> Secrets -> TuSDKPFStatistics.h
+     *
+     * 0x94 人脸融合使用 具体见人脸融合库中的TuSDKFaceFuseStatistics.h
+     * 0x95 eva库使用 具体eva库中的TuSDKEvaStatistics.h
      */
 };
 

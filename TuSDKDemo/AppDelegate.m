@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "DemoRootViewController.h"
 #import "TuSDKFramework.h"
+#import "DemoRootViewController.h"
+
 #import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
@@ -26,18 +27,17 @@
      * 1,如果您不需要使用本地贴纸功能，或仅需要使用在线贴纸功能，请删除/app/TuSDK.bundle/stickers文件夹
      * 2,如果您仅需要几款滤镜，您可以删除/app/TuSDK.bundle/textures下的*.gsce文件
      * 3,如果您不需要使用滤镜功能，请删除/app/TuSDK.bundle/textures文件夹
-     * 4,TuSDK在线管理功能请访问：http://tusdk.com/
+     * 4,TuSDK在线管理功能请访问：https://tutucloud.com/
      *
      * IOS编译Framework知识：
      * Framework包含armv7,arm64等不同CPU的编译结果的集合；
      * 其中每种CPU编译结果还包含Debug以及Realse两种子结果；
      * 当集成某个Framework（假如TuSDK.Framework物理文件大小为30MB），编译成APP发布后，实际大小约为不到2MB
      *
-     * 开发文档:http://tusdk.com/doc
+     * 开发文档:https://tutucloud.com/doc
      */
     
     // 可选: 设置日志输出级别 (默认不输出)
-    
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
     
     /**
@@ -48,8 +48,12 @@
     /**
      *  初始化SDK，应用密钥是您的应用在 TuSDK 的唯一标识符。每个应用的包名(Bundle Identifier)、密钥、资源包(滤镜、贴纸等)三者需要匹配，否则将会报错。
      *
-     *  @param appkey 应用秘钥 (请前往 http://tusdk.com 申请秘钥)
+     *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
      */
+    
+    // Attention ！！！！！！
+    // ********************** 更换包名和秘钥之后，一定要去控制台打包替换资源文件 **********************
+    
     [TuSDK initSdkWithAppKey:@"25e7b404b4cf62af-04-ewdjn1"];
     
     /**

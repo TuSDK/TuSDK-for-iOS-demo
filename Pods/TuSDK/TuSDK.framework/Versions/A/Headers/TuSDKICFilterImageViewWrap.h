@@ -75,4 +75,24 @@
  *  裁剪区域范围，均以比例表示：{{offsetX/allWidth,offsetY/allHeight}，{sizeWidth/allWidth,sizeHeight/allHeight}}
  */
 @property (nonatomic, assign) CGRect cropRect;
+
+@end
+
+
+#pragma mark - TuSDKICFilterEvaMovieViewWrap
+/**
+ *  视频显示视图包装
+ */
+@interface TuSDKICFilterEvaMovieViewWrap : UIView
+/**
+ *  GPU视图
+ */
+@property (nonatomic, readonly) TuSDKICGPUImageView *view;
+
+/**
+ *  裁剪区域范围，均以比例表示：{{offsetX/allWidth,offsetY/allHeight}，{sizeWidth/allWidth,sizeHeight/allHeight}}
+ */
+@property (nonatomic, assign) CGRect cropRect;
+
+
 @end
