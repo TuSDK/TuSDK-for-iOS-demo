@@ -40,11 +40,7 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    if (@available(iOS 13.0, *)) {
-          _tableView.backgroundColor = [UIColor systemBackgroundColor];
-      } else {
-          // Fallback on earlier versions
-      }
+    _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.rowHeight = 50;
     _tableView.sectionHeaderHeight = 30;
     [self addSubview:_tableView];
@@ -115,12 +111,9 @@
     SampleBase *sample = [self sampleWithIndexPath:indexPath];
     if (!sample) return cell;
     cell.textLabel.text = [NSString stringWithFormat:@"    %@", sample.title];
-    if (@available(iOS 13.0, *)) {
-        cell.textLabel.textColor = [UIColor labelColor];
-        cell.backgroundColor = [UIColor systemBackgroundColor];
-    } else {
-        // Fallback on earlier versions
-    }
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor whiteColor];
+    
     return cell;
 }
 @end

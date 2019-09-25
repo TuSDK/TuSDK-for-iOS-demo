@@ -92,6 +92,8 @@
     }else{
         backgroundImage.image = [UIImage imageNamed:@"homepage_bg"];
     }
+    backgroundImage.contentMode = UIViewContentModeScaleAspectFill;
+    backgroundImage.clipsToBounds = YES;
     backgroundImage.userInteractionEnabled = YES;
     [self.view addSubview:backgroundImage];
     

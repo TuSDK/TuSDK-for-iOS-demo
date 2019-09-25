@@ -78,6 +78,10 @@ typedef enum : NSUInteger {
     TuSDKDevicePlatform_iPhoneXS_Max,
     TuSDKDevicePlatform_iPhoneXS,
     TuSDKDevicePlatform_iPhoneXR,
+    TuSDKDevicePlatform_iPhone11_Pro,//iOS 13
+    TuSDKDevicePlatform_iPhone11,//iOS 13
+    TuSDKDevicePlatform_iPhone11_Pro_Max,//iOS 13
+
     // iPod touch
     TuSDKDevicePlatform_iPod1G,
     TuSDKDevicePlatform_iPod2G,

@@ -53,6 +53,9 @@
 - (void)viewWillAppear:(BOOL)animated;
 {
     [super viewWillAppear:animated];
+    //不管是否是iOS13的暗黑模式都保持该页面风格一致
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
     [self setNavigationBarHidden:NO animated:NO];
 }
 
@@ -107,7 +110,7 @@
     [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
     
     self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqSDKVersion ];
-    
+
     [self navLeftButtonWithTitle:NSLocalizedString(@"back", @"返回") action:@selector(backActionHadAnimated)];
     
     /**
@@ -178,7 +181,10 @@
     // 设置范例分组数据
     self.listView.group = group;
 }
-
+- (void)backActionHadAnimated{
+    [super backActionHadAnimated];
+    NSLog(@"111");
+}
 #pragma mark - DemoRootViewDelegate
 /**
  *  选中范例
