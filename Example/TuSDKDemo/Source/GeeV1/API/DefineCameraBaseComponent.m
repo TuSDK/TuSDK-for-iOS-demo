@@ -28,8 +28,7 @@
 {
     if (!controller) return;
     self.controller = controller;
-    
-    [self.controller presentViewController:[[DefineCameraViewController alloc] init] animated:YES completion:nil];
+    [self.controller lsqPresentModalNavigationController:[[DefineCameraViewController alloc] init] animated:YES];
 }
 @end
 

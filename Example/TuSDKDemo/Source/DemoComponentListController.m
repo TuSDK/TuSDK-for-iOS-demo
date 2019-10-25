@@ -91,14 +91,14 @@
 // 屏幕边缘轻扫动作返回主界面
 -(void)onSwipeGesture:(UISwipeGestureRecognizer *)recognizer;
 {
-    [self popViewControllerAnimated:YES];
+    [self lsqPopViewControllerAnimated:YES];
 
     [self.view removeGestureRecognizer:_swipeGesture];
 }
 
 -(void)onScreenEdgePanGesture:(UIScreenEdgePanGestureRecognizer *)recognizer;
 {
-    [self popViewControllerAnimated:YES];
+    [self lsqPopViewControllerAnimated:YES];
 
     [self.view removeGestureRecognizer:_screenEdgePanGesture];
 }
@@ -111,7 +111,7 @@
     
     self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqSDKVersion ];
 
-    [self navLeftButtonWithTitle:NSLocalizedString(@"back", @"返回") action:@selector(backActionHadAnimated)];
+    [self lsqNavLeftButtonWithTitle:NSLocalizedString(@"back", @"返回") action:@selector(lsqBackActionHadAnimated)];
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
@@ -181,10 +181,8 @@
     // 设置范例分组数据
     self.listView.group = group;
 }
-- (void)backActionHadAnimated{
-    [super backActionHadAnimated];
-    NSLog(@"111");
-}
+
+
 #pragma mark - DemoRootViewDelegate
 /**
  *  选中范例
@@ -204,7 +202,7 @@
             if (sample.controllerClazz)
             {
                 UIViewController *controller = [[sample.controllerClazz alloc] init];
-                [self pushViewController:controller animated:YES];
+                [self lsqPushViewController:controller animated:YES];
             }
             else
             {

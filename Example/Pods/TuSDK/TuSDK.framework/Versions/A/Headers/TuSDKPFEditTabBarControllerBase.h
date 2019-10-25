@@ -62,6 +62,6 @@
  */
 - (void)dismissHub;
 //返回前一页 使用动画
--(void)backActionHadAnimated;
+-(void)lsqBackActionHadAnimated;
 
 @end

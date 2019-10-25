@@ -101,7 +101,7 @@
 {
     
     // 清除所有控件
-    [controller dismissModalViewControllerAnimated];
+    [controller lsqDismissModalViewControllerAnimated];
     lsqLDebug(@"onTuSDKPFEditTurnAndCut: %@", result);
 }
 

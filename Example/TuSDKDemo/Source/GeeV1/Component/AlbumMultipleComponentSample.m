@@ -50,7 +50,7 @@
              return;
          }
          
-         // if (controller) [controller dismissModalViewControllerAnimated];
+         // if (controller) [controller lsqDismissModalViewControllerAnimated];
          [result logInfo];
      }
      maxSelectionNumber:9];

@@ -79,7 +79,7 @@
          
          // 如果以 pushViewController 方式打开编辑器, autoDismissWhenCompelted参数将无效, 请使用以下方法关闭
          //if (_photoEditMultipleComponent.autoDismissWhenCompelted && controller) {
-         //    [controller popViewControllerAnimated:YES];
+         //    [controller lsqPopViewControllerAnimated:YES];
          //}
          
          // 获取图片失败
@@ -91,7 +91,7 @@
          
          //
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
-         // [controller presentViewController:[[UIViewController alloc] init] animated:YES completion:nil];
+         // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
          
          // 图片处理结果 TuSDKResult *result 具有三种属性，分别是 ：
          // result.image 是 UIImage 类型
@@ -107,7 +107,7 @@
          // 此时用户可以将 result.image 对象转换成 NSData 类型的对象，然后再进行操作，例如 ：
          // NSData *imageData = UIImageJPEGRepresentation(result.image, 1.0);
          // ViewController *viewController = [[ViewController alloc]init];
-         // [self.controller pushViewController:viewController animated:YES];
+         // [self.controller lsqPushViewController:viewController animated:YES];
          // viewController.currentImage = [UIImage imageWithData:imageData];
          
          // 获取 result 对象的不同属性，需要对 option 选项中的保存到相册和保存到临时文件相关项进行设置。

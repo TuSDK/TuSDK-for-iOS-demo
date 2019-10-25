@@ -14,7 +14,7 @@
  *  控制器基础类
  */
 @interface TuSDKICViewController : UIViewController{
-    @protected
+@protected
     /**
      *  页面是否已经返回 | 通过这个标记可以在viewDidDisappear里面确认销毁该控制器
      */
@@ -37,7 +37,7 @@
  *  @param title  标题
  *  @param action 动作
  */
-- (void)navLeftButtonWithTitle:(NSString *)title action:(SEL)action;
+- (void)lsqNavLeftButtonWithTitle:(NSString *)title action:(SEL)action;
 
 /**
  *  设置导航栏左边按钮
@@ -46,7 +46,7 @@
  *  @param color  标题颜色
  *  @param action 动作
  */
--(void)navLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
+-(void)lsqNavLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
 
 /**
  *  设置导航栏右边按钮
@@ -54,7 +54,7 @@
  *  @param title  标题
  *  @param action 动作
  */
-- (void)navRightButtonWithTitle:(NSString *)title action:(SEL)action;
+- (void)lsqNavRightButtonWithTitle:(NSString *)title action:(SEL)action;
 
 /**
  *  设置导航栏右边按钮
@@ -63,31 +63,31 @@
  *  @param color  标题颜色
  *  @param action 动作
  */
--(void)navRightButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
+-(void)lsqNavRightButtonWithTitle:(NSString *)title textColor:(UIColor *)color action:(SEL)action;
 
 /**
  *  设置导航栏左边取消按钮
  */
-- (void)setNavLeftCancelButton;
+- (void)lsqSetNavLeftCancelButton;
 
 /**
  *  设置导航栏左边取消按钮
  *
  *  @param color  文字颜色
  */
-- (void)setNavLeftCancelButtonWithColor:(UIColor *)color;
+- (void)lsqSetNavLeftCancelButtonWithColor:(UIColor *)color;
 
 /**
  *  设置导航栏右边取消按钮
  */
-- (void)setNavRightCancelButton;
+- (void)lsqSetNavRightCancelButton;
 
 /**
  *  设置导航栏右边取消按钮和文本颜色
  *
  *  @param color  文字颜色
  */
-- (void)setNavRightCancelButtonWithColor:(UIColor *)color;
+- (void)lsqSetNavRightCancelButtonWithColor:(UIColor *)color;
 
 /**
  *  取消按钮响应事件
@@ -152,38 +152,38 @@
 /**
  *  导航级数
  */
-- (NSInteger)navCount;
+- (NSInteger)lsqNavCount;
 
 /**
  *  返回前一页 使用动画
  */
-- (void)backActionHadAnimated;
+- (void)lsqBackActionHadAnimated;
 
 /**
  *  返回前一页
  *
  *  @param animated 是否使用动画
  */
-- (void)backActionWithAnimated:(BOOL)animated;
+- (void)lsqBackActionWithAnimated:(BOOL)animated;
 
 /**
  *  返回前一页
  *
  *  @param anim 自定义动画
  */
-- (void)backActionWithAnim:(CAAnimation *)anim;
+- (void)lsqBackActionWithAnim:(CAAnimation *)anim;
 
 /**
  *  取消模态控制器 使用动画
  */
-- (void)dismissModalViewControllerAnimated;
+- (void)lsqDismissModalViewControllerAnimated;
 
 /**
  *  取消模态控制器 使用动画
  *
  *  @param anim 自定义动画
  */
-- (void)dismissModalViewControllerWithAnim:(CAAnimation *)anim;
+- (void)lsqDismissModalViewControllerWithAnim:(CAAnimation *)anim;
 
 /**
  *  取消控制器 使用动画
@@ -191,7 +191,7 @@
  *  @param anim       自定义动画
  *  @param completion 结束回调
  */
-- (void)dismissViewControllerWithAnim:(CAAnimation *)anim completion:(void (^)(void))completion;
+- (void)lsqDismissViewControllerWithAnim:(CAAnimation *)anim completion:(void (^)(void))completion;
 
 /**
  *  弹出一个视图控制器
@@ -199,7 +199,7 @@
  *  @param viewController 视图控制器
  *  @param animated       是否使用动画
  */
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)lsqPushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
 /**
  *  Push控制器
@@ -207,7 +207,7 @@
  *  @param viewController 视图控制器
  *  @param anim           自定义动画
  */
-- (void)pushViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
+- (void)lsqPushViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
 
 /**
  *  退出一个视图控制器
@@ -216,7 +216,7 @@
  *
  *  @return controller 返回退出的视图控制器
  */
-- (UIViewController *)popViewControllerAnimated:(BOOL)animated;
+- (UIViewController *)lsqPopViewControllerAnimated:(BOOL)animated;
 
 /**
  *  退出一个视图控制器
@@ -225,7 +225,7 @@
  *
  *  @return controller 返回退出的视图控制器
  */
-- (UIViewController *)popViewControllerWithAnim:(CAAnimation *)anim;
+- (UIViewController *)lsqPopViewControllerWithAnim:(CAAnimation *)anim;
 
 /**
  *  退出到指定的控制器视图
@@ -235,7 +235,7 @@
  *
  *  @return controller 返回退出的视图控制器列表
  */
-- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (NSArray *)lsqPopToViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
 /**
  *  退出到指定的控制器视图
@@ -245,7 +245,7 @@
  *
  *  @return controller 返回退出的视图控制器列表
  */
-- (NSArray *)popToViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
+- (NSArray *)lsqPopToViewController:(UIViewController *)viewController anim:(CAAnimation *)anim;
 
 /**
  *  弹出到第一个视图控制器
@@ -254,7 +254,7 @@
  *
  *  @return controller 返回退出的视图控制器列表
  */
-- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated;
+- (NSArray *)lsqPopToRootViewControllerAnimated:(BOOL)animated;
 
 /**
  *  弹出到第一个视图控制器
@@ -263,7 +263,7 @@
  *
  *  @return controller 返回退出的视图控制器列表
  */
-- (NSArray *)popToRootViewControllerWithAnim:(CAAnimation *)anim;
+- (NSArray *)lsqPopToRootViewControllerWithAnim:(CAAnimation *)anim;
 
 /**
  *  弹出一个带导航的模态窗口
@@ -271,7 +271,7 @@
  *  @param controller 控制器
  *  @param animated   是否使用动画
  */
-- (void)presentModalNavigationController:(UIViewController *)controller animated:(BOOL)animated;
+- (void)lsqPresentModalNavigationController:(UIViewController *)controller animated:(BOOL)animated;
 
 /**
  *  弹出一个带导航的模态窗口
@@ -280,7 +280,7 @@
  *  @param animated   是否使用动画
  *  @param hiddenNav  是否隐藏导航栏
  */
-- (void)presentModalNavigationController:(UIViewController *)controller animated:(BOOL)animated hiddenNav:(BOOL)hiddenNav;
+- (void)lsqPresentModalNavigationController:(UIViewController *)controller animated:(BOOL)animated hiddenNav:(BOOL)hiddenNav;
 
 /**
  *  弹出一个带导航的模态窗口
@@ -288,7 +288,7 @@
  *  @param controller 控制器
  *  @param anim   自定义动画
  */
-- (void)presentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim;
+- (void)lsqPresentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim;
 
 /**
  *  弹出一个带导航的模态窗口
@@ -297,7 +297,7 @@
  *  @param anim   自定义动画
  *  @param hiddenNav  是否隐藏导航栏
  */
-- (void)presentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim hiddenNav:(BOOL)hiddenNav;
+- (void)lsqPresentModalNavigationController:(UIViewController *)controller anim:(CAAnimation *)anim hiddenNav:(BOOL)hiddenNav;
 
 /**
  *  设置全屏

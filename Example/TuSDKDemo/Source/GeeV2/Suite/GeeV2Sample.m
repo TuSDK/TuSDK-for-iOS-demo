@@ -133,7 +133,7 @@
          
          //
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
-         // [controller presentViewController:[[UIViewController alloc] init] animated:YES completion:nil];
+         // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
          
          // 图片处理结果 NSArray<TuSDKResult *> 的数组，数组中是 TuSDKResult 类型的对象。
          // TuSDKResult *firstResult 可获取的数据类型是 ：
@@ -158,7 +158,7 @@
          // 此时用户可以将 UIImage 类型的对象转换成 NSData 类型的对象，然后再进行操作，例如 ：
          // NSData *imageData = UIImageJPEGRepresentation(firstOriginalImage, 1.0);
          // UIViewController *viewController = [[UIViewController alloc]init];
-         // [self.controller pushViewController:viewController animated:YES];
+         // [self.controller lsqPushViewController:viewController animated:YES];
          // viewController.currentImage = [UIImage imageWithData:imageData];
          
          // 获取 result 对象的不同属性，需要对 option 选项中的保存到相册和保存到临时文件相关项进行设置。
@@ -302,7 +302,7 @@
     // 添加委托
     cameraController.delegate = self;
     cameraController.openedByAlbumController = YES;
-    [controller pushViewController:cameraController animated:YES];
+    [controller lsqPushViewController:cameraController animated:YES];
 }
 #pragma mark - TuSDKPFCameraDelegate
 /**
@@ -323,7 +323,7 @@
 - (void)onGeeV2AlbumDemand:(GeeV2PFCameraViewController *)controller;
 {
     if (controller.openedByAlbumController) {
-        [controller popViewControllerAnimated:YES];
+        [controller lsqPopViewControllerAnimated:YES];
     }
 }
 #pragma mark - TuSDKCPComponentErrorDelegate

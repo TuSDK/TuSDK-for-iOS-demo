@@ -80,7 +80,7 @@
  */
 - (void)onBackButtonClick;
 {
-    [self popViewControllerAnimated:YES];
+    [self lsqPopViewControllerAnimated:YES];
 }
 
 /**

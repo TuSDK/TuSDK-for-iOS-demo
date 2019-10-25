@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F0495675B90A6C5E80DC1129E13CB44"
+               BlueprintIdentifier = "F225E9C64B9299C03E58AFB9D3042DDB"
                BuildableName = "libPods-TuSDKDemo.a"
                BlueprintName = "Pods-TuSDKDemo"
                ReferencedContainer = "container:Pods.xcodeproj">

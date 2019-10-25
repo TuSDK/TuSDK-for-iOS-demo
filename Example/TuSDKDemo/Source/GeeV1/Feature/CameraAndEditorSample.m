@@ -133,7 +133,7 @@
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
     controller.delegate = self;
-    [self.controller presentModalNavigationController:controller animated:YES];
+    [self.controller lsqPresentModalNavigationController:controller animated:YES];
 }
 
 #pragma mark - TuSDKPFCameraDelegate
@@ -184,7 +184,7 @@
          
          // 如果以 pushViewController 方式打开编辑器, autoDismissWhenCompelted参数将无效, 请使用以下方法关闭
          //if (_photoEditMultipleComponent.autoDismissWhenCompelted && controller) {
-         //    [controller popViewControllerAnimated:YES];
+         //    [controller lsqPopViewControllerAnimated:YES];
          //}
          
          // 获取图片失败

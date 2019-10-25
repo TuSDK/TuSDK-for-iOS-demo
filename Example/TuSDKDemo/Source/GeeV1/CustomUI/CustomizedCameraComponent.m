@@ -183,7 +183,7 @@
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托
     controller.delegate = self;
-    [self.controller presentModalNavigationController:controller animated:YES];
+    [self.controller lsqPresentModalNavigationController:controller animated:YES];
 }
 
 /**

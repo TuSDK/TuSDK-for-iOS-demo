@@ -154,7 +154,7 @@
     // 处理图片对象 (处理优先级: inputImage > inputTempFilePath > inputAsset)
     tcController.inputImage = [UIImage imageNamed:@"sample_photo.jpg"];
     
-    [self.controller presentModalNavigationController:tcController animated:YES];
+    [self.controller lsqPresentModalNavigationController:tcController animated:YES];
     
     [tcController.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 }
@@ -168,7 +168,7 @@
 - (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
 {
     // 清除所有控件
-    [controller dismissModalViewControllerAnimated];
+    [controller lsqDismissModalViewControllerAnimated];
     lsqLDebug(@"onTuSDKPFEditTurnAndCut: %@", result);
 }
 

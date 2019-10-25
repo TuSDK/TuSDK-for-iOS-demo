@@ -49,7 +49,7 @@
     [super notifyProcessingWithResult:result];
     
     // 本例中没有设置外部代码，所以处理完结果后，直接返回上一个视图
-    [self backActionHadAnimated];
+    [self lsqBackActionHadAnimated];
 }
 
 @end
