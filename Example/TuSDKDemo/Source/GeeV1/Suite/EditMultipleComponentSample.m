@@ -92,7 +92,6 @@
          //
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
          // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
-         
          // 图片处理结果 TuSDKResult *result 具有三种属性，分别是 ：
          // result.image 是 UIImage 类型
          // result.imagePath 是 NSString 类型

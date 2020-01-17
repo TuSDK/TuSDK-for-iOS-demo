@@ -86,7 +86,7 @@
     // _albumComponent.options.cameraOptions
     
     // 是否在组件执行完成后自动关闭组件 (默认:NO)
-    // _albumComponent.autoDismissWhenCompelted = YES;
+     _albumComponent.autoDismissWhenCompelted = YES;
     
     // 设置相册照片排序方式 默认：lsqAssetSortKeyCreateDate （ lsqAssetSortKeyModificationDate iOS8及以上可用）
    //  _albumComponent.options.albumOptions.photosSortKeyType = lsqAssetSortKeyCreateDate;
@@ -99,7 +99,10 @@
     _albumComponent.options.cameraOptions.enableFilterConfig = YES;
     // 相机显示焦距 (默认为 1，最大不超过硬件支持的最大值，当小于 1 时，取 1，若不需要太高的倍数，用户可自行控制)
     _albumComponent.options.cameraOptions.focalDistanceScale = 1.0;
-    
+    //是否开启在线滤镜
+    _albumComponent.options.cameraOptions.enableOnlineFilter = NO;
+    //是否开启拍照预览
+    _albumComponent.options.cameraOptions.enableCameraPreview = NO;
     [_albumComponent showComponent];
 }
 #pragma mark - 开启照片美化组件
@@ -134,7 +137,7 @@
          //
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
          // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
-         
+        
          // 图片处理结果 NSArray<TuSDKResult *> 的数组，数组中是 TuSDKResult 类型的对象。
          // TuSDKResult *firstResult 可获取的数据类型是 ：
          // firstResult.imagePath 是 NSString 类型

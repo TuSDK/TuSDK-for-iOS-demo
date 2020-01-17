@@ -38,10 +38,15 @@
 @property (nonatomic, readonly) NSString *developerId;
 
 /**
+ * 用户id (appkey)
+ * @since v1.0.0
+ */
+@property (nonatomic, strong, readonly) NSString *userId;
+
+/**
  *  appkey
  */
 @property (nonatomic, readonly) NSString *appKey;
-
 /**
  *  appType
  */
@@ -103,11 +108,25 @@
 
 /** service Expire */
 - (BOOL)serviceExpire;
-/** serviceExpireDate */
-- (NSDate *)serviceExpireDate;
+
+/** video service Expire */
+- (BOOL)videoServiceexpire;
+
+/** eva service Expire */
+- (BOOL)evaServiceexpire;
+
+/** Image SDK  距离过期时间剩余秒数 */
+- (NSTimeInterval)imageServiceExpireSeconds;
+/** Eva SDK  距离过期时间剩余秒数 */
+- (NSTimeInterval)evaServiceExpireSeconds;
+/** Video SDK  距离过期时间剩余秒数 */
+- (NSTimeInterval)videoServiceExpireSeconds;
 
 /** no Power */
 - (BOOL)noPower;
+
+/** no video Power */
+- (BOOL)noVideoPower;
 
 /** render filter thumb */
 - (BOOL)renderFilterThumb;
@@ -279,6 +298,10 @@
  */
 - (BOOL)evaEditorAddMarkImageSupport;
 
+/**
+ 当前支持的功能模块
+ */
+- (NSUInteger)evaEnableFunctions;
 
 /**
  *  解密文本

@@ -54,7 +54,7 @@
     // Attention ！！！！！！
     // ********************** 更换包名和秘钥之后，一定要去控制台打包替换资源文件 **********************
     
-    [TuSDK initSdkWithAppKey:@"25e7b404b4cf62af-04-ewdjn1"];
+    [TuSDK initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1"];
     
     /**
      *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段

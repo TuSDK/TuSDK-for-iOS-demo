@@ -26,9 +26,21 @@
  */
 @property (nonatomic) BOOL noPower;
 /**
- *  service Expire
+ * image service Expire
  */
 @property (nonatomic, retain) NSDate *serviceExpire;
+
+/**
+ *  video service Expire
+ */
+@property (nonatomic, retain) NSDate *videoServicexpire;
+
+/**
+ * eva service Expire
+ */
+@property (nonatomic, retain) NSDate *evaServicexpire;
+
+
 /**
  *  resolution
  */
@@ -268,6 +280,8 @@
 /** 导出时添加水印 */
 @property (nonatomic) BOOL evaEditorAddMarkImageSupport;
 
+/** Eva 可使用的功能模块 */
+@property (nonatomic) NSInteger evaEnableFunctions;
 
 /**
  *  Filter list which could be used by FilterAPI
