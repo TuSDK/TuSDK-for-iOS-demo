@@ -9,20 +9,16 @@
 
 
 /** 人脸对齐信息 (归一百分比) */
-@interface TuSDKFaceAligment : NSObject
-/** 人脸区域 */
-@property (nonatomic) CGRect rect;
-/** 对齐信息 */
-@property (nonatomic, readonly, retain) NSArray<NSValue *> *marks;
-/** 原始对齐信息 */
-@property (nonatomic, retain) NSArray<NSValue *> *orginMarks;
+@interface TuSDKFaceAligment:NSObject
+@property (nonatomic, assign) CGFloat screenRatio;
 
-/** 仰角／俯角 */
-@property (nonatomic) CGFloat pitch;
+@property (nonatomic, assign) CGRect rect;
 
-/** 左右旋转角度 */
-@property (nonatomic) CGFloat yaw;
+@property (nonatomic, readonly, strong) NSArray<NSValue *> *marks;
+@property (nonatomic, strong) NSArray<NSValue *> *orginMarks;
 
-/** 翻滚角 */
-@property (nonatomic) CGFloat roll;
+@property (nonatomic, assign) CGFloat roll;
+@property (nonatomic, assign) CGFloat yaw;
+@property (nonatomic, assign) CGFloat pitch;
+
 @end

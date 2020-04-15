@@ -136,6 +136,7 @@
 #import "TuSDKFilterWrap.h"
 #import "TuSDKFilterProcessorBase.h"
 #import "TuSDKTKStatistics.h"
+#import "TuSDKStickerImage.h"
 
 #import "TuSDKOnlineStickerFetcher.h"
 #import "TuSDKOnlineStickerDownloader.h"

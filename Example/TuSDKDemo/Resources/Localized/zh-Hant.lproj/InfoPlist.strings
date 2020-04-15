@@ -9,3 +9,5 @@
 "CFBundleDisplayName" = "塗圖 TuSDK";
 "CFBundleName" = "塗圖 TuSDK";
 "NSLocationWhenInUseUsageDescription" = "需要使用您的位置爲照片添加信息";
+"NSPhotoLibraryUsageDescription" = "照片编辑需要使用您的照片库";
+"NSCameraUsageDescription" = "拍照需要使用你的相机";

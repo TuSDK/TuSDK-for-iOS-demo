@@ -477,13 +477,6 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
 - (void)cameraStateChanged:(lsqCameraState)state;
 
 /**
- *  当前聚焦状态
- *
- *  @param isFocusing 是否正在聚焦
- */
-- (void)onAdjustingFocus:(BOOL)isFocusing;
-
-/**
  *  通知滤镜配置视图
  *
  *  @param filter 滤镜包装对象
@@ -496,5 +489,5 @@ typedef NS_ENUM(NSInteger, lsqCameraState)
  *  @param faces 脸部追踪信息
  *  @param size  显示区域长宽
  */
-- (void)notifyFaceDetection:(NSArray<TuSDKTSFaceFeature *> *)faces size:(CGSize)size;
+- (void)notifyFaceDetection:(NSArray<TuSDKTSFaceFeature *> *)faces;
 @end

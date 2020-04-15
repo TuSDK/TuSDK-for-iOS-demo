@@ -34,6 +34,8 @@
 
 #import "DefineCameraBaseComponent.h"
 
+
+
 #pragma mark - DemoComponentListController
 @interface DemoComponentListController ()<DemoRootViewDelegate>
 /**
@@ -177,6 +179,7 @@
     // API 使用示例（仅供参考）
     // 基础相机自定义 - 底层API
     [group appenWithSample:[DefineCameraBaseComponent sample]];
+    
     
     // 设置范例分组数据
     self.listView.group = group;

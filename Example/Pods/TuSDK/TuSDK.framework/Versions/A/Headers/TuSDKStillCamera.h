@@ -156,13 +156,6 @@
 - (BOOL)exposureWithMode:(AVCaptureExposureMode)exposureMode;
 
 /**
- *  当前聚焦状态
- *
- *  @param isFocusing 是否正在聚焦
- */
-- (void)onAdjustingFocus:(BOOL)isFocusing;
-
-/**
  *  销毁
  */
 - (void)destory;

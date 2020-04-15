@@ -1,22 +1,22 @@
 PODS:
-  - TuSDK (3.2.3):
-    - TuSDK/Core (= 3.2.3)
-    - TuSDK/ImageGeeV1 (= 3.2.3)
-    - TuSDK/ImageGeeV2 (= 3.2.3)
-  - TuSDK/Core (3.2.3)
-  - TuSDK/ImageGeeV1 (3.2.3)
-  - TuSDK/ImageGeeV2 (3.2.3)
+  - TuSDK (3.2.4):
+    - TuSDK/Core (= 3.2.4)
+    - TuSDK/ImageGeeV1 (= 3.2.4)
+    - TuSDK/ImageGeeV2 (= 3.2.4)
+  - TuSDK/Core (3.2.4)
+  - TuSDK/ImageGeeV1 (3.2.4)
+  - TuSDK/ImageGeeV2 (3.2.4)
 
 DEPENDENCIES:
-  - TuSDK (~> 3.2.3)
+  - TuSDK (~> 3.2.4)
 
 SPEC REPOS:
   trunk:
     - TuSDK
 
 SPEC CHECKSUMS:
-  TuSDK: 9054843cc233d21ea82bad7842334ce0a35385c0
+  TuSDK: 072db0823e209fb6501796125d9463f0fdb6092c
 
-PODFILE CHECKSUM: 96f51e69d50f1bf62e038d95f93523c96fe1eedb
+PODFILE CHECKSUM: 1602c2547135957d326c05d373d674078c89683c
 
 COCOAPODS: 1.8.4
