@@ -259,77 +259,6 @@
             ]
         },
         {
-            "file":"lsq_filter_Beauty_6.gfilter",
-            "name":"lsq_filter_group_Beauty",
-            "default_filter_id":65,
-            "type":0,
-            "filters":[
-                {
-                    "id":67,
-                    "name":"lsq_filter_SkinPowder",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":0.75
-                    }
-                },
-                {
-                    "id":66,
-                    "name":"lsq_filter_SkinSugar",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":0.75
-                    }
-                },
-                {
-                    "id":65,
-                    "name":"lsq_filter_SkinRuddy",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":0.75
-                    }
-                },
-                {
-                    "id":64,
-                    "name":"lsq_filter_SkinNoir",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":1
-                    }
-                },
-                {
-                    "id":63,
-                    "name":"lsq_filter_SkinJelly",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":0.75
-                    }
-                },
-                {
-                    "id":62,
-                    "name":"lsq_filter_SkinPink",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":0.75
-                    }
-                },
-                {
-                    "id":61,
-                    "name":"lsq_filter_SkinNature",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":0.7,
-                        "mixied":1
-                    }
-                }
-            ]
-        },
-        {
             "file":"lsq_filter_Magic_7.gfilter",
             "name":"lsq_filter_group_Magic",
             "default_filter_id":74,
@@ -378,94 +307,6 @@
                     "args":{
                         "hue":0.05,
                         "hueSpace":0.1
-                    }
-                }
-            ]
-        },
-        {
-            "file":"lsq_filter_MeituBeauty_104.gfilter",
-            "name":"lsq_filter_group_MeituBeauty",
-            "default_filter_id":684,
-            "type":0,
-            "filters":[
-                {
-                    "id":708,
-                    "name":"lsq_filter_Whitening",
-                    "color":"#dfaea7",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0.8
-                    }
-                },
-                {
-                    "id":691,
-                    "name":"lsq_filter_Powder",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0.24
-                    }
-                },
-                {
-                    "id":690,
-                    "name":"lsq_filter_Sugar",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":0.75,
-                        "whitening":0
-                    }
-                },
-                {
-                    "id":689,
-                    "name":"lsq_filter_Ruddy",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0
-                    }
-                },
-                {
-                    "id":688,
-                    "name":"lsq_filter_Jam",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0
-                    }
-                },
-                {
-                    "id":687,
-                    "name":"lsq_filter_Jelly",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":0.8,
-                        "whitening":0
-                    }
-                },
-                {
-                    "id":685,
-                    "name":"lsq_filter_Blusher",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0.3
-                    }
-                },
-                {
-                    "id":684,
-                    "name":"lsq_filter_Nature",
-                    "color":"#E9807E",
-                    "args":{
-                        "smoothing":1,
-                        "mixied":1,
-                        "whitening":0
                     }
                 }
             ]
@@ -752,5 +593,5 @@
     "evaTemplates":[
         
     ],
-    "master":"g\/nvN2iokZpLt0CGyUlqhR3vXhfJvalW4Hp4nY2bOpgqZIB6ydaucZ+sieD1x7uImXwj12Q1RgD+KtGmgeZuwIddbatv24W\/w+1OQCMNkcGgJGY2EhtUKlsZ2P8EKsUS6PB8TiZWLWMAB\/F3MjUp9BpuN9CC2J43vYjURca5m3fzAUWi+QyQ8tvTtyO3JIqo6Ut9FonxLjNnmnyRbnEmMt4xDkPaopcQXt3xNMB6wW0RHVJVFGCPrxxUGpgVAapeiynbPmOm2wOkxdK02VIHurSudh97ui08QCBNOefVwo4eq78Vrcx68JAmDaDsY9kgCrgSgsrYwlyhQaiazQKimhJ078UKlP3cT7NgsR59alyed4q9wrVi17hmWzz\/eFZ6KcG2Z4E8L5wLxFTAP8YiqfvrY+625mYia+JgOF4noYyt5iHuzbKegtHB2kRYKfJeBHpzmj0Q7hML09ln86jsA6H+hQmWQwySCwCk\/OGmYA4xcxd0DDGg5CR01Wq9Fp0ARY0xX9teJGS17DcQfezQZjQDxW4D75FuVQMPkd9SHv4\/vLuB\/5NWnjKBcWCr1jJcWBFeij8s+nRO3jkn2DqdfqS6lnR\/t1an4oNEV4LPa2XIMSdv4x63\/duftURYKN7X1LxJ1hY8E0rLJ6B4f+nm9Y+ymBDSiv4MrTkzwhRKznWu\/3rxyplGYBkxSA3++ddXSMwu5UC55mIPFhyx3l7WxZPEZy0X7bghu6OF7or7lvy7F03PwBLhtA\/dY2QVuUDMEkK4P83wBjJsYkDB6eBXWFdZfSpy4vE294GMaPHEoxCOY8949kU4XoH9gWMtl7ohe7rApD+7vaRohepF7SQIBtJNy794bOmdkAXbUh4+BMS7xHPsF5ATOee89Lgee10zYAoA3qdzDc1L4bqx73smKOiYqaqsxNOoY1fLU6DhCq66RBtjx9PoyyjXme9\/KDflB8HkHDrUDMBjtsGiK2h+ZJ+4NMj5tGqBjpD8UB6a1+x\/pGIBPkwFsycHsPIhPLN8bM2SQ7hytvUYMj46uTyJsy\/T4UxXPS6FKml6FJq1iAtptM3fPqfeg2GsytmWWRj\/+K0pFksyd9zIX8ZY7uondHODFcgXzdXyywbnsaIOtwyCb0aob6sKh5omBtzdis0Fb+rOY4Gx2Z1pWeihNf9HEBFgwb7cIXDgmjjMlSTfHaT4\/SgDi8xJHYjE3Jz4CxRhGFv4XI59W9MF1lcy7QMBQuK4ZMBgWz1zAzIzs5nIuA+PFPtG6wRCxBUIl4gZ3lH1fYcMY7Ht5eVLnT9dqvQs0DXHo1ckG8xHxY7it6fBrwE1gHNftsYjzrsB6XKLnGWenB+rEJLhppIbZvt8V9kNEOHdPmHauoGbCT2VoFX6eE72dto57RGd2BZ0j5fEJEfz4kHXt+jBB+kKWXX2IP2Hw8KLv+VQAQopOkl4es77XH1XsF4cOkmYbgVXWdn5FYiJyEN2KGwsXu4gBZjcAFmZZUO+6Ztafe8IYDs9r0+O0DC9BhKuCRoJ2geTGuGfUdDrs6IKKM47dGDx5vJr7BFTUVA+RFtEp\/d9FyneKOv96Bg9UPkmks6sKo51\/oeo3fIZ1Oz+c1oPIDmKVkG7vfq3z\/G1\/K4mbzfQ8JvwEnehGSixfKUVmGIqKPDjLnWbkOIlGNOiQXK1mRDFmNbRmD+SuFsQqIkIZAUrSDAO4hL88cpbN4nhUB4iJsJk3qHcH8xb9FXBZDyL+Gl07HwcOIkvxZM2I3UvULKmqdNUVcMyzNMjOTXute6DZIr5QsSpRSv7PtsMo3YH0thc5e2TJ4XTT0wrlpsYbSWswYCQY3uACDFxKPz+lOLD8mXAhEreDtIrH7IuLDZYaA8aZUW5dWeSXNN4+CVRmkZHCO2kwraRaKSHtgO8B0a2SSIIBcLYtgced+D25TLe7IL\/bjIDALdgjdhzRIYSWlty2AuX4JLVjMwa7\/8+25UjIXunm2xMNa9SSyItIzAJbNZsNkXUd1NuiRo\/iPycIxcIfvL0S27rU20xmmALrKQKGLK48FQGQ45EXLuRqgwNAGXhQPUw4wdlaaejplmpDDKLdvaa7aewPZ1s7trbkmqHpUYJy2RfnA24kWwpvAoEPvOUMS2v2TVx9gpGxSefomfNEOP2NflrcfpjlyNHmlbGwuJxh8QwVX3trYf5jWY95Irq6ujU4AMunvftZLBbMSwsimLQ3LiG6+BexrCPn4Ak9HNe7azD2xiCIi98Vcsvll3AahB1ydR4yP6TVZjekl16ywRNu1wf\/t6L7L6IGIGtOubfm7b+iGdad6p4IWx+tofFHAKCw9v0oHWEbmiKhKo6TXbytgwkB5kvSkvqmdCvoGbjUk6xf4sZFk8H6f+xv0NfHdBntzn+RmTLwg82oQkxMrMIU0pjnl8SD7v+qlYXJROOKuf1Wua+Q\/tdP\/uxQpaf\/6tp+htoo6vKAoKknf3oqkWnxtHiTo3Ah8F\/KdQ1DqnzumFs0BMrJtHmRMbk3XxGgWUCtEdOM4FXNPkqMqkX9wa62rTkkFHkcZqWd6OUSZEn2ukQSecRAN4RHO7FNdfu3ObG8DYMlKZJKMPsjkbmGcXeMjIOMt93MGGAmduQI\/VmPQXMDRunw6T+rVef2jfQ757speU1GzQBQZE+FrAExXHMlpt03\/RCGr1yY7dTqSJHWImkqmt2TGATt2owknALBkixV\/dN6g==E596331245"
+    "master":"4by8FNR1olSRkSQeiBdn7X28YN88pyyP\/VgvgR0b7g2U2r6\/9u+QUn9zAi\/olospxldjc6QzAJdYZFRrSsfBoHs07lcRxy\/ALl2okSU0z7zHYQ2mbu\/CeGvxyj1cE1AZQDtMl3nkvsQglBI\/RT9Fc01yWkk2YlqKsPCb956za6h+asTAJ2nPapVXw4mw23OBVwuvCIVZa4Qwqsf4P7tAtbVVz48QETKXbPrU1yZQ8HMo1M83l8wDkOe7T6CkZXUnIPf\/qZLyK9hi1iJ4FSsWGNKYUCyU1uN\/VBuB3D5ikU9w8HYUw5ga335YiGnCN\/xzI\/TpbGbsPZq1E+jVVFQUfoDUCKVa4XDo3LPhjB1wLLFlA4a4G3AMojRxnDrWogju9jF3Bi34QdLib81Bc0NZSw3P5PlRya5+QLSCX3NCpq\/\/dA9nU6vPD4Y+35p2wALsfv5by9g1cfYF7gHrTABrIc85yYSSsW34PJKolzHfBPOnA5P7GFuX+2884KJ+KHKbbiJi3X++D48ZJD6\/yOlSIeWnAWnA4iqNQ5OpCVp5OF1v0DD\/YDZ6clrznKA0wWwqpiCbLu6UHUfXqqWi+\/0nMrS8TvfwKLLdrlgDWkNc7kz95CSH\/SZzr2Ju\/l4nKiQhdxHbjrn4I9ACxJmhQHOtqpwA2g11wpOfYuAr7JpTPFGfsylkcTy\/aqSjcS+VHEhpRhrWrnnq\/E1msH3xZ4KGp0VX9htWSFjeHLpVY3oLy+tk9ZjQ7OtdTighVt6d7gvOK6vwfCFEwI+XttLoV3UcQ2vObGlVPVLjQTlyj9Il2Ttjize0W\/T6Bua4oY+ChyPaEXFiMXCKqa3iRgZOXcRqwN+5dOC3tMmBbMM\/FYHGlCWO1OdHJYy0GYruPHq\/09U1mF\/Or0exWqSEipi5tsDALAmrIRyLaGwXsnStlrQDl3JMuBlQVzKlzeRhRLrZzeZI3B7XY4IZbTXp6dTRS\/6NfIncfbEXdpRQkzVD73KNxnkYNKggmI34\/Z5i7FgUyna4A1sXzl7Ti9Na2VIytyyiJfsJmJf03ort2YMA6PKd0SP9m6YdopfLk56ci2SAndHq8oYfx2X5Q9jdE2PeQA4tiFbgUnzbmvVM1VQrzUuwoZHLGv8Tdx0h1bftlnKZsERdYimZJfsHSgZfSsQBblYO34R3yxf6zOmbWdOAsdb3RCli2j+HmfG0Hpc3tz03f5Vi27p1th\/IVyOTKvU7wnW+FJBvhpI+JuNJsvgm2\/+TQXs14iIlpZrVBMofahy++p705CqBVTR8zV2WB+gxxwCcHQ9QLffURs7cWHyRgjygFPJcjJ2m+7kYHaiE6jllfRVixEXGQSy9d8ZdFgR4P4\/2gQYk0OwHiAKTy5BBdiogM0evCSfuI\/tIGLg2UhyDMABnHB98WSpztzMsUE9M4jsMHMuBlmc3Fo+5G7GW9r9uW2SQ\/VnW4UbgrhnxviEpv3rgQdZV0W6VCjYsCZAmW7qZiXiBBvL2vn3HlzLtfBIlPIyI3sfLkJNeb1S2gF+mdTnksXr9jwKEXj7+H1p679ZMAkDk8j5rLR4TpDwuF0HDmLmD\/l8koE2wYIZYO3jEjlKtqLOmrUiwC5JwxFwAHREKEoem601JtM0YdtTnw+VngGgNMmnCrnomQmeqadMObFr32GSK5+RMEj8u956eNJACMtdI\/KejN617y\/Z8\/VnXEQv0Qxc1HHn\/OizAUzawKvnenfql0lyiiimC\/yM\/lLb8MkvKzyVm1eYWNDRQRmvxdzdjDy56oKJp4dKASM3WQqzUTWvwdtJKjpicLfwJ+\/r8n5VrgHfU\/yk5K+4GFwPadMIyhrpBC\/JxS0aFNNhaknwVIBc7jXjJB5z+ZGSdNmXe5ZiC3tVSSBwMMR2buPRIaTCkkywxaKQ\/x74mdRZWKxajklKE\/pVSJY2MTbw5UbSA4IV9QqWK04FEqnTQ1QhALa0eOxX52LavI6lnC9AGypx2rpi4E5xn3c6t41EAg1k91m3F+6oeaTABR9z\/0HTHe03qsJKD+Hd29XZ4f30T+a+RJfZXd4I17P2GlxjWvVQkRkz3+\/wz+mPHMjB9rD9GcK4ZxbP7Fcz+Oo0Y94XrzngERQ+pDOLHdP3dDlYwkGD\/or7qh3WiaMIGf8NRPukYD2UZvSYU+4qof7NU5VvtmoZPJ\/or0x\/8J2xPf3FLLd3FZWwprRMosXWeR\/mbdBm\/LA80yBec79KQdswsH1KVmgswJ\/Vu7R+SM03rP\/uke4r7e4UWyE90Esjnhlt4UplmOnKBDPwdHA9hrFSJ7TWCJqbEBl1K8bJcFFTu3lkNWNm+FcZiLo+DSu2U5HD+lk2N34mNMnvhl+DRHam6BL25xaU4\/yskHzr8bRKfpeOJjWjvd5FWCwEhxBadCvZU55S2fJ8JGsic4kxLuGQHWHFK8qF1f655D7T+ZfEnBLxik\/GFu4ESCvHqOWHpihaS3\/DDRwVBUTXs5eSziD60MgtgbpJf+afr3F+Dw57hzf0\/EI4j5zvNS7XVSvXXQxdp5l00wrUwrpiZ3bgf2yt3CX3hH1KvM4Xd\/lW2ox77w7CX1Zxxj7Qjj3JDxDNEPvLAQhsSczk=40589D274C"
 }

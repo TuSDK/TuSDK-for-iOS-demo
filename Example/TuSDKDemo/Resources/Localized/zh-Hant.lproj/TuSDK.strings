@@ -14,6 +14,7 @@
 "lsq_loading_image" = "讀取圖片...";
 "lsq_filterGIF_image" = "該圖片為GIF，不支持編輯";
 "lsq_downloading_image" = "正從iCloud下載圖片...";
+"lsq_netWork_notReachable" = "未連接到網絡";
 "lsq_initing" = "正在初始化";
 "lsq_inited" = "初始化完成";
 

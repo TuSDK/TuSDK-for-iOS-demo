@@ -77,7 +77,15 @@
     SampleBase *sample = [self sampleWithIndexPath:indexPath];
     if (!sample) return;
     
-    [self.delegate demoRootView:self selectedSample:sample withAction:demoListItemActionSelected];
+    __weak typeof(self)weakSelf = self;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        __strong typeof(self)strongSelf = weakSelf;
+        
+        [strongSelf.delegate demoRootView:strongSelf selectedSample:sample withAction:demoListItemActionSelected];
+    });
+    
 }
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;

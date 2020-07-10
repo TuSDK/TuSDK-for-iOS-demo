@@ -34,7 +34,8 @@
 
 #import "DefineCameraBaseComponent.h"
 
-
+//#import "FaceDetectionImageSample.h"
+//#import "FaceDetectionVideoSample.h"
 
 #pragma mark - DemoComponentListController
 @interface DemoComponentListController ()<DemoRootViewDelegate>
@@ -180,6 +181,10 @@
     // 基础相机自定义 - 底层API
     [group appenWithSample:[DefineCameraBaseComponent sample]];
     
+    // 人脸识别图片范例
+//    [group appenWithSample:[FaceDetectionImageSample sample]];
+//    // 人脸识别视频范例
+//    [group appenWithSample:[FaceDetectionVideoSample sample]];
     
     // 设置范例分组数据
     self.listView.group = group;
