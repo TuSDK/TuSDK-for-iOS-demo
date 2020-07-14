@@ -342,5 +342,5 @@ const static int lsqAppTypeVideoEva = 8192;  // 视频融合
 /**
  *  SDK Permission
  */
-@property (nonatomic, retain) TuSDKPermission *permission;
+@property (nonatomic, strong) TuSDKPermission *permission;
 @end

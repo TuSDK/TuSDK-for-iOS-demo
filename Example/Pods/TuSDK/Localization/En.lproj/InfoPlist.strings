@@ -9,3 +9,5 @@
 "CFBundleDisplayName" = "TuSDK";
 "CFBundleName" = "TuSDK";
 "NSLocationWhenInUseUsageDescription" = "Adding infomation to photos requires your location";
+"NSPhotoLibraryUsageDescription" = "Photo editing requires to use your Photo Library";
+"NSCameraUsageDescription" = "Photo capturing requires to use your camera";

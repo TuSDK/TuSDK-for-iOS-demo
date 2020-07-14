@@ -36,17 +36,18 @@
 		0993CDF1064F0123BCA5B1FF0599623D /* Pods-TuSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TuSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		12B4D39EC1F1F4F93C95079586DD81EE /* Pods-TuSDKDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TuSDKDemo-resources.sh"; sourceTree = "<group>"; };
 		1BD8EAC02640BB510B8164F8411E26A6 /* Pods-TuSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		202F8B7C962CC5A786857190537E64C9 /* TuSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TuSDK.release.xcconfig; sourceTree = "<group>"; };
 		317F330679914F44051E2BB27A666FE4 /* Pods-TuSDKDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TuSDKDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A97F87EC5D0EBC79DF2D3953D01BE14 /* Pods-TuSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TuSDKDemo-dummy.m"; sourceTree = "<group>"; };
-		5E479B4F0439E4FA1E74AB13BB9DCD4E /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Localization/zh-Hant.lproj"; sourceTree = "<group>"; };
-		64484128B8CCFF74812309CC0CCB2BCB /* En.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = En.lproj; path = Localization/En.lproj; sourceTree = "<group>"; };
-		7E3A28D5589C9B97E12990FE8ECB8AF0 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
-		8747E368C3F8CD50EEFED7EEC99A47A7 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = Localization/Base.lproj; sourceTree = "<group>"; };
+		3FC9CD4D3775805DD5AA2B8F43C5CA8F /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
 		965D01153C1F2AA07F5340C555A1C475 /* Pods-TuSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		995FD9C7409F9D8B431E98C79E51AFE0 /* TuSDKGeeV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV2.framework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADB287210BFCBD9CCAEB81E48190A98F /* TuSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TuSDK.xcconfig; sourceTree = "<group>"; };
-		BB693BDE1D2117D81A04007ABD0EB392 /* TuSDKGeeV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV2.framework; sourceTree = "<group>"; };
-		E029C2D973347A06B6228DBC9EE88F99 /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDK.framework; sourceTree = "<group>"; };
+		B2BDD91781A587026B5DBEC7D3C9ECAA /* En.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = En.lproj; path = Localization/En.lproj; sourceTree = "<group>"; };
+		BB5BA709EF58013C7F0EC442B21916C6 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Localization/zh-Hant.lproj"; sourceTree = "<group>"; };
+		CADC4BC0A66359337C5B44A6A8B434D7 /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDK.framework; sourceTree = "<group>"; };
+		DB9FEAD52A216C48BB5001A7A82F39E1 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = Localization/Base.lproj; sourceTree = "<group>"; };
+		ED7BD7A623F7103103281CB3673BD987 /* TuSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TuSDK.debug.xcconfig; sourceTree = "<group>"; };
 		FCD9B45D711D643D2730B0AA3F71F3AD /* libPods-TuSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TuSDKDemo.a"; path = "libPods-TuSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,6 +62,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099BBBF3878323C1D85CB8AD53C87272 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		122B7F08513543F9C6977B980D31143B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,11 +77,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BA92326EA2319AFF291305D648FFC25 /* Resources */ = {
+		18A74138DEDB1EEE99586F89D0F9DFC2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED7BD7A623F7103103281CB3673BD987 /* TuSDK.debug.xcconfig */,
+				202F8B7C962CC5A786857190537E64C9 /* TuSDK.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/TuSDK";
 			sourceTree = "<group>";
 		};
 		1C5F7B5968B217BF5200D9A8C1A105C9 /* Pods-TuSDKDemo */ = {
@@ -90,32 +101,58 @@
 			path = "Target Support Files/Pods-TuSDKDemo";
 			sourceTree = "<group>";
 		};
-		20B0CF10C6DD15872C17BFED61924C0F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E029C2D973347A06B6228DBC9EE88F99 /* TuSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		234233532E60FF7CA01A855882B82054 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3893FE7EB43949774984E39479708DC4 /* TuSDK */,
+				44A11A273F6812153B770A5F5997B8C3 /* TuSDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3893FE7EB43949774984E39479708DC4 /* TuSDK */ = {
+		2A75361D738FC4EA1BA3AC9B36D1D509 /* ImageGeeV1 */ = {
 			isa = PBXGroup;
 			children = (
-				A15BC38890503D0CDAEFFCD35AAD2766 /* Core */,
-				DF054C5DFC23F6D04871F2F3E4A72EDD /* ImageGeeV1 */,
-				D5FC40F00E0C7E903720B8844195FE57 /* ImageGeeV2 */,
-				F8851F034B30CF1D1D15EA5F94B59E76 /* Support Files */,
+				5F9B96DC56380919EAC252C6851EF6EF /* Frameworks */,
+				EE1013F22928BA8D74D9F8DA07871CF1 /* Resources */,
+			);
+			name = ImageGeeV1;
+			sourceTree = "<group>";
+		};
+		2B6F082C3FD5D9FEB8B0FD17E3C8628A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FDE7A853CCBEC09F6AA8EE76D854B175 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3F855268D46BC2ED8617C1BCF1644823 /* ImageGeeV2 */ = {
+			isa = PBXGroup;
+			children = (
+				635673EFB6C71E429D91308808C65BCD /* Frameworks */,
+				099BBBF3878323C1D85CB8AD53C87272 /* Resources */,
+			);
+			name = ImageGeeV2;
+			sourceTree = "<group>";
+		};
+		44A11A273F6812153B770A5F5997B8C3 /* TuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2B6F082C3FD5D9FEB8B0FD17E3C8628A /* Core */,
+				2A75361D738FC4EA1BA3AC9B36D1D509 /* ImageGeeV1 */,
+				3F855268D46BC2ED8617C1BCF1644823 /* ImageGeeV2 */,
+				18A74138DEDB1EEE99586F89D0F9DFC2 /* Support Files */,
 			);
 			name = TuSDK;
 			path = TuSDK;
+			sourceTree = "<group>";
+		};
+		5F9B96DC56380919EAC252C6851EF6EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FC9CD4D3775805DD5AA2B8F43C5CA8F /* TuSDKGeeV1.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6048EC2194219816347A170CA794FCAB /* Targets Support Files */ = {
@@ -126,30 +163,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		65A4715B99F2C536EE37EA5F16E6ADB3 /* Frameworks */ = {
+		635673EFB6C71E429D91308808C65BCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E3A28D5589C9B97E12990FE8ECB8AF0 /* TuSDKGeeV1.framework */,
+				995FD9C7409F9D8B431E98C79E51AFE0 /* TuSDKGeeV2.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		87B4917705B8406602C33C76AB805EA1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8747E368C3F8CD50EEFED7EEC99A47A7 /* Base.lproj */,
-				64484128B8CCFF74812309CC0CCB2BCB /* En.lproj */,
-				5E479B4F0439E4FA1E74AB13BB9DCD4E /* zh-Hant.lproj */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A15BC38890503D0CDAEFFCD35AAD2766 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				20B0CF10C6DD15872C17BFED61924C0F /* Frameworks */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -163,15 +182,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D5FC40F00E0C7E903720B8844195FE57 /* ImageGeeV2 */ = {
-			isa = PBXGroup;
-			children = (
-				F8A3D953F85AEFE71786BB99696D1814 /* Frameworks */,
-				1BA92326EA2319AFF291305D648FFC25 /* Resources */,
-			);
-			name = ImageGeeV2;
-			sourceTree = "<group>";
-		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,28 +189,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF054C5DFC23F6D04871F2F3E4A72EDD /* ImageGeeV1 */ = {
+		EE1013F22928BA8D74D9F8DA07871CF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65A4715B99F2C536EE37EA5F16E6ADB3 /* Frameworks */,
-				87B4917705B8406602C33C76AB805EA1 /* Resources */,
+				DB9FEAD52A216C48BB5001A7A82F39E1 /* Base.lproj */,
+				B2BDD91781A587026B5DBEC7D3C9ECAA /* En.lproj */,
+				BB5BA709EF58013C7F0EC442B21916C6 /* zh-Hant.lproj */,
 			);
-			name = ImageGeeV1;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		F8851F034B30CF1D1D15EA5F94B59E76 /* Support Files */ = {
+		FDE7A853CCBEC09F6AA8EE76D854B175 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ADB287210BFCBD9CCAEB81E48190A98F /* TuSDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TuSDK";
-			sourceTree = "<group>";
-		};
-		F8A3D953F85AEFE71786BB99696D1814 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BB693BDE1D2117D81A04007ABD0EB392 /* TuSDKGeeV2.framework */,
+				CADC4BC0A66359337C5B44A6A8B434D7 /* TuSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -285,6 +287,33 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		48820BC59BDBA1E005E1D5992262A19D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7BD7A623F7103103281CB3673BD987 /* TuSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A73751D02BB6959122D4232FF457238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 202F8B7C962CC5A786857190537E64C9 /* TuSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		7DBCCC543EB10B5F8BDDA42003F16AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,33 +371,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		9C7DB95F91FF3654B36DDD4AB35DD3C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADB287210BFCBD9CCAEB81E48190A98F /* TuSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AD51CDCAE81C3E015FB58A099469AC9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADB287210BFCBD9CCAEB81E48190A98F /* TuSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -485,8 +487,8 @@
 		0F7DB3D02303BD090EC2F566BE96BEF3 /* Build configuration list for PBXAggregateTarget "TuSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C7DB95F91FF3654B36DDD4AB35DD3C0 /* Debug */,
-				AD51CDCAE81C3E015FB58A099469AC9E /* Release */,
+				48820BC59BDBA1E005E1D5992262A19D /* Debug */,
+				4A73751D02BB6959122D4232FF457238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
