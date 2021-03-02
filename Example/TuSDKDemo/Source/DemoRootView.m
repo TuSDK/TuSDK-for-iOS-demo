@@ -15,7 +15,7 @@
 @interface DemoRootView()<UITableViewDelegate, UITableViewDataSource>
 {
     // 表格视图
-    TuSDKICTableView *_tableView;
+    TuTableView *_tableView;
     // 缓存标记
     NSString *_cellIdentifier;
 }
@@ -36,7 +36,7 @@
     _cellIdentifier = [NSString stringWithFormat:@"%@", [self class]];
     
     // 表格视图
-    _tableView = [TuSDKICTableView tableWithHeight:self.frame.size.height];
+    _tableView = [TuTableView tableWithHeight:self.frame.size.height];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
@@ -77,15 +77,7 @@
     SampleBase *sample = [self sampleWithIndexPath:indexPath];
     if (!sample) return;
     
-    __weak typeof(self)weakSelf = self;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        __strong typeof(self)strongSelf = weakSelf;
-        
-        [strongSelf.delegate demoRootView:strongSelf selectedSample:sample withAction:demoListItemActionSelected];
-    });
-    
+    [self.delegate demoRootView:self selectedSample:sample withAction:demoListItemActionSelected];
 }
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
@@ -110,9 +102,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    TuSDKICTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
+    TuTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier];
     if (!cell) {
-        cell = [TuSDKICTableViewCell initWithReuseIdentifier:_cellIdentifier];
+        cell = [TuTableViewCell initWithReuseIdentifier:_cellIdentifier];
         cell.textLabel.font = lsqFontSize(15);
     }
     

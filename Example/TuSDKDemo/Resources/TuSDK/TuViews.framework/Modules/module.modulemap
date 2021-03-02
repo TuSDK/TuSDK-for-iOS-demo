@@ -1,0 +1,6 @@
+framework module TuViews {
+  umbrella header "TuViews.h"
+
+  export *
+  module * { export * }
+}

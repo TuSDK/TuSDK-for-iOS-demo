@@ -41,7 +41,7 @@
 
     _albumComponent =
     [TuSDKGeeV1 albumMultipleCommponentWithController:controller
-                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                           callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
          // 获取头像图片

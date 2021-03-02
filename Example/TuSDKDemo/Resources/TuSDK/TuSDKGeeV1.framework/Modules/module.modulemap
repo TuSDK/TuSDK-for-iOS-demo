@@ -1,0 +1,6 @@
+framework module TuSDKGeeV1 {
+  umbrella header "TuSDKGeeV1.h"
+
+  export *
+  module * { export * }
+}

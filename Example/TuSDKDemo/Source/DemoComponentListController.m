@@ -20,7 +20,6 @@
 
 #import "AlbumComponentSample.h"
 #import "AlbumMultipleComponentSample.h"
-#import "GifImageViewController.h"
 
 #import "CustomizedEditAndCutComponent.h"
 #import "CustomizedCameraComponent.h"
@@ -31,11 +30,8 @@
 #import "StickerSampleController.h"
 #import "WipeAndFilterSampleController.h"
 #import "EditPaintDrawComponentSample.h"
-
-#import "DefineCameraBaseComponent.h"
-
-//#import "FaceDetectionImageSample.h"
-//#import "FaceDetectionVideoSample.h"
+#import "BubbleSampleController.h"
+#import "CustomizedNewCameraComponent.h"
 
 #pragma mark - DemoComponentListController
 @interface DemoComponentListController ()<DemoRootViewDelegate>
@@ -110,9 +106,9 @@
     [super viewDidLoad];
     
     // sdk统计代码，请不要加入您的应用
-    [TuSDKTKStatistics appendWithComponentIdt:tkc_sdkComponent];
+    [TuStatistics appendWithComponentIdt:tkc_sdkComponent];
     
-    self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqSDKVersion ];
+    self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqPulseSDKVersion ];
 
     [self lsqNavLeftButtonWithTitle:NSLocalizedString(@"back", @"返回") action:@selector(lsqBackActionHadAnimated)];
     
@@ -147,11 +143,6 @@
     [group appenWithSample:[AlbumComponentSample sample]];
     // 多选相册组件范例
     [group appenWithSample:[AlbumMultipleComponentSample sample]];
-    // Gif组件范例
-    [group appenWithTitle:NSLocalizedString(@"sample_GifComponent", @"Gif组件")
-                    group:ComponentSample
-                    clazz:[GifImageViewController class]
-     ];
     
     // 组件用法范例
     // 拍照+编辑示例组件范例
@@ -166,6 +157,10 @@
     [group appenWithTitle:NSLocalizedString(@"sample_comp_StickerComponent", @"贴纸组件示例")
                     group:FeatureSample
                     clazz:[StickerSampleController class]];
+    // 气泡文字组件示例
+    [group appenWithTitle:NSLocalizedString(@"sample_comp_BubbleComponent", @"气泡文字组件示例")
+                    group:FeatureSample
+                    clazz:[BubbleSampleController class]];
     // 模糊组件示例
     [group appenWithTitle:NSLocalizedString(@"sample_comp_BlurComponent", @"模糊组件示例")
                     group:FeatureSample
@@ -176,15 +171,8 @@
     [group appenWithSample:[CustomizedEditAndCutComponent sample]];
     // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)
     [group appenWithSample:[CustomizedCameraComponent sample]];
-    
-    // API 使用示例（仅供参考）
-    // 基础相机自定义 - 底层API
-    [group appenWithSample:[DefineCameraBaseComponent sample]];
-    
-    // 人脸识别图片范例
-//    [group appenWithSample:[FaceDetectionImageSample sample]];
-//    // 人脸识别视频范例
-//    [group appenWithSample:[FaceDetectionVideoSample sample]];
+    //自定义相机组件（From短视频）
+    [group appenWithSample:[CustomizedNewCameraComponent sample]];
     
     // 设置范例分组数据
     self.listView.group = group;

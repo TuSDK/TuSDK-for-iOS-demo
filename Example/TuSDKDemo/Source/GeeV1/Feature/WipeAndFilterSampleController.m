@@ -39,7 +39,7 @@
     // 笔刷效果强度 (默认: 0.2, 范围为0 ~ 1，值为1时强度最高)
     self.brushStrength = 0.5;
     
-    // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset, 处理完成后将自动清理原始图片)
+    // 保存到系统相册 (默认不保存, 当设置为YES时, TuResult.asset, 处理完成后将自动清理原始图片)
     self.saveToAlbum = YES;
 }
 
@@ -48,7 +48,7 @@
  *
  *  @param result SDK处理结果
  */
-- (void)notifyProcessingWithResult:(TuSDKResult *)result;
+- (void)notifyProcessingWithResult:(TuResult *)result;
 {
     // 将编辑结果发送给外部代理, 具体见 TuSDKPFEditWipeAndFilterControllerDelegate
     [super notifyProcessingWithResult:result];

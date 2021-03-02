@@ -34,10 +34,13 @@
 "sample_CameraComponent" = "相機組件（新的濾鏡，新的 UI）";
 "sample_GifComponent" = "GIF 組件";
 
+"sample_api_CameraFromVideo" = "短視頻相機示例";
+
 "sample_comp_CameraAndEditor" = "拍照 + 編輯例子";
 "sample_comp_SelfishCamera" = "美顏相機";
 "sample_comp_FilterComponent" = "濾鏡組件示例";
 "sample_comp_StickerComponent" = "貼紙組件示例";
+"sample_comp_BubbleComponent" = "氣泡文字組件示例";
 "sample_comp_BlurComponent" = "模糊組件示例";
 
 "extend_EditComponent" = "裁切組件自定義界面";

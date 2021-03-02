@@ -1,6 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-platform :ios, '7.0'
-target "TuSDKDemo" do
-pod 'TuSDK', '~> 3.2.5'
-end

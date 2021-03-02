@@ -15,7 +15,7 @@
 #import "DemoComponentListController.h"
 
 #pragma mark - DemoRootViewController
-@interface DemoRootViewController ()<TuSDKFilterManagerDelegate>
+@interface DemoRootViewController ()
 {
     // 相机组件
     CameraComponentSample *cameraComponentSample;
@@ -48,7 +48,7 @@
     
     [self lsqInitView];
     // 启动GPS
-    [[TuSDKTKLocation shared] requireAuthorWithController:self];
+    [[TuLocation shared] requireAuthorWithController:self];
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
@@ -69,14 +69,19 @@
     // 异步方式初始化滤镜管理器 (注意：如果需要一开启应用马上执行SDK组件，需要做该检测，否则可以忽略检测)
     // 需要等待滤镜管理器初始化完成，才能使用所有功能
     [self showHubWithStatus:LSQString(@"lsq_initing", @"正在初始化")];
-    
-    [TuSDK checkManagerWithDelegate:self];
-    
-    NSLog(@"TuSDK.framework 的版本号 : %@",lsqSDKVersion);
-    
+      
+    NSLog(@"TuSDK.framework 的版本号 : %@",lsqPulseSDKVersion);
     NSLog(@"TuSDKGeeV1.framework 的版本号 : %@",lsqGeeVersion);
-    
     NSLog(@"TuSDKGeeV2.framework 的版本号 : %@",lsqGeeV2Version);
+    
+    [TuThread initWithStart:^id{
+        while (![TuSDKPulseCore checkResourceLoaded]){}
+        return nil;
+    } completed:^(id result) {
+        [self showHubSuccessWithStatus:LSQString(@"lsq_inited", @"初始化完成")];
+        // 发布时注释下面代码
+        // [TuSDK logAuthors];
+    }];
 }
 
 - (void)lsqInitView
@@ -209,17 +214,5 @@
     DemoComponentListController *controller = [[DemoComponentListController alloc] init];
     
     [self.navigationController pushViewController:controller animated:YES];
-}
-
-#pragma mark - TuSDKFilterManagerDelegate
-/**
- * 滤镜管理器初始化完成
- *
- * @param manager
- *            滤镜管理器
- */
-- (void)onTuSDKFilterManagerInited:(TuSDKFilterManager *)manager;
-{
-    [self showHubSuccessWithStatus:LSQString(@"lsq_inited", @"初始化完成")];
 }
 @end

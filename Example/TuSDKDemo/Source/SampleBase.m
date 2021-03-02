@@ -108,7 +108,6 @@
                          [GroupHeader headerWithGroupId:ComponentSample title:NSLocalizedString(@"sample_group_comp", @"常用组件")],
                          [GroupHeader headerWithGroupId:FeatureSample title:NSLocalizedString(@"sample_group_examples", @"组件用法示例")],
                          [GroupHeader headerWithGroupId:UISample title:NSLocalizedString(@"sample_group_extend", @"自定义界面示例")],
-                         [GroupHeader headerWithGroupId:APISample title:NSLocalizedString(@"sample_group_define", @"API 使用示例")],
                          ];
     }
     return self;

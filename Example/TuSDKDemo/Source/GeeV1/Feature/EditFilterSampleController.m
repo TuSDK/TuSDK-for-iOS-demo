@@ -43,7 +43,7 @@
  *
  *  @param result SDK处理结果
  */
-- (void)notifyProcessingWithResult:(TuSDKResult *)result;
+- (void)notifyProcessingWithResult:(TuResult *)result;
 {
     // 将编辑结果发送给外部代理, 具体见 TuSDKPFEditFilterControllerDelegate
     [super notifyProcessingWithResult:result];

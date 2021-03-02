@@ -14,7 +14,6 @@
 "lsq_loading_image" = "Loading image...";
 "lsq_filterGIF_image" = "GIF file type is not supported to photo edit";
 "lsq_downloading_image" = "Downloading image from iCloud...";
-"lsq_netWork_notReachable" = "Not connected to the network";
 "lsq_initing" = "Initializing";
 "lsq_inited" = "Initialized";
 
@@ -109,6 +108,7 @@
 "lsq_edit_step_next" = "Redo";
 "lsq_edit_auto_adjust" = "Auto";
 "lsq_edit_entry_filter" = "Filters";
+"lsq_edit_entry_effect" = "Effect";
 "lsq_edit_entry_cuter" = "Crop";
 "lsq_edit_entry_sticker" = "Stickers";
 "lsq_edit_entry_text" = "Text";
@@ -329,12 +329,23 @@
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "SkinMultiple";
 
-"lsq_filter_set_smoothing" = "Smoothing";
-"lsq_filter_set_whitening" = "Whitening";
+"lsq_filter_set_smooth" = "Smooth";
+"lsq_filter_set_whiten" = "Whiten";
+"lsq_filter_set_sharpen" = "Sharpen";
 "lsq_filter_set_skinColor" = "Skin";
 "lsq_filter_set_retouch" = "Retouch";
 "lsq_filter_set_chinSize" = "ChinSize";
 "lsq_filter_set_eyeSize" = "EyeSize";
+// Face Plastic
+"lsq_filter_set_forehead" = "Forehead";
+"lsq_filter_set_browPosition" = "Brow Position";
+"lsq_filter_set_archEyebrow" = "Arch Eyebrow";
+"lsq_filter_set_eyeAngle" = "Eye Angle";
+"lsq_filter_set_eyeDis" = "Eye Dis";
+"lsq_filter_set_noseSize" = "Nose Size";
+"lsq_filter_set_mouthWidth" = "Mouth Width";
+"lsq_filter_set_lips" = "Lips";
+"lsq_filter_set_jawSize" = "JawSize";
 
 "lsq_filter_set_blurSize" = "Blur Size";
 "lsq_filter_set_blurWeight" = "Blur Weight";
@@ -420,3 +431,12 @@
 "lsq_camera_flash_mode_on" = "Flash on";
 "lsq_camera_flash_mode_off" = "Flash off";
 "lsq_camera_flash_mode_auto" = "Flash auto";
+
+
+//more
+"lsq_camera_more" = "More";
+"lsq_camera_ratio" = "Ratio";
+"lsq_camera_autoFocus" = "AutoFocus";
+"lsq_camera_flash_on" = "Open";
+"lsq_camera_flash_off" = "Close";
+"lsq_camera_flash" = "Flash";

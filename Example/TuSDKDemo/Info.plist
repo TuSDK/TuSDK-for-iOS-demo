@@ -28,6 +28,8 @@
 	<string>Adding infomation to photos requires your location</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photo editing requires to use your Photo Library</string>
+	<key>UILaunchStoryboardName</key>
+	<string>TuLaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -33,17 +33,20 @@
 "sample_AlbumMultipleComponent" = "Multi-Select Album Component";
 "sample_CameraComponent" = "Camera Component(New Filter,New UI)";
 "sample_GifComponent" = "GIF Component";
+"sample_api_CameraFromVideo" = "ShortVideo Camera Component";
 
 "sample_comp_CameraAndEditor" = "Camera And Editor";
 "sample_comp_SelfishCamera" = "Selfish Camera";
 "sample_comp_FilterComponent" = "Filter Editor Example";
 "sample_comp_StickerComponent" = "Sticker Editor Example";
+"sample_comp_BubbleComponent" = "Bubble Text Editor Example";
 "sample_comp_BlurComponent" = "Blur Editor Example";
 
 "sample_ui_EditComponent" = "Customization UI for Cut + Filter Component";
 "sample_ui_CameraBase" = "Customization UI for Camera Component";
 
 "sample_api_CameraBase" = "Create Camera with API (For test only)";
+"sample_api_EffectEngineCamera" = "Effect Camera with API (For test only)";
 
 "sample_api_face_detection_image" = "Face Detection (Picture)";
 "sample_api_face_detection_camera" = "Face Detection (Video)";

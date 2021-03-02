@@ -40,12 +40,12 @@
     if (!controller) return;
     
     // 指定主题包的 style
-    [TuSDK shared].style = @"ui_geeV2";
+    [TuSDKPulseCore shared].style = @"ui_geeV2";
     
     self.controller = controller;
     _albumComponent =
     [TuSDKGeeV2 albumMultipleCommponentWithController:controller
-                                        callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                                        callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          if (error) {
              lsqLError(@"album reader error: %@", error.userInfo);
@@ -53,8 +53,8 @@
          }
          [result logInfo];
          NSMutableArray *resultArray = [NSMutableArray arrayWithCapacity:result.imageAssets.count];
-         for (id<TuSDKTSAssetInterface> asset in result.imageAssets) {
-             TuSDKResult *result = [TuSDKResult result];
+         for (id<TuTSAssetInterface> asset in result.imageAssets) {
+             TuResult *result = [TuResult result];
              result.imageAsset = asset;
              [resultArray addObject:result];
          }
@@ -63,7 +63,7 @@
      }
      openCameraCallback:^(GeeV2PFAlbumMultipleViewController *controller) {
          // 开启访问相机权限
-         [TuSDKTSDeviceSettings checkAllowWithController:controller
+         [TuTSDeviceSettings checkAllowWithController:controller
                                                     type:lsqDeviceSettingsCamera
                                                completed:^(lsqDeviceSettingsType type, BOOL openSetting)
           {
@@ -113,14 +113,14 @@
  *  @param inputResults   输入的结果集合
  */
 - (void)openEditMultipleWithController:(UIViewController *)controller
-                                result:(NSArray<TuSDKResult *>*)inputResults;
+                                result:(NSArray<TuResult *>*)inputResults;
 {
     if (!controller || !inputResults) return;
     // 组件选项配置
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev2/Classes/GeeV2CPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV2 photoEditMultipleWithController:controller
-                                  callbackBlock:^(NSArray<TuSDKResult *> *outputResults, NSError *error, UIViewController *controller)
+                                  callbackBlock:^(NSArray<TuResult *> *outputResults, NSError *error, UIViewController *controller)
      {
          // 获取图片失败
          if (error) {
@@ -129,7 +129,7 @@
          }
          
          // 输出 outputResults 中的图片信息
-         for (TuSDKResult *result in outputResults)
+         for (TuResult *result in outputResults)
          {
              [result logInfo];
          }
@@ -138,21 +138,21 @@
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
          // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
         
-         // 图片处理结果 NSArray<TuSDKResult *> 的数组，数组中是 TuSDKResult 类型的对象。
-         // TuSDKResult *firstResult 可获取的数据类型是 ：
+         // 图片处理结果 NSArray<TuResult *> 的数组，数组中是 TuResult 类型的对象。
+         // TuResult *firstResult 可获取的数据类型是 ：
          // firstResult.imagePath 是 NSString 类型
-         // firstResult.imageAsset 是 TuSDKTSAssetInterface 类型
+         // firstResult.imageAsset 是 TuTSAssetInterface 类型
          
          // 可使用以下方式进行转换
-         // 从数组中获取到第一张图片的 TuSDKResult 对象
-         // TuSDKResult *firstRusult = [result objectAtIndex:0];
+         // 从数组中获取到第一张图片的 TuResult 对象
+         // TuResult *firstRusult = [result objectAtIndex:0];
          // 通过转换 firstRusult.imageAsset 获取 UIImage
          // UIImage *firstOriginalImage = [firstRusult.imageAsset fullResolutionImage];
          // 通过转换 firstRusult.imagePath 获取 UIImage
          // UIImage *firstTempFileImage = [UIImage imageWithContentsOfFile:firstRusult.imagePath];
          
          // 下面以 UIImage 类型的编辑结果举例，如何将编辑结果持有并进行其他操作。
-         // 使用 TuSDKTSAssetInterface 和 NSString 类型。
+         // 使用 TuTSAssetInterface 和 NSString 类型。
          // 可在此添加自定义方法，将编辑结果结果传出，例如 ：  [self openEditorWithImage:firstOriginalImage];
          // 并在外部使用方法接收编辑结果，例如 ： -(void)openEditorWithImage:(UIImage *)image;
          // 用户也可以在编辑结果的外部接受的方法中实现页面的跳转操作，用户可根据自身需求使用。
@@ -314,7 +314,7 @@
  *  @param controller 默认相机视图控制器
  *  @param result     拍摄结果
  */
-- (void)onGeeV2PFCamera:(GeeV2PFCameraViewController *)controller captureResult:(TuSDKResult *)result;
+- (void)onGeeV2PFCamera:(GeeV2PFCameraViewController *)controller captureResult:(TuResult *)result;
 {
     [self openEditMultipleWithController:controller result:[NSArray arrayWithObject:result]];
 }
@@ -329,7 +329,7 @@
         [controller lsqPopViewControllerAnimated:YES];
     }
 }
-#pragma mark - TuSDKCPComponentErrorDelegate
+#pragma mark - TuComponentErrorDelegate
 /**
  *  获取组件返回错误信息
  *
@@ -337,7 +337,7 @@
  *  @param result     返回结果
  *  @param error      异常信息
  */
-- (void)onComponent:(TuSDKCPViewController *)controller result:(TuSDKResult *)result error:(NSError *)error;
+- (void)onComponent:(TuComponentsViewController *)controller result:(TuResult *)result error:(NSError *)error;
 {
     lsqLDebug(@"onComponent: controller - %@, result - %@, error - %@", controller, result, error);
 }

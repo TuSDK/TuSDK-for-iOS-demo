@@ -40,7 +40,7 @@
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPAvatarComponent.html
     _avatarComponent =
     [TuSDKGeeV1 avatarCommponentWithController:controller
-                            callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                            callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          _avatarComponent = nil;
          // 获取头像图片

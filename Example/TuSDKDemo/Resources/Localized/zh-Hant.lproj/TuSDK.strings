@@ -14,7 +14,6 @@
 "lsq_loading_image" = "讀取圖片...";
 "lsq_filterGIF_image" = "該圖片為GIF，不支持編輯";
 "lsq_downloading_image" = "正從iCloud下載圖片...";
-"lsq_netWork_notReachable" = "未連接到網絡";
 "lsq_initing" = "正在初始化";
 "lsq_inited" = "初始化完成";
 
@@ -109,6 +108,7 @@
 "lsq_edit_step_next" = "重做";
 "lsq_edit_auto_adjust" = "自動校色";
 "lsq_edit_entry_filter" = "濾鏡";
+"lsq_edit_entry_effect" = "特效";
 "lsq_edit_entry_cuter" = "裁切";
 "lsq_edit_entry_sticker" = "貼紙";
 "lsq_edit_entry_text" = "文字";
@@ -325,12 +325,24 @@
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "多功能美肤";
 
-"lsq_filter_set_smoothing" = "潤滑";
-"lsq_filter_set_whitening" = "白皙";
+"lsq_filter_set_smooth" = "磨皮";
+"lsq_filter_set_whiten" = "美白";
+"lsq_filter_set_sharpen" = "銳化";
 "lsq_filter_set_skinColor" = "膚色";
 "lsq_filter_set_retouch" = "一鍵美顏";
 "lsq_filter_set_chinSize" = "瘦臉";
 "lsq_filter_set_eyeSize" = "大眼";
+
+// Face Plastic
+"lsq_filter_set_forehead" = "額高";
+"lsq_filter_set_browPosition" = "眉高";
+"lsq_filter_set_archEyebrow" = "細眉";
+"lsq_filter_set_eyeAngle" = "眼角";
+"lsq_filter_set_eyeDis" = "眼距";
+"lsq_filter_set_noseSize" = "鼻寬";
+"lsq_filter_set_mouthWidth" = "嘴寬";
+"lsq_filter_set_lips" = "嘴唇";
+"lsq_filter_set_jawSize" = "下巴";
 
 "lsq_filter_set_blurSize" = "強度";
 "lsq_filter_set_blurWeight" = "權重";
@@ -417,3 +429,12 @@
 "lsq_camera_flash_mode_on" = "閃光燈開啟";
 "lsq_camera_flash_mode_off" = "閃光燈關閉";
 "lsq_camera_flash_mode_auto" = "閃光燈自動";
+
+
+//more
+"lsq_camera_more" = "更多";
+"lsq_camera_ratio" = "比例";
+"lsq_camera_autoFocus" = "自動對焦";
+"lsq_camera_flash_on" = "開啟";
+"lsq_camera_flash_off" = "關閉";
+"lsq_camera_flash" = "閃光燈";

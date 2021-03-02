@@ -87,8 +87,8 @@
     // 旋转和裁剪视图控制栏类 (默认:TuSDKPFEditTurnAndCutBottomView, 需要继承 TuSDKPFEditTurnAndCutBottomView)
     // opt.bottomBarViewClazz = [TuSDKPFEditTurnAndCutBottomView class];
     
-    // 图片编辑视图 (旋转，缩放)类 (默认:TuSDKICTouchImageView, 需要继承 TuSDKICTouchImageView)
-    // opt.editImageViewClazz = [TuSDKICTouchImageView class];
+    // 图片编辑视图 (旋转，缩放)类 (默认:TuTouchImageView, 需要继承 TuTouchImageView)
+    // opt.editImageViewClazz = [TuTouchImageView class];
     
     // 滤镜列表视图类 (默认:TuSDKPFEditTurnAndCutFilterView, 需要继承 TuSDKPFEditTurnAndCutFilterView)
     // opt.filterViewClazz = [TuSDKPFEditTurnAndCutFilterView class];
@@ -114,8 +114,8 @@
     // 滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
     // opt.filterBarGroupCellClazz = [TuSDKCPGroupFilterGroupCell class];
     
-    // 滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
-    // opt.filterBarTableCellClazz = [TuSDKCPGroupFilterItem class];
+    // 滤镜列表行视图类 (默认:TuGroupFilterItem, 需要继承 TuGroupFilterItem)
+    // opt.filterBarTableCellClazz = [TuGroupFilterItem class];
     
     // 需要裁剪的长宽
     // opt.cutSize = CGSizeMake(640, 640);
@@ -123,10 +123,10 @@
     // 是否显示处理结果预览图 (默认：关闭，调试时可以开启)
     // opt.showResultPreview = NO;
     
-    // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)
+    // 保存到系统相册 (默认不保存, 当设置为YES时, TuResult.asset)
     // opt.saveToAlbum = NO;
     
-    // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
+    // 保存到临时文件 (默认不保存, 当设置为YES时, TuResult.tmpFile)
     // opt.saveToTemp = NO;
     
     // 保存到系统相册的相册名称
@@ -165,7 +165,7 @@
  *  @param controller 旋转和裁剪视图控制器
  *  @param result 旋转和裁剪视图控制器处理结果
  */
-- (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
+- (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuResult *)result;
 {
     // 清除所有控件
     [controller lsqDismissModalViewControllerAnimated];
@@ -179,7 +179,7 @@
  *  @param result     返回结果
  *  @param error      异常信息
  */
-- (void)onComponent:(TuSDKCPViewController *)controller result:(TuSDKResult *)result error:(NSError *)error;
+- (void)onComponent:(TuComponentsViewController *)controller result:(TuResult *)result error:(NSError *)error;
 {
     lsqLDebug(@"onComponent: controller - %@, result - %@, error - %@", controller, result, error);
 }

@@ -22,11 +22,8 @@
  * 开发文档:https://tutucloud.com/docs/ios/image/api-docs
  */
 
-//#import "TuSDKGeeV1.h"
-#import <TuSDKGeeV1/TuSDKGeeV1.h>
+#import "TuSDKGeeV1/TuSDKGeeV1.h"
+//#import <TuSDKGeeV1/TuSDKGeeV1.h>
 
-//#import "TuSDKGeeV2.h"
-#import <TuSDKGeeV2/TuSDKGeeV2.h>
-
-//#import "TuSDKFace.h"
-//#import <TuSDKFace/TuSDKFace.h>
+#import "TuSDKGeeV2/TuSDKGeeV2.h"
+//#import <TuSDKGeeV2/TuSDKGeeV2.h>

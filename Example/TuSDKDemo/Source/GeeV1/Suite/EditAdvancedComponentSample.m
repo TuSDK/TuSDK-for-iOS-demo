@@ -41,7 +41,7 @@
     lsqLDebug(@"editAdvancedComponentHandler");
     
     _albumComponent = [TuSDKGeeV1 albumMultipleCommponentWithController:controller
-                                                          callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                                                          callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          // 获取图片错误
          if (error) {
@@ -66,7 +66,7 @@
  *  @param result     处理结果
  */
 - (void)openEditAdvancedWithController:(UIViewController *)controller
-                                result:(TuSDKResult *)result;
+                                result:(TuResult *)result;
 {
     if (!controller || !result) return;
     
@@ -74,7 +74,7 @@
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPPhotoEditComponent.html
     _photoEditComponent =
     [TuSDKGeeV1 photoEditCommponentWithController:controller
-                               callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                               callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
          // 获取图片失败
@@ -121,8 +121,8 @@
     //    _photoEditComponent.options.editFilterOptions.filterBarHeight = 100;
     //    // 滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
     //    _photoEditComponent.options.editFilterOptions.filterBarGroupCellClazz = [TuSDKCPGroupFilterGroupCell class];
-    //    // 滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
-    //    _photoEditComponent.options.editFilterOptions.filterBarTableCellClazz = [TuSDKCPGroupFilterItem class];
+    //    // 滤镜列表行视图类 (默认:TuGroupFilterItem, 需要继承 TuGroupFilterItem)
+    //    _photoEditComponent.options.editFilterOptions.filterBarTableCellClazz = [TuGroupFilterItem class];
     //    // 开启用户滤镜历史记录
     //    _photoEditComponent.options.editFilterOptions.enableFilterHistory = YES;
     //
@@ -164,7 +164,7 @@
  *  @param result     返回结果
  *  @param error      异常信息
  */
-- (void)onComponent:(TuSDKCPViewController *)controller result:(TuSDKResult *)result error:(NSError *)error;
+- (void)onComponent:(TuComponentsViewController *)controller result:(TuResult *)result error:(NSError *)error;
 {
     lsqLDebug(@"onComponent: controller - %@, result - %@, error - %@", controller, result, error);
 }

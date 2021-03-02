@@ -42,7 +42,7 @@
     
     _albumComponent =
     [TuSDKGeeV1 albumCommponentWithController:controller
-                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                           callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          // 获取图片错误
          if (error) {
@@ -62,7 +62,7 @@
  *  @param result     处理结果
  */
 - (void)openEditMultipleWithController:(UIViewController *)controller
-                                result:(TuSDKResult *)result;
+                                result:(TuResult *)result;
 {
     // 组件使用文档教程
     // @see-https://tutucloud.com/docs/ios/image/editor-usage
@@ -73,7 +73,7 @@
     // @see-https://tutucloud.com/docs/ios/image/image/api-geev1/Classes/TuSDKCPPhotoEditMultipleComponent.html
     _photoEditMultipleComponent =
     [TuSDKGeeV1 photoEditMultipleWithController:controller
-                               callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                               callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          _albumComponent = nil;
          
@@ -92,10 +92,10 @@
          //
          // 可在此添加自定义方法，在编辑完成时进行页面跳转操，例如 ：
          // [controller lsqPresentModalNavigationController:[[UIViewController alloc] init] animated:YES];
-         // 图片处理结果 TuSDKResult *result 具有三种属性，分别是 ：
+         // 图片处理结果 TuResult *result 具有三种属性，分别是 ：
          // result.image 是 UIImage 类型
          // result.imagePath 是 NSString 类型
-         // result.imageAsset 是 TuSDKTSAssetInterface 类型
+         // result.imageAsset 是 TuTSAssetInterface 类型
          
          // 下面以 result.image 举例如何将图片编辑结果持有并进行其他操作
          // 可在此添加自定义方法，将 result 结果传出，例如 ：  [self openEditorWithImage:result.image];
@@ -145,8 +145,8 @@
     //    _photoEditMultipleComponent.options.editFilterOptions.filterBarHeight = 100;
     //    // 滤镜分组列表行视图类 (默认:TuSDKCPGroupFilterGroupCell, 需要继承 TuSDKCPGroupFilterGroupCell)
     //    _photoEditMultipleComponent.options.editFilterOptions.filterBarGroupCellClazz = [TuSDKCPGroupFilterGroupCell class];
-    //    // 滤镜列表行视图类 (默认:TuSDKCPGroupFilterItem, 需要继承 TuSDKCPGroupFilterItem)
-    //    _photoEditMultipleComponent.options.editFilterOptions.filterBarTableCellClazz = [TuSDKCPGroupFilterItem class];
+    //    // 滤镜列表行视图类 (默认:TuGroupFilterItem, 需要继承 TuGroupFilterItem)
+    //    _photoEditMultipleComponent.options.editFilterOptions.filterBarTableCellClazz = [TuGroupFilterItem class];
     //    // 开启用户滤镜历史记录
     //    _photoEditMultipleComponent.options.editFilterOptions.enableFilterHistory = YES;
     //    // 显示滤镜标题视图
@@ -298,9 +298,9 @@
  *
  *  @return
  */
-- (TuSDKWaterMarkOption *)waterMarkOption;
+- (TuWaterMarkOption *)waterMarkOption;
 {
-    TuSDKWaterMarkOption *option = [[TuSDKWaterMarkOption alloc] init];
+    TuWaterMarkOption *option = [[TuWaterMarkOption alloc] init];
     
     // 水印文字或者图片需要至少设置一个
     // 设置水印文字

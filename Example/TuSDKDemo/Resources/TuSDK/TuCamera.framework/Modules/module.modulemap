@@ -1,0 +1,6 @@
+framework module TuCamera {
+  umbrella header "TuCamera.h"
+
+  export *
+  module * { export * }
+}

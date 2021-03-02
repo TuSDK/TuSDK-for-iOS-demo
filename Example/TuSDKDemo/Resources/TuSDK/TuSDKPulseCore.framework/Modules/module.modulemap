@@ -1,0 +1,6 @@
+framework module TuSDKPulseCore {
+  umbrella header "TuSDKPulseCore.h"
+
+  export *
+  module * { export * }
+}

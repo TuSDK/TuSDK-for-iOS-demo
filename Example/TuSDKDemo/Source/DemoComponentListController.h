@@ -12,6 +12,6 @@
 /**
  *  组件列表控制器
  */
-@interface DemoComponentListController : TuSDKICViewController
+@interface DemoComponentListController : TuViewController
 
 @end

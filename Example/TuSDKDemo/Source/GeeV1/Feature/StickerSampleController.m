@@ -40,7 +40,7 @@
  *
  *  @param result SDK处理结果
  */
-- (void)notifyProcessingWithResult:(TuSDKResult *)result;
+- (void)notifyProcessingWithResult:(TuResult *)result;
 {
     // 将编辑结果发送给视图外部, 具体见 TuSDKPFEditStickerControllerDelegate
     [super notifyProcessingWithResult:result];

@@ -36,7 +36,7 @@
     
     _albumComponent =
     [TuSDKGeeV1 albumCommponentWithController:controller
-                           callbackBlock:^(TuSDKResult *result, NSError *error, UIViewController *controller)
+                           callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
          // 获取头像图片
          if (error) {
@@ -59,7 +59,7 @@
  *  @param result     处理结果
  */
 - (void)openEditAndCutWithController:(UIViewController *)controller
-                              result:(TuSDKResult *)result;
+                              result:(TuResult *)result;
 {
     if (!controller || !result) return;
     
@@ -88,7 +88,7 @@
     // 是否渲染滤镜封面 (使用设置的滤镜直接渲染，需要拥有滤镜列表封面设置权限，请访问TUTUCLOUD.com控制台)
     // opt.isRenderFilterThumb = YES;
     
-    // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)
+    // 保存到系统相册 (默认不保存, 当设置为YES时, TuResult.asset)
     // opt.saveToAlbum = YES;
     
     // 保存到系统相册的相册名称
@@ -112,7 +112,7 @@
  *  @param controller 旋转和裁剪视图控制器
  *  @param result 旋转和裁剪视图控制器处理结果
  */
-- (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuSDKResult *)result;
+- (void)onTuSDKPFEditTurnAndCut:(TuSDKPFEditTurnAndCutViewController *)controller result:(TuResult *)result;
 {
     _albumComponent = nil;
     
@@ -128,7 +128,7 @@
  *  @param result     返回结果
  *  @param error      异常信息
  */
-- (void)onComponent:(TuSDKCPViewController *)controller result:(TuSDKResult *)result error:(NSError *)error;
+- (void)onComponent:(TuComponentsViewController *)controller result:(TuResult *)result error:(NSError *)error;
 {
     lsqLDebug(@"onComponent: controller - %@, result - %@, error - %@", controller, result, error);
 }

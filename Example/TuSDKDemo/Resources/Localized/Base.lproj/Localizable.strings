@@ -35,16 +35,20 @@
 "sample_CameraComponent" = "相机组件（新的滤镜，新的 UI）";
 "sample_GifComponent" = "GIF 组件";
 
+"sample_api_CameraFromVideo" = "短视频相机示例";
+
 "sample_comp_CameraAndEditor" = "拍照 + 编辑示例";
 "sample_comp_SelfishCamera" = "美颜相机";
 "sample_comp_FilterComponent" = "滤镜组件示例";
 "sample_comp_StickerComponent" = "贴纸组件示例";
+"sample_comp_BubbleComponent" = "气泡文字组件示例";
 "sample_comp_BlurComponent" = "模糊组件示例";
 
 "sample_ui_EditComponent" = "裁切组件自定义界面";
 "sample_ui_CameraBase" = "相机界面自定义";
 
 "sample_api_CameraBase" = "个性化相机示例 (仅供参考)";
+"sample_api_EffectEngineCamera" = "特效相机示例 (仅供参考)";
 
 "sample_api_face_detection_image" = "人脸检测 (图片)";
 "sample_api_face_detection_camera" = "人脸检测 (视频)";

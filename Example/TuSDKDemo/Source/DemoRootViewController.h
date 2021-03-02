@@ -12,7 +12,7 @@
 /**
  *  入口控制器
  */
-@interface DemoRootViewController : TuSDKICViewController
+@interface DemoRootViewController : TuViewController
 
 @end
 

@@ -37,7 +37,7 @@
     self.controller = controller;
     
     // 开启访问相机权限
-    [TuSDKTSDeviceSettings checkAllowWithController:self.controller
+    [TuTSDeviceSettings checkAllowWithController:self.controller
                                                type:lsqDeviceSettingsCamera
                                           completed:^(lsqDeviceSettingsType type, BOOL openSetting)
      {
@@ -148,10 +148,10 @@
     // 长按延时 (默认: 1.2秒)
     // opt.longTouchDelay = 1.2;
     
-    // 保存到系统相册 (默认不保存, 当设置为YES时, TuSDKResult.asset)
+    // 保存到系统相册 (默认不保存, 当设置为YES时, TuResult.asset)
     opt.saveToAlbum = YES;
     
-    // 保存到临时文件 (默认不保存, 当设置为YES时, TuSDKResult.tmpFile)
+    // 保存到临时文件 (默认不保存, 当设置为YES时, TuResult.tmpFile)
     // opt.saveToTemp = NO;
     
     // 保存到系统相册的相册名称
@@ -201,9 +201,9 @@
  *
  *  @return
  */
-- (TuSDKWaterMarkOption *)waterMarkOption;
+- (TuWaterMarkOption *)waterMarkOption;
 {
-    TuSDKWaterMarkOption *option = [[TuSDKWaterMarkOption alloc] init];
+    TuWaterMarkOption *option = [[TuWaterMarkOption alloc] init];
     
     // 水印文字或者图片需要至少设置一个
     // 设置水印文字
@@ -242,13 +242,13 @@
  *  @param controller 默认相机视图控制器
  *  @param result     拍摄结果
  */
-- (void)onTuSDKPFCamera:(TuSDKPFCameraViewController *)controller captureResult:(TuSDKResult *)result;
+- (void)onTuSDKPFCamera:(TuSDKPFCameraViewController *)controller captureResult:(TuResult *)result;
 {
     [controller dismissViewControllerAnimated:YES completion:nil];
     lsqLDebug(@"onTuSDKPFCamera: %@", result);
 }
 
-#pragma mark - TuSDKCPComponentErrorDelegate
+#pragma mark - TuComponentErrorDelegate
 /**
  *  获取组件返回错误信息
  *
@@ -256,7 +256,7 @@
  *  @param result     返回结果
  *  @param error      异常信息
  */
-- (void)onComponent:(TuSDKCPViewController *)controller result:(TuSDKResult *)result error:(NSError *)error;
+- (void)onComponent:(TuComponentsViewController *)controller result:(TuResult *)result error:(NSError *)error;
 {
     lsqLDebug(@"onComponent: controller - %@, result - %@, error - %@", controller, result, error);
 }

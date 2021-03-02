@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-//#import "TuSDK.h"
-#import "TuSDKFramework.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #import "DemoRootViewController.h"
+#import <TuSDKPulse/TUPEngine.h>
 
 #import <Bugly/Bugly.h>
 
@@ -39,7 +39,7 @@
      */
     
     // 可选: 设置日志输出级别 (默认不输出)
-    [TuSDK setLogLevel:lsqLogLevelDEBUG];
+    [TuSDKPulseCore setLogLevel:lsqLogLevelDEBUG];
     
     /**
      *  启动Bugly收集错误报告
@@ -55,19 +55,20 @@
     // Attention ！！！！！！
     // ********************** 更换包名和秘钥之后，一定要去控制台打包替换资源文件 **********************
     
-    [TuSDK initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1"];
-    
+    [TuSDKPulseCore initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1"];
+    [TUPEngine Init:nil];
+
     /**
      *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
      *  如果一个应用对应多个包名，则可以使用这种方式来进行集成调试。
      */
-    // [TuSDK initSdkWithAppKey:@"828d700d182dd469-04-ewdjn1" devType:@"debug"];
+    // [TuSDK initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1" devType:@"debug"];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
 
     // 初始化根控制器
-    self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:[DemoRootViewController controller]];
+    self.window.rootViewController = [[TuNavigationController alloc]initWithRootViewController:[DemoRootViewController controller]];
     [self.window makeKeyAndVisible];
 
     return YES;
@@ -106,6 +107,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    [TUPEngine Terminate];
+
 }
 
 @end
