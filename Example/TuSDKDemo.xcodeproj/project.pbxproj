@@ -54,12 +54,10 @@
 		B881071F2490811B00CD4448 /* CameraControlMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881071E2490811B00CD4448 /* CameraControlMaskView.m */; };
 		B881072624908D8300CD4448 /* CameraMoreMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072524908D8300CD4448 /* CameraMoreMenuView.m */; };
 		B881072924908DC200CD4448 /* VerticalMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072824908DC200CD4448 /* VerticalMenuView.m */; };
-		B8819ABE25EED2020085DD9C /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB825EED2020085DD9C /* TuViews.framework */; };
 		B8819AC025EED2020085DD9C /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABA25EED2020085DD9C /* TuSDKGeeV1.framework */; };
 		B8819AC125EED2020085DD9C /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABB25EED2020085DD9C /* TuSDKGeeV2.framework */; };
-		B8819AE525EED7620085DD9C /* TuCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AE425EED7620085DD9C /* TuCamera.framework */; };
-		B882C3DE25E8D49E00CAB51A /* TuLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */; };
-		B882C3E025E8D53100CAB51A /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DF25E8D53100CAB51A /* home.jpg */; };
+		B882C3DE25E8D49E00CAB51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */; };
+		B882C3E025E8D53100CAB51A /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DF25E8D53100CAB51A /* home.png */; };
 		B8973C2F25ECD30800017D05 /* 粉色心.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2C25ECD30800017D05 /* 粉色心.png */; };
 		B8973C3025ECD30800017D05 /* 标签.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2D25ECD30800017D05 /* 标签.png */; };
 		B8973C3125ECD30800017D05 /* 气泡.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2E25ECD30800017D05 /* 气泡.png */; };
@@ -71,6 +69,10 @@
 		B8D30BD525EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB925EED2020085DD9C /* TuSDKPulseFilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8D30BD625EF5D5F00F4D81D /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */; };
 		B8D30BD725EF5D5F00F4D81D /* TuSDKPulse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8D30BD825EF67BB00F4D81D /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB825EED2020085DD9C /* TuViews.framework */; };
+		B8D30BD925EF67BB00F4D81D /* TuViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB825EED2020085DD9C /* TuViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8D30BDA25EF67D000F4D81D /* TuCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AE425EED7620085DD9C /* TuCamera.framework */; };
+		B8D30BDB25EF67D000F4D81D /* TuCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AE425EED7620085DD9C /* TuCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D723EC6823320EA800C500A1 /* WebKit.framework */; };
 		D752E7C923138E88001C0B8A /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D752E7C823138E88001C0B8A /* libresolv.9.tbd */; };
 		D76BF0E1226F171F00813E99 /* EditPaintDrawComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = D76BF0E0226F171F00813E99 /* EditPaintDrawComponentSample.m */; };
@@ -103,6 +105,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B8D30BDB25EF67D000F4D81D /* TuCamera.framework in Embed Frameworks */,
+				B8D30BD925EF67BB00F4D81D /* TuViews.framework in Embed Frameworks */,
 				B8D30BD525EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Embed Frameworks */,
 				B8D30BD725EF5D5F00F4D81D /* TuSDKPulse.framework in Embed Frameworks */,
 				B8D30BBC25EF2B5000F4D81D /* TuSDKPulseCore.framework in Embed Frameworks */,
@@ -212,8 +216,8 @@
 		B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = "<group>"; };
 		B8819ABD25EED2020085DD9C /* TuSDKPulseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseCore.framework; sourceTree = "<group>"; };
 		B8819AE425EED7620085DD9C /* TuCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuCamera.framework; sourceTree = "<group>"; };
-		B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TuLaunchScreen.storyboard; path = Resources/TuLaunchScreen.storyboard; sourceTree = "<group>"; };
-		B882C3DF25E8D53100CAB51A /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Resources/home.jpg; sourceTree = "<group>"; };
+		B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B882C3DF25E8D53100CAB51A /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
 		B8973C2C25ECD30800017D05 /* 粉色心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "粉色心.png"; path = "Resources/Images/粉色心.png"; sourceTree = "<group>"; };
 		B8973C2D25ECD30800017D05 /* 标签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "标签.png"; path = "Resources/Images/标签.png"; sourceTree = "<group>"; };
 		B8973C2E25ECD30800017D05 /* 气泡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "气泡.png"; path = "Resources/Images/气泡.png"; sourceTree = "<group>"; };
@@ -261,15 +265,15 @@
 			files = (
 				B8819AC025EED2020085DD9C /* TuSDKGeeV1.framework in Frameworks */,
 				B8D30BD625EF5D5F00F4D81D /* TuSDKPulse.framework in Frameworks */,
-				B8819ABE25EED2020085DD9C /* TuViews.framework in Frameworks */,
 				D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */,
 				D752E7C923138E88001C0B8A /* libresolv.9.tbd in Frameworks */,
 				F836C4021EFB66B400F82ABD /* SystemConfiguration.framework in Frameworks */,
 				F836C4001EFB66A800F82ABD /* Security.framework in Frameworks */,
 				F836C3FE1EFB66A100F82ABD /* libz.1.2.5.tbd in Frameworks */,
 				B8D30BBB25EF2B5000F4D81D /* TuSDKPulseCore.framework in Frameworks */,
-				B8819AE525EED7620085DD9C /* TuCamera.framework in Frameworks */,
+				B8D30BD825EF67BB00F4D81D /* TuViews.framework in Frameworks */,
 				B8D30BD425EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Frameworks */,
+				B8D30BDA25EF67D000F4D81D /* TuCamera.framework in Frameworks */,
 				33A6771E1D87EBE000107DC7 /* Accelerate.framework in Frameworks */,
 				F836C3FC1EFB669000F82ABD /* Bugly.framework in Frameworks */,
 				B8819AC125EED2020085DD9C /* TuSDKGeeV2.framework in Frameworks */,
@@ -446,8 +450,8 @@
 				B8973C2D25ECD30800017D05 /* 标签.png */,
 				B8973C2C25ECD30800017D05 /* 粉色心.png */,
 				B8973C2E25ECD30800017D05 /* 气泡.png */,
-				B882C3DF25E8D53100CAB51A /* home.jpg */,
-				B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */,
+				B882C3DF25E8D53100CAB51A /* home.png */,
+				B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */,
 				02D1AB6D1CF17C9A00C8497D /* sample_watermark.png */,
 				02D1AB651CEF2A0A00C8497D /* sample_photo.jpg */,
 				F8369B051C426A1B009A2936 /* sample_gif_editor.gif */,
@@ -697,10 +701,10 @@
 				625540C11A5650E200614A61 /* TuSDKPulse.bundle in Resources */,
 				62235EF219FF6C8100F05DA6 /* TuSDK.strings in Resources */,
 				F8369B061C426A1B009A2936 /* sample_gif_editor.gif in Resources */,
-				B882C3DE25E8D49E00CAB51A /* TuLaunchScreen.storyboard in Resources */,
+				B882C3DE25E8D49E00CAB51A /* LaunchScreen.storyboard in Resources */,
 				F816B9FB1EE8F0EC0058EE8B /* homepage_icon_beauty@2x.png in Resources */,
 				F816B9FF1EE8F0EC0058EE8B /* homepage_icon_next@2x.png in Resources */,
-				B882C3E025E8D53100CAB51A /* home.jpg in Resources */,
+				B882C3E025E8D53100CAB51A /* home.png in Resources */,
 				62235EEF19FF6B7300F05DA6 /* Images.xcassets in Resources */,
 				F816BA021EE8F0EC0058EE8B /* homepage_icon_tools@3x.png in Resources */,
 				02D1AB671CEF2A0A00C8497D /* sample_photo.jpg in Resources */,

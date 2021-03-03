@@ -4,42 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
-		<data>
-		A78bA7le/u4T9YQ8SZKCCXDV+Vw=
-		</data>
-		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
-		<data>
-		czKxevlZxSa5VWU8OZvsSFX1Es0=
-		</data>
-		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
-		<data>
-		IAnGfbVJCi0Irtys0XpX59v6CBE=
-		</data>
-		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
-		<data>
-		AMXGm0Cab77PZl2CcTH6ma+0aoc=
-		</data>
-		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
-		<data>
-		tnyRBSmCmk7n4I5JqSx5iOIYQ1U=
-		</data>
-		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
-		<data>
-		3+OZ1f7CxqkIg1VWW03ybqmsK0g=
-		</data>
-		<key>Frameworks/TuSDKPulseFilter.framework/Info.plist</key>
-		<data>
-		bh/8KCOLXn+7aj09yARIZ6rUyCo=
-		</data>
-		<key>Frameworks/TuSDKPulseFilter.framework/TuSDKPulseFilter</key>
-		<data>
-		pFZAHGIIEjMLCHH6dI7yhp86Ow4=
-		</data>
-		<key>Frameworks/TuSDKPulseFilter.framework/_CodeSignature/CodeResources</key>
-		<data>
-		mKRNsGOVM1xEkzzlJegRo0lFaUA=
-		</data>
 		<key>Headers/TuAlbumComponentBase.h</key>
 		<data>
 		hsYzIaOd+05TzdqwH4IiFzXB6cE=
@@ -442,7 +406,7 @@
 		</data>
 		<key>Headers/TuViews.h</key>
 		<data>
-		+/ubOZimOLX9iSpZB7enUSFJJsI=
+		KliegmtyaQ8H0zeqa+A/mziJEmw=
 		</data>
 		<key>Headers/TuViewsConfigs.h</key>
 		<data>
@@ -454,7 +418,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LGwYUfMtTWUQ70uqRcE/0YsKCy0=
+		9W361cfru3Z8NuAlrpoP9Z4cQr8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -463,105 +427,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			A78bA7le/u4T9YQ8SZKCCXDV+Vw=
-			</data>
-			<key>hash2</key>
-			<data>
-			Gd/jX4hrxtM7BTa17btOkEG7cT2qTRhmJZyS+0GMi+8=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			czKxevlZxSa5VWU8OZvsSFX1Es0=
-			</data>
-			<key>hash2</key>
-			<data>
-			qEHXx2rv0ylmKN/sjLNZH5GCyEHSV16g16CSaylxM7Q=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IAnGfbVJCi0Irtys0XpX59v6CBE=
-			</data>
-			<key>hash2</key>
-			<data>
-			kJqY6nKKVOw3BEQsMDou+ddmztg5ny8oE+u0OHTwAss=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AMXGm0Cab77PZl2CcTH6ma+0aoc=
-			</data>
-			<key>hash2</key>
-			<data>
-			WqPQtt28+I80tkvRddSswBjyXjBB+WwBJBjBw0Glzik=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tnyRBSmCmk7n4I5JqSx5iOIYQ1U=
-			</data>
-			<key>hash2</key>
-			<data>
-			/wnI1OdehTYrEVOSw5bMyJM6N0L0jVeN5HnzyPgcjxs=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3+OZ1f7CxqkIg1VWW03ybqmsK0g=
-			</data>
-			<key>hash2</key>
-			<data>
-			cngjIk/gmUGNg8X2c7kslE9+QY+Uq1Ykqntngnu2UGA=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseFilter.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bh/8KCOLXn+7aj09yARIZ6rUyCo=
-			</data>
-			<key>hash2</key>
-			<data>
-			PdD26ZbyCVuRe1LOt9U5UJGfHszu3y8MvfTjuuXL43Y=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseFilter.framework/TuSDKPulseFilter</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pFZAHGIIEjMLCHH6dI7yhp86Ow4=
-			</data>
-			<key>hash2</key>
-			<data>
-			zF9IKIv8/PU3djetsqB6TF36ILqTxBvEcPu1XxoQhiI=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseFilter.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mKRNsGOVM1xEkzzlJegRo0lFaUA=
-			</data>
-			<key>hash2</key>
-			<data>
-			JPeujAeS1QjU5AHAu4dlcnQcYbNfvzsIXZSm2sKQiN0=
-			</data>
-		</dict>
 		<key>Headers/TuAlbumComponentBase.h</key>
 		<dict>
 			<key>hash</key>
@@ -1666,11 +1531,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+/ubOZimOLX9iSpZB7enUSFJJsI=
+			KliegmtyaQ8H0zeqa+A/mziJEmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zP23gp4CETktdToBXNHm60WvcPiqCoksVpUD7+m6xoA=
+			FqrdDisQBBg+V0m/fostwKE8/cuUO271AdXOXOV8wdw=
 			</data>
 		</dict>
 		<key>Headers/TuViewsConfigs.h</key>

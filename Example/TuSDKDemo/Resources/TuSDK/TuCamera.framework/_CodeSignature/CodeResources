@@ -4,25 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
-		<data>
-		AMXGm0Cab77PZl2CcTH6ma+0aoc=
-		</data>
-		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
-		<data>
-		yDZ/xdF86fudA4KXUOwmlv/V8us=
-		</data>
-		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
-		<data>
-		3+OZ1f7CxqkIg1VWW03ybqmsK0g=
-		</data>
 		<key>Headers/TuCamera.h</key>
 		<data>
 		P3Wwd+5X0EPEvYZ1hAiU4owuoQ4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cE8vjPv/awYx+AB0jDV44Yl8ey4=
+		Sb/OrXvK5+5zXI+ig1RCtpEkBpo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,39 +19,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AMXGm0Cab77PZl2CcTH6ma+0aoc=
-			</data>
-			<key>hash2</key>
-			<data>
-			WqPQtt28+I80tkvRddSswBjyXjBB+WwBJBjBw0Glzik=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yDZ/xdF86fudA4KXUOwmlv/V8us=
-			</data>
-			<key>hash2</key>
-			<data>
-			vAvBmD+jnGOe7aor2hoaXmvpZR1H7YOjbqvNmGA8Ep8=
-			</data>
-		</dict>
-		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3+OZ1f7CxqkIg1VWW03ybqmsK0g=
-			</data>
-			<key>hash2</key>
-			<data>
-			cngjIk/gmUGNg8X2c7kslE9+QY+Uq1Ykqntngnu2UGA=
-			</data>
-		</dict>
 		<key>Headers/TuCamera.h</key>
 		<dict>
 			<key>hash</key>

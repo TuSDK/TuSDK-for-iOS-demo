@@ -1,4 +1,20 @@
+//
+//  TuViews.h
+//  TuViews
+//
+//  Created by abbeyant on 2021/3/3.
+//
+
 #import <Foundation/Foundation.h>
+
+//! Project version number for TuViews.
+FOUNDATION_EXPORT double TuViewsVersionNumber;
+
+//! Project version string for TuViews.
+FOUNDATION_EXPORT const unsigned char TuViewsVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <TuViews/PublicHeader.h>
+
 
 #import "TuStickerOnlineControllerBase.h"
 #import "TuStackFilterTableView.h"
@@ -42,6 +58,7 @@
 #import "TuFilterOnlineControllerBase.h"
 #import "TuCAEAGLView.h"
 #import "TuFilterConfigView.h"
+#import "TuResultViewController.h"
 
 #import "TuPhotosViewControllerBase.h"
 #import "TuEditVignetteControllerBase.h"
@@ -60,7 +77,6 @@
 #import "TuCameraShower.h"
 #import "TuCameraShowerImpl.h"
 
-/**进度信息提示*/
 
 @interface TuViews : NSObject
 @property (nonatomic, retain) id<TuPopupMessageInterface> messageHub;
