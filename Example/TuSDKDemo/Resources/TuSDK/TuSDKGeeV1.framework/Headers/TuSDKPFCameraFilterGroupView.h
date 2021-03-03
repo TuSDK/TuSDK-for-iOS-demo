@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <TuSDKGeeV1/TuSDKGeeV1Import.h>
-#import <TuSDKGeeV1/TuSDKCPGroupFilterBar.h>
+#import "TuSDKGeeV1Import.h"
+#import "TuSDKCPGroupFilterBar.h"
 #import <TuSDKPulseCore/cx/seles/extend/SelesParameters.h>
 
 @class TuSDKPFCameraFilterGroupView;

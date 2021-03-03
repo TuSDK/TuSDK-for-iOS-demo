@@ -37,11 +37,6 @@
 		625540C11A5650E200614A61 /* TuSDKPulse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 625540C01A5650E200614A61 /* TuSDKPulse.bundle */; };
 		626F59F0248E2DF600CFCA7D /* DefineCAEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */; };
 		628DEDF31AEA0D5F006CC06C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628DEDF51AEA0D5F006CC06C /* Localizable.strings */; };
-		7C75276F25AD86750031CC10 /* TuSDKPulse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C75276225AD7C2D0031CC10 /* TuSDKPulse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7C8ECA9125CA8D9300A7BF0B /* TuSDKPulseFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C75275E25AD76620031CC10 /* TuSDKPulseFilter.framework */; };
-		7C8ECA9325CA8DB600A7BF0B /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C75275C25AD76580031CC10 /* TuSDKPulse.framework */; };
-		7C8ECA9425CA8E1800A7BF0B /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8ECA8825CA85D300A7BF0B /* TuSDKPulseCore.framework */; };
-		7C8ECA9525CA8E1800A7BF0B /* TuSDKPulseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8ECA8825CA85D300A7BF0B /* TuSDKPulseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B88106EC24907C3500CD4448 /* CustomizedNewCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */; };
 		B881071024907C5500CD4448 /* ViewSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F224907C5500CD4448 /* ViewSlider.m */; };
 		B881071124907C5500CD4448 /* PageTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F424907C5500CD4448 /* PageTabbar.m */; };
@@ -59,16 +54,9 @@
 		B881071F2490811B00CD4448 /* CameraControlMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881071E2490811B00CD4448 /* CameraControlMaskView.m */; };
 		B881072624908D8300CD4448 /* CameraMoreMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072524908D8300CD4448 /* CameraMoreMenuView.m */; };
 		B881072924908DC200CD4448 /* VerticalMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072824908DC200CD4448 /* VerticalMenuView.m */; };
-		B881977C25EE9A330085DD9C /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B881977925EE85F20085DD9C /* TuSDKGeeV1.framework */; };
-		B881977D25EE9A330085DD9C /* TuSDKGeeV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B881977925EE85F20085DD9C /* TuSDKGeeV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B88198B525EEBEB80085DD9C /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88198B425EEBEB80085DD9C /* TuSDKGeeV2.framework */; };
-		B8819AAF25EEC25B0085DD9C /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AAE25EEC25B0085DD9C /* TuViews.framework */; };
 		B8819ABE25EED2020085DD9C /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB825EED2020085DD9C /* TuViews.framework */; };
-		B8819ABF25EED2020085DD9C /* TuSDKPulseFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB925EED2020085DD9C /* TuSDKPulseFilter.framework */; };
 		B8819AC025EED2020085DD9C /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABA25EED2020085DD9C /* TuSDKGeeV1.framework */; };
 		B8819AC125EED2020085DD9C /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABB25EED2020085DD9C /* TuSDKGeeV2.framework */; };
-		B8819AC225EED2020085DD9C /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */; };
-		B8819AC325EED2020085DD9C /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABD25EED2020085DD9C /* TuSDKPulseCore.framework */; };
 		B8819AE525EED7620085DD9C /* TuCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AE425EED7620085DD9C /* TuCamera.framework */; };
 		B882C3DE25E8D49E00CAB51A /* TuLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */; };
 		B882C3E025E8D53100CAB51A /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DF25E8D53100CAB51A /* home.jpg */; };
@@ -77,6 +65,12 @@
 		B8973C3125ECD30800017D05 /* 气泡.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2E25ECD30800017D05 /* 气泡.png */; };
 		B8A4371525EB741C0015A5E9 /* TuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371425EB741C0015A5E9 /* TuBubbleView.m */; };
 		B8A4371825EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371725EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m */; };
+		B8D30BBB25EF2B5000F4D81D /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABD25EED2020085DD9C /* TuSDKPulseCore.framework */; };
+		B8D30BBC25EF2B5000F4D81D /* TuSDKPulseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABD25EED2020085DD9C /* TuSDKPulseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8D30BD425EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB925EED2020085DD9C /* TuSDKPulseFilter.framework */; };
+		B8D30BD525EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819AB925EED2020085DD9C /* TuSDKPulseFilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8D30BD625EF5D5F00F4D81D /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */; };
+		B8D30BD725EF5D5F00F4D81D /* TuSDKPulse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABC25EED2020085DD9C /* TuSDKPulse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D723EC6823320EA800C500A1 /* WebKit.framework */; };
 		D752E7C923138E88001C0B8A /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D752E7C823138E88001C0B8A /* libresolv.9.tbd */; };
 		D76BF0E1226F171F00813E99 /* EditPaintDrawComponentSample.m in Sources */ = {isa = PBXBuildFile; fileRef = D76BF0E0226F171F00813E99 /* EditPaintDrawComponentSample.m */; };
@@ -103,15 +97,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		62703D911B9C03F9000C3614 /* Embed Frameworks */ = {
+		B8D30BBA25EF2B3000F4D81D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7C75276F25AD86750031CC10 /* TuSDKPulse.framework in Embed Frameworks */,
-				7C8ECA9525CA8E1800A7BF0B /* TuSDKPulseCore.framework in Embed Frameworks */,
-				B881977D25EE9A330085DD9C /* TuSDKGeeV1.framework in Embed Frameworks */,
+				B8D30BD525EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Embed Frameworks */,
+				B8D30BD725EF5D5F00F4D81D /* TuSDKPulse.framework in Embed Frameworks */,
+				B8D30BBC25EF2B5000F4D81D /* TuSDKPulseCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,11 +168,6 @@
 		626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineCAEAGLView.m; sourceTree = "<group>"; };
 		628DEDF41AEA0D5F006CC06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62BD58F01AEA025A00D61FC1 /* TuSDKFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
-		7C1E9E8825A569EB00A198A7 /* TuViewsComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuViewsComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C75275C25AD76580031CC10 /* TuSDKPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C75275E25AD76620031CC10 /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C75276225AD7C2D0031CC10 /* TuSDKPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C8ECA8825CA85D300A7BF0B /* TuSDKPulseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNewCameraComponent.m; sourceTree = "<group>"; };
 		B88106EB24907C3500CD4448 /* CustomizedNewCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNewCameraComponent.h; sourceTree = "<group>"; };
 		B88106EF24907C5500CD4448 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -216,9 +205,6 @@
 		B881072524908D8300CD4448 /* CameraMoreMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraMoreMenuView.m; sourceTree = "<group>"; };
 		B881072724908DC200CD4448 /* VerticalMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMenuView.h; sourceTree = "<group>"; };
 		B881072824908DC200CD4448 /* VerticalMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMenuView.m; sourceTree = "<group>"; };
-		B881977925EE85F20085DD9C /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88198B425EEBEB80085DD9C /* TuSDKGeeV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKGeeV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8819AAE25EEC25B0085DD9C /* TuViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8819AB825EED2020085DD9C /* TuViews.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuViews.framework; sourceTree = "<group>"; };
 		B8819AB925EED2020085DD9C /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = "<group>"; };
 		B8819ABA25EED2020085DD9C /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
@@ -273,24 +259,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8819AAF25EEC25B0085DD9C /* TuViews.framework in Frameworks */,
 				B8819AC025EED2020085DD9C /* TuSDKGeeV1.framework in Frameworks */,
-				B88198B525EEBEB80085DD9C /* TuSDKGeeV2.framework in Frameworks */,
-				7C8ECA9325CA8DB600A7BF0B /* TuSDKPulse.framework in Frameworks */,
+				B8D30BD625EF5D5F00F4D81D /* TuSDKPulse.framework in Frameworks */,
 				B8819ABE25EED2020085DD9C /* TuViews.framework in Frameworks */,
-				7C8ECA9125CA8D9300A7BF0B /* TuSDKPulseFilter.framework in Frameworks */,
-				B8819ABF25EED2020085DD9C /* TuSDKPulseFilter.framework in Frameworks */,
 				D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */,
 				D752E7C923138E88001C0B8A /* libresolv.9.tbd in Frameworks */,
-				B881977C25EE9A330085DD9C /* TuSDKGeeV1.framework in Frameworks */,
 				F836C4021EFB66B400F82ABD /* SystemConfiguration.framework in Frameworks */,
 				F836C4001EFB66A800F82ABD /* Security.framework in Frameworks */,
 				F836C3FE1EFB66A100F82ABD /* libz.1.2.5.tbd in Frameworks */,
-				B8819AC325EED2020085DD9C /* TuSDKPulseCore.framework in Frameworks */,
-				7C8ECA9425CA8E1800A7BF0B /* TuSDKPulseCore.framework in Frameworks */,
+				B8D30BBB25EF2B5000F4D81D /* TuSDKPulseCore.framework in Frameworks */,
 				B8819AE525EED7620085DD9C /* TuCamera.framework in Frameworks */,
+				B8D30BD425EF5D5C00F4D81D /* TuSDKPulseFilter.framework in Frameworks */,
 				33A6771E1D87EBE000107DC7 /* Accelerate.framework in Frameworks */,
-				B8819AC225EED2020085DD9C /* TuSDKPulse.framework in Frameworks */,
 				F836C3FC1EFB669000F82ABD /* Bugly.framework in Frameworks */,
 				B8819AC125EED2020085DD9C /* TuSDKGeeV2.framework in Frameworks */,
 				62165F111BCCC22C00AD6279 /* Photos.framework in Frameworks */,
@@ -447,9 +427,6 @@
 		62235EA619FE45B700F05DA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8819AAE25EEC25B0085DD9C /* TuViews.framework */,
-				B88198B425EEBEB80085DD9C /* TuSDKGeeV2.framework */,
-				B881977925EE85F20085DD9C /* TuSDKGeeV1.framework */,
 				33A65C9D1D864B0000107DC7 /* Accelerate.framework */,
 				F836C3FB1EFB669000F82ABD /* Bugly.framework */,
 				D752E7C823138E88001C0B8A /* libresolv.9.tbd */,
@@ -457,12 +434,7 @@
 				62165F101BCCC22C00AD6279 /* Photos.framework */,
 				F836C3FF1EFB66A800F82ABD /* Security.framework */,
 				F836C4011EFB66B400F82ABD /* SystemConfiguration.framework */,
-				7C75276225AD7C2D0031CC10 /* TuSDKPulse.framework */,
-				7C8ECA8825CA85D300A7BF0B /* TuSDKPulseCore.framework */,
-				7C75275E25AD76620031CC10 /* TuSDKPulseFilter.framework */,
-				7C1E9E8825A569EB00A198A7 /* TuViewsComponent.framework */,
 				D723EC6823320EA800C500A1 /* WebKit.framework */,
-				7C75275C25AD76580031CC10 /* TuSDKPulse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -661,7 +633,7 @@
 				62235E7519FE41FA00F05DA6 /* Sources */,
 				62235E7619FE41FA00F05DA6 /* Frameworks */,
 				62235E7719FE41FA00F05DA6 /* Resources */,
-				62703D911B9C03F9000C3614 /* Embed Frameworks */,
+				B8D30BBA25EF2B3000F4D81D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -985,6 +957,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK/**",
+					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "TuSDKDemo/TuSDKDemo-Prefix.pch";
@@ -1020,7 +993,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK/**",
+					"\"$(SRCROOT)/TuSDKDemo/Resources/TuSDK\"",
+					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_OPTIMIZATION_LEVEL = 0;

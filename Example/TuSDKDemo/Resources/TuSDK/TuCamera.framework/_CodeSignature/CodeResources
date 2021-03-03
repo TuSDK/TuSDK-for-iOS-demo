@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		Wv4ypaqDD/I3ML+3fS6rGmTZhYM=
+		yDZ/xdF86fudA4KXUOwmlv/V8us=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8nU9NOJVhuczIi6sxHzQ7bLpAIU=
+		cE8vjPv/awYx+AB0jDV44Yl8ey4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wv4ypaqDD/I3ML+3fS6rGmTZhYM=
+			yDZ/xdF86fudA4KXUOwmlv/V8us=
 			</data>
 			<key>hash2</key>
 			<data>
-			VCR25zEsbOQ831ZHmTMMBDbLBL00eUoh2uJqKlbHszU=
+			vAvBmD+jnGOe7aor2hoaXmvpZR1H7YOjbqvNmGA8Ep8=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
