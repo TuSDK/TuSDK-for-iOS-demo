@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setClearColor:(UIColor *)clearColor;
 - (BOOL)update:(TUPFPImage*) image;
+- (BOOL)update:(TUPFPImage*) image atRect:(CGRect) rect;
+
 
 @end
 

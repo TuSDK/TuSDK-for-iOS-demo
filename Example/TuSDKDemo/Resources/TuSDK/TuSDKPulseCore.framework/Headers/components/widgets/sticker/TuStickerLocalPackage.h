@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/components/widgets/sticker/TuStickerCategory.h>
-#import <TuSDKPulseCore/network/TuNKDownloadItem.h>
+#import "TuSDKPulseCore/components/widgets/sticker/TuStickerCategory.h"
+#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
 
 @class TuStickerLocalPackage;
 

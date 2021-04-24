@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) setNumber:(NSNumber*)number forKey:(NSString*)key;
 - (NSNumber*) getNumber:(NSString*)key;
-//- (NSNumber*) getNumber:(NSString*)key or:(NSNumber*)val;
+- (NSNumber*) getNumber:(NSString*)key or:(NSNumber*)val;
 
 
 - (BOOL) setIntNumber:(NSInteger)number forKey:(NSString*)key;
@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) setString:(NSString*)str forKey:(NSString*)key;
 - (NSString*) getString:(NSString*)key;
-//- (NSString*) getString:(NSString*)key or:(NSString*)val;
+- (NSString*) getString:(NSString*)key or:(NSString*)val;
 
 
 

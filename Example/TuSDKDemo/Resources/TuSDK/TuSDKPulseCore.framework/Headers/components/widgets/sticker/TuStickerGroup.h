@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <TuSDKPulseCore/components/widgets/sticker/TuSticker.h>
+#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
 
 /** 贴纸包 */
 @interface TuStickerGroup : TuDataJson

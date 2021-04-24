@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/tasks/TuLocation.h>
-#import <TuSDKPulseCore/core/TuFilterOption.h>
+#import "TuSDKPulseCore/tasks/TuLocation.h"
+#import "TuSDKPulseCore/core/TuFilterOption.h"
 //#import "components/widgets/sticker/TuSticker.h"
 //#import "components/widgets/smudge/TuBrush.h"
 

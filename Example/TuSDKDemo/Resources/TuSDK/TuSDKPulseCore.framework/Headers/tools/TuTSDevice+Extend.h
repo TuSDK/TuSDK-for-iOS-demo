@@ -240,6 +240,11 @@ typedef enum : NSUInteger {
 + (BOOL)lsqIsDeviceiPhoneX;
 
 /**
+ *  底部安全距离
+ */
++ (CGFloat)lsqSafeAreaBottom;
+
+/**
  *  Universally Unique Identifier 通用唯一识别码
  *
  *  @return 通用唯一识别码

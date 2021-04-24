@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/network/core/TuNetworkOperation.h>
+#import "TuSDKPulseCore/network/core/TuNetworkOperation.h"
 
 @class TuNKNetworkArg;
 // 返回数据处理

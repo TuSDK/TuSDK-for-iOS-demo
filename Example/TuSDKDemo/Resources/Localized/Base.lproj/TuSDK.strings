@@ -440,3 +440,90 @@
 "lsq_camera_flash_on" = "开启";
 "lsq_camera_flash_off" = "关闭";
 "lsq_camera_flash" = "闪光灯";
+
+
+//3.4.6 新相机滤镜
+"lsq_filter_group_Sharp_Image" = "锐利";
+"lsq_filter_group_Scenery_Image" = "风景";
+"lsq_filter_group_Food_Image" = "美食";
+"lsq_filter_group_Portrait_Image" = "人像";
+
+    
+//锐利
+"lsq_filter_Sharp_Orange" = "橙";
+"lsq_filter_Sharp_Black" = "黑";
+"lsq_filter_Sharp_History" = "历史";
+"lsq_filter_Sharp_Red" = "红";
+"lsq_filter_Sharp_Neon" = "霓虹";
+"lsq_filter_Sharp_Ash" = "茶灰";
+"lsq_filter_Sharp_Pink" = "粉";
+"lsq_filter_Sharp_Past" = "往事";
+"lsq_filter_Sharp_Otimes" = "旧时代";
+"lsq_filter_Sharp_Quiet" = "幽静";
+"lsq_filter_Sharp_Mottled" = "斑驳";
+"lsq_filter_Sharp_Messy" = "杂乱";
+"lsq_filter_Sharp_Imprint" = "印记";
+"lsq_filter_Sharp_Nostalgia" = "怀旧";
+"lsq_filter_Sharp_Dream" = "梦幻";
+"lsq_filter_Sharp_Contrast" = "反差";
+"lsq_filter_Sharp_Dark" = "暗夜";
+
+//风景
+"lsq_filter_Scenery_Withered" = "凋零";
+"lsq_filter_Scenery_Grace" = "优雅";
+"lsq_filter_Scenery_Sunset" = "晚霞";
+"lsq_filter_Scenery_Sunrise" = "日出";
+"lsq_filter_Scenery_Lautumn" = "晚秋";
+"lsq_filter_Scenery_Silent" = "寂静";
+"lsq_filter_Scenery_Film" = "电影";
+"lsq_filter_Scenery_City" = "城市";
+"lsq_filter_Scenery_Afternoon" = "午后";
+"lsq_filter_Scenery_Birch" = "白桦";
+"lsq_filter_Scenery_Blue" = "净蓝";
+"lsq_filter_Scenery_Picnic" = "野餐";
+"lsq_filter_Scenery_Tale" = "童话";
+"lsq_filter_Scenery_Innocence" = "童真";
+"lsq_filter_Scenery_Izu" = "伊豆";
+"lsq_filter_Scenery_Fresh" = "清新";
+"lsq_filter_Scenery_Rain" = "冷雨";
+"lsq_filter_Scenery_Flower" = "花海";
+"lsq_filter_Scenery_SNight" = "静夜";
+
+//美食
+"lsq_filter_Food_Lime" = "青柠";
+"lsq_filter_Food_Mangosteen" = "山竹";
+"lsq_filter_Food_Honey" = "蜜糖";
+"lsq_filter_Food_Peach" = "蜜桃";
+"lsq_filter_Food_Caramel" = "焦糖";
+"lsq_filter_Food_Whisky" = "威士忌";
+"lsq_filter_Food_Light" = "淡酒";
+"lsq_filter_Food_Lemon" = "柠檬";
+"lsq_filter_Food_Delicious" = "美味";
+
+//人像
+"lsq_filter_Portrait_Desserts" = "甜点";
+"lsq_filter_Portrait_Fog" = "水雾";
+"lsq_filter_Portrait_Sweet" = "甜系";
+"lsq_filter_Portrait_Warm" = "温暖";
+"lsq_filter_Portrait_Candy" = "糖果";
+"lsq_filter_Portrait_Milk" = "牛奶";
+"lsq_filter_Portrait_Dawn" = "晨光";
+"lsq_filter_Portrait_Texture" = "质感";
+"lsq_filter_Portrait_Cream" = "奶油";
+"lsq_filter_Portrait_Dusk" = "黄昏";
+"lsq_filter_Portrait_Ruddy" = "红润";
+"lsq_filter_Portrait_Icream" = "冰淇淋";
+"lsq_filter_Portrait_Rosy" = "粉嫩";
+"lsq_filter_Portrait_Indifference" = "冷淡";
+"lsq_filter_Portrait_Soda" = "苏打";
+"lsq_filter_Portrait_Retro" = "复古";
+"lsq_filter_Portrait_Bright" = "光洁";
+"lsq_filter_Portrait_Pure" = "清纯";
+"lsq_filter_Portrait_First" = "初见";
+"lsq_filter_Portrait_Cherry" = "樱桃";
+"lsq_filter_Portrait_Bellflower" = "桔梗";
+"lsq_filter_Portrait_Spring" = "春天";
+"lsq_filter_Portrait_Moisten" = "水润";
+"lsq_filter_Portrait_Clear" = "清澈";
+"lsq_filter_Portrait_Pale" = "白皙";
+"lsq_filter_Portrait_Natural" = "自然";

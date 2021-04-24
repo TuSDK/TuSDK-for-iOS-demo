@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
-#import <TuSDKPulseCore/components/widgets/sticker/TuStickerText.h>
-#import <TuSDKPulseCore/tools/TuDataJson.h>
+#import "TuSDKPulseCore/components/widgets/sticker/TuStickerText.h"
+#import "TuSDKPulseCore/tools/TuDataJson.h"
 
 #pragma mark - TuStickerPositionInfo
 

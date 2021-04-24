@@ -15,23 +15,24 @@ NS_ASSUME_NONNULL_BEGIN
 // 滤镜类型
 typedef NS_ENUM(NSInteger, TuFilterModel)
 {
-    TuFilterModel_None            = 0,
-    TuFilterModel_Audio           = 1,    // 音乐
-    TuFilterModel_Comic           = 2,    // 漫画
-    TuFilterModel_Filter          = 3,    // 滤镜
-    TuFilterModel_MonsterFace     = 4,    // 哈哈镜 v3.2.1
-    TuFilterModel_Particle        = 5,    // 粒子
-    TuFilterModel_PlasticFace     = 6,    // 微整形 v3.2.0
-    TuFilterModel_Scene           = 7,    // 场景
-    TuFilterModel_SkinFace        = 8,    // 美肤 v3.2.0
-    TuFilterModel_Sticker         = 9,    // 贴纸
-    TuFilterModel_StickerAudio    = 10,   // MV特效
-    TuFilterModel_StickerFace     = 11,   // 人脸贴纸
-    TuFilterModel_Text            = 12,   // 文字
-    TuFilterModel_Transition      = 13,   // 转场特效 v3.4.1
-    TuFilterModel_ImageEdit       = 14,   // 图片编辑滤镜
-    TuFilterModel_CosmeticFace    = 15,   // 美妆
-    TuFilterModel_ReshapeFace     = 16,
+    TuFilterModel_None,
+    TuFilterModel_Audio,    // 音乐
+    TuFilterModel_Comic,    // 漫画
+    TuFilterModel_Filter,    // 滤镜
+    TuFilterModel_MonsterFace,    // 哈哈镜 v3.2.1
+    TuFilterModel_Particle,    // 粒子
+    TuFilterModel_PlasticFace,    // 微整形 v3.2.0
+    TuFilterModel_Scene,    // 场景
+    TuFilterModel_SkinFace,    // 美肤 v3.2.0
+    TuFilterModel_Sticker,    // 贴纸
+    TuFilterModel_StickerAudio,   // MV特效
+    TuFilterModel_StickerFace,   // 人脸贴纸
+    TuFilterModel_Text,   // 文字
+    TuFilterModel_Transition,   // 转场特效 v3.4.1
+    TuFilterModel_ImageEdit,   // 图片编辑滤镜
+    TuFilterModel_CosmeticFace,   // 美妆
+    TuFilterModel_ReshapeFace,
+    TuFilterModel_Ratio,
 
 };
 

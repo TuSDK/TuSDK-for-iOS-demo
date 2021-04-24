@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
-#import <TuSDKPulseCore/tools/TuDataJson.h>
+#import "TuSDKPulseCore/tools/TuDataJson.h"
 
 /**
  *  贴纸文字类型

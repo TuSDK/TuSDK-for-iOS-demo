@@ -38,7 +38,7 @@
  用于编辑文字的文字域
  */
 @property (nonatomic, strong) UITextView *textView;
-
+@property(nonatomic, assign) BOOL isMove;
 @end
 
 @implementation BubbleSampleController
@@ -122,6 +122,7 @@
     BOOL ret = [_filterPipe addFilter:bubbleText at:bubble_Index];
     
     if (ret) {
+        self.isMove = NO;
         [self updateBubbleImage];
         
         TUPFPBubbleTextFilter_PropertyBuilder *builder = [[TUPFPBubbleTextFilter_PropertyBuilder alloc] init];
@@ -147,6 +148,7 @@
         filterInfo.bubbleIndex = bubble_Index;
         
         _bubbleView.posInfo = filterInfo;
+        
         [_bubbleView appendBubbleSticker:_bubbleImage];
     }
 
@@ -187,7 +189,7 @@
     [_bottomBar.cancelButton addTouchUpInsideTarget:self action:@selector(lsqBackActionHadAnimated)];
     [_bottomBar.completeButton addTouchUpInsideTarget:self action:@selector(onImageCompleteAtion)];
     
-    NSArray *array = @[@"标签", @"粉色心", @"气泡"];
+    NSArray *array = @[@"message", @"带劲", @"快乐水"];
     for (int i = 0; i < array.count; i++) {
         
         NSString *imageName = [array[i] stringByAppendingString:@".png"];
@@ -195,7 +197,7 @@
         bubbleBtn.frame = CGRectMake(i * 90, [self.view lsqGetSizeHeight] - 100 - safeBottom, 80, 40);
         [bubbleBtn setImage:[UIImage imageNamed:imageName] forState:0];
         bubbleBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        bubbleBtn.tag = i + 1;
+        bubbleBtn.tag = i + 5;
         [bubbleBtn setTitleColor:[UIColor redColor] forState:0];
         [bubbleBtn addTarget:self action:@selector(addBubble:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:bubbleBtn];
@@ -239,7 +241,9 @@
     UIImage *inputImage = [UIImage imageNamed:@"sample_photo.jpg"];
     TUPFPImage *image = [[TUPFPImage alloc]initWithUIImage:inputImage];
     TUPFPImage *outputImage = [_filterPipe process:image];
-    _bubbleImage = [outputImage getUIImage];
+    if (!self.isMove) {
+        _bubbleImage = [outputImage getUIImage];
+    }
     
     bool ret = [_displayView update:outputImage];
 }
@@ -325,7 +329,7 @@
     builder.rotate = filterInfo.rotate;
     builder.texts = filterInfo.texts;
     bool ret = [bubbleFilter setProperty:builder.makeProperty forKey:TUPFPBubbleTextFilter_PROP_PARAM];
-
+    self.isMove = YES;
     [self updateBubbleImage];
 }
 
@@ -374,20 +378,18 @@
 - (void)textViewDidChange:(UITextView *)textView
 {
     NSString *text = textView.text;
+    NSString *lastText = _currentTexts[_selectIndex];
+    
+    if ([lastText isEqualToString:text]) {
+        return;
+    }
     NSMutableArray *builderTexts = [NSMutableArray arrayWithArray:_currentTexts];
     [builderTexts replaceObjectAtIndex:_selectIndex withObject:text];
-    
-    _currentBuilder.texts = [builderTexts copy];
+    _currentTexts = [builderTexts copy];
+    _currentBuilder.texts = _currentTexts;
     [self reloadBubbleTextSticker:_currentBuilder];
 }
 
-/**
- 编辑文本框内容改变处理
- */
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;{
-    
-    return YES;
-}
 
 - (UITextView *)textView {
     if (!_textView) {

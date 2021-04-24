@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/tools/TuDataJson.h>
+#import "TuSDKPulseCore/tools/TuDataJson.h"
 
 #pragma mark - TuNKImageColorArgument
 /**

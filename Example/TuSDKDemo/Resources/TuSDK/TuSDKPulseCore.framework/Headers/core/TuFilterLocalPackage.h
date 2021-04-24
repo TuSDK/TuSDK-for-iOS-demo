@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
-#import <TuSDKPulseCore/core/TuFilterOption.h>
-#import <TuSDKPulseCore/core/TuFilterGroup.h>
-#import <TuSDKPulseCore/network/TuNKDownloadItem.h>
+#import "TuSDKPulseCore/core/TuFilterOption.h"
+#import "TuSDKPulseCore/core/TuFilterGroup.h"
+#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
 
 /**
  *  默认滤镜代号

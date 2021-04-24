@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		dQ4esGu7iJuevLDQrgBVTUiSq74=
+		</data>
+		<key>Headers/.DS_Store</key>
+		<data>
+		LnbOMurfpjW3KUepRrxP0oNx3Wg=
+		</data>
 		<key>Headers/TuSDKPulseCore.h</key>
 		<data>
 		fbf2D2uYhqh7Oczc5zh+ZVnn5q8=
@@ -104,6 +112,10 @@
 		<data>
 		z6NIcj0q4IN1PPx/4dpfwg4ljGM=
 		</data>
+		<key>Headers/cx/.DS_Store</key>
+		<data>
+		64yGzVD7ne95e4qEqha/DL2NqGc=
+		</data>
 		<key>Headers/cx/platform/SelesIOS.h</key>
 		<data>
 		MnbTSu8dQ6KzhwfXBS2sFEZKdWs=
@@ -130,7 +142,7 @@
 		</data>
 		<key>Headers/cx/seles/extend/SelesParameters.h</key>
 		<data>
-		hf3JSW6sRvlm5qwlhT+/pl3y6w8=
+		9X/Qx0P/pIi9ByTwaR7k/ooKvcI=
 		</data>
 		<key>Headers/cx/seles/extend/TuDefindConfigs.h</key>
 		<data>
@@ -139,6 +151,10 @@
 		<key>Headers/cx/utils/TMacUtils.h</key>
 		<data>
 		b4pfMmldPQ0hC0iGN7XXOoxD258=
+		</data>
+		<key>Headers/network/.DS_Store</key>
+		<data>
+		0UVtZGbAIir8BdhkwpoeEpbIe20=
 		</data>
 		<key>Headers/network/TuNKDownloadAdapter.h</key>
 		<data>
@@ -278,7 +294,7 @@
 		</data>
 		<key>Headers/tools/TuTSDevice+Extend.h</key>
 		<data>
-		g/PPT0OSP5Q6WdG5znGYtMBDFWU=
+		c+Ow6qES49dCC6NZg2VHnjHf+9o=
 		</data>
 		<key>Headers/tools/TuTSDeviceSettings.h</key>
 		<data>
@@ -354,7 +370,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AMXGm0Cab77PZl2CcTH6ma+0aoc=
+		2RfdnGhQ/W3knV/1li0b9iUHSTc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -708,11 +724,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hf3JSW6sRvlm5qwlhT+/pl3y6w8=
+			9X/Qx0P/pIi9ByTwaR7k/ooKvcI=
 			</data>
 			<key>hash2</key>
 			<data>
-			JwmVspFkE7tQH440WUpUrjZBUxIlXwdlgHf6CzIHnII=
+			7A4+entGWta46vwZIodk/V/awHU4WWqutP1DzuluPL8=
 			</data>
 		</dict>
 		<key>Headers/cx/seles/extend/TuDefindConfigs.h</key>
@@ -1115,11 +1131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g/PPT0OSP5Q6WdG5znGYtMBDFWU=
+			c+Ow6qES49dCC6NZg2VHnjHf+9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Jg+ymFXs+2YSmlxLREcIASJryFxpkd6CqoYPoqLiiY=
+			z2TSUxcDj4tmcqwHQesD+ZApZ09bSruiFkWfkfBl/dY=
 			</data>
 		</dict>
 		<key>Headers/tools/TuTSDeviceSettings.h</key>

@@ -26,8 +26,8 @@
 //  Modified by Clear Hu on 15/2/3.
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/network/core/TuNetworkOperation.h>
-#import <TuSDKPulseCore/network/core/TuNetworkReachability.h>
+#import "TuSDKPulseCore/network/core/TuNetworkOperation.h"
+#import "TuSDKPulseCore/network/core/TuNetworkReachability.h"
 
 #define TUSDKNETWORKCACHE_DEFAULT_COST 10
 #define TUSDKNETWORKCACHE_DEFAULT_DIRECTORY @"TuSdkCache"

@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //pulse::Property*
 - (BOOL) unwrap:(void*)impl;
+- (NSString *)toString;
 
 
 

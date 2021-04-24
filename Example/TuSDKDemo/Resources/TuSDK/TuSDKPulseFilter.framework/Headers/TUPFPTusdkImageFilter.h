@@ -19,6 +19,16 @@ FOUNDATION_EXPORT NSString *const TUPFPTusdkImageFilter_PROP_PARAM;
 
 
 
+// --------------------------------------------------
+@interface TUPFPTusdkImageFilter_PropertyBuilder : NSObject
+
+@property(nonatomic) NSMutableDictionary<NSString*, NSNumber*> *propertyDic;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithProperty:(TUPProperty *)property;
+- (TUPProperty*)makeProperty;
+@end
+
+
 @interface TUPFPTusdkImageFilter_Type10PropertyBuilder : NSObject
 {
 }

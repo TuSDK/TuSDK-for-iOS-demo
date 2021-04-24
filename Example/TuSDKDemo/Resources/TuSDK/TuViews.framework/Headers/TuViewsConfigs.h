@@ -30,6 +30,10 @@ typedef NS_ENUM(NSInteger, lsqRecordError)
  */
 typedef NS_ENUM(NSInteger,lsqRecordState)
 {
+    lsqRecordStateNotStart,
+    
+    lsqRecordStatePrepare,
+
     /** 正在录制 */
     lsqRecordStateRecording,
     
@@ -41,10 +45,7 @@ typedef NS_ENUM(NSInteger,lsqRecordState)
     
     /** 保存完成 */
     lsqRecordStateSaveingCompleted,
-    
-    /** 正在合并视频 */
-    lsqRecordStateMerging,
-    
+        
     /** 已暂停 */
     lsqRecordStatePaused,
     
@@ -56,7 +57,7 @@ typedef NS_ENUM(NSInteger,lsqRecordState)
 /**
  录制模式
  */
-typedef NS_ENUM(NSInteger,lsqRecordMode)
+typedef NS_ENUM(NSInteger, lsqRecordMode)
 {
     /** 正常模式 */
     lsqRecordModeNormal,

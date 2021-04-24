@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 //#import "gpuimage/SLGPUImage.h"
-#import <TuSDKPulseCore/tools/TuDataJson.h>
+#import "TuSDKPulseCore/tools/TuDataJson.h"
 
 //#pragma mark - RuntimeTextureDelegate
 //

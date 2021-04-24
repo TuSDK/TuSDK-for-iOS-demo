@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <TuSDKPulseCore/tools/TuDataJson.h>
-#import <TuSDKPulseCore/core/TuFilterOption.h>
+#import "TuSDKPulseCore/tools/TuDataJson.h"
+#import "TuSDKPulseCore/core/TuFilterOption.h"
 
 // 分组滤镜类型ID
 const static int lsqGroupFilterTypeGeneral = 0;  // 普通滤镜

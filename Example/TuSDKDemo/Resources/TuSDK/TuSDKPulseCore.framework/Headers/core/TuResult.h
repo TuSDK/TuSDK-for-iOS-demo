@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <TuSDKPulseCore/tools/TuTSNSMutableDictionary+ImageMetadata.h>
-#import <TuSDKPulseCore/core/TuRatioType.h>
+#import "TuSDKPulseCore/tools/TuTSNSMutableDictionary+ImageMetadata.h"
+#import "TuSDKPulseCore/core/TuRatioType.h"
 //#import "core/TuSDKFilterWrap.h"
-#import <TuSDKPulseCore/tools/TuTSAsset.h>
-#import <TuSDKPulseCore/cx/seles/extend/TuDefindConfigs.h>
-#import <TuSDKPulseCore/cx/seles/extend/SelesParameters.h>
+#import "TuSDKPulseCore/tools/TuTSAsset.h"
+#import "TuSDKPulseCore/cx/seles/extend/TuDefindConfigs.h"
+#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
 
 // SDK处理结果
 @interface TuResult : NSObject

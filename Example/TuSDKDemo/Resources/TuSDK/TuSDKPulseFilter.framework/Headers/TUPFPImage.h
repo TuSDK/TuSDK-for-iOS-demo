@@ -21,8 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 //- (instancetype) initWithCVPixelBuffer:(CVPixelBufferRef) pb ;
 
-- (UIImage*) getUIImage;
+- (UIImage*)getUIImage;
 
+- (NSInteger)getWidth;
+- (NSInteger)getHeight;
 
 //GLuint
 - (GLuint) getTextureID;

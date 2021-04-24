@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <TuSDKPulseCore/tools/TuDataJson.h>
+#import "TuSDKPulseCore/tools/TuDataJson.h"
 /**
  *  下载类型
  */

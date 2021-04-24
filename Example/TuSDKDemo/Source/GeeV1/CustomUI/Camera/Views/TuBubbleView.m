@@ -446,6 +446,10 @@
 - (void)handlePanGestureTransAction:(CGPoint)nowPoint;
 {
     CGPoint center = self.center;
+    NSLog(@"tutu pan x:%f y:%f", nowPoint.x - _lastPotion.x, nowPoint.y - _lastPotion.y);
+    if (fabs(nowPoint.x - _lastPotion.x) < 0.2 || fabs(nowPoint.y - _lastPotion.y) < 0.2) {
+       //return;
+    }
     center.x += nowPoint.x - _lastPotion.x;
     center.y += nowPoint.y - _lastPotion.y;
     

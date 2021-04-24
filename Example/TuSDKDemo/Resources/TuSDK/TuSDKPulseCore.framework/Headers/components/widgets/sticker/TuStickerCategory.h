@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/components/widgets/sticker/TuStickerGroup.h>
+#import "TuSDKPulseCore/components/widgets/sticker/TuStickerGroup.h"
 
 /**
  *  贴纸分类扩展类型

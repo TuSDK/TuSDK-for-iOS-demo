@@ -11,8 +11,8 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <TuSDKPulseCore/network/core/TuNetworkImageCache.h>
-#import <TuSDKPulseCore/network/core/TuNetworkOperation.h>
+#import "TuSDKPulseCore/network/core/TuNetworkImageCache.h"
+#import "TuSDKPulseCore/network/core/TuNetworkOperation.h"
 
 typedef NS_OPTIONS(NSUInteger, TuWebImageOptions) {
     /**

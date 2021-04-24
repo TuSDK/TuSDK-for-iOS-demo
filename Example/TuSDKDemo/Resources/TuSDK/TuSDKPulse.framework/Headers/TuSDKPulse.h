@@ -6,16 +6,19 @@
 //  Copyright © 2020 tusdk.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <TuSDKPulse/TUPBase.h>
+#import <TuSDKPulse/TUPEngine.h>
 
-#import "TUPBase.h"
-#import "TUPEngine.h"
+#import <TuSDKPulse/TUPConfig.h>
+#import <TuSDKPulse/TUPProperty.h>
+#import <TuSDKPulse/TUPPermission.h>
 
-#import "TUPPlayer.h"
-#import "TUPProducer.h"
+#import <TuSDKPulse/TUPDisplayView.h>
 
-
-
-@interface TuSDKPulse : NSObject
-
-@end
+#import <TuSDKPulse/TUPPlayer.h>
+#import <TuSDKPulse/TUPProducer.h>
+#import <TuSDKPulse/TUPStreamInfo.h>
+#import <TuSDKPulse/TUPMediaInspector.h>
+#import <TuSDKPulse/TUPThumbnailMaker.h>
+#import <TuSDKPulse/TUPVideoPlayer.h>
+#import <TuSDKPulse/TUPTranscoder.h>

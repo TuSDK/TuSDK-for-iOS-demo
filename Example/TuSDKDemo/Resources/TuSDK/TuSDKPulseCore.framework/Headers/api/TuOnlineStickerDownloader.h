@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/network/TuNKDownloadItem.h>
-#import <TuSDKPulseCore/components/widgets/sticker/TuStickerGroup.h>
+#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
+#import "TuSDKPulseCore/components/widgets/sticker/TuStickerGroup.h"
 
 
 // 贴纸下载委托

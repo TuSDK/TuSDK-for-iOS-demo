@@ -37,6 +37,9 @@
 		625540C11A5650E200614A61 /* TuSDKPulse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 625540C01A5650E200614A61 /* TuSDKPulse.bundle */; };
 		626F59F0248E2DF600CFCA7D /* DefineCAEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */; };
 		628DEDF31AEA0D5F006CC06C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628DEDF51AEA0D5F006CC06C /* Localizable.strings */; };
+		A60D17D1261711C900F736A9 /* 带劲.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17CE261711C900F736A9 /* 带劲.png */; };
+		A60D17D2261711C900F736A9 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17CF261711C900F736A9 /* message.png */; };
+		A60D17D3261711C900F736A9 /* 快乐水.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17D0261711C900F736A9 /* 快乐水.png */; };
 		B88106EC24907C3500CD4448 /* CustomizedNewCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */; };
 		B881071024907C5500CD4448 /* ViewSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F224907C5500CD4448 /* ViewSlider.m */; };
 		B881071124907C5500CD4448 /* PageTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F424907C5500CD4448 /* PageTabbar.m */; };
@@ -58,9 +61,6 @@
 		B8819AC125EED2020085DD9C /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABB25EED2020085DD9C /* TuSDKGeeV2.framework */; };
 		B882C3DE25E8D49E00CAB51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */; };
 		B882C3E025E8D53100CAB51A /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DF25E8D53100CAB51A /* home.png */; };
-		B8973C2F25ECD30800017D05 /* 粉色心.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2C25ECD30800017D05 /* 粉色心.png */; };
-		B8973C3025ECD30800017D05 /* 标签.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2D25ECD30800017D05 /* 标签.png */; };
-		B8973C3125ECD30800017D05 /* 气泡.png in Resources */ = {isa = PBXBuildFile; fileRef = B8973C2E25ECD30800017D05 /* 气泡.png */; };
 		B8A4371525EB741C0015A5E9 /* TuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371425EB741C0015A5E9 /* TuBubbleView.m */; };
 		B8A4371825EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371725EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m */; };
 		B8D30BBB25EF2B5000F4D81D /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8819ABD25EED2020085DD9C /* TuSDKPulseCore.framework */; };
@@ -172,6 +172,9 @@
 		626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineCAEAGLView.m; sourceTree = "<group>"; };
 		628DEDF41AEA0D5F006CC06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62BD58F01AEA025A00D61FC1 /* TuSDKFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
+		A60D17CE261711C900F736A9 /* 带劲.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "带劲.png"; path = "Resources/Images/带劲.png"; sourceTree = "<group>"; };
+		A60D17CF261711C900F736A9 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Resources/Images/message.png; sourceTree = "<group>"; };
+		A60D17D0261711C900F736A9 /* 快乐水.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "快乐水.png"; path = "Resources/Images/快乐水.png"; sourceTree = "<group>"; };
 		B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNewCameraComponent.m; sourceTree = "<group>"; };
 		B88106EB24907C3500CD4448 /* CustomizedNewCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNewCameraComponent.h; sourceTree = "<group>"; };
 		B88106EF24907C5500CD4448 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -218,9 +221,6 @@
 		B8819AE425EED7620085DD9C /* TuCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuCamera.framework; sourceTree = "<group>"; };
 		B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B882C3DF25E8D53100CAB51A /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
-		B8973C2C25ECD30800017D05 /* 粉色心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "粉色心.png"; path = "Resources/Images/粉色心.png"; sourceTree = "<group>"; };
-		B8973C2D25ECD30800017D05 /* 标签.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "标签.png"; path = "Resources/Images/标签.png"; sourceTree = "<group>"; };
-		B8973C2E25ECD30800017D05 /* 气泡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "气泡.png"; path = "Resources/Images/气泡.png"; sourceTree = "<group>"; };
 		B8A4371325EB741C0015A5E9 /* TuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuBubbleView.h; sourceTree = "<group>"; };
 		B8A4371425EB741C0015A5E9 /* TuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuBubbleView.m; sourceTree = "<group>"; };
 		B8A4371625EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUPFPBubbleTextFilter_Info.h; sourceTree = "<group>"; };
@@ -446,10 +446,10 @@
 		62235EC019FF386500F05DA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A60D17CE261711C900F736A9 /* 带劲.png */,
+				A60D17D0261711C900F736A9 /* 快乐水.png */,
+				A60D17CF261711C900F736A9 /* message.png */,
 				B8819AB725EED2020085DD9C /* TuSDK */,
-				B8973C2D25ECD30800017D05 /* 标签.png */,
-				B8973C2C25ECD30800017D05 /* 粉色心.png */,
-				B8973C2E25ECD30800017D05 /* 气泡.png */,
 				B882C3DF25E8D53100CAB51A /* home.png */,
 				B882C3DD25E8D49E00CAB51A /* LaunchScreen.storyboard */,
 				02D1AB6D1CF17C9A00C8497D /* sample_watermark.png */,
@@ -689,10 +689,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8973C3125ECD30800017D05 /* 气泡.png in Resources */,
-				B8973C3025ECD30800017D05 /* 标签.png in Resources */,
-				B8973C2F25ECD30800017D05 /* 粉色心.png in Resources */,
 				F8E4855F1FB44C6100027176 /* iphonex_homepage_bg@3x.png in Resources */,
+				A60D17D1261711C900F736A9 /* 带劲.png in Resources */,
 				628DEDF31AEA0D5F006CC06C /* Localizable.strings in Resources */,
 				F816BA011EE8F0EC0058EE8B /* homepage_icon_tools@2x.png in Resources */,
 				F816B9FC1EE8F0EC0058EE8B /* homepage_icon_beauty@3x.png in Resources */,
@@ -705,8 +703,10 @@
 				F816B9FB1EE8F0EC0058EE8B /* homepage_icon_beauty@2x.png in Resources */,
 				F816B9FF1EE8F0EC0058EE8B /* homepage_icon_next@2x.png in Resources */,
 				B882C3E025E8D53100CAB51A /* home.png in Resources */,
+				A60D17D2261711C900F736A9 /* message.png in Resources */,
 				62235EEF19FF6B7300F05DA6 /* Images.xcassets in Resources */,
 				F816BA021EE8F0EC0058EE8B /* homepage_icon_tools@3x.png in Resources */,
+				A60D17D3261711C900F736A9 /* 快乐水.png in Resources */,
 				02D1AB671CEF2A0A00C8497D /* sample_photo.jpg in Resources */,
 				F816B9F81EE8F0EC0058EE8B /* homepage_bg@3x.png in Resources */,
 				F816B9FD1EE8F0EC0058EE8B /* homepage_icon_camera@2x.png in Resources */,
@@ -955,7 +955,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20201126;
+				CURRENT_PROJECT_VERSION = 20210318;
 				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -974,7 +974,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;
@@ -992,7 +992,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20201126;
+				CURRENT_PROJECT_VERSION = 20210318;
 				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1012,7 +1012,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;

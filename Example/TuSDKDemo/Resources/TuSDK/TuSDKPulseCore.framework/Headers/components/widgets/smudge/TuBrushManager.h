@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <TuSDKPulseCore/components/widgets/smudge/TuBrush.h>
+#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
 
 #pragma mark - TuBrushManager
 /**笔刷管理器*/

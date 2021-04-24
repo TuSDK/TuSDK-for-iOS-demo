@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		R0jy6bzQWdwtxBHkO4q8qEP7mVU=
+		</data>
 		<key>Headers/TUPFPAspectRatioFilter.h</key>
 		<data>
 		IC2v62wxerDzE4kKv2G/CPv9EeA=
@@ -30,7 +34,11 @@
 		</data>
 		<key>Headers/TUPFPDisplayView.h</key>
 		<data>
-		sxneudXs4+yvkdsAd0fsueh5uTk=
+		doTel18BxaGZqLjwGXYPj1gkoLU=
+		</data>
+		<key>Headers/TUPFPFileExporter.h</key>
+		<data>
+		bcLXxCJb8ZmbwR+fxNTnzML9+cs=
 		</data>
 		<key>Headers/TUPFPFilter.h</key>
 		<data>
@@ -38,11 +46,11 @@
 		</data>
 		<key>Headers/TUPFPImage.h</key>
 		<data>
-		z1SQC25HSnhfBgc22dY8FeZn2Xw=
+		j3qPOs5laA+0Haf8GSlSodp0uZs=
 		</data>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<data>
-		r0DlV/xB8kjdgqYG5VfLqArRQJo=
+		1NlHVTz2AAz4Qm+D81kBbaWVKm8=
 		</data>
 		<key>Headers/TUPFPTusdkBeautFaceV2Filter.h</key>
 		<data>
@@ -70,11 +78,15 @@
 		</data>
 		<key>Headers/TUPFPTusdkImageFilter.h</key>
 		<data>
-		qVIwzP3l0U+z39xrxx/ktY8AMI4=
+		wAdWbf1Gh3XEItJSBf0QOx5QUHo=
 		</data>
 		<key>Headers/TUPFPTusdkLiveStickerFilter.h</key>
 		<data>
 		3NSHx5qG4A0OXhlNlf5Qbma+G+E=
+		</data>
+		<key>Headers/TUPFPTusdkSceneFilter.h</key>
+		<data>
+		brm0PLYOO4U9R2DfyhZgyfIs7Yo=
 		</data>
 		<key>Headers/TUPFPTusdkStickerFilter.h</key>
 		<data>
@@ -102,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bh/8KCOLXn+7aj09yARIZ6rUyCo=
+		wx8mMTZ+TAg3EGa/q8AZBOMuAro=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -181,11 +193,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sxneudXs4+yvkdsAd0fsueh5uTk=
+			doTel18BxaGZqLjwGXYPj1gkoLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TOiTctr7sW+0Pj54icARqlzc5dn7ex10EZ/UUMFqBys=
+			d7Vc0kDbhF334ENjR3Qro4fEros0YJKr2cODjEbVxUk=
+			</data>
+		</dict>
+		<key>Headers/TUPFPFileExporter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bcLXxCJb8ZmbwR+fxNTnzML9+cs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Tyimnnh/qUFhB/E9pSEZZrKbfSygGXRizjd54HevXjg=
 			</data>
 		</dict>
 		<key>Headers/TUPFPFilter.h</key>
@@ -203,22 +226,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z1SQC25HSnhfBgc22dY8FeZn2Xw=
+			j3qPOs5laA+0Haf8GSlSodp0uZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			PBQAttr1z38Jf6HefbRZHueAIqdmwXqkfFOudt+9pYc=
+			cInakJ/UiyGiCHcHLHbAlK2GYC/0HTs+XPHKAqiNPIo=
 			</data>
 		</dict>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r0DlV/xB8kjdgqYG5VfLqArRQJo=
+			1NlHVTz2AAz4Qm+D81kBbaWVKm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EFrxCEQAQKJYs9Qwc76yUd8TpWkqLFd+pY6TZeOkQhs=
+			aC4G11V8Xni6T4glSwaPLuiZaChl5MARovn+wvYBKGc=
 			</data>
 		</dict>
 		<key>Headers/TUPFPTusdkBeautFaceV2Filter.h</key>
@@ -291,11 +314,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qVIwzP3l0U+z39xrxx/ktY8AMI4=
+			wAdWbf1Gh3XEItJSBf0QOx5QUHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VakRyEz3chyosX7ZHLXwhW3v3eK6bktiP8FlaILWvK8=
+			yji4SLLzExhP75f/eaz1UYmBZGeqMFZ/5Xwr611qto0=
 			</data>
 		</dict>
 		<key>Headers/TUPFPTusdkLiveStickerFilter.h</key>
@@ -307,6 +330,17 @@
 			<key>hash2</key>
 			<data>
 			4IZGklU5f/0x9iaXd1Dc/HXIK7ov8sP921of84DRvqQ=
+			</data>
+		</dict>
+		<key>Headers/TUPFPTusdkSceneFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			brm0PLYOO4U9R2DfyhZgyfIs7Yo=
+			</data>
+			<key>hash2</key>
+			<data>
+			V4GSQjgF3RxN5or4rnmaz6t+Iltd12necUW1uSfEVzU=
 			</data>
 		</dict>
 		<key>Headers/TUPFPTusdkStickerFilter.h</key>
