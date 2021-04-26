@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/tools/TuTSAsset.h>
+#import "TuSDKPulseCore/tools/TuTSAsset.h"
 
 /**
  *  相片创建时间倒序分组

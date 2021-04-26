@@ -19,7 +19,6 @@
 #import "TuSDKPulseCore/components/widgets/sticker/TuStickerLocalPackage.h"
 
 #define btnW 36
-#define margin 10
 @interface TuBubbleItemView()<UIGestureRecognizerDelegate, UITextFieldDelegate>
 {
     // 图片视图边缘距离
@@ -158,11 +157,10 @@
 - (void)resetImageEdge;
 {
     // 图片视图边缘距离
-    
-    _mImageEdge.left = 3;
-    _mImageEdge.right = 3;
-    _mImageEdge.top = 3;
-    _mImageEdge.bottom = 3;
+    _mImageEdge.left = ceilf(_cancelButton.lsqGetSizeWidth * 0.5f);
+    _mImageEdge.right = ceilf(_turnButton.lsqGetSizeWidth * 0.5f);
+    _mImageEdge.top = ceilf(_cancelButton.lsqGetSizeHeight * 0.5f);
+    _mImageEdge.bottom = ceilf(_turnButton.lsqGetSizeHeight * 0.5f);
     
     // 内容视图边缘距离
     _mCMargin.width = _mImageEdge.left + _mImageEdge.right;
@@ -189,14 +187,10 @@
         for (int i = 0; i < rects.count; i++) {
             CGRect rect = [rects[i] CGRectValue];
             
-            CGFloat minX = rect.origin.x * (CGRectGetWidth(_imageView.frame) + margin + btnW / 2);
-            CGFloat minY = rect.origin.y * (CGRectGetHeight(_imageView.frame) + margin) + 5;
-            CGFloat width = rect.size.width * (CGRectGetWidth(_imageView.frame) - btnW - margin) - 5;
-            CGFloat height = rect.size.height * (CGRectGetHeight(_imageView.frame));
-            if (_mScale < 1) {
-                height = height * _mScale;
-            }
-            
+            CGFloat minX = rect.origin.x * (CGRectGetWidth(self.bounds) - btnW - 5);
+            CGFloat minY = rect.origin.y * (CGRectGetHeight(self.bounds) - btnW);
+            CGFloat width = rect.size.width * (CGRectGetWidth(self.bounds) - btnW - 5);
+            CGFloat height = rect.size.height * (CGRectGetHeight(self.bounds) - btnW);
             
             UILabel *textLabel = _textViews[i];
             textLabel.frame = CGRectMake(minX, minY, width, height);
@@ -241,7 +235,7 @@
     // 内容对角线长度
     _mCHypotenuse = [TuTSMath distanceOfPointX1:0 y1:0 pointX2:_mCSize.width y2:_mCSize.height];
     // 默认视图长宽
-    _mDefaultViewSize = CGSizeMake(_mCSize.width + _mCMargin.width, _mCSize.height + _mCMargin.width);
+    _mDefaultViewSize = CGSizeMake(_mCSize.width, _mCSize.height + _mCMargin.width / 2);
     // 最大缩放比例
     _mMaxScale = MIN((self.superview.lsqGetSizeWidth - _mCMargin.width) / _mCSize.width,
                      (self.superview.lsqGetSizeHeight - _mCMargin.height) / _mCSize.height);
@@ -256,6 +250,7 @@
     CGPoint origin = self.lsqGetOrigin;
     origin.x = (self.superview.lsqGetSizeWidth - _mDefaultViewSize.width) * _posInfo.posX;
     origin.y = (self.superview.lsqGetSizeHeight - _mDefaultViewSize.height) * _posInfo.posY;
+    
     // 设置居中
     [self lsqSetOrigin:origin];
     
@@ -278,11 +273,11 @@
     for (int i = 0; i < rects.count; i++) {
         CGRect rect = [rects[i] CGRectValue];
         
-        CGFloat minX = rect.origin.x * (CGRectGetWidth(self.bounds) + margin + btnW / 2);
-        CGFloat minY = rect.origin.y * (CGRectGetHeight(self.bounds) + margin) + 3;
-        CGFloat width = rect.size.width * (CGRectGetWidth(self.bounds) - btnW - margin) - 5;
-        CGFloat height = rect.size.height * (CGRectGetHeight(self.bounds) - margin);
-                
+        CGFloat minX = rect.origin.x * (CGRectGetWidth(self.bounds) - btnW - 5);
+        CGFloat minY = rect.origin.y * (CGRectGetHeight(self.bounds) - btnW);
+        CGFloat width = rect.size.width * (CGRectGetWidth(self.bounds) - btnW - 5);
+        CGFloat height = rect.size.height * (CGRectGetHeight(self.bounds) - btnW);
+        
         
         UILabel *textLabel = [[UILabel alloc] init];
         textLabel.tag = i;
@@ -779,7 +774,7 @@
     
     _bubbleImageView.frame = CGRectMake((viewWidth - imageWidth) / 2, (viewHeight - imageHeight) / 2, imageWidth, imageHeight);
     
-    bubbleFrame = CGRectMake(imageWidth * _posInfo.posX - bubbleWidth / 2, imageHeight * _posInfo.posY - bubbleHeight / 2 - margin / 2, bubbleWidth, bubbleHeight + margin);
+    bubbleFrame = CGRectMake(imageWidth * _posInfo.posX - bubbleWidth / 2, imageHeight * _posInfo.posY - bubbleHeight / 2, bubbleWidth, bubbleHeight);
     
     _posInfo.bubbleImageFrame = _bubbleImageView.frame;
     UIView *view = [self buildBubbleItemView:bubbleFrame];

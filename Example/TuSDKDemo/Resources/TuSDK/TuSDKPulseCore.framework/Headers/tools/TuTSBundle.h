@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/tools/TuTSImage+Extend.h>
-#import <TuSDKPulseCore/tools/TuTSAVAudioPlayer+Extend.h>
-#import <TuSDKPulseCore/tools/TuICView+Extend.h>
+#import "TuSDKPulseCore/tools/TuTSImage+Extend.h"
+#import "TuSDKPulseCore/tools/TuTSAVAudioPlayer+Extend.h"
+#import "TuSDKPulseCore/tools/TuICView+Extend.h"
 
 /** SDK资源文件包 (TuSDK.bundle) */
 extern NSString * const lsqPulseSdkBundle;

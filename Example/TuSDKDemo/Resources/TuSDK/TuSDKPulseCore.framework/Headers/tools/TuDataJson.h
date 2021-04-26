@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TuSDKPulseCore/tools/TuTSString+Extend.h>
+#import "TuSDKPulseCore/tools/TuTSString+Extend.h"
 
 /**
  *  Json数据

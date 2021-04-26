@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuBrush.h"
-#import <TuSDKPulseCore/network/TuNKDownloadItem.h>
+#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
 
 /**
  *  橡皮擦笔刷代号

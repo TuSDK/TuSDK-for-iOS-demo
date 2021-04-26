@@ -440,7 +440,7 @@
 "lsq_camera_flash" = "閃光燈";
 
 
-//3.4.6 新相机滤镜
+//4.0.0 新相机滤镜
 "lsq_filter_group_Sharp_Image" = "銳利";
 "lsq_filter_group_Scenery_Image" = "風景";
 "lsq_filter_group_Food_Image" = "美食";

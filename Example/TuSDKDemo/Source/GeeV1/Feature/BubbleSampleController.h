@@ -8,7 +8,7 @@
 
 #import "SampleBase.h"
 #import "TuViews/TuResultViewController.h"
-#import "TuSDKGeeV1/TuSDKGeeV1Import.h"
+#import <TuSDKGeeV1/TuSDKGeeV1Import.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BubbleSampleController : TuResultViewController

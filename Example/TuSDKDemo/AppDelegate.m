@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <TuSDKPulseCore/TuSDKPulseCore.h>
+#import "TuSDKPulseCore/TuSDKPulseCore.h"
 #import "DemoRootViewController.h"
 #import <TuSDKPulse/TUPEngine.h>
 

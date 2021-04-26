@@ -6,11 +6,11 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		dQ4esGu7iJuevLDQrgBVTUiSq74=
+		83X+WV1fLqOTDW79wehEggHTnMU=
 		</data>
 		<key>Headers/.DS_Store</key>
 		<data>
-		LnbOMurfpjW3KUepRrxP0oNx3Wg=
+		dPZrWo4yzhyDXDMaRgguDTNQBMY=
 		</data>
 		<key>Headers/TuSDKPulseCore.h</key>
 		<data>
@@ -112,10 +112,6 @@
 		<data>
 		z6NIcj0q4IN1PPx/4dpfwg4ljGM=
 		</data>
-		<key>Headers/cx/.DS_Store</key>
-		<data>
-		64yGzVD7ne95e4qEqha/DL2NqGc=
-		</data>
 		<key>Headers/cx/platform/SelesIOS.h</key>
 		<data>
 		MnbTSu8dQ6KzhwfXBS2sFEZKdWs=
@@ -142,7 +138,7 @@
 		</data>
 		<key>Headers/cx/seles/extend/SelesParameters.h</key>
 		<data>
-		9X/Qx0P/pIi9ByTwaR7k/ooKvcI=
+		hf3JSW6sRvlm5qwlhT+/pl3y6w8=
 		</data>
 		<key>Headers/cx/seles/extend/TuDefindConfigs.h</key>
 		<data>
@@ -151,10 +147,6 @@
 		<key>Headers/cx/utils/TMacUtils.h</key>
 		<data>
 		b4pfMmldPQ0hC0iGN7XXOoxD258=
-		</data>
-		<key>Headers/network/.DS_Store</key>
-		<data>
-		0UVtZGbAIir8BdhkwpoeEpbIe20=
 		</data>
 		<key>Headers/network/TuNKDownloadAdapter.h</key>
 		<data>
@@ -294,7 +286,7 @@
 		</data>
 		<key>Headers/tools/TuTSDevice+Extend.h</key>
 		<data>
-		c+Ow6qES49dCC6NZg2VHnjHf+9o=
+		g/PPT0OSP5Q6WdG5znGYtMBDFWU=
 		</data>
 		<key>Headers/tools/TuTSDeviceSettings.h</key>
 		<data>
@@ -724,11 +716,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9X/Qx0P/pIi9ByTwaR7k/ooKvcI=
+			hf3JSW6sRvlm5qwlhT+/pl3y6w8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7A4+entGWta46vwZIodk/V/awHU4WWqutP1DzuluPL8=
+			JwmVspFkE7tQH440WUpUrjZBUxIlXwdlgHf6CzIHnII=
 			</data>
 		</dict>
 		<key>Headers/cx/seles/extend/TuDefindConfigs.h</key>
@@ -1131,11 +1123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c+Ow6qES49dCC6NZg2VHnjHf+9o=
+			g/PPT0OSP5Q6WdG5znGYtMBDFWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			z2TSUxcDj4tmcqwHQesD+ZApZ09bSruiFkWfkfBl/dY=
+			+Jg+ymFXs+2YSmlxLREcIASJryFxpkd6CqoYPoqLiiY=
 			</data>
 		</dict>
 		<key>Headers/tools/TuTSDeviceSettings.h</key>

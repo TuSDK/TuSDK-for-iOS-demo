@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <TuSDKPulseCore/tools/TuTSAsset.h>
+#import "TuSDKPulseCore/tools/TuTSAsset.h"
 
 /**
  *  系统相册授权回调

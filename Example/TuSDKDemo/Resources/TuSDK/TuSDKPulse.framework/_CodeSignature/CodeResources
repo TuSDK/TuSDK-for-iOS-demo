@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		mlLavyh5mSzlrSJOu4Y80NGtkSY=
+		MUq4iS0X96Pv6tFhzbEpXcNYV/E=
 		</data>
 		<key>Headers/TUPBase.h</key>
 		<data>
@@ -14,11 +14,7 @@
 		</data>
 		<key>Headers/TUPConfig.h</key>
 		<data>
-		uo6PEZl12vggdStxbqNZ0U8pHT0=
-		</data>
-		<key>Headers/TUPDispatchQueue.h</key>
-		<data>
-		BNbY7JI5IIscUChxOcHdk2CULzo=
+		0Fx96CTNGQ3+fixEoeHZXXJMBPU=
 		</data>
 		<key>Headers/TUPDisplayView.h</key>
 		<data>
@@ -46,7 +42,7 @@
 		</data>
 		<key>Headers/TUPProperty.h</key>
 		<data>
-		LCFzunMdYAv03VmYzvVWZVw2Pyg=
+		9ZZgymnKxUjwEL0vZpmOuYAiTxI=
 		</data>
 		<key>Headers/TUPStreamInfo.h</key>
 		<data>
@@ -70,7 +66,7 @@
 		</data>
 		<key>Headers/TuSDKPulse.h</key>
 		<data>
-		b8Dnyyl12q6x4EAFK/VmP293YdE=
+		hBnX3vaOmhXev+hjdGAZkEOwoGc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -98,22 +94,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uo6PEZl12vggdStxbqNZ0U8pHT0=
+			0Fx96CTNGQ3+fixEoeHZXXJMBPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			NsAVMKPPoZIA8c0qXwoEJKkrXQqq7vq1mg4KPnnGjiw=
-			</data>
-		</dict>
-		<key>Headers/TUPDispatchQueue.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BNbY7JI5IIscUChxOcHdk2CULzo=
-			</data>
-			<key>hash2</key>
-			<data>
-			xqfw41O5Q7EQqZX3QpQ6yusiYp8G1kbT7x9u41MPLCk=
+			QU5hwCH4jmMGvZ7Qmwl4ibHdwrLcHOvGP2Jp1JA9gv4=
 			</data>
 		</dict>
 		<key>Headers/TUPDisplayView.h</key>
@@ -186,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LCFzunMdYAv03VmYzvVWZVw2Pyg=
+			9ZZgymnKxUjwEL0vZpmOuYAiTxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2E7ZiPZEmxg1/rGXcnXVr5OZcxU4BfIShe01vqlB8F0=
+			n/zKRjPCuenLQZzWSLR8RzRk64jWZ/8rFnUe71icNzk=
 			</data>
 		</dict>
 		<key>Headers/TUPStreamInfo.h</key>
@@ -252,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b8Dnyyl12q6x4EAFK/VmP293YdE=
+			hBnX3vaOmhXev+hjdGAZkEOwoGc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GzpHbaRM9Kyho+8IoUR6/Gx/BO7KGDClB5Ml3gRzTR4=
+			f3SuhDN9jvFfajukCbLZGcIUbVhKhMTeSLGFDlIpPaY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

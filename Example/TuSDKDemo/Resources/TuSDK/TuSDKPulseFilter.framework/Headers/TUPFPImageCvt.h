@@ -8,8 +8,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TUPFPImage_CMSampleBufferCvt : NSObject
 
-@property (nonatomic) CGSize outputSize;
-
 - (instancetype) init;
 
 - (TUPFPImage* _Nullable) convert:(CMSampleBufferRef) sb;
