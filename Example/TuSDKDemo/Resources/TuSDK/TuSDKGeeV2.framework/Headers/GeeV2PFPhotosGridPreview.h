@@ -42,7 +42,7 @@
 /**
  *  照片排序字段 默认根据创建时间排序 ( lsqAssetSortKeyModificationDate 类型 iOS8以上可用)
  */
-@property (nonatomic,assign) lsqAssetSortKeyType photosSortKeyType;
+@property (nonatomic,assign) TuAssetSortKeyType photosSortKeyType;
 
 /**
  *  用户点击的图片的索引

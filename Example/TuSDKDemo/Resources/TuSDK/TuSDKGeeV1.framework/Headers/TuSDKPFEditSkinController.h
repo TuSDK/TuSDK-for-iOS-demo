@@ -30,6 +30,12 @@
 @property (nonatomic, strong) Class viewClazz;
 
 /**
+ * 一键美颜是否开启，默认为YES
+ * @return
+ */
+@property (nonatomic, assign) BOOL enableAutoSkin;
+
+/**
  一键美颜 0 - 1.0，默认 1.0
  
  @since v3.0.0

@@ -42,7 +42,7 @@
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  开启滤镜配置选项
@@ -173,7 +173,7 @@
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  行视图宽度

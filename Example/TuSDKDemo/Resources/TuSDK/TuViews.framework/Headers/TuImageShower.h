@@ -6,8 +6,8 @@
 //  Copyright © 2020 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKPulseCore/TuSDKPulseCore.h"
-
+//#import "TuSDKPulseCore/TuSDKPulseCore.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuImageShower
 @class SelesParameters;
 

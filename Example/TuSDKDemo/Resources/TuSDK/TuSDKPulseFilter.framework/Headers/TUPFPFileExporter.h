@@ -19,11 +19,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) int width;
 @property(nonatomic) int height;
 @property(nonatomic) double stretch; // 快慢速
-//@property(nonatomic) int framerate;
+@property(nonatomic) int framerate; // 采集帧率
 
 @property(nonatomic) int channels;
 @property(nonatomic) int sampleRate;
 @property(nonatomic) int pitchType; // 变声
+
+/// watermark image & position
+@property(nonatomic) UIImage* watermark;
+@property(nonatomic) int watermarkPosition; // default = -1(tr),  0 : tl, 1 : tr, 2 : bl, 3 : br
 
 
 @property(nonatomic, copy) NSString* savePath;

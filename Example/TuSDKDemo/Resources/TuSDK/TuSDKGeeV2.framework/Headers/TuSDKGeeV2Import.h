@@ -6,6 +6,6 @@
 //  Copyright © 2016年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKPulseCore/TuSDKPulseCore.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 //#import <TuSDK/TuSDK.h>
-#import "TuViews/TuViews.h"
+#import <TuViews/TuViews.h>

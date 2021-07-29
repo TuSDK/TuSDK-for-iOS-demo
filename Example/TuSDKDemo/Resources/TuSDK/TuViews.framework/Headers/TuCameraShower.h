@@ -6,8 +6,8 @@
 //  Copyright © 2020 tusdk.com. All rights reserved.
 //
 #import "TuCamera/TuCamera.h"
-#import "TuSDKPulseCore/TuSDKPulseCore.h"
-
+//#import "TuSDKPulseCore/TuSDKPulseCore.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 @class SelesParameters;
 
 /** 相机渲染接口 */

@@ -21,7 +21,7 @@
 /**
  *  选择笔刷尺寸按钮
  */
-- (void)onBrushSizeSelected:(lsqBrushSize)brushSize;
+- (void)onBrushSizeSelected:(TuSDKBrushSize)brushSize;
 @end
 
 /**
@@ -62,7 +62,7 @@
  *
  *  @param mBrushSize 笔刷粗细
  */
-- (void)setBrushSize:(lsqBrushSize)mBrushSize;
+- (void)setBrushSize:(TuSDKBrushSize)mBrushSize;
 
 @end
 
@@ -101,7 +101,7 @@
 /**
  *  默认的笔刷大小 (默认: lsqMediumBrush，中等粗细)
  */
-@property (nonatomic, assign) lsqBrushSize defaultBrushSize;
+@property (nonatomic, assign) TuSDKBrushSize defaultBrushSize;
 
 /**
  *  默认撤销的最大次数 (默认: 5)
@@ -125,7 +125,7 @@
  *
  *  @param mBrushSize 笔刷粗细
  */
-- (void)setBrushSize:(lsqBrushSize)mBrushSize;
+- (void)setBrushSize:(TuSDKBrushSize)mBrushSize;
 
 /**
  *  获取笔刷像素尺寸

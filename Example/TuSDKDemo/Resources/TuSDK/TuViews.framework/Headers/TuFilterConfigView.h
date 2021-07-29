@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSeekBar.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuFilterSeekbar
 // 滤镜配置拖动栏
 @interface TuFilterSeekbar : UIView<TuSeekBarDelegate>

@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TuImageResultController.h"
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrushManager.h"
-
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrushManager.h"
 #import "TuSmudgeImageViewWrap.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuSDKPFEditBrushControllerBase
 /**
  *  涂抹编辑控制器基础类

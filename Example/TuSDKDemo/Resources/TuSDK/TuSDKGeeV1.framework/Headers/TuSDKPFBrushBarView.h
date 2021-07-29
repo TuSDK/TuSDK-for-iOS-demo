@@ -109,6 +109,6 @@
  *
  *  @param mBrushSize 笔刷粗细
  */
-- (void)setBrushSize:(lsqBrushSize)mBrushSize;
+- (void)setBrushSize:(TuSDKBrushSize)mBrushSize;
 
 @end

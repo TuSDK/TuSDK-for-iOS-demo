@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "TuSDKPulseCore/TuSDKPulseCore.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #import "DemoRootViewController.h"
 #import <TuSDKPulse/TUPEngine.h>
 
 #import <Bugly/Bugly.h>
-
+//#ifdef DEBUG
+//#import <DoraemonKit/DoraemonManager.h>
+//#endif
 @interface AppDelegate ()
 
 @end
@@ -39,13 +41,15 @@
      */
     
     // 可选: 设置日志输出级别 (默认不输出)
-    [TuSDKPulseCore setLogLevel:lsqLogLevelDEBUG];
+    [TUCCore setLogLevel:TuLogLevelDEBUG];
     
     /**
      *  启动Bugly收集错误报告
      */
     [self startBugly];
-    
+//#ifdef DEBUG
+//    [[DoraemonManager shareInstance] install];
+//#endif
     /**
      *  初始化SDK，应用密钥是您的应用在 TuSDK 的唯一标识符。每个应用的包名(Bundle Identifier)、密钥、资源包(滤镜、贴纸等)三者需要匹配，否则将会报错。
      *
@@ -54,15 +58,15 @@
     
     // Attention ！！！！！！
     // ********************** 更换包名和秘钥之后，一定要去控制台打包替换资源文件 **********************
-    
-    [TuSDKPulseCore initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1"];
-    [TUPEngine Init:nil];
-
     /**
      *  指定开发模式,需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段
      *  如果一个应用对应多个包名，则可以使用这种方式来进行集成调试。
      */
-    // [TuSDK initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1" devType:@"debug"];
+    // [TUCCore initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1" devType:@"debug"];
+    [TUCCore initSdkWithAppKey:@"c7bd0a3cd850a734-04-ewdjn1"];
+    [TUPEngine Init:nil];
+
+    
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];

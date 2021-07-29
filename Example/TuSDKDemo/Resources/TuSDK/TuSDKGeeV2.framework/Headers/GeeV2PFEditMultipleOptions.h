@@ -58,12 +58,17 @@
  *  一次编辑的最大照片数量 (默认: 9, 0 < n <= 9)
  */
 @property (nonatomic, assign) NSUInteger maxSelectionNumber;
+
+@property (nonatomic) BOOL autoPushViewController;
+
 /**
  *  禁用功能模块
  *
  *  @param actionType 图片编辑动作类型
  */
 - (void)disableModule:(lsqTuSDKCPEditActionType)actionType;
+
+
 
 /**
  *  多功能图像编辑控制器对象

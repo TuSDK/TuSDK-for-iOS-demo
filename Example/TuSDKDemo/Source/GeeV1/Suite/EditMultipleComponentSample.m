@@ -179,6 +179,8 @@
     //    _photoEditMultipleComponent.options.editSkinOptions.outputCompress = 0.95f;
     //    // 一键美颜选项参数设置 0 - 1，默认为 1（该功能需要联网）
         _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5f;
+//        //是否开启一键美颜功能，默认为YES
+//        _photoEditMultipleComponent.options.editSkinOptions.enableAutoSkin = NO;
 
     //    // 贴纸模块选择控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions

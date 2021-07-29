@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
+//#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
 #import "TuGuideRegionView.h"
 #import "TuFocusRangeView.h"
 //#import "TuFilterConfigView.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #import "TuCamera/TuCamera.h"
 
 /**

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/tools/TuTSAsset.h"
-#import "TuSDKPulseCore/tools/TuTSCATransition+Extend.h"
+//#import "TuSDKPulseCore/tools/TuTSAsset.h"
+//#import "TuSDKPulseCore/tools/TuTSCATransition+Extend.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  图片编辑控制器基础类
  */

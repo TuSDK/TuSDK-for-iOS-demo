@@ -27,7 +27,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import <TuSDKPulseCore/TuNetworkEngine.h>
 // 1 minute
 #define kTuSDKNetworkKitDefaultCacheDuration 60
 
@@ -54,14 +54,8 @@ typedef enum {
 
 typedef void (^LSQNKVoidBlock)(void);
 typedef void (^LSQNKIDBlock)(void);
-typedef void (^LSQNKProgressBlock)(NSInteger currentSize, NSInteger totalSize);
 typedef void (^LSQNKResponseBlock)(TuNetworkOperation* completedOperation);
-#if TARGET_OS_IPHONE
-typedef void (^LSQNKImageBlock) (UIImage* fetchedImage, NSURL* url, BOOL isInCache);
-#elif TARGET_OS_MAC
-typedef void (^LSQNKImageBlock) (NSImage* fetchedImage, NSURL* url, BOOL isInCache);
-#endif
-typedef void (^LSQNKResponseErrorBlock)(TuNetworkOperation* completedOperation, NSError* error);
+
 typedef void (^LSQNKErrorBlock)(NSError* error);
 
 typedef void (^LSQNKAuthBlock)(NSURLAuthenticationChallenge* challenge);

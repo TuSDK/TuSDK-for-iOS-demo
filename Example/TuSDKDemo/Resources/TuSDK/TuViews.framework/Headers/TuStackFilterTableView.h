@@ -42,7 +42,7 @@
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  滤镜分组元素视图类 (默认:TuSDKCPGroupFilterItemCell, 需要继承 UITableViewCell<TuGroupFilterItemCellInterface>)
@@ -132,7 +132,7 @@
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  滤镜分组元素视图类 (默认:TuGroupFilterItemCellBase, 需要继承 UITableViewCell<TuGroupFilterItemCellInterface>)

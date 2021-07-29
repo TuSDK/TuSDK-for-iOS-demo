@@ -144,8 +144,8 @@ static const CGFloat kTopBarHeight = 64.0;
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     // 开启访问相机权限
     [TuTSDeviceSettings checkAllowWithController:self
-                                               type:lsqDeviceSettingsCamera
-                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+                                               type:TuDeviceSettingsCamera
+                                          completed:^(TuDeviceSettingsType type, BOOL openSetting)
      {
          if (openSetting) {
              lsqLError(@"Can not open camera");
@@ -194,7 +194,7 @@ static const CGFloat kTopBarHeight = 64.0;
     camera.backCameraMirrored = NO;
 
     camera.sessionPreset = AVCaptureSessionPreset1920x1080; // 摄像头分辨率模式
-    camera.captureAsYUV = NO;
+    camera.captureAsYUV = YES;
     camera.fps = 30;
 
     camera.enableZoom = YES; // 是否支持双指缩放来调节焦距

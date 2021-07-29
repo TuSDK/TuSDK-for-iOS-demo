@@ -7,31 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKPulseCore/tools/TuDataJson.h"
-
-#pragma mark - TuNKImageColorArgument
-/**
- *  Image analysis color arguments
- */
-@interface TuNKImageColorArgument : TuDataJson
-@property (nonatomic) float maxR;
-@property (nonatomic) float maxG;
-@property (nonatomic) float maxB;
-@property (nonatomic) float maxY;
-@property (nonatomic) float minR;
-@property (nonatomic) float minG;
-@property (nonatomic) float minB;
-@property (nonatomic) float minY;
-@property (nonatomic) float midR;
-@property (nonatomic) float midG;
-@property (nonatomic) float midB;
-- (void) toArray:(float *)args;
-@end
-
+#import <UIKit/UIKit.h>
+#import <TuSDKPulseCore/TuDataJson.h>
+#import <TuSDKPulseCore/TUCEnum.h>
 #pragma mark - TuNKFaceArgument
 /**
  *  Face arguments
  */
+@class TuNKImageColorArgument;
 @interface TuNKFaceArgument : TuDataJson
 @property (nonatomic) NSString *identify;
 @property (nonatomic) NSString *bin;
@@ -121,29 +104,7 @@
 @property (nonatomic, retain) TuNKFaceArgument *face;
 @end
 
-#pragma mark - TuNKImageAnalysis
-/**
- *  Image Analysis processed type
- */
-typedef NS_ENUM(NSInteger, lsqImageAnalysisType)
-{
-    /**
-     * Unknow
-     */
-    lsqImageAnalysisTypeUnknow,
-    /**
-     * Succeed
-     */
-    lsqImageAnalysisTypeSucceed,
-    /**
-     * Not Input Image Object
-     */
-    lsqImageAnalysisTypeNotInputImage,
-    /**
-     * Service Failed
-     */
-    lsqImageAnalysisTypeServiceFailed,
-};
+
 /**
  * Image Analysis Block
  *

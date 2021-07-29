@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrushManager.h"
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrushLocalPackage.h"
+//#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrushManager.h"
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrushLocalPackage.h"
 #import "TuSmudgeProcessor.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuSmudgeImageViewDelegate
 
 @protocol TuSmudgeImageViewDelegate <NSObject>
@@ -67,7 +67,7 @@
 /**
  *  笔刷粗细， 0 < brushSize <= 1
  */
-- (void)setBrushSize:(lsqBrushSize)brushSize;
+- (void)setBrushSize:(TuSDKBrushSize)brushSize;
 
 /**
  *  橡皮粗细  0.05 < mBrushCustomSize < 0.25
@@ -138,7 +138,7 @@
 @interface TuSmudgeImageViewWrap : UIView<TuSmudgeImageViewInterface>
 {
     // 笔刷粗细
-    lsqBrushSize _mBrushSize;
+    TuSDKBrushSize _mBrushSize;
    
     // 橡皮粗细
     CGFloat _mBrushCustomSize;
@@ -176,7 +176,7 @@
 /**
  *  笔刷粗细， 0 < brushSize <= 1
  */
-- (void)setBrushSize:(lsqBrushSize)mBrushSize;
+- (void)setBrushSize:(TuSDKBrushSize)mBrushSize;
 
 /**
  *  橡皮粗细  0.05 < mBrushCustomSize < 0.25

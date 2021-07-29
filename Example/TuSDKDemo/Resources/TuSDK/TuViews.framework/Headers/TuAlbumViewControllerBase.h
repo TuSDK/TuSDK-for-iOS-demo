@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TuComponentsViewController.h"
-#import "TuSDKPulseCore/tools/TuTSAsset.h"
+//#import "TuSDKPulseCore/tools/TuTSAsset.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 /**
  *  系统相册控制器基础类

@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <TuSDKPulseFilter/TUPFPFilter.h>
-#import <TuSDKPulseFilter/TUPFPBubbleTextFilter.h>
+#import <TuSDKPulseFilter/TuSDKPulseFilter.h>
 #import "TUPFPBubbleTextFilter_Info.h"
 
 @class TuBubbleItemView;
@@ -162,6 +161,9 @@
 @end
 
 @interface TuBubbleView : UIView<TuBubbleItemViewDelegate>
+
+/// 计算可见区域
+- (void)calculateVisible:(UIImage *)inputImage;
 
 /**filter标签*/
 @property (nonatomic, strong) TUPFPBubbleTextFilter_Info *posInfo;

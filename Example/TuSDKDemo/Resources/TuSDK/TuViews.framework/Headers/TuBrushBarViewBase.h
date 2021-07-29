@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
 #import "TuBrushTableItemCellBase.h"
-#import "TuSDKPulseCore/tools/TuICView+Extend.h"
-
+//#import "TuSDKPulseCore/tools/TuICView+Extend.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  笔刷类型
  */

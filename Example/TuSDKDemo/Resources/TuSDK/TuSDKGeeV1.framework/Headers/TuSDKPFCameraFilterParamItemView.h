@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TuSDKGeeV1Import.h"
-#import <TuSDKPulseCore/cx/seles/extend/SelesParameters.h>
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 #pragma mark - TuSDKPFCameraFilterParamItemView
 /**

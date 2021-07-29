@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "tools/TuDataJson.h"
+#import <UIKit/UIKit.h>
+#import <TuSDKPulseCore/TuDataJson.h>
 
 #pragma mark - 人脸标点5
 @interface TuNKFaceMark5FaceResult : TuDataJson

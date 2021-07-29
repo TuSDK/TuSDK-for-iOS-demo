@@ -7,18 +7,11 @@
 //
 
 #import "TuBubbleView.h"
-#import "TuSDKGeeV1/TuSDKGeeV1Import.h"
-#import "TuSDKPulseCore/tools/TuICView+Extend.h"
-#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
-#import "TuSDKPulseCore/tools/TuTSBundle.h"
-#import "TuSDKPulseCore/tools/TuTSLog.h"
-#import "TuSDKPulseCore/tools/TuTSMath.h"
-#import "TuSDKPulseCore/secrets/TuAOValid.h"
-#import "TuViews/TuPopupProgress.h"
-#import "TuSDKPulseCore/tasks/TuThread.h"
-#import "TuSDKPulseCore/components/widgets/sticker/TuStickerLocalPackage.h"
-
+#import <TuSDKGeeV1/TuSDKGeeV1Import.h>
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
+#import <TuViews/TuViews.h>
 #define btnW 36
+#define margin 10
 @interface TuBubbleItemView()<UIGestureRecognizerDelegate, UITextFieldDelegate>
 {
     // 图片视图边缘距离
@@ -859,3 +852,4 @@
 
 
 @end
+

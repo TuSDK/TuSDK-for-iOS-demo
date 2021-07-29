@@ -8,14 +8,16 @@
 
 #import "BubbleSampleController.h"
 
-#import <TuSDKPulseFilter/TUPFilterPipe.h>
-#import <TuSDKPulseFilter/TUPFPDisplayView.h>
-#import <TuSDKPulseFilter/TUPFPImage.h>
-#import <TuSDKPulseFilter/TUPFPFilter.h>
-#import <TuSDKPulseFilter/TUPFPBubbleTextFilter.h>
+//#import <TuSDKPulseFilter/TUPFilterPipe.h>
+//#import <TuSDKPulseFilter/TUPFPDisplayView.h>
+//#import <TuSDKPulseFilter/TUPFPImage.h>
+//#import <TuSDKPulseFilter/TUPFPFilter.h>
+//#import <TuSDKPulseFilter/TUPFPBubbleTextFilter.h>
+#import <TuSDKPulseFilter/TuSDKPulseFilter.h>
 #import "TuBubbleView.h"
 #import "TUPFPBubbleTextFilter_Info.h"
-
+#import "FCFileManager.h"
+#import "JMBubbleFilter.h"
 @interface BubbleSampleController()<TuBubbleViewDelegate, UITextViewDelegate>
 {
 
@@ -37,11 +39,20 @@
 /**
  用于编辑文字的文字域
  */
-@property (nonatomic, strong) UITextView *textView;
+@property(nonatomic, strong) UITextView *textView;
 @property(nonatomic, assign) BOOL isMove;
+@property(nonatomic, strong) TuSDKPFEditFilterBottomBar *tabBar;
+/// 显示图层
+@property(nonatomic, strong) TUPFPDisplayView *displayView;
+/// 交互图层
+@property(nonatomic, strong) TuBubbleView *bubbleContentView;
+
+@property(nonatomic, assign) BOOL isFirst;
+@property(nonatomic, assign) NSInteger filterLastIndex;
 @end
 
 @implementation BubbleSampleController
+
 
 
 - (NSString *)copyFileFromResourceTOSandbox:(NSString *)sourceFilename suffix:(NSString *)suffix outFilename:(NSString *)outFilename
@@ -52,11 +63,6 @@
 
     // 沙盒Documents目录
     NSString * appDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    
-    // 沙盒Library目录
-    //NSString * appDir = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
-    //appLib  Library/Caches目录
-    //NSString *appLib = [appDir stringByAppendingString:@"/Caches"];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *filePath = [appDir stringByAppendingPathComponent:outFilename];
@@ -166,10 +172,12 @@
 - (void)viewDidLoad
 {
     NSLog(@"hecc--viewDidLoad");
-
+    self.saveToAlbum = YES;
+    self.waterMarkOption = [self waterMarkOption];
+    [super viewDidLoad];
     [self registerNotifications];
-    
     self.view.backgroundColor = [UIColor grayColor];
+    
     _currentBuilder = [[TUPFPBubbleTextFilter_Info alloc] init];
     // 滤镜处理引擎
     
@@ -187,7 +195,7 @@
     _bottomBar = [TuSDKPFEditFilterBottomBar initWithFrame:CGRectMake(0, [self.view lsqGetSizeHeight] - 49 - safeBottom, self.view.lsqGetSizeWidth, 49)];
     [self.view addSubview:_bottomBar];
     [_bottomBar.cancelButton addTouchUpInsideTarget:self action:@selector(lsqBackActionHadAnimated)];
-    [_bottomBar.completeButton addTouchUpInsideTarget:self action:@selector(onImageCompleteAtion)];
+    [_bottomBar.completeButton addTouchUpInsideTarget:self action:@selector(saveAction)];
     
     NSArray *array = @[@"message", @"带劲", @"快乐水"];
     for (int i = 0; i < array.count; i++) {
@@ -253,7 +261,7 @@
 - (void)dealloc
 {
     NSLog(@"hecc--dealloc");
-
+    //[self destory];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     if ([NSThread isMainThread])
@@ -402,5 +410,25 @@
     }
     return _textView;
 }
-
+- (void)saveAction {
+    UIImage *inputImage1 = [UIImage imageNamed:@"sample_photo.jpg"];
+    TUPFPImage *inputImage = [[TUPFPImage alloc]initWithUIImage:inputImage1];
+        TUPFPImage *outputImage = [_filterPipe process:inputImage];
+        UIImage *image = [outputImage getUIImage];
+        TuResult *result = [TuResult result];
+        result.image = [self addWaterMarkToImage:image];;
+        [self saveToAlbumWithResult:result];
+   
+    
+}
+- (TuWaterMarkOption *)waterMarkOption {
+    TuWaterMarkOption *option = [[TuWaterMarkOption alloc] init];
+    // 设置水印图片
+    option.markImage = [UIImage imageNamed:@"sample_watermark1.png"];
+    // 设置水印位置 (默认: lsqWaterMarkBottomRight)
+    option.markPosition = lsqWaterMarkBottomRight;
+    // 设置水印距离图片边距 (默认: 6dp)
+    option.markMargin = 6;
+    return option;
+}
 @end

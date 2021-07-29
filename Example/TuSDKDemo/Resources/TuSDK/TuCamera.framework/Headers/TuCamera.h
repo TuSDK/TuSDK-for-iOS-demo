@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/core/TuResult.h"
+@class TuResult;
 
 
 // 相机状态
@@ -44,6 +44,17 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 ///** 处理图片 */
 - (UIImage *)processImage:(CMSampleBufferRef)sampleBuffer devicePosition:(AVCaptureDevicePosition)devicePosition;
 @end
+
+@protocol TuCameraAudioDataOutputDelegate<NSObject>
+
+- (void)onTuCameraDidOutputAudioSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+
+- (void)onTuCameraDidOutputBufferList:(AudioBufferList)bufferList basicDescription:(AudioStreamBasicDescription)basicDescription timeStamp:(NSInteger)timeStamp;
+
+- (void)onTuCameraDidOutputPlayBufferList:(AudioBufferList)bufferList;
+
+@end
+
 
 // 相机拍摄监听接口
 @protocol TuCameraShotDelegate<NSObject>
@@ -85,6 +96,11 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 @property(nonatomic) AVCaptureFlashMode flashMode;
 - (BOOL)isFlashModeSupport:(AVCaptureFlashMode)mode;
 
+@property(nonatomic, readonly) BOOL hasTorch;
+@property(nonatomic) AVCaptureTorchMode torchMode;
+- (BOOL)isTorchModeSupport:(AVCaptureTorchMode)mode;
+
+
 // 白平衡
 @property(nonatomic) AVCaptureWhiteBalanceMode whiteBalanceMode;
 - (BOOL)isWhiteBalanceModeSupport:(AVCaptureWhiteBalanceMode)mode;
@@ -113,13 +129,13 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 @property(nonatomic, weak) id<TuCameraDelegate> delegate;
 @property(nonatomic, weak) id<TuCameraShotDelegate> shotDelegate; /** 相机拍摄监听接口 */
 @property(nonatomic, weak) id<TuCameraVideoDataOutputDelegate> videoDataOutputDelegate;
+@property(nonatomic, weak) id<TuCameraAudioDataOutputDelegate> audioDataOutputDelegate;
 @property(nonatomic, weak) id<TuCameraMetadataOutputFaceDelegate> faceDetectDelegate; /** 系统人脸检测接口 */
 
 @property(nonatomic, assign) float shotRegionRatio; /** 设置拍照的输出比例 **/
 @property(nonatomic, assign) BOOL disableFocusBeep; /** 禁用聚焦声音 (默认：false) */
 
-
-- (void)setFocusPoint:(CGPoint)point; /** 设置聚焦区域 */
+- (void)setFocusPoint:(CGPoint)point isTouched:(BOOL)isTouched; /** 设置聚焦区域 */
 
 - (BOOL)prepare; /** 准备初始化相机 [是否初始化成功] */
 - (BOOL)startPreview; /** 开始预览  [是否启动摄像头成功] */
@@ -130,7 +146,10 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 
 - (BOOL)rotateCamera; /** 切换前后摄像头 [是否启动摄像头成功] */
 
-
+- (void)audioUnitRecord:(BOOL)isAudioUnit;
+- (void)startAudioUnit;
+- (void)stopAudioUnit;
+- (void)resetAudioUnit;
 //#################### new ####################
 //@property (nonatomic, strong)TuCameraShot*      cameraShot;     /** 相机拍摄接口 */
 

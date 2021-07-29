@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKPulseCore/network/core/TuNetworkOperation.h"
-
+@class TuNetworkOperation;
 @class TuNKNetworkArg;
 // 返回数据处理
 typedef BOOL (^TuNKNetworkArgReceivedBlock)(TuNKNetworkArg* arg);

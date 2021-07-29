@@ -8,8 +8,8 @@
 
 #import "TuComponentsViewController.h"
 #import "TuWebView.h"
-#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
-
+//#import "TuSDKPulseCore/network/TuNKDownloadItem.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuOnlineView
 /**
  *  在线资源选择视图

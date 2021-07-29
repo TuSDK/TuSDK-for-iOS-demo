@@ -18,6 +18,12 @@
 @property (nonatomic, assign) CGFloat retouchSize;
 
 /**
+ * 一键美颜是否开启，默认为YES
+ * @return
+ */
+@property (nonatomic, assign) BOOL enableAutoSkin;
+
+/**
  *  选中一个参数动作
  *
  *  @param btn 选中按钮

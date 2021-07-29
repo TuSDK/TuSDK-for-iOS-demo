@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "network/TuNKDownloadItem.h"
+#import "TuNKDownloadItem.h"
 
 @class TuNKDownloadTask;
 
@@ -21,7 +21,7 @@
  *  @param task   下载任务
  *  @param status 下载状态
  */
-- (void)downloadTask:(TuNKDownloadTask *)task changedStatus:(lsqDownloadTaskStatus)status;
+- (void)downloadTask:(TuNKDownloadTask *)task changedStatus:(TuDownloadTaskStatus)status;
 @end
 
 /**
@@ -54,7 +54,7 @@
  *
  *  @return BOOL 是否匹配任务
  */
-- (BOOL)isEqual:(lsqDownloadTaskType)type idt:(uint64_t)idt;
+- (BOOL)isEqual:(TuDownloadTaskType)type idt:(uint64_t)idt;
 
 /**
  *  是否允许执行任务

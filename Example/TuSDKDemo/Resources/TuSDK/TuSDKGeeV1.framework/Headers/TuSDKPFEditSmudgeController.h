@@ -82,7 +82,7 @@
 /**
  *  默认的笔刷大小 (默认: lsqMediumBrush，中等粗细)
  */
-@property (nonatomic, assign) lsqBrushSize defaultBrushSize;
+@property (nonatomic, assign) TuSDKBrushSize defaultBrushSize;
 
 /**
  *  是否保存上一次使用的笔刷 (默认: YES)

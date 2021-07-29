@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/core/TuRatioType.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+//#import "TuSDKPulseCore/core/TuRatioType.h"
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
 #import "TuImageResultController.h"
 #import "TuFilterStickerView.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 // 图片编辑入口控制器基础类
 @interface TuEditEntryControllerBase : TuImageResultController
 // 图片视图

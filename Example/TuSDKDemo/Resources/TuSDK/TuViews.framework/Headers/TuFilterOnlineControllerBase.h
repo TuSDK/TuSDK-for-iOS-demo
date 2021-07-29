@@ -18,7 +18,7 @@
 /**
  *  滤镜栏类型
  */
-@property (nonatomic) lsqGroupFilterAction action;
+@property (nonatomic) TuGroupFilterAction action;
 
 /** 选中对象ID */
 - (void)onHandleSelectedWithID:(uint64_t)idt;

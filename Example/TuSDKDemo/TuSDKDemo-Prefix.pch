@@ -9,7 +9,12 @@
 #ifndef TuSDKDemo_TuSDKDemo_Prefix_pch
 #define TuSDKDemo_TuSDKDemo_Prefix_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/// GetFilePathName，获取文件名，例如："/var/demo/AppDelegate.m" > "AppDelegate.m"
+#define kTuGetFPN [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent]
+/// Log 
+#ifdef DEBUG
+#define TuLog(fmt,...) NSLog((@"%@(%d) TuLog: " fmt), kTuGetFPN, __LINE__, ##__VA_ARGS__);
+#endif
 
+#import "TuCommon.h"
 #endif

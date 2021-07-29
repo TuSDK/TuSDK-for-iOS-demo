@@ -23,7 +23,7 @@
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic) lsqGroupFilterAction action;
+@property (nonatomic) TuGroupFilterAction action;
 
 /**
  *  是否为隐藏状态

@@ -41,6 +41,7 @@
 "sample_comp_FilterComponent" = "濾鏡組件示例";
 "sample_comp_StickerComponent" = "貼紙組件示例";
 "sample_comp_BubbleComponent" = "氣泡文字組件示例";
+"sample_comp_JigsawComponent" = "拼圖組件示例";
 "sample_comp_BlurComponent" = "模糊組件示例";
 
 "extend_EditComponent" = "裁切組件自定義界面";

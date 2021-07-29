@@ -7,8 +7,8 @@
 //
 
 #import "TuSmudgeImageViewWrap.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 @interface TuFilterSmudgeImageViewWrap : TuSmudgeImageViewWrap
 
 @property (nonatomic, strong) SelesParameters *filterParams;

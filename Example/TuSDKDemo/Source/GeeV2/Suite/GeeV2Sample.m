@@ -40,7 +40,7 @@
     if (!controller) return;
     
     // 指定主题包的 style
-    [TuSDKPulseCore shared].style = @"ui_geeV2";
+    [TUCCore shared].style = @"ui_geeV2";
     
     self.controller = controller;
     _albumComponent =
@@ -64,8 +64,8 @@
      openCameraCallback:^(GeeV2PFAlbumMultipleViewController *controller) {
          // 开启访问相机权限
          [TuTSDeviceSettings checkAllowWithController:controller
-                                                    type:lsqDeviceSettingsCamera
-                                               completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+                                                    type:TuDeviceSettingsCamera
+                                               completed:^(TuDeviceSettingsType type, BOOL openSetting)
           {
               if (openSetting) {
                   lsqLError(@"Can not open camera");
@@ -247,6 +247,7 @@
     //    _photoEditMultipleComponent.options.editSkinOptions.outputCompress = 0.95f;
     //    // 一键美颜选项参数设置 0 - 1，默认为 1（该功能需要联网）
         _photoEditMultipleComponent.options.editSkinOptions.retouchSize = 0.5f;
+    _photoEditMultipleComponent.options.editSkinOptions.enableAutoSkin = NO;
     
     //    // 贴纸模块控制器配置选项
     // _photoEditMultipleComponent.options.editStickerOptions
@@ -287,7 +288,7 @@
     // 当上一个页面是NavigationController时,是否通过 pushViewController 方式打开编辑器视图 (默认：NO，默认以 presentViewController 方式打开）
     // SDK 内部组件采用了一致的界面设计，会通过 push 方式打开视图。如果用户开启了该选项，在调用时可能会遇到布局不兼容问题，请谨慎处理。
     _photoEditMultipleComponent.autoPushViewController = YES;
-    
+    _photoEditMultipleComponent.options.editMultipleOptions.autoPushViewController = YES;
     
     [_photoEditMultipleComponent showComponent];
 }

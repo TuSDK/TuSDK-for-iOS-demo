@@ -223,6 +223,8 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) Class filterViewClazz;
 // 聚焦触摸视图类 (需要继承 TuSDKCPFocusTouchView)
 @property (nonatomic, strong) Class focusTouchViewClazz;
+// 起始高度
+@property (nonatomic, assign) CGFloat offsetTop;
 // 显示图像视图
 @property (nonatomic, readonly) UIView *displayView;
 // GL视图

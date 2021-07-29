@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		02D1AB671CEF2A0A00C8497D /* sample_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02D1AB651CEF2A0A00C8497D /* sample_photo.jpg */; };
 		02D1AB6E1CF17C9A00C8497D /* sample_watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D1AB6D1CF17C9A00C8497D /* sample_watermark.png */; };
+		2A6EF76E26A568F800603711 /* JigsawSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6EF76D26A568F700603711 /* JigsawSampleController.m */; };
+		2A6EF77E26A7CC7200603711 /* JigsawLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6EF77D26A7CC7200603711 /* JigsawLayerView.m */; };
+		2A6EF78126A7FC0100603711 /* JigsawLayerItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6EF78026A7FC0100603711 /* JigsawLayerItemView.m */; };
+		2A6EF78526A910B400603711 /* jigsaw_ex3.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A6EF78226A910B300603711 /* jigsaw_ex3.zip */; };
+		2A6EF78626A910B400603711 /* jigsaw_ex2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A6EF78326A910B400603711 /* jigsaw_ex2.zip */; };
+		2A6EF78726A910B400603711 /* jigsaw_ex.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A6EF78426A910B400603711 /* jigsaw_ex.zip */; };
+		2AC4101C2614589D00148F8F /* FCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4101B2614589D00148F8F /* FCFileManager.m */; };
+		2AC4101F2614673000148F8F /* JMBubbleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4101E2614673000148F8F /* JMBubbleFilter.m */; };
+		2AC410222614808700148F8F /* TuCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC410212614808700148F8F /* TuCommon.m */; };
 		33A6771E1D87EBE000107DC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A65C9D1D864B0000107DC7 /* Accelerate.framework */; };
 		427053981DB9B0CE00C62CCC /* DemoComponentListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427053911DB9B0CD00C62CCC /* DemoComponentListController.m */; };
 		427053991DB9B0CE00C62CCC /* DemoRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 427053931DB9B0CD00C62CCC /* DemoRootView.m */; };
@@ -37,23 +46,25 @@
 		625540C11A5650E200614A61 /* TuSDKPulse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 625540C01A5650E200614A61 /* TuSDKPulse.bundle */; };
 		626F59F0248E2DF600CFCA7D /* DefineCAEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */; };
 		628DEDF31AEA0D5F006CC06C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628DEDF51AEA0D5F006CC06C /* Localizable.strings */; };
-		A63970FA263690A1005BFF57 /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F3263690A0005BFF57 /* TuSDKGeeV1.framework */; };
-		A63970FB263690A1005BFF57 /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F4263690A0005BFF57 /* TuSDKGeeV2.framework */; };
-		A63970FE263690A6005BFF57 /* TuCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F1263690A0005BFF57 /* TuCamera.framework */; };
-		A63970FF263690A6005BFF57 /* TuCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F1263690A0005BFF57 /* TuCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6397101263690A7005BFF57 /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F5263690A0005BFF57 /* TuSDKPulse.framework */; };
-		A6397102263690A8005BFF57 /* TuSDKPulse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F5263690A0005BFF57 /* TuSDKPulse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6397103263690A9005BFF57 /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F6263690A0005BFF57 /* TuSDKPulseCore.framework */; };
-		A6397104263690A9005BFF57 /* TuSDKPulseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F6263690A0005BFF57 /* TuSDKPulseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6397105263690AA005BFF57 /* TuSDKPulseFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F2263690A0005BFF57 /* TuSDKPulseFilter.framework */; };
-		A6397106263690AA005BFF57 /* TuSDKPulseFilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F2263690A0005BFF57 /* TuSDKPulseFilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6397107263690AB005BFF57 /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F0263690A0005BFF57 /* TuViews.framework */; };
-		A6397108263690AB005BFF57 /* TuViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A63970F0263690A0005BFF57 /* TuViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A639712C26369C7D005BFF57 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A639712926369C7D005BFF57 /* message.png */; };
-		A639712D26369C7D005BFF57 /* 带劲.png in Resources */ = {isa = PBXBuildFile; fileRef = A639712A26369C7D005BFF57 /* 带劲.png */; };
-		A639712E26369C7D005BFF57 /* 快乐水.png in Resources */ = {isa = PBXBuildFile; fileRef = A639712B26369C7D005BFF57 /* 快乐水.png */; };
-		A639713026369D7E005BFF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A639712F26369D7E005BFF57 /* LaunchScreen.storyboard */; };
-		A639713226369DDE005BFF57 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A639713126369DDE005BFF57 /* home.jpg */; };
+		75419B19A2C5A55550FA17A2 /* libPods-TuSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC964E7282C119A9411C823 /* libPods-TuSDKDemo.a */; };
+		A60D17CB26170C6400F736A9 /* 快乐水.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17C826170C6400F736A9 /* 快乐水.png */; };
+		A60D17CC26170C6400F736A9 /* 带劲.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17C926170C6400F736A9 /* 带劲.png */; };
+		A60D17CD26170C6400F736A9 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A60D17CA26170C6400F736A9 /* message.png */; };
+		A6ABEE9F26B24C1B00394B41 /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9426B2481000394B41 /* TuSDKGeeV1.framework */; };
+		A6ABEEA026B24C1B00394B41 /* TuSDKGeeV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9426B2481000394B41 /* TuSDKGeeV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEA126B24C1C00394B41 /* TuSDKGeeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9526B2481000394B41 /* TuSDKGeeV2.framework */; };
+		A6ABEEA226B24C1C00394B41 /* TuSDKGeeV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9526B2481000394B41 /* TuSDKGeeV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEAB26B24D2000394B41 /* TuCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9226B2481000394B41 /* TuCamera.framework */; };
+		A6ABEEAC26B24D2000394B41 /* TuCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9226B2481000394B41 /* TuCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEAD26B24D2000394B41 /* TuSDKPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9626B2481000394B41 /* TuSDKPulse.framework */; };
+		A6ABEEAE26B24D2000394B41 /* TuSDKPulse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9626B2481000394B41 /* TuSDKPulse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEAF26B24D2000394B41 /* TuSDKPulseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9726B2481000394B41 /* TuSDKPulseCore.framework */; };
+		A6ABEEB026B24D2000394B41 /* TuSDKPulseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9726B2481000394B41 /* TuSDKPulseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEB126B24D2000394B41 /* TuSDKPulseFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9326B2481000394B41 /* TuSDKPulseFilter.framework */; };
+		A6ABEEB226B24D2000394B41 /* TuSDKPulseFilter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9326B2481000394B41 /* TuSDKPulseFilter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEB326B24D2000394B41 /* TuViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9126B2481000394B41 /* TuViews.framework */; };
+		A6ABEEB426B24D2100394B41 /* TuViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEE9126B2481000394B41 /* TuViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6ABEEB626B24E8B00394B41 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6ABEEB526B24E8B00394B41 /* AVFoundation.framework */; };
 		B88106EC24907C3500CD4448 /* CustomizedNewCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */; };
 		B881071024907C5500CD4448 /* ViewSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F224907C5500CD4448 /* ViewSlider.m */; };
 		B881071124907C5500CD4448 /* PageTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B88106F424907C5500CD4448 /* PageTabbar.m */; };
@@ -71,6 +82,8 @@
 		B881071F2490811B00CD4448 /* CameraControlMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881071E2490811B00CD4448 /* CameraControlMaskView.m */; };
 		B881072624908D8300CD4448 /* CameraMoreMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072524908D8300CD4448 /* CameraMoreMenuView.m */; };
 		B881072924908DC200CD4448 /* VerticalMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B881072824908DC200CD4448 /* VerticalMenuView.m */; };
+		B882C3DE25E8D49E00CAB51A /* TuLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */; };
+		B882C3E025E8D53100CAB51A /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B882C3DF25E8D53100CAB51A /* home.jpg */; };
 		B8A4371525EB741C0015A5E9 /* TuBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371425EB741C0015A5E9 /* TuBubbleView.m */; };
 		B8A4371825EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A4371725EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m */; };
 		D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D723EC6823320EA800C500A1 /* WebKit.framework */; };
@@ -99,17 +112,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A6397100263690A6005BFF57 /* Embed Frameworks */ = {
+		62703D911B9C03F9000C3614 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A6397106263690AA005BFF57 /* TuSDKPulseFilter.framework in Embed Frameworks */,
-				A6397102263690A8005BFF57 /* TuSDKPulse.framework in Embed Frameworks */,
-				A63970FF263690A6005BFF57 /* TuCamera.framework in Embed Frameworks */,
-				A6397108263690AB005BFF57 /* TuViews.framework in Embed Frameworks */,
-				A6397104263690A9005BFF57 /* TuSDKPulseCore.framework in Embed Frameworks */,
+				A6ABEEB226B24D2000394B41 /* TuSDKPulseFilter.framework in Embed Frameworks */,
+				A6ABEEAE26B24D2000394B41 /* TuSDKPulse.framework in Embed Frameworks */,
+				A6ABEEB026B24D2000394B41 /* TuSDKPulseCore.framework in Embed Frameworks */,
+				A6ABEEB426B24D2100394B41 /* TuViews.framework in Embed Frameworks */,
+				A6ABEEA026B24C1B00394B41 /* TuSDKGeeV1.framework in Embed Frameworks */,
+				A6ABEEAC26B24D2000394B41 /* TuCamera.framework in Embed Frameworks */,
+				A6ABEEA226B24C1C00394B41 /* TuSDKGeeV2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +134,22 @@
 /* Begin PBXFileReference section */
 		02D1AB651CEF2A0A00C8497D /* sample_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_photo.jpg; sourceTree = "<group>"; };
 		02D1AB6D1CF17C9A00C8497D /* sample_watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_watermark.png; sourceTree = "<group>"; };
+		2A6EF76C26A568F700603711 /* JigsawSampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JigsawSampleController.h; sourceTree = "<group>"; };
+		2A6EF76D26A568F700603711 /* JigsawSampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JigsawSampleController.m; sourceTree = "<group>"; };
+		2A6EF77C26A7CC7200603711 /* JigsawLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JigsawLayerView.h; sourceTree = "<group>"; };
+		2A6EF77D26A7CC7200603711 /* JigsawLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JigsawLayerView.m; sourceTree = "<group>"; };
+		2A6EF77F26A7FC0100603711 /* JigsawLayerItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JigsawLayerItemView.h; sourceTree = "<group>"; };
+		2A6EF78026A7FC0100603711 /* JigsawLayerItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JigsawLayerItemView.m; sourceTree = "<group>"; };
+		2A6EF78226A910B300603711 /* jigsaw_ex3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = jigsaw_ex3.zip; sourceTree = "<group>"; };
+		2A6EF78326A910B400603711 /* jigsaw_ex2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = jigsaw_ex2.zip; sourceTree = "<group>"; };
+		2A6EF78426A910B400603711 /* jigsaw_ex.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = jigsaw_ex.zip; sourceTree = "<group>"; };
+		2AA75CE5262D8E6C005469C8 /* TuSDKPulseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC4101A2614589C00148F8F /* FCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFileManager.h; sourceTree = "<group>"; };
+		2AC4101B2614589D00148F8F /* FCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFileManager.m; sourceTree = "<group>"; };
+		2AC4101D2614673000148F8F /* JMBubbleFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMBubbleFilter.h; sourceTree = "<group>"; };
+		2AC4101E2614673000148F8F /* JMBubbleFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBubbleFilter.m; sourceTree = "<group>"; };
+		2AC410202614808700148F8F /* TuCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuCommon.h; sourceTree = "<group>"; };
+		2AC410212614808700148F8F /* TuCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuCommon.m; sourceTree = "<group>"; };
 		33A65C9D1D864B0000107DC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		427053901DB9B0CD00C62CCC /* DemoComponentListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoComponentListController.h; path = Source/DemoComponentListController.h; sourceTree = "<group>"; };
 		427053911DB9B0CD00C62CCC /* DemoComponentListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoComponentListController.m; path = Source/DemoComponentListController.m; sourceTree = "<group>"; };
@@ -158,6 +189,8 @@
 		42BACA811D8FB472002B849C /* EditMultipleComponentSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMultipleComponentSample.m; sourceTree = "<group>"; };
 		42BACA8B1D8FBBB5002B849C /* GeeV2Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeeV2Sample.h; sourceTree = "<group>"; };
 		42BACA8C1D8FBBB5002B849C /* GeeV2Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeeV2Sample.m; sourceTree = "<group>"; };
+		5A354DBF234155F68C7EFEA2 /* Pods-TuSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-TuSDKDemo/Pods-TuSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5BD4A8DCD0065629258033C0 /* Pods-TuSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-TuSDKDemo/Pods-TuSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		62165F101BCCC22C00AD6279 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		62235E7919FE41FA00F05DA6 /* TuSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62235E7D19FE41FA00F05DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,18 +205,25 @@
 		626F59EF248E2DF600CFCA7D /* DefineCAEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefineCAEAGLView.m; sourceTree = "<group>"; };
 		628DEDF41AEA0D5F006CC06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62BD58F01AEA025A00D61FC1 /* TuSDKFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuSDKFramework.h; sourceTree = "<group>"; };
-		A63970F0263690A0005BFF57 /* TuViews.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuViews.framework; sourceTree = "<group>"; };
-		A63970F1263690A0005BFF57 /* TuCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuCamera.framework; sourceTree = "<group>"; };
-		A63970F2263690A0005BFF57 /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = "<group>"; };
-		A63970F3263690A0005BFF57 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
-		A63970F4263690A0005BFF57 /* TuSDKGeeV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV2.framework; sourceTree = "<group>"; };
-		A63970F5263690A0005BFF57 /* TuSDKPulse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = "<group>"; };
-		A63970F6263690A0005BFF57 /* TuSDKPulseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseCore.framework; sourceTree = "<group>"; };
-		A639712926369C7D005BFF57 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Resources/Images/message.png; sourceTree = "<group>"; };
-		A639712A26369C7D005BFF57 /* 带劲.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "带劲.png"; path = "Resources/Images/带劲.png"; sourceTree = "<group>"; };
-		A639712B26369C7D005BFF57 /* 快乐水.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "快乐水.png"; path = "Resources/Images/快乐水.png"; sourceTree = "<group>"; };
-		A639712F26369D7E005BFF57 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A639713126369DDE005BFF57 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Resources/home.jpg; sourceTree = "<group>"; };
+		7C75275C25AD76580031CC10 /* TuSDKPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75275E25AD76620031CC10 /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75276225AD7C2D0031CC10 /* TuSDKPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C75276425AD7C330031CC10 /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C846F4425EF34C5006D6114 /* TuViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C846F6925EF5F1A006D6114 /* TuCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TuCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8ECA8A25CA877300A7BF0B /* libTuSDKGeeV1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTuSDKGeeV1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8ECA8C25CA877700A7BF0B /* libTuSDKGeeV2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTuSDKGeeV2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60D17C826170C6400F736A9 /* 快乐水.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "快乐水.png"; path = "Resources/Images/快乐水.png"; sourceTree = "<group>"; };
+		A60D17C926170C6400F736A9 /* 带劲.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "带劲.png"; path = "Resources/Images/带劲.png"; sourceTree = "<group>"; };
+		A60D17CA26170C6400F736A9 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Resources/Images/message.png; sourceTree = "<group>"; };
+		A6ABEE9126B2481000394B41 /* TuViews.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuViews.framework; sourceTree = "<group>"; };
+		A6ABEE9226B2481000394B41 /* TuCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuCamera.framework; sourceTree = "<group>"; };
+		A6ABEE9326B2481000394B41 /* TuSDKPulseFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseFilter.framework; sourceTree = "<group>"; };
+		A6ABEE9426B2481000394B41 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV1.framework; sourceTree = "<group>"; };
+		A6ABEE9526B2481000394B41 /* TuSDKGeeV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKGeeV2.framework; sourceTree = "<group>"; };
+		A6ABEE9626B2481000394B41 /* TuSDKPulse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulse.framework; sourceTree = "<group>"; };
+		A6ABEE9726B2481000394B41 /* TuSDKPulseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TuSDKPulseCore.framework; sourceTree = "<group>"; };
+		A6ABEEB526B24E8B00394B41 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B88106EA24907C3500CD4448 /* CustomizedNewCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNewCameraComponent.m; sourceTree = "<group>"; };
 		B88106EB24907C3500CD4448 /* CustomizedNewCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNewCameraComponent.h; sourceTree = "<group>"; };
 		B88106EF24907C5500CD4448 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -221,10 +261,13 @@
 		B881072524908D8300CD4448 /* CameraMoreMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraMoreMenuView.m; sourceTree = "<group>"; };
 		B881072724908DC200CD4448 /* VerticalMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticalMenuView.h; sourceTree = "<group>"; };
 		B881072824908DC200CD4448 /* VerticalMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticalMenuView.m; sourceTree = "<group>"; };
+		B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TuLaunchScreen.storyboard; path = Resources/TuLaunchScreen.storyboard; sourceTree = "<group>"; };
+		B882C3DF25E8D53100CAB51A /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Resources/home.jpg; sourceTree = "<group>"; };
 		B8A4371325EB741C0015A5E9 /* TuBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuBubbleView.h; sourceTree = "<group>"; };
 		B8A4371425EB741C0015A5E9 /* TuBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuBubbleView.m; sourceTree = "<group>"; };
 		B8A4371625EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUPFPBubbleTextFilter_Info.h; sourceTree = "<group>"; };
 		B8A4371725EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUPFPBubbleTextFilter_Info.m; sourceTree = "<group>"; };
+		BAC964E7282C119A9411C823 /* libPods-TuSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D723EC6823320EA800C500A1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D752E7C823138E88001C0B8A /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		D76BF0DF226F171F00813E99 /* EditPaintDrawComponentSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditPaintDrawComponentSample.h; sourceTree = "<group>"; };
@@ -263,27 +306,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6ABEEAD26B24D2000394B41 /* TuSDKPulse.framework in Frameworks */,
 				D723EC6B2332241400C500A1 /* WebKit.framework in Frameworks */,
-				A6397101263690A7005BFF57 /* TuSDKPulse.framework in Frameworks */,
 				D752E7C923138E88001C0B8A /* libresolv.9.tbd in Frameworks */,
 				F836C4021EFB66B400F82ABD /* SystemConfiguration.framework in Frameworks */,
+				A6ABEEB326B24D2000394B41 /* TuViews.framework in Frameworks */,
 				F836C4001EFB66A800F82ABD /* Security.framework in Frameworks */,
+				A6ABEEAB26B24D2000394B41 /* TuCamera.framework in Frameworks */,
 				F836C3FE1EFB66A100F82ABD /* libz.1.2.5.tbd in Frameworks */,
-				A63970FA263690A1005BFF57 /* TuSDKGeeV1.framework in Frameworks */,
+				A6ABEEAF26B24D2000394B41 /* TuSDKPulseCore.framework in Frameworks */,
 				33A6771E1D87EBE000107DC7 /* Accelerate.framework in Frameworks */,
-				A6397107263690AB005BFF57 /* TuViews.framework in Frameworks */,
-				A6397105263690AA005BFF57 /* TuSDKPulseFilter.framework in Frameworks */,
-				A63970FE263690A6005BFF57 /* TuCamera.framework in Frameworks */,
-				A6397103263690A9005BFF57 /* TuSDKPulseCore.framework in Frameworks */,
+				A6ABEEB126B24D2000394B41 /* TuSDKPulseFilter.framework in Frameworks */,
+				A6ABEEB626B24E8B00394B41 /* AVFoundation.framework in Frameworks */,
+				A6ABEE9F26B24C1B00394B41 /* TuSDKGeeV1.framework in Frameworks */,
+				A6ABEEA126B24C1C00394B41 /* TuSDKGeeV2.framework in Frameworks */,
 				F836C3FC1EFB669000F82ABD /* Bugly.framework in Frameworks */,
-				A63970FB263690A1005BFF57 /* TuSDKGeeV2.framework in Frameworks */,
 				62165F111BCCC22C00AD6279 /* Photos.framework in Frameworks */,
+				75419B19A2C5A55550FA17A2 /* libPods-TuSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A6EF77B26A7CC4B00603711 /* jigsaw */ = {
+			isa = PBXGroup;
+			children = (
+				2A6EF77C26A7CC7200603711 /* JigsawLayerView.h */,
+				2A6EF77D26A7CC7200603711 /* JigsawLayerView.m */,
+				2A6EF77F26A7FC0100603711 /* JigsawLayerItemView.h */,
+				2A6EF78026A7FC0100603711 /* JigsawLayerItemView.m */,
+			);
+			path = jigsaw;
+			sourceTree = "<group>";
+		};
+		2AC410192614588C00148F8F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4101A2614589C00148F8F /* FCFileManager.h */,
+				2AC4101B2614589D00148F8F /* FCFileManager.m */,
+				2AC410202614808700148F8F /* TuCommon.h */,
+				2AC410212614808700148F8F /* TuCommon.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3BA97E2D6E09CF0DFB18D8F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A354DBF234155F68C7EFEA2 /* Pods-TuSDKDemo.debug.xcconfig */,
+				5BD4A8DCD0065629258033C0 /* Pods-TuSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		427E6B891D8F979400DE7BF8 /* GeeV1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +396,7 @@
 		427E6B941D8F979400DE7BF8 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A6EF77B26A7CC4B00603711 /* jigsaw */,
 				B88106ED24907C5500CD4448 /* Camera */,
 				427E6B951D8F979400DE7BF8 /* CustomizedCameraComponent.h */,
 				427E6B961D8F979400DE7BF8 /* CustomizedCameraComponent.m */,
@@ -346,6 +423,8 @@
 				427E6BB01D8F979400DE7BF8 /* StickerSampleController.m */,
 				427E6BB11D8F979400DE7BF8 /* WipeAndFilterSampleController.h */,
 				427E6BB21D8F979400DE7BF8 /* WipeAndFilterSampleController.m */,
+				2A6EF76C26A568F700603711 /* JigsawSampleController.h */,
+				2A6EF76D26A568F700603711 /* JigsawSampleController.m */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -394,6 +473,7 @@
 				62235EA619FE45B700F05DA6 /* Frameworks */,
 				62235E7A19FE41FA00F05DA6 /* Products */,
 				7C7D8C1D25E63177006F6320 /* Recovered References */,
+				3BA97E2D6E09CF0DFB18D8F9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -431,14 +511,24 @@
 		62235EA619FE45B700F05DA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6ABEEB526B24E8B00394B41 /* AVFoundation.framework */,
+				2AA75CE5262D8E6C005469C8 /* TuSDKPulseCore.framework */,
 				33A65C9D1D864B0000107DC7 /* Accelerate.framework */,
 				F836C3FB1EFB669000F82ABD /* Bugly.framework */,
 				D752E7C823138E88001C0B8A /* libresolv.9.tbd */,
+				7C8ECA8A25CA877300A7BF0B /* libTuSDKGeeV1.a */,
+				7C8ECA8C25CA877700A7BF0B /* libTuSDKGeeV2.a */,
 				F836C3FD1EFB66A100F82ABD /* libz.1.2.5.tbd */,
 				62165F101BCCC22C00AD6279 /* Photos.framework */,
 				F836C3FF1EFB66A800F82ABD /* Security.framework */,
 				F836C4011EFB66B400F82ABD /* SystemConfiguration.framework */,
+				7C846F6925EF5F1A006D6114 /* TuCamera.framework */,
+				7C75276225AD7C2D0031CC10 /* TuSDKPulse.framework */,
+				7C75275E25AD76620031CC10 /* TuSDKPulseFilter.framework */,
+				7C846F4425EF34C5006D6114 /* TuViews.framework */,
 				D723EC6823320EA800C500A1 /* WebKit.framework */,
+				7C75275C25AD76580031CC10 /* TuSDKPulse.framework */,
+				BAC964E7282C119A9411C823 /* libPods-TuSDKDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -446,9 +536,12 @@
 		62235EC019FF386500F05DA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A639713126369DDE005BFF57 /* home.jpg */,
-				A639712F26369D7E005BFF57 /* LaunchScreen.storyboard */,
-				A63970EF263690A0005BFF57 /* TuSDK */,
+				A6ABEE9026B2481000394B41 /* TuSDK */,
+				2A6EF78426A910B400603711 /* jigsaw_ex.zip */,
+				2A6EF78326A910B400603711 /* jigsaw_ex2.zip */,
+				2A6EF78226A910B300603711 /* jigsaw_ex3.zip */,
+				B882C3DF25E8D53100CAB51A /* home.jpg */,
+				B882C3DD25E8D49E00CAB51A /* TuLaunchScreen.storyboard */,
 				02D1AB6D1CF17C9A00C8497D /* sample_watermark.png */,
 				02D1AB651CEF2A0A00C8497D /* sample_photo.jpg */,
 				F8369B051C426A1B009A2936 /* sample_gif_editor.gif */,
@@ -471,6 +564,7 @@
 				427053951DB9B0CD00C62CCC /* DemoRootViewController.m */,
 				427053961DB9B0CD00C62CCC /* SampleBase.h */,
 				427053971DB9B0CD00C62CCC /* SampleBase.m */,
+				2AC410192614588C00148F8F /* Common */,
 				427E6B891D8F979400DE7BF8 /* GeeV1 */,
 				427E6BC01D8F979400DE7BF8 /* GeeV2 */,
 			);
@@ -491,20 +585,21 @@
 		7C7D8C1D25E63177006F6320 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				7C75276425AD7C330031CC10 /* TuSDKPulseFilter.framework */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		A63970EF263690A0005BFF57 /* TuSDK */ = {
+		A6ABEE9026B2481000394B41 /* TuSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A63970F0263690A0005BFF57 /* TuViews.framework */,
-				A63970F1263690A0005BFF57 /* TuCamera.framework */,
-				A63970F2263690A0005BFF57 /* TuSDKPulseFilter.framework */,
-				A63970F3263690A0005BFF57 /* TuSDKGeeV1.framework */,
-				A63970F4263690A0005BFF57 /* TuSDKGeeV2.framework */,
-				A63970F5263690A0005BFF57 /* TuSDKPulse.framework */,
-				A63970F6263690A0005BFF57 /* TuSDKPulseCore.framework */,
+				A6ABEE9126B2481000394B41 /* TuViews.framework */,
+				A6ABEE9226B2481000394B41 /* TuCamera.framework */,
+				A6ABEE9326B2481000394B41 /* TuSDKPulseFilter.framework */,
+				A6ABEE9426B2481000394B41 /* TuSDKGeeV1.framework */,
+				A6ABEE9526B2481000394B41 /* TuSDKGeeV2.framework */,
+				A6ABEE9626B2481000394B41 /* TuSDKPulse.framework */,
+				A6ABEE9726B2481000394B41 /* TuSDKPulseCore.framework */,
 			);
 			name = TuSDK;
 			path = Resources/TuSDK;
@@ -527,6 +622,8 @@
 				B8A4371625EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.h */,
 				B8A4371725EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m */,
 				B88106EF24907C5500CD4448 /* Constants.h */,
+				2AC4101D2614673000148F8F /* JMBubbleFilter.h */,
+				2AC4101E2614673000148F8F /* JMBubbleFilter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -607,9 +704,9 @@
 		F8F3DD121C23A9A1001E923E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A639712A26369C7D005BFF57 /* 带劲.png */,
-				A639712B26369C7D005BFF57 /* 快乐水.png */,
-				A639712926369C7D005BFF57 /* message.png */,
+				A60D17C926170C6400F736A9 /* 带劲.png */,
+				A60D17C826170C6400F736A9 /* 快乐水.png */,
+				A60D17CA26170C6400F736A9 /* message.png */,
 				F816B9EB1EE8F0EC0058EE8B /* homepage_bg@2x.png */,
 				F816B9EC1EE8F0EC0058EE8B /* homepage_bg@3x.png */,
 				F816B9ED1EE8F0EC0058EE8B /* homepage_button_normal@2x.png */,
@@ -634,10 +731,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62235E9C19FE41FA00F05DA6 /* Build configuration list for PBXNativeTarget "TuSDKDemo" */;
 			buildPhases = (
+				9A9EFD1183BA0923D30440D0 /* [CP] Check Pods Manifest.lock */,
 				62235E7519FE41FA00F05DA6 /* Sources */,
 				62235E7619FE41FA00F05DA6 /* Frameworks */,
 				62235E7719FE41FA00F05DA6 /* Resources */,
-				A6397100263690A6005BFF57 /* Embed Frameworks */,
+				62703D911B9C03F9000C3614 /* Embed Frameworks */,
+				2A152F67263508050013C9BB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -693,23 +792,26 @@
 				628DEDF31AEA0D5F006CC06C /* Localizable.strings in Resources */,
 				F816BA011EE8F0EC0058EE8B /* homepage_icon_tools@2x.png in Resources */,
 				F816B9FC1EE8F0EC0058EE8B /* homepage_icon_beauty@3x.png in Resources */,
+				2A6EF78726A910B400603711 /* jigsaw_ex.zip in Resources */,
 				F816B9FE1EE8F0EC0058EE8B /* homepage_icon_camera@3x.png in Resources */,
 				DC86AC941C911E6000891041 /* InfoPlist.strings in Resources */,
 				625540C11A5650E200614A61 /* TuSDKPulse.bundle in Resources */,
-				A639712D26369C7D005BFF57 /* 带劲.png in Resources */,
-				A639713226369DDE005BFF57 /* home.jpg in Resources */,
-				A639713026369D7E005BFF57 /* LaunchScreen.storyboard in Resources */,
 				62235EF219FF6C8100F05DA6 /* TuSDK.strings in Resources */,
-				A639712E26369C7D005BFF57 /* 快乐水.png in Resources */,
 				F8369B061C426A1B009A2936 /* sample_gif_editor.gif in Resources */,
+				B882C3DE25E8D49E00CAB51A /* TuLaunchScreen.storyboard in Resources */,
+				2A6EF78526A910B400603711 /* jigsaw_ex3.zip in Resources */,
 				F816B9FB1EE8F0EC0058EE8B /* homepage_icon_beauty@2x.png in Resources */,
+				A60D17CD26170C6400F736A9 /* message.png in Resources */,
 				F816B9FF1EE8F0EC0058EE8B /* homepage_icon_next@2x.png in Resources */,
+				B882C3E025E8D53100CAB51A /* home.jpg in Resources */,
 				62235EEF19FF6B7300F05DA6 /* Images.xcassets in Resources */,
+				A60D17CB26170C6400F736A9 /* 快乐水.png in Resources */,
 				F816BA021EE8F0EC0058EE8B /* homepage_icon_tools@3x.png in Resources */,
-				A639712C26369C7D005BFF57 /* message.png in Resources */,
+				A60D17CC26170C6400F736A9 /* 带劲.png in Resources */,
 				02D1AB671CEF2A0A00C8497D /* sample_photo.jpg in Resources */,
 				F816B9F81EE8F0EC0058EE8B /* homepage_bg@3x.png in Resources */,
 				F816B9FD1EE8F0EC0058EE8B /* homepage_icon_camera@2x.png in Resources */,
+				2A6EF78626A910B400603711 /* jigsaw_ex2.zip in Resources */,
 				02D1AB6E1CF17C9A00C8497D /* sample_watermark.png in Resources */,
 				F816B9F91EE8F0EC0058EE8B /* homepage_button_normal@2x.png in Resources */,
 				F816B9F71EE8F0EC0058EE8B /* homepage_bg@2x.png in Resources */,
@@ -719,6 +821,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A152F67263508050013C9BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"292786cf8b\"\n# #\nBUGLY_APP_KEY=\"26e7e25d-544b-4585-870a-c60625903899\"\n# #\nBUNDLE_IDENTIFIER=\"org.lasque.TuEffectCameraDemo\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n UPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\n    BUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n\n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n    P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\n    DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n    echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\n    echo \"-----------------------------\"\n    STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n    echo \"-----------------------------\"\n\n    UPLOAD_RESULT=\"FAILTURE\"\n    echo \"Bugly server response: ${STATUS}\"\n    if [ ! \"${STATUS}\" ]; then\n        echo \"Error: Failed to upload the zip archive file.\"\n    elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n        echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n        UPLOAD_RESULT=\"SUCCESS\"\n    else\n        echo \"Error: Failed to upload the zip archive file to Bugly.\"\n    fi\n\n    #Remove temp dSYM archive\n    #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n    #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\n    if [ \"$?\" -ne 0 ]; then\n        exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n    fi\n\n    echo \"--------------------------------\"\n    echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\n    if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n        echo \"--------------------------------\"\n        echo \"Failed to upload the dSYM\"\n        echo \"Please check the script and try it again.\"\n    fi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\n    DSYM_FILE=\"$1\"\n    DSYM_SYMBOL_FILE=\"$2\"\n\n    echo \"--------------------------------\"\n    echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n    (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n    echo \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\n    CONFIG_BUGLY_APP_ID=\"$1\"\n    CONFIG_BUGLY_APP_KEY=\"$2\"\n\n    CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n    CONFIG_BUGLY_APP_VERSION=\"$4\"\n    CONFIG_DSYM_SOURCE_DIR=\"$5\"\n    CONFIG_DSYM_DEST_DIR=\"$6\"\n    CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n    # 检查必须参数是否设置\n    if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n        exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n    fi\n\n    if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n        exitWithMessage \"Error: Bugly App ID not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n        exitWithMessage \"Error: Bugly App Key not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n        exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n        exitWithMessage \"Error: App Version not defined.\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n    fi\n\n    if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        mkdir ${CONFIG_DSYM_DEST_DIR}\n    fi\n\n    DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n    IFS=$'\\n'\n\n    echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n    RET=\"F\"\n    \n    #\n    for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n        RET=\"T\"\n        echo \"Found dSYM file: $dsymFile\"\n\n        DSYM_FILE_NAME=${dsymFile##*/}\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n        DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\n        if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n            if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n            fi\n            # 如果只上传dSYM，直接压缩dSYM目录\n            zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n        else\n            # 使用符号表工具来生成Symbol文件\n            dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n        fi\n        \n        # 上传\n        dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n    done\n\n    if [ $RET = \"F\" ]; then\n        exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n    fi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\n    echo \"Uploading dSYM to Bugly in Xcode ...\"\n\n    echo \"Info.Plist : ${INFOPLIST_FILE}\"\n\n    BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n    BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n    # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n    if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n        BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n    else\n        BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n    fi\n\n    echo \"--------------------------------\"\n    echo \"Prepare application information.\"\n    echo \"--------------------------------\"\n\n    echo \"Product Name: ${PRODUCT_NAME}\"\n    echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n    echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n    echo \"Build: ${BUNDLE_VERSION}\"\n\n    echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n    echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n    echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\n    echo \"--------------------------------\"\n    echo \"Check the arguments ...\"\n\n    ##检查模拟器编译是否允许上传符号\n    if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n    if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否是Release模式编译\n    if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n    if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否Archive操作\n    if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n    if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n        echo \"Archive the package\"\n    else\n        exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n    fi\n    fi\n\n    #\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\n    BuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\n    runInXcode\nelse\n    echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n    # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n    BUGLY_APP_ID=\"$1\"\n    BUGLY_APP_KEY=\"$2\"\n    BUNDLE_IDENTIFIER=\"$3\"\n    BUGLY_APP_VERSION=\"$4\"\n    DWARF_DSYM_FOLDER_PATH=\"$5\"\n    SYMBOL_OUTPUT_PATH=\"$6\"\n    UPLOAD_DSYM_ONLY=$7\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n";
+		};
+		9A9EFD1183BA0923D30440D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62235E7519FE41FA00F05DA6 /* Sources */ = {
@@ -734,12 +878,17 @@
 				B881071024907C5500CD4448 /* ViewSlider.m in Sources */,
 				4270539B1DB9B0CE00C62CCC /* SampleBase.m in Sources */,
 				B881071424907C5500CD4448 /* HorizontalListView.m in Sources */,
+				2AC410222614808700148F8F /* TuCommon.m in Sources */,
 				B881071624907C5500CD4448 /* ParametersAdjustView.m in Sources */,
+				2AC4101C2614589D00148F8F /* FCFileManager.m in Sources */,
 				62235E8219FE41FA00F05DA6 /* AppDelegate.m in Sources */,
+				2A6EF76E26A568F800603711 /* JigsawSampleController.m in Sources */,
 				427E6BC51D8F979400DE7BF8 /* CustomizedCameraComponent.m in Sources */,
 				427E6BD61D8F979400DE7BF8 /* EditAndCutComponentSample.m in Sources */,
 				42BACA831D8FB472002B849C /* EditMultipleComponentSample.m in Sources */,
+				2AC4101F2614673000148F8F /* JMBubbleFilter.m in Sources */,
 				62235E7F19FE41FA00F05DA6 /* main.m in Sources */,
+				2A6EF78126A7FC0100603711 /* JigsawLayerItemView.m in Sources */,
 				427053981DB9B0CE00C62CCC /* DemoComponentListController.m in Sources */,
 				626F59F0248E2DF600CFCA7D /* DefineCAEAGLView.m in Sources */,
 				427E6BCE1D8F979400DE7BF8 /* CameraAndEditorSample.m in Sources */,
@@ -762,6 +911,7 @@
 				B8A4371825EB745B0015A5E9 /* TUPFPBubbleTextFilter_Info.m in Sources */,
 				427E6BD51D8F979400DE7BF8 /* EditAdvancedComponentSample.m in Sources */,
 				427E6BD71D8F979400DE7BF8 /* EditAvatarComponentSample.m in Sources */,
+				2A6EF77E26A7CC7200603711 /* JigsawLayerView.m in Sources */,
 				B881071F2490811B00CD4448 /* CameraControlMaskView.m in Sources */,
 				427E6BCF1D8F979400DE7BF8 /* EditFilterSampleController.m in Sources */,
 				B881071724907C5500CD4448 /* HorizontalListItemView.m in Sources */,
@@ -866,8 +1016,8 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"../TuSDKGeeV1/framework/Source/**",
 					"../TuSDKGeeV2/framework/Source/**",
-					"\"$(SRCROOT)/../TuViews/TuViews\"/**",
-					"\"$(SRCROOT)/../TuCamera\"/**",
+					"\"$(SRCROOT)/../TuViews/TuViews\"",
+					"\"$(SRCROOT)/../TuCamera\"",
 					"\"$(SRCROOT)/../../pulse-av/ios/TuSDKPulseCore\"",
 					"\"$(SRCROOT)/../../pulse-av/ios/TuSDKPulseCore/TuSDKPulseCore\"",
 				);
@@ -933,8 +1083,8 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"../TuSDKGeeV1/framework/Source/**",
 					"../TuSDKGeeV2/framework/Source/**",
-					"\"$(SRCROOT)/../TuViews/TuViews\"/**",
-					"\"$(SRCROOT)/../TuCamera\"/**",
+					"\"$(SRCROOT)/../TuViews/TuViews\"",
+					"\"$(SRCROOT)/../TuCamera\"",
 					"\"$(SRCROOT)/../../pulse-av/ios/TuSDKPulseCore\"",
 					"\"$(SRCROOT)/../../pulse-av/ios/TuSDKPulseCore/TuSDKPulseCore\"",
 				);
@@ -949,13 +1099,14 @@
 		};
 		62235E9D19FE41FA00F05DA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A354DBF234155F68C7EFEA2 /* Pods-TuSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210426;
+				CURRENT_PROJECT_VERSION = 20210728;
 				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -964,18 +1115,19 @@
 					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TuSDKDemo/TuSDKDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TuSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.0.1;
-				OTHER_LDFLAGS = "-ObjC";
+				MARKETING_VERSION = 4.1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;
 				PROVISIONING_PROFILE = "";
@@ -986,34 +1138,39 @@
 		};
 		62235E9E19FE41FA00F05DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD4A8DCD0065629258033C0 /* Pods-TuSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20210426;
+				CURRENT_PROJECT_VERSION = 20210728;
 				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/TuSDKDemo/Resources/TuSDK\"",
+					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK/**",
 					"$(PROJECT_DIR)/TuSDKDemo/Resources/TuSDK",
 				);
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TuSDKDemo/TuSDKDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TuSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				MARKETING_VERSION = 4.0.1;
-				OTHER_LDFLAGS = "-ObjC";
+				MARKETING_VERSION = 4.1.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lasque.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TuSDKDemo;
 				PROVISIONING_PROFILE = "";

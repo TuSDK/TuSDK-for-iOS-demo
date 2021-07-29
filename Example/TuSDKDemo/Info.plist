@@ -26,10 +26,12 @@
 	<string>Photo capturing requires to use your camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Adding infomation to photos requires your location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Photo capturing requires to use your Microphone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photo editing requires to use your Photo Library</string>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>TuLaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

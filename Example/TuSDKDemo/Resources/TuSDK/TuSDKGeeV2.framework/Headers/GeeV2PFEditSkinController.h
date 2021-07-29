@@ -37,6 +37,12 @@
 @property (nonatomic, assign) CGFloat retouchSize;
 
 /**
+ * 一键美颜是否开启，默认为YES
+ * @return
+ */
+@property (nonatomic, assign) BOOL enableAutoSkin;
+
+/**
  *  创建颜色调整控制器对象
  *
  *  @return controller 颜色调整控制器对象

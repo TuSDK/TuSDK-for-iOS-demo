@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
 #import "TuTableViewCell.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 #pragma mark - TuBrushTableItemCellInterface
 

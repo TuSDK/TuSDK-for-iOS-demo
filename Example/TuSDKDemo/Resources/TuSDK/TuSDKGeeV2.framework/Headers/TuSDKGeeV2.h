@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKGeeV2/TuSDKGeeV2Import.h"
+#import "TuSDKGeeV2Import.h"
 #import "TuSDKGeeV2Theme.h"
 #import "GeeV2PFCameraOptions.h"
 #import "GeeV2CPAlbumMultipleComponent.h"

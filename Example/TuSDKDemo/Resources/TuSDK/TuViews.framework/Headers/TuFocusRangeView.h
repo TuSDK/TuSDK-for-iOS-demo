@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/tools/TuTSAVAudioPlayer+Extend.h"
+//#import "TuSDKPulseCore/tools/TuTSAVAudioPlayer+Extend.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 /**
  *  相机聚焦选取视图委托

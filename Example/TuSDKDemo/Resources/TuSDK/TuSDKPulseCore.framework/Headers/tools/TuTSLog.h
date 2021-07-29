@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <TuSDKPulseCore/TUCCore.h>
 #pragma mark - NSObjectExceptionExtend
 /**
  *  异常管理
@@ -48,33 +48,6 @@
 - (void)lsqPerformSelectorOnMainThread:(SEL)aSelector withObject:(id)arg1  withObject:(id)arg2 waitUntilDone:(BOOL)wait;
 @end
 
-#pragma mark - TuTSLog
-/**
- *  日志输出级别
- */
-typedef NS_ENUM(NSInteger, lsqLogLevel)
-{
-    /**
-     *  不输出
-     */
-    lsqLogLevelFATAL = 0,
-    /**
-     *  仅输出错误信息
-     */
-    lsqLogLevelERROR = 3,
-    /**
-     *  仅输出错误，警告信息
-     */
-    lsqLogLevelWARN = 4,
-    /**
-     *  仅输出INFO，错误，警告信息
-     */
-    lsqLogLevelINFO = 6,
-    /**
-     *  输出所有信息
-     */
-    lsqLogLevelDEBUG = 7,
-};
 
 /**
  *  日志处理类
@@ -83,12 +56,12 @@ typedef NS_ENUM(NSInteger, lsqLogLevel)
 /**
  *  日志输出级别 (默认：lsqLogLevelFATAL 不输出)
  */
-@property (nonatomic) lsqLogLevel outputLevel;
+@property (nonatomic) TuLogLevel outputLevel;
 
 /**
  文件日志输出级别 (默认：lsqLogLevelFATAL 不输出) 默认 ： lsqLogLevelFATAL
  */
-@property (nonatomic) lsqLogLevel outputFileLevel;
+@property (nonatomic) TuLogLevel outputFileLevel;
 
 /**
  文件日志输出路径 可选 默认在 NSDocumentDirectory 目录下

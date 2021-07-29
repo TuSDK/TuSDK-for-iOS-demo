@@ -40,7 +40,7 @@
 /**
  *  滤镜栏类型
  */
-@property (nonatomic) lsqGroupFilterAction action;
+@property (nonatomic) TuGroupFilterAction action;
 
 /**
  *  详细数据ID

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "TuPaintBezierPath.h"
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
 
 /**
  *  涂鸦绘制视图的通用属性
@@ -33,7 +34,7 @@
  @since v3.1.0
  @param mBrushSize 粗细级别
  */
-- (void)setPaintSize:(lsqBrushSize)mBrushSize;
+- (void)setPaintSize:(TuSDKBrushSize)mBrushSize;
 
 
 /**

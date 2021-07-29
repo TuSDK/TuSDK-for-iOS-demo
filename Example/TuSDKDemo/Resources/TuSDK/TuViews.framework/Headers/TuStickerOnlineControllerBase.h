@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TuOnlineController.h"
-#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
+@class TuSticker;
+//#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
 
 /**
  *  在线贴纸选择控制器委托基础类

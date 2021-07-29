@@ -75,12 +75,12 @@
     NSLog(@"TuSDKGeeV2.framework 的版本号 : %@",lsqGeeV2Version);
     
     [TuThread initWithStart:^id{
-        while (![TuSDKPulseCore checkResourceLoaded]){}
+        while (![TUCCore checkResourceLoaded]){}
         return nil;
     } completed:^(id result) {
         [self showHubSuccessWithStatus:LSQString(@"lsq_inited", @"初始化完成")];
         // 发布时注释下面代码
-        // [TuSDK logAuthors];
+//         [TUCCore logAuthors];
     }];
 }
 

@@ -7,8 +7,8 @@
 //
 
 #import "TuSimpleProcessor.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuFilterSmudgeProcessor
 /**
  *  基于滤镜的涂抹处理

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
-
+//#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  贴纸结果
  */

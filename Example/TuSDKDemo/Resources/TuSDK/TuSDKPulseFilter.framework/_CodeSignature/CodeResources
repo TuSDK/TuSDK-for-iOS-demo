@@ -6,27 +6,55 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		3aX6uOghze0ZWMKXrGWEciqEBwE=
+		pF3UaTLhAZ3tvZEkZWLMP1OazMg=
 		</data>
-		<key>Headers/TUPFPAspectRatioFilter.h</key>
+		<key>Frameworks/.DS_Store</key>
 		<data>
-		IC2v62wxerDzE4kKv2G/CPv9EeA=
+		V3FzrOA1yiS9iaYiaakm1EN0bo8=
 		</data>
-		<key>Headers/TUPFPBubbleTextFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		eKaCLsmz2vt3ULbR1Xx686E5l14=
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
 		</data>
-		<key>Headers/TUPFPCanvasResizeFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		0CXutPji5PknbdMA/sAKUrCyVUc=
+		AUaB3gVqqgkr7YAgd4WtSzz1rXY=
 		</data>
-		<key>Headers/TUPFPColorAdjustFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		61XgieDijM5GhEnx0GLuCeZqOak=
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
 		</data>
-		<key>Headers/TUPFPColorCorrectionFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<data>
-		yQlSZ+7TLTTLEcWcsGJsQyuYkRM=
+		ZHR1KJx+tq+SnL2v6gA7jVRapKY=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<data>
+		+joOY/ChCyZDKhE5lq9EMP2Xy1A=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<data>
+		hPVYj8t5nym2LceMlvG80XeAVZg=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		yvMAso8G4ub1JfxAMwLe9Z+K9tM=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Headers/.DS_Store</key>
+		<data>
+		+nQBfDu20evp59446s8Xv3FTPg8=
+		</data>
+		<key>Headers/TUPFPAudioMixer.h</key>
+		<data>
+		t/niieFkbk8HX7RWL0pwSpBIqhY=
 		</data>
 		<key>Headers/TUPFPDetectResult.h</key>
 		<data>
@@ -34,11 +62,11 @@
 		</data>
 		<key>Headers/TUPFPDisplayView.h</key>
 		<data>
-		sxneudXs4+yvkdsAd0fsueh5uTk=
+		DBCqCrEcl0tc8tqLrIYBliwuQhk=
 		</data>
 		<key>Headers/TUPFPFileExporter.h</key>
 		<data>
-		TdTxPrZzRiaCQ1EhA/wsNYXy6Go=
+		bcLXxCJb8ZmbwR+fxNTnzML9+cs=
 		</data>
 		<key>Headers/TUPFPFilter.h</key>
 		<data>
@@ -50,43 +78,7 @@
 		</data>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<data>
-		r0DlV/xB8kjdgqYG5VfLqArRQJo=
-		</data>
-		<key>Headers/TUPFPTusdkBeautFaceV2Filter.h</key>
-		<data>
-		qJE9oU3JIAP2FEwjbggoAOY9Flo=
-		</data>
-		<key>Headers/TUPFPTusdkCosmeticFilter.h</key>
-		<data>
-		PcwEEe6+r9yCN2tYezHewDlfhrI=
-		</data>
-		<key>Headers/TUPFPTusdkCropFilter.h</key>
-		<data>
-		tdSUameopLq4QtlBVxFfDl0ECqg=
-		</data>
-		<key>Headers/TUPFPTusdkFaceMonsterFilter.h</key>
-		<data>
-		PsA4MH9Dv/c5kszypkf6AJtTq8w=
-		</data>
-		<key>Headers/TUPFPTusdkFacePlasticFilter.h</key>
-		<data>
-		j7kon0ooIH1d4BB5jUfvoImVKT4=
-		</data>
-		<key>Headers/TUPFPTusdkFaceReshapeFilter.h</key>
-		<data>
-		rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
-		</data>
-		<key>Headers/TUPFPTusdkImageFilter.h</key>
-		<data>
-		qVIwzP3l0U+z39xrxx/ktY8AMI4=
-		</data>
-		<key>Headers/TUPFPTusdkLiveStickerFilter.h</key>
-		<data>
-		3NSHx5qG4A0OXhlNlf5Qbma+G+E=
-		</data>
-		<key>Headers/TUPFPTusdkStickerFilter.h</key>
-		<data>
-		NC/v2iCt4teiF3LjEVHqeu/q83Q=
+		1NlHVTz2AAz4Qm+D81kBbaWVKm8=
 		</data>
 		<key>Headers/TUPFilterCtx.h</key>
 		<data>
@@ -98,19 +90,87 @@
 		</data>
 		<key>Headers/TuSDKPulseFilter.h</key>
 		<data>
-		ym2ygiYcMgrY9icJ0s8L1E1rXLg=
+		wUiqwClYktZxfW38e/hWJZLwnEs=
 		</data>
-		<key>Headers/TusdkCosmeticFilter.hh</key>
+		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
 		<data>
-		GVTlLi3r6BoBd5oNFar46DxLUjE=
+		IC2v62wxerDzE4kKv2G/CPv9EeA=
 		</data>
-		<key>Headers/TusdkFaceReshapeFilter.hh</key>
+		<key>Headers/filters/TUPFPBubbleTextFilter.h</key>
 		<data>
-		7dEnHNz0DcjSMkaD/Up4x8bGsGI=
+		eKaCLsmz2vt3ULbR1Xx686E5l14=
+		</data>
+		<key>Headers/filters/TUPFPCanvasResizeFilter.h</key>
+		<data>
+		0CXutPji5PknbdMA/sAKUrCyVUc=
+		</data>
+		<key>Headers/filters/TUPFPColorAdjustFilter.h</key>
+		<data>
+		61XgieDijM5GhEnx0GLuCeZqOak=
+		</data>
+		<key>Headers/filters/TUPFPColorCorrectionFilter.h</key>
+		<data>
+		yQlSZ+7TLTTLEcWcsGJsQyuYkRM=
+		</data>
+		<key>Headers/filters/TUPFPJigsawFilter.h</key>
+		<data>
+		1+9W6p9XJCG8ubZnr0Bps1U2pcQ=
+		</data>
+		<key>Headers/filters/TUPFPSimpleTextFilter.h</key>
+		<data>
+		Vb9KMJ9kPEgab55bNwrPBv0yDqk=
+		</data>
+		<key>Headers/filters/TUPFPSimultaneouslyFilter.h</key>
+		<data>
+		uC5vz+CIuJhD3AYZ0tNbO39OObA=
+		</data>
+		<key>Headers/filters/TUPFPTusdkBeautFaceV2Filter.h</key>
+		<data>
+		qJE9oU3JIAP2FEwjbggoAOY9Flo=
+		</data>
+		<key>Headers/filters/TUPFPTusdkBeautifyFilter.h</key>
+		<data>
+		KBARGm4AyAbivNkFPQBQ2BFOYRw=
+		</data>
+		<key>Headers/filters/TUPFPTusdkCosmeticFilter.h</key>
+		<data>
+		PcwEEe6+r9yCN2tYezHewDlfhrI=
+		</data>
+		<key>Headers/filters/TUPFPTusdkCropFilter.h</key>
+		<data>
+		tdSUameopLq4QtlBVxFfDl0ECqg=
+		</data>
+		<key>Headers/filters/TUPFPTusdkFaceMonsterFilter.h</key>
+		<data>
+		PsA4MH9Dv/c5kszypkf6AJtTq8w=
+		</data>
+		<key>Headers/filters/TUPFPTusdkFacePlasticFilter.h</key>
+		<data>
+		j7kon0ooIH1d4BB5jUfvoImVKT4=
+		</data>
+		<key>Headers/filters/TUPFPTusdkFaceReshapeFilter.h</key>
+		<data>
+		rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
+		</data>
+		<key>Headers/filters/TUPFPTusdkImageFilter.h</key>
+		<data>
+		wAdWbf1Gh3XEItJSBf0QOx5QUHo=
+		</data>
+		<key>Headers/filters/TUPFPTusdkLiveStickerFilter.h</key>
+		<data>
+		3NSHx5qG4A0OXhlNlf5Qbma+G+E=
+		</data>
+		<key>Headers/filters/TUPFPTusdkSceneFilter.h</key>
+		<data>
+		brm0PLYOO4U9R2DfyhZgyfIs7Yo=
+		</data>
+		<key>Headers/filters/TUPFPTusdkStickerFilter.h</key>
+		<data>
+		NC/v2iCt4teiF3LjEVHqeu/q83Q=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wx8mMTZ+TAg3EGa/q8AZBOMuAro=
+		omYhBV95lAIhPnMzV5i4mwIYViA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,59 +179,114 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/TUPFPAspectRatioFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IC2v62wxerDzE4kKv2G/CPv9EeA=
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
 			</data>
 			<key>hash2</key>
 			<data>
-			y4LWWY3c63ecg9EeT2XDTYTLhujvlCcKut5bbHgOWqI=
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
 			</data>
 		</dict>
-		<key>Headers/TUPFPBubbleTextFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eKaCLsmz2vt3ULbR1Xx686E5l14=
+			AUaB3gVqqgkr7YAgd4WtSzz1rXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			rpXf8m27gKgJiMIoDi2+fQc4H2K5N+JIyi4Wo/GzgFg=
+			/+XH9bcnaHoWP+zBtKYsNHUSA0zAiLU99D9byBC1vkM=
 			</data>
 		</dict>
-		<key>Headers/TUPFPCanvasResizeFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0CXutPji5PknbdMA/sAKUrCyVUc=
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y0FtxcXv/PasH+15ZtjMaZMAVj383ypJMw7BoSeKUzU=
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
 			</data>
 		</dict>
-		<key>Headers/TUPFPColorAdjustFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			61XgieDijM5GhEnx0GLuCeZqOak=
+			ZHR1KJx+tq+SnL2v6gA7jVRapKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			tQdARVv1uj7NOt3NbTq3UPwHtTNJAvq2kwk3h4mk6EI=
+			iIuykOzy0PByFpNN1LZnlSTmlo6ysrmbLLBrkGEDiT0=
 			</data>
 		</dict>
-		<key>Headers/TUPFPColorCorrectionFilter.h</key>
+		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yQlSZ+7TLTTLEcWcsGJsQyuYkRM=
+			+joOY/ChCyZDKhE5lq9EMP2Xy1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			n8r8lLu0zyNYBcG1yANQTWuHN0v3AikfcrYM6T0zkhs=
+			Q6N69XUxxrlXh1Lbs6mhA2nUoWIsE/7F+CjbqapIsis=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hPVYj8t5nym2LceMlvG80XeAVZg=
+			</data>
+			<key>hash2</key>
+			<data>
+			BIBVOFY8Jua8Zq+amBdVrDNTmZiDtvnivx8lC9vnmWM=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yvMAso8G4ub1JfxAMwLe9Z+K9tM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gylakuR23ctS4e/kvY26xYNkJMnhPZ06+9/JgertJaw=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Headers/TUPFPAudioMixer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t/niieFkbk8HX7RWL0pwSpBIqhY=
+			</data>
+			<key>hash2</key>
+			<data>
+			jLDtz94Gu2MNhDty3NbV9h73rBa3XQerzh92ZypQkkY=
 			</data>
 		</dict>
 		<key>Headers/TUPFPDetectResult.h</key>
@@ -189,22 +304,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sxneudXs4+yvkdsAd0fsueh5uTk=
+			DBCqCrEcl0tc8tqLrIYBliwuQhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			TOiTctr7sW+0Pj54icARqlzc5dn7ex10EZ/UUMFqBys=
+			llIPyQ8Y/J1Oqihl6QWm/EaC6Y47C+/Gsf/vJqcNQRI=
 			</data>
 		</dict>
 		<key>Headers/TUPFPFileExporter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TdTxPrZzRiaCQ1EhA/wsNYXy6Go=
+			bcLXxCJb8ZmbwR+fxNTnzML9+cs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Hfs7VWh0P3ynl3DetJUmI7gnFLv+BuGjcyQJr3lep8=
+			Tyimnnh/qUFhB/E9pSEZZrKbfSygGXRizjd54HevXjg=
 			</data>
 		</dict>
 		<key>Headers/TUPFPFilter.h</key>
@@ -233,110 +348,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r0DlV/xB8kjdgqYG5VfLqArRQJo=
+			1NlHVTz2AAz4Qm+D81kBbaWVKm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EFrxCEQAQKJYs9Qwc76yUd8TpWkqLFd+pY6TZeOkQhs=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkBeautFaceV2Filter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qJE9oU3JIAP2FEwjbggoAOY9Flo=
-			</data>
-			<key>hash2</key>
-			<data>
-			TCgWrH+r0wPQcbcx2OEJ/J/mbhjZeRXBPRTRslXesTE=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkCosmeticFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PcwEEe6+r9yCN2tYezHewDlfhrI=
-			</data>
-			<key>hash2</key>
-			<data>
-			UP5f93QqTcY4D0IjVLLc+SJC8f+7JhXrTlI7YxumAbU=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkCropFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tdSUameopLq4QtlBVxFfDl0ECqg=
-			</data>
-			<key>hash2</key>
-			<data>
-			X46lfeICTwCuUGXgA62Q0/rbgjQWr3awW3px2nHf5nQ=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkFaceMonsterFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PsA4MH9Dv/c5kszypkf6AJtTq8w=
-			</data>
-			<key>hash2</key>
-			<data>
-			7+WSz4S+vvBjfVC3UJNug8q77PqxXstTvoeU4ggb084=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkFacePlasticFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			j7kon0ooIH1d4BB5jUfvoImVKT4=
-			</data>
-			<key>hash2</key>
-			<data>
-			tH4d/9UMha2wNNbWfGXzmx3ztburTaHCubBmP/Jvx5I=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkFaceReshapeFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			S63KmC84goSeVHAdk5crcTYdYrRR5xJI4dsg21LgWKo=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkImageFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qVIwzP3l0U+z39xrxx/ktY8AMI4=
-			</data>
-			<key>hash2</key>
-			<data>
-			VakRyEz3chyosX7ZHLXwhW3v3eK6bktiP8FlaILWvK8=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkLiveStickerFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3NSHx5qG4A0OXhlNlf5Qbma+G+E=
-			</data>
-			<key>hash2</key>
-			<data>
-			4IZGklU5f/0x9iaXd1Dc/HXIK7ov8sP921of84DRvqQ=
-			</data>
-		</dict>
-		<key>Headers/TUPFPTusdkStickerFilter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NC/v2iCt4teiF3LjEVHqeu/q83Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			SzqArEPHiSsT7zwUpNzsNBWFc8pVx7KDW0sNky4rskE=
+			aC4G11V8Xni6T4glSwaPLuiZaChl5MARovn+wvYBKGc=
 			</data>
 		</dict>
 		<key>Headers/TUPFilterCtx.h</key>
@@ -365,33 +381,220 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ym2ygiYcMgrY9icJ0s8L1E1rXLg=
+			wUiqwClYktZxfW38e/hWJZLwnEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			9mTSz3gzwNIdDr3i0fQS4Je00tMI7fBh62qmnigpBH4=
+			49HLBxTYJedYzG8d6IyiG6u7IxC5l/oTsA+uzIDCTOs=
 			</data>
 		</dict>
-		<key>Headers/TusdkCosmeticFilter.hh</key>
+		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GVTlLi3r6BoBd5oNFar46DxLUjE=
+			IC2v62wxerDzE4kKv2G/CPv9EeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+qFViZFvt+kWKBEi/R4i8fH2c1VcQvXnjAEnl52Mw5c=
+			y4LWWY3c63ecg9EeT2XDTYTLhujvlCcKut5bbHgOWqI=
 			</data>
 		</dict>
-		<key>Headers/TusdkFaceReshapeFilter.hh</key>
+		<key>Headers/filters/TUPFPBubbleTextFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7dEnHNz0DcjSMkaD/Up4x8bGsGI=
+			eKaCLsmz2vt3ULbR1Xx686E5l14=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+Uet6xZ5qju5GNMlK2/gfSJe+QWeQ7n2DH4LduItqA=
+			rpXf8m27gKgJiMIoDi2+fQc4H2K5N+JIyi4Wo/GzgFg=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPCanvasResizeFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0CXutPji5PknbdMA/sAKUrCyVUc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y0FtxcXv/PasH+15ZtjMaZMAVj383ypJMw7BoSeKUzU=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPColorAdjustFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			61XgieDijM5GhEnx0GLuCeZqOak=
+			</data>
+			<key>hash2</key>
+			<data>
+			tQdARVv1uj7NOt3NbTq3UPwHtTNJAvq2kwk3h4mk6EI=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPColorCorrectionFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yQlSZ+7TLTTLEcWcsGJsQyuYkRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			n8r8lLu0zyNYBcG1yANQTWuHN0v3AikfcrYM6T0zkhs=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPJigsawFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1+9W6p9XJCG8ubZnr0Bps1U2pcQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Podn9kWWG3Em26N4ZGOeZR86MXJOx3zAMqVaA8SRYt8=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPSimpleTextFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vb9KMJ9kPEgab55bNwrPBv0yDqk=
+			</data>
+			<key>hash2</key>
+			<data>
+			RP+smmdG5rr3CEV7sxXgkIpc7ldi2DWQ+NT+BWeuplc=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPSimultaneouslyFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uC5vz+CIuJhD3AYZ0tNbO39OObA=
+			</data>
+			<key>hash2</key>
+			<data>
+			5LodMKfpph+ahq+XBtduYxVv8jyBjBQ+voRjjkhuR14=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkBeautFaceV2Filter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qJE9oU3JIAP2FEwjbggoAOY9Flo=
+			</data>
+			<key>hash2</key>
+			<data>
+			TCgWrH+r0wPQcbcx2OEJ/J/mbhjZeRXBPRTRslXesTE=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkBeautifyFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KBARGm4AyAbivNkFPQBQ2BFOYRw=
+			</data>
+			<key>hash2</key>
+			<data>
+			+bkkYW/fy0VWWkoDvzNLpuFuQVfOqzPHB1gfGq6qlcI=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkCosmeticFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PcwEEe6+r9yCN2tYezHewDlfhrI=
+			</data>
+			<key>hash2</key>
+			<data>
+			UP5f93QqTcY4D0IjVLLc+SJC8f+7JhXrTlI7YxumAbU=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkCropFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tdSUameopLq4QtlBVxFfDl0ECqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			X46lfeICTwCuUGXgA62Q0/rbgjQWr3awW3px2nHf5nQ=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkFaceMonsterFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PsA4MH9Dv/c5kszypkf6AJtTq8w=
+			</data>
+			<key>hash2</key>
+			<data>
+			7+WSz4S+vvBjfVC3UJNug8q77PqxXstTvoeU4ggb084=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkFacePlasticFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j7kon0ooIH1d4BB5jUfvoImVKT4=
+			</data>
+			<key>hash2</key>
+			<data>
+			tH4d/9UMha2wNNbWfGXzmx3ztburTaHCubBmP/Jvx5I=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkFaceReshapeFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			S63KmC84goSeVHAdk5crcTYdYrRR5xJI4dsg21LgWKo=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkImageFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wAdWbf1Gh3XEItJSBf0QOx5QUHo=
+			</data>
+			<key>hash2</key>
+			<data>
+			yji4SLLzExhP75f/eaz1UYmBZGeqMFZ/5Xwr611qto0=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkLiveStickerFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3NSHx5qG4A0OXhlNlf5Qbma+G+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			4IZGklU5f/0x9iaXd1Dc/HXIK7ov8sP921of84DRvqQ=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkSceneFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			brm0PLYOO4U9R2DfyhZgyfIs7Yo=
+			</data>
+			<key>hash2</key>
+			<data>
+			V4GSQjgF3RxN5or4rnmaz6t+Iltd12necUW1uSfEVzU=
+			</data>
+		</dict>
+		<key>Headers/filters/TUPFPTusdkStickerFilter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NC/v2iCt4teiF3LjEVHqeu/q83Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			SzqArEPHiSsT7zwUpNzsNBWFc8pVx7KDW0sNky4rskE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

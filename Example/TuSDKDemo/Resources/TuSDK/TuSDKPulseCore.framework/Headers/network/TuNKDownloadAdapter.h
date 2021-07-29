@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import "tasks/TuImageViewTask.h"
-#import "network/TuNKDownloadManger.h"
+#import "TuImageViewTask.h"
+#import "TuNKDownloadManger.h"
 
 /**
  *  资源下载适配器
@@ -18,7 +18,7 @@
     /**已下载文件列表*/
     NSMutableArray *_downloadeds;
     /**下载类型*/
-    lsqDownloadTaskType _downloadTaskType;
+    TuDownloadTaskType _downloadTaskType;
 }
 
 /**下载状态委托*/

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TuPopupProgress.h"
-#import "TuSDKPulseCore/tools/TuTSCATransition+Extend.h"
+//#import "TuSDKPulseCore/tools/TuTSCATransition+Extend.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 /**
  *  控制器基础类

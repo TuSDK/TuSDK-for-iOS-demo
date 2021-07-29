@@ -7,7 +7,8 @@
 //
 
 #import "TuViewController.h"
-#import "TuSDKPulseCore/core/TuResult.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
+//#import "TuSDKPulseCore/core/TuResult.h"
 
 @class TuComponentsViewController;
 /**

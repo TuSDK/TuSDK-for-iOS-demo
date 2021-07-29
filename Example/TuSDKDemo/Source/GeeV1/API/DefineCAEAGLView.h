@@ -6,7 +6,7 @@
 //  Copyright © 2020 tusdk.com. All rights reserved.
 //
 
-#import "TuViews/TuViews.h"
+#import <TuViews/TuViews.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

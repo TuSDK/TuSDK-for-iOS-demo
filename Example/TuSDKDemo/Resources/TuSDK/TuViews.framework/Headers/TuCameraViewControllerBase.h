@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "TuResultViewController.h"
 #import "TuFocusTouchViewBase.h"
-#import "TuSDKPulseCore/components/widgets/TuRegionHandler.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+//#import "TuSDKPulseCore/components/widgets/TuRegionHandler.h"
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
 #import "TuCAEAGLView.h"
 #import "TuCamera/TuCamera.h"
 #import "TuCameraShower.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 
 

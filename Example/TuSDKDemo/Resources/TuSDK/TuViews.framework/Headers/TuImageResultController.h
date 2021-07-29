@@ -7,8 +7,8 @@
 //
 
 #import "TuResultViewController.h"
-#import "TuSDKPulseCore/tasks/TuThread.h"
-
+//#import "TuSDKPulseCore/tasks/TuThread.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  图片处理结果视图控制器
  */

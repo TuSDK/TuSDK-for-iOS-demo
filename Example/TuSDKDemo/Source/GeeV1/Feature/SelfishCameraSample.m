@@ -35,8 +35,8 @@
     self.controller = controller;
     // 开启访问相机权限
     [TuTSDeviceSettings checkAllowWithController:controller
-                                               type:lsqDeviceSettingsCamera
-                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+                                               type:TuDeviceSettingsCamera
+                                          completed:^(TuDeviceSettingsType type, BOOL openSetting)
      {
          if (openSetting) {
              lsqLError(@"Can not open camera");

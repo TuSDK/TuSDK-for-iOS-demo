@@ -7,7 +7,6 @@
 //
 
 #import <TuSDKPulseFilter/TuSDKPulseFilter.h>
-#import <TuSDKPulseFilter/TUPFPBubbleTextFilter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

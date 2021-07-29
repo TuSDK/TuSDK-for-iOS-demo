@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "TuImageResultController.h"
 #import "TuCAEAGLView.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 // 图片编辑滤镜控制器基础类
 @interface TuEditFilterControllerBase : TuImageResultController
 // 图片视图

@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "network/TuNKDownloadItem.h"
+#import <TuSDKPulseCore/TUCEnum.h>
 
 @class TuNKDownloadManger;
+@class TuNKDownloadItem;
 
 /**
  *  下载管理器委托
@@ -25,7 +25,7 @@
  */
 - (void)downloadManger:(TuNKDownloadManger *)manager
                   item:(TuNKDownloadItem *)item
-         changedStatus:(lsqDownloadTaskStatus)status;
+         changedStatus:(TuDownloadTaskStatus)status;
 @end
 
 /**
@@ -62,7 +62,7 @@
  *  @param key  下载对象KEY
  *  @param fileId 文件ID
  */
-- (void)appenTaskWithType:(lsqDownloadTaskType)type idt:(uint64_t)idt key:(NSString *)key fileId:(NSString *)fileId;
+- (void)appenTaskWithType:(TuDownloadTaskType)type idt:(uint64_t)idt key:(NSString *)key fileId:(NSString *)fileId;
 
 /**
  *  是否正在下载某个资源
@@ -72,7 +72,7 @@
  *
  *  @return true: 下载中
  */
-- (BOOL)isDownloadingWithType:(lsqDownloadTaskType)type idt:(uint64_t)idt;
+- (BOOL)isDownloadingWithType:(TuDownloadTaskType)type idt:(uint64_t)idt;
 
 /**
  *  取消任务
@@ -82,7 +82,7 @@
  *
  *  @return BOOL 是否取消任务
  */
-- (BOOL)cancelTaskWithType:(lsqDownloadTaskType)type idt:(uint64_t)idt;
+- (BOOL)cancelTaskWithType:(TuDownloadTaskType)type idt:(uint64_t)idt;
 
 /**
  *  获取所有json数据
@@ -92,5 +92,5 @@
  *
  *  @return json数据
  */
-- (NSString *)jsonAllDataWithType:(lsqDownloadTaskType)type downloadedIds:(NSArray *)ids;
+- (NSString *)jsonAllDataWithType:(TuDownloadTaskType)type downloadedIds:(NSArray *)ids;
 @end

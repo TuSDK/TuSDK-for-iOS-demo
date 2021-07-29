@@ -7,55 +7,55 @@
 //
 
 #import "TuGroupFilterItemCellBase.h"
-#import "TuSDKPulseCore/core/TuFilterOption.h"
-#import "TuSDKPulseCore/core/TuFilterGroup.h"
+//#import "TuSDKPulseCore/core/TuFilterOption.h"
+//#import "TuSDKPulseCore/core/TuFilterGroup.h"
 #import "TuTableViewCell.h"
 #import "TuFiltersTaskBase.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  滤镜分组元素类型
  */
-typedef NS_ENUM(NSInteger, lsqGroupFilterItemType)
+typedef NS_ENUM(NSInteger, TuGroupFilterItemType)
 {
     /**
      * 占位视图
      */
-    lsqGroupFilterItemHolder,
+    TuGroupFilterItemHolder,
     /**
      * 滤镜
      */
-    lsqGroupFilterItemFilter,
+    TuGroupFilterItemFilter,
     /**
      * 滤镜分组
      */
-    lsqGroupFilterItemGroup,
+    TuGroupFilterItemGroup,
     /**
      * 历史
      */
-    lsqGroupFilterItemHistory,
+    TuGroupFilterItemHistory,
     /**
      * 在线滤镜
      */
-    lsqGroupFilterItemOnline,
+    TuGroupFilterItemOnline,
 };
 
 /**
  *  滤镜分组元素类型
  */
-typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
+typedef NS_ENUM(NSInteger, TuGroupFilterAction)
 {
     /**
      * 默认
      */
-    lsqGroupFilterActionNormal = 0,
+    TuGroupFilterActionNormal = 0,
     /**
      * 编辑
      */
-    lsqGroupFilterActionEdit,
+    TuGroupFilterActionEdit,
     /**
      * 相机
      */
-    lsqGroupFilterActionCamera
+    TuGroupFilterActionCamera
 };
 
 #pragma mark - TuGroupFilterItemCellInterface
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  是否激活
@@ -142,7 +142,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterItemType type;
+@property (nonatomic)TuGroupFilterItemType type;
 /**
  *  滤镜配置选项
  */
@@ -168,7 +168,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
  *
  *  @return type 滤镜分组元素
  */
-+ (instancetype)initWithType:(lsqGroupFilterItemType)type;
++ (instancetype)initWithType:(TuGroupFilterItemType)type;
 
 /**
  *  初始化
@@ -203,7 +203,7 @@ typedef NS_ENUM(NSInteger, lsqGroupFilterAction)
 /**
  *  滤镜分组元素类型
  */
-@property (nonatomic)lsqGroupFilterAction action;
+@property (nonatomic)TuGroupFilterAction action;
 
 /**
  *  是否激活

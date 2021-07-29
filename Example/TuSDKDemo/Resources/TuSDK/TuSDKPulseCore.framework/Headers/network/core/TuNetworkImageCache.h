@@ -12,21 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSInteger, TuNetworkImageCacheType) {
-    /**
-     * The image wasn't available the SDWebImage caches, but was downloaded from the web.
-     */
-    TuNetworkImageCacheTypeNone,
-    /**
-     * The image was obtained from the disk cache.
-     */
-    TuNetworkImageCacheTypeDisk,
-    /**
-     * The image was obtained from the memory cache.
-     */
-    TuNetworkImageCacheTypeMemory
-};
+#import <TuSDKPulseCore/TUCEnum.h>
 
 typedef void(^TuWebImageQueryCompletedBlock)(UIImage *image, TuNetworkImageCacheType cacheType);
 

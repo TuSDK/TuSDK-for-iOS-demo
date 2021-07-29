@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
-#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
-
+//#import "TuSDKPulseCore/components/widgets/smudge/TuBrush.h"
+//#import "TuSDKPulseCore/tools/TuTSScreen+Extend.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #ifndef lsqSmudgProcessor_Define
 #define lsqSmudgProcessor_Define
 

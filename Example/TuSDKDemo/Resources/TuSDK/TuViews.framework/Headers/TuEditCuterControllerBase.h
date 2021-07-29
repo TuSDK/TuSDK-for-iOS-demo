@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TuImageResultController.h"
-#import "TuSDKPulseCore/core/TuRatioType.h"
+//#import "TuSDKPulseCore/core/TuRatioType.h"
 #import "TuTouchImageView.h"
-
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  图片编辑裁切旋转控制器基础类
  */

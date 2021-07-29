@@ -6,9 +6,8 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKPulseCore/network/core/TuNetworkEngine.h"
-#import "TuSDKPulseCore/network/TuNKNetworkArg.h"
-
+#import <TuSDKPulseCore/TuNetworkEngine.h>
+@class TuNKNetworkArg;
 /**
  *  是否为调试模式
  */

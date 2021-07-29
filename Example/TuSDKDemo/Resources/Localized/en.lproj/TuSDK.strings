@@ -300,6 +300,92 @@
 "lsq_filter_SkinPowder" = "Pink";
 "lsq_filter_SkinSugar" = "Sugar";
 
+//3.4.6 新相机滤镜-短视频
+"lsq_filter_group_Sharp_Image" = "Sharp";
+"lsq_filter_group_Scenery_Image" = "Scenery";
+"lsq_filter_group_Food_Image" = "Food";
+"lsq_filter_group_Portrait_Image" = "Portrait";
+
+
+//锐利
+"lsq_filter_Sharp_Orange" = "Orange";
+"lsq_filter_Sharp_Black" = "Black";
+"lsq_filter_Sharp_History" = "History";
+"lsq_filter_Sharp_Red" = "Red";
+"lsq_filter_Sharp_Neon" = "Neon";
+"lsq_filter_Sharp_Ash" = "Ash";
+"lsq_filter_Sharp_Pink" = "Pink";
+"lsq_filter_Sharp_Past" = "Past";
+"lsq_filter_Sharp_Otimes" = "Otimes";
+"lsq_filter_Sharp_Quiet" = "Quiet";
+"lsq_filter_Sharp_Mottled" = "Mottled";
+"lsq_filter_Sharp_Messy" = "Messy";
+"lsq_filter_Sharp_Imprint" = "Imprint";
+"lsq_filter_Sharp_Nostalgia" = "Nostalgia";
+"lsq_filter_Sharp_Dream" = "Dream";
+"lsq_filter_Sharp_Contrast" = "Contrast";
+"lsq_filter_Sharp_Dark" = "Dark";
+
+//风景
+"lsq_filter_Scenery_Withered" = "Withered";
+"lsq_filter_Scenery_Grace" = "Grace";
+"lsq_filter_Scenery_Sunset" = "Sunset";
+"lsq_filter_Scenery_Sunrise" = "Sunrise";
+"lsq_filter_Scenery_Lautumn" = "Lautumn";
+"lsq_filter_Scenery_Silent" = "Silent";
+"lsq_filter_Scenery_Film" = "Film";
+"lsq_filter_Scenery_City" = "City";
+"lsq_filter_Scenery_Afternoon" = "Afternoon";
+"lsq_filter_Scenery_Birch" = "Birch";
+"lsq_filter_Scenery_Blue" = "Blue";
+"lsq_filter_Scenery_Picnic" = "Picnic";
+"lsq_filter_Scenery_Tale" = "Tale";
+"lsq_filter_Scenery_Innocence" = "Innocence";
+"lsq_filter_Scenery_Izu" = "Izu";
+"lsq_filter_Scenery_Fresh" = "Fresh";
+"lsq_filter_Scenery_Rain" = "Rain";
+"lsq_filter_Scenery_Flower" = "Flower";
+"lsq_filter_Scenery_SNight" = "SNight";
+
+//美食
+"lsq_filter_Food_Lime" = "Lime";
+"lsq_filter_Food_Mangosteen" = "Mangosteen";
+"lsq_filter_Food_Honey" = "Honey";
+"lsq_filter_Food_Peach" = "Peach";
+"lsq_filter_Food_Caramel" = "Caramel";
+"lsq_filter_Food_Whisky" = "Whisky";
+"lsq_filter_Food_Light" = "Light";
+"lsq_filter_Food_Lemon" = "Lemon";
+"lsq_filter_Food_Delicious" = "Delicious";
+
+//人像
+"lsq_filter_Portrait_Desserts" = "Desserts";
+"lsq_filter_Portrait_Fog" = "Fog";
+"lsq_filter_Portrait_Sweet" = "Sweet";
+"lsq_filter_Portrait_Warm" = "Warm";
+"lsq_filter_Portrait_Candy" = "Candy";
+"lsq_filter_Portrait_Milk" = "Milk";
+"lsq_filter_Portrait_Dawn" = "Dawn";
+"lsq_filter_Portrait_Texture" = "Texture";
+"lsq_filter_Portrait_Cream" = "Cream";
+"lsq_filter_Portrait_Dusk" = "Dusk";
+"lsq_filter_Portrait_Ruddy" = "Ruddy";
+"lsq_filter_Portrait_Icream" = "Icream";
+"lsq_filter_Portrait_Rosy" = "Rosy";
+"lsq_filter_Portrait_Indifference" = "Indifference";
+"lsq_filter_Portrait_Soda" = "Soda";
+"lsq_filter_Portrait_Retro" = "Retro";
+"lsq_filter_Portrait_Bright" = "Bright";
+"lsq_filter_Portrait_Pure" = "Pure";
+"lsq_filter_Portrait_First" = "First";
+"lsq_filter_Portrait_Cherry" = "Cherry";
+"lsq_filter_Portrait_Bellflower" = "Bellflower";
+"lsq_filter_Portrait_Spring" = "Spring";
+"lsq_filter_Portrait_Moisten" = "Moisten";
+"lsq_filter_Portrait_Clear" = "Clear";
+"lsq_filter_Portrait_Pale" = "Pale";
+"lsq_filter_Portrait_Natural" = "Natural";
+
 // Magic
 "lsq_filter_MagicRed" = "Red";
 "lsq_filter_MagicYellow" = "Yellow";
@@ -440,89 +526,3 @@
 "lsq_camera_flash_on" = "Open";
 "lsq_camera_flash_off" = "Close";
 "lsq_camera_flash" = "Flash";
-
-//4.0.0 新相机滤镜
-"lsq_filter_group_Sharp_Image" = "Sharp";
-"lsq_filter_group_Scenery_Image" = "Scenery";
-"lsq_filter_group_Food_Image" = "Food";
-"lsq_filter_group_Portrait_Image" = "Portrait";
-
-
-//锐利
-"lsq_filter_Sharp_Orange" = "Orange";
-"lsq_filter_Sharp_Black" = "Black";
-"lsq_filter_Sharp_History" = "History";
-"lsq_filter_Sharp_Red" = "Red";
-"lsq_filter_Sharp_Neon" = "Neon";
-"lsq_filter_Sharp_Ash" = "Ash";
-"lsq_filter_Sharp_Pink" = "Pink";
-"lsq_filter_Sharp_Past" = "Past";
-"lsq_filter_Sharp_Otimes" = "Otimes";
-"lsq_filter_Sharp_Quiet" = "Quiet";
-"lsq_filter_Sharp_Mottled" = "Mottled";
-"lsq_filter_Sharp_Messy" = "Messy";
-"lsq_filter_Sharp_Imprint" = "Imprint";
-"lsq_filter_Sharp_Nostalgia" = "Nostalgia";
-"lsq_filter_Sharp_Dream" = "Dream";
-"lsq_filter_Sharp_Contrast" = "Contrast";
-"lsq_filter_Sharp_Dark" = "Dark";
-
-//风景
-"lsq_filter_Scenery_Withered" = "Withered";
-"lsq_filter_Scenery_Grace" = "Grace";
-"lsq_filter_Scenery_Sunset" = "Sunset";
-"lsq_filter_Scenery_Sunrise" = "Sunrise";
-"lsq_filter_Scenery_Lautumn" = "Lautumn";
-"lsq_filter_Scenery_Silent" = "Silent";
-"lsq_filter_Scenery_Film" = "Film";
-"lsq_filter_Scenery_City" = "City";
-"lsq_filter_Scenery_Afternoon" = "Afternoon";
-"lsq_filter_Scenery_Birch" = "Birch";
-"lsq_filter_Scenery_Blue" = "Blue";
-"lsq_filter_Scenery_Picnic" = "Picnic";
-"lsq_filter_Scenery_Tale" = "Tale";
-"lsq_filter_Scenery_Innocence" = "Innocence";
-"lsq_filter_Scenery_Izu" = "Izu";
-"lsq_filter_Scenery_Fresh" = "Fresh";
-"lsq_filter_Scenery_Rain" = "Rain";
-"lsq_filter_Scenery_Flower" = "Flower";
-"lsq_filter_Scenery_SNight" = "SNight";
-
-//美食
-"lsq_filter_Food_Lime" = "Lime";
-"lsq_filter_Food_Mangosteen" = "Mangosteen";
-"lsq_filter_Food_Honey" = "Honey";
-"lsq_filter_Food_Peach" = "Peach";
-"lsq_filter_Food_Caramel" = "Caramel";
-"lsq_filter_Food_Whisky" = "Whisky";
-"lsq_filter_Food_Light" = "Light";
-"lsq_filter_Food_Lemon" = "Lemon";
-"lsq_filter_Food_Delicious" = "Delicious";
-
-//人像
-"lsq_filter_Portrait_Desserts" = "Desserts";
-"lsq_filter_Portrait_Fog" = "Fog";
-"lsq_filter_Portrait_Sweet" = "Sweet";
-"lsq_filter_Portrait_Warm" = "Warm";
-"lsq_filter_Portrait_Candy" = "Candy";
-"lsq_filter_Portrait_Milk" = "Milk";
-"lsq_filter_Portrait_Dawn" = "Dawn";
-"lsq_filter_Portrait_Texture" = "Texture";
-"lsq_filter_Portrait_Cream" = "Cream";
-"lsq_filter_Portrait_Dusk" = "Dusk";
-"lsq_filter_Portrait_Ruddy" = "Ruddy";
-"lsq_filter_Portrait_Icream" = "Icream";
-"lsq_filter_Portrait_Rosy" = "Rosy";
-"lsq_filter_Portrait_Indifference" = "Indifference";
-"lsq_filter_Portrait_Soda" = "Soda";
-"lsq_filter_Portrait_Retro" = "Retro";
-"lsq_filter_Portrait_Bright" = "Bright";
-"lsq_filter_Portrait_Pure" = "Pure";
-"lsq_filter_Portrait_First" = "First";
-"lsq_filter_Portrait_Cherry" = "Cherry";
-"lsq_filter_Portrait_Bellflower" = "Bellflower";
-"lsq_filter_Portrait_Spring" = "Spring";
-"lsq_filter_Portrait_Moisten" = "Moisten";
-"lsq_filter_Portrait_Clear" = "Clear";
-"lsq_filter_Portrait_Pale" = "Pale";
-"lsq_filter_Portrait_Natural" = "Natural";

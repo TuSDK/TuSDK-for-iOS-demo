@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
+//#import "TuSDKPulseCore/components/widgets/sticker/TuSticker.h"
 
 /**
  *  本地贴纸选择单元格视图基础类

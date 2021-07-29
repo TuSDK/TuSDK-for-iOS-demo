@@ -12,24 +12,24 @@
 /**
  *  设备权限设置类型
  */
-typedef NS_ENUM(NSInteger, lsqDeviceSettingsType)
+typedef NS_ENUM(NSInteger, TuDeviceSettingsType)
 {
     /**
      *  未知类型
      */
-    lsqDeviceSettingsUnknow,
+    TuDeviceSettingsUnknow,
     /**
      *  设置照片权限
      */
-    lsqDeviceSettingsPhoto,
+    TuDeviceSettingsPhoto,
     /**
      * 设置相机权限
      */
-    lsqDeviceSettingsCamera,
+    TuDeviceSettingsCamera,
     /**
      * 设置定位权限
      */
-    lsqDeviceSettingsLocation,
+    TuDeviceSettingsLocation,
 };
 
 /**
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, lsqDeviceSettingsType)
  *  @param type        设备权限设置类型
  *  @param openSetting 是否开启权限设置
  */
-typedef void (^TuSDKTSDeviceSettingsBlock)(lsqDeviceSettingsType type, BOOL openSetting);
+typedef void (^TuTSDeviceSettingsBlock)(TuDeviceSettingsType type, BOOL openSetting);
 
 /**
  *  设备权限设置
@@ -51,5 +51,5 @@ typedef void (^TuSDKTSDeviceSettingsBlock)(lsqDeviceSettingsType type, BOOL open
  *  @param type       设备权限设置类型
  *  @param completed  设备权限设置
  */
-+ (void)checkAllowWithController:(UIViewController *)controller type:(lsqDeviceSettingsType)type completed:(TuSDKTSDeviceSettingsBlock)completed;
++ (void)checkAllowWithController:(UIViewController *)controller type:(TuDeviceSettingsType)type completed:(TuTSDeviceSettingsBlock)completed;
 @end

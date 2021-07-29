@@ -6,10 +6,9 @@
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
-#import "TuComponentsViewController.h"
-#import "TuSDKPulseCore/core/TuResult.h"
-#import "TuSDKPulseCore/core/TuWaterMarkOption.h"
-#import <TuSDKPulse/TUPPermission.h>
+#import <TuViews/TuComponentsViewController.h>
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
+#import <TuSDKPulse/TuSDKPulse.h>
 
 /**
  *  处理结果视图控制器

@@ -72,7 +72,7 @@
     opt.saveLastBrush = YES;
 
     // 笔刷大小等级设置（默认: 中等----细、中、粗三个等级）（1, 2, 4）
-    opt.defaultBrushSize = lsqLargeBrush;
+    opt.defaultBrushSize = TuSDKLargeBrush;
     // 笔刷大小比例设置（默认: 1.5----1-3的范围，小于1或大于3都将被限制在1或3）
     // 真正涂鸦是笔刷的大小就是 defaultBrushSize*brushScaleSize
     opt.brushScaleSize = 1.5;

@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  默认的笔刷大小 (默认: lsqMediumBrush，中等粗细)
  *  @since v3.1.0
  */
-@property (nonatomic, assign) lsqBrushSize defaultBrushSize;
+@property (nonatomic, assign) TuSDKBrushSize defaultBrushSize;
 
 /**
  *  笔刷的缩放尺寸, 默认1.5pt，范围(1-3)

@@ -8,7 +8,7 @@
 
 #import "TuSDKGeeV1Import.h"
 #import "TuSDKCPGroupFilterBar.h"
-#import <TuSDKPulseCore/cx/seles/extend/SelesParameters.h>
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 
 @class TuSDKPFCameraFilterGroupView;
 /**

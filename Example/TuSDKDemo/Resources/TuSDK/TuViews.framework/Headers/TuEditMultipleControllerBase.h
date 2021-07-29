@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "TuImageResultController.h"
 #import "TuEditActionType.h"
-#import "TuSDKPulseCore/core/TuWaterMarkOption.h"
-
+//#import "TuSDKPulseCore/core/TuWaterMarkOption.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 /**
  *  多功能图像编辑控制器基础类
  */

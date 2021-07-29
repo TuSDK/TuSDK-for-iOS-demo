@@ -4,6 +4,138 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		etqE5LuVpKzPquVNVWcVYsM2+oM=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<data>
+		7xHTwp9BShVO62PDwRzhI/73Wgc=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<data>
+		CSgz08gBmo049XlzhRq//uP/hMM=
+		</data>
+		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ZoROs08l8rWN95JGh+WZKyAxYLM=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		lB59Un7L6CDUArs39pW2QXH4H7w=
+		</data>
+		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		etqE5LuVpKzPquVNVWcVYsM2+oM=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<data>
+		7xHTwp9BShVO62PDwRzhI/73Wgc=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<data>
+		UQ1lMoGIIhbgdqgBEm6V+/T0jcY=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ZoROs08l8rWN95JGh+WZKyAxYLM=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		wWe+2ikt1OPcaFv/zE1pr4BEAus=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		etqE5LuVpKzPquVNVWcVYsM2+oM=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<data>
+		7xHTwp9BShVO62PDwRzhI/73Wgc=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<data>
+		9W7KeTYe4kGkcW0TSkdLLFLGKEg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ZoROs08l8rWN95JGh+WZKyAxYLM=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<data>
+		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<data>
+		qF11FdN8eS65Weq+vsoXd8TGwC8=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Info.plist</key>
+		<data>
+		q8OzdRHPHxcWJBO6HBiOGfLoJFA=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/TuSDKPulseFilter</key>
+		<data>
+		O0oNNfJxIZMVmXutwrrS5k/tlVA=
+		</data>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/_CodeSignature/CodeResources</key>
+		<data>
+		oYeBf/xsDzoGsVvA4p/GhPVgumw=
+		</data>
+		<key>Frameworks/TuViews.framework/Info.plist</key>
+		<data>
+		7oZHMqUJsg2jMocafawlez+T46E=
+		</data>
+		<key>Frameworks/TuViews.framework/TuViews</key>
+		<data>
+		NF6qF8QAHDvM4iTOL1rAg+5cv7o=
+		</data>
+		<key>Frameworks/TuViews.framework/_CodeSignature/CodeResources</key>
+		<data>
+		An/V1sHkOz0YV27JC0T3c58rz5Y=
+		</data>
 		<key>Headers/TuSDKCPAlbumComponent.h</key>
 		<data>
 		0Nd51UBO6NoSzvnmlebGgNy8i/g=
@@ -58,7 +190,7 @@
 		</data>
 		<key>Headers/TuSDKGeeV1Import.h</key>
 		<data>
-		PjmSTC5r3lwWgn+3OwrKy8Mooko=
+		/kNOfWjTHxpqhJS2ulTdeuZcUDs=
 		</data>
 		<key>Headers/TuSDKGeeV1Theme.h</key>
 		<data>
@@ -78,7 +210,7 @@
 		</data>
 		<key>Headers/TuSDKPFAlbumMultipleOptions.h</key>
 		<data>
-		FYwEFWZGWK9+f7yywF8HXUywkQo=
+		uEc403c7+WD8W8rL9qgQHQieqOQ=
 		</data>
 		<key>Headers/TuSDKPFAlbumMultipleView.h</key>
 		<data>
@@ -86,7 +218,7 @@
 		</data>
 		<key>Headers/TuSDKPFAlbumMultipleViewController.h</key>
 		<data>
-		Ys6ETKY0yntHjFkHHCcAeanjRns=
+		DARwfmtDflBYt6cw7u5PKySGIyM=
 		</data>
 		<key>Headers/TuSDKPFAlbumOptions.h</key>
 		<data>
@@ -110,7 +242,7 @@
 		</data>
 		<key>Headers/TuSDKPFBrushBarView.h</key>
 		<data>
-		KRpzzi9LmcMh6yTYswWMtembJq8=
+		QTMRWJFZiqnSurJRzwJrFtsbrs0=
 		</data>
 		<key>Headers/TuSDKPFBrushTableItemCell.h</key>
 		<data>
@@ -118,11 +250,11 @@
 		</data>
 		<key>Headers/TuSDKPFCameraFilterGroupView.h</key>
 		<data>
-		U5PggkDhwtEe+mpm4D+I+eVuz9E=
+		kqAQxWgsI+hyYf/0w1kYU3dvaC8=
 		</data>
 		<key>Headers/TuSDKPFCameraFilterParamItemView.h</key>
 		<data>
-		pWLihsLCG6qYfpBqVvj1ylfnbLg=
+		WZL9oB0RFpGwEnuppq4EECWwU+w=
 		</data>
 		<key>Headers/TuSDKPFCameraOptions.h</key>
 		<data>
@@ -134,7 +266,7 @@
 		</data>
 		<key>Headers/TuSDKPFCameraView.h</key>
 		<data>
-		b8yBOAOtHE9BKJ9Gd3wTRguhboI=
+		JnHe38KqzZYW6MxTT2b0ia1IKHM=
 		</data>
 		<key>Headers/TuSDKPFCameraViewController.h</key>
 		<data>
@@ -222,15 +354,15 @@
 		</data>
 		<key>Headers/TuSDKPFEditPaintOptions.h</key>
 		<data>
-		EET3+X0AzzC4hUCHoPYb0nKHYGE=
+		DzmUIUu4e4KNTjQt8qg5Ussbpm8=
 		</data>
 		<key>Headers/TuSDKPFEditPaintView.h</key>
 		<data>
-		RCIpyaFUElobXZ1PqIIMErA1Tw4=
+		m+9+yzfm/tOr0rUNv+GO+xGJuoQ=
 		</data>
 		<key>Headers/TuSDKPFEditPaintViewController.h</key>
 		<data>
-		kPS7vQmahmqIYp3PEN/ojKpsp3E=
+		MHMJVhq992yMvKooIXnuhpkbwSI=
 		</data>
 		<key>Headers/TuSDKPFEditSharpnessController.h</key>
 		<data>
@@ -238,7 +370,7 @@
 		</data>
 		<key>Headers/TuSDKPFEditSkinController.h</key>
 		<data>
-		SnXRni0yMSZRwYCnqu9mshptM0E=
+		rzcbHSMNq3mUYI+2ywCMkrf6JHA=
 		</data>
 		<key>Headers/TuSDKPFEditSkinView.h</key>
 		<data>
@@ -250,15 +382,15 @@
 		</data>
 		<key>Headers/TuSDKPFEditSmudgeController.h</key>
 		<data>
-		X5fw4dg92u3Lvckf7vp10usxZyc=
+		V1t7SYJAsG/gg0/28UIbX+yJtCs=
 		</data>
 		<key>Headers/TuSDKPFEditSmudgeOptions.h</key>
 		<data>
-		tjPemHFnmJGLWkUwcZG4f6VgxoQ=
+		3ERkLN+FuaGxicZ1jUi4hBnfgzI=
 		</data>
 		<key>Headers/TuSDKPFEditSmudgeView.h</key>
 		<data>
-		/EhTLGgBTTAWofzGQdfAHRqdJd0=
+		i6HhJIefGRV5sw/N24D/IVQEC1s=
 		</data>
 		<key>Headers/TuSDKPFEditStickerController.h</key>
 		<data>
@@ -314,15 +446,15 @@
 		</data>
 		<key>Headers/TuSDKPFEditWipeAndFilterController.h</key>
 		<data>
-		85VGPlWH28B4QMe912GDfRxvAaE=
+		MHUOe6gCOgeWnmEbzasRPwq1G60=
 		</data>
 		<key>Headers/TuSDKPFEditWipeAndFilterOptions.h</key>
 		<data>
-		frFlNsbYFL9jRxPY47MwxtWPMhc=
+		/6tD8kbUiVK+1t0dObIzzZCGWl4=
 		</data>
 		<key>Headers/TuSDKPFEditWipeAndFilterView.h</key>
 		<data>
-		EcxBlqfDNYarL89XLafLMoso04E=
+		1lVhy8YGHKF3UDeHKCIZwAdiJNk=
 		</data>
 		<key>Headers/TuSDKPFFilterOnlineController.h</key>
 		<data>
@@ -334,7 +466,7 @@
 		</data>
 		<key>Headers/TuSDKPFPaintBarView.h</key>
 		<data>
-		c+fH/0WWcfVo7cAL/YsQamGQgjQ=
+		qICThbKUYSbbqHuzlJFCKuCpS1k=
 		</data>
 		<key>Headers/TuSDKPFPaintBarViewBase.h</key>
 		<data>
@@ -350,7 +482,7 @@
 		</data>
 		<key>Headers/TuSDKPFPhotoPreviewController.h</key>
 		<data>
-		4vH07c9T7u9HZINovxQx74LSAJ8=
+		EpG7UBw+wzxfe3x3bSHDqHhZvnk=
 		</data>
 		<key>Headers/TuSDKPFPhotosCell.h</key>
 		<data>
@@ -362,11 +494,11 @@
 		</data>
 		<key>Headers/TuSDKPFPhotosGridPreview.h</key>
 		<data>
-		GxJw6qGfrf6QwdyW7QIG4jdxvsw=
+		C5PqcnyM/4Ee3e/zPFLSW08a7Dw=
 		</data>
 		<key>Headers/TuSDKPFPhotosGridView.h</key>
 		<data>
-		geUdZPWb+RhT+HFenBCq/FBdNOY=
+		fOL2Rw527TSlV5GR2RJGuL4h0Hw=
 		</data>
 		<key>Headers/TuSDKPFPhotosOptions.h</key>
 		<data>
@@ -406,7 +538,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dduKMYXkOxhWKt9vRdmCkCzjttg=
+		1HE2gCqO6LrjUxUwWHoOFdIZ0v0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -415,6 +547,369 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			etqE5LuVpKzPquVNVWcVYsM2+oM=
+			</data>
+			<key>hash2</key>
+			<data>
+			PnP7hVY3QacUfpES/jA3MrkQIRebSTTxRG7cu5rnWoo=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xHTwp9BShVO62PDwRzhI/73Wgc=
+			</data>
+			<key>hash2</key>
+			<data>
+			xF2E3BWDjouEo57guBWshUbZ0kocfEdzr39RyPaCKaw=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CSgz08gBmo049XlzhRq//uP/hMM=
+			</data>
+			<key>hash2</key>
+			<data>
+			s+fpuULNRh1X748JElcaEmLOabpA/TMUISSE2wBjU4Q=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZoROs08l8rWN95JGh+WZKyAxYLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KBiVnEQHu6fzLzK7kQiwuaJyKsX1Ox/ZTODAOQj/Gko=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lB59Un7L6CDUArs39pW2QXH4H7w=
+			</data>
+			<key>hash2</key>
+			<data>
+			UyN6ETe8l1vzIbZRfACRtbzyggRK7ZnJb0L8nqDwgMs=
+			</data>
+		</dict>
+		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			etqE5LuVpKzPquVNVWcVYsM2+oM=
+			</data>
+			<key>hash2</key>
+			<data>
+			PnP7hVY3QacUfpES/jA3MrkQIRebSTTxRG7cu5rnWoo=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xHTwp9BShVO62PDwRzhI/73Wgc=
+			</data>
+			<key>hash2</key>
+			<data>
+			xF2E3BWDjouEo57guBWshUbZ0kocfEdzr39RyPaCKaw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UQ1lMoGIIhbgdqgBEm6V+/T0jcY=
+			</data>
+			<key>hash2</key>
+			<data>
+			wl7xA6umOKBKW3LlBz+f6XA2I9r3LFm1xIJIWcXpPek=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZoROs08l8rWN95JGh+WZKyAxYLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KBiVnEQHu6fzLzK7kQiwuaJyKsX1Ox/ZTODAOQj/Gko=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wWe+2ikt1OPcaFv/zE1pr4BEAus=
+			</data>
+			<key>hash2</key>
+			<data>
+			GsCi/ZU7Dia8bhga6x67F54rfEMoEs9Mmtv3VTB09Wo=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			etqE5LuVpKzPquVNVWcVYsM2+oM=
+			</data>
+			<key>hash2</key>
+			<data>
+			PnP7hVY3QacUfpES/jA3MrkQIRebSTTxRG7cu5rnWoo=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xHTwp9BShVO62PDwRzhI/73Wgc=
+			</data>
+			<key>hash2</key>
+			<data>
+			xF2E3BWDjouEo57guBWshUbZ0kocfEdzr39RyPaCKaw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9W7KeTYe4kGkcW0TSkdLLFLGKEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			CSzSF+jzlNfueRZFMWji/XVhHpt7rmuWM3RUlcnVBU0=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZoROs08l8rWN95JGh+WZKyAxYLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KBiVnEQHu6fzLzK7kQiwuaJyKsX1Ox/ZTODAOQj/Gko=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			</data>
+			<key>hash2</key>
+			<data>
+			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qF11FdN8eS65Weq+vsoXd8TGwC8=
+			</data>
+			<key>hash2</key>
+			<data>
+			E5Ax4GqGV6Y9u8LIWx9HjNEiCznoi60ixwwpvXcA5Rk=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q8OzdRHPHxcWJBO6HBiOGfLoJFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ai7xh5gckptrkvUunwPeGyC9J+mcUQiZmCkB7nMWMLs=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/TuSDKPulseFilter</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O0oNNfJxIZMVmXutwrrS5k/tlVA=
+			</data>
+			<key>hash2</key>
+			<data>
+			/pqOCGMOClU+AteKl1sI0RWV2ETasHo9etjSjOqNMds=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Frameworks/TuSDKPulseFilter.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oYeBf/xsDzoGsVvA4p/GhPVgumw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yp/pR0CRkoxMtUznawnd5TO7MihJ0H3aoF8P+dPU2Jc=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7oZHMqUJsg2jMocafawlez+T46E=
+			</data>
+			<key>hash2</key>
+			<data>
+			t4RIsZEKPAJoDcEF0vomzvCLEve+lKyqF0A2MFQLBws=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/TuViews</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NF6qF8QAHDvM4iTOL1rAg+5cv7o=
+			</data>
+			<key>hash2</key>
+			<data>
+			qwgX0Q0xL5A2f0WikB5qrGrXRErTlP6o3AjP3KQ5Wps=
+			</data>
+		</dict>
+		<key>Frameworks/TuViews.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			An/V1sHkOz0YV27JC0T3c58rz5Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			8CCXzdFnBBvcWV+D3UF3YKrUU4kKXrkJy6LVmtdPKtE=
+			</data>
+		</dict>
 		<key>Headers/TuSDKCPAlbumComponent.h</key>
 		<dict>
 			<key>hash</key>
@@ -562,11 +1057,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PjmSTC5r3lwWgn+3OwrKy8Mooko=
+			/kNOfWjTHxpqhJS2ulTdeuZcUDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kbRRBE+uYO1U0w2zA5u9sKWEDam4LzQywKiDUMqbopE=
+			QRRgwndlSwtMHLs0l/3M/UZVqRmRPPTgtarSMozspFw=
 			</data>
 		</dict>
 		<key>Headers/TuSDKGeeV1Theme.h</key>
@@ -617,11 +1112,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FYwEFWZGWK9+f7yywF8HXUywkQo=
+			uEc403c7+WD8W8rL9qgQHQieqOQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			95dYaTG+j9sDxNEUJeI1YlPS/N/WVVa7MhLS57xRO5A=
+			8MzaqIE9oqw1QwRBQcjnwYZ1Ax2MQ+j75lLblxd2JPo=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFAlbumMultipleView.h</key>
@@ -639,11 +1134,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ys6ETKY0yntHjFkHHCcAeanjRns=
+			DARwfmtDflBYt6cw7u5PKySGIyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			A7R/+pg8fGKR19Sd2xYKohCByQYnlTu/F7mFgf4MJKo=
+			6F3+yZN+lby/bV3aTp/dnoX39rciFQQXuhN6xBa/F5U=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFAlbumOptions.h</key>
@@ -705,11 +1200,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KRpzzi9LmcMh6yTYswWMtembJq8=
+			QTMRWJFZiqnSurJRzwJrFtsbrs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			MG5CFZO7lxz5uehLVpnYoOLuob81U6DaXyi4tGzRBjY=
+			IUYXM4rC9CfLiJdn4w5c5y+Vq50UTSVv9j/gxM2L+5M=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFBrushTableItemCell.h</key>
@@ -727,22 +1222,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U5PggkDhwtEe+mpm4D+I+eVuz9E=
+			kqAQxWgsI+hyYf/0w1kYU3dvaC8=
 			</data>
 			<key>hash2</key>
 			<data>
-			9kXRbGNCfvZHmBJy3GcIbJYcpkRvl6bmSZtWvEexnuY=
+			SKE2sk4f+mZNkPTV4103aAc+a6Xy5z0Jk7/OKxBDyo4=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFCameraFilterParamItemView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pWLihsLCG6qYfpBqVvj1ylfnbLg=
+			WZL9oB0RFpGwEnuppq4EECWwU+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			wD9xKfVWp77DWVnSnY4vKnhpnhbqHTegjuySyt4+59Q=
+			s2XcxQ4LefLGXENt5p9MBgycu9TecGITiVBTs6DEGTY=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFCameraOptions.h</key>
@@ -771,11 +1266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b8yBOAOtHE9BKJ9Gd3wTRguhboI=
+			JnHe38KqzZYW6MxTT2b0ia1IKHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jPL8qaB8sD3HIicJW8tDbj3X7Tp8UkZzdAjwd8P6O38=
+			c9dB2pNINTBN5klzNLmGjZigJKlP8w8+qGiQ9emc7B4=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFCameraViewController.h</key>
@@ -1013,33 +1508,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EET3+X0AzzC4hUCHoPYb0nKHYGE=
+			DzmUIUu4e4KNTjQt8qg5Ussbpm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbG2R9m+3yT1tmRSRAYTCkzJPeeM3mfpoK2HkR5DdIQ=
+			uhAHi45YVEdoNpnC/c9Q79hWXpU7TyJRDDTs3+HYrTs=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditPaintView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RCIpyaFUElobXZ1PqIIMErA1Tw4=
+			m+9+yzfm/tOr0rUNv+GO+xGJuoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			TRCwRMVh6pOF9nnn2T+YCqdBSdhOVGmS8U+Qn32FY7M=
+			6s6CNhXe8EHUq6yNddzYDIdRQP9BY9HHC6wCKaQxhSo=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditPaintViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kPS7vQmahmqIYp3PEN/ojKpsp3E=
+			MHMJVhq992yMvKooIXnuhpkbwSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			yRAHQ6jlp7PDhkf9tkZdkNka1gQv/4EukQSb8bzV8q8=
+			GxYqzv6/RDXgletv30axcet5KbPxPb6IscD3Vwlmgas=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditSharpnessController.h</key>
@@ -1057,11 +1552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SnXRni0yMSZRwYCnqu9mshptM0E=
+			rzcbHSMNq3mUYI+2ywCMkrf6JHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			65tz6roztLQziE0QyEO088KaszGWQfmywyzaVZehJvI=
+			7eXzUYMHqphX0BBCV8h9ssjHH+M105hyHShKPTJlu1I=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditSkinView.h</key>
@@ -1090,33 +1585,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X5fw4dg92u3Lvckf7vp10usxZyc=
+			V1t7SYJAsG/gg0/28UIbX+yJtCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			MfVTRluWi2oL4niKpRCCdLV5Cp1LEtYkTeH+6eJSIEs=
+			xqYArZTWdyGQ/Un3IX9HGUZHSNw5MqYvSEpfn+PLvM8=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditSmudgeOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tjPemHFnmJGLWkUwcZG4f6VgxoQ=
+			3ERkLN+FuaGxicZ1jUi4hBnfgzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			BnTKj3DhVVNct/qY6dx1KZp3Pi8bg646vyrhKRe/CKA=
+			eqxNSIX3ti6rODDC2NDsVPYRlFejAs6vkwXuHtmDrkQ=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditSmudgeView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/EhTLGgBTTAWofzGQdfAHRqdJd0=
+			i6HhJIefGRV5sw/N24D/IVQEC1s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ob2Yfa2ABaTuZBioWsnlc1zA9U5SKsX+YcLfzzuuGOc=
+			Hpt527RVEK00ed/EgAH45wVfsDZI1OjoEkFYlwuw7tQ=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditStickerController.h</key>
@@ -1266,33 +1761,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			85VGPlWH28B4QMe912GDfRxvAaE=
+			MHUOe6gCOgeWnmEbzasRPwq1G60=
 			</data>
 			<key>hash2</key>
 			<data>
-			i8mfSas19jb5uzy+6DYlAru5kMcbq75MMjx4wLdBH3w=
+			/84EtnIcXSnzCw3MKMlPMESy3aDBPEI/QF/BJprp69Q=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditWipeAndFilterOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			frFlNsbYFL9jRxPY47MwxtWPMhc=
+			/6tD8kbUiVK+1t0dObIzzZCGWl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HtAbISw2dfaazX/t8t589/ekVNpkavnokvZN/dBTko0=
+			Sc+a4qMI0kP6wIJMla1Ax1hdC82ANJOrMns5GqaFuTY=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFEditWipeAndFilterView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EcxBlqfDNYarL89XLafLMoso04E=
+			1lVhy8YGHKF3UDeHKCIZwAdiJNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			YGrX4Gp4EfS/1uiS91LnJWldzRnrHQU25LXujNJWiOU=
+			+4dYyqITBDPeSQyuGCswsZ80P/J88f/8u1SmC8OArPM=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFFilterOnlineController.h</key>
@@ -1321,11 +1816,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c+fH/0WWcfVo7cAL/YsQamGQgjQ=
+			qICThbKUYSbbqHuzlJFCKuCpS1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			NrSs3mYUar/zuBUjMO/q+IsVEITHHkXw6dlIORyWMyU=
+			7W1zwUqa4NX+uNA79lFwSBQ/ZYeGRccCdrMeUMWGmPU=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFPaintBarViewBase.h</key>
@@ -1365,11 +1860,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4vH07c9T7u9HZINovxQx74LSAJ8=
+			EpG7UBw+wzxfe3x3bSHDqHhZvnk=
 			</data>
 			<key>hash2</key>
 			<data>
-			kQx7wWChng7nQc7ldA+jx3bnWjEV3WILckbsMWejY7o=
+			Hz1EkWh0NOJTSW3flolOaAk/S/SFcFq7gcqqNFI0pVU=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFPhotosCell.h</key>
@@ -1398,22 +1893,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GxJw6qGfrf6QwdyW7QIG4jdxvsw=
+			C5PqcnyM/4Ee3e/zPFLSW08a7Dw=
 			</data>
 			<key>hash2</key>
 			<data>
-			do+8TEM4YJwSL1ihXxjUL95foNutWgLKG3mJJt3OxOM=
+			a25IYwZQxEuK3pAUK7ya+S3w4pp6bfzuMQI9Tv+iCjI=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFPhotosGridView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			geUdZPWb+RhT+HFenBCq/FBdNOY=
+			fOL2Rw527TSlV5GR2RJGuL4h0Hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			273Z+IhNfHWPOYzqiSEa3kBUOcVr5i89YctW/RvQkdA=
+			/sTe5BdJJ/OfwuDXmxbYMV3Jisp286j2sSkauYqlD9w=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPFPhotosOptions.h</key>

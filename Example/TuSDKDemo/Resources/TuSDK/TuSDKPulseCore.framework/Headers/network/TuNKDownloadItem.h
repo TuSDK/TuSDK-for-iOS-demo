@@ -6,82 +6,34 @@
 //  Copyright (c) 2015年 tusdk.com. All rights reserved.
 //
 
-#import "TuSDKPulseCore/tools/TuDataJson.h"
-/**
- *  下载类型
- */
-typedef NS_ENUM(NSInteger, lsqDownloadTaskType)
-{
-    /**
-     * 滤镜
-     */
-    lsqDownloadTaskTypeFilter,
-    /**
-     * 贴纸
-     */
-    lsqDownloadTaskTypeSticker,
-    /**
-     * 笔刷
-     */
-    lsqDownloadTaskTypeBrush,
-};
-
-/**
- *  下载状态
- */
-typedef NS_ENUM(NSInteger, lsqDownloadTaskStatus)
-{
-    /**
-     * 初始化状态
-     */
-    lsqDownloadTaskStatusInit,
-    /**
-     * 正在下载
-     */
-    lsqDownloadTaskStatusDowning = 10,
-    /**
-     * 正在下载完成
-     */
-    lsqDownloadTaskStatusDowned = 20,
-    /**
-     * 下载失败
-     */
-    lsqDownloadTaskStatusDownFailed = 30,
-    /**
-     * 取消处理
-     */
-    lsqDownloadTaskStatusCancel = 40,
-    /**
-     * 删除处理
-     */
-    lsqDownloadTaskStatusRemoved = 100,
-};
+#import <TuSDKPulseCore/TuDataJson.h>
+#import <TuSDKPulseCore/TUCEnum.h>
 
 /**
  *  在线命令动作
  */
-typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
+typedef NS_ENUM(NSInteger, TuOnlineCommandAction)
 {
     /**
      * 未知动作
      */
-    lsqOnlineCommandActionUnknown,
+    TuOnlineCommandActionUnknown,
     /**
      * 默认动作
      */
-    lsqOnlineCommandActionDefault,
+    TuOnlineCommandActionDefault,
     /**
      * 取消动作
      */
-    lsqOnlineCommandActionCancel,
+    TuOnlineCommandActionCancel,
     /**
      * 选中动作
      */
-    lsqOnlineCommandActionSelect,
+    TuOnlineCommandActionSelect,
     /**
      * 查看详细
      */
-    lsqOnlineCommandActionDetail
+    TuOnlineCommandActionDetail
 };
 
 
@@ -102,7 +54,7 @@ typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
 /**
  * 下载状态
  */
-@property (nonatomic) lsqDownloadTaskStatus status;
+@property (nonatomic) TuDownloadTaskStatus status;
 
 /**
  * 下载进度
@@ -117,7 +69,7 @@ typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
 /**
  * 下载类型
  */
-@property (nonatomic) lsqDownloadTaskType type;
+@property (nonatomic) TuDownloadTaskType type;
 
 /**
  * 文件名称
@@ -169,5 +121,5 @@ typedef NS_ENUM(NSInteger, lsqOnlineCommandAction)
  *
  *  @return type 下载类型动作标识
  */
-+ (NSString *)typeActWithType:(lsqDownloadTaskType)type;
++ (NSString *)typeActWithType:(TuDownloadTaskType)type;
 @end

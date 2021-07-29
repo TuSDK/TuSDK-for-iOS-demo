@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TuGroupFilterBaseView.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 // 图片编辑滤镜控制器滤镜栏视图基础类
 @interface TuEditFilterGroupViewBase : TuGroupFilterBaseView
 // 滤镜参数对象

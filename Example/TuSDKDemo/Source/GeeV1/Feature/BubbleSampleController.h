@@ -7,7 +7,7 @@
 //
 
 #import "SampleBase.h"
-#import "TuViews/TuResultViewController.h"
+#import <TuViews/TuViews.h>
 #import <TuSDKGeeV1/TuSDKGeeV1Import.h>
 NS_ASSUME_NONNULL_BEGIN
 

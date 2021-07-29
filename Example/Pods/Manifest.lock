@@ -1,0 +1,16 @@
+PODS:
+  - SSZipArchive (2.4.2)
+
+DEPENDENCIES:
+  - SSZipArchive (= 2.4.2)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
+
+SPEC CHECKSUMS:
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+
+PODFILE CHECKSUM: e9333da5c07c0555d5ba73c82721ecb027bda865
+
+COCOAPODS: 1.10.1

@@ -13,14 +13,13 @@
 /**
  录制按钮样式
  */
-typedef NS_ENUM(NSInteger, RecordButtonStyle) {
-    // 拍照模式样式
-    RecordButtonStylePhoto,
-    // 长按录制模式样式（默认）
-    RecordButtonStyleVideo1,
-    // 单击录制模式样式
-    RecordButtonStyleVideo2,
+typedef NS_ENUM(NSInteger, RecordButtonStyle)
+{
+    RecordButtonStylePhoto, // 拍照模式样式
+    RecordButtonStyleVideo1, // 长按录制模式样式（默认）
+    RecordButtonStyleVideo2, // 单击录制模式样式
 };
+
 
 @protocol RecordButtonDelegate <NSObject>
 @optional

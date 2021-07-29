@@ -32,6 +32,7 @@
 #import "EditPaintDrawComponentSample.h"
 #import "BubbleSampleController.h"
 #import "CustomizedNewCameraComponent.h"
+#import "JigsawSampleController.h"
 
 #pragma mark - DemoComponentListController
 @interface DemoComponentListController ()<DemoRootViewDelegate>
@@ -161,6 +162,11 @@
     [group appenWithTitle:NSLocalizedString(@"sample_comp_BubbleComponent", @"气泡文字组件示例")
                     group:FeatureSample
                     clazz:[BubbleSampleController class]];
+    // 拼图组件示例
+    [group appenWithTitle:NSLocalizedString(@"sample_comp_JigsawComponent", @"拼图组件示例")
+                    group:FeatureSample
+                    clazz:[JigsawSampleController class]];
+    
     // 模糊组件示例
     [group appenWithTitle:NSLocalizedString(@"sample_comp_BlurComponent", @"模糊组件示例")
                     group:FeatureSample

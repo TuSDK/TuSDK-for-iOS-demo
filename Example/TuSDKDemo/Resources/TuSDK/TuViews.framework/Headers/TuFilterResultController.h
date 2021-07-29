@@ -10,8 +10,8 @@
 //#import "TuSDKICFilterImageViewWrap.h"
 #import "TuParameterConfigViewInterface.h"
 #import "TuCAEAGLView.h"
-#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
-
+//#import "TuSDKPulseCore/cx/seles/extend/SelesParameters.h"
+#import <TuSDKPulseCore/TuSDKPulseCore.h>
 #pragma mark - TuFilterResultViewInterface
 // 滤镜处理结果控制器视图接口
 @protocol TuFilterResultViewInterface <NSObject>
