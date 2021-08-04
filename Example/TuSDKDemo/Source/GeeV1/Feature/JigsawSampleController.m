@@ -241,7 +241,7 @@ static int const kFilterIndex = 100;
     NSInteger index = sender.tag;
     CGSize renderSize = CGSizeMake(1080, 1080);
     if (index == 2) {
-        renderSize = CGSizeMake(1080, 2040);
+        renderSize = CGSizeMake(1080, 2400);
     }
     _mCurrentRenderSize = renderSize;
     _menuView.hidden = YES;
