@@ -64,6 +64,8 @@
 @property (nonatomic, strong) id<TuRegionHandler> regionHandler;
 // 处理相机焦距变化
 @property (nonatomic) float focalDistance;
+//顶部偏移百分比 0~1 默认-1居中
+@property (nonatomic, assign) CGFloat offsetPercentTop;
 // 视频覆盖区域颜色 (默认：[UIColor blackColor])
 @property (nonatomic, strong) UIColor *displayBackgroundColor;
 // 开始启动相机

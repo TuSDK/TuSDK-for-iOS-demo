@@ -4,25 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		gujMuZv3j4mxQCphgm2RPOMe52I=
-		</data>
-		<key>Frameworks/.DS_Store</key>
-		<data>
-		AOUFAsds2kX8P74qGYXi0oQSfqU=
-		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		AUaB3gVqqgkr7YAgd4WtSzz1rXY=
+		ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		F769pa0NyGoJ1HHkrsV/51QSxz4=
 		</data>
 		<key>Headers/TUPBase.h</key>
 		<data>
@@ -102,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZHR1KJx+tq+SnL2v6gA7jVRapKY=
+		Fwt/d9roVnyzEOqAb9ON82qCfks=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,33 +107,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			HFfzeUw1iknhG7F/8/I0ryt7W9neYEM/RtF/FQSBV4k=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AUaB3gVqqgkr7YAgd4WtSzz1rXY=
+			ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/+XH9bcnaHoWP+zBtKYsNHUSA0zAiLU99D9byBC1vkM=
+			E+NGJ9wnWhh4GB1pxgSwdgtEIA7gp7cedlQpkv+nNQQ=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			F769pa0NyGoJ1HHkrsV/51QSxz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			f8m/LrS80EjEBtVPz2XWF1ZQ2iIILm1tG+JVcp9T+qQ=
 			</data>
 		</dict>
 		<key>Headers/TUPBase.h</key>

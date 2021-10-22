@@ -9,6 +9,7 @@
 #import "TuImageShower.h"
 
 NS_ASSUME_NONNULL_BEGIN
+FOUNDATION_EXPORT NSString *const TuFaceCountDidPostNotification;
 
 // 图片渲染
 @interface TuImageShowerImpl : NSObject<TuImageShower>

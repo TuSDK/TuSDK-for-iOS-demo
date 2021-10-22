@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		tQm22SMgWlqQy9m8HmNcwAKQ2aE=
-		</data>
-		<key>Headers/.DS_Store</key>
-		<data>
-		6UcNi2VUq3l0S9tJ973/sKEFrzo=
-		</data>
 		<key>Headers/TUCCore.h</key>
 		<data>
 		rQ4Pqwnz+O5GwxXzr6Pe02StpS0=
@@ -102,7 +94,7 @@
 		</data>
 		<key>Headers/category/TuTSDevice+Extend.h</key>
 		<data>
-		X8t22CAP7+JugLV/8lvZzlMMzBQ=
+		MtG85IQrI+7AjQ/k6RbwGll6ia8=
 		</data>
 		<key>Headers/category/TuTSImage+Extend.h</key>
 		<data>
@@ -240,10 +232,6 @@
 		<data>
 		8WINyzjzRPib1FR2b1lMNfmarSI=
 		</data>
-		<key>Headers/source/.DS_Store</key>
-		<data>
-		3T28c9tLnba/edBZ5JOa/96gnkQ=
-		</data>
 		<key>Headers/source/brush/TuBrush.h</key>
 		<data>
 		+NXOv5xzfjkAJxYbfsmvAcDZvII=
@@ -358,7 +346,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -613,11 +601,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X8t22CAP7+JugLV/8lvZzlMMzBQ=
+			MtG85IQrI+7AjQ/k6RbwGll6ia8=
 			</data>
 			<key>hash2</key>
 			<data>
-			F58iaqOToXTVTTrjr8Nz7f39vFNuuJvZ6ILktmoCWSo=
+			y6Fj0+lYSfBJDqoMJ1a2xjiW+SPzU9c5d5P5v+Tpykc=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSImage+Extend.h</key>

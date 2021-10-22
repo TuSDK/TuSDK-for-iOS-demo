@@ -48,7 +48,7 @@
     
     [self lsqInitView];
     // 启动GPS
-    [[TuLocation shared] requireAuthorWithController:self];
+    //[[TuLocation shared] requireAuthorWithController:self];
     
     /**
      * ！！！！！！！！！！！！！！！！！！！！！！！！！特别提示信息要长！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！

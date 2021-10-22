@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setMarkSenceEnable:(bool)isEnable;
 - (bool)getMarkSenceEnable;
+- (int)getFaceCount;
 
 
 

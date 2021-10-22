@@ -4,53 +4,61 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		pF3UaTLhAZ3tvZEkZWLMP1OazMg=
-		</data>
-		<key>Frameworks/.DS_Store</key>
-		<data>
-		V3FzrOA1yiS9iaYiaakm1EN0bo8=
-		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		AUaB3gVqqgkr7YAgd4WtSzz1rXY=
+		ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		F769pa0NyGoJ1HHkrsV/51QSxz4=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<data>
-		ZHR1KJx+tq+SnL2v6gA7jVRapKY=
+		Fwt/d9roVnyzEOqAb9ON82qCfks=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<data>
-		+joOY/ChCyZDKhE5lq9EMP2Xy1A=
+		7HAHjap0ScpeQYrr9+RHBmAzh30=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<data>
-		hPVYj8t5nym2LceMlvG80XeAVZg=
+		sQ4zu42iKhmZGq0ruOhHpXjIlt0=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		XUODTEaQFbAcFcrnSJm5rTNxTew=
+		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		yvMAso8G4ub1JfxAMwLe9Z+K9tM=
+		wsdTo6BZ56NtRG+PD6aiKA/bcPE=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		m1Llg5pJ1Dune51NAmAXiWiR6tg=
+		F769pa0NyGoJ1HHkrsV/51QSxz4=
 		</data>
-		<key>Headers/.DS_Store</key>
+		<key>Headers/TUPAudioCtx.h</key>
 		<data>
-		+nQBfDu20evp59446s8Xv3FTPg8=
+		VvNyaxXpsHqpP6Er2wBVaQL3wd0=
+		</data>
+		<key>Headers/TUPAudioPipe.h</key>
+		<data>
+		LjD7wk9BzgbEYVU5x+14ahbhgpw=
+		</data>
+		<key>Headers/TUPAudioPitchProcessor.h</key>
+		<data>
+		4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+		</data>
+		<key>Headers/TUPAudioProcessor.h</key>
+		<data>
+		Wy9gW9mTH8I/IJjF3GwOqm8vQGk=
+		</data>
+		<key>Headers/TUPAudioStretchProcessor.h</key>
+		<data>
+		yZUtY17NCyuFsmZU1FH2cjfjw74=
 		</data>
 		<key>Headers/TUPFPAudioMixer.h</key>
 		<data>
@@ -74,11 +82,11 @@
 		</data>
 		<key>Headers/TUPFPImage.h</key>
 		<data>
-		j3qPOs5laA+0Haf8GSlSodp0uZs=
+		Cpsq5j41g+BR8e0aZCn7yEujE0s=
 		</data>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<data>
-		1NlHVTz2AAz4Qm+D81kBbaWVKm8=
+		ml739EtQIg2GSioHryROP0IddWk=
 		</data>
 		<key>Headers/TUPFilterCtx.h</key>
 		<data>
@@ -90,7 +98,7 @@
 		</data>
 		<key>Headers/TuSDKPulseFilter.h</key>
 		<data>
-		wUiqwClYktZxfW38e/hWJZLwnEs=
+		GGBW/obPo2r/I0gdcapAbWcJfac=
 		</data>
 		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
 		<data>
@@ -114,7 +122,7 @@
 		</data>
 		<key>Headers/filters/TUPFPJigsawFilter.h</key>
 		<data>
-		1+9W6p9XJCG8ubZnr0Bps1U2pcQ=
+		GxE83z7CiUHRc6uSjkXmd77vi10=
 		</data>
 		<key>Headers/filters/TUPFPSimpleTextFilter.h</key>
 		<data>
@@ -122,7 +130,7 @@
 		</data>
 		<key>Headers/filters/TUPFPSimultaneouslyFilter.h</key>
 		<data>
-		uC5vz+CIuJhD3AYZ0tNbO39OObA=
+		KdQR44YAGFo9LvgjlmRXMT093oE=
 		</data>
 		<key>Headers/filters/TUPFPTusdkBeautFaceV2Filter.h</key>
 		<data>
@@ -168,9 +176,17 @@
 		<data>
 		NC/v2iCt4teiF3LjEVHqeu/q83Q=
 		</data>
+		<key>Headers/filters/audio/TUPAudioPitchProcessor.h</key>
+		<data>
+		4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+		</data>
+		<key>Headers/filters/audio/TUPAudioStretchProcessor.h</key>
+		<data>
+		yZUtY17NCyuFsmZU1FH2cjfjw74=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		omYhBV95lAIhPnMzV5i4mwIYViA=
+		CRJrarjgZf2LQNnUghhvgcZt6Ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -183,99 +199,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			HFfzeUw1iknhG7F/8/I0ryt7W9neYEM/RtF/FQSBV4k=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AUaB3gVqqgkr7YAgd4WtSzz1rXY=
+			ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/+XH9bcnaHoWP+zBtKYsNHUSA0zAiLU99D9byBC1vkM=
+			E+NGJ9wnWhh4GB1pxgSwdgtEIA7gp7cedlQpkv+nNQQ=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			F769pa0NyGoJ1HHkrsV/51QSxz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			f8m/LrS80EjEBtVPz2XWF1ZQ2iIILm1tG+JVcp9T+qQ=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZHR1KJx+tq+SnL2v6gA7jVRapKY=
+			Fwt/d9roVnyzEOqAb9ON82qCfks=
 			</data>
 			<key>hash2</key>
 			<data>
-			iIuykOzy0PByFpNN1LZnlSTmlo6ysrmbLLBrkGEDiT0=
+			h77yQIxiIy1PCFAEpFPs4IWqLk4YbM1btE9WC+weUt8=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+joOY/ChCyZDKhE5lq9EMP2Xy1A=
+			7HAHjap0ScpeQYrr9+RHBmAzh30=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q6N69XUxxrlXh1Lbs6mhA2nUoWIsE/7F+CjbqapIsis=
+			u+mgVWlOpbBxSv5dO6y83Snkg6xllxkpeNoLgI3y2qo=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hPVYj8t5nym2LceMlvG80XeAVZg=
+			sQ4zu42iKhmZGq0ruOhHpXjIlt0=
 			</data>
 			<key>hash2</key>
 			<data>
-			BIBVOFY8Jua8Zq+amBdVrDNTmZiDtvnivx8lC9vnmWM=
+			nCNPppbAxpiXyH0VZGSjsGIySSedlSJ5+B9BC3eQdvE=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XUODTEaQFbAcFcrnSJm5rTNxTew=
+			Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2b6fq+vK9t/Nmz5l5XWFsQfyaglLhX5I1VliFlaYRyw=
+			HFfzeUw1iknhG7F/8/I0ryt7W9neYEM/RtF/FQSBV4k=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yvMAso8G4ub1JfxAMwLe9Z+K9tM=
+			wsdTo6BZ56NtRG+PD6aiKA/bcPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			gylakuR23ctS4e/kvY26xYNkJMnhPZ06+9/JgertJaw=
+			kgTkjwOhlIGL09njf/HtzgVAAlEJvwbtQnuzvAiulXQ=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m1Llg5pJ1Dune51NAmAXiWiR6tg=
+			F769pa0NyGoJ1HHkrsV/51QSxz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ccwGc5ISnHMJOqNRgE+t9OdDXzLu42ME06duct3JqGA=
+			f8m/LrS80EjEBtVPz2XWF1ZQ2iIILm1tG+JVcp9T+qQ=
+			</data>
+		</dict>
+		<key>Headers/TUPAudioCtx.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VvNyaxXpsHqpP6Er2wBVaQL3wd0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dj8vej68qtPYE+cKy7hh/9t9mlp7bHQVpKPOO8PjxTk=
+			</data>
+		</dict>
+		<key>Headers/TUPAudioPipe.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LjD7wk9BzgbEYVU5x+14ahbhgpw=
+			</data>
+			<key>hash2</key>
+			<data>
+			n7FKUDQHM57zsfuoJPYMtXm8dqJYJi5+IBxJrs3+9LA=
+			</data>
+		</dict>
+		<key>Headers/TUPAudioPitchProcessor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+			</data>
+			<key>hash2</key>
+			<data>
+			01YZCDrr7HouSnngBWoO6W8ReB3SXCZAycpbsiJA5yI=
+			</data>
+		</dict>
+		<key>Headers/TUPAudioProcessor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wy9gW9mTH8I/IJjF3GwOqm8vQGk=
+			</data>
+			<key>hash2</key>
+			<data>
+			KeKGvoJvIw+tSzqLdmCYfSHttbaMPKAmp0L/k+Nrnq4=
+			</data>
+		</dict>
+		<key>Headers/TUPAudioStretchProcessor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yZUtY17NCyuFsmZU1FH2cjfjw74=
+			</data>
+			<key>hash2</key>
+			<data>
+			k3+m+cOp/4kleKoLxoKIBBmoul9nEeivCDPtZYEj9to=
 			</data>
 		</dict>
 		<key>Headers/TUPFPAudioMixer.h</key>
@@ -337,22 +408,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j3qPOs5laA+0Haf8GSlSodp0uZs=
+			Cpsq5j41g+BR8e0aZCn7yEujE0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			cInakJ/UiyGiCHcHLHbAlK2GYC/0HTs+XPHKAqiNPIo=
+			WSZVqYTeSKWeqBqsiLHaXTQ8CImpxX32vQ4hpP+i4L4=
 			</data>
 		</dict>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1NlHVTz2AAz4Qm+D81kBbaWVKm8=
+			ml739EtQIg2GSioHryROP0IddWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aC4G11V8Xni6T4glSwaPLuiZaChl5MARovn+wvYBKGc=
+			oV2Um1V636fGeyLtjFbYD7bIaVnuBa+L/ifzajPEsI8=
 			</data>
 		</dict>
 		<key>Headers/TUPFilterCtx.h</key>
@@ -381,11 +452,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wUiqwClYktZxfW38e/hWJZLwnEs=
+			GGBW/obPo2r/I0gdcapAbWcJfac=
 			</data>
 			<key>hash2</key>
 			<data>
-			49HLBxTYJedYzG8d6IyiG6u7IxC5l/oTsA+uzIDCTOs=
+			iMXkUE45/4elr+Qg91GN3MMG6TtCcmuYyOKECEuZMgk=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
@@ -447,11 +518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1+9W6p9XJCG8ubZnr0Bps1U2pcQ=
+			GxE83z7CiUHRc6uSjkXmd77vi10=
 			</data>
 			<key>hash2</key>
 			<data>
-			Podn9kWWG3Em26N4ZGOeZR86MXJOx3zAMqVaA8SRYt8=
+			pmcuh3AAvHoHPOHtSwu/Hh0KBklrOH5zCoP46Skfw2E=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPSimpleTextFilter.h</key>
@@ -469,11 +540,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uC5vz+CIuJhD3AYZ0tNbO39OObA=
+			KdQR44YAGFo9LvgjlmRXMT093oE=
 			</data>
 			<key>hash2</key>
 			<data>
-			5LodMKfpph+ahq+XBtduYxVv8jyBjBQ+voRjjkhuR14=
+			U7DBP1aBk6FrsKKL3LyjiJ+q6ioEu6QxIY6Rdjvp59Q=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkBeautFaceV2Filter.h</key>
@@ -595,6 +666,28 @@
 			<key>hash2</key>
 			<data>
 			SzqArEPHiSsT7zwUpNzsNBWFc8pVx7KDW0sNky4rskE=
+			</data>
+		</dict>
+		<key>Headers/filters/audio/TUPAudioPitchProcessor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+			</data>
+			<key>hash2</key>
+			<data>
+			01YZCDrr7HouSnngBWoO6W8ReB3SXCZAycpbsiJA5yI=
+			</data>
+		</dict>
+		<key>Headers/filters/audio/TUPAudioStretchProcessor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yZUtY17NCyuFsmZU1FH2cjfjw74=
+			</data>
+			<key>hash2</key>
+			<data>
+			k3+m+cOp/4kleKoLxoKIBBmoul9nEeivCDPtZYEj9to=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

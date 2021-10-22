@@ -12,9 +12,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype) init;
 
+- (instancetype) initWithPixelFormatType_32BGRA;
+
 - (TUPFPImage* _Nullable) convert:(CMSampleBufferRef) sb;
 
+- (TUPFPImage* _Nullable) convertImage:(TUPFPImage *)inputImage;
+
+
 - (TUPFPImage* _Nullable) convert:(CMSampleBufferRef) sb orientaion:(int)orientaion flip:(BOOL)flip mirror:(BOOL)mirror;
+
+- (TUPFPImage* _Nullable) convert:(CVPixelBufferRef)pb
+                    withTimestamp:(int64_t)ts
+                       orientaion:(int)orientaion
+                             flip:(BOOL)flip
+                           mirror:(BOOL)mirror;
 
 - (TUPFPImage* _Nullable) convert:(CVPixelBufferRef) pb withTimestamp:(int64_t) ts;
 

@@ -6,8 +6,10 @@
 //  Copyright (c) 2014年 tusdk.com. All rights reserved.
 //
 
-#import <TuViews/TuComponentsViewController.h>
+#import "TuComponentsViewController.h"
 #import <TuSDKPulseCore/TuSDKPulseCore.h>
+//#import "TuSDKPulseCore/core/TuResult.h"
+//#import "TuSDKPulseCore/core/TuWaterMarkOption.h"
 #import <TuSDKPulse/TuSDKPulse.h>
 
 /**
