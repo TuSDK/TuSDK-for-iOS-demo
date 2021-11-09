@@ -46,6 +46,8 @@
  */
 @property (nonatomic, retain) TuSticker *sticker;
 
+@property (nonatomic, assign) CGRect viewFrame;
+
 /**
  *  边框宽度
  */
@@ -106,6 +108,8 @@
  *  最小缩小比例(默认: 0.5f <= mMinScale <= 1)
  */
 @property (nonatomic) CGFloat minScale;
+
+@property (nonatomic, assign) CGRect viewFrame;
 
 /**
  *  边框宽度
@@ -186,6 +190,9 @@
  *  @param stickerImage 贴纸图片 (PNG格式)
  */
 - (void)appendStickerImage:(UIImage *) stickerImage;
+
+- (void)appenSticker:(TuSticker *)sticker frame:(CGRect)frame;
+- (void)appendStickerImage:(UIImage *)stickerImage frame:(CGRect)frame;
 
 
 /**

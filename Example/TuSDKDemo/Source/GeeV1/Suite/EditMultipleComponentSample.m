@@ -75,7 +75,7 @@
     [TuSDKGeeV1 photoEditMultipleWithController:controller
                                callbackBlock:^(TuResult *result, NSError *error, UIViewController *controller)
      {
-         _albumComponent = nil;
+        self->_albumComponent = nil;
          
          // 如果以 pushViewController 方式打开编辑器, autoDismissWhenCompelted参数将无效, 请使用以下方法关闭
          //if (_photoEditMultipleComponent.autoDismissWhenCompelted && controller) {

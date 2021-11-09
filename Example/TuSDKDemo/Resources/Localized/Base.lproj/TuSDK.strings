@@ -526,3 +526,52 @@
 "lsq_camera_flash_on" = "开启";
 "lsq_camera_flash_off" = "关闭";
 "lsq_camera_flash" = "闪光灯";
+
+
+
+
+//滤镜列表
+"lsq_filter_group_Monologue" = "独白";
+"lsq_filter_group_City" = "城市";
+"lsq_filter_group_Travel" = "旅行";
+"lsq_filter_group_Streamer" = "流光";
+"lsq_filter_group_Streetscape" = "时尚";
+
+
+//独白
+"lsq_filter_Encounter" = "邂逅";
+"lsq_filter_Story" = "故事";
+"lsq_filter_Alone" = "孤单";
+"lsq_filter_Mood" = "心情";
+"lsq_filter_Eternal" = "永恒";
+
+//城市
+"lsq_filter_Gloomy" = "阴郁";
+"lsq_filter_Countryside" = "田园";
+"lsq_filter_Simple" = "古朴";
+"lsq_filter_Mountainforest" = "山林";
+"lsq_filter_Modern" = "现代";
+
+
+//旅行
+"lsq_filter_Longing" = "憧憬";
+"lsq_filter_Orchid" = "幽兰";
+"lsq_filter_Youth" = "青春";
+"lsq_filter_Fragrance" = "馥郁";
+"lsq_filter_Firefly" = "萤火";
+
+//流光
+"lsq_filter_Charming" = "旖旎";
+"lsq_filter_Bright" = "璀璨";
+"lsq_filter_Bustling" = "繁华";
+"lsq_filter_Fireworks" = "绚烂";
+"lsq_filter_Dream" = "梦幻";
+
+//时尚
+"lsq_filter_Vatican" = "梵蒂冈";
+"lsq_filter_London" = "伦敦";
+"lsq_filter_Tokyo" = "东京";
+"lsq_filter_Mexico" = "墨西哥";
+"lsq_filter_NewYork" = "纽约";
+"lsq_filter_Paris" = "巴黎";
+"lsq_filter_Berlin" = "柏林";

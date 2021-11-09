@@ -31,6 +31,8 @@
  */
 - (void)appendSticker:(TuSticker *)sticker;
 
+- (void)appendSticker:(TuSticker *)sticker frame:(CGRect)frame;
+
 /**
  *  添加贴纸
  *

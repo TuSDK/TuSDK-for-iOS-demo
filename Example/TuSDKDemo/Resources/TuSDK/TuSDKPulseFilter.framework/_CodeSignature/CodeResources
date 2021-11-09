@@ -6,39 +6,39 @@
 	<dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
+		WO5qLys/7EHEWiMWS5D86p4is80=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
+		QL3vLCGAQxqOoqIOejg4huzgcrw=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		F769pa0NyGoJ1HHkrsV/51QSxz4=
+		YEFzqI7xVuPAPf98qSH5vfukIVs=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<data>
-		Fwt/d9roVnyzEOqAb9ON82qCfks=
+		xaG8oF2kdoeeOKkdRXqaZrV+ZMU=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<data>
-		7HAHjap0ScpeQYrr9+RHBmAzh30=
+		RTd8PMklCEBBaFRQcvx+hxcLKgU=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<data>
-		sQ4zu42iKhmZGq0ruOhHpXjIlt0=
+		aXUxKZZxkmqEH7HUmAtMPmd4F+A=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
+		WO5qLys/7EHEWiMWS5D86p4is80=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		wsdTo6BZ56NtRG+PD6aiKA/bcPE=
+		YvULsQaIeoztI6B4Di8S13TIy80=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		F769pa0NyGoJ1HHkrsV/51QSxz4=
+		YEFzqI7xVuPAPf98qSH5vfukIVs=
 		</data>
 		<key>Headers/TUPAudioCtx.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/TUPFPFilter.h</key>
 		<data>
-		Ngk0A2ymRIhOVWO1jO4Va+AuLfQ=
+		YdFlCm29Ntsq2ZeqzlZolTpQpsM=
 		</data>
 		<key>Headers/TUPFPImage.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CRJrarjgZf2LQNnUghhvgcZt6Ds=
+		Lm2k5Jnu2QnmMbbR7RfPaHs2gCs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -199,99 +199,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
+			WO5qLys/7EHEWiMWS5D86p4is80=
 			</data>
 			<key>hash2</key>
 			<data>
-			HFfzeUw1iknhG7F/8/I0ryt7W9neYEM/RtF/FQSBV4k=
+			bwZWdg2lN/ybB+WBiVcW/bRwlrZgMYZ/y0Uqew1Fdf4=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ni1dWqXn7IU0kEsAJjF/fFSt0Y0=
+			QL3vLCGAQxqOoqIOejg4huzgcrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			E+NGJ9wnWhh4GB1pxgSwdgtEIA7gp7cedlQpkv+nNQQ=
+			cBnJXs1NI4omK3vvXEGCZGxi1+mXTmJRmpLSNgv3DVc=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F769pa0NyGoJ1HHkrsV/51QSxz4=
+			YEFzqI7xVuPAPf98qSH5vfukIVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			f8m/LrS80EjEBtVPz2XWF1ZQ2iIILm1tG+JVcp9T+qQ=
+			6Wl9ZFWjz2wg28t9h4s5hySstfj6JH9sbFW8q4KmMvw=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fwt/d9roVnyzEOqAb9ON82qCfks=
+			xaG8oF2kdoeeOKkdRXqaZrV+ZMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			h77yQIxiIy1PCFAEpFPs4IWqLk4YbM1btE9WC+weUt8=
+			hm1xgh+b6DvAB7gmfMItXBKE8RT0/9eyltVRkKZ+06Y=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7HAHjap0ScpeQYrr9+RHBmAzh30=
+			RTd8PMklCEBBaFRQcvx+hxcLKgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			u+mgVWlOpbBxSv5dO6y83Snkg6xllxkpeNoLgI3y2qo=
+			g8CnfZTyZNmrEgUuMvxfCp3XTqmsm+sxBUKMiItEVLs=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sQ4zu42iKhmZGq0ruOhHpXjIlt0=
+			aXUxKZZxkmqEH7HUmAtMPmd4F+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			nCNPppbAxpiXyH0VZGSjsGIySSedlSJ5+B9BC3eQdvE=
+			nNVhxCCjUQ4yMbcE9N4kwQWbECwavtueimG90evvmIw=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Zg9tahqRY8GPeIPm/5G7VGD6+Oc=
+			WO5qLys/7EHEWiMWS5D86p4is80=
 			</data>
 			<key>hash2</key>
 			<data>
-			HFfzeUw1iknhG7F/8/I0ryt7W9neYEM/RtF/FQSBV4k=
+			bwZWdg2lN/ybB+WBiVcW/bRwlrZgMYZ/y0Uqew1Fdf4=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wsdTo6BZ56NtRG+PD6aiKA/bcPE=
+			YvULsQaIeoztI6B4Di8S13TIy80=
 			</data>
 			<key>hash2</key>
 			<data>
-			kgTkjwOhlIGL09njf/HtzgVAAlEJvwbtQnuzvAiulXQ=
+			G5GpLBJbIbcOVbKPMgoVyfJn0jtoeOZ6p4W22ZuM4a4=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F769pa0NyGoJ1HHkrsV/51QSxz4=
+			YEFzqI7xVuPAPf98qSH5vfukIVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			f8m/LrS80EjEBtVPz2XWF1ZQ2iIILm1tG+JVcp9T+qQ=
+			6Wl9ZFWjz2wg28t9h4s5hySstfj6JH9sbFW8q4KmMvw=
 			</data>
 		</dict>
 		<key>Headers/TUPAudioCtx.h</key>
@@ -397,11 +397,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ngk0A2ymRIhOVWO1jO4Va+AuLfQ=
+			YdFlCm29Ntsq2ZeqzlZolTpQpsM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fplcWleNawUWnxrftaBU9cAEL5QlyupoRlCCxxuwIW8=
+			n/3Y5vkIz9/2pU+WSyrL9ZJyiV2wszHXyC6vE/Si4dU=
 			</data>
 		</dict>
 		<key>Headers/TUPFPImage.h</key>

@@ -14,6 +14,8 @@
 // 图片渲染接口
 @protocol TuImageShower<NSObject>
 @property(nonatomic, strong) UIColor *displayBackgroundColor; // 视频背景区域颜色
+/**是否开启滤镜渲染效果，默认为YES*/
+@property (nonatomic) BOOL enableFilter;
 
 - (instancetype)initWithRootView:(UIView *)rootView;
 - (void)setImage:(UIImage *)image rotation:(TuRotationMode)rotation;   // 设置图片

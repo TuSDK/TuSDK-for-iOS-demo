@@ -415,13 +415,15 @@
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "SkinMultiple";
 
-"lsq_filter_set_smooth" = "Smooth";
-"lsq_filter_set_whiten" = "Whiten";
+"lsq_filter_set_smoothing" = "Smooth";
+"lsq_filter_set_whitening" = "Whiten";
 "lsq_filter_set_sharpen" = "Sharpen";
 "lsq_filter_set_skinColor" = "Skin";
 "lsq_filter_set_retouch" = "Retouch";
 "lsq_filter_set_chinSize" = "ChinSize";
 "lsq_filter_set_eyeSize" = "EyeSize";
+"lsq_filter_set_ruddy" = "Ruddy";
+
 // Face Plastic
 "lsq_filter_set_forehead" = "Forehead";
 "lsq_filter_set_browPosition" = "Brow Position";
@@ -526,3 +528,51 @@
 "lsq_camera_flash_on" = "Open";
 "lsq_camera_flash_off" = "Close";
 "lsq_camera_flash" = "Flash";
+
+
+
+//滤镜列表
+"lsq_filter_group_Monologue" = "Monologue";
+"lsq_filter_group_City" = "City";
+"lsq_filter_group_Travel" = "Travel";
+"lsq_filter_group_Streamer" = "Streamer";
+"lsq_filter_group_Streetscape" = "Streetscape";
+
+
+//独白
+"lsq_filter_Encounter" = "Encounter";
+"lsq_filter_Story" = "Story";
+"lsq_filter_Alone" = "Alone";
+"lsq_filter_Mood" = "Mood";
+"lsq_filter_Eternal" = "Eternal";
+
+//城市
+"lsq_filter_Gloomy" = "Gloomy";
+"lsq_filter_Countryside" = "Countryside";
+"lsq_filter_Simple" = "Simple";
+"lsq_filter_Mountainforest" = "Mountainforest";
+"lsq_filter_Modern" = "Modern";
+
+
+//旅行
+"lsq_filter_Longing" = "Longing";
+"lsq_filter_Orchid" = "Orchid";
+"lsq_filter_Youth" = "Youth";
+"lsq_filter_Fragrance" = "Fragrance";
+"lsq_filter_Firefly" = "Firefly";
+
+//流光
+"lsq_filter_Charming" = "Charming";
+"lsq_filter_Bright" = "Bright";
+"lsq_filter_Bustling" = "Bustling";
+"lsq_filter_Fireworks" = "Fireworks";
+"lsq_filter_Dream" = "Dream";
+
+//时尚
+"lsq_filter_Vatican" = "Vatican";
+"lsq_filter_London" = "London";
+"lsq_filter_Tokyo" = "Tokyo";
+"lsq_filter_Mexico" = "Mexico";
+"lsq_filter_NewYork" = "NewYork";
+"lsq_filter_Paris" = "Paris";
+"lsq_filter_Berlin" = "Berlin";

@@ -54,6 +54,8 @@
  *  @param sticker 贴纸数据
  */
 - (void)appendSticker:(TuSticker *)sticker;
+
+- (void)appendSticker:(TuSticker *)sticker frame:(CGRect)frame;
 // 编辑图片完成按钮动作
 - (void)onImageCompleteAtion;
 @end

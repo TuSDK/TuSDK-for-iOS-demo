@@ -14,6 +14,10 @@
 @protocol TuCameraShower<TuCameraVideoDataOutputDelegate>
 @property(nonatomic, readonly) TuCamera *camera; // 相机接口
 @property(nonatomic) CGRect displayRect; // 显示选区百分比
+
+/**是否开启滤镜渲染效果，默认为YES*/
+@property (nonatomic) BOOL enableFilter;
+
 @property(nonatomic) lsqRatioType ratioType;
 //顶部偏移百分比 0~1。默认-1
 @property (nonatomic, assign) CGFloat offsetPercentTop;

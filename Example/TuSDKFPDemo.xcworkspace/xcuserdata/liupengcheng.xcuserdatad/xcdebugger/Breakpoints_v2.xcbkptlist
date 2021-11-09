@@ -19,32 +19,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D7275594-3E0E-4EA0-A849-4A213C252314"
-            shouldBeEnabled = "Yes"
+            uuid = "11EBB622-F17A-4CA9-8546-9E5857D06045"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../pulse-av/src/codec/ios/pb_frame.mm"
+            filePath = "TuViews/TuViews/widgets/filters/TuEditFilterGroupViewBase.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "559"
-            endingLineNumber = "559"
-            landmarkName = "CVPixelBufferStubConvertor::do_convert_frame(input)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-setFilterParams:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2B8896EA-2273-4905-8FDC-5E768F4FB58D"
+            uuid = "FB4869A8-912C-4428-851A-DA0283257D82"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../pulse-av/src/codec/ios/pb_frame.mm"
+            filePath = "TuSDKGeeV1/framework/Source/Components/TuSDKPFEditFilterGroupView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "527"
-            endingLineNumber = "527"
-            landmarkName = "CVPixelBufferStubConvertor::do_convert_frame(input)"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "-onTuSDKCPParameterConfig:valueWithIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8AB1C1C-6838-452F-8EE0-46B95B83531F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuSDKGeeV1/framework/Source/Components/TuSDKPFEditFilterGroupView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "-onTuSDKCPParameterConfig:resetWithIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65A2A242-71AA-49C1-85F5-EAD483E9EFF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuSDKVideoDemo-Refactor/TuSDKVideoDemo/Classes/CameraViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1184"
+            endingLineNumber = "1184"
+            landmarkName = "-tuBeautyPanelView:enableSkin:mode:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03FD61A4-A552-4557-A340-E6769106D053"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuViews/TuViews/shower/TuImageShowerImpl.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1469"
+            endingLineNumber = "1469"
+            landmarkName = "+filterImage:code:params:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEF040D0-992D-4905-8B37-B1E6D01E8796"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuViews/TuViews/widgets/TuFilterResultController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "-onTuSDKCPParameterConfig:valueWithKey:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E69F3CDA-C14D-468B-9E08-DEAA54D288C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TuViews/TuViews/widgets/TuFilterResultController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "-onTuSDKCPParameterConfig:changeWithIndex:progress:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

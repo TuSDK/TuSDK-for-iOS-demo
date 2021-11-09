@@ -411,13 +411,14 @@
 // Filters Definition skin
 "lsq_filter_set_skinMultiple" = "多功能美肤";
 
-"lsq_filter_set_smooth" = "磨皮";
-"lsq_filter_set_whiten" = "美白";
+"lsq_filter_set_smoothing" = "磨皮";
+"lsq_filter_set_whitening" = "美白";
 "lsq_filter_set_sharpen" = "銳化";
 "lsq_filter_set_skinColor" = "膚色";
 "lsq_filter_set_retouch" = "一鍵美顏";
 "lsq_filter_set_chinSize" = "瘦臉";
 "lsq_filter_set_eyeSize" = "大眼";
+"lsq_filter_set_ruddy" = "紅潤";
 
 // Face Plastic
 "lsq_filter_set_forehead" = "額高";
@@ -524,3 +525,50 @@
 "lsq_camera_flash_on" = "開啟";
 "lsq_camera_flash_off" = "關閉";
 "lsq_camera_flash" = "閃光燈";
+
+
+//滤镜列表
+"lsq_filter_group_Monologue" = "獨白";
+"lsq_filter_group_City" = "城市";
+"lsq_filter_group_Travel" = "旅行";
+"lsq_filter_group_Streamer" = "流光";
+"lsq_filter_group_Streetscape" = "時尚";
+
+
+//独白
+"lsq_filter_Encounter" = "邂逅";
+"lsq_filter_Story" = "故事";
+"lsq_filter_Alone" = "孤單";
+"lsq_filter_Mood" = "心情";
+"lsq_filter_Eternal" = "永恒";
+
+//城市
+"lsq_filter_Gloomy" = "陰郁";
+"lsq_filter_Countryside" = "田園";
+"lsq_filter_Simple" = "古樸";
+"lsq_filter_Mountainforest" = "山林";
+"lsq_filter_Modern" = "現代";
+
+
+//旅行
+"lsq_filter_Longing" = "憧憬";
+"lsq_filter_Orchid" = "幽蘭";
+"lsq_filter_Youth" = "青春";
+"lsq_filter_Fragrance" = "馥郁";
+"lsq_filter_Firefly" = "螢火";
+
+//流光
+"lsq_filter_Charming" = "旖旎";
+"lsq_filter_Bright" = "璀璨";
+"lsq_filter_Bustling" = "繁華";
+"lsq_filter_Fireworks" = "絢爛";
+"lsq_filter_Dream" = "夢幻";
+
+//时尚
+"lsq_filter_Vatican" = "梵蒂岡";
+"lsq_filter_London" = "倫敦";
+"lsq_filter_Tokyo" = "東京";
+"lsq_filter_Mexico" = "墨西哥";
+"lsq_filter_NewYork" = "紐約";
+"lsq_filter_Paris" = "巴黎";
+"lsq_filter_Berlin" = "柏林";

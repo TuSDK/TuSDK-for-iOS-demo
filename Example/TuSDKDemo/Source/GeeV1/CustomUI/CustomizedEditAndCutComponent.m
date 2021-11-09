@@ -155,8 +155,10 @@
     tcController.inputImage = [UIImage imageNamed:@"sample_photo.jpg"];
     
     [self.controller lsqPresentModalNavigationController:tcController animated:YES];
-    
     [tcController.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    //iOS15适配导航栏
+    [[TuSDKGeeV1Theme shared] setNavigationBarStyle:tcController.navigationController.navigationBar];
+    
 }
 
 /**

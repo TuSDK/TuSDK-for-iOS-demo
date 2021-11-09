@@ -11,10 +11,6 @@
 
 /// GetFilePathName，获取文件名，例如："/var/demo/AppDelegate.m" > "AppDelegate.m"
 #define kTuGetFPN [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent]
-/// Log 
-#ifdef DEBUG
-#define TuLog(fmt,...) NSLog((@"%@(%d) TuLog: " fmt), kTuGetFPN, __LINE__, ##__VA_ARGS__);
-#endif
 
 #import "TuCommon.h"
 #endif

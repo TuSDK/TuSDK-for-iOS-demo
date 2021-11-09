@@ -17,6 +17,8 @@
 @property (nonatomic, readonly) UIView<TuCAEAGLViewInterface> *imageView;
 // 是否仅返回滤镜，不返回处理图片
 @property (nonatomic) BOOL onlyReturnFilter;
+//是否开启滤镜渲染效果，默认为YES
+@property (nonatomic, assign) BOOL enableFilter;
 // 滤镜参数
 @property (nonatomic, strong) SelesParameters * filterParams;
 // 显示背景区域颜色
@@ -27,10 +29,18 @@
 - (void)notifyFilterConfigView;
 /**
  *  选中一个滤镜
- *  @param filterName 滤镜名称
+ *  @param code 滤镜名称
  *  @return BOOL 是否成功切换滤镜
  */
 - (BOOL)onSelectedFilterCode:(NSString *)code;
 // 编辑图片完成按钮动作
 - (void)onImageCompleteAtion;
+
+/**
+ *  是否禁用滤镜效果
+ *  @param enable 禁用状态
+ *  @return 是否禁用滤镜效果
+ */
+- (BOOL)enableFilter:(BOOL)enable;
+
 @end

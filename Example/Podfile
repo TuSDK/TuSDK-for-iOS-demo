@@ -1,6 +1,4 @@
 
-workspace 'TuSDKFPDemo'
-
 target 'TuSDKDemo' do
   
   xcodeproj 'TuSDKDemo.xcodeproj'
@@ -8,3 +6,4 @@ target 'TuSDKDemo' do
 #    pod 'DoraemonKit/Core', '~> 3.0.4', :configurations => ['Debug']
     pod 'SSZipArchive', '2.4.2'
 end
+

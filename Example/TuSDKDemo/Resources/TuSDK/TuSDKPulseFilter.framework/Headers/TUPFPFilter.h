@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL) setConfig:(TUPConfig*) config;
 - (TUPConfig*) getConfig;
 
+/**
+ * 滤镜开关，是否加载滤镜效果
+ * @param enable  默认为YES
+ */
+- (void)setEnable:(BOOL)enable;
+
 
 - (BOOL) setProperty:(TUPProperty*) prop forKey:(NSString*) key;
 - (TUPProperty* _Nullable) getProperty:(NSString*) key;

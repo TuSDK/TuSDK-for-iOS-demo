@@ -98,6 +98,11 @@
 @property (nonatomic, assign) NSTextAlignment textAlignment;
 
 /**
+ *  视图范围
+ */
+@property (nonatomic, assign) CGRect viewFrame;
+
+/**
  *  文字背景色
  */
 @property (nonatomic, strong) UIColor *textBackgroudColor;
@@ -183,6 +188,11 @@
  *  边框宽度
  */
 @property (nonatomic, assign) CGFloat textBorderWidth;
+
+/**
+ *  视图范围
+ */
+@property (nonatomic, assign) CGRect viewFrame;
 
 /**
  *  边框颜色
@@ -352,9 +362,13 @@
 
 
 /**
- 添加一个文字
+ * 添加一个文字
  */
 - (void)appendText;
+/**
+ * 添加一个文字
+ */
+- (void)appendTextWithFrame:(CGRect)frame;
 
 /**
  *  改变文字内容

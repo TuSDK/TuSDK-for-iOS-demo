@@ -60,6 +60,8 @@
 //@property (nonatomic, readonly) UIView<TuCAEAGLViewInterface>* surfaceView;
 // 聚焦触摸视图
 @property (nonatomic, readonly) TuFocusTouchViewBase* focusTouchView;
+//是否开启滤镜渲染效果，默认为YES
+@property (nonatomic, assign) BOOL enableFilter;
 // 选区范围算法
 @property (nonatomic, strong) id<TuRegionHandler> regionHandler;
 // 处理相机焦距变化
