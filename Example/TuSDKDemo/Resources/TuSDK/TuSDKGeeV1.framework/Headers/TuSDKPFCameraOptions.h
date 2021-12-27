@@ -85,6 +85,11 @@
 @property (nonatomic) BOOL enableNormalFilter;
 
 /**
+ *  禁用麦克风 (默认:false)
+ */
+@property (nonatomic) BOOL disableMicrophone;
+
+/**
  *  开启在线滤镜
  */
 @property (nonatomic) BOOL enableOnlineFilter;

@@ -50,6 +50,8 @@
 @property (nonatomic, readonly) CGFloat currentRatio;
 // 是否开启音量键拍摄
 @property (nonatomic) BOOL enableCaptureWithVolumeKeys;
+// 禁用麦克风 (默认:false)
+@property (nonatomic) BOOL disableMicrophone;
 // 视频视图显示比例 (默认：0， 0 <= mRegionRatio, 当设置为0时全屏显示)
 @property (nonatomic) CGFloat cameraViewRatio;
 // 相机对象

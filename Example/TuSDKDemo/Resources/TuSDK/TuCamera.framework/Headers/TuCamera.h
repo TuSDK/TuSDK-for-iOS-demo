@@ -124,6 +124,7 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 @property(nonatomic) BOOL outputImageData; /** 直接输出图像原始数据 */
 @property(nonatomic) BOOL autoReleaseAfterCaptured; /** 自动释放相机在拍摄后 (节省手机内存, 需要手动再次启动) */
 @property(nonatomic) BOOL disableCaptureSound; /** 禁用系统拍照声音 (默认:false) */
+@property(nonatomic) BOOL disableMicrophone;   /** 禁用麦克风 (默认:false) */
 
 
 @property(nonatomic, weak) id<TuCameraDelegate> delegate;

@@ -15,6 +15,9 @@
 @property(nonatomic, readonly) TuCamera *camera; // 相机接口
 @property(nonatomic) CGRect displayRect; // 显示选区百分比
 
+/** 禁用麦克风 (默认:false) */
+@property (nonatomic) BOOL disableMicrophone;
+
 /**是否开启滤镜渲染效果，默认为YES*/
 @property (nonatomic) BOOL enableFilter;
 
