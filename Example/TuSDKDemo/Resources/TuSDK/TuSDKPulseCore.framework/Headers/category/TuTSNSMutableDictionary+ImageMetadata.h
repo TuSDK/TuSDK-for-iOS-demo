@@ -13,7 +13,7 @@
 /**
  *  图片meta信息帮助类
  */
-@interface NSMutableDictionary (TuSDKTSImageMetadataCategory)
+@interface NSMutableDictionary (TuTSImageMetadataCategory)
 
 - (id)initWithImageSampleBuffer:(CMSampleBufferRef) imageDataSampleBuffer;
 

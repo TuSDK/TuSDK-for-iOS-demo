@@ -3,6 +3,11 @@
 #import "TUPBase.h"
 NS_ASSUME_NONNULL_BEGIN
 
+@class TUPProperty;
+@protocol TUPPropertyProtocol <NSObject>
+- (TUPProperty *)makeProperty;
+@end
+
 @interface TUPProperty : TUPBase {
     void* _impl;
 }

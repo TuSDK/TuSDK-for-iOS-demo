@@ -118,6 +118,7 @@ typedef NS_ENUM(NSInteger, TuCameraState)
 // 曝光模式
 @property(nonatomic) AVCaptureExposureMode exposureMode;
 - (BOOL)isExposureModeSupport:(AVCaptureExposureMode)mode;
+// 设置曝光强度
 - (BOOL)setExposureBias:(float)percent;
 
 // 拍摄

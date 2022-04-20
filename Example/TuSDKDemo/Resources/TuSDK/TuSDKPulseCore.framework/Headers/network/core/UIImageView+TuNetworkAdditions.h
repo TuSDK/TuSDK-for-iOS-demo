@@ -18,12 +18,12 @@ typedef NS_OPTIONS(NSUInteger, TuWebImageOptions) {
     /**
      *  位置选项
      */
-    TuSDKWebImageUnkown = 0,
+    TuWebImageUnkown = 0,
     
     /**
      * This flag disables on-disk caching
      */
-    TuSDKWebImageCacheMemoryOnly = 1 << 1,
+    TuWebImageCacheMemoryOnly = 1 << 1,
     
     /**
      * Even if the image is cached, respect the HTTP response cache control, and refresh the image from remote location if needed.
@@ -33,12 +33,12 @@ typedef NS_OPTIONS(NSUInteger, TuWebImageOptions) {
      *
      * Use this flag only if you can't make your URLs static with embeded cache busting parameter.
      */
-    TuSDKWebImageRefreshCached = 1 << 2,
+    TuWebImageRefreshCached = 1 << 2,
     
     /**
      *  下载完成时使用动画 (缓存时不使用)
      */
-    TuSDKWebImageAnimationDownloadedOnly = 1 << 3,
+    TuWebImageAnimationDownloadedOnly = 1 << 3,
 };
 
 /**

@@ -13,14 +13,14 @@
 @class TuTSMotion;
 
 /**物理感应器方向委托*/
-@protocol TuSDKTSMotionDelegate <NSObject>
+@protocol TuTSMotionDelegate <NSObject>
 @optional
 /**
  *  物理感应器旋转
  *  @param motion            物理感应器
  *  @param orientation       设备旋转方向
  */
-- (void)onTuSDKTSMotion:(TuTSMotion *)motion changedOrientation:(UIDeviceOrientation)orientation;
+- (void)onTuTSMotion:(TuTSMotion *)motion changedOrientation:(UIDeviceOrientation)orientation;
 @end
 
 /**物理感应器方向*/
@@ -42,7 +42,7 @@
 /**视图旋转方向*/
 @property (nonatomic, readonly) CGAffineTransform affineTransform;
 /**物理感应器方向委托*/
-@property (nonatomic, weak) id<TuSDKTSMotionDelegate> delegate;
+@property (nonatomic, weak) id<TuTSMotionDelegate> delegate;
 /**物理感应器方向*/
 + (instancetype) motion;
 /**开始监听物理感应器*/

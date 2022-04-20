@@ -31,7 +31,7 @@ static int const kFilterIndex = 100;
 @property(nonatomic, strong) UIView *menuView;
 @property(nonatomic, strong) UIButton *ratioButton;
 @property(nonatomic, strong) UIButton *borderButton;
-@property(nonatomic, assign) lsqRatioType mCurrentRatioType;
+@property(nonatomic, assign) TTRatioType mCurrentRatioType;
 @property(nonatomic, strong) JigsawLayerView *mLayerView;
 @property(nonatomic, strong) NSArray <NSString *> *borderItems;
 @property(nonatomic, assign) NSInteger borderIndex;
@@ -178,7 +178,7 @@ static int const kFilterIndex = 100;
     }];
     UIImage *image = [UIImage imageNamed:@"sample_photo.jpg"];
     _inputImage = [[TUPFPImage alloc] initWithUIImage:image];
-    _mCurrentRatioType = lsqRatio_1_1;
+    _mCurrentRatioType = TTRatio_1_1;
     _mCurrentRenderSize = CGSizeMake(1080, 1080);
     _borderItems = @[@"边框",@"S",@"M",@"L"];
     _borderIndex = 0;
@@ -248,7 +248,7 @@ static int const kFilterIndex = 100;
     if (index == 1) {
         _menuView.hidden = NO;
         _borderIndex = 0;
-        self.mCurrentRatioType = lsqRatio_1_1;
+        self.mCurrentRatioType = TTRatio_1_1;
         [_ratioButton setTitle:[TuRatioType format:_mCurrentRatioType] forState:UIControlStateNormal];
         [_borderButton setTitle:_borderItems[_borderIndex] forState:UIControlStateNormal];
     }
@@ -284,7 +284,7 @@ static int const kFilterIndex = 100;
     }
 }
 - (void)ratioAction:(UIButton *)sender {
-    lsqRatioType type = [TuRatioType nextRatioType:lsqRatioDefault currentType:_mCurrentRatioType ignoreType:lsqRatioOrgin];
+    TTRatioType type = [TuRatioType nextRatioType:TTRatioDefault currentType:_mCurrentRatioType ignoreType:TTRatioOrgin];
     self.mCurrentRatioType = type;
     [_ratioButton setTitle:[TuRatioType format:type] forState:UIControlStateNormal];
     
@@ -347,7 +347,7 @@ static int const kFilterIndex = 100;
     // 设置水印图片
     option.markImage = [UIImage imageNamed:@"sample_watermark1.png"];
     // 设置水印位置 (默认: lsqWaterMarkBottomRight)
-    option.markPosition = lsqWaterMarkBottomRight;
+    option.markPosition = TTWaterMarkBottomRight;
     // 设置水印距离图片边距 (默认: 6dp)
     option.markMargin = 6;
     return option;

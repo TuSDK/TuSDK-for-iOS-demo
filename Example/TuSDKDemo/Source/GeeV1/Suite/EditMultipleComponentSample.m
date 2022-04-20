@@ -321,10 +321,10 @@
     option.markImage = [UIImage imageNamed:@"sample_watermark.png"];
     
     // 文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
-    option.markTextPosition = lsqMarkTextPositionRight;
+    option.markTextPosition = TTMarkTextPositionRight;
     
     // 设置水印位置 (默认: lsqWaterMarkBottomRight)
-    option.markPosition = lsqWaterMarkBottomRight;
+    option.markPosition = TTWaterMarkBottomRight;
     
     // 设置水印距离图片边距 (默认: 6dp)
     option.markMargin = 6;

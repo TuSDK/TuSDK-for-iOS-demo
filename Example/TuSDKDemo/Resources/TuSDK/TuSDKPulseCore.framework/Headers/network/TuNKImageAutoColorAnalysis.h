@@ -16,7 +16,7 @@
  *  @param result  Image output Object
  *  @param type    Image Analysis processed type
  */
-typedef void (^TuNKImageAutoColorAnalysisBlock)(TuNKImageColorArgument *_args, lsqImageAnalysisType type);
+typedef void (^TuNKImageAutoColorAnalysisBlock)(TuNKImageColorArgument *_args, TuImageAnalysisType type);
 
 /**
  * Image Auto Color Analysis Copy Block

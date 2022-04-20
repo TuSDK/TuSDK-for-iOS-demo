@@ -14,10 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSString *const TUPFPTusdkBeautFaceV2Filter_TYPE_NAME;
 FOUNDATION_EXPORT NSString *const TUPFPTusdkBeautFaceV2Filter_PROP_PARAM;
 
-@interface TUPFPTusdkBeautFaceV2Filter_PropertyBuilder : NSObject {
- 
-    
-}
+@interface TUPFPTusdkBeautFaceV2Filter_PropertyBuilder : NSObject<TUPPropertyProtocol>
 
 // range [0, 1]
 @property(nonatomic) double smoothing;  // 磨皮
@@ -27,7 +24,6 @@ FOUNDATION_EXPORT NSString *const TUPFPTusdkBeautFaceV2Filter_PROP_PARAM;
 
 - (instancetype) init;
 
-- (TUPProperty*) makeProperty;
 
 @end
 

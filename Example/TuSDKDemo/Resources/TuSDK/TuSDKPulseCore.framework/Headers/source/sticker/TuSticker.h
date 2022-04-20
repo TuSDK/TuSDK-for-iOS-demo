@@ -129,13 +129,13 @@ typedef NS_ENUM(NSInteger, TuStickerRenderType)
 #pragma mark - TuSticker
 
 /** 贴纸元素类型*/
-typedef NS_ENUM(NSInteger, TuSDKStickerType)
+typedef NS_ENUM(NSInteger, TTStickerType)
 {
-    TuSDKStickerEmpty     = 0,
-    TuSDKStickerImage     = 1, // 图片贴纸
-    TuSDKStickerText      = 2, // 文字水印贴纸
-    TuSDKStickerDynamic   = 3, // 智能贴纸
-    TuSDKStickerCosmetic  = 4, // 美妆贴纸 (v4.0)
+    TTStickerEmpty     = 0,
+    TTStickerImage     = 1, // 图片贴纸
+    TTStickerText      = 2, // 文字水印贴纸
+    TTStickerDynamic   = 3, // 智能贴纸
+    TTStickerCosmetic  = 4, // 美妆贴纸 (v4.0)
 };
 
 /** 贴纸数据对象*/
@@ -162,7 +162,7 @@ typedef NS_ENUM(NSInteger, TuSDKStickerType)
 @property (nonatomic) CGSize size;
 
 /** 贴纸元素类型*/
-@property (nonatomic) TuSDKStickerType type;
+@property (nonatomic) TTStickerType type;
 
 /** 贴纸图片*/
 @property (nonatomic, retain) UIImage *image;
@@ -185,7 +185,7 @@ typedef NS_ENUM(NSInteger, TuSDKStickerType)
  *
  *  @return 贴纸数据对象
  */
-+ (instancetype)stickerWithType:(TuSDKStickerType)type;
++ (instancetype)stickerWithType:(TTStickerType)type;
 
 /**
  *  复制数据

@@ -25,3 +25,4 @@
 #import <TUSDKPulse/TUPPathMarshal.h>
 #import <TuSDKPulse/TUPVideoPreprocessor.h>
 #import <TuSDKPulse/TUPThread.h>
+#import <TuSDKPulse/TUPDispatchQueue.h>

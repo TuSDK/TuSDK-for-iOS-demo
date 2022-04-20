@@ -84,6 +84,10 @@ FOUNDATION_EXPORT const unsigned char TuViewsVersionString[];
  *  SDK版本
  */
 extern NSString * const lsqViewsVersion;
+/**
+ *  SDK版本代号
+ */
+extern NSInteger const lsqViewsCode;
 
 /**
  *  SDK打包时间

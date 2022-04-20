@@ -515,7 +515,7 @@ typedef enum {
  *  @seealso
  *  onCompletion:onError:
  */
--(void) addCompletionHandler:(LSQNKResponseBlock) response errorHandler:(LSQNKResponseErrorBlock) error;
+-(void) addCompletionHandler:(LSQNKResponseBlock) response errorHandler:(TuNKResponseErrorBlock) error;
 
 /*!
  *  @abstract Block Handler for tracking 304 not modified state

@@ -57,6 +57,7 @@ typedef NS_ENUM(NSInteger, TuFilterModel)
 @property (nonatomic, readonly) NSString *code;                     // 滤镜代号
 @property (nonatomic, readonly) TuFilterModel model;                // 滤镜类型
 @property (nonatomic, weak) id<SelesParametersListener> listener;   // 滤镜参数选项监听接口
+@property (nonatomic) CGFloat infinteValue;                         // 不加限制值
 - (void)reset;                                                      // 重置默认值
 - (BOOL)equalsKey:(NSString *)key;                                  // 是否匹配参数键名
 @end

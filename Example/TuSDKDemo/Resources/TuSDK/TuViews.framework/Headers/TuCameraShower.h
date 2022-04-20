@@ -21,7 +21,7 @@
 /**是否开启滤镜渲染效果，默认为YES*/
 @property (nonatomic) BOOL enableFilter;
 
-@property(nonatomic) lsqRatioType ratioType;
+@property(nonatomic) TTRatioType ratioType;
 //顶部偏移百分比 0~1。默认-1
 @property (nonatomic, assign) CGFloat offsetPercentTop;
 @property(nonatomic, strong) UIColor *displayBackgroundColor; // 视频背景区域颜色

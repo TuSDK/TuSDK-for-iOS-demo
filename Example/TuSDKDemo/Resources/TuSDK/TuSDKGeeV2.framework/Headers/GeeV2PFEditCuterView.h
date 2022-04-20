@@ -37,7 +37,7 @@
 /**
  *  当前视图显示比例类型
  */
-@property (nonatomic) lsqRatioType currentRatioType;
+@property (nonatomic) TTRatioType currentRatioType;
 
 /**
  *  更新按钮布局

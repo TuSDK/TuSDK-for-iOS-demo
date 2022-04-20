@@ -192,7 +192,7 @@ typedef enum : NSUInteger {
  *
  *  @param newRatio 屏幕比例
  */
-- (void)onTuSDKPFCameraChangeCameraRatioWithRatio:(lsqRatioType)newRatio;
+- (void)onTuSDKPFCameraChangeCameraRatioWithRatio:(TTRatioType)newRatio;
 
 @end
 

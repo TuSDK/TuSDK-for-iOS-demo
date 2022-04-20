@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+- (void)destory;
 @end
 
 NS_ASSUME_NONNULL_END

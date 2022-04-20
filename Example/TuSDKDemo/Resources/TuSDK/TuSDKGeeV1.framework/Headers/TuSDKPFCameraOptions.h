@@ -155,9 +155,9 @@
 @property (nonatomic) CGFloat cameraViewRatio;
 
 /**
- *  视频视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+ *  视频视图显示比例类型 (默认:TTRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
  */
-@property (nonatomic) lsqRatioType ratioType;
+@property (nonatomic) TTRatioType ratioType;
 
 /**
  *  是否开启长按拍摄 (默认: NO)

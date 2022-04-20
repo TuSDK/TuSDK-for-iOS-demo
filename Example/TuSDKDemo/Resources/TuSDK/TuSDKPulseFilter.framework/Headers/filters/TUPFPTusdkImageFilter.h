@@ -200,30 +200,26 @@ FOUNDATION_EXPORT NSString *const TUPFPTusdkImageFilter_NAME_HDR;
 FOUNDATION_EXPORT NSString *const TUPFPTusdkImageFilter_NAME_SkinHazy;
 
 // SkinHazy
-@interface TUPFPTusdkImageFilter_SkinHazyPropertyBuilder : NSObject
-{
-}
+@interface TUPFPTusdkImageFilter_SkinHazyPropertyBuilder : NSObject<TUPPropertyProtocol>
+
 @property(nonatomic) float smoothing;
 @property(nonatomic) float fair;
 @property(nonatomic) float ruddy;
 
 - (instancetype) init;
-- (TUPProperty*) makeProperty;
 @end
 
 
 FOUNDATION_EXPORT NSString *const TUPFPTusdkImageFilter_NAME_SkinNatural;
 
 // SkinNatural
-@interface TUPFPTusdkImageFilter_SkinNaturalPropertyBuilder : NSObject
-{
-}
+@interface TUPFPTusdkImageFilter_SkinNaturalPropertyBuilder : NSObject<TUPPropertyProtocol>
+
 @property(nonatomic) float smoothing;
 @property(nonatomic) float fair;
 @property(nonatomic) float ruddy;
 
 - (instancetype) init;
-- (TUPProperty*) makeProperty;
 @end
 
 

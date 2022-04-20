@@ -13,6 +13,10 @@
  *  状态栏高度
  */
 extern CGFloat const lsq_STATES_BAR_HEIGHT;
+/**
+ *  iPhoneX系列状态栏高度
+ */
+extern CGFloat const lsq_STATES_BAR_HEIGHT_iPhoneX;
 
 /**
  *  导航栏高度

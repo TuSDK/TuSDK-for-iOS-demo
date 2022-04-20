@@ -74,6 +74,9 @@ typedef NS_ENUM(NSInteger, TuLogLevel)
 @property (nonatomic, copy) NSString *style;
 /**用户标识*/
 @property (nonatomic, copy) NSString *userIdentify;
+
+@property (nonatomic) NSBundle *bundle;
+
 /**进度信息提示*/
 //@property (nonatomic, retain) id<TuPopupMessageInterface> messageHub;
 /**使用 SSL 发送网络请求 (默认: YES)*/
@@ -91,20 +94,29 @@ typedef NS_ENUM(NSInteger, TuLogLevel)
  */
 + (TUCCore *)shared;
 
+
 /**
  *  初始化SDK
  *
  *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
  */
 + (void)initSdkWithAppKey:(NSString *)appkey;
+/**
+ *  初始化SDK
+ *
+ *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
+ *  @param specialKey md5加密字段
+ */
++ (void)initSdkWithAppKey:(NSString *)appkey specialKey:(NSString *)specialKey;
 
 /**
  *  初始化SDK
  *
  *  @param appkey 应用秘钥 (请前往 https://tutucloud.com 申请秘钥)
  *  @param devType 开发模式(需要与lsq_tusdk_configs.json中masters.key匹配， 如果找不到devType将默认读取master字段)
+ *  @param specialKey md5加密字段
  */
-+ (void)initSdkWithAppKey:(NSString *)appkey devType:(NSString *)devType;
++ (void)initSdkWithAppKey:(NSString *)appkey devType:(NSString *)devType specialKey:(NSString *)specialKey;
 
 /**
  *  设置日志输出级别
@@ -122,6 +134,12 @@ typedef NS_ENUM(NSInteger, TuLogLevel)
 
 /** 检查资源初始化是否完成 */
 + (BOOL)checkResourceLoaded;
+
+/**
+ * 检查权限是否到期
+ * @return 返回权限是否到期值
+ */
++ (BOOL)checkServiceExpire;
 
 /** 打印权限列表 */
 + (void)logAuthors;

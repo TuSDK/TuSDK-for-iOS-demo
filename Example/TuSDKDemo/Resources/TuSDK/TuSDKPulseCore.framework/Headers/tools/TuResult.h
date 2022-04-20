@@ -25,7 +25,7 @@
 @property (nonatomic)           CGRect                          cutRect;            // 裁剪区域
 @property (nonatomic)           CGSize                          cutSize;            // 裁剪长宽
 @property (nonatomic)           CGFloat                         cutScale;           // 裁切时缩放
-@property (nonatomic)           lsqRatioType                    cutRatioType;       // 裁剪比例类型
+@property (nonatomic)           TTRatioType                    cutRatioType;       // 裁剪比例类型
 @property (nonatomic)           CGFloat                         imageRatio;         // 图片比例
 @property (nonatomic, copy)     NSString *                      filterCode;         // 滤镜代号
 @property (nonatomic, strong)   SelesParameters *               filterParams;       // 当前所使用的滤镜

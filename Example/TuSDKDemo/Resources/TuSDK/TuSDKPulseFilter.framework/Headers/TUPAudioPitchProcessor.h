@@ -10,6 +10,12 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_TYPE_NAME;
 FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE;
 
+FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE_Normal;
+FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE_Monster;
+FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE_Uncle;
+FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE_Girl;
+FOUNDATION_EXPORT NSString *const TUPAudioPitchProcessor_CONFIG_TYPE_Lolita;
+
 @interface TUPAudioPitchProcessor : NSObject
 @end
 

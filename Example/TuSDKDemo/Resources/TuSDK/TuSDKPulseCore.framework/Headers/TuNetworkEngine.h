@@ -39,7 +39,7 @@ typedef void (^LSQNKImageBlock) (UIImage* fetchedImage, NSURL* url, BOOL isInCac
 #elif TARGET_OS_MAC
 typedef void (^LSQNKImageBlock) (NSImage* fetchedImage, NSURL* url, BOOL isInCache);
 #endif
-typedef void (^LSQNKResponseErrorBlock)(TuNetworkOperation* completedOperation, NSError* error);
+typedef void (^TuNKResponseErrorBlock)(TuNetworkOperation* completedOperation, NSError* error);
 typedef void (^LSQNKProgressBlock)(NSInteger currentSize, NSInteger totalSize);
 
 @interface TuNetworkEngine : NSObject
@@ -228,7 +228,7 @@ typedef void (^LSQNKProgressBlock)(NSInteger currentSize, NSInteger totalSize);
  *  @seealso
  *  imageAtUrl:onCompletion:
  */
-- (TuNetworkOperation*)imageAtURL:(NSURL *)url completionHandler:(LSQNKImageBlock) imageFetchedBlock errorHandler:(LSQNKResponseErrorBlock) errorBlock;
+- (TuNetworkOperation*)imageAtURL:(NSURL *)url completionHandler:(LSQNKImageBlock) imageFetchedBlock errorHandler:(TuNKResponseErrorBlock) errorBlock;
 
 /*!
  *  @abstract Handy helper method for fetching images asynchronously in the background
@@ -240,7 +240,7 @@ typedef void (^LSQNKProgressBlock)(NSInteger currentSize, NSInteger totalSize);
  *  @seealso
  *  imageAtUrl:onCompletion:
  */
-- (TuNetworkOperation*)imageAtURL:(NSURL *)url size:(CGSize) size completionHandler:(LSQNKImageBlock) imageFetchedBlock errorHandler:(LSQNKResponseErrorBlock) errorBlock;
+- (TuNetworkOperation*)imageAtURL:(NSURL *)url size:(CGSize) size completionHandler:(LSQNKImageBlock) imageFetchedBlock errorHandler:(TuNKResponseErrorBlock) errorBlock;
 #endif
 
 /*!
@@ -342,7 +342,7 @@ typedef void (^LSQNKProgressBlock)(NSInteger currentSize, NSInteger totalSize);
  *  The default implementation freezes the queued operations and stops network activity
  *  You normally don't have to implement this unless you need to show a HUD notifying the user of connectivity loss
  */
-@property (copy, nonatomic) void (^reachabilityChangedHandler)(TuSDKNetworkStatus ns);
+@property (copy, nonatomic) void (^reachabilityChangedHandler)(TuNetworkStatus ns);
 
 /*!
  *  @abstract Registers an associated operation subclass

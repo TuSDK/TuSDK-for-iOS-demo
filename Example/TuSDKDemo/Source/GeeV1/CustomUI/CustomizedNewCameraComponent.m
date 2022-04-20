@@ -410,7 +410,7 @@ static const CGFloat kTopBarHeight = 64.0;
     [super viewDidLoad];
     
     // sdk统计代码，请不要加入您的应用
-    [TuStatistics appendWithComponentIdt:tkc_sdkSimpleCamera];
+    [TuStatistics appendWithComponentIdt:tu_sdkSimpleCamera];
     
     self.view = [UIView initWithFrame:CGRectMake(0, 0, lsqScreenWidth, lsqScreenHeight)];
     self.view.backgroundColor = lsqRGB(122, 122, 122);

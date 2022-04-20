@@ -22,28 +22,28 @@ typedef NS_ENUM(NSUInteger, TuRotationMode) {
 };
 
 /// 裁剪比例
-typedef NS_ENUM(NSInteger, lsqRatioType)
+typedef NS_ENUM(NSInteger, TTRatioType)
 {
     // 原始比例
-    lsqRatioOrgin = 1,
+    TTRatioOrgin = 1,
     // 1:1比例
-    lsqRatio_1_1 = 1 << 1,
+    TTRatio_1_1 = 1 << 1,
     // 2:3比例
-    lsqRatio_2_3 = 1 << 2,
+    TTRatio_2_3 = 1 << 2,
     // 3:4比例
-    lsqRatio_3_4 = 1 << 3,
+    TTRatio_3_4 = 1 << 3,
     // 9:16比例
-    lsqRatio_9_16 = 1 << 4,
+    TTRatio_9_16 = 1 << 4,
     // 3:2比例
-    lsqRatio_3_2 = 1 << 5,
+    TTRatio_3_2 = 1 << 5,
     // 4:3比例
-    lsqRatio_4_3 = 1 << 6,
+    TTRatio_4_3 = 1 << 6,
     // 16:9比例
-    lsqRatio_16_9 = 1 << 7,
+    TTRatio_16_9 = 1 << 7,
     // 所有比例
-    lsqRatioAll = lsqRatioOrgin | lsqRatio_1_1 | lsqRatio_2_3 | lsqRatio_3_4 | lsqRatio_9_16 | lsqRatio_3_2 | lsqRatio_4_3 | lsqRatio_16_9,
+    TTRatioAll = TTRatioOrgin | TTRatio_1_1 | TTRatio_2_3 | TTRatio_3_4 | TTRatio_9_16 | TTRatio_3_2 | TTRatio_4_3 | TTRatio_16_9,
     // 默认比例
-    lsqRatioDefault = lsqRatioOrgin | lsqRatio_1_1 | lsqRatio_2_3 | lsqRatio_3_4 | lsqRatio_9_16,
+    TTRatioDefault = TTRatioOrgin | TTRatio_1_1 | TTRatio_2_3 | TTRatio_3_4 | TTRatio_9_16,
 };
 
 /// 排序字段
@@ -107,34 +107,34 @@ typedef NS_ENUM(NSInteger, TuDownloadTaskType)
      */
     TuDownloadTaskTypeBrush,
 };
-typedef NS_ENUM(NSInteger, TuSDKNetworkStatus)
+typedef NS_ENUM(NSInteger, TuNetworkStatus)
 {
     // Apple NetworkStatus Compatible Names.
-    TuSDKNotReachable     = 0,
-    TuSDKReachableViaWiFi = 2,
-    TuSDKReachableViaWWAN = 1
+    TuNotReachable     = 0,
+    TuReachableViaWiFi = 2,
+    TuReachableViaWWAN = 1
 };
 /**
  *  Image Analysis processed type
  */
-typedef NS_ENUM(NSInteger, lsqImageAnalysisType)
+typedef NS_ENUM(NSInteger, TuImageAnalysisType)
 {
     /**
      * Unknow
      */
-    lsqImageAnalysisTypeUnknow,
+    TuImageAnalysisTypeUnknow,
     /**
      * Succeed
      */
-    lsqImageAnalysisTypeSucceed,
+    TuImageAnalysisTypeSucceed,
     /**
      * Not Input Image Object
      */
-    lsqImageAnalysisTypeNotInputImage,
+    TuImageAnalysisTypeNotInputImage,
     /**
      * Service Failed
      */
-    lsqImageAnalysisTypeServiceFailed,
+    TuImageAnalysisTypeServiceFailed,
 };
 /**
  *  笔刷旋转类型

@@ -25,6 +25,7 @@ FOUNDATION_EXPORT const unsigned char TuSDKPulseFilterPipeVersionString[];
 #import <TuSDKPulseFilter/TUPFPImage.h>
 #import <TuSDKPulseFilter/TUPFPImageCvt.h>
 #import <TuSDKPulseFilter/TUPFPAudioMixer.h>
+#import <TuSDKPulseFilter/TUPFPSVGImage.h>
 
 #import <TuSDKPulseFilter/filters/TUPFPAspectRatioFilter.h>
 #import <TuSDKPulseFilter/filters/TUPFPBubbleTextFilter.h>
@@ -49,6 +50,7 @@ FOUNDATION_EXPORT const unsigned char TuSDKPulseFilterPipeVersionString[];
 #import <TuSDKPulseFilter/TUPAudioCtx.h>
 #import <TuSDKPulseFilter/TUPAudioPipe.h>
 #import <TuSDKPulseFilter/TUPAudioProcessor.h>
+#import <TuSDKPulseFilter/TUPFPAudioBuffer.h>
 #import <TuSDKPulseFilter/filters/audio/TUPAudioPitchProcessor.h>
 #import <TuSDKPulseFilter/filters/audio/TUPAudioStretchProcessor.h>
 

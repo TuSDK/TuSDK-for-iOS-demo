@@ -13,6 +13,7 @@ FOUNDATION_EXPORT NSString *const TuFaceCountDidPostNotification;
 
 // 图片渲染
 @interface TuImageShowerImpl : NSObject<TuImageShower>
+
 @end
 
 NS_ASSUME_NONNULL_END

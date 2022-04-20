@@ -23,10 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) close;
 - (BOOL) deleteProcessorAt:(NSInteger)idx;
 - (nullable TUPAudioProcessor *)getProcessor:(NSInteger)idx;
-- (BOOL) add:(TUPAudioProcessor *)processor atIndex:(int)index;
-- (int) send:(void*) pcm andLength:(size_t) len;
+- (BOOL) add:(TUPAudioProcessor *)processor atIndex:(NSInteger)index;
+
+- (int) sendPCM:(void*)pcm andLength:(size_t) len;
 - (int) receive:(void*) pcm andLength:(size_t) len;
 
+- (int) send:(void*) pcm andLength:(size_t) len;
 - (size_t)enqueue:(void*) pcm andLength:(size_t) len;
 - (size_t)dequeue:(void*) pcm andLength:(size_t) len;
 - (size_t)getSize;

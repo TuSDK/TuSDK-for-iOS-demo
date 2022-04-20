@@ -111,7 +111,7 @@
  *  @param result  Image online analysis result
  *  @param type    Image Analysis processed type
  */
-typedef void (^TuSDKNKImageAnalysisBlock)(TuNKImageAnalysisResult* result, lsqImageAnalysisType type);
+typedef void (^TuSDKNKImageAnalysisBlock)(TuNKImageAnalysisResult* result, TuImageAnalysisType type);
 /**
  *  Image online analysis
  */

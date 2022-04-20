@@ -30,7 +30,7 @@
 /**
  *  转场动画
  */
-@property (nonatomic,retain) TuSDKTSCControllerTrans *transAnim;
+@property (nonatomic,retain) TuTSCControllerTrans *transAnim;
 
 /**
  *  设置导航栏左边按钮

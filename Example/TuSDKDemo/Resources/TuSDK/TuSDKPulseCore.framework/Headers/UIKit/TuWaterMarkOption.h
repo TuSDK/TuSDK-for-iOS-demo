@@ -12,7 +12,7 @@
 /**
  *  水印位置
  */
-typedef NS_ENUM(NSInteger, lsqWaterMarkPosition)
+typedef NS_ENUM(NSInteger, TTWaterMarkPosition)
 {
     
     // 注：修改该枚举时，请注意，保证1~4之间为逆时针方向，改枚举的数值尽量不要修改，在 TuSDKVideoDataOutputBase 类 setWaterMarkPosition 方法中调整水印位置用到，通过数值和 视频方向进行了转换计算；若有修改 请注意需对应修改改计算
@@ -20,28 +20,28 @@ typedef NS_ENUM(NSInteger, lsqWaterMarkPosition)
     /**
      *  左下角
      */
-    lsqWaterMarkBottomLeft = 1,
+    TTWaterMarkBottomLeft = 1,
     
     /**
      *  右下角
      */
-    lsqWaterMarkBottomRight = 2,
+    TTWaterMarkBottomRight = 2,
     
     /**
      *  右上角
      */
-    lsqWaterMarkTopRight = 3,
+    TTWaterMarkTopRight = 3,
 
     /**
      *  左上角
      */
-    lsqWaterMarkTopLeft = 4,
+    TTWaterMarkTopLeft = 4,
     
 
     /**
      *  居中
      */
-    lsqWaterMarkCenter = 5,
+    TTWaterMarkCenter = 5,
 
     
     
@@ -50,16 +50,16 @@ typedef NS_ENUM(NSInteger, lsqWaterMarkPosition)
 /**
  *  水印文本位置： 文本 + 图片 | 图片 + 文本
  */
-typedef NS_ENUM(NSInteger, lsqMarkTextPosition)
+typedef NS_ENUM(NSInteger, TTMarkTextPosition)
 {
     /**
      *  左边
      */
-    lsqMarkTextPositionLeft = 1,
+    TTMarkTextPositionLeft = 1,
     /**
      *  右边
      */
-    lsqMarkTextPositionRight = 1 << 1,
+    TTMarkTextPositionRight = 1 << 1,
 };
 
 
@@ -71,7 +71,7 @@ typedef NS_ENUM(NSInteger, lsqMarkTextPosition)
 /**
  *  水印位置 (默认: lsqWaterMarkBottomRight)
  */
-@property (nonatomic, assign) lsqWaterMarkPosition markPosition;
+@property (nonatomic, assign) TTWaterMarkPosition markPosition;
 
 /**
  *  水印文字
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, lsqMarkTextPosition)
 /**
  *  文字和图片顺序 (仅当图片和文字都非空时生效，默认: 文字在右)
  */
-@property (nonatomic) lsqMarkTextPosition markTextPosition;
+@property (nonatomic) TTMarkTextPosition markTextPosition;
 
 /**
  *  文字和图片间距 (默认: 2dp)

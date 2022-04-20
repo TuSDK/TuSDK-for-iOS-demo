@@ -14,7 +14,7 @@
 /**
  *  橡皮擦笔刷代号
  */
-extern NSString * const lsqEraserBrushCode;
+extern NSString * const TTEraserBrushCode;
 
 
 @class TuBrushLocalPackage;

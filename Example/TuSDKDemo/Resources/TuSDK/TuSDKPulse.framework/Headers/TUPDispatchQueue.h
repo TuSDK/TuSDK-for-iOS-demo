@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) init NS_UNAVAILABLE;
 - (instancetype) initWithName:(NSString*) name;
 
-- (void) runSync:(void(^)()) block;
-
+- (void)runSync:(void(^)(void)) block;
+- (void)runAsync:(void(^)(void)) block;
 
 @end
 

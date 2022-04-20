@@ -6,39 +6,39 @@
 	<dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		WO5qLys/7EHEWiMWS5D86p4is80=
+		0+v9MHANMLykirAKk9dDwND+Rl8=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		QL3vLCGAQxqOoqIOejg4huzgcrw=
+		iHC2IFBEnkyDddqXD5DB3TiuLwE=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YEFzqI7xVuPAPf98qSH5vfukIVs=
+		4uY/8GeAWNfCOtx+fMXvT8TiDhk=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<data>
-		xaG8oF2kdoeeOKkdRXqaZrV+ZMU=
+		ShtMBaujLIUKmYUu3PzuTdhB8pE=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<data>
-		RTd8PMklCEBBaFRQcvx+hxcLKgU=
+		xJ1cybhVyV6sjzQNCDWQPbVJ+0w=
 		</data>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<data>
-		aXUxKZZxkmqEH7HUmAtMPmd4F+A=
+		jrfJvl+ijx32yB/394Q/W3Fw+Xo=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		WO5qLys/7EHEWiMWS5D86p4is80=
+		0+v9MHANMLykirAKk9dDwND+Rl8=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		YvULsQaIeoztI6B4Di8S13TIy80=
+		iHC2IFBEnkyDddqXD5DB3TiuLwE=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YEFzqI7xVuPAPf98qSH5vfukIVs=
+		4uY/8GeAWNfCOtx+fMXvT8TiDhk=
 		</data>
 		<key>Headers/TUPAudioCtx.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Headers/TUPAudioPipe.h</key>
 		<data>
-		LjD7wk9BzgbEYVU5x+14ahbhgpw=
+		HiV7dmslPOvMvXhM7FUCPTxjE9s=
 		</data>
 		<key>Headers/TUPAudioPitchProcessor.h</key>
 		<data>
-		4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+		Z5U6Ur3WZAyYcqfLd8epJI9wTSA=
 		</data>
 		<key>Headers/TUPAudioProcessor.h</key>
 		<data>
@@ -59,6 +59,10 @@
 		<key>Headers/TUPAudioStretchProcessor.h</key>
 		<data>
 		yZUtY17NCyuFsmZU1FH2cjfjw74=
+		</data>
+		<key>Headers/TUPFPAudioBuffer.h</key>
+		<data>
+		QZ1Ffc5pZkBB1+s98/WDF6UeSHw=
 		</data>
 		<key>Headers/TUPFPAudioMixer.h</key>
 		<data>
@@ -82,11 +86,15 @@
 		</data>
 		<key>Headers/TUPFPImage.h</key>
 		<data>
-		Cpsq5j41g+BR8e0aZCn7yEujE0s=
+		C1Ds8dwFXNBOcyBlk83lcjyhygE=
 		</data>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<data>
-		ml739EtQIg2GSioHryROP0IddWk=
+		kwagrPMPkl/Qnc/vjIWWxkU3hiU=
+		</data>
+		<key>Headers/TUPFPSVGImage.h</key>
+		<data>
+		oQrYKCws++9RSAq++Mgwi2ALYxk=
 		</data>
 		<key>Headers/TUPFilterCtx.h</key>
 		<data>
@@ -94,11 +102,11 @@
 		</data>
 		<key>Headers/TUPFilterPipe.h</key>
 		<data>
-		O+KQlSt0wATnfmV1EIoloktZeic=
+		UMZILJmbIew1FvqTw8R9IwYVobk=
 		</data>
 		<key>Headers/TuSDKPulseFilter.h</key>
 		<data>
-		GGBW/obPo2r/I0gdcapAbWcJfac=
+		nce2CcqhF6gOfVYOtaGhpaV+NTs=
 		</data>
 		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
 		<data>
@@ -134,7 +142,7 @@
 		</data>
 		<key>Headers/filters/TUPFPTusdkBeautFaceV2Filter.h</key>
 		<data>
-		qJE9oU3JIAP2FEwjbggoAOY9Flo=
+		lvq9z34Q4Ib4DJboKRsPfMjrHHo=
 		</data>
 		<key>Headers/filters/TUPFPTusdkBeautifyFilter.h</key>
 		<data>
@@ -142,7 +150,7 @@
 		</data>
 		<key>Headers/filters/TUPFPTusdkCosmeticFilter.h</key>
 		<data>
-		PcwEEe6+r9yCN2tYezHewDlfhrI=
+		L4e1v9JYAMzCzZ6J3LxDDxZvLKs=
 		</data>
 		<key>Headers/filters/TUPFPTusdkCropFilter.h</key>
 		<data>
@@ -154,15 +162,15 @@
 		</data>
 		<key>Headers/filters/TUPFPTusdkFacePlasticFilter.h</key>
 		<data>
-		j7kon0ooIH1d4BB5jUfvoImVKT4=
+		20ZpRhoJHCxz/IMCm72WeiGNKsQ=
 		</data>
 		<key>Headers/filters/TUPFPTusdkFaceReshapeFilter.h</key>
 		<data>
-		rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
+		AmmR9cXpkbMN4ixISuWHhubBF5M=
 		</data>
 		<key>Headers/filters/TUPFPTusdkImageFilter.h</key>
 		<data>
-		wAdWbf1Gh3XEItJSBf0QOx5QUHo=
+		ujOifcxsOWsMEYU5lNGIHzWmmrQ=
 		</data>
 		<key>Headers/filters/TUPFPTusdkLiveStickerFilter.h</key>
 		<data>
@@ -178,7 +186,7 @@
 		</data>
 		<key>Headers/filters/audio/TUPAudioPitchProcessor.h</key>
 		<data>
-		4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+		Z5U6Ur3WZAyYcqfLd8epJI9wTSA=
 		</data>
 		<key>Headers/filters/audio/TUPAudioStretchProcessor.h</key>
 		<data>
@@ -186,7 +194,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lm2k5Jnu2QnmMbbR7RfPaHs2gCs=
+		325/rVgmCyIRoipNWXrc/fIFCPw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -199,99 +207,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WO5qLys/7EHEWiMWS5D86p4is80=
+			0+v9MHANMLykirAKk9dDwND+Rl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			bwZWdg2lN/ybB+WBiVcW/bRwlrZgMYZ/y0Uqew1Fdf4=
+			ymR2GvNuWgVOvCJwj9uLNKAPPRDdtqgPu2ONM938we0=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QL3vLCGAQxqOoqIOejg4huzgcrw=
+			iHC2IFBEnkyDddqXD5DB3TiuLwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cBnJXs1NI4omK3vvXEGCZGxi1+mXTmJRmpLSNgv3DVc=
+			CrbVXXg+DiHJwRJIKP5DTbSwe8dXIaiTGHONzDG1gZk=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YEFzqI7xVuPAPf98qSH5vfukIVs=
+			4uY/8GeAWNfCOtx+fMXvT8TiDhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Wl9ZFWjz2wg28t9h4s5hySstfj6JH9sbFW8q4KmMvw=
+			LPAdVX1nm5mLUENfqBIaZDB2CIBPEC15fDG/RnqvFQw=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xaG8oF2kdoeeOKkdRXqaZrV+ZMU=
+			ShtMBaujLIUKmYUu3PzuTdhB8pE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hm1xgh+b6DvAB7gmfMItXBKE8RT0/9eyltVRkKZ+06Y=
+			3xGG+b0ecQ6yHCQ2VHyO3tZI7v4oc8Mkiurznj9v0JM=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/TuSDKPulse</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RTd8PMklCEBBaFRQcvx+hxcLKgU=
+			xJ1cybhVyV6sjzQNCDWQPbVJ+0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			g8CnfZTyZNmrEgUuMvxfCp3XTqmsm+sxBUKMiItEVLs=
+			QbTkxhojtb1/d4xglyLxyghdHVa+dPvrSBP/GvV7Sis=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulse.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aXUxKZZxkmqEH7HUmAtMPmd4F+A=
+			jrfJvl+ijx32yB/394Q/W3Fw+Xo=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNVhxCCjUQ4yMbcE9N4kwQWbECwavtueimG90evvmIw=
+			tLMA1LOEiz9zDfsjtt94dHu8GbtWb10J8REMSgNjBGo=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WO5qLys/7EHEWiMWS5D86p4is80=
+			0+v9MHANMLykirAKk9dDwND+Rl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			bwZWdg2lN/ybB+WBiVcW/bRwlrZgMYZ/y0Uqew1Fdf4=
+			ymR2GvNuWgVOvCJwj9uLNKAPPRDdtqgPu2ONM938we0=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YvULsQaIeoztI6B4Di8S13TIy80=
+			iHC2IFBEnkyDddqXD5DB3TiuLwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			G5GpLBJbIbcOVbKPMgoVyfJn0jtoeOZ6p4W22ZuM4a4=
+			CrbVXXg+DiHJwRJIKP5DTbSwe8dXIaiTGHONzDG1gZk=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YEFzqI7xVuPAPf98qSH5vfukIVs=
+			4uY/8GeAWNfCOtx+fMXvT8TiDhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Wl9ZFWjz2wg28t9h4s5hySstfj6JH9sbFW8q4KmMvw=
+			LPAdVX1nm5mLUENfqBIaZDB2CIBPEC15fDG/RnqvFQw=
 			</data>
 		</dict>
 		<key>Headers/TUPAudioCtx.h</key>
@@ -309,22 +317,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LjD7wk9BzgbEYVU5x+14ahbhgpw=
+			HiV7dmslPOvMvXhM7FUCPTxjE9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			n7FKUDQHM57zsfuoJPYMtXm8dqJYJi5+IBxJrs3+9LA=
+			R9xPm2datQvV0yMd/zp7bxSEG4TQXaAnYgPsvXWc1XY=
 			</data>
 		</dict>
 		<key>Headers/TUPAudioPitchProcessor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+			Z5U6Ur3WZAyYcqfLd8epJI9wTSA=
 			</data>
 			<key>hash2</key>
 			<data>
-			01YZCDrr7HouSnngBWoO6W8ReB3SXCZAycpbsiJA5yI=
+			LDgMDJs/W12aHzDHYh1xIJArGAwzafGfcaD/8tYiokc=
 			</data>
 		</dict>
 		<key>Headers/TUPAudioProcessor.h</key>
@@ -347,6 +355,17 @@
 			<key>hash2</key>
 			<data>
 			k3+m+cOp/4kleKoLxoKIBBmoul9nEeivCDPtZYEj9to=
+			</data>
+		</dict>
+		<key>Headers/TUPFPAudioBuffer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QZ1Ffc5pZkBB1+s98/WDF6UeSHw=
+			</data>
+			<key>hash2</key>
+			<data>
+			8D5S22sWtcLep4vn3TX7ICnsI+bX+YG9OxTOhmsYnGg=
 			</data>
 		</dict>
 		<key>Headers/TUPFPAudioMixer.h</key>
@@ -408,22 +427,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cpsq5j41g+BR8e0aZCn7yEujE0s=
+			C1Ds8dwFXNBOcyBlk83lcjyhygE=
 			</data>
 			<key>hash2</key>
 			<data>
-			WSZVqYTeSKWeqBqsiLHaXTQ8CImpxX32vQ4hpP+i4L4=
+			Z1u5Rso8EY6gRL2nHVyRaeVe2t1Hx6CXUR/rS+o4qrY=
 			</data>
 		</dict>
 		<key>Headers/TUPFPImageCvt.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ml739EtQIg2GSioHryROP0IddWk=
+			kwagrPMPkl/Qnc/vjIWWxkU3hiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			oV2Um1V636fGeyLtjFbYD7bIaVnuBa+L/ifzajPEsI8=
+			WMapS9zsNUH4MLbFTldz1u0N+ivftu/y3cDG/tjOrqE=
+			</data>
+		</dict>
+		<key>Headers/TUPFPSVGImage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oQrYKCws++9RSAq++Mgwi2ALYxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			DzhIIfF0cW5/H3ajo/9ePm7XlJ0VcNnxzqHT4qF1p38=
 			</data>
 		</dict>
 		<key>Headers/TUPFilterCtx.h</key>
@@ -441,22 +471,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O+KQlSt0wATnfmV1EIoloktZeic=
+			UMZILJmbIew1FvqTw8R9IwYVobk=
 			</data>
 			<key>hash2</key>
 			<data>
-			sdjTHalV7OQhEWLBehyYRRmtJBy5WqL/GHA2B8AD+cs=
+			+v4AukO3X5u0UnIVSC6zVlVLvW7nXeLyGtcr+zpWFJk=
 			</data>
 		</dict>
 		<key>Headers/TuSDKPulseFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GGBW/obPo2r/I0gdcapAbWcJfac=
+			nce2CcqhF6gOfVYOtaGhpaV+NTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			iMXkUE45/4elr+Qg91GN3MMG6TtCcmuYyOKECEuZMgk=
+			4PeV3gX6bLE8OgXN8z1LQ8RJtqOIKh7ZXELR48r0ecw=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPAspectRatioFilter.h</key>
@@ -551,11 +581,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qJE9oU3JIAP2FEwjbggoAOY9Flo=
+			lvq9z34Q4Ib4DJboKRsPfMjrHHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCgWrH+r0wPQcbcx2OEJ/J/mbhjZeRXBPRTRslXesTE=
+			fJmuoBaIRJO7Ei5nFbobS7m66NaXXQwxR77fBIXU+tg=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkBeautifyFilter.h</key>
@@ -573,11 +603,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PcwEEe6+r9yCN2tYezHewDlfhrI=
+			L4e1v9JYAMzCzZ6J3LxDDxZvLKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UP5f93QqTcY4D0IjVLLc+SJC8f+7JhXrTlI7YxumAbU=
+			ZSfbRy5SxcAyhUPdcVEnmkToW7+b/rXbvQqsdCfhJuI=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkCropFilter.h</key>
@@ -606,33 +636,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j7kon0ooIH1d4BB5jUfvoImVKT4=
+			20ZpRhoJHCxz/IMCm72WeiGNKsQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			tH4d/9UMha2wNNbWfGXzmx3ztburTaHCubBmP/Jvx5I=
+			mhURRRg+AaeDQEvKZcvHoZRCim64pgtVI6eJMQMHkaU=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkFaceReshapeFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rDutxG0VSbuG/t3Iw9xxu5Ui14Q=
+			AmmR9cXpkbMN4ixISuWHhubBF5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			S63KmC84goSeVHAdk5crcTYdYrRR5xJI4dsg21LgWKo=
+			9Q10BKTZo/9I6hgxi2zRPGvzOUW6o8UxJkJF5J4b6D4=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkImageFilter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wAdWbf1Gh3XEItJSBf0QOx5QUHo=
+			ujOifcxsOWsMEYU5lNGIHzWmmrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			yji4SLLzExhP75f/eaz1UYmBZGeqMFZ/5Xwr611qto0=
+			mPmRMLahyPJXA7aZCi88gwsPXh0KAfRKOcrk8bEu28s=
 			</data>
 		</dict>
 		<key>Headers/filters/TUPFPTusdkLiveStickerFilter.h</key>
@@ -672,11 +702,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4+qj3R28YZcoYVVZdWIbPnf8Ldo=
+			Z5U6Ur3WZAyYcqfLd8epJI9wTSA=
 			</data>
 			<key>hash2</key>
 			<data>
-			01YZCDrr7HouSnngBWoO6W8ReB3SXCZAycpbsiJA5yI=
+			LDgMDJs/W12aHzDHYh1xIJArGAwzafGfcaD/8tYiokc=
 			</data>
 		</dict>
 		<key>Headers/filters/audio/TUPAudioStretchProcessor.h</key>

@@ -107,7 +107,7 @@
     [super viewDidLoad];
     
     // sdk统计代码，请不要加入您的应用
-    [TuStatistics appendWithComponentIdt:tkc_sdkComponent];
+    [TuStatistics appendWithComponentIdt:tu_sdkComponent];
     
     self.title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"app_name", @"TuSDK 涂图"), lsqPulseSDKVersion ];
 

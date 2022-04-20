@@ -105,7 +105,7 @@ typedef void (^TuSDKNetworkUnreachable)(TuNetworkReachability * reachability);
 // Is user intervention required?
 -(BOOL)isInterventionRequired;
 
--(TuSDKNetworkStatus)currentReachabilityStatus;
+-(TuNetworkStatus)currentReachabilityStatus;
 -(SCNetworkReachabilityFlags)reachabilityFlags;
 -(NSString*)currentReachabilityString;
 -(NSString*)currentReachabilityFlags;

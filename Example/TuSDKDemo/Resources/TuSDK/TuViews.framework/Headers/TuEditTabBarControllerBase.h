@@ -57,7 +57,7 @@
 /**
  *  转场动画
  */
-@property (nonatomic,retain) TuSDKTSCControllerTrans *transAnim;
+@property (nonatomic,retain) TuTSCControllerTrans *transAnim;
 /**
  *  关闭进度提示
  */

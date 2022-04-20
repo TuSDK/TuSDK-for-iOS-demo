@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) close;
 
 
--(TUPFPFilter*) getFilter:(NSInteger)idx;
+-(nullable TUPFPFilter*) getFilter:(NSInteger)idx;
 
 - (BOOL) addFilter:(TUPFPFilter*) filter at:(NSInteger) idx;
 

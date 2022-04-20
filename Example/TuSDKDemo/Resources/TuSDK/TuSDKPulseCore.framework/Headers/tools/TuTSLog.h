@@ -110,8 +110,8 @@
 + (void)debug:(NSString *)format, ...;
 @end
 
-#ifndef TuSDKTSLogDefine
-#define TuSDKTSLogDefine
+#ifndef TTTSLogDefine
+#define TTTSLogDefine
 
 /**
  *  输出所有日志

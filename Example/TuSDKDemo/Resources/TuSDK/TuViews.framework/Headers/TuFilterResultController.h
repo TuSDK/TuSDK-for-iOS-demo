@@ -75,5 +75,6 @@
 - (void)setSkinFilterParams:(SelesParameters *)filterParams;
 - (void)enableSkinFilter;
 
+- (NSUInteger)getFaceCount;
 
 @end

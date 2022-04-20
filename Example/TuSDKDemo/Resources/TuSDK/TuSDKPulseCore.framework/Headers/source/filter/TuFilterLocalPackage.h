@@ -14,7 +14,7 @@
 /**
  *  默认滤镜代号
  */
-extern NSString * const lsqNormalFilterCode;
+extern NSString * const TTNormalFilterCode;
 
 #pragma mark - TuFilterLocalPackageDelegate
 @class TuFilterLocalPackage;

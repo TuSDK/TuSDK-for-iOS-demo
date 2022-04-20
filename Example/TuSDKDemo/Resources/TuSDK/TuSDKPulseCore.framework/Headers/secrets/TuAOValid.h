@@ -36,7 +36,7 @@
  *
  *  @return BOOL 是否通过验证
  */
-- (BOOL)sdkValidWithKey:(NSString *)key devType:(NSString *)devType;
+- (BOOL)sdkValidWithKey:(NSString *)key devType:(NSString *)devType specialKey:(NSString *)specialKey;
 /** 是否通过验证开发者ID */
 - (BOOL)sdkValid;
 /** 是否过期 allTypes:是否所有过期*/
@@ -49,6 +49,11 @@
 - (NSTimeInterval) nextUpdate:(NSTimeInterval)expire succeed:(BOOL)succeed;
 /** 请求配置信息 */
 - (void)checkAppAuth;
+/**
+ * 检查权限是否到期
+ * @return 返回权限是否到期值
+ */
+- (BOOL)checkServiceExpire;
 /** 打印权限列表 */
 - (void)logAuthors;
 

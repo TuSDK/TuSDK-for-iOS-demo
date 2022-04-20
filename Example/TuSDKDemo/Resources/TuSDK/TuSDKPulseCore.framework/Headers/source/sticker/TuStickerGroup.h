@@ -27,7 +27,7 @@
 /** 贴纸包名称 会根据当前语言判断 */
 @property (nonatomic, copy) NSString *name_language;
 /** 贴纸元素类型*/
-@property (nonatomic) TuSDKStickerType type;
+@property (nonatomic) TTStickerType type;
 /** 预览视图文件名 */
 @property (nonatomic, copy) NSString *previewName;
 /** 贴纸列表 */

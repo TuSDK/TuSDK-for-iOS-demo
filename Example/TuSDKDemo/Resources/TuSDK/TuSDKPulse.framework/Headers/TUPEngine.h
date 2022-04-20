@@ -24,7 +24,7 @@ struct TUPEngineParameter {
 
 - (instancetype) init NS_UNAVAILABLE;
 
-
+// 共享上下文
 + (BOOL) Init:(EAGLContext* _Nullable)glctx;
 
 + (void) Terminate;

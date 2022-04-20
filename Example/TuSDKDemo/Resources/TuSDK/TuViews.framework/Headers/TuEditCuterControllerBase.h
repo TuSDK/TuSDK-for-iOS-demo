@@ -22,9 +22,9 @@
 @property (nonatomic, readonly) UIView<TuTouchImageViewInterface> *imageView;
 
 /**
- *  视图显示比例类型 (默认:lsqRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
+ *  视图显示比例类型 (默认:TTRatioDefault, 如果设置cameraViewRatio > 0, 将忽略ratioType)
  */
-@property (nonatomic) lsqRatioType ratioType;
+@property (nonatomic) TTRatioType ratioType;
 
 /**
  *  视图显示比例类型列表 ( 优先级 ratioTypeList > ratioType, 默认：lsqTuSDKRatioDefaultTypes)
@@ -57,7 +57,7 @@
 /**
  *  当前裁剪比例类型
  */
-@property (nonatomic) lsqRatioType currentRatioType;
+@property (nonatomic) TTRatioType currentRatioType;
 /**
  *  当前裁剪比例
  */

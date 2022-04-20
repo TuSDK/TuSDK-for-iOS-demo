@@ -13,7 +13,7 @@
 /**
  *  控制器转场动画
  */
-@interface TuSDKTSCControllerTrans : NSObject
+@interface TuTSCControllerTrans : NSObject
 /**
  *  转入动画
  */
@@ -34,25 +34,25 @@
 + (instancetype)initWithTnTran:(CAAnimation *)inTran outTran:(CAAnimation *)outTran;
 @end
 
-#pragma mark - TuSDKTSCATransitionExtend
+#pragma mark - TuTSCATransitionExtend
 /**
  *  场景切换动画
  */
-@interface CATransition(TuSDKTSCATransitionExtend)
+@interface CATransition(TuTSCATransitionExtend)
 
 /**
  *  获取场景Push方式切换动画
  *
  *  @return 场景Push方式切换动画
  */
-+ (TuSDKTSCControllerTrans *)lsqSencePushTrans;
++ (TuTSCControllerTrans *)lsqSencePushTrans;
 
 /**
  *  获取场景淡入淡出动画
  *
  *  @return 场景淡入淡出动画
  */
-+ (TuSDKTSCControllerTrans *)lsqSenceFadeTrans;
++ (TuTSCControllerTrans *)lsqSenceFadeTrans;
 /**
  *  获取场景Push方式切换向左移动动画
  *
