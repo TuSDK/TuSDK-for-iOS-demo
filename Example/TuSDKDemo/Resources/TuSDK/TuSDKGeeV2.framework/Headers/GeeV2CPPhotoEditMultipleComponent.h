@@ -15,6 +15,8 @@
 #import "GeeV2PFEditStickerOptions.h"
 #import "GeeV2PFEditSmudgeOptions.h"
 #import "GeeV2PFEditAdjustController.h"
+#import "GeeV2PFEditTextController.h"
+#import "GeeV2PFEditTextOptions.h"
 
 /**
  *  组件回调结果
@@ -65,6 +67,11 @@ typedef void (^GeeV2CPComponentBlock)(NSArray<TuResult *>*outputResults, NSError
  */
 @property (nonatomic, readonly) GeeV2PFEditSmudgeOptions *editSmudgeOptions;
 
+/**
+ *  文字功能控制器配置选项
+ */
+@property (nonatomic, readonly) GeeV2PFEditTextOptions *editTextOptions;
+
 @end
 
 
@@ -73,7 +80,7 @@ typedef void (^GeeV2CPComponentBlock)(NSArray<TuResult *>*outputResults, NSError
  *  多功能图像编辑组件
  */
 @interface GeeV2CPPhotoEditMultipleComponent : TuPhotoEditMultipleComponentBase<GeeV2PFEditMultipleControllerDelegate, GeeV2PFEditFilterControllerDelegate, TuFilterResultControllerDelegate,
-GeeV2PFEditStickerControllerDelegate, GeeV2PFEditSmudgeControllerDelegate,GeeV2PFEditTabBarControllerDelegate>
+GeeV2PFEditStickerControllerDelegate, GeeV2PFEditSmudgeControllerDelegate,GeeV2PFEditTabBarControllerDelegate, GeeV2PFEditTextControllerDelegate>
 /**
  *  多功能图像编辑组件选项
  */

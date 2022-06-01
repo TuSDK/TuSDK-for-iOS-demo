@@ -54,6 +54,8 @@
  */
 @property (nonatomic, readonly) GeeV2PFEditTabBar *bottomTabBar;
 
+- (void)lsqInitView;
+
 /**
  *  绑定功能模块
  *
