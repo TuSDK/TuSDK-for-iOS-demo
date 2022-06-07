@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMedia/CoreMedia.h>
-#import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
 
 /**
@@ -49,9 +48,5 @@
 - (void)lsqSetKeywords:(NSString*)keywords;
 - (void)lsqSetImageOrientation:(UIImageOrientation)orientation;
 - (void)lsqSetDigitalZoom:(CGFloat)zoom;
-- (void)lsqSetHeading:(CLHeading*)heading;
-
-@property (nonatomic, retain) CLLocation *location;
-@property (nonatomic, assign) CLLocationDirection trueHeading;
 
 @end

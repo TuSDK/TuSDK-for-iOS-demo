@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		0+v9MHANMLykirAKk9dDwND+Rl8=
+		TF4KRRzsBYU+ItIyt56mfPyhLKQ=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		iHC2IFBEnkyDddqXD5DB3TiuLwE=
+		9IkIZ6A0xak09WCghqE1uEmIy2E=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		4uY/8GeAWNfCOtx+fMXvT8TiDhk=
+		Tkr9F5J7R4hKKpaB6zlj+3fa7dY=
 		</data>
 		<key>Headers/TUPBase.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/TUPPlayer.h</key>
 		<data>
-		yfHpPFMeCbbSeYqXo84EBm5bBoE=
+		b4476PiGxliqlvQPV5OKdcghnw0=
 		</data>
 		<key>Headers/TUPProducer.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ShtMBaujLIUKmYUu3PzuTdhB8pE=
+		Pu5lEonl3g2HRLkgSHKylmsf5gI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,33 +107,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0+v9MHANMLykirAKk9dDwND+Rl8=
+			TF4KRRzsBYU+ItIyt56mfPyhLKQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ymR2GvNuWgVOvCJwj9uLNKAPPRDdtqgPu2ONM938we0=
+			LEGK0AMQcBl8Psu7/aDTxWZaT3Yn3maiNLcC87C/E4I=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iHC2IFBEnkyDddqXD5DB3TiuLwE=
+			9IkIZ6A0xak09WCghqE1uEmIy2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			CrbVXXg+DiHJwRJIKP5DTbSwe8dXIaiTGHONzDG1gZk=
+			/Lvxj6lRVmeDvW0fEBf5ZFw9cOSXjiliqaCibSZkcL0=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4uY/8GeAWNfCOtx+fMXvT8TiDhk=
+			Tkr9F5J7R4hKKpaB6zlj+3fa7dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LPAdVX1nm5mLUENfqBIaZDB2CIBPEC15fDG/RnqvFQw=
+			FQUXHh0RWN2Wm9+7MieyO2HPQadHJuS1fGGco7yrYN0=
 			</data>
 		</dict>
 		<key>Headers/TUPBase.h</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfHpPFMeCbbSeYqXo84EBm5bBoE=
+			b4476PiGxliqlvQPV5OKdcghnw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WK8zX2YgXev9/5EmocOafO/rbzuM3n//2v3bpeP/EVU=
+			iRk1p5th+EUfyf0BIhtPvNascgIMUmrK0VOi8fHKTNk=
 			</data>
 		</dict>
 		<key>Headers/TUPProducer.h</key>

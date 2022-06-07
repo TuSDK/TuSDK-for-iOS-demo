@@ -57,6 +57,14 @@
 /** 打印权限列表 */
 - (void)logAuthors;
 
+/**
+ * 外部更新贴纸
+ * @param master masterKey
+ * @param stickerId 贴纸ID
+ * @return 贴纸资源key
+ */
+- (NSString *)stickerGroupValidKeyWithStickerId:(uint64_t)stickerId master:(NSString *)master;
+
 #pragma mark-  decode
 /** 加密文本 返回索引以及数据[(NSNumber *)index, (NSData *)data] */
 - (NSDictionary *)sdkAESEncodeWithString:(NSString *)str;

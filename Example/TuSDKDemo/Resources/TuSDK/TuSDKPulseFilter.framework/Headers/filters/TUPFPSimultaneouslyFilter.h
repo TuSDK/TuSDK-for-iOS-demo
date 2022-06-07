@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <TuSDKPulse/TUPProperty.h>
 #import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>>
 NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSString *const TUPFPSimultaneouslyFilter_TYPE_NAME;
@@ -30,6 +31,12 @@ FOUNDATION_EXPORT NSString *const TUPFPSimultaneouslyFilter_CONFIG_STRETCH; // �
 @property (nonatomic, assign) CGRect videoSrcRect; // 文件流裁剪区域 normalization
 @property (nonatomic, copy) NSString *firstLayer; // 优先渲染
 @property (nonatomic, assign) NSInteger currentPos; // 视频开始位置
+@property (nonatomic, assign) double cameraBoundWidth; //相机流边框宽度
+@property (nonatomic, assign) double cameraBoundMiter; //相机流边框圆角
+@property (nonatomic) UIColor *cameraBoundColor; //相机流边框颜色
+@property (nonatomic, assign) double videoBoundWidth;  //文件流边框宽度
+@property (nonatomic, assign) double videoBoundMiter; //相机流边框圆角
+@property (nonatomic) UIColor *videoBoundColor; //相机流边框颜色
 
 - (instancetype) init;
 /// 控制播放状态

@@ -121,4 +121,14 @@
  */
 - (BOOL)addStickerGroupFile:(NSString *)filePath;
 
+/**
+ 将本地贴纸添加到 Package
+ 
+ @param filePath 本地贴纸组文件
+ @param master master
+ @return true/false
+ @since 4.1.3
+ */
+- (BOOL)addStickerGroupFile:(NSString *)filePath master:(NSString *)master;
+
 @end

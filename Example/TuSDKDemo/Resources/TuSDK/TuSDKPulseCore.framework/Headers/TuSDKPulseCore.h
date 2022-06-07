@@ -74,7 +74,6 @@
 #import <TuSDKPulseCore/tools/TuTSMath.h>
 
 #import <TuSDKPulseCore/UIKit/TuAOCellGridViewAlgorithmic.h>
-#import <TuSDKPulseCore/UIKit/TuLocation.h>
 #import <TuSDKPulseCore/UIKit/TuRatioType.h>
 #import <TuSDKPulseCore/UIKit/TuRegionHandler.h>
 #import <TuSDKPulseCore/UIKit/TuTSAnimation.h>

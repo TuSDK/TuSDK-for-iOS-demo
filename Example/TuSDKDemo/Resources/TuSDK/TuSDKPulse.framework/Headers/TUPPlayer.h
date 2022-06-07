@@ -80,7 +80,7 @@ typedef NS_ENUM(NSUInteger, TUPPlayerState) {
 
 - (BOOL) previewFrame:(NSInteger)pts;
 
-
+- (BOOL) previewSyncFrame:(NSInteger)pts;
 
 - (NSInteger) getDuration;
 

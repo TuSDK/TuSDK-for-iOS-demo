@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		EsM0r2707DxdNo68fh72J4yhDec=
+		</data>
+		<key>Headers/.DS_Store</key>
+		<data>
+		WEFFp0vcMB53gscQiNGHI2l3QyM=
+		</data>
 		<key>Headers/TUCCore.h</key>
 		<data>
 		pObYC6Kz5QZBeIsqAfvLTN4Viko=
@@ -26,7 +34,7 @@
 		</data>
 		<key>Headers/TuSDKPulseCore.h</key>
 		<data>
-		+uTZb3EUsdtbTCzLezsVyppdYMU=
+		xOC5PW5tYSDGDdCX5Yxdq2UUt+Y=
 		</data>
 		<key>Headers/UIKit/TuAOCellGridViewAlgorithmic.h</key>
 		<data>
@@ -94,7 +102,7 @@
 		</data>
 		<key>Headers/category/TuTSDevice+Extend.h</key>
 		<data>
-		MtG85IQrI+7AjQ/k6RbwGll6ia8=
+		kTBg7NQtq1yvFwPB+IlqV+pzyTA=
 		</data>
 		<key>Headers/category/TuTSImage+Extend.h</key>
 		<data>
@@ -118,7 +126,7 @@
 		</data>
 		<key>Headers/category/TuTSNSMutableDictionary+ImageMetadata.h</key>
 		<data>
-		PVPwAtPrLjyFnM4inPmFj6QICUo=
+		j+KITvIbitl36RRcb+3PeQKGPOM=
 		</data>
 		<key>Headers/category/TuTSPHAssets+Extend.h</key>
 		<data>
@@ -206,7 +214,7 @@
 		</data>
 		<key>Headers/network/core/TuNetworkReachability.h</key>
 		<data>
-		J2l8PbXCT2bK3jqbv/bqm2JtrRk=
+		TFEDc7UCblth7suRrV0RPM/o+4s=
 		</data>
 		<key>Headers/network/core/UIImageView+TuNetworkAdditions.h</key>
 		<data>
@@ -218,7 +226,7 @@
 		</data>
 		<key>Headers/secrets/TuAOValid.h</key>
 		<data>
-		TFVsehW5w4y/9T/hKV49bhQPGMA=
+		baUtHXHdEBzuPxbHOgrlUToXiCM=
 		</data>
 		<key>Headers/secrets/TuAuth.h</key>
 		<data>
@@ -227,6 +235,10 @@
 		<key>Headers/secrets/TuStatistics.h</key>
 		<data>
 		GLzV3sgFLIbaBn5aYqB8DSZGSHU=
+		</data>
+		<key>Headers/source/.DS_Store</key>
+		<data>
+		siRlVHfoUcNjqg/y40Q5Xt7qBaU=
 		</data>
 		<key>Headers/source/brush/TuBrush.h</key>
 		<data>
@@ -286,7 +298,7 @@
 		</data>
 		<key>Headers/source/sticker/TuStickerAdapter.h</key>
 		<data>
-		PMy+SRHr3M5YeJzDZLpM+/aSVMc=
+		TvX4lzXvVkZq9+z8qdMhNJJAaJs=
 		</data>
 		<key>Headers/source/sticker/TuStickerCategory.h</key>
 		<data>
@@ -342,7 +354,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0+v9MHANMLykirAKk9dDwND+Rl8=
+		TF4KRRzsBYU+ItIyt56mfPyhLKQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -410,11 +422,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+uTZb3EUsdtbTCzLezsVyppdYMU=
+			xOC5PW5tYSDGDdCX5Yxdq2UUt+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			UoXfulJ0Z+2yvHS8eRxb1ALJU2wjC4r+whMJBs8t96c=
+			Q/NyiT7Unzp9xxCsNKRs3aE0kRnCVqrSP8uq/e3Iw6w=
 			</data>
 		</dict>
 		<key>Headers/UIKit/TuAOCellGridViewAlgorithmic.h</key>
@@ -597,11 +609,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MtG85IQrI+7AjQ/k6RbwGll6ia8=
+			kTBg7NQtq1yvFwPB+IlqV+pzyTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			y6Fj0+lYSfBJDqoMJ1a2xjiW+SPzU9c5d5P5v+Tpykc=
+			dt0aeFL7pE/2i/rmLRcf1vwOB7+nX8yD8+Ma9M8Y7EI=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSImage+Extend.h</key>
@@ -663,11 +675,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PVPwAtPrLjyFnM4inPmFj6QICUo=
+			j+KITvIbitl36RRcb+3PeQKGPOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z7yc6OonNiSnthQm4LJOexNAmmZIfOWvCE4xTXfiJRA=
+			f+MkhxEP8jbuTdS253Allk2y5lB3WB/n0IYOC0D4eVM=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSPHAssets+Extend.h</key>
@@ -905,11 +917,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J2l8PbXCT2bK3jqbv/bqm2JtrRk=
+			TFEDc7UCblth7suRrV0RPM/o+4s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ey1X/HqY3jA8BQ186ldRVcKgRPmqYQIyv6DjmX97L7M=
+			3KAtKk/JT6x9rtX0LUcdwlmFvhtrjDKcmzMDRLoDO5c=
 			</data>
 		</dict>
 		<key>Headers/network/core/UIImageView+TuNetworkAdditions.h</key>
@@ -938,11 +950,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TFVsehW5w4y/9T/hKV49bhQPGMA=
+			baUtHXHdEBzuPxbHOgrlUToXiCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eRU14xz/gsYsRq+YtcjTAeBqZbglKPUjadestDOhv8U=
+			JCSg4wP0AgHtkJcLAvzGQPWQivTWSLHp3Pdh8NqGFZ4=
 			</data>
 		</dict>
 		<key>Headers/secrets/TuAuth.h</key>
@@ -1125,11 +1137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PMy+SRHr3M5YeJzDZLpM+/aSVMc=
+			TvX4lzXvVkZq9+z8qdMhNJJAaJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			uL31SImUYoCOOtMqjnd+IkINYtiAKRBHVjbycZbbW4M=
+			jbYvP6XW2bfKPxPFZvqjbs5uXbs4r0LL1GWzNtkbJI4=
 			</data>
 		</dict>
 		<key>Headers/source/sticker/TuStickerCategory.h</key>

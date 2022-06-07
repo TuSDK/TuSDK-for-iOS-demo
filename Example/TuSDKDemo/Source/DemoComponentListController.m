@@ -178,7 +178,7 @@
     // 基础相机组件范例 (对现有组件进行扩展 - 修改界面)
     [group appenWithSample:[CustomizedCameraComponent sample]];
     //自定义相机组件（From短视频）
-    [group appenWithSample:[CustomizedNewCameraComponent sample]];
+//    [group appenWithSample:[CustomizedNewCameraComponent sample]];
     
     // 设置范例分组数据
     self.listView.group = group;

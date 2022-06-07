@@ -191,12 +191,6 @@ typedef enum : NSUInteger {
  */
 + (void)lsqOpenAppSettings  NS_AVAILABLE_IOS(8_0);
 
-/**
- *  获取WIFI IP地址
- *
- *  @return WIFI IP地址
- */
-+ (NSString *)lsqGetWifiIpAddress;
 
 /**
  *  获取文件大小 BYTE
