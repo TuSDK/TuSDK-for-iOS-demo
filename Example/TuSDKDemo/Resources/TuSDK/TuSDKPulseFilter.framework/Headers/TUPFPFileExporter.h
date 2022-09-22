@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) int height;
 @property(nonatomic) double stretch; // 快慢速
 @property(nonatomic) int framerate; // 采集帧率
+/**是否镜像*/
+@property(nonatomic) BOOL isMirror;
 
 @property(nonatomic) int channels;
 @property(nonatomic) int sampleRate;

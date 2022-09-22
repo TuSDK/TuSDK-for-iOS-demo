@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) float fileMixWeight; // (0,1]
 @property (nonatomic) float recordMixWeight;
 @property (nonatomic) float stretch;
+@property (nonatomic) double repeatDuration; // ms
 @end
 
 
