@@ -42,13 +42,13 @@ typedef void (^TuNKImageAutoColorAnalysisCopyBlock)(NSString* file);
  */
 - (void)analysisWithImage:(UIImage *)image block:(TuNKImageAutoColorAnalysisBlock)block;
 
-///**
-// *  copy Analysis to input image file, need run analysisWithImage:block first
-// *
-// *  @param inputFile  input image file path
-// *  @param outputFile output image file path
-// *  @param block      Image Auto Color Analysis Copy Block
-// */
+/**
+ *  copy Analysis to input image file, need run analysisWithImage:block first
+ *
+ *  @param image  input image file
+ *  @param outputFile output image file path
+ *  @param block      Image Auto Color Analysis Copy Block
+ */
 - (void)copyAnalysisWithInput:(UIImage *)image output:(NSString *)outputFile block:(TuNKImageAutoColorAnalysisCopyBlock)block;
 
 /**
@@ -58,7 +58,6 @@ typedef void (^TuNKImageAutoColorAnalysisCopyBlock)(NSString* file);
  *  @param input      input image file path
  *  @param output     output image file path
  *  @param thumbBlock Image Auto Color Analysis Block
- *  @param copyBlock  Image Auto Color Analysis Copy Block
  */
 - (void)analysisWithThumb:(UIImage *)thumb
                     input:(NSString *)input

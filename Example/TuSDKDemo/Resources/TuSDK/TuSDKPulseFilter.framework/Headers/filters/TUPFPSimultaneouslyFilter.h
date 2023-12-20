@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <TuSDKPulse/TUPProperty.h>
 #import <CoreGraphics/CoreGraphics.h>
-#import <UIKit/UIKit.h>>
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSString *const TUPFPSimultaneouslyFilter_TYPE_NAME;

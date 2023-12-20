@@ -78,7 +78,7 @@
 #import <TuSDKPulseCore/UIKit/TuRegionHandler.h>
 #import <TuSDKPulseCore/UIKit/TuTSAnimation.h>
 #import <TuSDKPulseCore/UIKit/TuTSAsset.h>
-#import <TuSDKPulseCore/UIKit/TuTSVolumeButton.h>
+#import <TuSDKPulseCore/UIKit/TuVolumeButton.h>
 #import <TuSDKPulseCore/UIKit/TuWaterMarkOption.h>
 #import <TuSDKPulseCore/UIKit/TuTSMotion.h>
 

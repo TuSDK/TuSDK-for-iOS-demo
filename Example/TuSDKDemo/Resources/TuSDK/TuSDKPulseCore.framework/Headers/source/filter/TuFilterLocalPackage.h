@@ -53,6 +53,7 @@ extern NSString * const TTNormalFilterCode;
  *
  *  @return package 原生滤镜配置
  */
++ (instancetype)shared;
 + (instancetype)package;
 
 // 加载配置信息

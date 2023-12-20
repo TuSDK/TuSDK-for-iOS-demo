@@ -23,7 +23,7 @@
     NSMutableArray *_brushies;
 }
 /**
- *  最大输出图片边长 (默认:0, 不限制图片宽高)
+ *  最大输出图片边长 
  */
 @property (nonatomic) NSUInteger limitSideSize;
 

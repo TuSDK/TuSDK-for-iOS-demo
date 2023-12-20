@@ -22,7 +22,7 @@
 @property (nonatomic, strong) UIColor* displayBackgroundColor;
 // 显示图片
 @property (nonatomic, strong) UIImage* displayImage;
-// 最大输出图片边长 (默认:0, 不限制图片宽高)
+// 最大输出图片边长 
 @property (nonatomic) NSUInteger limitSideSize;
 // 最大输出图片按照设备屏幕 (默认:true, 如果设置了LimitSideSize, 将忽略LimitForScreen)
 @property (nonatomic) BOOL limitForScreen;

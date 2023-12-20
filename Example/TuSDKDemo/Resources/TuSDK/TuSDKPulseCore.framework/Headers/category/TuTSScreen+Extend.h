@@ -33,7 +33,7 @@ extern CGFloat const lsq_TAB_BAR_HEIGHT;
 /**
  *  屏幕属性扩展
  */
-@interface UIScreen(TuSDKTSScreenExtend)
+@interface UIScreen(TuTSScreenExtend)
 /**
  *  屏幕宽高
  *
@@ -152,6 +152,13 @@ extern CGFloat const lsq_TAB_BAR_HEIGHT;
  *  @return 是否为Retina屏幕
  */
 + (BOOL) hasRetinaDisplay;
+
+/**
+ * 状态栏高度
+ * @return 获取状态栏高度
+ */
++ (CGFloat)lsqStatusBarHeight;
+
 @end
 
 #ifndef TuSDKTSScreenExtend_Define

@@ -56,7 +56,7 @@ typedef void(^TuWebImageCompletionBlock)(UIImage *image, NSError *error, TuNetwo
 /**
  *  图片扩展
  */
-@interface UIImageView(TuSDKNetworkAdditions)
+@interface UIImageView(TuNetworkAdditions)
 /**
  *  设置默认网络连接引擎
  *

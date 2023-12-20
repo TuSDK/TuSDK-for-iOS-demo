@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)updateFillColor:(NSString *)cid r:(int)r g:(int)g b:(int)b a:(float)a;
 - (BOOL)updateStokeColor:(NSString *)cid r:(int)r g:(int)g b:(int)b a:(float)a;
 - (BOOL)updateStrokeWidth:(NSString *)cid px:(int)px;
+- (BOOL)updateSize:(NSString *)cid width:(double)width height:(double)height;
+- (BOOL)updateRootNodeSizeWithWidth:(double)width height:(double)height;
+
 
 - (TUPFPImage *)getImage;
 

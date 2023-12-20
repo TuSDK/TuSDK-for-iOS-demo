@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/TuSDKPulseCore.framework/Info.plist</key>
 		<data>
-		i8F13HxZoeEpe4Ry4OqGURF11dY=
+		sc2WQINDiY5Ck9X6pWVmNv59vgA=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<data>
-		CEYJl602YQhAkAcMDt6Q222V+Zs=
+		I7rS6OYwfMuDnRXS0qIQebsZS18=
 		</data>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		xcDuLnmsnleVmgczbqcyqDOwR/Q=
+		iZYquxiYw6NdEYHUtnjmcNTC6cQ=
 		</data>
 		<key>Headers/TUPBase.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/TUPDisplayView.h</key>
 		<data>
-		OJ3puYvH0NU1u1yKD+33dEONfS0=
+		BcZsugyujYjFEoQ+M/ua5E10phg=
 		</data>
 		<key>Headers/TUPEngine.h</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EtG4BXSUlhYbMgkDLz++gzEwUzA=
+		nHZ8aCI4KB+GbCY6fm1QyEyThjc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		39D0anJ1hbctHjPAYYWRWsfmIn0=
+		/DelJaSuITepRMzbCcjyoY1Td0k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,33 +111,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i8F13HxZoeEpe4Ry4OqGURF11dY=
+			sc2WQINDiY5Ck9X6pWVmNv59vgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			D5ktDDtDP1VbAA/0C/YsIDlot7PZE+hCSrARrxt9FTo=
+			M9P5jsKf7xGuTmCTL0E7jDKqNh2039rLuw7eDEXxbAc=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/TuSDKPulseCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CEYJl602YQhAkAcMDt6Q222V+Zs=
+			I7rS6OYwfMuDnRXS0qIQebsZS18=
 			</data>
 			<key>hash2</key>
 			<data>
-			d4R3uxfzwUbv01Pl8rfaXkWpJNe7VTPkjTRA0rPX31M=
+			UVjdsCpsZi837VEJcgqblRJKXJFhs1e7PZaR/Fm8vzo=
 			</data>
 		</dict>
 		<key>Frameworks/TuSDKPulseCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xcDuLnmsnleVmgczbqcyqDOwR/Q=
+			iZYquxiYw6NdEYHUtnjmcNTC6cQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			G1y1hTepCVM2k1C7g3Fz5NbRfcws76w23Zg4RGLfMXM=
+			YUSXy5vgkbwqnEkSkEWwdf+RuwMGTcG8dgF1DDNcaoY=
 			</data>
 		</dict>
 		<key>Headers/TUPBase.h</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OJ3puYvH0NU1u1yKD+33dEONfS0=
+			BcZsugyujYjFEoQ+M/ua5E10phg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9noPrN5+M92o5ZE6EKlV98eyAPQhn5u8CsSxIEOD2Mg=
+			lVDYdF2grr2+UNIJ5ksUjpcYBZ+kuIqW0hL1N7cBlGE=
 			</data>
 		</dict>
 		<key>Headers/TUPEngine.h</key>
@@ -364,11 +364,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			39D0anJ1hbctHjPAYYWRWsfmIn0=
+			/DelJaSuITepRMzbCcjyoY1Td0k=
 			</data>
 			<key>hash2</key>
 			<data>
-			d2UJC0onLaIDlQApweu/Cu/L5dkwmMHy+UJhl0H8yqU=
+			lkQS8hknkDGn9qqjR4RiYele/SXBWbOncQgXkIbc4Co=
 			</data>
 		</dict>
 	</dict>

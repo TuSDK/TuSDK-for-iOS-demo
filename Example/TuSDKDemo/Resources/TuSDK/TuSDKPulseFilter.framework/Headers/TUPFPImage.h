@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 //- (instancetype) initWithCVPixelBuffer:(CVPixelBufferRef) pb ;
 
 - (UIImage*)getUIImage;
+- (UIImage*)getSVGImage;
 
 - (NSInteger)getWidth;
 - (NSInteger)getHeight;
@@ -39,7 +40,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (bool)getMarkSenceEnable;
 - (int)getFaceCount;
 
-
+/**
+ * 设置config String 键值对
+ */
+- (void)setConfigString:(NSString *)key value:(NSString *)value;
+/**
+ * 设置config number 键值对
+ */
+- (void)setConfigNumber:(NSString *)key number:(double)number;
+/**
+ * 设置config int 键值对
+ */
+- (void)setConfigIntNumber:(NSString *)key intNumber:(int)intNumber;
 
 
 - (void)destory;

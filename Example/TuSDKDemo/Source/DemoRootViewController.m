@@ -105,7 +105,7 @@
     CGFloat btnInterval = 8;
     CGFloat btnHeight = 68;
     CGFloat btnWidth = backgroundImage.lsqGetSizeWidth - 32;
-    CGFloat centerY = self.view.lsqGetSizeHeight - 32 - 2.5*btnHeight - 2*btnInterval;
+    CGFloat centerY = self.view.lsqGetSizeHeight - 82 - 2.5*btnHeight - 2*btnInterval;
     
     // 相机
     UIButton *cameraButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, btnWidth, btnHeight)];
@@ -188,6 +188,15 @@
     ComponentListButtonText.textColor = [UIColor lsqClorWithHex:@"#553213"];
     ComponentListButtonText.font = [UIFont systemFontOfSize:19];
     [componentListButton addSubview:ComponentListButtonText];
+    
+    centerY = centerY + btnHeight + btnInterval;
+    UILabel *icpInfoText = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.lsqGetSizeWidth, btnHeight)];
+    icpInfoText.text = @"浙ICP备14040447号-2A";
+    icpInfoText.textAlignment = NSTextAlignmentCenter;
+    icpInfoText.center = CGPointMake(self.view.lsqGetSizeWidth/2, centerY);
+    icpInfoText.font = [UIFont systemFontOfSize:13];
+    icpInfoText.textColor = [UIColor lsqClorWithHex:@"#553213"];
+    [self.view addSubview:icpInfoText];
 }
 
 #pragma mark - 点击事件

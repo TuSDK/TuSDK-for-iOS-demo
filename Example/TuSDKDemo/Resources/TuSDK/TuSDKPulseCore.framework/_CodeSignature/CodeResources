@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		aAEWjTyljs/Vtu225WDDcGltTuk=
-		</data>
-		<key>Headers/.DS_Store</key>
-		<data>
-		i6OQmhmia0BsRLVwxhWYEriTZOs=
-		</data>
 		<key>Headers/TUCCore.h</key>
 		<data>
 		pObYC6Kz5QZBeIsqAfvLTN4Viko=
@@ -34,7 +26,7 @@
 		</data>
 		<key>Headers/TuSDKPulseCore.h</key>
 		<data>
-		xOC5PW5tYSDGDdCX5Yxdq2UUt+Y=
+		xgfEMLH+2XBiKbdf8q1ow3Izw78=
 		</data>
 		<key>Headers/UIKit/TuAOCellGridViewAlgorithmic.h</key>
 		<data>
@@ -46,7 +38,7 @@
 		</data>
 		<key>Headers/UIKit/TuRatioType.h</key>
 		<data>
-		n3WisrpMwmy4LQF7R2XKrXMEiPU=
+		no4Vn6dDSljSc9XEclLCN5lvE/8=
 		</data>
 		<key>Headers/UIKit/TuRegionHandler.h</key>
 		<data>
@@ -67,6 +59,10 @@
 		<key>Headers/UIKit/TuTSVolumeButton.h</key>
 		<data>
 		b8rqN35QzhbqiFqb5suUqFNajjY=
+		</data>
+		<key>Headers/UIKit/TuVolumeButton.h</key>
+		<data>
+		/YSfcfp0NLwMz2LuufTthwJDfGk=
 		</data>
 		<key>Headers/UIKit/TuWaterMarkOption.h</key>
 		<data>
@@ -102,11 +98,11 @@
 		</data>
 		<key>Headers/category/TuTSDevice+Extend.h</key>
 		<data>
-		Cei0VT8fMvZ1GXljZplnLHaKovw=
+		9Pp4BBpx7z6KOWQcQx1etyiPYoE=
 		</data>
 		<key>Headers/category/TuTSImage+Extend.h</key>
 		<data>
-		cHHriU+olOz4/XlJyDAMtaxQsBo=
+		fojfxK9bHpGHxmCD/SRMccQ1s0A=
 		</data>
 		<key>Headers/category/TuTSNSArray+Extend.h</key>
 		<data>
@@ -134,7 +130,7 @@
 		</data>
 		<key>Headers/category/TuTSScreen+Extend.h</key>
 		<data>
-		B9VvvxZ/+NmQ2Clb9uqO1jUAiYs=
+		An8gM/2Uwbr179NHXhCWTMhaddc=
 		</data>
 		<key>Headers/category/TuTSString+Extend.h</key>
 		<data>
@@ -159,10 +155,6 @@
 		<key>Headers/cx/TuDefindConfigs.h</key>
 		<data>
 		DeTT03yR9sDMoJSGuoUQoBJUCk0=
-		</data>
-		<key>Headers/network/.DS_Store</key>
-		<data>
-		jfDLkr9vIeAJE+O0AnfFMlq5oWc=
 		</data>
 		<key>Headers/network/TuImageViewTask.h</key>
 		<data>
@@ -194,7 +186,7 @@
 		</data>
 		<key>Headers/network/TuNKImageAutoColorAnalysis.h</key>
 		<data>
-		jiViBUzvmBA1DeGV21otb8FapDg=
+		54fxZ5oENr0tLk/6FRuRLqyxkT0=
 		</data>
 		<key>Headers/network/TuNKImageColorArgument.h</key>
 		<data>
@@ -222,7 +214,7 @@
 		</data>
 		<key>Headers/network/core/UIImageView+TuNetworkAdditions.h</key>
 		<data>
-		zhfHpwhGi2hLHfO5K7TiylFmDNs=
+		VUoVOyh3FH83gM5kCGnDinhf9wQ=
 		</data>
 		<key>Headers/secrets/TuAOFile.h</key>
 		<data>
@@ -238,11 +230,7 @@
 		</data>
 		<key>Headers/secrets/TuStatistics.h</key>
 		<data>
-		GLzV3sgFLIbaBn5aYqB8DSZGSHU=
-		</data>
-		<key>Headers/source/.DS_Store</key>
-		<data>
-		r3lBKYENbcG1oScjsvRms6TZ228=
+		owDYTrWZU1AUV/f79JUVqSGSRpg=
 		</data>
 		<key>Headers/source/brush/TuBrush.h</key>
 		<data>
@@ -258,7 +246,7 @@
 		</data>
 		<key>Headers/source/brush/TuBrushLocalPackage.h</key>
 		<data>
-		yOqOkNcLEJeHlk5cqFPwrfoRRJQ=
+		+BTyAc5iyYjDVSMWAXLwUzjIju8=
 		</data>
 		<key>Headers/source/brush/TuBrushManager.h</key>
 		<data>
@@ -278,7 +266,7 @@
 		</data>
 		<key>Headers/source/filter/TuFilterLocalPackage.h</key>
 		<data>
-		DczBr21xRHapwlfyJQGUC26sRuE=
+		mClao97v9WvwWEUC1iC8rvoDzj4=
 		</data>
 		<key>Headers/source/filter/TuFilterOption.h</key>
 		<data>
@@ -314,7 +302,7 @@
 		</data>
 		<key>Headers/source/sticker/TuStickerLocalPackage.h</key>
 		<data>
-		LYsxxZRefvJ48LQHgJWLLM14sww=
+		Eo5+MXdzYjJ1MJFWHyDIOj5Fwj0=
 		</data>
 		<key>Headers/source/sticker/TuStickerText.h</key>
 		<data>
@@ -358,11 +346,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i8F13HxZoeEpe4Ry4OqGURF11dY=
+		sc2WQINDiY5Ck9X6pWVmNv59vgA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		4ggWkLhqmbgG4M/8zknhaATr1HQ=
+		2z8QXo92bMS3hvji+zz3qfsMRQY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -426,11 +414,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xOC5PW5tYSDGDdCX5Yxdq2UUt+Y=
+			xgfEMLH+2XBiKbdf8q1ow3Izw78=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q/NyiT7Unzp9xxCsNKRs3aE0kRnCVqrSP8uq/e3Iw6w=
+			SIoNRI7WLcd39ZwjoHvMoyDQMunXAkIV+NYzwPA4Dl4=
 			</data>
 		</dict>
 		<key>Headers/UIKit/TuAOCellGridViewAlgorithmic.h</key>
@@ -459,11 +447,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n3WisrpMwmy4LQF7R2XKrXMEiPU=
+			no4Vn6dDSljSc9XEclLCN5lvE/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MyBM0l/0bE8DSbe3hD8gD2xjCAYbOufC5SwxBYM1wPM=
+			6nisu6KsY22J9L/knvEDbgqEdM+VdDydb0fWX17jICs=
 			</data>
 		</dict>
 		<key>Headers/UIKit/TuRegionHandler.h</key>
@@ -519,6 +507,17 @@
 			<key>hash2</key>
 			<data>
 			yTZNv0ThT09Vki6wF8cJ89TGCeSnEDFgtzVxQEXf7uE=
+			</data>
+		</dict>
+		<key>Headers/UIKit/TuVolumeButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/YSfcfp0NLwMz2LuufTthwJDfGk=
+			</data>
+			<key>hash2</key>
+			<data>
+			LwtcmKjdSPw3cA8i5vvnraw6nHl79pKmjQQSCMjEhdc=
 			</data>
 		</dict>
 		<key>Headers/UIKit/TuWaterMarkOption.h</key>
@@ -613,22 +612,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cei0VT8fMvZ1GXljZplnLHaKovw=
+			9Pp4BBpx7z6KOWQcQx1etyiPYoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			wf5s5N7cTs9bLpiiXr+kNgP8oOZeoJosI17S1qGABZc=
+			XbEW6rU5niUh4V5giDjcc/X93xSBiILdg2C+s7eh/H4=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSImage+Extend.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cHHriU+olOz4/XlJyDAMtaxQsBo=
+			fojfxK9bHpGHxmCD/SRMccQ1s0A=
 			</data>
 			<key>hash2</key>
 			<data>
-			AswiA+xB+8taW4hawLS6NnWM4KVSJ92XTiFJMj66QfM=
+			yLlT+VnbvNkELlnv+VvCuN4j1ZoIti9wQkWiVAnNwOU=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSNSArray+Extend.h</key>
@@ -701,11 +700,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B9VvvxZ/+NmQ2Clb9uqO1jUAiYs=
+			An8gM/2Uwbr179NHXhCWTMhaddc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9uwMoHuEMCUA7bVbs4nndN1APmR+7x5gnt1N9NNUqd4=
+			j4rKE4p/bBrGarC7eKhIwt15pFFnRODRn2d+f5zOwMs=
 			</data>
 		</dict>
 		<key>Headers/category/TuTSString+Extend.h</key>
@@ -855,11 +854,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jiViBUzvmBA1DeGV21otb8FapDg=
+			54fxZ5oENr0tLk/6FRuRLqyxkT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			L4hflyvMZTvm3OIVVn8Yk9XN4TEODYRZof+/wFzmFSM=
+			0Re+4dnd2BwmxFNaHYXXrb8fKY+wB7xE/0tIw2WOxf0=
 			</data>
 		</dict>
 		<key>Headers/network/TuNKImageColorArgument.h</key>
@@ -932,11 +931,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zhfHpwhGi2hLHfO5K7TiylFmDNs=
+			VUoVOyh3FH83gM5kCGnDinhf9wQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2Ow+ZqrCzi6rSfQ9icBODzPo+rT4y46vnnIGwj60fKI=
+			EHatZY7A6Y6uHTB6u5ADYfxXww1kDm39aN/+K9qJhi8=
 			</data>
 		</dict>
 		<key>Headers/secrets/TuAOFile.h</key>
@@ -976,11 +975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GLzV3sgFLIbaBn5aYqB8DSZGSHU=
+			owDYTrWZU1AUV/f79JUVqSGSRpg=
 			</data>
 			<key>hash2</key>
 			<data>
-			tIHFbGaGelGlg6w34z8A55Ff1eBR2DM7hpJpApxN8GE=
+			YZ5EemBVyUMwnoZfEDv11KXo6iivVaO/PnAKZD2mhfY=
 			</data>
 		</dict>
 		<key>Headers/source/brush/TuBrush.h</key>
@@ -1020,11 +1019,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yOqOkNcLEJeHlk5cqFPwrfoRRJQ=
+			+BTyAc5iyYjDVSMWAXLwUzjIju8=
 			</data>
 			<key>hash2</key>
 			<data>
-			smSjJJ35IicbhrQc1biDoxgPCJKY50Mg8jAv6K79x8Q=
+			1EAK31P0Nk8xAd3FktzneMX/RQWiC6H/LQIV2isIlTA=
 			</data>
 		</dict>
 		<key>Headers/source/brush/TuBrushManager.h</key>
@@ -1075,11 +1074,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DczBr21xRHapwlfyJQGUC26sRuE=
+			mClao97v9WvwWEUC1iC8rvoDzj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CPC7tHhViHZg5B1dMD0O+vIXSL06ZygV03b75Y2myiA=
+			fd4hhQ3nWUoAJHayFQ8AOcDGyY8dE0R2HX9XnDdER0E=
 			</data>
 		</dict>
 		<key>Headers/source/filter/TuFilterOption.h</key>
@@ -1174,11 +1173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LYsxxZRefvJ48LQHgJWLLM14sww=
+			Eo5+MXdzYjJ1MJFWHyDIOj5Fwj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6AQGTq1sZjZDGffbGsMD/na2KCYwH2o5aLW7ZiZam7k=
+			x21HBpz+vOe1AZ9V+ZvLwNKMpTtCHli2Gl3N5giJJ18=
 			</data>
 		</dict>
 		<key>Headers/source/sticker/TuStickerText.h</key>
@@ -1295,11 +1294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ggWkLhqmbgG4M/8zknhaATr1HQ=
+			2z8QXo92bMS3hvji+zz3qfsMRQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OQUR1Yz/MW9hT14QrZUTNOPoLcCHVfNEQQKrBlWBulo=
+			jeksHsweN8xilfsDUDsYCYGTNbCabFT9GJMSva9ybEI=
 			</data>
 		</dict>
 	</dict>

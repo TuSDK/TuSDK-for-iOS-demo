@@ -43,15 +43,15 @@
 /**
  * 检测列表中的比例数据是否合法
  *
- * @param types
- * @return types
+ * @param types 输入比例列表
+ * @return 比例列表
  */
 + (NSArray<NSNumber *> *)validRatioTypes:(NSArray<NSNumber *> *)types;
 
 /**
  * 获取第一个比例类型
  *
- * @param firstRatioType
+ * @param ratioType 比例
  * @return ratioType
  */
 + (TTRatioType)firstRatioType:(TTRatioType)ratioType;
@@ -59,7 +59,7 @@
 /**
  * 获取第一个比例
  *
- * @param ratioType
+ * @param ratioType 比例类型
  * @return ratioType
  */
 + (float) firstRatio:(TTRatioType) ratioType;
@@ -67,7 +67,7 @@
 /**
  * 获取比例总数
  *
- * @param ratioType
+ * @param ratioType 比例类型
  * @return ratioType
  */
 + (NSInteger) ratioCount:(TTRatioType)ratioType;

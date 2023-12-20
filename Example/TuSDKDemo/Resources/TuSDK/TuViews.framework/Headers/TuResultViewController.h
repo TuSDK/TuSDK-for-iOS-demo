@@ -88,7 +88,6 @@
  *  保存图片到临时文件
  *
  *  @param result 相机拍摄结果
- *  @param result 结束后执行方法
  */
 - (void)saveToTempWithResult:(TuResult *)result;
 
@@ -96,16 +95,15 @@
  *  保存图片到系统相册
  *
  *  @param result 相机拍摄结果
- *  @param result 结束后执行方法
  */
 - (void)saveToAlbumWithResult:(TuResult *)result;
 
 /**
  *  添加水印
  *
- *  @param image 目标图片
+ *  @param result 目标图片
  *
- *  @return result
+ *  @return 添加完水印图片
  */
 - (UIImage *)addWaterMarkToImage:(UIImage *)result;
 @end

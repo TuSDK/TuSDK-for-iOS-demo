@@ -454,7 +454,7 @@
 - (NSUInteger) total;
 @end
 
-@interface UIImage(ImagePixSort)
+@interface UIImage(TuTSImagePixSort)
 /**
  *  获取图像像素顺序
  */

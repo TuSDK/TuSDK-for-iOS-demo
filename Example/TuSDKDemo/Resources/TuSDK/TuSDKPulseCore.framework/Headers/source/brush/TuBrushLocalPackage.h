@@ -50,6 +50,7 @@ extern NSString * const TTEraserBrushCode;
  *
  *  @return package 本地笔刷包
  */
++ (instancetype)shared;
 + (instancetype)package;
 
 // 加载配置信息

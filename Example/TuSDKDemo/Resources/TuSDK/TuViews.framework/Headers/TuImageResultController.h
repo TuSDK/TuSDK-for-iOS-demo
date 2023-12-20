@@ -82,7 +82,7 @@
 /**
  是否需要预处理图片
  @param image 要显示的图片
- @return
+ @return 是否需要
  */
 - (BOOL)preProcessWithImage:(UIImage *)image;
 

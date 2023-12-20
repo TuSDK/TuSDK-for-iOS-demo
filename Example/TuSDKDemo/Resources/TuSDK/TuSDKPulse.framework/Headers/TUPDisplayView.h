@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGRect) getInteractionRect:(CGSize)size;
 
+/**
+ * 添加背景颜色
+ * @param clearColor 背景颜色
+ */
+- (void)setClearColor:(UIColor *)clearColor;
+
 
 @end
 
